@@ -1,0 +1,68 @@
+name: Uzun video (carsamba ve pazar)
+
+on:
+  schedule:
+    - cron: "41 15 * * 3,0"   # çarşamba ve pazar 18:41 (Türkiye saati)
+  workflow_dispatch:
+    inputs:
+      konu:
+        description: "Konu id (osmanli/uzun/<id>.json; boş = takvimdeki sıradaki)"
+        default: ""
+      privacy:
+        description: "Görünürlük (public / unlisted / private)"
+        default: "private"
+      yukle:
+        description: "YouTube'a yükle (false = sadece önizleme üret)"
+        type: boolean
+        default: true
+      onizleme_sn:
+        description: "Önizleme için yalnızca ilk N saniye (0 = tamamı)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: uzun-video
+  cancel-in-progress: false
+
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - name: Araçları kur
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Uzun videoyu üret
+        env:
+          UZUN_KONU: ${{ github.event.inputs.konu }}
+          ONIZLEME_SN: ${{ github.event.inputs.onizleme_sn || '0' }}
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+        run: python osmanli/uzun.py
+      - name: YouTube'a yükle
+        if: github.event_name == 'schedule' || github.event.inputs.yukle == 'true'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          BEKLENEN_KANAL: ${{ vars.KANAL_ADI || 'Sarayın Gölgesi' }}
+          PRIVACY: ${{ github.event.inputs.privacy || 'public' }}
+        run: python osmanli/uzun_yukle.py
+      - name: Önizlemeyi uzun-onizleme dalına koy (küçültülmüş)
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.yukle != 'true'
+        run: |
+          mkdir -p /tmp/cikti
+          ffmpeg -y -loglevel error -i out/uzun.mp4 -vf scale=1280:-2 -c:v libx264 -preset veryfast -crf 30 -c:a aac -b:a 96k /tmp/cikti/uzun_720p.mp4
+          cp out/meta.json out/kucuk_resim.jpg /tmp/cikti/
+          cd /tmp/cikti
+          git init -q -b uzun-onizleme
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com add -A
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -q -m "Uzun onizleme ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" uzun-onizleme
