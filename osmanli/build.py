@@ -170,7 +170,11 @@ def sinematik_yatak(yol, vuruslar):
     drone *= (0.75 + 0.25 * np.sin(2 * np.pi * 0.07 * t)).astype(np.float32)
     drone /= np.max(np.abs(drone)) + 1e-9
     ruzgar = np.cumsum(rng.normal(0, 1, n)).astype(np.float32)
-    ruzgar -= np.convolve(ruzgar, np.ones(4410) / 4410, mode="same").astype(np.float32)
+    cs = np.concatenate([[0.0], np.cumsum(ruzgar, dtype=np.float64)])   # hızlı hareketli ortalama (uzun seslerde de)
+    k = 4410
+    idx = np.arange(n)
+    lo, hi = np.clip(idx - k // 2, 0, n), np.clip(idx + k // 2, 0, n)
+    ruzgar -= ((cs[hi] - cs[lo]) / np.maximum(hi - lo, 1)).astype(np.float32)
     ruzgar /= np.max(np.abs(ruzgar)) + 1e-9
     yatak = 0.055 * drone + 0.018 * ruzgar
     zarf = np.minimum(1, np.minimum(t / 1.5, (t[-1] - t) / 2.0)).clip(0, 1).astype(np.float32)
@@ -179,7 +183,7 @@ def sinematik_yatak(yol, vuruslar):
     if gecis == "vuus":
         vuus = vuus_sesi(rng)
         tepe = int(np.argmax(np.abs(vuus)))   # sesin en yüksek anı tam sahne değişimine denk gelsin
-        for j, b in enumerate(vuruslar[1:], 1):
+        for j, b in enumerate(vuruslar[1:], 1):   # vuruslar: geçiş anları (ilk eleman videonun başı)
             i0 = int(b * SR) - tepe
             if i0 < 0 or i0 >= n:
                 continue
