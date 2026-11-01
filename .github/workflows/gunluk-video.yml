@@ -1,0 +1,91 @@
+name: Osmanli tarihi video
+
+on:
+  schedule:
+    - cron: "40 8 * * *"    # her gün 11:40 (Türkiye saati) -> Saray hayatı
+    - cron: "25 14 * * *"   # her gün 17:25 (Türkiye saati) -> Tarihten portreler
+    - cron: "10 17 * * *"   # her gün 20:10 (Türkiye saati) -> Savaşlar
+  workflow_dispatch:
+    inputs:
+      kategori:
+        description: "Kategori (savaslar / saray / kisiler)"
+        default: "savaslar"
+      konu:
+        description: "İsteğe bağlı konu id (ör. istanbul-fethi; boş = günün konusu)"
+        default: ""
+      privacy:
+        description: "Görünürlük (public / unlisted / private)"
+        default: "private"
+      seed:
+        description: "İsteğe bağlı tarih YYYYMMDD (boş = bugün)"
+        default: ""
+      gorsel_kontrol:
+        description: "Sadece görsel kontrol raporu (yükleme yapmaz)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: osmanli-video
+  cancel-in-progress: false
+
+jobs:
+  gorsel-kontrol:
+    if: github.event.inputs.gorsel_kontrol == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Görselleri kontrol et
+        run: python osmanli/gorsel_kontrol.py "${{ github.event.inputs.kategori || 'hepsi' }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gorsel-raporu
+          path: out/gorsel_raporu.md
+
+  uret-ve-yukle:
+    if: github.event.inputs.gorsel_kontrol != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Araçları kur
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python paketleri
+        run: pip install -r requirements.txt
+
+      - name: Videoyu üret
+        env:
+          SEED: ${{ github.event.inputs.seed }}
+          KONU: ${{ github.event.inputs.konu }}
+          KATEGORI: ${{ github.event.schedule == '40 8 * * *' && 'saray' || github.event.schedule == '25 14 * * *' && 'kisiler' || github.event.inputs.kategori || 'savaslar' }}
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+        run: python osmanli/build.py
+
+      - name: Videoyu sakla (indirilebilir)
+        uses: actions/upload-artifact@v4
+        with:
+          name: osmanli-video
+          path: |
+            out/video.mp4
+            out/meta.json
+          retention-days: 14
+
+      - name: YouTube'a yükle
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          BEKLENEN_KANAL: ${{ vars.KANAL_ADI }}
+          PRIVACY: ${{ github.event.inputs.privacy || 'public' }}
+        run: python osmanli/yukle.py

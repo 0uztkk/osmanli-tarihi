@@ -1,0 +1,42 @@
+name: Osmanli gorsel adaylari (yuklemez)
+
+on:
+  push:
+    branches: [main]
+    paths: ["osmanli/aday_istek.txt"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        kategori: [savaslar, saray, kisiler]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow==11.0.0
+      - name: İstekte bu kategori var mı?
+        id: istek
+        run: |
+          if grep -qE "hepsi|${{ matrix.kategori }}" osmanli/aday_istek.txt; then echo "calis=1" >> $GITHUB_OUTPUT; fi
+      - name: Adayları çıkar
+        if: steps.istek.outputs.calis == '1'
+        run: python osmanli/gorsel_aday.py ${{ matrix.kategori }} 2>&1 | tee aday_log.txt
+      - name: aday-${{ matrix.kategori }} dalına koy
+        if: always() && steps.istek.outputs.calis == '1'
+        run: |
+          mkdir -p /tmp/cikti && cp -r out/aday/${{ matrix.kategori }}/. /tmp/cikti/ 2>/dev/null || true
+          cp aday_log.txt /tmp/cikti/ || true
+          cd /tmp/cikti
+          git init -q -b aday-${{ matrix.kategori }}
+          git -c user.name=aday -c user.email=aday@users.noreply.github.com add -A
+          git -c user.name=aday -c user.email=aday@users.noreply.github.com commit -q -m "Adaylar ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" aday-${{ matrix.kategori }}
