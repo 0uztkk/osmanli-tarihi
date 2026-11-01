@@ -86,6 +86,6 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-          BEKLENEN_KANAL: ${{ vars.KANAL_ADI }}
+          BEKLENEN_KANAL: ${{ vars.KANAL_ADI || 'Sarayın Gölgesi' }}
           PRIVACY: ${{ github.event.inputs.privacy || 'public' }}
         run: python osmanli/yukle.py

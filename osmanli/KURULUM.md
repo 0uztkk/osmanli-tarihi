@@ -26,7 +26,8 @@ Nasıl aldığını hatırlamıyorsan söyle, birlikte adım adım yaparız.
 Yeni depo → **Settings → Secrets and variables → Actions**
 - Secrets: `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `GCP_TTS_KEY` (Mina'dakilerle aynı değerler; GitHub eski
   değeri göstermez, Google Cloud → Credentials sayfasından kopyalarsın), `YT_REFRESH_TOKEN` (4. adım, YENİ kanalın token'ı).
-- Variables sekmesi: `KANAL_ADI` = kanalın adı (token yanlış kanala aitse yükleme durur).
+- Kanal adı ("Sarayın Gölgesi") iş akışına yazılı; token başka kanala aitse yükleme durur. Ad değişirse
+  Variables sekmesine `KANAL_ADI` eklemek yeterli.
 
 ## 6. Deneme (5 dk)
 Actions → **Osmanli tarihi video** → Run workflow → `privacy: private` → çalıştır.
