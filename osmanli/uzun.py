@@ -15,7 +15,7 @@ Ortam değişkenleri:
 import datetime, json, math, os, subprocess, sys, wave
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageEnhance
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -106,6 +106,38 @@ def golge():
     return Image.fromarray(rgba, "RGBA")
 
 
+def sahne_hazirla(yol):
+    """Yatay görsel: ekranı kaplar (B.sahne_hazirla). Dikey/kare görsel: bulanık arka plan + yüksekliğe sığdırılmış ön görsel."""
+    if not yol:
+        return B.parsomen(), None, "yok"
+    try:
+        im = Image.open(yol).convert("RGB")
+    except Exception:
+        return B.parsomen(), None, "yok"
+    if im.width / im.height >= 1.25:
+        bg, fg = B.sahne_hazirla(yol)
+        return bg, fg, "kapla"
+    s = max(W / im.width, H / im.height)
+    bg = im.resize((math.ceil(im.width * s), math.ceil(im.height * s)), Image.BILINEAR)
+    bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
+    bg = karart(bg.filter(ImageFilter.GaussianBlur(30)), 0.38)
+    s = (H - 60) / im.height
+    fg = im.resize((max(1, int(im.width * s)), H - 60), Image.LANCZOS)
+    fg = ImageEnhance.Contrast(fg).enhance(1.06)
+    return bg, fg, "sigdir"
+
+
+def kare_uret(s, yerel):
+    if s["mod"] == "sigdir":
+        kare = s["bg"].copy()
+        u = B.yumusak(yerel)
+        z = 1.0 + 0.06 * (u if s["hareket"] % 2 == 0 else 1 - u)
+        f = s["fg"].resize((int(s["fg"].width * z), int(s["fg"].height * z)), Image.BILINEAR)
+        kare.paste(f, (int((W - f.width) / 2), int((H - f.height) / 2 + 10)))
+        return kare
+    return B.sahne_kare(s, yerel, s["hareket"])
+
+
 def karart(im, oran):
     return Image.fromarray((np.asarray(im).astype(np.float32) * oran).astype(np.uint8))
 
@@ -129,10 +161,10 @@ def render(sahneler, bolumler, toplam, kapak, yol):
         s = sahneler[i]
         bitis = sahneler[i + 1]["bas"] if i + 1 < len(sahneler) else toplam
         yerel = min(1.0, max(0.0, (t - s["bas"]) / max(0.1, bitis - s["bas"])))
-        kare = B.sahne_kare(s, yerel, s["hareket"])
+        kare = kare_uret(s, yerel)
         if i > 0 and t - s["bas"] < GECIS:
             o = sahneler[i - 1]
-            kare = Image.blend(B.sahne_kare(o, 1.0, o["hareket"]), kare, (t - s["bas"]) / GECIS)
+            kare = Image.blend(kare_uret(o, 1.0), kare, (t - s["bas"]) / GECIS)
         kare.paste(G, (0, 0), G)
         d = ImageDraw.Draw(kare)
 
@@ -143,6 +175,18 @@ def render(sahneler, bolumler, toplam, kapak, yol):
             tw = d.textlength(et, font=F_ETIKET)
             d.rounded_rectangle([W - 48 - tw - 44, 30, W - 48, 30 + 62], 12, fill=(25, 15, 10), outline=ALTIN, width=2)
             d.text((W - 48 - tw - 22, 40), et, font=F_ETIKET, fill=ALTIN)
+
+        if s["fg"] is None and s.get("yazi"):   # görselsiz sahne: ortada süslü büyük yazı
+            et = B.tr_buyuk(s["yazi"])
+            f = F_KAPAK
+            while d.textlength(et, font=f) > 1500 and f.size > 60:
+                f = B.font("DejaVuSerif-Bold.ttf", f.size - 8)
+            y0 = H / 2 - f.size / 2 - 40
+            d.text(((W - d.textlength(et, font=f)) / 2, y0), et, font=f, fill=ALTIN, stroke_width=3, stroke_fill=(0, 0, 0))
+            for yy in (y0 - 50, y0 + f.size + 50):
+                d.line([W / 2 - 300, yy, W / 2 - 30, yy], fill=ALTIN, width=3)
+                d.line([W / 2 + 30, yy, W / 2 + 300, yy], fill=ALTIN, width=3)
+                d.polygon([(W / 2, yy - 14), (W / 2 + 14, yy), (W / 2, yy + 14), (W / 2 - 14, yy)], fill=ALTIN)
 
         # bölüm başlık kartı: bölümün ilk 2.6 saniyesi
         if s.get("bolum_basi") is not None and t - s["bas"] < 2.6:
@@ -296,12 +340,12 @@ def main():
         gorseller.append(g)
         anahtar = g["yol"] if g else None
         if anahtar not in hazir:
-            hazir[anahtar] = B.sahne_hazirla(anahtar)
-        bg, fg = hazir[anahtar]
+            hazir[anahtar] = sahne_hazirla(anahtar)
+        bg, fg, mod = hazir[anahtar]
         bas = max(0.0, a - (1.6 if ilk is not None and ilk >= 0 else 0.3))
         if ilk is not None and ilk >= 0:
             bolum_zamanlari.append((int(bas), konu["bolumler"][ilk]["ad"]))
-        sahneler.append({"tur": tur, "yazi": yazi, "bg": bg, "fg": fg, "bas": bas, "kon_bas": a, "kon_bit": b,
+        sahneler.append({"tur": tur, "yazi": yazi, "bg": bg, "fg": fg, "mod": mod, "bas": bas, "kon_bas": a, "kon_bit": b,
                          "altyazi": altyazi_parcalari(metin), "hareket": k,
                          "bolum_basi": ilk if (ilk is not None and ilk >= 0) else None})
     sahneler[0]["bas"] = 0.0
