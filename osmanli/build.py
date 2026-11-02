@@ -64,6 +64,7 @@ def konu_sec(kategori, seed, konu_id=""):
             if k["id"] == konu_id:
                 return k
         sys.exit(f"KONU bulunamadı: {konu_id}")
+    konular = [k for k in konular if not k.get("yayinlandi")]   # elle yayınlanmış konular sıradan çıkar
     gun = datetime.datetime.strptime(str(seed), "%Y%m%d").date()
     sira = (gun - BASLANGIC).days % len(konular)
     return konular[sira]
