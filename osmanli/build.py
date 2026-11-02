@@ -303,6 +303,18 @@ def altyazi_parcalari(metin):
     return sinirlar
 
 
+def kapanis_karti(d, yazi, gecen):
+    """Videonun sonunda altın çerçeveli küçük kart; yukarıdan yumuşakça iner."""
+    iner = min(1.0, gecen / 0.4)
+    y = int(1150 - 40 * (1 - iner) ** 2)
+    tw = d.textlength(yazi, font=F_ETIKET)
+    x0, x1 = (W - tw) / 2 - 44, (W + tw) / 2 + 44
+    d.rounded_rectangle([x0, y, x1, y + 96], 18, fill=(25, 15, 10), outline=ALTIN, width=4)
+    for x in (x0 + 20, x1 - 20):
+        d.polygon([(x, y + 36), (x + 12, y + 48), (x, y + 60), (x - 12, y + 48)], fill=ALTIN)
+    d.text(((W - tw) / 2, y + 22), yazi, font=F_ETIKET, fill=(255, 236, 160))
+
+
 def render(sahneler, toplam, kategori, kapak, vid_yol):
     global GOLGE
     GOLGE = GOLGE or golge_katmani()
@@ -334,6 +346,8 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
         if s["tur"] == "kanca":
             # kapak yazısı: başlığı tekrar etmeyen en fazla 3 kelime (yt-package)
             ortala(d, satirla(d, tr_buyuk(kapak), F_KAPAK, 980)[:2], F_KAPAK, 205, (255, 236, 160), 12, 8)
+        elif s["tur"] == "kapanis":
+            kapanis_karti(d, s["yazi"], t - s["bas"])
         elif s.get("yazi"):
             et = tr_buyuk(s["yazi"]) if len(s["yazi"]) < 18 else s["yazi"]
             tw = d.textlength(et, font=F_ETIKET)
@@ -358,12 +372,86 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
                 if a <= min(ilerle, 0.999) < b:
                     satirlar = satirla(d, parca, F_ALT, 960)[:2]
                     ortala(d, satirlar, F_ALT, 1420 - (len(satirlar) - 1) * 38,
-                           (255, 236, 160) if s["tur"] in ("kanca", "soru") else (255, 255, 255))
+                           (255, 236, 160) if s["tur"] in ("kanca", "soru", "kapanis") else (255, 255, 255))
                     break
         ff.stdin.write(kare.tobytes())
     ff.stdin.close()
     if ff.wait() != 0:
         sys.exit("ffmpeg görüntü kodlaması başarısız")
+
+
+# ---------------------------------------------------------------- video sonu (etkileşim)
+SAAT = {"saray": "11:40", "kisiler": "17:25", "savaslar": "20:10"}
+UZUN_BASI = datetime.date(2026, 11, 4)   # uzun video takvimi (uzun.py ile aynı): çarşamba ve pazar
+# 8'lik döngü: art arda videolar aynı kapanışı almaz, kabaca 4 videodan 1'i yalnızca soruyla biter
+DONGU = ["yarin", "bildin", "duz", "puan", "oneri", "yarin", "duz", "uzun"]
+KATEGORI_KAYMA = {"saray": 0, "kisiler": 1, "savaslar": 2}
+
+
+def yayinlanmis_uzunlar(bugun):
+    """Bugünden önce yayınlanmış uzun videoların konuları (bugünkü Shorts uzun videodan önce çıkar)."""
+    try:
+        with open(os.path.join(HERE, "uzun", "sira.json"), encoding="utf-8") as f:
+            sira = json.load(f)
+    except OSError:
+        return []
+    cikan, g, n = [], UZUN_BASI, 0
+    while g < bugun and n < len(sira):
+        if g.weekday() in (2, 6):
+            try:
+                with open(os.path.join(HERE, "uzun", f"{sira[n]}.json"), encoding="utf-8") as f:
+                    cikan.append(json.load(f))
+            except OSError:
+                pass
+            n += 1
+        g += datetime.timedelta(days=1)
+    return cikan
+
+
+def kapanis_sec(konu, kategori, seed):
+    """Videonun son cümleleri: [(metin, ekran kartı)], açıklamaya giden soru ve kapanış türü.
+    Tek istek kuralı (voice.md): her videoda en fazla bir şey istenir, "sonuna kadar izle" yok."""
+    gun = datetime.datetime.strptime(str(seed), "%Y%m%d").date()
+    tur = os.environ.get("KAPANIS") or DONGU[((gun - BASLANGIC).days * 3 + KATEGORI_KAYMA.get(kategori, 0)) % len(DONGU)]
+    soru = konu["soru"]
+    kaotik = kategori == "savaslar" or konu.get("tur") == "az-bilinen"
+
+    if tur == "puan" and not kaotik:
+        tur = "bildin"
+    if tur == "uzun":
+        ozel = {e.casefold() for e in konu.get("etiketler", [])} - {"osmanlı tarihi", "osmanlı tarihi belgesel"}
+        uzun = next((u for u in yayinlanmis_uzunlar(gun)
+                     if ozel & {e.casefold() for e in u.get("etiketler", [])}), None)
+        if not uzun:
+            tur = "takip"
+
+    if tur == "yarin":
+        sonraki = konu_sec(kategori, int((gun + datetime.timedelta(days=1)).strftime("%Y%m%d")))
+        if sonraki["id"] == konu["id"]:
+            return [(soru, None)], soru, "duz"
+        ad = emojisiz(baslik_sec(seed + 1, sonraki)).rstrip(" ?!.")
+        return [(soru, None), (f"Yarın aynı saatte: {ad}.", f"YARIN {SAAT.get(kategori, '')}")], \
+            soru + f"\n\nYarın aynı saatte: {ad}", tur
+    if tur == "bildin":
+        if konu.get("tur") == "az-bilinen":
+            m = "Bunu daha önce duymuş muydun? Biliyorsan biliyordum, ilk kez duyduysan yeni öğrendim yaz."
+        else:
+            m = "Bu hikâyeyi böyle mi biliyordun? Yorumlara bir kelimeyle yaz: biliyordum ya da ilk kez duydum."
+        return [(m, "BİLİYOR MUYDUN?")], m, tur
+    if tur == "puan":
+        m = "Sence bu olay ne kadar kaotikti? Birden ona kadar bir puan ver, yorumlara yaz."
+        return [(m, "KAOS PUANIN: 1 – 10")], m.replace("Birden ona", "1'den 10'a"), tur
+    if tur == "oneri":
+        m = "Sıradaki Osmanlı hikâyesini sen seç: hangi olayı merak ediyorsan yorumlara yaz."
+        return [(m, "SIRADAKİNİ SEN SEÇ")], m, tur
+    if tur == "uzun":
+        m = "Bu hikâyenin tamamını, perde arkasıyla birlikte kanaldaki uzun videoda anlattık."
+        return [(soru, None), (m, "TAMAMI UZUN VİDEODA")], soru + "\n\nHikâyenin tamamı kanaldaki uzun videoda: " + \
+            emojisiz(uzun["baslik"][0]), tur
+    if tur == "takip":
+        m = "Osmanlının az bilinen hikâyeleri için takipte kal."
+        return [(soru, None), (m, "TAKİPTE KAL")], soru, tur
+    return [(soru, None)], soru, "duz"
 
 
 # ---------------------------------------------------------------- ana akış
@@ -387,9 +475,11 @@ def main():
         if ozel:
             gorseller.append(ozel)
             kanca_gi = len(gorseller) - 1
+    kapanis, aciklama_sorusu, kapanis_turu = kapanis_sec(konu, kategori, seed)
+    print(f"Kapanış: {kapanis_turu}", flush=True)
     parcalar = [("kanca", konu["kanca"], None, kanca_gi)] + \
                [("sahne", sh["metin"], sh.get("yazi"), j) for j, sh in enumerate(konu["sahneler"])] + \
-               [("soru", konu["soru"], None, len(konu["sahneler"]) - 1)]
+               [("kapanis" if kart else "soru", m, kart, len(konu["sahneler"]) - 1) for m, kart in kapanis]
 
     ses, zaman = ses_uret([p[1] for p in parcalar], os.path.join(OUT, "tts"))
     toplam = len(ses) / SR
@@ -428,7 +518,8 @@ def main():
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest",
                     "-movflags", "+faststart", os.path.join(OUT, "video.mp4")], check=True)
 
-    meta = meta_olustur(konu, kategori, seed_baslik, gorseller)
+    meta = meta_olustur(konu, kategori, seed_baslik, gorseller, aciklama_sorusu)
+    meta["kapanis"] = kapanis_turu
     with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
     print(json.dumps(meta, ensure_ascii=False, indent=2))
@@ -442,7 +533,7 @@ def tr_baslik_harf(s):
     return " ".join((w[:1].replace("i", "İ").replace("ı", "I").upper() + w[1:]) if w else w for w in s.split(" "))
 
 
-def meta_olustur(konu, kategori, baslik, gorseller):
+def meta_olustur(konu, kategori, baslik, gorseller, soru=None):
     """yt-seo: açıklamanın ilk iki satırı arama kutusuna yazılan kelimeleri taşır ("...daha fazla"nın üstü),
     sonra kaynak, sonra uzun hâl. Etiketler en fazla 15 ve yalnızca ayırt edici yazımlar için."""
     sanatcilar = sorted({g["sanatci"] for g in gorseller if g and g.get("sanatci")})
@@ -456,7 +547,7 @@ def meta_olustur(konu, kategori, baslik, gorseller):
     uzun = " ".join(sh["metin"] for sh in konu["sahneler"])
     aciklama = (f"{satir1}\n{satir2}\n\n"
                 f"{uzun}\n\n"
-                f"{konu['soru']}\n\n"
+                f"{soru or konu['soru']}\n\n"
                 f"Osmanlı tarihinden savaşlar, isyanlar, saray hayatı ve tarihe yön veren insanlar; her gün yeni bir hikâye. "
                 f"Rivayetleri rivayet, bilgileri bilgi olarak anlatıyoruz. Abone olmayı unutma!\n\n"
                 f"{gorsel_satiri}\n\n"

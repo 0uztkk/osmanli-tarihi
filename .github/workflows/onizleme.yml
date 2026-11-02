@@ -13,6 +13,9 @@ on:
       konu:
         description: "Konu id"
         default: ""
+      kapanis:
+        description: "Video sonu (bos = takvime gore; yarin/bildin/puan/oneri/uzun/takip/duz)"
+        default: ""
 
 permissions:
   contents: write
@@ -35,6 +38,7 @@ jobs:
         env:
           KATEGORI: ${{ github.event.inputs.kategori || 'savaslar' }}
           KONU: ${{ github.event.inputs.konu }}
+          KAPANIS: ${{ github.event.inputs.kapanis }}
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: |
           set -o pipefail
