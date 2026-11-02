@@ -3,6 +3,7 @@ name: Uzun video (carsamba ve pazar)
 on:
   schedule:
     - cron: "41 15 * * 3,0"   # çarşamba ve pazar 18:41 (Türkiye saati)
+    - cron: "11 17 * * 3,0"   #   yedek 20:11 (asıl yüklediyse aynı başlığı görüp yüklemez)
   workflow_dispatch:
     inputs:
       konu:
