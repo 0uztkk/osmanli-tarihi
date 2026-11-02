@@ -4,10 +4,13 @@ on:
   schedule:
     - cron: "40 8 * * *"    # her gün 11:40 (Türkiye saati) -> Saray hayatı
     - cron: "10 9 * * *"    #   yedek 12:10 (asıl çalıştıysa aynı başlığı görüp yüklemez)
+    - cron: "47 9 * * *"    #   2. yedek 12:47 (GitHub bazen zamanlanmış çalışmaları hiç başlatmıyor)
     - cron: "25 14 * * *"   # her gün 17:25 (Türkiye saati) -> Tarihten portreler
     - cron: "55 14 * * *"   #   yedek 17:55
+    - cron: "31 15 * * *"   #   2. yedek 18:31
     - cron: "10 17 * * *"   # her gün 20:10 (Türkiye saati) -> Savaşlar
     - cron: "40 17 * * *"   #   yedek 20:40
+    - cron: "19 18 * * *"   #   2. yedek 21:19
   workflow_dispatch:
     inputs:
       kategori:
@@ -71,7 +74,7 @@ jobs:
         env:
           SEED: ${{ github.event.inputs.seed }}
           KONU: ${{ github.event.inputs.konu }}
-          KATEGORI: ${{ (github.event.schedule == '40 8 * * *' || github.event.schedule == '10 9 * * *') && 'saray' || (github.event.schedule == '25 14 * * *' || github.event.schedule == '55 14 * * *') && 'kisiler' || github.event.inputs.kategori || 'savaslar' }}
+          KATEGORI: ${{ (github.event.schedule == '40 8 * * *' || github.event.schedule == '10 9 * * *' || github.event.schedule == '47 9 * * *') && 'saray' || (github.event.schedule == '25 14 * * *' || github.event.schedule == '55 14 * * *' || github.event.schedule == '31 15 * * *') && 'kisiler' || github.event.inputs.kategori || 'savaslar' }}
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: python osmanli/build.py
 
