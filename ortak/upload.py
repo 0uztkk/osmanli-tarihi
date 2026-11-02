@@ -38,6 +38,19 @@ def kanal_kontrol(yt):
     return ad
 
 
+def zaten_yuklendi(yt, baslik, adet=15):
+    """Kanalın son yüklemelerinde aynı başlık varsa True. Gecikmeli zamanlanmış görevle elle başlatılan
+    görev üst üste gelirse aynı videonun iki kez yüklenmesini engeller."""
+    try:
+        ch = yt.channels().list(part="contentDetails", mine=True).execute()
+        pl = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+        items = yt.playlistItems().list(part="snippet", playlistId=pl, maxResults=adet).execute().get("items", [])
+        return any(i["snippet"]["title"].strip() == baslik.strip() for i in items)
+    except Exception as e:
+        print("UYARI: Önceki yüklemeler kontrol edilemedi:", e)
+        return False
+
+
 def yukle(path, meta, privacy="public", yt=None, shorts=True):
     """Videoyu yükler (çocuklara yönelik işareti MADE_FOR_KIDS'e göre), video kimliğini döner."""
     yt = yt or youtube()

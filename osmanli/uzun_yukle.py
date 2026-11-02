@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.join(ROOT, "ortak"))
 os.environ["MADE_FOR_KIDS"] = "false"
 
 from googleapiclient.http import MediaFileUpload  # noqa: E402
-from upload import kanal_kontrol, youtube, yukle  # noqa: E402
+from upload import kanal_kontrol, youtube, yukle, zaten_yuklendi  # noqa: E402
 
 OUT = os.path.join(ROOT, "out")
 
@@ -23,6 +23,9 @@ def main():
     ad = kanal_kontrol(yt)
     if "mina" in ad.casefold():
         sys.exit(f"HATA: Bu token '{ad}' kanalına ait; yükleme iptal.")
+    if zaten_yuklendi(yt, meta["title"]):
+        print("Bu video zaten yüklenmiş:", meta["title"], "– tekrar yüklenmedi.")
+        return
     vid = yukle(os.path.join(OUT, "uzun.mp4"), meta, os.environ.get("PRIVACY", "public"), yt, shorts=False)
     try:
         yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(os.path.join(OUT, "kucuk_resim.jpg"),

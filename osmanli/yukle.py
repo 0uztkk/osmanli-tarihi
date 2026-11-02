@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "ortak"))
 os.environ["MADE_FOR_KIDS"] = "false"
 
-from upload import kanal_kontrol, youtube, yukle  # noqa: E402
+from upload import kanal_kontrol, youtube, yukle, zaten_yuklendi  # noqa: E402
 
 OUT = os.path.join(ROOT, "out")
 
@@ -26,6 +26,9 @@ def main():
     if "mina" in ad.casefold():
         sys.exit(f"HATA: Bu token '{ad}' kanalına ait. Osmanlı videosu çocuk kanalına yüklenmez; "
                  "YT_REFRESH_TOKEN secret'ını yeni kanalın hesabıyla alın.")
+    if zaten_yuklendi(yt, meta["title"]):
+        print("Bu video zaten yüklenmiş:", meta["title"], "– tekrar yüklenmedi.")
+        return
     yukle(os.path.join(OUT, "video.mp4"), meta, os.environ.get("PRIVACY", "public"), yt)
 
 
