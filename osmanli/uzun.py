@@ -176,7 +176,8 @@ def render(sahneler, bolumler, toplam, kapak, yol):
             d.rounded_rectangle([W - 48 - tw - 44, 30, W - 48, 30 + 62], 12, fill=(25, 15, 10), outline=ALTIN, width=2)
             d.text((W - 48 - tw - 22, 40), et, font=F_ETIKET, fill=ALTIN)
 
-        if s["fg"] is None and s.get("yazi"):   # görselsiz sahne: ortada süslü büyük yazı
+        kart_suruyor = s.get("bolum_basi") is not None and t - s["bas"] < 2.6
+        if s["fg"] is None and s.get("yazi") and not kart_suruyor:   # görselsiz sahne: ortada süslü büyük yazı
             et = B.tr_buyuk(s["yazi"])
             f = F_KAPAK
             while d.textlength(et, font=f) > 1500 and f.size > 60:
