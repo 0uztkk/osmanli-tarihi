@@ -42,8 +42,10 @@ jobs:
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: |
           set -o pipefail
-          python osmanli/build.py 2>&1 | tee out_log.txt
-          mv out_log.txt out/log.txt
+          durum=0
+          python osmanli/build.py 2>&1 | tee out_log.txt || durum=1
+          mkdir -p out && mv out_log.txt out/log.txt
+          [ $durum = 0 ] || exit 1
           mkdir -p out/kareler
           for t in 1 6 15 25 35; do ffmpeg -y -loglevel error -ss $t -i out/video.mp4 -frames:v 1 -vf scale=540:-1 out/kareler/k$t.jpg || true; done
       - name: Görsel adaylarını çıkar (osmanli/onizleme_aramalar.txt varsa)
