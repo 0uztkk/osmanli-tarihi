@@ -327,27 +327,31 @@ def kutu_parcalari(metin):
     return sinirlar
 
 
-def altyazi_kutu(d, parca, ic, y=1400, vurgu_renk=(255, 204, 60)):
-    """Krem kutu içinde koyu yazı; o an söylenen kelimenin arkası sarı."""
+def altyazi_kutu(d, parca, ic, y=1400, vurgu_renk=(255, 200, 80)):
+    """Kanalın kendi stili: koyu mürekkep plaka, ince altın çerçeve, krem yazı;
+    o an söylenen kelime altın renge döner ve altına kısa bir altın çizgi gelir."""
     kelimeler = parca.split()
     uz = [len(k) + 1 for k in kelimeler]
     hedef, n = ic * sum(uz), 0
     for i, l in enumerate(uz):
-        if hedef < l:
-            n = i; break
-        hedef -= l
         n = i
+        if hedef < l:
+            break
+        hedef -= l
     bosluk = d.textlength(" ", font=F_KUTU)
     gen = [d.textlength(k, font=F_KUTU) for k in kelimeler]
     tw = sum(gen) + bosluk * (len(kelimeler) - 1)
-    x0, x1 = (W - tw) / 2 - 34, (W + tw) / 2 + 34
-    d.rounded_rectangle([x0 + 7, y + 9, x1 + 7, y + 104], 18, fill=(0, 0, 0))
-    d.rounded_rectangle([x0, y, x1, y + 96], 18, fill=(246, 234, 204), outline=(48, 32, 20), width=5)
+    x0, x1 = (W - tw) / 2 - 38, (W + tw) / 2 + 38
+    d.rectangle([x0 + 8, y + 10, x1 + 8, y + 112], fill=(8, 6, 4))
+    d.rectangle([x0, y, x1, y + 102], fill=(28, 20, 14), outline=(232, 190, 105), width=3)
+    for cx in (x0, x1):   # köşelerde küçük baklava süsü
+        d.polygon([(cx, y + 37), (cx + 14, y + 51), (cx, y + 65), (cx - 14, y + 51)], fill=(232, 190, 105))
     x = (W - tw) / 2
     for i, k in enumerate(kelimeler):
+        renk = vurgu_renk if i == n else (246, 234, 204)
+        d.text((x, y + 10), k, font=F_KUTU, fill=renk)
         if i == n:
-            d.rounded_rectangle([x - 10, y + 12, x + gen[i] + 10, y + 84], 12, fill=vurgu_renk)
-        d.text((x, y + 8), k, font=F_KUTU, fill=(40, 26, 16))
+            d.line([(x, y + 90), (x + gen[i], y + 90)], fill=vurgu_renk, width=5)
         x += gen[i] + bosluk
 
 
@@ -423,7 +427,7 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
             for a, b, parca in s["altyazi"]:
                 if a <= min(ilerle, 0.999) < b and s.get("kutu"):
                     altyazi_kutu(d, parca, (min(ilerle, 0.999) - a) / (b - a),
-                                 vurgu_renk=(255, 204, 60) if s["tur"] == "sahne" else (255, 170, 90))
+                                 vurgu_renk=(255, 200, 80) if s["tur"] == "sahne" else (255, 160, 110))
                     break
                 if a <= min(ilerle, 0.999) < b:
                     satirlar = satirla(d, parca, F_ALT, 960)[:2]

@@ -120,29 +120,439 @@
         "yazi": "29 Ağustos 1526",
         "metin": "Kanuni Sultan Süleyman'ın ordusu, Macar kralı İkinci Layoş'un ordusuyla Mohaç Ovası'nda karşılaştı.",
         "gorsel": [
-          "File:1526-Sultan Suleiman with his solaks (cropped) during the Battle of Mohacs (double page)-Suleymanname.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            23.6,
+            44.0
+          ],
+          "genislik": 13,
+          "odak": [
+            19.5,
+            45.4
+          ],
+          "zoom": 1.1,
+          "baslik": {
+            "ust": "1526",
+            "alt": "Mohaç · 29 Ağustos"
+          },
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            },
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "bas": 0.35
+            },
+            {
+              "ad": "Mohaç",
+              "lon": 18.68,
+              "lat": 45.99,
+              "bas": 0.65,
+              "yan": "sag"
+            },
+            {
+              "ad": "Macaristan",
+              "lon": 19.6,
+              "lat": 47.0,
+              "tip": "bolge"
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  24.75,
+                  42.15
+                ],
+                [
+                  23.32,
+                  42.7
+                ],
+                [
+                  21.9,
+                  43.3
+                ],
+                [
+                  20.46,
+                  44.82
+                ],
+                [
+                  19.3,
+                  45.4
+                ],
+                [
+                  18.75,
+                  45.95
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.05,
+              "bit": 0.85,
+              "boy": 95
+            }
+          ]
+        }
       },
       {
         "yazi": "Ağır zırhlı şövalyeler",
         "metin": "Macar ağır süvarileri hücuma kalktı. Osmanlı merkezi geri çekilir gibi yaptı ve şövalyeleri topların önüne çekti.",
         "gorsel": [
-          "File:Battle of Mohács, Turkish miniature.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Osmanlı planı",
+          "nehir": "Tuna",
+          "bataklik": [
+            300,
+            1700
+          ],
+          "birlikler": [
+            {
+              "taraf": "dusman",
+              "xy": [
+                460,
+                520
+              ],
+              "hedef": [
+                460,
+                900
+              ],
+              "bas": 0.05,
+              "bit": 0.55,
+              "wh": [
+                380,
+                130
+              ],
+              "etiket": "Macar süvarisi"
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                460,
+                1080
+              ],
+              "hedef": [
+                460,
+                1250
+              ],
+              "bas": 0.15,
+              "bit": 0.5,
+              "wh": [
+                300,
+                110
+              ],
+              "etiket": "Merkez",
+              "etiket_ust": false
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                140,
+                880
+              ],
+              "wh": [
+                150,
+                220
+              ]
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                780,
+                880
+              ],
+              "wh": [
+                150,
+                220
+              ]
+            }
+          ],
+          "oklar": [
+            {
+              "taraf": "dusman",
+              "bas_xy": [
+                460,
+                600
+              ],
+              "son_xy": [
+                460,
+                860
+              ],
+              "bas": 0.08
+            },
+            {
+              "taraf": "osmanli",
+              "bas_xy": [
+                460,
+                1130
+              ],
+              "son_xy": [
+                460,
+                1300
+              ],
+              "bas": 0.25
+            }
+          ],
+          "toplar": [
+            {
+              "xy": [
+                340,
+                1150
+              ],
+              "bas": 0.55
+            },
+            {
+              "xy": [
+                460,
+                1150
+              ],
+              "bas": 0.58
+            },
+            {
+              "xy": [
+                580,
+                1150
+              ],
+              "bas": 0.61
+            }
+          ]
+        }
       },
       {
         "yazi": "Kısa ve kesin",
-        "metin": "Topçu ateşi ve kuşatma hareketiyle Macar ordusu kısa sürede dağıldı. Kral Layoş kaçarken bir derede boğuldu.",
         "gorsel": [
-          "File:II. Lajos holttestének megtalálása (Székely Bertalan, 1860).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Kuşatma",
+          "nehir": "Tuna",
+          "bataklik": [
+            300,
+            1700
+          ],
+          "birlikler": [
+            {
+              "taraf": "dusman",
+              "xy": [
+                460,
+                900
+              ],
+              "wh": [
+                380,
+                130
+              ],
+              "etiket": "Macar ordusu"
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                140,
+                880
+              ],
+              "hedef": [
+                230,
+                640
+              ],
+              "bas": 0.05,
+              "bit": 0.45,
+              "wh": [
+                150,
+                220
+              ]
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                780,
+                880
+              ],
+              "hedef": [
+                690,
+                640
+              ],
+              "bas": 0.05,
+              "bit": 0.45,
+              "wh": [
+                150,
+                220
+              ]
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                460,
+                1250
+              ],
+              "hedef": [
+                460,
+                1060
+              ],
+              "bas": 0.1,
+              "bit": 0.5,
+              "wh": [
+                300,
+                110
+              ]
+            }
+          ],
+          "oklar": [
+            {
+              "taraf": "osmanli",
+              "bas_xy": [
+                140,
+                1000
+              ],
+              "son_xy": [
+                210,
+                700
+              ],
+              "bas": 0.0
+            },
+            {
+              "taraf": "osmanli",
+              "bas_xy": [
+                780,
+                1000
+              ],
+              "son_xy": [
+                710,
+                700
+              ],
+              "bas": 0.0
+            }
+          ],
+          "toplar": [
+            {
+              "xy": [
+                340,
+                1150
+              ],
+              "bas": 0.0
+            },
+            {
+              "xy": [
+                580,
+                1150
+              ],
+              "bas": 0.0
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              460,
+              900
+            ],
+            "bas": 0.5
+          }
+        },
+        "metin": "Topçu ateşi ve kuşatma hareketiyle Macar ordusu iki saat dolmadan dağıldı."
+      },
+      {
+        "yazi": "Kral Layoş",
+        "gorsel": [
+          "-"
+        ],
+        "metin": "Kral İkinci Layoş kaçarken bataklık bir derede, zırhının ağırlığıyla boğuldu."
       },
       {
         "yazi": "Sonuç",
-        "metin": "Bu zaferle Macaristan'ın büyük bölümü Osmanlı etkisine girdi ve yol Viyana'ya kadar açıldı.",
         "gorsel": [
-          "File:1526-Sultan Suleiman during the Battle of Mohacs (double page)-Suleymanname.jpg"
-        ]
+          "-"
+        ],
+        "metin": "Bu zaferle Macaristan'ın büyük bölümü Osmanlı etkisine girdi ve yol Viyana'ya kadar açıldı.",
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            18.4,
+            46.9
+          ],
+          "genislik": 9.5,
+          "odak": [
+            18.3,
+            47.3
+          ],
+          "zoom": 1.1,
+          "etiketler": [
+            {
+              "ad": "Mohaç",
+              "lon": 18.68,
+              "lat": 45.99
+            },
+            {
+              "ad": "Buda",
+              "lon": 19.04,
+              "lat": 47.5,
+              "bas": 0.2
+            },
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "bas": 0.55,
+              "yan": "sag"
+            }
+          ],
+          "vurgu": {
+            "lon": 19.3,
+            "lat": 47.0,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  18.68,
+                  45.99
+                ],
+                [
+                  18.9,
+                  46.8
+                ],
+                [
+                  19.04,
+                  47.45
+                ],
+                [
+                  17.9,
+                  47.8
+                ],
+                [
+                  16.5,
+                  48.15
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.3,
+              "bit": 0.9,
+              "boy": 85
+            }
+          ]
+        }
       }
     ],
     "soru": "Mohaç'ı daha önce duymuş muydun?",
@@ -155,7 +565,8 @@
     "kapak": "KRAL BOĞULDU",
     "kanca_gorsel": [
       "File:1526-Suleiman the Magnificent and the Battle of Mohacs-Hunername-large.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "caldiran",
