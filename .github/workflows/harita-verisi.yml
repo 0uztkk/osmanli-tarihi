@@ -1,0 +1,19 @@
+name: Harita verisi (bir kez)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  hazirla:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install shapely
+      - run: python osmanli/araclar/harita_verisi.py
+      - run: |
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com add osmanli/assets/harita_kara.json
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -m "Harita verisi (Natural Earth, kamu malı)"
+          git push
