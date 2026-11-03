@@ -12,8 +12,43 @@
         "yazi": "Söğüt",
         "metin": "On üçüncü yüzyılın sonunda Söğüt çevresinde küçük bir Türkmen beyliği vardı. Başında Ertuğrul Gazi'nin oğlu Osman Bey bulunuyordu.",
         "gorsel": [
-          "File:Imaginary portrait of Sultan Osman I. 18th century.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1299",
+            "alt": "Söğüt"
+          },
+          "zoom": 1.08,
+          "odak": [
+            30.18,
+            40.02
+          ],
+          "etiketler": [
+            {
+              "ad": "Söğüt",
+              "lon": 30.18,
+              "lat": 40.02,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            30.18,
+            40.52
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 30.18,
+            "lat": 40.02,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Şeyh Edebali",
@@ -47,7 +82,9 @@
     "kapak": "ŞEYH EDEBALİ",
     "kanca_gorsel": [
       "File:Sultan Gazi ʻUthmān Han I - السُلطان الغازي عُثمان خان الأوَّل.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "yavuz-babasini-indirdi",
@@ -62,8 +99,43 @@
         "yazi": "Taht yarışı",
         "metin": "İkinci Bayezid yaşlanınca oğulları Ahmed, Korkud ve Selim arasında taht yarışı başladı. Babanın gözdesi Ahmed'di.",
         "gorsel": [
-          "File:Portrait of Bayezid II from a 16th century Ottoman miniature.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1511",
+            "alt": "Çorlu"
+          },
+          "zoom": 1.08,
+          "odak": [
+            27.8,
+            41.16
+          ],
+          "etiketler": [
+            {
+              "ad": "Çorlu",
+              "lon": 27.8,
+              "lat": 41.16,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            27.8,
+            41.66
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 27.8,
+            "lat": 41.16,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Çorlu, 1511",
@@ -97,7 +169,9 @@
     "kapak": "BABA OĞUL SAVAŞI",
     "kanca_gorsel": [
       "File:Badi' al-Zaman Mirza in the presence of Sultan Selim I in Istanbul in 1514 (miniature). Selīm-nāma, by Şūkrī-i Bitlisī, 1524 (National Library of Israel, Ms. Yah. Ar. 1116).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "orhan-gazi",
@@ -112,8 +186,43 @@
         "yazi": "Orhan Gazi",
         "metin": "Osman Gazi'nin oğlu Orhan Gazi, Osmanlı'yı küçük bir beylikten düzenli bir devlete dönüştüren hükümdardır.",
         "gorsel": [
-          "File:Portret van Orhan, RP-P-OB-43.237.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1331",
+            "alt": "Bursa"
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.06,
+            40.19
+          ],
+          "etiketler": [
+            {
+              "ad": "Bursa",
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.06,
+            40.69
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 29.06,
+            "lat": 40.19,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Akçe",
@@ -147,7 +256,9 @@
     "kapak": "İLK AKÇE",
     "kanca_gorsel": [
       "File:Ottoman Sultan Orhan I with his son Suleyman Pasha (miniature), from The Cream of Histories (Zubdat al-tawarikh) by Sayyid Luqman-i 'Ashuri, T 414.146.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "yildirim",
@@ -581,8 +692,84 @@
         "yazi": "İkinci Bayezid",
         "metin": "Fatih'in oğlu İkinci Bayezid, sakin ve dindar kişiliği nedeniyle Veli lakabıyla anılır.",
         "gorsel": [
-          "File:Ottoman Sultan Bayezid II (miniature), from The Cream of Histories (Zubdat al-tawarikh) by Sayyid Luqman-i 'Ashuri.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1502",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            12.28,
+            46.968
+          ],
+          "genislik": 50.1,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  -4.42,
+                  36.72
+                ],
+                [
+                  -1.0,
+                  37.4
+                ],
+                [
+                  5.0,
+                  37.6
+                ],
+                [
+                  11.0,
+                  37.6
+                ],
+                [
+                  16.5,
+                  36.6
+                ],
+                [
+                  22.0,
+                  36.2
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  28.95,
+                  41.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ]
+        }
       },
       {
         "yazi": "1502",
@@ -616,7 +803,9 @@
     "kapak": "TEK KEMERLİ",
     "kanca_gorsel": [
       "File:Leonardo De Mango Am Goldenen Horn 1884.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "yavuz-sair",
@@ -631,8 +820,43 @@
         "yazi": "1512",
         "metin": "Yavuz Sultan Selim sadece sekiz yıl tahtta kaldı. Ama bu kısa sürede devletin sınırlarını büyük ölçüde genişletti.",
         "gorsel": [
-          "File:Istanbul, Topkapi Palace Museum MS Hazine 1563 fol. 47v Suleyman I by Nakkaş Osman.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1512",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Seferler",
@@ -666,7 +890,9 @@
     "kapak": "FARSÇA DİVAN",
     "kanca_gorsel": [
       "File:\"Shah Ismail at the Battle of Chaldiran\", from Bijan’s Tarikh-i Jahangusha-yi Khaqan Sahibqiran.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kanuni-muhibbi",
@@ -681,8 +907,43 @@
         "yazi": "1520-1566",
         "metin": "Kanuni Sultan Süleyman, kırk altı yıl ile en uzun süre tahtta kalan Osmanlı padişahıdır.",
         "gorsel": [
-          "File:Suleiman the Magnificent of the Ottoman Empire.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1520",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Kanuni",
@@ -716,7 +977,9 @@
     "kapak": "46 YIL",
     "kanca_gorsel": [
       "File:Portrait Suleiman Magnificent.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "sehzade-bayezid",
@@ -731,8 +994,60 @@
         "yazi": "Selim ve Bayezid",
         "metin": "Şehzade Mustafa'nın ölümünden sonra Kanuni'nin tahta aday iki oğlu kalmıştı: Selim ve Bayezid.",
         "gorsel": [
-          "File:Portrait of Selim II by Nakkaş Osman, Şemâ'ilnâme, 1579, Istanbul, Topkapı Sarayı Müzesi, Н. 1563.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1559",
+            "alt": "Konya"
+          },
+          "zoom": 1.05,
+          "odak": [
+            32.48,
+            37.87
+          ],
+          "etiketler": [
+            {
+              "ad": "Konya",
+              "lon": 32.48,
+              "lat": 37.87,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            41.24,
+            41.892
+          ],
+          "genislik": 26.28,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  32.48,
+                  37.87
+                ],
+                [
+                  38.0,
+                  38.6
+                ],
+                [
+                  44.0,
+                  38.0
+                ],
+                [
+                  50.0,
+                  36.27
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ]
+        }
       },
       {
         "yazi": "Konya, 1559",
@@ -766,7 +1081,9 @@
     "kapak": "SAFEVİ SARAYINDA",
     "kanca_gorsel": [
       "File:Portrait of Shah Tahmasp I. Inscribed \"Tammas Pers\". Painted by Cristofano dell'Altissimo, dated 1552-1568.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "sokullu",
@@ -781,8 +1098,43 @@
         "yazi": "Sokullu Mehmed Paşa",
         "metin": "Bosna'da doğan Sokullu Mehmed Paşa, devşirme olarak saraya geldi ve Enderun'da yetişti.",
         "gorsel": [
-          "File:Mehmed Sokolović (ca 1505-1579).png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "VIŞEGRAD",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            19.29,
+            43.78
+          ],
+          "etiketler": [
+            {
+              "ad": "Vişegrad",
+              "lon": 19.29,
+              "lat": 43.78,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            19.29,
+            44.28
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 19.29,
+            "lat": 43.78,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Üç padişah",
@@ -816,7 +1168,9 @@
     "kapak": "KIZILDENİZ HAYALİ",
     "kanca_gorsel": [
       "File:Grand Vizier Sokollu Mehmed Pasha (portrait) mourning the sultan’s death; Nüzhet, fol. 41a.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "birinci-ahmed",
@@ -831,8 +1185,43 @@
         "yazi": "1603",
         "metin": "Birinci Ahmed on üç yaşında tahta çıktı. Kardeşi Mustafa'yı öldürtmeyen ilk padişahlardan biri oldu.",
         "gorsel": [
-          "File:Portrait of Sultan Ahmed I.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1603",
+            "alt": "Sultanahmet Camii"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.977,
+            41.005
+          ],
+          "etiketler": [
+            {
+              "ad": "Sultanahmet Camii",
+              "lon": 28.977,
+              "lat": 41.005,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.977,
+            41.065000000000005
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.977,
+            "lat": 41.005,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Sultanahmet Camii",
@@ -866,7 +1255,9 @@
     "kapak": "BİR HARF FARKI",
     "kanca_gorsel": [
       "File:Ahmed I by John Young.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "genc-osman",
@@ -881,8 +1272,57 @@
         "yazi": "1618",
         "metin": "İkinci Osman on üç yaşında tahta çıktı. Tarihe Genç Osman olarak geçti.",
         "gorsel": [
-          "File:Portrait of Osman II, 1618. Hazine 2169.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1618",
+            "alt": "Hotin"
+          },
+          "zoom": 1.05,
+          "odak": [
+            26.49,
+            48.51
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Hotin",
+              "lon": 26.49,
+              "lat": 48.51,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            27.735,
+            46.29
+          ],
+          "genislik": 10.088,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  26.49,
+                  48.51
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ]
+        }
       },
       {
         "yazi": "Hotin",
@@ -903,7 +1343,43 @@
         "metin": "Genç Osman tahttan indirildi ve Yedikule Zindanları'nda öldürüldü. Bir padişahın askerler tarafından öldürüldüğü ilk olaydı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            26.49,
+            48.76
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            26.49,
+            48.51
+          ],
+          "etiketler": [
+            {
+              "ad": "Hotin",
+              "lon": 26.49,
+              "lat": 48.51
+            }
+          ],
+          "vurgu": {
+            "lon": 26.49,
+            "lat": 48.51,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Yedikule",
+            "lon": 26.49,
+            "lat": 48.51,
+            "bas": 0.35
+          }
+        }
       }
     ],
     "soru": "Genç Osman'ın fikirleri sence doğru muydu?",
@@ -916,7 +1392,9 @@
     "kapak": "YEDİKULE",
     "kanca_gorsel": [
       "File:Osman II by John Young.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "dorduncu-murad",
@@ -931,8 +1409,64 @@
         "yazi": "1623",
         "metin": "Dördüncü Murad on bir yaşında tahta çıktı. İlk yıllarda devleti annesi Kösem Sultan ve devlet adamları yönetti.",
         "gorsel": [
-          "File:Murad IV portrait. Topkapi Palace Museum Library, H. 2148, 11b.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1623",
+            "alt": "Bağdat"
+          },
+          "zoom": 1.05,
+          "odak": [
+            44.36,
+            33.31
+          ],
+          "etiketler": [
+            {
+              "ad": "Bağdat",
+              "lon": 44.36,
+              "lat": 33.31,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            36.745,
+            41.125
+          ],
+          "genislik": 23.295,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  36.0,
+                  39.5
+                ],
+                [
+                  44.51,
+                  40.18
+                ],
+                [
+                  44.4,
+                  36.5
+                ],
+                [
+                  44.36,
+                  33.35
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ]
+        }
       },
       {
         "yazi": "Sert yönetim",
@@ -966,7 +1500,9 @@
     "kapak": "1638 ZAFERİ",
     "kanca_gorsel": [
       "File:IV. Murat.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "avci-mehmed",
@@ -981,8 +1517,43 @@
         "yazi": "1648",
         "metin": "Dördüncü Mehmed, babası Sultan İbrahim tahttan indirilince altı yaşında padişah oldu.",
         "gorsel": [
-          "File:Mehmed IV by John Young.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1648",
+            "alt": "Edirne"
+          },
+          "zoom": 1.08,
+          "odak": [
+            26.56,
+            41.68
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            26.56,
+            42.18
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 26.56,
+            "lat": 41.68,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Köprülüler",
@@ -1016,7 +1587,9 @@
     "kapak": "KÖPRÜLÜLER",
     "kanca_gorsel": [
       "File:Pierre Paul Sevin - Poselstwo Jana Gnińskiego do Stambułu 1679.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "ucuncu-selim",
@@ -1031,8 +1604,43 @@
         "yazi": "1789",
         "metin": "Üçüncü Selim tahta çıktığında devletin yenilenmesi gerektiğine inanıyordu.",
         "gorsel": [
-          "File:Konstantin Kapidagli. Jülüs ceremony (Enthronement ceremony) of Selim III. c. 1789. Topkapi Saray museum..jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1789",
+            "alt": "Topkapı Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Nizam-ı Cedid",
@@ -1066,7 +1674,9 @@
     "kapak": "SUZİDİLARA",
     "kanca_gorsel": [
       "File:Sultan lll. Selim.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "ikinci-mahmud",
@@ -1081,8 +1691,43 @@
         "yazi": "1808",
         "metin": "İkinci Mahmud, amcası Üçüncü Selim'in öldürüldüğü isyanın ardından tahta çıktı. Yenilikleri dikkatle ve sabırla hazırladı.",
         "gorsel": [
-          "File:Portrait of Sultan Mahmud II of Turkey.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1808",
+            "alt": "Et Meydanı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.952,
+            41.009
+          ],
+          "etiketler": [
+            {
+              "ad": "Et Meydanı",
+              "lon": 28.952,
+              "lat": 41.009,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.952,
+            41.069
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.952,
+            "lat": 41.009,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "1826",
@@ -1116,7 +1761,9 @@
     "kapak": "VAKA-İ HAYRİYE",
     "kanca_gorsel": [
       "File:Mahmud II.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "abdulmecid-irlanda",
@@ -1131,8 +1778,92 @@
         "yazi": "1845-1849",
         "metin": "İrlanda'da patates hastalığı yüzünden Büyük Kıtlık yaşandı. Yaklaşık bir milyon insan hayatını kaybetti.",
         "gorsel": [
-          "File:The Famine in Ireland, Funeral at Skibbereen - ILN 1847.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1845",
+            "alt": "İrlanda"
+          },
+          "zoom": 1.05,
+          "odak": [
+            -6.35,
+            53.72
+          ],
+          "etiketler": [
+            {
+              "ad": "İrlanda",
+              "lon": -6.35,
+              "lat": 53.72,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            9.675,
+            53.615
+          ],
+          "genislik": 57.825,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.95,
+                  41.0
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  22.0,
+                  36.0
+                ],
+                [
+                  15.0,
+                  36.8
+                ],
+                [
+                  10.0,
+                  37.8
+                ],
+                [
+                  -5.6,
+                  36.0
+                ],
+                [
+                  -9.6,
+                  38.7
+                ],
+                [
+                  -9.6,
+                  43.2
+                ],
+                [
+                  -5.5,
+                  48.3
+                ],
+                [
+                  -6.3,
+                  51.6
+                ],
+                [
+                  -6.3,
+                  53.7
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ]
+        }
       },
       {
         "yazi": "Sultan Abdülmecid",
@@ -1166,7 +1897,9 @@
     "kapak": "BÜYÜK KITLIK",
     "kanca_gorsel": [
       "File:Woman begging at Clonakilty, Ireland 1847.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "patrona-halil",
@@ -1181,15 +1914,58 @@
         "yazi": "Patrona Halil",
         "metin": "Patrona Halil, İstanbul'da eskicilik yapan eski bir yeniçeriydi. Lale Devri'nin şatafatı halkın bir kısmını çok öfkelendirmişti.",
         "gorsel": [
-          "File:Patrona khalil 2 calkoen.jpeg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1730",
+            "alt": "Bayezid Meydanı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.964,
+            41.0106
+          ],
+          "etiketler": [
+            {
+              "ad": "Bayezid Meydanı",
+              "lon": 28.964,
+              "lat": 41.0106,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.964,
+            41.0706
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.964,
+            "lat": 41.0106,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Eylül 1730",
         "metin": "Birkaç arkadaşıyla Beyazıt'ta isyanı başlattı. Kısa sürede yeniçeriler ve esnaf da ona katıldı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "yil": "Bayezid Meydanı",
+          "aylar": [
+            "Eylül 1730"
+          ]
+        }
       },
       {
         "yazi": "Lale Devri'nin sonu",
@@ -1216,7 +1992,9 @@
     "kapak": "LALE DEVRİ BİTTİ",
     "kanca_gorsel": [
       "File:Patrona Halil Rijksmuseum SK-A-4082.jpeg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "abdulaziz",
@@ -1231,8 +2009,73 @@
         "yazi": "1867",
         "metin": "Sultan Abdülaziz 1867'de Paris'teki Dünya Fuarı'na davet edildi ve Avrupa'ya uzun bir yolculuk yaptı.",
         "gorsel": [
-          "File:Vue officielle a vol d'oiseau de l'exposition universelle de 1867.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1867",
+            "alt": "Paris"
+          },
+          "zoom": 1.05,
+          "odak": [
+            2.35,
+            48.86
+          ],
+          "etiketler": [
+            {
+              "ad": "Paris",
+              "lon": 2.35,
+              "lat": 48.86,
+              "bas": 0.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "bas": 0.05
+            },
+            {
+              "ad": "Londra",
+              "lon": -0.13,
+              "lat": 51.5,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            14.425,
+            52.704
+          ],
+          "genislik": 43.665,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  16.37,
+                  48.21
+                ],
+                [
+                  2.35,
+                  48.86
+                ],
+                [
+                  -0.13,
+                  51.5
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            }
+          ]
+        }
       },
       {
         "yazi": "Paris, Londra, Viyana",
@@ -1266,7 +2109,9 @@
     "kapak": "PARİS VE LONDRA",
     "kanca_gorsel": [
       "File:Sultan Abdül Aziz on horse back.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "abdulhamid",
@@ -1282,7 +2127,69 @@
         "metin": "İkinci Abdülhamid otuz üç yıl tahtta kaldı. Devletin çok zor bir döneminde hüküm sürdü.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1876",
+            "alt": "Medine"
+          },
+          "zoom": 1.05,
+          "odak": [
+            39.6,
+            24.47
+          ],
+          "etiketler": [
+            {
+              "ad": "Medine",
+              "lon": 39.6,
+              "lat": 24.47,
+              "bas": 0.15
+            },
+            {
+              "ad": "Şam",
+              "lon": 36.29,
+              "lat": 33.51,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            37.85,
+            30.834
+          ],
+          "genislik": 9.87,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  36.29,
+                  33.51
+                ],
+                [
+                  36.1,
+                  31.0
+                ],
+                [
+                  36.6,
+                  28.4
+                ],
+                [
+                  38.0,
+                  26.6
+                ],
+                [
+                  39.6,
+                  24.5
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            }
+          ]
+        }
       },
       {
         "yazi": "Marangoz",
@@ -1316,7 +2223,9 @@
     "kapak": "YILDIZ ATÖLYESİ",
     "kanca_gorsel": [
       "File:V.M. Doroshevich-East and War-Yıldız-Kiosk. Salamlik. Hamidiye mosque.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "vahdettin",
@@ -1332,7 +2241,77 @@
         "metin": "Mehmed Vahdettin, Birinci Dünya Savaşı'nın son aylarında tahta çıktı. Devlet savaştan yenik çıkmak üzereydi.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1918",
+            "alt": "San Remo"
+          },
+          "zoom": 1.05,
+          "odak": [
+            7.78,
+            43.82
+          ],
+          "etiketler": [
+            {
+              "ad": "San Remo",
+              "lon": 7.78,
+              "lat": 43.82,
+              "bas": 0.15
+            },
+            {
+              "ad": "Malta",
+              "lon": 14.51,
+              "lat": 35.9,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            18.365,
+            45.067
+          ],
+          "genislik": 31.755,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.95,
+                  41.0
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  22.0,
+                  36.0
+                ],
+                [
+                  14.51,
+                  35.9
+                ],
+                [
+                  10.5,
+                  39.5
+                ],
+                [
+                  7.8,
+                  43.7
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ]
+        }
       },
       {
         "yazi": "1 Kasım 1922",
@@ -1366,7 +2345,9 @@
     "kapak": "SAN REMO",
     "kanca_gorsel": [
       "File:HMS Barham Malaya and Argus.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "mimar-sinan",
@@ -1381,8 +2362,43 @@
         "yazi": "Mimar Sinan",
         "metin": "Mimar Sinan, Kayseri'de doğdu. Devşirme olarak saraya geldi ve yeniçeri ocağında askeri mühendis olarak yetişti.",
         "gorsel": [
-          "File:Mimar Sinan büstü, ODTÜ.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "SÜLEYMANIYE",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.964,
+            41.016
+          ],
+          "etiketler": [
+            {
+              "ad": "Süleymaniye",
+              "lon": 28.964,
+              "lat": 41.016,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.964,
+            41.076
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.964,
+            "lat": 41.016,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Üç yüzü aşkın eser",
@@ -1416,7 +2432,9 @@
     "kapak": "SELİMİYE",
     "kanca_gorsel": [
       "File:Amédée Rosier - The Golden Horn with the Süleymaniye Mosque.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "piri-reis",
@@ -1431,8 +2449,43 @@
         "yazi": "1513",
         "metin": "Osmanlı denizcisi Piri Reis, 1513'te ceylan derisi üzerine bir dünya haritası çizdi.",
         "gorsel": [
-          "File:Piri reis world map 01.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1513",
+            "alt": "Gelibolu"
+          },
+          "zoom": 1.08,
+          "odak": [
+            26.67,
+            40.41
+          ],
+          "etiketler": [
+            {
+              "ad": "Gelibolu",
+              "lon": 26.67,
+              "lat": 40.41,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            26.67,
+            40.91
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 26.67,
+            "lat": 40.41,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Amerika",
@@ -1466,7 +2519,9 @@
     "kapak": "KOLOMB'UN İZİ",
     "kanca_gorsel": [
       "File:İstanbul, 1629 (Kitab-ı Bahriye).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "evliya-celebi",
@@ -1482,7 +2537,102 @@
         "metin": "Evliya Çelebi 1611'de İstanbul'da doğdu. Babası sarayın kuyumcubaşıydı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1611",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "bas": 0.05
+            },
+            {
+              "ad": "Kahire",
+              "lon": 31.24,
+              "lat": 30.04,
+              "bas": 0.05
+            },
+            {
+              "ad": "Bağdat",
+              "lon": 44.36,
+              "lat": 33.31,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            30.365,
+            46.082
+          ],
+          "genislik": 41.985,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  16.37,
+                  48.21
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            },
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  31.24,
+                  30.1
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.2,
+              "bit": 0.85
+            },
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  44.3,
+                  33.35
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.2,
+              "bit": 0.85
+            }
+          ]
+        }
       },
       {
         "yazi": "Rüya",
@@ -1516,7 +2666,9 @@
     "kapak": "DİL SÜRÇMESİ",
     "kanca_gorsel": [
       "File:Ottoman official, Turkey, Istanbul, c. 1650, ink, watercolour, gold on paper - Aga Khan Museum - Toronto, Canada - DSC06822.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "hezarfen",
@@ -1531,8 +2683,63 @@
         "yazi": "Hezarfen",
         "metin": "Hezarfen, bin bilim bilen anlamına gelir. Bu lakap Ahmed Çelebi adlı bir bilgine verilmişti.",
         "gorsel": [
-          "File:Айвазовский (Гайвазовский) Иван (Оганес) Константинович Вид Леандровой башни в Константинополе.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "GALATA KULESI",
+            "alt": ""
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.974,
+            41.0256
+          ],
+          "etiketler": [
+            {
+              "ad": "Galata Kulesi",
+              "lon": 28.974,
+              "lat": 41.0256,
+              "bas": 0.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Üsküdar",
+              "lon": 29.02,
+              "lat": 41.022,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            28.997,
+            41.105
+          ],
+          "genislik": 0.5,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.974,
+                  41.0256
+                ],
+                [
+                  29.0,
+                  41.026
+                ],
+                [
+                  29.02,
+                  41.022
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            }
+          ]
+        }
       },
       {
         "yazi": "Uçuş",
@@ -1566,7 +2773,9 @@
     "kapak": "KANATLI ADAM",
     "kanca_gorsel": [
       "File:Галатская башня в лунном свете.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "babiali-baskini-1913",
@@ -1581,8 +2790,43 @@
         "yazi": "1913",
         "metin": "Balkan Savaşı'nda ağır yenilgiler alınmıştı. Hükümetin Edirne'yi bırakmaya hazırlandığı konuşuluyordu.",
         "gorsel": [
-          "File:Ottoman redif soldiers.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1913",
+            "alt": "Babıali"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.977,
+            41.012
+          ],
+          "etiketler": [
+            {
+              "ad": "Babıali",
+              "lon": 28.977,
+              "lat": 41.012,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.977,
+            41.072
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.977,
+            "lat": 41.012,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "23 Ocak 1913",
@@ -1596,7 +2840,43 @@
         "metin": "Çıkan arbede sırasında Harbiye Nazırı Nazım Paşa vurularak öldürüldü.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            28.977,
+            41.062
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            28.977,
+            41.012
+          ],
+          "etiketler": [
+            {
+              "ad": "Babıali",
+              "lon": 28.977,
+              "lat": 41.012
+            }
+          ],
+          "vurgu": {
+            "lon": 28.977,
+            "lat": 41.012,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Nazım Paşa",
+            "lon": 28.977,
+            "lat": 41.012,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Sonuç",
@@ -1616,7 +2896,9 @@
     "kapak": "ENVER BEY",
     "kanca_gorsel": [
       "File:Meurtre de Nazim Pacha illustration, 9 February 1913.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "takiyuddin",
@@ -1631,8 +2913,43 @@
         "yazi": "1577",
         "metin": "Astronom Takiyüddin, Üçüncü Murad döneminde İstanbul Tophane'de bir rasathane kurdu.",
         "gorsel": [
-          "File:Istambul observatory in 1577.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1577",
+            "alt": "Tophane"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.982,
+            41.027
+          ],
+          "etiketler": [
+            {
+              "ad": "Tophane",
+              "lon": 28.982,
+              "lat": 41.027,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.982,
+            41.087
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.982,
+            "lat": 41.027,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Aletler",
@@ -1666,7 +2983,9 @@
     "kapak": "KUYRUKLU YILDIZ",
     "kanca_gorsel": [
       "File:Taqi al din.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "barbaros",
@@ -1681,8 +3000,75 @@
         "yazi": "Midilli",
         "metin": "Hızır Reis, Midilli adasında doğdu. Kardeşi Oruç Reis ile birlikte Akdeniz'de denizciliğe başladı.",
         "gorsel": [
-          "File:Arudsch-barbarossa.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "CEZAYIR",
+            "alt": ""
+          },
+          "zoom": 1.05,
+          "odak": [
+            3.06,
+            36.75
+          ],
+          "etiketler": [
+            {
+              "ad": "Cezayir",
+              "lon": 3.06,
+              "lat": 36.75,
+              "bas": 0.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Midilli",
+              "lon": 26.55,
+              "lat": 39.1,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            14.805,
+            43.517
+          ],
+          "genislik": 35.235,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.55,
+                  39.1
+                ],
+                [
+                  24.8,
+                  36.5
+                ],
+                [
+                  20.0,
+                  36.0
+                ],
+                [
+                  14.0,
+                  37.0
+                ],
+                [
+                  10.5,
+                  37.4
+                ],
+                [
+                  3.1,
+                  36.8
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ]
+        }
       },
       {
         "yazi": "Cezayir",
@@ -1716,7 +3102,9 @@
     "kapak": "KIZIL SAKAL",
     "kanca_gorsel": [
       "File:Barbarossa Hayreddin Pasha.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "cem-sultan",
@@ -1731,8 +3119,68 @@
         "yazi": "1481",
         "metin": "Fatih Sultan Mehmed vefat edince oğulları Bayezid ile Cem arasında taht mücadelesi başladı.",
         "gorsel": [
-          "File:Mehmed II Doppelbildnis.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1481",
+            "alt": "Rodos"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.22,
+            36.43
+          ],
+          "etiketler": [
+            {
+              "ad": "Rodos",
+              "lon": 28.22,
+              "lat": 36.43,
+              "bas": 0.15
+            },
+            {
+              "ad": "Bursa",
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.05
+            },
+            {
+              "ad": "Roma",
+              "lon": 12.5,
+              "lat": 41.9,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            20.78,
+            43.279
+          ],
+          "genislik": 24.84,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.06,
+                  40.19
+                ],
+                [
+                  28.22,
+                  36.5
+                ],
+                [
+                  12.5,
+                  41.9
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            }
+          ]
+        }
       },
       {
         "yazi": "Bursa",
@@ -1766,7 +3214,9 @@
     "kapak": "PAPANIN REHİNESİ",
     "kanca_gorsel": [
       "File:Cem-in-italy.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "matrakci-nasuh",
@@ -1781,15 +3231,86 @@
         "yazi": "Matrakçı Nasuh",
         "metin": "Matrakçı Nasuh, Kanuni döneminde yaşamış bir matematikçi, tarihçi, ressam ve silahşördü.",
         "gorsel": [
-          "File:Matrakçı Nasuh - İstanbul.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "İSTANBUL",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Matrak",
         "metin": "Matrak, sopalarla oynanan bir savaş oyunuydu. Nasuh bu oyunun ustası olduğu için Matrakçı lakabını aldı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            28.98,
+            41.26
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            }
+          ],
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Matrak",
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Şehir resimleri",
@@ -1816,7 +3337,9 @@
     "kapak": "SOPA OYUNU",
     "kanca_gorsel": [
       "File:View of Eskisehir. Beyan-i Menazil-i Sefer-i 'Irakenyn-i Sultan Suleyman Han, 1537-1538 (Istanbul University Library, T. 5964).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "tulumbacilar",
@@ -1831,8 +3354,43 @@
         "yazi": "Ahşap şehir",
         "metin": "Osmanlı İstanbul'unda evlerin çoğu ahşaptı. Bir kıvılcım bütün bir mahalleyi yakabiliyordu.",
         "gorsel": [
-          "File:Batalia Pompierilor Dealul Spirei.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "İSTANBUL",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Yangın kuleleri",
@@ -1866,7 +3424,9 @@
     "kapak": "YANGIN VAR",
     "kanca_gorsel": [
       "File:View of the ruins after the great fire in Constantinople, 1870.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "tunel-1875",
@@ -1881,8 +3441,58 @@
         "yazi": "Yokuş",
         "metin": "On dokuzuncu yüzyılda Galata ile Beyoğlu arasındaki dik yokuşu her gün binlerce insan yürüyerek çıkardı.",
         "gorsel": [
-          "File:View of Istanbul with sailboats on the water and Galata Tower in the distance LCCN2010650595.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1875",
+            "alt": "Karaköy"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.976,
+            41.022
+          ],
+          "etiketler": [
+            {
+              "ad": "Karaköy",
+              "lon": 28.976,
+              "lat": 41.022,
+              "bas": 0.15
+            },
+            {
+              "ad": "Beyoğlu",
+              "lon": 28.974,
+              "lat": 41.03,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            28.975,
+            41.107
+          ],
+          "genislik": 0.5,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.976,
+                  41.022
+                ],
+                [
+                  28.974,
+                  41.03
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            }
+          ]
+        }
       },
       {
         "yazi": "Fikir",
@@ -1916,7 +3526,9 @@
     "kapak": "KARAKÖY-BEYOĞLU",
     "kanca_gorsel": [
       "File:Aerial view of the Galata Bridge, Istanbul LCCN2003677084.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "sehzade-mustafa",
@@ -1931,15 +3543,101 @@
         "yazi": "Şehzade Mustafa",
         "metin": "Şehzade Mustafa, Kanuni Sultan Süleyman'ın büyük oğluydu. Yeniçeriler ve halk arasında çok seviliyordu.",
         "gorsel": [
-          "File:Şehzade Mustafa.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1553",
+            "alt": "Ereğli"
+          },
+          "zoom": 1.05,
+          "odak": [
+            34.05,
+            37.51
+          ],
+          "etiketler": [
+            {
+              "ad": "Ereğli",
+              "lon": 34.05,
+              "lat": 37.51,
+              "bas": 0.15
+            },
+            {
+              "ad": "Amasya",
+              "lon": 35.83,
+              "lat": 40.65,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            34.94,
+            39.721
+          ],
+          "genislik": 3.863,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  35.83,
+                  40.65
+                ],
+                [
+                  34.05,
+                  37.51
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "yok"
+            }
+          ]
+        }
       },
       {
         "yazi": "Amasya",
         "metin": "Amasya'da sancak beyi olarak görev yapıyordu ve tahtın en güçlü adayı olarak görülüyordu.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            34.05,
+            37.76
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            34.05,
+            37.51
+          ],
+          "etiketler": [
+            {
+              "ad": "Ereğli",
+              "lon": 34.05,
+              "lat": 37.51
+            }
+          ],
+          "vurgu": {
+            "lon": 34.05,
+            "lat": 37.51,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Amasya",
+            "lon": 34.05,
+            "lat": 37.51,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "1553",
@@ -1953,7 +3651,43 @@
         "metin": "Ölümü büyük bir üzüntü yarattı. Şair Taşlıcalı Yahya onun için bugün de bilinen bir ağıt yazdı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            34.05,
+            37.76
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            34.05,
+            37.51
+          ],
+          "etiketler": [
+            {
+              "ad": "Ereğli",
+              "lon": 34.05,
+              "lat": 37.51
+            }
+          ],
+          "vurgu": {
+            "lon": 34.05,
+            "lat": 37.51,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Mersiye",
+            "lon": 34.05,
+            "lat": 37.51,
+            "bas": 0.35
+          }
+        }
       }
     ],
     "soru": "Şehzade Mustafa padişah olsaydı neler değişirdi sence?",
@@ -1966,6 +3700,8 @@
     "kapak": "EREĞLİ 1553",
     "kanca_gorsel": [
       "File:Mort de Mustapha.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   }
 ]

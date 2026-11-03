@@ -12,10 +12,67 @@
         "yazi": "1453",
         "metin": "1453 baharında yirmi bir yaşındaki Fatih Sultan Mehmed, İstanbul'u kuşattı. Ama Bizans, Haliç'in girişini dev bir zincirle kapatmıştı.",
         "gorsel": [
-          "File:Conquest of Constantinople, Zonaro.jpg",
-          "Zonaro Mehmed II ships overland",
-          "Siege of Constantinople 1453 painting"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1453",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            },
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            27.77,
+            41.927
+          ],
+          "genislik": 3.63,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  27.8,
+                  41.3
+                ],
+                [
+                  28.93,
+                  41.03
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Haliç zinciri",
@@ -55,7 +112,9 @@
       "File:Le siège de Constantinople (1453) by Jean Le Tavernier after 1455.jpg"
     ],
     "tur": "bilinen",
-    "kapak": "YAĞLI KIZAKLAR"
+    "kapak": "YAĞLI KIZAKLAR",
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "zenta-1697",
@@ -70,8 +129,62 @@
         "yazi": "1697",
         "metin": "İkinci Mustafa, kaybedilen toprakları geri almak için bizzat sefere çıktı. Ordu Macaristan'da Tisa Nehri'ne ulaştı.",
         "gorsel": [
-          "File:Mustafa II dressed in full armour.JPG"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1697",
+            "alt": "Zenta"
+          },
+          "zoom": 1.05,
+          "odak": [
+            20.08,
+            45.93
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Zenta",
+              "lon": 20.08,
+              "lat": 45.93,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            24.53,
+            45.539
+          ],
+          "genislik": 13.35,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  20.08,
+                  45.93
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 20.08,
+            "lat": 45.93,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Köprü",
@@ -105,7 +218,9 @@
     "kapak": "TİSA NEHRİ 1697",
     "kanca_gorsel": [
       "File:Karl von Blaas - Die Schlacht bei Zenta 1697 - 2732 - Kunsthistorisches Museum.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "mohac",
@@ -1212,8 +1327,62 @@
         "yazi": "1389",
         "metin": "Birinci Murad, Sırp ve Balkan ittifakı ordusuyla Kosova Ovası'nda karşılaştı. Bu, Balkanların kaderini belirleyecek bir savaştı.",
         "gorsel": [
-          "File:Adam Stefanović - Boj na Kosovu, 1875.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1389",
+            "alt": "Kosova"
+          },
+          "zoom": 1.05,
+          "odak": [
+            21.17,
+            42.66
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68
+            },
+            {
+              "ad": "Kosova",
+              "lon": 21.17,
+              "lat": 42.66,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            23.865,
+            43.45
+          ],
+          "genislik": 8.085,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  21.17,
+                  42.66
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 21.17,
+            "lat": 42.66,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Zafer",
@@ -1247,7 +1416,9 @@
     "kapak": "HANÇER DARBESİ",
     "kanca_gorsel": [
       "File:Battle of Kosovo, Adam Stefanović, 1870.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "nigbolu",
@@ -1262,8 +1433,62 @@
         "yazi": "1396",
         "metin": "Macar kralı Sigismund, Fransız ve Alman şövalyeleriyle büyük bir Haçlı ordusu topladı. Hedef Osmanlı'yı Balkanlardan atmaktı.",
         "gorsel": [
-          "File:Aleksander Lesser - Portrait of king Sigismund III Vasa (1566–1632) - MP 4337 MNW - National Museum in Warsaw.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1396",
+            "alt": "Niğbolu"
+          },
+          "zoom": 1.05,
+          "odak": [
+            24.9,
+            43.7
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68
+            },
+            {
+              "ad": "Niğbolu",
+              "lon": 24.9,
+              "lat": 43.7,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            25.73,
+            43.161
+          ],
+          "genislik": 3.0,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  24.9,
+                  43.7
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 24.9,
+            "lat": 43.7,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Niğbolu Kalesi",
@@ -1297,7 +1522,9 @@
     "kapak": "TUNA KIYISINDA",
     "kanca_gorsel": [
       "File:Bayezid I, \"The Thunderbolt,\" Routs the Crusaders at the Battle of Nicopolis (1396). Hünernâme of 1588 by Lokman.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "nizip-donanma-1839",
@@ -1312,8 +1539,62 @@
         "yazi": "24 Haziran 1839",
         "metin": "Osmanlı ordusu, Mısır valisi Mehmed Ali Paşa'nın oğlu İbrahim Paşa'nın ordusuyla Nizip'te karşılaştı.",
         "gorsel": [
-          "File:Battle of Nezib, Ibrahim Pasha.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1839",
+            "alt": "Nizip"
+          },
+          "zoom": 1.05,
+          "odak": [
+            37.79,
+            37.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Nizip",
+              "lon": 37.79,
+              "lat": 37.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            33.385,
+            41.203
+          ],
+          "genislik": 13.215,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  37.79,
+                  37.01
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 37.79,
+            "lat": 37.01,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Moltke",
@@ -1347,7 +1628,9 @@
     "kapak": "ÜÇ FELAKET",
     "kanca_gorsel": [
       "File:Hafiz and von Moltke at Nezib.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "ankara-1402",
@@ -1362,8 +1645,61 @@
         "yazi": "28 Temmuz 1402",
         "metin": "Yıldırım Bayezid ile Timur'un orduları Ankara yakınlarındaki Çubuk Ovası'nda karşılaştı.",
         "gorsel": [
-          "File:Portrait of Timur (d.1405), as commissioned by his grandson Ibrahim Sultan in the 1436 Zafarnama.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1402",
+            "alt": "Ankara"
+          },
+          "zoom": 1.05,
+          "odak": [
+            32.85,
+            39.93
+          ],
+          "etiketler": [
+            {
+              "ad": "Ankara",
+              "lon": 32.85,
+              "lat": 39.93,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            30.955,
+            40.989
+          ],
+          "genislik": 5.685,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.06,
+                  40.19
+                ],
+                [
+                  31.0,
+                  40.0
+                ],
+                [
+                  32.85,
+                  39.93
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 32.85,
+            "lat": 39.93,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Saf değiştirenler",
@@ -1398,7 +1734,9 @@
     "kapak": "TİMUR KAZANDI",
     "kanca_gorsel": [
       "File:A miniature depicting the capture of Bayezid I.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "varna",
@@ -1413,8 +1751,62 @@
         "yazi": "1444",
         "metin": "İkinci Murad, Macarlarla barış antlaşması imzaladıktan sonra tahtı genç oğlu Mehmed'e bıraktı ve Manisa'ya çekildi.",
         "gorsel": [
-          "File:Portrait of Sultan Murad II, c. 1600.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1444",
+            "alt": "Varna"
+          },
+          "zoom": 1.05,
+          "odak": [
+            27.91,
+            43.21
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68
+            },
+            {
+              "ad": "Varna",
+              "lon": 27.91,
+              "lat": 43.21,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            27.235,
+            42.918
+          ],
+          "genislik": 3.0,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  27.91,
+                  43.21
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 27.91,
+            "lat": 43.21,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Bozulan antlaşma",
@@ -1448,7 +1840,9 @@
     "kapak": "GENÇ MEHMED",
     "kanca_gorsel": [
       "File:Bitwa pod Warną (fragment - Władysław).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "belgrad-1456",
@@ -1463,8 +1857,62 @@
         "yazi": "1456",
         "metin": "İstanbul'un fethinden üç yıl sonra Fatih Sultan Mehmed, Tuna kıyısındaki Belgrad Kalesi'ni kuşattı.",
         "gorsel": [
-          "File:Bellini, Gentile - Sultan Mehmet II.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1456",
+            "alt": "Belgrad"
+          },
+          "zoom": 1.05,
+          "odak": [
+            20.46,
+            44.82
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            24.72,
+            44.914
+          ],
+          "genislik": 12.78,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  20.46,
+                  44.82
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 20.46,
+            "lat": 44.82,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Hunyadi Yanoş",
@@ -1498,7 +1946,9 @@
     "kapak": "HUNYADİ YANOŞ",
     "kanca_gorsel": [
       "File:Siege of Belgrade (1456), Ottoman miniature.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "otlukbeli",
@@ -1513,8 +1963,62 @@
         "yazi": "Uzun Hasan",
         "metin": "Akkoyunlu hükümdarı Uzun Hasan, doğuda güçlü bir devlet kurmuştu ve Venedik ile Osmanlı'ya karşı iş birliği yapıyordu.",
         "gorsel": [
-          "File:Uzun Hasan on horse, 1460s–1470s, Aq Qoyunlu ruler Uzun Hasa hunting (detail).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1473",
+            "alt": "Otlukbeli"
+          },
+          "zoom": 1.05,
+          "odak": [
+            40.1,
+            40.2
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Otlukbeli",
+              "lon": 40.1,
+              "lat": 40.2,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            34.54,
+            43.31
+          ],
+          "genislik": 16.68,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  40.1,
+                  40.2
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 40.1,
+            "lat": 40.2,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "1473",
@@ -1548,7 +2052,9 @@
     "kapak": "AKKOYUNLU ORDUSU",
     "kanca_gorsel": [
       "File:Otlukbeli savasi.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "rodos",
@@ -1563,8 +2069,82 @@
         "yazi": "Rodos Şövalyeleri",
         "metin": "Rodos adası, Saint Jean Şövalyeleri'nin elindeydi. Ada, Osmanlı deniz yollarının tam ortasında bir tehditti.",
         "gorsel": [
-          "File:Fort Saint Nicolas Rhodes.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1522",
+            "alt": "Rodos"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.22,
+            36.43
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Rodos",
+              "lon": 28.22,
+              "lat": 36.43,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            26.79,
+            39.8
+          ],
+          "genislik": 6.57,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  28.22,
+                  36.43
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 28.22,
+            "lat": 36.43,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "1522",
@@ -1598,7 +2178,9 @@
     "kapak": "ONURLU TESLİM",
     "kanca_gorsel": [
       "File:1522-Sultan Suleiman during the Siege of Rhodes-Suleymanname-DetailTopLeft.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "malta",
@@ -1613,8 +2195,86 @@
         "yazi": "1565",
         "metin": "Kanuni döneminde büyük bir Osmanlı donanması Malta'yı kuşattı. Adada, Rodos'tan çıkarılan şövalyeler vardı.",
         "gorsel": [
-          "File:Siege of malta 1.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1565",
+            "alt": "Malta"
+          },
+          "zoom": 1.05,
+          "odak": [
+            14.51,
+            35.9
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Malta",
+              "lon": 14.51,
+              "lat": 35.9,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            21.745,
+            42.086
+          ],
+          "genislik": 21.705,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  21.5,
+                  36.2
+                ],
+                [
+                  14.91,
+                  36.199999999999996
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 14.51,
+            "lat": 35.9,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Saint Elmo",
@@ -1648,7 +2308,9 @@
     "kapak": "SAINT ELMO",
     "kanca_gorsel": [
       "File:Matteo Perez d' Aleccio (1547-1616) - The Siege of Malta, Siege and Bombardment of Saint Elmo, 27 May 1565 - BHC0253 - Royal Museums Greenwich.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kabakci-1807",
@@ -1663,8 +2325,43 @@
         "yazi": "1807",
         "metin": "Üçüncü Selim, Nizam-ı Cedid adlı yeni bir ordu kurmuştu. Bu yenilikler eski düzenin askerlerini çok rahatsız ediyordu.",
         "gorsel": [
-          "File:Sultan lll. Selim.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1807",
+            "alt": "Rumeli Kavağı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.08,
+            41.18
+          ],
+          "etiketler": [
+            {
+              "ad": "Rumeli Kavağı",
+              "lon": 29.08,
+              "lat": 41.18,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.08,
+            41.24
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.08,
+            "lat": 41.18,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Rumeli Kavağı",
@@ -1698,7 +2395,9 @@
     "kapak": "YAMAKLAR AYAKLANDI",
     "kanca_gorsel": [
       "File:Head of Selim III thrown in front of Mustafa Bayraktar, 1813.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "inebahti",
@@ -2041,8 +2740,62 @@
         "yazi": "1566",
         "metin": "Yetmiş yaşını geçmiş olan Kanuni Sultan Süleyman, hastalığına rağmen son seferine çıktı ve Zigetvar Kalesi'ni kuşattı.",
         "gorsel": [
-          "File:Suleiman I. after 1560.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1566",
+            "alt": "Zigetvar"
+          },
+          "zoom": 1.05,
+          "odak": [
+            17.8,
+            46.05
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Zigetvar",
+              "lon": 17.8,
+              "lat": 46.05,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            23.39,
+            46.127
+          ],
+          "genislik": 16.77,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  17.8,
+                  46.05
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 17.8,
+            "lat": 46.05,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Çadırdaki sır",
@@ -2076,7 +2829,9 @@
     "kapak": "ÇADIRDAKİ SIR",
     "kanca_gorsel": [
       "File:Siege of Szigetvár 1566 B.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "viyana-1529",
@@ -2091,8 +2846,62 @@
         "yazi": "1529",
         "metin": "Kanuni Sultan Süleyman, Mohaç'tan üç yıl sonra Habsburgların merkezi Viyana'ya yürüdü.",
         "gorsel": [
-          "File:Portrait Suleiman Magnificent.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1529",
+            "alt": "Viyana"
+          },
+          "zoom": 1.05,
+          "odak": [
+            16.37,
+            48.21
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            22.675,
+            47.486
+          ],
+          "genislik": 18.915,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  16.37,
+                  48.21
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 16.37,
+            "lat": 48.21,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Bitmeyen yağmur",
@@ -2126,7 +2935,9 @@
     "kapak": "BİTMEYEN YAĞMUR",
     "kanca_gorsel": [
       "File:Siege of Vienna in 1529 – stemming the Islamic inperialist tide.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "viyana-1683",
@@ -2141,8 +2952,62 @@
         "yazi": "1683",
         "metin": "Sadrazam Merzifonlu Kara Mustafa Paşa, büyük bir orduyla Viyana'yı kuşattı. Kuşatma iki aydan uzun sürdü.",
         "gorsel": [
-          "File:Kara Mustafa Pasha.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1683",
+            "alt": "Viyana"
+          },
+          "zoom": 1.05,
+          "odak": [
+            16.37,
+            48.21
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            22.675,
+            47.486
+          ],
+          "genislik": 18.915,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  16.37,
+                  48.21
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 16.37,
+            "lat": 48.21,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Kahlenberg",
@@ -2176,7 +3041,9 @@
     "kapak": "KANATLI SÜVARİLER",
     "kanca_gorsel": [
       "File:Battle of Vienna 1683.PNG"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "hacova",
@@ -2191,8 +3058,62 @@
         "yazi": "1596",
         "metin": "Üçüncü Mehmed, Kanuni'den sonra sefere bizzat çıkan ilk padişah oldu. Ordu Macaristan'daki Haçova'da Habsburg ordusuyla karşılaştı.",
         "gorsel": [
-          "File:Unknown - Portrait of sultan Mehmed III (1595–1603) - MP 4089 - National Museum in Warsaw.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1596",
+            "alt": "Haçova"
+          },
+          "zoom": 1.05,
+          "odak": [
+            20.7,
+            47.83
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Haçova",
+              "lon": 20.7,
+              "lat": 47.83,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            24.84,
+            46.315
+          ],
+          "genislik": 12.42,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  20.7,
+                  47.83
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 20.7,
+            "lat": 47.83,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Zor anlar",
@@ -2226,7 +3147,9 @@
     "kapak": "YAĞMA HATASI",
     "kanca_gorsel": [
       "File:Battle of Mezőkeresztes, 1596, B.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "alemdar-1808",
@@ -2242,7 +3165,74 @@
         "metin": "Rusçuk ayanı Alemdar Mustafa Paşa, tahttan indirilen Üçüncü Selim'i yeniden tahta çıkarmak için ordusuyla İstanbul'a yürüdü.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1808",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            },
+            {
+              "ad": "Rusçuk",
+              "lon": 25.97,
+              "lat": 43.85,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            27.475,
+            43.142
+          ],
+          "genislik": 4.515,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  25.97,
+                  43.85
+                ],
+                [
+                  26.3,
+                  42.6
+                ],
+                [
+                  26.56,
+                  41.7
+                ],
+                [
+                  27.8,
+                  41.3
+                ],
+                [
+                  28.95,
+                  41.02
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Saray kapısı",
@@ -2263,7 +3253,15 @@
         "metin": "Birkaç ay sonra yeniçeriler ayaklanıp Alemdar'ın konağını kuşattı. Kurtuluş kalmayınca Alemdar barut deposunu ateşledi ve saldıranlarla birlikte öldü.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "yil": "İstanbul",
+          "aylar": [
+            "Kasım 1808"
+          ]
+        }
       }
     ],
     "soru": "Alemdar kahraman mıydı, yoksa kaosun bir parçası mı?",
@@ -2277,7 +3275,9 @@
     "kanca_gorsel": [
       "File:Dictionnaire Décembre Alonnier-I-055.jpg"
     ],
-    "yayinlandi": "2026-11-01 test videosu, sonradan herkese açık yapıldı"
+    "yayinlandi": "2026-11-01 test videosu, sonradan herkese açık yapıldı",
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "canakkale-18-mart",
@@ -2292,8 +3292,61 @@
         "yazi": "1915",
         "metin": "İngiliz ve Fransız donanması, Çanakkale Boğazı'nı geçip İstanbul'a ulaşmayı planlıyordu.",
         "gorsel": [
-          "File:Turkish fortifications being shelled- Dardanelles campaign, 1915 RMG PW1753.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1915",
+            "alt": "Çanakkale"
+          },
+          "zoom": 1.05,
+          "odak": [
+            26.4,
+            40.15
+          ],
+          "etiketler": [
+            {
+              "ad": "Çanakkale",
+              "lon": 26.4,
+              "lat": 40.15,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            25.85,
+            40.367
+          ],
+          "genislik": 3.0,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  25.3,
+                  39.6
+                ],
+                [
+                  25.9,
+                  39.9
+                ],
+                [
+                  26.25,
+                  40.03
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 26.4,
+            "lat": 40.15,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Nusret",
@@ -2327,7 +3380,9 @@
     "kapak": "NUSRET'İN GECESİ",
     "kanca_gorsel": [
       "File:Bouvet'nin Çanakkale'de Batışı (The Sinking of Battleship Bouvet at the Dardanelles (12558878633).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kutulamare",
@@ -2342,8 +3397,48 @@
         "yazi": "1915",
         "metin": "General Townshend komutasındaki İngiliz ordusu, Bağdat'ı almak için Dicle boyunca ilerliyordu.",
         "gorsel": [
-          "File:(Portrait du) Major General (Charles Vere Ferrers) Townshend - btv1b530370406.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1915",
+            "alt": "Kut"
+          },
+          "zoom": 1.08,
+          "odak": [
+            45.83,
+            32.5
+          ],
+          "etiketler": [
+            {
+              "ad": "Kut",
+              "lon": 45.83,
+              "lat": 32.5,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            45.83,
+            33.0
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 45.83,
+            "lat": 32.5,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "carpisma": {
+            "lon": 45.83,
+            "lat": 32.5,
+            "bas": 0.55
+          }
+        }
       },
       {
         "yazi": "Selman-ı Pak",
@@ -2377,7 +3472,9 @@
     "kapak": "TOWNSHEND ESİR",
     "kanca_gorsel": [
       "File:Mesopotamian campaign 6th Army Siege of Kut.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "trablusgarp-1551",
@@ -2392,8 +3489,86 @@
         "yazi": "Trablusgarp",
         "metin": "Bugünkü Libya'daki Trablusgarp, o dönem Malta Şövalyeleri'nin elindeydi.",
         "gorsel": [
-          "File:View of Tripoli (Libya), 1683.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1551",
+            "alt": "Trablusgarp"
+          },
+          "zoom": 1.05,
+          "odak": [
+            13.18,
+            32.89
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Trablusgarp",
+              "lon": 13.18,
+              "lat": 32.89,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            21.08,
+            40.996
+          ],
+          "genislik": 23.7,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  21.5,
+                  36.2
+                ],
+                [
+                  13.58,
+                  33.19
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 13.18,
+            "lat": 32.89,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "1551",
@@ -2427,7 +3602,9 @@
     "kapak": "LİBYA KIYISI",
     "kanca_gorsel": [
       "File:Capture of Tripoli by the Ottomans 1551.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "cerbe",
@@ -2442,8 +3619,86 @@
         "yazi": "1560",
         "metin": "İspanya önderliğindeki bir Haçlı donanması, Trablusgarp'ı geri almak için Tunus kıyısındaki Cerbe adasına çıktı.",
         "gorsel": [
-          "File:Carte de Djerba (Bataille de Djerba 1560).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1560",
+            "alt": "Cerbe"
+          },
+          "zoom": 1.05,
+          "odak": [
+            10.86,
+            33.8
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Cerbe",
+              "lon": 10.86,
+              "lat": 33.8,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            19.92,
+            42.017
+          ],
+          "genislik": 27.18,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  21.5,
+                  36.2
+                ],
+                [
+                  11.26,
+                  34.099999999999994
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 10.86,
+            "lat": 33.8,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Piyale Paşa",
@@ -2477,7 +3732,9 @@
     "kapak": "ANİ BASKIN",
     "kanca_gorsel": [
       "File:Disaster of Los Galves, Djerba, 1560.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kibris-fethi",
@@ -2492,8 +3749,82 @@
         "yazi": "1570",
         "metin": "İkinci Selim döneminde Osmanlı ordusu, Venedik'in elindeki Kıbrıs adasına çıktı. Komutan Lala Mustafa Paşa'ydı.",
         "gorsel": [
-          "File:Isole famose porti, fortezze, e terre maritime-113.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1570",
+            "alt": "Kıbrıs"
+          },
+          "zoom": 1.05,
+          "odak": [
+            33.36,
+            35.17
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Kıbrıs",
+              "lon": 33.36,
+              "lat": 35.17,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            40.299
+          ],
+          "genislik": 13.14,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  33.36,
+                  35.17
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 33.36,
+            "lat": 35.17,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Lefkoşa",
@@ -2527,7 +3858,9 @@
     "kapak": "MAGOSA SURLARI",
     "kanca_gorsel": [
       "File:Ottomans conquering the Limassol Castle.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kandiye",
@@ -2542,8 +3875,82 @@
         "yazi": "1648",
         "metin": "Osmanlı, Venedik'in elindeki Girit adasının büyük kısmını almıştı. Ama başkent Kandiye direniyordu.",
         "gorsel": [
-          "File:Relief map of Crete, 1612.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1648",
+            "alt": "Kandiye"
+          },
+          "zoom": 1.05,
+          "odak": [
+            25.14,
+            35.34
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Kandiye",
+              "lon": 25.14,
+              "lat": 35.34,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            26.79,
+            39.332
+          ],
+          "genislik": 6.888,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  25.14,
+                  35.34
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 25.14,
+            "lat": 35.34,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Bitmeyen kuşatma",
@@ -2557,7 +3964,43 @@
         "metin": "Sonunda Sadrazam Köprülüzade Fazıl Ahmed Paşa kuşatmanın başına bizzat geçti.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            25.14,
+            35.59
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            25.14,
+            35.34
+          ],
+          "etiketler": [
+            {
+              "ad": "Kandiye",
+              "lon": 25.14,
+              "lat": 35.34
+            }
+          ],
+          "vurgu": {
+            "lon": 25.14,
+            "lat": 35.34,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Fazıl\nAhmed Paşa",
+            "lon": 25.14,
+            "lat": 35.34,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "1669",
@@ -2577,7 +4020,9 @@
     "kapak": "21 YILLIK DİRENİŞ",
     "kanca_gorsel": [
       "File:(Venice) Francesco Morosini combatte contro i Turchi in Candia - Tela di Francesco Monti - Museo Correr.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "31-mart-1909",
@@ -2592,8 +4037,75 @@
         "yazi": "1909",
         "metin": "Meşrutiyet ilan edileli bir yıl olmuştu. İstanbul'daki bazı askerler ve onları destekleyen gruplar yeni yönetime karşı ayaklandı.",
         "gorsel": [
-          "File:Constantinople c. 1909.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1909",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            },
+            {
+              "ad": "Selanik",
+              "lon": 22.94,
+              "lat": 40.64,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            25.96,
+            42.294
+          ],
+          "genislik": 9.06,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  22.94,
+                  40.64
+                ],
+                [
+                  24.4,
+                  40.95
+                ],
+                [
+                  26.0,
+                  40.85
+                ],
+                [
+                  27.5,
+                  41.0
+                ],
+                [
+                  28.9,
+                  41.02
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "13 Nisan 1909",
@@ -2627,7 +4139,9 @@
     "kapak": "HAREKET ORDUSU",
     "kanca_gorsel": [
       "File:The Battle of Constantinople - Complete victory for the Young Turks (31 March 1909).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "prut",
@@ -2642,8 +4156,62 @@
         "yazi": "1711",
         "metin": "Rus çarı Büyük Petro, Osmanlı'ya karşı sefere çıktı. Ama ordusu Prut Nehri kıyısında Osmanlı ordusu tarafından çevrildi.",
         "gorsel": [
-          "File:Pieter van der Werff - Portrait of Peter the Great - WGA25542.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1711",
+            "alt": "Prut"
+          },
+          "zoom": 1.05,
+          "odak": [
+            28.07,
+            46.67
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Prut",
+              "lon": 28.07,
+              "lat": 46.67,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.525,
+            44.995
+          ],
+          "genislik": 7.495,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  28.07,
+                  46.67
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 28.07,
+            "lat": 46.67,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Kuşatma",
@@ -2677,7 +4245,9 @@
     "kapak": "ESİR DÜŞECEKTİ",
     "kanca_gorsel": [
       "File:The disposition of the Russian and Ottoman troops in the battle of Stănileşt during the Pruth campaign (1711) Ottoman - La Mottraye Aubry De - 1727.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "cesme",
@@ -2692,8 +4262,48 @@
         "yazi": "1770",
         "metin": "Osmanlı-Rus savaşı sırasında Rus donanması, Baltık'tan Avrupa'yı dolaşarak Ege Denizi'ne ulaştı.",
         "gorsel": [
-          "File:Battle of Chios (1770), by Ivan Aivazovsky (1848).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1770",
+            "alt": "Çeşme"
+          },
+          "zoom": 1.08,
+          "odak": [
+            26.3,
+            38.32
+          ],
+          "etiketler": [
+            {
+              "ad": "Çeşme",
+              "lon": 26.3,
+              "lat": 38.32,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            26.3,
+            38.82
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 26.3,
+            "lat": 38.32,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "carpisma": {
+            "lon": 26.3,
+            "lat": 38.32,
+            "bas": 0.55
+          }
+        }
       },
       {
         "yazi": "Çeşme Limanı",
@@ -2727,7 +4337,9 @@
     "kapak": "ATEŞ GEMİLERİ",
     "kanca_gorsel": [
       "File:Ivan Constantinovich Aivazovsky - Battle of Çesme at Night.JPG"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "navarin",
@@ -2742,8 +4354,86 @@
         "yazi": "1827",
         "metin": "Mora'daki Yunan isyanı sırasında Osmanlı ve Mısır donanması, Navarin Koyu'nda demirlemişti.",
         "gorsel": [
-          "File:Entrance to the bay of Navarino - Skene James - 1838-1845.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1827",
+            "alt": "Navarin"
+          },
+          "zoom": 1.05,
+          "odak": [
+            21.67,
+            36.91
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Navarin",
+              "lon": 21.67,
+              "lat": 36.91,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            25.24,
+            40.478
+          ],
+          "genislik": 11.22,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.0
+                ],
+                [
+                  27.4,
+                  40.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  25.6,
+                  39.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  21.5,
+                  36.2
+                ],
+                [
+                  22.07,
+                  37.209999999999994
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ],
+          "carpisma": {
+            "lon": 21.67,
+            "lat": 36.91,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Birleşik donanma",
@@ -2777,7 +4467,9 @@
     "kapak": "ÜÇ DEVLET BİRDEN",
     "kanca_gorsel": [
       "File:Battle of Navarino (by Ivan Aivazovsky, original colors version).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "plevne",
@@ -2792,8 +4484,62 @@
         "yazi": "1877",
         "metin": "Osmanlı-Rus savaşında Rus ordusu Balkanları geçmek için ilerliyordu. Yolları üzerinde küçük bir kasaba vardı: Plevne.",
         "gorsel": [
-          "File:Zahvat grivickogo reduta.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1877",
+            "alt": "Plevne"
+          },
+          "zoom": 1.05,
+          "odak": [
+            24.62,
+            43.42
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Plevne",
+              "lon": 24.62,
+              "lat": 43.42,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            26.8,
+            43.25
+          ],
+          "genislik": 6.54,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  24.62,
+                  43.42
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 24.62,
+            "lat": 43.42,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Osman Paşa",
@@ -2827,7 +4573,9 @@
     "kapak": "BEŞ AY DİRENİŞ",
     "kanca_gorsel": [
       "File:The sortie from Plevna.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "bursa-fethi",
@@ -2842,8 +4590,68 @@
         "yazi": "Bizans Bursası",
         "metin": "Bursa, Uludağ eteklerinde güçlü surlara sahip bir Bizans şehriydi. Doğrudan saldırıyla almak çok zordu.",
         "gorsel": [
-          "File:Ertugrul Gazi sends his son Savci Bey to the Sultan Alaeddin Keykubad with the request to be allowed to populate a new area.. Miniature, Turkish, 1616. Tadj al-Tawarikh (The Crown of Chronicles).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1326",
+            "alt": "Bursa"
+          },
+          "zoom": 1.05,
+          "odak": [
+            29.06,
+            40.19
+          ],
+          "etiketler": [
+            {
+              "ad": "Bursa",
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Söğüt",
+              "lon": 30.18,
+              "lat": 40.02,
+              "bas": 0.05
+            }
+          ],
+          "merkez": [
+            29.62,
+            40.595
+          ],
+          "genislik": 3.0,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  30.18,
+                  40.02
+                ],
+                [
+                  29.7,
+                  40.1
+                ],
+                [
+                  29.1,
+                  40.18
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 29.06,
+            "lat": 40.19,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Uzun kuşatma",
@@ -2864,7 +4672,43 @@
         "metin": "Bursa, Osmanlı'nın ilk büyük başkenti oldu. Osman Gazi ve Orhan Gazi'nin türbeleri bugün hâlâ burada.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            29.06,
+            40.44
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            29.06,
+            40.19
+          ],
+          "etiketler": [
+            {
+              "ad": "Bursa",
+              "lon": 29.06,
+              "lat": 40.19
+            }
+          ],
+          "vurgu": {
+            "lon": 29.06,
+            "lat": 40.19,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "İlk\nbaşkent",
+            "lon": 29.06,
+            "lat": 40.19,
+            "bas": 0.35
+          }
+        }
       }
     ],
     "soru": "Bursa'ya gidince ilk nereyi gezersin?",
@@ -2877,7 +4721,9 @@
     "kapak": "YILLARCA KUŞATMA",
     "kanca_gorsel": [
       "File:Bursa (BM 1875,0710.795).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "belgrad-1521",
@@ -2892,8 +4738,62 @@
         "yazi": "1520",
         "metin": "Kanuni Sultan Süleyman tahta çıktığında yirmi beş yaşındaydı. İlk büyük seferini Belgrad'a yaptı.",
         "gorsel": [
-          "File:Istanbul, Topkapi Palace Museum MS Hazine 1563 fol. 47v Suleyman I by Nakkaş Osman.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1520",
+            "alt": "Belgrad"
+          },
+          "zoom": 1.05,
+          "odak": [
+            20.46,
+            44.82
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            24.72,
+            44.914
+          ],
+          "genislik": 12.78,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  20.46,
+                  44.82
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ],
+          "carpisma": {
+            "lon": 20.46,
+            "lat": 44.82,
+            "bas": 0.85
+          }
+        }
       },
       {
         "yazi": "Fatih'in hatırası",
@@ -2927,6 +4827,8 @@
     "kapak": "65 YIL SONRA",
     "kanca_gorsel": [
       "File:The Siege of Belgrade in 1521-Lokman.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   }
 ]

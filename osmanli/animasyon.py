@@ -479,7 +479,10 @@ class Harita:
             else:
                 y0 = 230
                 d.rectangle([0, y0, W, y0 + 290], fill=(16, 26, 30, int(a * 0.55)))
-                yazi(d, (W / 2, y0 + 20), b.get("ust", ""), F_UST, (255, 236, 190), 6, alfa=a)
+                f = F_UST
+                while d.textlength(b.get("ust", ""), font=f) > W - 100 and f.size > 60:
+                    f = _f("DejaVuSerif-Bold.ttf", f.size - 10)
+                yazi(d, (W / 2, y0 + 20 + (F_UST.size - f.size) * 0.6), b.get("ust", ""), f, (255, 236, 190), 6, alfa=a)
                 if b.get("alt"):
                     yazi(d, (W / 2, y0 + 170), tr_buyuk(b["alt"]), F_UST_ALT, ALTIN, 4, alfa=a)
         # yavaş yakınlaşma (odağa doğru)

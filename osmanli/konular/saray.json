@@ -12,8 +12,43 @@
         "yazi": "1478",
         "metin": "Topkapı Sarayı'nı İstanbul'un fethinden sonra Fatih Sultan Mehmed yaptırdı. Saray, eski Bizans akropolünün üzerine kuruldu.",
         "gorsel": [
-          "File:Aspiotis κθ.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1478",
+            "alt": "Topkapı Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Dört avlu",
@@ -47,7 +82,9 @@
     "kapak": "PADİŞAHLARIN EVİ",
     "kanca_gorsel": [
       "File:Jean Baptiste Vanmour - The Ambassadorial Delegation Passing through the Second Courtyard of the Topkapı Palace - Google Art Project.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "cinar-vakasi-1656",
@@ -63,7 +100,42 @@
         "metin": "Devlet hazinesi boşalmıştı. Askerlerin maaşları, değeri düşürülmüş paralarla ödenmeye başlandı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1656",
+            "alt": "Atmeydanı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.975,
+            41.006
+          ],
+          "etiketler": [
+            {
+              "ad": "Atmeydanı",
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.975,
+            41.066
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.975,
+            "lat": 41.006,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Ayaklanma",
@@ -97,7 +169,9 @@
     "kapak": "MAAŞ İSYANI",
     "kanca_gorsel": [
       "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "saray-mutfagi",
@@ -112,8 +186,43 @@
         "yazi": "Matbah-ı Amire",
         "metin": "Topkapı Sarayı'nın mutfaklarına Matbah-ı Amire denirdi. Sarayın ikinci avlusu boyunca uzanan dev bir yapıydı.",
         "gorsel": [
-          "File:Palace kitchens Topkapi 2007b.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "TOPKAPI SARAYI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Yüzlerce aşçı",
@@ -127,7 +236,43 @@
         "metin": "Tatlıların, şerbetlerin ve macunların hazırlandığı ayrı bir bölüm vardı. Adı Helvahane'ydi.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            28.983,
+            41.061499999999995
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115
+            }
+          ],
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Helvahane",
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Porselenler",
@@ -147,7 +292,9 @@
     "kapak": "MATBAH-I AMİRE",
     "kanca_gorsel": [
       "File:Palace kitchens Topkapi 2007 022.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "enderun",
@@ -543,15 +690,100 @@
         "yazi": "1703",
         "metin": "İkinci Mustafa sarayını İstanbul'dan Edirne'ye taşımış, devlet işlerini büyük ölçüde hocası Şeyhülislam Feyzullah Efendi'ye bırakmıştı.",
         "gorsel": [
-          "File:Portrait of Sultan Mustafa II.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1703",
+            "alt": "Edirne"
+          },
+          "zoom": 1.05,
+          "odak": [
+            26.56,
+            41.68
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            },
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            27.77,
+            41.927
+          ],
+          "genislik": 3.63,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  26.56,
+                  41.68
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "ikon": "ordu"
+            }
+          ]
+        }
       },
       {
         "yazi": "Cebeciler",
         "metin": "Maaşları ödenmeyen cebeci askerleri İstanbul'da ayaklandı. Halk ve yeniçeriler de isyana katıldı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            26.56,
+            41.93
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            26.56,
+            41.68
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68
+            }
+          ],
+          "vurgu": {
+            "lon": 26.56,
+            "lat": 41.68,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Cebeciler",
+            "lon": 26.56,
+            "lat": 41.68,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Edirne yürüyüşü",
@@ -578,7 +810,9 @@
     "kapak": "CEBECİLER",
     "kanca_gorsel": [
       "File:Mustafa II dressed in full armour.JPG"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kardes-katli",
@@ -593,8 +827,43 @@
         "yazi": "Taht kavgaları",
         "metin": "Osmanlı'da tahta kimin geçeceğine dair kesin bir kural yoktu. Bu yüzden şehzadeler arasında sık sık taht savaşları yaşanırdı.",
         "gorsel": [
-          "File:Ottoman depictions of Suleiman I \"the Magnifcient\", aged 39 and 71.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1595",
+            "alt": "Topkapı Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Fatih Kanunnamesi",
@@ -628,7 +897,9 @@
     "kapak": "NİZAM-I ÂLEM",
     "kanca_gorsel": [
       "File:Coronation of Mehmet III in the Topkapi Palace in 1595 Fol. 15v-16r. Manuscript written by Seyyid Lokman on Mehmed III's campaign in Hungary, Istanbul circa 1600.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "lale-devri",
@@ -643,8 +914,43 @@
         "yazi": "1718-1730",
         "metin": "Üçüncü Ahmed ve Sadrazam Nevşehirli Damat İbrahim Paşa dönemine Lale Devri denir.",
         "gorsel": [
-          "File:Sultan Ahmed III (1703-30) Rijksmuseum SK-A-2015.jpeg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1718",
+            "alt": "Sadabad"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.97,
+            41.08
+          ],
+          "etiketler": [
+            {
+              "ad": "Sadabad",
+              "lon": 28.97,
+              "lat": 41.08,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.97,
+            41.14
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.97,
+            "lat": 41.08,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Lale tutkusu",
@@ -678,7 +984,9 @@
     "kapak": "PATRONA HALİL",
     "kanca_gorsel": [
       "File:Portrait of Sultan Ahmed III (1673–1736), three-quarter-length, standing, with a view onto the Bosphorus and the Hagia Sophia by Jean-Baptiste Vanmour.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kahve",
@@ -693,8 +1001,43 @@
         "yazi": "Yemen'den",
         "metin": "Kahve, Osmanlı'nın Yemen'deki topraklarından İstanbul'a on altıncı yüzyılda geldi.",
         "gorsel": [
-          "File:Istanbul coffee stall.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1550",
+            "alt": "Tahtakale"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.968,
+            41.016
+          ],
+          "etiketler": [
+            {
+              "ad": "Tahtakale",
+              "lon": 28.968,
+              "lat": 41.016,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.968,
+            41.076
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.968,
+            "lat": 41.016,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "İlk kahvehane",
@@ -728,7 +1071,9 @@
     "kapak": "DÖRDÜNCÜ MURAD",
     "kanca_gorsel": [
       "File:Ivan Constantinovich Aivazovsky - Coffee-house by the Ortaköy Mosque in Constantinople.JPG"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "cuma-selamligi",
@@ -743,8 +1088,43 @@
         "yazi": "Her cuma",
         "metin": "Osmanlı padişahları her cuma, cuma namazı için saraydan çıkıp bir camiye giderdi. Bu törene Cuma Selamlığı denirdi.",
         "gorsel": [
-          "File:The Selamlik (Sultan's procession to the mosque) at the Hamidiye Camii (mosque) on Friday) - Abdullah Frères LCCN2003677085.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "AYASOFYA",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.0086
+          ],
+          "etiketler": [
+            {
+              "ad": "Ayasofya",
+              "lon": 28.98,
+              "lat": 41.0086,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.0686
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.0086,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Görkemli alay",
@@ -778,7 +1158,9 @@
     "kapak": "ARZUHAL ANI",
     "kanca_gorsel": [
       "File:Jean Baptiste Vanmour Prozession des Sultans in Istanbul.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "yeniceri-kazani",
@@ -793,8 +1175,43 @@
         "yazi": "Kutsal kazan",
         "metin": "Yeniçeriler için ortak yemek pişirilen kazan çok önemliydi. Kazan, birliğin ve sadakatin sembolüydü.",
         "gorsel": [
-          "File:Yeniçeri.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "ET MEYDANI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.952,
+            41.009
+          ],
+          "etiketler": [
+            {
+              "ad": "Et Meydanı",
+              "lon": 28.952,
+              "lat": 41.009,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.952,
+            41.069
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.952,
+            "lat": 41.009,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Çorbacı",
@@ -828,7 +1245,9 @@
     "kapak": "ÇORBACI RÜTBESİ",
     "kanca_gorsel": [
       "File:Janissary Recruitment in the Balkans-Suleymanname.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "ciragan-baskini-1878",
@@ -843,8 +1262,43 @@
         "yazi": "Beşinci Murad",
         "metin": "Tahttan indirilen Beşinci Murad, Boğaz kıyısındaki Çırağan Sarayı'nda gözetim altında yaşıyordu.",
         "gorsel": [
-          "File:Portrait of Murad V.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1878",
+            "alt": "Çırağan Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.017,
+            41.044
+          ],
+          "etiketler": [
+            {
+              "ad": "Çırağan Sarayı",
+              "lon": 29.017,
+              "lat": 41.044,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.017,
+            41.104
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.017,
+            "lat": 41.044,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Ali Suavi",
@@ -865,7 +1319,43 @@
         "metin": "Beşiktaş muhafızı Hasan Paşa elindeki sopayla Ali Suavi'ye vurarak onu öldürdü. Baskın birkaç dakika içinde dağıldı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            29.017,
+            41.093999999999994
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            29.017,
+            41.044
+          ],
+          "etiketler": [
+            {
+              "ad": "Çırağan Sarayı",
+              "lon": 29.017,
+              "lat": 41.044
+            }
+          ],
+          "vurgu": {
+            "lon": 29.017,
+            "lat": 41.044,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Sopa",
+            "lon": 29.017,
+            "lat": 41.044,
+            "bas": 0.35
+          }
+        }
       }
     ],
     "soru": "Baskın başarılı olsaydı tarih nasıl değişirdi?",
@@ -878,7 +1368,9 @@
     "kapak": "BEŞİNCİ MURAD",
     "kanca_gorsel": [
       "File:Pascal Sébah - Çırağan Palace - Google Art Project.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "mehter",
@@ -893,8 +1385,43 @@
         "yazi": "Mehter",
         "metin": "Mehter, Osmanlı ordusunun askeri bandosuydu. Dünyanın en eski askeri bandolarından biri kabul edilir.",
         "gorsel": [
-          "File:Surname-ı Hümayun parade.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "İSTANBUL",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Korku ve coşku",
@@ -928,7 +1455,9 @@
     "kapak": "RONDO ALLA TURCA",
     "kanca_gorsel": [
       "File:Levni mehter.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "sunnet-1582",
@@ -943,8 +1472,43 @@
         "yazi": "1582",
         "metin": "Üçüncü Murad, oğlu Şehzade Mehmed'in sünneti için büyük bir şenlik düzenledi.",
         "gorsel": [
-          "File:Sultan Murad III.jpeg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1582",
+            "alt": "Atmeydanı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.975,
+            41.006
+          ],
+          "etiketler": [
+            {
+              "ad": "Atmeydanı",
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.975,
+            41.066
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.975,
+            "lat": 41.006,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Atmeydanı",
@@ -978,7 +1542,9 @@
     "kapak": "ATMEYDANI ŞENLİĞİ",
     "kanca_gorsel": [
       "File:Mock battle (detail) from the 1582 festivities from the Surname‑i Hümayun.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "surname-vehbi",
@@ -993,8 +1559,43 @@
         "yazi": "1720",
         "metin": "Lale Devri'nde Üçüncü Ahmed, şehzadelerinin sünneti için İstanbul'da büyük bir şenlik düzenledi.",
         "gorsel": [
-          "File:Sultan Ahmed III (1703-30) Rijksmuseum SK-A-2015.jpeg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1720",
+            "alt": "Okmeydanı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.962,
+            41.045
+          ],
+          "etiketler": [
+            {
+              "ad": "Okmeydanı",
+              "lon": 28.962,
+              "lat": 41.045,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.962,
+            41.105000000000004
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.962,
+            "lat": 41.045,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "On beş gün",
@@ -1028,7 +1629,9 @@
     "kapak": "CAMBAZLAR VE ATEŞ",
     "kanca_gorsel": [
       "File:Surname-ı Hümayun fireworks.png"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "dilsizler",
@@ -1043,8 +1646,43 @@
         "yazi": "Sessizlik",
         "metin": "Padişahın huzurunda yüksek sesle konuşmak saygısızlık sayılırdı. Sarayın iç bölümlerinde derin bir sessizlik hüküm sürerdi.",
         "gorsel": [
-          "File:Audience-of-Charles-Gravier-Comte-de-Vergennes-with-The-Sultan-Osman-III-in-Constantinople-1755.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "TOPKAPI SARAYI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Dilsizler",
@@ -1078,7 +1716,9 @@
     "kapak": "KONUŞMAK YASAK",
     "kanca_gorsel": [
       "File:Lucjan Wędrychowski - Audience of a Polish envoy before the Ottoman Sultan.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "uc-padisahli-yil-1876",
@@ -1093,8 +1733,43 @@
         "yazi": "30 Mayıs 1876",
         "metin": "Devlet adamları ve askerler, Sultan Abdülaziz'i bir darbeyle tahttan indirdi. Yerine yeğeni Beşinci Murad geçti.",
         "gorsel": [
-          "File:Portrait of Murad V.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1876",
+            "alt": "Dolmabahçe"
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.0,
+            41.039
+          ],
+          "etiketler": [
+            {
+              "ad": "Dolmabahçe",
+              "lon": 29.0,
+              "lat": 41.039,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.0,
+            41.099000000000004
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.0,
+            "lat": 41.039,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "4 Haziran",
@@ -1129,7 +1804,9 @@
     "kapak": "DARBE VE BASKIN",
     "kanca_gorsel": [
       "File:Abdulaziz (Sultan of the Ottoman Empire).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "bostancilar",
@@ -1144,8 +1821,43 @@
         "yazi": "Bostancı Ocağı",
         "metin": "Bostancılar, başlangıçta saray bahçelerinde çalışan bahçıvanlardı.",
         "gorsel": [
-          "File:Garden Topkapi Palace Istanbul.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "BOĞAZIÇI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.05,
+            41.1
+          ],
+          "etiketler": [
+            {
+              "ad": "Boğaziçi",
+              "lon": 29.05,
+              "lat": 41.1,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.05,
+            41.160000000000004
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.05,
+            "lat": 41.1,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Kayıkçılar",
@@ -1159,7 +1871,43 @@
         "metin": "Zamanla bostancılar saray çevresinin ve Boğaz kıyılarının güvenliğini de üstlendi.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            29.05,
+            41.15
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            29.05,
+            41.1
+          ],
+          "etiketler": [
+            {
+              "ad": "Boğaziçi",
+              "lon": 29.05,
+              "lat": 41.1
+            }
+          ],
+          "vurgu": {
+            "lon": 29.05,
+            "lat": 41.1,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Bekçiler",
+            "lon": 29.05,
+            "lat": 41.1,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Bostancıbaşı",
@@ -1179,7 +1927,9 @@
     "kapak": "KORKULAN BEKÇİLER",
     "kanca_gorsel": [
       "File:Le Bostanji Bachi - Guer Jean Antoine - 1746.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kaftanlar",
@@ -1194,8 +1944,43 @@
         "yazi": "Gelenek",
         "metin": "Bir padişah vefat ettiğinde kaftanları ve kıyafetleri bohçalara sarılır ve üzerlerine kime ait oldukları yazılırdı.",
         "gorsel": [
-          "File:Ottoman kaftan Inside of Topkapi palace Museum 3.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "BURSA",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.06,
+            40.19
+          ],
+          "etiketler": [
+            {
+              "ad": "Bursa",
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.06,
+            40.69
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 29.06,
+            "lat": 40.19,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Koleksiyon",
@@ -1229,7 +2014,9 @@
     "kapak": "BOHÇALARDAKİ HAZİNE",
     "kanca_gorsel": [
       "File:Ottoman kaftan Inside of Topkapi palace Museum 5.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "hirka-i-saadet",
@@ -1244,8 +2031,43 @@
         "yazi": "Hırka-i Saadet",
         "metin": "Topkapı Sarayı'nın içinde, kutsal emanetlerin korunduğu özel bir daire vardır. Adı Hırka-i Saadet Dairesi'dir.",
         "gorsel": [
-          "File:Twin Kiosk tiles Topkapi March 2008.JPG"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "TOPKAPI SARAYI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Emanetler",
@@ -1279,7 +2101,9 @@
     "kapak": "KESİNTİSİZ TİLAVET",
     "kanca_gorsel": [
       "File:Privy Chamber Topkapi March 2008.JPG"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kosem",
@@ -1294,8 +2118,43 @@
         "yazi": "Haseki",
         "metin": "Kösem Sultan, Birinci Ahmed'in hasekisiydi. Eşinin vefatından sonra da sarayda etkisini kaybetmedi.",
         "gorsel": [
-          "File:Portrait of Sultan Ahmed I.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1651",
+            "alt": "Topkapı Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Naibe",
@@ -1329,7 +2188,9 @@
     "kapak": "ÜÇ PADİŞAH DÖNEMİ",
     "kanca_gorsel": [
       "File:A portrait of Kösem Sultan.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "yildiz-suikasti-1905",
@@ -1344,8 +2205,43 @@
         "yazi": "21 Temmuz 1905",
         "metin": "İkinci Abdülhamid, her cuma olduğu gibi Yıldız'daki Hamidiye Camii'nde cuma namazını kıldı.",
         "gorsel": [
-          "File:The Selamlik (Sultan's procession to the mosque) at the Hamidiye Camii (mosque) on Friday) - Abdullah Frères LCCN2003677085.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1905",
+            "alt": "Yıldız Camii"
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.01,
+            41.05
+          ],
+          "etiketler": [
+            {
+              "ad": "Yıldız Camii",
+              "lon": 29.01,
+              "lat": 41.05,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.01,
+            41.11
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.01,
+            "lat": 41.05,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Saatli bomba",
@@ -1379,7 +2275,9 @@
     "kapak": "SAATLİ BOMBA",
     "kanca_gorsel": [
       "File:Yildizmahaports.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "hurrem",
@@ -1394,8 +2292,43 @@
         "yazi": "Roxelana",
         "metin": "Hürrem Sultan, bugünkü Ukrayna topraklarından saraya getirilmişti. Avrupalılar ona Roxelana derdi.",
         "gorsel": [
-          "File:Portrait of Roxelana (aka Hurrem Sultan).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "HASEKI KÜLLIYESI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.94,
+            41.009
+          ],
+          "etiketler": [
+            {
+              "ad": "Haseki Külliyesi",
+              "lon": 28.94,
+              "lat": 41.009,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.94,
+            41.069
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.94,
+            "lat": 41.009,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Resmi nikâh",
@@ -1429,7 +2362,9 @@
     "kapak": "ROXELANA",
     "kanca_gorsel": [
       "File:Haseki Hürrem Sultan (Roxelana).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "sultan-ibrahim",
@@ -1444,8 +2379,43 @@
         "yazi": "Kafeste yıllar",
         "metin": "Sultan İbrahim, yıllarını sarayın kafes denilen dairelerinde, her an öldürülme korkusuyla geçirdi.",
         "gorsel": [
-          "File:Imperial Harem, Topkapı Palace, Istanbul.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1640",
+            "alt": "Topkapı Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "1640",
@@ -1479,7 +2449,9 @@
     "kapak": "TEK ERKEK VARİS",
     "kanca_gorsel": [
       "File:Sultans of the Ottoman Empire - Murad IV - Ibrahim I - Mehmed IV.jpeg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "mahya",
@@ -1494,8 +2466,43 @@
         "yazi": "Mahya",
         "metin": "Ramazan'da iki minare arasına gerilen iplere kandiller asılarak gökyüzünde yazılar oluşturulurdu. Buna mahya denir.",
         "gorsel": [
-          "File:Amédée Rosier - The Golden Horn with the Süleymaniye Mosque.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1600",
+            "alt": "Sultanahmet Camii"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.977,
+            41.005
+          ],
+          "etiketler": [
+            {
+              "ad": "Sultanahmet Camii",
+              "lon": 28.977,
+              "lat": 41.005,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.977,
+            41.065000000000005
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.977,
+            "lat": 41.005,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "On yedinci yüzyıl",
@@ -1529,7 +2536,9 @@
     "kapak": "KANDİLLİ YAZILAR",
     "kanca_gorsel": [
       "File:Sultanahmetmosque.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "cesnigir",
@@ -1544,8 +2553,43 @@
         "yazi": "Tehlike",
         "metin": "Tarih boyunca hükümdarlar zehirlenme tehlikesine karşı önlem almıştır. Osmanlı sarayında da bunun için bir sistem vardı.",
         "gorsel": [
-          "File:Palace kitchens Topkapi 2007a.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "TOPKAPI SARAYI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Mühürlü kaplar",
@@ -1579,7 +2623,9 @@
     "kapak": "ZEHİR KORKUSU",
     "kanca_gorsel": [
       "File:Palace kitchens Topkapi 2007 022.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "deprem-1509",
@@ -1594,8 +2640,43 @@
         "yazi": "10 Eylül 1509",
         "metin": "İkinci Bayezid döneminde İstanbul, tarihinin en büyük depremlerinden birine yakalandı.",
         "gorsel": [
-          "File:Portrait of Bayezid II from a 16th century Ottoman miniature.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1509",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Kıyamet-i Suğra",
@@ -1629,7 +2710,9 @@
     "kapak": "SURLAR ÇÖKTÜ",
     "kanca_gorsel": [
       "File:Istanbul in the 16th century - right.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "tugra",
@@ -1644,8 +2727,43 @@
         "yazi": "Tuğra",
         "metin": "Tuğra, Osmanlı padişahlarının resmi imzasıydı. Fermanların, paraların ve önemli belgelerin üzerinde yer alırdı.",
         "gorsel": [
-          "File:Tughra of Murad III.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "TOPKAPI SARAYI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "İçindeki yazı",
@@ -1679,7 +2797,9 @@
     "kapak": "SULTAN İMZASI",
     "kanca_gorsel": [
       "File:Tughra Suleiman.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "dolmabahce",
@@ -1694,8 +2814,43 @@
         "yazi": "1856",
         "metin": "Sultan Abdülmecid, Avrupa saraylarına benzeyen yeni bir saray istedi. Dolmabahçe Sarayı 1856'da tamamlandı.",
         "gorsel": [
-          "File:Sultan Abdulmecid Dolmabahce.JPG"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1856",
+            "alt": "Dolmabahçe"
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.0,
+            41.039
+          ],
+          "etiketler": [
+            {
+              "ad": "Dolmabahçe",
+              "lon": 29.0,
+              "lat": 41.039,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.0,
+            41.099000000000004
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.0,
+            "lat": 41.039,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Dolma bahçe",
@@ -1729,7 +2884,9 @@
     "kapak": "4,5 TON",
     "kanca_gorsel": [
       "File:Chandelier of the Entrance Hall of Dolmabahçe Palace, Istanbul.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "mihrimah",
@@ -1744,8 +2901,43 @@
         "yazi": "Mihrimah Sultan",
         "metin": "Mihrimah Sultan, Kanuni Sultan Süleyman ile Hürrem Sultan'ın kızıydı. Adı, güneş ve ay anlamına gelir.",
         "gorsel": [
-          "File:Mihrimah Sultan.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "ÜSKÜDAR",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.016,
+            41.027
+          ],
+          "etiketler": [
+            {
+              "ad": "Üsküdar",
+              "lon": 29.016,
+              "lat": 41.027,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.016,
+            41.087
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.016,
+            "lat": 41.027,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "İki cami",
@@ -1759,7 +2951,43 @@
         "metin": "Rivayete göre bazı günlerde Edirnekapı'daki caminin minaresinin arkasından güneş batarken, Üsküdar'dakinin ardından ay doğar.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            29.016,
+            41.077
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            29.016,
+            41.027
+          ],
+          "etiketler": [
+            {
+              "ad": "Üsküdar",
+              "lon": 29.016,
+              "lat": 41.027
+            }
+          ],
+          "vurgu": {
+            "lon": 29.016,
+            "lat": 41.027,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Efsane",
+            "lon": 29.016,
+            "lat": 41.027,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Işık",
@@ -1779,7 +3007,9 @@
     "kapak": "GÜNEŞ VE AY",
     "kanca_gorsel": [
       "File:İmparator Süleyman’ın Kızı Cameria (Mihrimah Sultan).jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "bellini-portresi",
@@ -1794,8 +3024,76 @@
         "yazi": "Sanata merak",
         "metin": "Fatih Sultan Mehmed, sanata ve bilime büyük ilgi duyan bir hükümdardı. Venedik'ten bir ressam istedi.",
         "gorsel": [
-          "File:Sarayi Album 10a.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1480",
+            "alt": "Venedik"
+          },
+          "zoom": 1.05,
+          "odak": [
+            12.33,
+            45.44
+          ],
+          "etiketler": [
+            {
+              "ad": "Venedik",
+              "lon": 12.33,
+              "lat": 45.44,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            20.64,
+            44.944
+          ],
+          "genislik": 24.93,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  12.4,
+                  45.3
+                ],
+                [
+                  14.5,
+                  43.8
+                ],
+                [
+                  18.6,
+                  40.1
+                ],
+                [
+                  21.0,
+                  36.9
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  28.95,
+                  41.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.8,
+              "boy": 85,
+              "gemi": 3
+            }
+          ]
+        }
       },
       {
         "yazi": "Gentile Bellini",
@@ -1829,7 +3127,9 @@
     "kapak": "VENEDİKLİ RESSAM",
     "kanca_gorsel": [
       "File:Bellini, Gentile - Sultan Mehmet II.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "matbaa",
@@ -1844,8 +3144,43 @@
         "yazi": "Lale Devri",
         "metin": "Lale Devri'nde İbrahim Müteferrika ve Said Efendi, İstanbul'da bir matbaa kurmak için izin istedi.",
         "gorsel": [
-          "File:Müteferrika as a position in the Ottoman court.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1727",
+            "alt": "İstanbul"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.98,
+            41.51
+          ],
+          "genislik": 6,
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "1727",
@@ -1859,7 +3194,43 @@
         "metin": "Matbaada basılan ilk kitap 1729'da yayımlanan Vankulu Lügati adlı bir sözlüktü.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            28.98,
+            41.26
+          ],
+          "genislik": 3.5,
+          "zoom": 1.1,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01
+            }
+          ],
+          "vurgu": {
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Vankulu\nLügati",
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Haritalar",
@@ -1879,7 +3250,9 @@
     "kapak": "MÜTEFERRİKA 1729",
     "kanca_gorsel": [
       "File:Portret van Ibrahim Muteferrika, RP-P-1905-4876.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "yangin-1660",
@@ -1895,14 +3268,87 @@
         "metin": "Yaz sıcağında başlayan bir yangın, rüzgârın da etkisiyle ahşap evlerle dolu İstanbul'da hızla yayıldı.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1660",
+            "alt": "Yeni Cami"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.971,
+            41.017
+          ],
+          "etiketler": [
+            {
+              "ad": "Yeni Cami",
+              "lon": 28.971,
+              "lat": 41.017,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.971,
+            41.077000000000005
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.971,
+            "lat": 41.017,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Durdurulamayan ateş",
         "metin": "Yangın günlerce sürdü. Camiler, çarşılar ve on binlerce ev yandı. Şehrin büyük bölümü harabeye döndü.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            28.971,
+            41.067
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            28.971,
+            41.017
+          ],
+          "etiketler": [
+            {
+              "ad": "Yeni Cami",
+              "lon": 28.971,
+              "lat": 41.017
+            }
+          ],
+          "vurgu": {
+            "lon": 28.971,
+            "lat": 41.017,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "rozetler": [
+            {
+              "yazi": "Durdurulamayan ateş",
+              "x": 540,
+              "y": 560,
+              "bas": 0.2
+            }
+          ]
+        }
       },
       {
         "yazi": "Arkasından",
@@ -1929,7 +3375,9 @@
     "kapak": "KÜL OLAN ŞEHİR",
     "kanca_gorsel": [
       "File:A Constantinople engraving by Jaspar Isaac.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "saltanat-kayiklari",
@@ -1944,8 +3392,43 @@
         "yazi": "Su şehri",
         "metin": "Osmanlı İstanbul'unda saraylar, köşkler ve yalılar suyun kıyısındaydı. Ulaşımın büyük kısmı kayıkla yapılırdı.",
         "gorsel": [
-          "File:Félix Ziem - Caiques and Sailboats at the Bosphorus - Google Art Project.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "BOĞAZIÇI",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            29.05,
+            41.1
+          ],
+          "etiketler": [
+            {
+              "ad": "Boğaziçi",
+              "lon": 29.05,
+              "lat": 41.1,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            29.05,
+            41.160000000000004
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 29.05,
+            "lat": 41.1,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Saltanat kayığı",
@@ -1959,7 +3442,43 @@
         "metin": "Bu kayıkları onlarca kürekçi çekerdi. Kürekçiler, sarayın bostancı ocağından seçilirdi.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            29.05,
+            41.15
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            29.05,
+            41.1
+          ],
+          "etiketler": [
+            {
+              "ad": "Boğaziçi",
+              "lon": 29.05,
+              "lat": 41.1
+            }
+          ],
+          "vurgu": {
+            "lon": 29.05,
+            "lat": 41.1,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Kürekçiler",
+            "lon": 29.05,
+            "lat": 41.1,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Bugün",
@@ -1979,7 +3498,9 @@
     "kapak": "KÜREKÇİLER",
     "kanca_gorsel": [
       "File:Fausto Zonaro - Amusement on the Caique - Google Art Project.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "valide-alayi",
@@ -1994,8 +3515,43 @@
         "yazi": "Eski Saray",
         "metin": "Bir padişah vefat edince, onun haremindeki kadınlar çoğu zaman Eski Saray'a gönderilirdi.",
         "gorsel": [
-          "File:Istanbul in the 16th century - left.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "ESKI SARAY",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.964,
+            41.011
+          ],
+          "etiketler": [
+            {
+              "ad": "Eski Saray",
+              "lon": 28.964,
+              "lat": 41.011,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.964,
+            41.071000000000005
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.964,
+            "lat": 41.011,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Yeni padişah",
@@ -2009,7 +3565,43 @@
         "metin": "Bu yolculuk, Valide Alayı denen görkemli bir törenle yapılırdı. Halk sokaklarda bu alayı izlerdi.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            28.964,
+            41.061
+          ],
+          "genislik": 0.6,
+          "zoom": 1.1,
+          "odak": [
+            28.964,
+            41.011
+          ],
+          "etiketler": [
+            {
+              "ad": "Eski Saray",
+              "lon": 28.964,
+              "lat": 41.011
+            }
+          ],
+          "vurgu": {
+            "lon": 28.964,
+            "lat": 41.011,
+            "bas": 0.1,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Valide\nalayı",
+            "lon": 28.964,
+            "lat": 41.011,
+            "bas": 0.35
+          }
+        }
       },
       {
         "yazi": "Karşılama",
@@ -2029,7 +3621,9 @@
     "kapak": "SOKAKLAR DOLDU",
     "kanca_gorsel": [
       "File:Istanbul in the 16th century - right.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kilic-kusanma",
@@ -2044,8 +3638,43 @@
         "yazi": "Cülus",
         "metin": "Yeni padişah tahta çıktığında önce saray erkânı ona biat ederdi. Bu törene cülus denirdi.",
         "gorsel": [
-          "File:Konstantin Kapidagli. Jülüs ceremony (Enthronement ceremony) of Selim III. c. 1789. Topkapi Saray museum..jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "EYÜP SULTAN",
+            "alt": ""
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.934,
+            41.048
+          ],
+          "etiketler": [
+            {
+              "ad": "Eyüp Sultan",
+              "lon": 28.934,
+              "lat": 41.048,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.934,
+            41.108000000000004
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.934,
+            "lat": 41.048,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Eyüp Sultan",
@@ -2079,7 +3708,9 @@
     "kapak": "EYÜP SULTAN",
     "kanca_gorsel": [
       "File:Girding the Sword in the Eyub Mosque for New Sultan Abdulhamid II, 1876.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   },
   {
     "id": "kutuphane-ahmed3",
@@ -2094,8 +3725,43 @@
         "yazi": "1719",
         "metin": "Üçüncü Ahmed, 1719'da Topkapı Sarayı'nın üçüncü avlusunun ortasına bir kütüphane yaptırdı.",
         "gorsel": [
-          "File:Enderun library Topkapi 72.JPG"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "baslik": {
+            "ust": "1719",
+            "alt": "Topkapı Sarayı"
+          },
+          "zoom": 1.08,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15
+            }
+          ],
+          "merkez": [
+            28.983,
+            41.0715
+          ],
+          "genislik": 0.75,
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
       },
       {
         "yazi": "Hattat padişah",
@@ -2129,6 +3795,8 @@
     "kapak": "EL YAZMALARI",
     "kanca_gorsel": [
       "File:Ahmed III library interior Topkapi March pano.jpg"
-    ]
+    ],
+    "stil": "animasyon",
+    "oto_animasyon": true
   }
 ]
