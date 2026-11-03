@@ -1,0 +1,25 @@
+Kategori: savaslar  Konu: mohac
+  Görsel: File:1526-Suleiman the Magnificent and the Battle of Mohacs-Hunername-large.jpg  ← 'File:1526-Suleiman the Magnificent and the Battle of Mohacs-Hunername-large.jpg'
+Kapanış: yarin
+Seslendirme sesi: tr-TR-Chirp3-HD-Charon
+Süre: 45.7 sn, kare: 1370
+{
+  "title": "Kanuni'nin En Hızlı Zaferi ⚔️ Mohaç",
+  "description": "Bir krallık iki saatten kısa sürede yıkıldı ve kralı kaçarken boğuldu. Sence 1526'da Mohaç'ta ne oldu?\nOsmanlı tarihi: Mohaç Meydan Muharebesi, Kanuni Sultan Süleyman ve 1526 hakkında kısa bir hikâye.\n\nKanuni Sultan Süleyman'ın ordusu, Macar kralı İkinci Layoş'un ordusuyla Mohaç Ovası'nda karşılaştı. Macar ağır süvarileri hücuma kalktı. Osmanlı merkezi geri çekilir gibi yaptı ve şövalyeleri topların önüne çekti. Topçu ateşi ve kuşatma hareketiyle Macar ordusu iki saat dolmadan dağıldı. Kral İkinci Layoş kaçarken bataklık bir derede, zırhının ağırlığıyla boğuldu. Bu zaferle Macaristan'ın büyük bölümü Osmanlı etkisine girdi ve yol Viyana'ya kadar açıldı.\n\nMohaç'ı daha önce duymuş muydun?\n\nYarın aynı saatte: Yavuz ile Şah İsmail Karşı Karşıya\n\nOsmanlı tarihinden savaşlar, isyanlar, saray hayatı ve tarihe yön veren insanlar; her gün yeni bir hikâye. Rivayetleri rivayet, bilgileri bilgi olarak anlatıyoruz. Abone olmayı unutma!\n\nGörseller: Wikimedia Commons'taki kamu malı eserler (Lokman)\n\n#osmanlı #osmanlıtarihi #tarih #osmanlısavaşları #shorts",
+  "tags": [
+    "mohaç meydan muharebesi",
+    "kanuni sultan süleyman",
+    "1526",
+    "osmanlı tarihi",
+    "osmanlı",
+    "tarih",
+    "türk tarihi",
+    "osmanlı imparatorluğu",
+    "tarih shorts"
+  ],
+  "categoryId": "27",
+  "konu": "mohac",
+  "kategori": "savaslar",
+  "sesli": true,
+  "kapanis": "yarin"
+}
