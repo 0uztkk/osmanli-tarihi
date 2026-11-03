@@ -132,6 +132,8 @@ def kadirga(d, x, y, boy, yon=1, taraf="osmanli", sallan=0.0, alfa=255):
 
 
 def capraz_kilic(d, x, y, s, alfa=255):
+    if s < 0.05:
+        return
     for yon in (1, -1):
         uc = (x + yon * 70 * s, y - 70 * s)
         kabza = (x - yon * 52 * s, y + 52 * s)
