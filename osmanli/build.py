@@ -566,7 +566,7 @@ def main():
 
     hazir = {}
     sahneler = []
-    kutu = konu.get("stil") == "animasyon"
+    kutu = konu.get("stil", "animasyon") == "animasyon"   # yeni altyazı stili artık her videoda
     import animasyon
     anim_obj = {}
     for k, ((tur, metin, yazi, gi), (a, b)) in enumerate(zip(parcalar, zaman)):

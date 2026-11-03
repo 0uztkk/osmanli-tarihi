@@ -162,8 +162,50 @@
         "yazi": "Enderun",
         "metin": "Topkapı Sarayı'nın içinde Enderun adında özel bir okul vardı. Devletin geleceğini taşıyacak gençler burada yetişirdi.",
         "gorsel": [
-          "File:Enderun library Topkapi 72.JPG"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            28.99,
+            41.03
+          ],
+          "genislik": 0.75,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "zoom": 1.12,
+          "baslik": {
+            "ust": "ENDERUN",
+            "alt": "Topkapı Sarayı"
+          },
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Boğaziçi",
+              "lon": 29.012,
+              "lat": 41.04,
+              "tip": "bolge"
+            }
+          ],
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Seçilmiş gençler",
@@ -176,8 +218,19 @@
         "yazi": "Odalar",
         "metin": "Okul, odalara ayrılmıştı. En yüksek oda, padişaha doğrudan hizmet eden Has Oda'ydı.",
         "gorsel": [
-          "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Enderun odaları",
+          "ogeler": [
+            "Büyük ve Küçük Oda",
+            "Seferli Odası",
+            "Kiler Odası",
+            "Hazine Odası",
+            "Has Oda"
+          ]
+        }
       },
       {
         "yazi": "Mezunlar",
@@ -197,7 +250,8 @@
     "kapak": "SEÇİLMİŞ GENÇLER",
     "kanca_gorsel": [
       "File:Janissary Recruitment in the Balkans-Suleymanname.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "harem",
@@ -212,8 +266,44 @@
         "yazi": "Harem-i Hümayun",
         "metin": "Harem, padişahın ailesinin yaşadığı özel bölümdü. Arapçada korunan, dokunulmaz yer anlamına gelir.",
         "gorsel": [
-          "File:Imperial Harem, Topkapı Palace, Istanbul.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            28.99,
+            41.03
+          ],
+          "genislik": 0.75,
+          "odak": [
+            28.983,
+            41.0115
+          ],
+          "zoom": 1.12,
+          "baslik": {
+            "ust": "HAREM",
+            "alt": "Topkapı Sarayı"
+          },
+          "etiketler": [
+            {
+              "ad": "Harem-i Hümayun",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15,
+              "yan": "sol"
+            }
+          ],
+          "vurgu": {
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Disiplin",
@@ -233,8 +323,19 @@
         "yazi": "Valide Sultan",
         "metin": "Haremin en güçlü kişisi padişahın annesi Valide Sultan'dı. Bazı dönemlerde devlet işlerinde bile söz sahibi oldu.",
         "gorsel": [
-          "File:A Musical Gathering - Ottoman, 18th century.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Haremde rütbeler",
+          "ogeler": [
+            "Cariye",
+            "Kalfa",
+            "Usta",
+            "Kadın Efendi",
+            "Valide Sultan"
+          ]
+        }
       }
     ],
     "soru": "Harem hakkında en çok merak ettiğin şey ne?",
@@ -247,7 +348,8 @@
     "kapak": "DİZİLERDEKİ YANLIŞ",
     "kanca_gorsel": [
       "File:Sadirvanli Sofa Harem Topkapi Istanbul 2007c.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "kafes",
@@ -262,15 +364,143 @@
         "yazi": "Sancak usulü",
         "metin": "Osmanlı'nın ilk yüzyıllarında şehzadeler Manisa, Amasya gibi şehirlere vali olarak gönderilir ve yönetmeyi orada öğrenirdi.",
         "gorsel": [
-          "File:Safavid young prince wearing a figural brocade coat. Signed by Muhammad Haravi. Herat, Afghanistan, mid-sixteenth century. Freer Gallery of Art, F1937.8.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            32.2,
+            39.7
+          ],
+          "genislik": 14,
+          "zoom": 1.06,
+          "baslik": {
+            "ust": "SANCAK",
+            "alt": "Şehzadelerin şehirleri"
+          },
+          "etiketler": [
+            {
+              "ad": "Manisa",
+              "lon": 27.43,
+              "lat": 38.61,
+              "bas": 0.1
+            },
+            {
+              "ad": "Kütahya",
+              "lon": 29.98,
+              "lat": 39.42,
+              "bas": 0.25
+            },
+            {
+              "ad": "Konya",
+              "lon": 32.48,
+              "lat": 37.87,
+              "bas": 0.4
+            },
+            {
+              "ad": "Amasya",
+              "lon": 35.83,
+              "lat": 40.65,
+              "bas": 0.55,
+              "yan": "sol"
+            },
+            {
+              "ad": "Trabzon",
+              "lon": 39.72,
+              "lat": 41.0,
+              "bas": 0.7,
+              "yan": "sol"
+            }
+          ],
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Değişen düzen",
         "metin": "On yedinci yüzyılın başlarından itibaren şehzadeler artık sancağa gönderilmedi. Sarayda, haremin içindeki dairelerde tutuldular.",
         "gorsel": [
-          "File:Imperial Harem, Topkapı Palace, Istanbul.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            31.6,
+            40.0
+          ],
+          "genislik": 10,
+          "odak": [
+            28.98,
+            41.01
+          ],
+          "zoom": 1.05,
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            },
+            {
+              "ad": "Manisa",
+              "lon": 27.43,
+              "lat": 38.61
+            },
+            {
+              "ad": "Amasya",
+              "lon": 35.83,
+              "lat": 40.65,
+              "yan": "sol"
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  27.43,
+                  38.61
+                ],
+                [
+                  28.0,
+                  39.7
+                ],
+                [
+                  28.95,
+                  40.95
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.05,
+              "bit": 0.45
+            },
+            {
+              "yol": [
+                [
+                  35.83,
+                  40.65
+                ],
+                [
+                  32.5,
+                  40.6
+                ],
+                [
+                  29.0,
+                  41.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.1,
+              "bit": 0.5
+            }
+          ],
+          "damga": {
+            "yazi": "Kafes",
+            "lon": 28.98,
+            "lat": 41.01,
+            "bas": 0.55,
+            "dy": -260
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Kafes",
@@ -297,7 +527,8 @@
     "kapak": "GÖRÜNMEZ HAPİS",
     "kanca_gorsel": [
       "File:Sultan's Throne, Imperial Hall, Topkapı Palace Harem.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "edirne-vakasi-1703",

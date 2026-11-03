@@ -581,8 +581,88 @@
         "yazi": "1514",
         "metin": "Yavuz Sultan Selim, Safevi hükümdarı Şah İsmail'in Anadolu'daki etkisini kırmak için büyük bir sefere çıktı.",
         "gorsel": [
-          "File:Portraits of Selim I, in 1524 (contemporary) and 1579.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            37.5,
+            39.4
+          ],
+          "genislik": 19,
+          "odak": [
+            43.9,
+            39.14
+          ],
+          "zoom": 1.08,
+          "baslik": {
+            "ust": "1514",
+            "alt": "Çaldıran · 23 Ağustos"
+          },
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sag"
+            },
+            {
+              "ad": "Çaldıran",
+              "lon": 43.9,
+              "lat": 39.14,
+              "bas": 0.6,
+              "yan": "sol"
+            },
+            {
+              "ad": "Tebriz",
+              "lon": 46.29,
+              "lat": 38.08,
+              "bas": 0.3,
+              "yan": "sol"
+            },
+            {
+              "ad": "Anadolu",
+              "lon": 33,
+              "lat": 39.0,
+              "tip": "bolge"
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  32.8,
+                  39.9
+                ],
+                [
+                  37.0,
+                  39.75
+                ],
+                [
+                  39.5,
+                  39.75
+                ],
+                [
+                  42.0,
+                  39.6
+                ],
+                [
+                  43.85,
+                  39.14
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.05,
+              "bit": 0.85,
+              "boy": 95
+            }
+          ],
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Çaldıran Ovası",
@@ -595,15 +675,167 @@
         "yazi": "Top ve tüfek",
         "metin": "Osmanlı ise toplarını ve tüfekli yeniçerilerini zincirlenmiş arabaların arkasına yerleştirmişti. Süvari hücumları bu ateşe çarptı.",
         "gorsel": [
-          "File:Sekumname1525 Chaldiran battle.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Zincirli arabalar",
+          "birlikler": [
+            {
+              "taraf": "dusman",
+              "xy": [
+                540,
+                480
+              ],
+              "hedef": [
+                540,
+                860
+              ],
+              "bas": 0.05,
+              "bit": 0.5,
+              "wh": [
+                600,
+                130
+              ],
+              "etiket": "Safevi süvarisi"
+            },
+            {
+              "taraf": "osmanli",
+              "xy": [
+                540,
+                1260
+              ],
+              "wh": [
+                520,
+                120
+              ],
+              "etiket": "Yeniçeriler",
+              "etiket_ust": false
+            }
+          ],
+          "oklar": [
+            {
+              "taraf": "dusman",
+              "bas_xy": [
+                540,
+                560
+              ],
+              "son_xy": [
+                540,
+                820
+              ],
+              "bas": 0.05
+            }
+          ],
+          "toplar": [
+            {
+              "xy": [
+                240,
+                1110
+              ],
+              "bas": 0.45
+            },
+            {
+              "xy": [
+                390,
+                1110
+              ],
+              "bas": 0.48
+            },
+            {
+              "xy": [
+                540,
+                1110
+              ],
+              "bas": 0.51
+            },
+            {
+              "xy": [
+                690,
+                1110
+              ],
+              "bas": 0.54
+            },
+            {
+              "xy": [
+                840,
+                1110
+              ],
+              "bas": 0.5700000000000001
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              960
+            ],
+            "bas": 0.6
+          }
+        }
       },
       {
         "yazi": "Tebriz",
         "metin": "Savaşı Osmanlı kazandı ve Yavuz kısa bir süre için Safevi başkenti Tebriz'e girdi. Doğu Anadolu'nun büyük kısmı Osmanlı'ya bağlandı.",
         "gorsel": [
-          "File:Hasht-Behesht Palace, Tabriz, 1537-1538.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            44.6,
+            38.8
+          ],
+          "genislik": 6,
+          "odak": [
+            46.29,
+            38.08
+          ],
+          "zoom": 1.12,
+          "etiketler": [
+            {
+              "ad": "Çaldıran",
+              "lon": 43.9,
+              "lat": 39.14
+            },
+            {
+              "ad": "Tebriz",
+              "lon": 46.29,
+              "lat": 38.08,
+              "yan": "sol",
+              "bas": 0.2
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  43.9,
+                  39.14
+                ],
+                [
+                  44.9,
+                  38.6
+                ],
+                [
+                  46.2,
+                  38.1
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.05,
+              "bit": 0.6,
+              "boy": 95
+            }
+          ],
+          "damga": {
+            "yazi": "Tebriz",
+            "lon": 46.29,
+            "lat": 38.08,
+            "bas": 0.65,
+            "dy": -270
+          },
+          "tip": "harita"
+        }
       }
     ],
     "soru": "Yavuz mu, Kanuni mi? Sence hangisi daha büyük bir komutandı?",
@@ -616,7 +848,8 @@
     "kapak": "TEBRİZ DÜŞTÜ",
     "kanca_gorsel": [
       "File:Shah Ismail at the Battle of Chaldiran. Chehel Sotoun, 19th century.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "mercidabik-ridaniye",
@@ -631,15 +864,149 @@
         "yazi": "Mercidabık, 1516",
         "metin": "Yavuz Sultan Selim, Halep yakınlarındaki Mercidabık'ta Memlük ordusunu yendi. Memlük sultanı Kansu Gavri savaş alanında öldü.",
         "gorsel": [
-          "File:Mercidabık Muharebesi2.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            36.6,
+            36.0
+          ],
+          "genislik": 7,
+          "odak": [
+            37.3,
+            36.53
+          ],
+          "zoom": 1.1,
+          "baslik": {
+            "ust": "1516",
+            "alt": "Mercidabık"
+          },
+          "etiketler": [
+            {
+              "ad": "Halep",
+              "lon": 37.16,
+              "lat": 36.2,
+              "yan": "sol",
+              "bas": 0.3
+            },
+            {
+              "ad": "Malatya",
+              "lon": 38.3,
+              "lat": 38.35
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  38.3,
+                  38.35
+                ],
+                [
+                  37.8,
+                  37.4
+                ],
+                [
+                  37.35,
+                  36.6
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.05,
+              "bit": 0.5,
+              "boy": 95
+            }
+          ],
+          "carpisma": {
+            "lon": 37.3,
+            "lat": 36.53,
+            "bas": 0.55
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Ridaniye, 1517",
         "metin": "Birkaç ay sonra Kahire önlerindeki Ridaniye'de ikinci bir zafer geldi. Mısır, Osmanlı topraklarına katıldı.",
         "gorsel": [
-          "File:Sultan Selim I looks upon Cairo.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            33.8,
+            32.6
+          ],
+          "genislik": 10,
+          "odak": [
+            31.24,
+            30.04
+          ],
+          "zoom": 1.1,
+          "baslik": {
+            "ust": "1517",
+            "alt": "Ridaniye · Kahire"
+          },
+          "etiketler": [
+            {
+              "ad": "Şam",
+              "lon": 36.29,
+              "lat": 33.51,
+              "yan": "sol"
+            },
+            {
+              "ad": "Gazze",
+              "lon": 34.46,
+              "lat": 31.5,
+              "yan": "sol"
+            },
+            {
+              "ad": "Kahire",
+              "lon": 31.24,
+              "lat": 30.04,
+              "bas": 0.4
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  37.3,
+                  36.5
+                ],
+                [
+                  36.3,
+                  33.6
+                ],
+                [
+                  34.5,
+                  31.55
+                ],
+                [
+                  32.5,
+                  30.9
+                ],
+                [
+                  31.3,
+                  30.1
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.0,
+              "bit": 0.6,
+              "boy": 95
+            }
+          ],
+          "damga": {
+            "yazi": "Mısır",
+            "lon": 31.24,
+            "lat": 30.04,
+            "bas": 0.62,
+            "dy": -280
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Kutsal Emanetler",
@@ -667,7 +1034,8 @@
     "kapak": "MEMLÜKLERİN SONU",
     "kanca_gorsel": [
       "File:Battle of Marj Dabiq (1516) (miniature). Selīm-nāma, by Şūkrī-i Bitlisī, 1524 (National Library of Israel, Ms. Yah. Ar. 1116) Folio 209.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "preveze",
@@ -682,8 +1050,37 @@
         "yazi": "1538",
         "metin": "Papa, Venedik ve İspanya, Osmanlı'ya karşı büyük bir Haçlı donanması kurdu. Başında ünlü amiral Andrea Doria vardı.",
         "gorsel": [
-          "File:Andrea Doria.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Papalık",
+              "desen": "anahtar"
+            },
+            {
+              "ad": "Venedik",
+              "desen": "kanat"
+            },
+            {
+              "ad": "İspanya",
+              "desen": "carpi"
+            }
+          ],
+          "bant": "Haçlı Donanması",
+          "karsi": {
+            "ad": "Osmanlı",
+            "desen": "hilal"
+          },
+          "arka": {
+            "merkez": [
+              18,
+              40
+            ],
+            "genislik": 26
+          }
+        }
       },
       {
         "yazi": "Barbaros Hayreddin",
@@ -696,8 +1093,90 @@
         "yazi": "28 Eylül 1538",
         "metin": "Barbaros, rüzgârı ve kıyıyı iyi kullanarak düşman gemilerine saldırdı. Haçlı donanması dağıldı ve Doria geri çekildi.",
         "gorsel": [
-          "File:Kadırga Minyatür.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            20.6,
+            38.95
+          ],
+          "genislik": 2.4,
+          "odak": [
+            20.6,
+            38.93
+          ],
+          "zoom": 1.14,
+          "baslik": {
+            "ust": "1538",
+            "alt": "Preveze · 28 Eylül"
+          },
+          "etiketler": [
+            {
+              "ad": "Preveze",
+              "lon": 20.75,
+              "lat": 38.96,
+              "yan": "sag"
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  19.9,
+                  39.45
+                ],
+                [
+                  20.2,
+                  39.1
+                ],
+                [
+                  20.45,
+                  38.92
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.0,
+              "bit": 0.45,
+              "gemi": 4,
+              "boy": 80
+            },
+            {
+              "yol": [
+                [
+                  20.9,
+                  38.95
+                ],
+                [
+                  20.72,
+                  38.93
+                ],
+                [
+                  20.6,
+                  38.92
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.45,
+              "gemi": 3,
+              "boy": 80
+            }
+          ],
+          "carpisma": {
+            "lon": 20.52,
+            "lat": 38.92,
+            "bas": 0.5
+          },
+          "rozetler": [
+            {
+              "yazi": "Doria geri çekildi",
+              "x": 540,
+              "y": 1240,
+              "bas": 0.75
+            }
+          ],
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Akdeniz",
@@ -717,7 +1196,8 @@
     "kapak": "DORIA KAÇTI",
     "kanca_gorsel": [
       "File:Battle of Preveza (1538).jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "kosova-1389",

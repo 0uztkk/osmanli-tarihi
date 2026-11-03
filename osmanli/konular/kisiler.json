@@ -169,22 +169,183 @@
         "yazi": "Yıldırım",
         "metin": "Ordusunu Balkanlar ile Anadolu arasında şaşırtıcı bir hızla hareket ettirebiliyordu. Lakabı da buradan geliyor.",
         "gorsel": [
-          "File:Sueleymanname akinci2.png"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            28.5,
+            40.6
+          ],
+          "genislik": 13,
+          "zoom": 1.04,
+          "etiketler": [
+            {
+              "ad": "Niğbolu",
+              "lon": 24.9,
+              "lat": 43.7,
+              "yan": "sol"
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            },
+            {
+              "ad": "Konya",
+              "lon": 32.48,
+              "lat": 37.87
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  24.9,
+                  43.7
+                ],
+                [
+                  26.5,
+                  41.7
+                ],
+                [
+                  28.98,
+                  41.05
+                ],
+                [
+                  30.5,
+                  39.8
+                ],
+                [
+                  32.48,
+                  37.9
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.0,
+              "bit": 0.55,
+              "boy": 95
+            },
+            {
+              "yol": [
+                [
+                  32.48,
+                  37.9
+                ],
+                [
+                  30.5,
+                  39.8
+                ],
+                [
+                  28.98,
+                  41.05
+                ],
+                [
+                  26.5,
+                  41.7
+                ],
+                [
+                  24.9,
+                  43.7
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.55,
+              "bit": 0.98,
+              "boy": 95
+            }
+          ],
+          "rozetler": [
+            {
+              "yazi": "Yıldırım",
+              "x": 540,
+              "y": 380,
+              "bas": 0.2
+            }
+          ],
+          "tip": "harita"
+        }
       },
       {
         "yazi": "Anadolu Hisarı",
         "metin": "İstanbul'u kuşatmak için Boğaz'ın Anadolu yakasına bir hisar yaptırdı. Bugün Anadolu Hisarı olarak biliniyor.",
         "gorsel": [
           "-"
-        ]
+        ],
+        "anim": {
+          "merkez": [
+            29.05,
+            41.08
+          ],
+          "genislik": 0.7,
+          "odak": [
+            29.066,
+            41.082
+          ],
+          "zoom": 1.12,
+          "etiketler": [
+            {
+              "ad": "Anadolu Hisarı",
+              "lon": 29.066,
+              "lat": 41.082,
+              "bas": 0.1
+            },
+            {
+              "ad": "Boğaziçi",
+              "lon": 29.045,
+              "lat": 41.105,
+              "tip": "bolge"
+            }
+          ],
+          "vurgu": {
+            "lon": 29.066,
+            "lat": 41.082,
+            "bas": 0.15,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "1395",
+            "lon": 29.066,
+            "lat": 41.082,
+            "bas": 0.5,
+            "dy": -280
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "1402",
         "metin": "Ancak Ankara Savaşı'nda Timur'a yenildi ve esir düştü. Hızlı yükselişi trajik bir sonla bitti.",
         "gorsel": [
-          "File:A miniature depicting the capture of Bayezid I.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Timur",
+              "desen": "halka"
+            }
+          ],
+          "bant": "Ankara · 1402",
+          "karsi": {
+            "ad": "Yıldırım",
+            "desen": "hilal"
+          },
+          "arka": {
+            "merkez": [
+              36,
+              39.5
+            ],
+            "genislik": 26
+          }
+        }
       }
     ],
     "soru": "Sence Yıldırım, Timur'la savaşmamalı mıydı?",
@@ -197,7 +358,8 @@
     "kapak": "ŞİMŞEK HIZI",
     "kanca_gorsel": [
       "File:Portrait of Bayezid I.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "celebi-mehmed",
@@ -219,15 +381,81 @@
         "yazi": "Taht kavgası",
         "metin": "On bir yıl süren bu kardeş kavgasında devletin toprakları parçalanmıştı.",
         "gorsel": [
-          "File:Ottoman soldiers.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            30.2,
+            40.9
+          ],
+          "genislik": 15,
+          "zoom": 1.04,
+          "baslik": {
+            "ust": "FETRET",
+            "alt": "Dört kardeş, tek taht"
+          },
+          "etiketler": [
+            {
+              "ad": "Süleyman · Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.1,
+              "yan": "sol"
+            },
+            {
+              "ad": "Musa · Rumeli",
+              "lon": 24.0,
+              "lat": 42.9,
+              "bas": 0.3
+            },
+            {
+              "ad": "İsa · Bursa",
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.5,
+              "yan": "sol",
+              "dy": 40
+            },
+            {
+              "ad": "Mehmed · Amasya",
+              "lon": 35.83,
+              "lat": 40.65,
+              "bas": 0.7,
+              "yan": "sol",
+              "dy": -40
+            }
+          ],
+          "carpisma": {
+            "lon": 30.5,
+            "lat": 40.9,
+            "bas": 0.85
+          },
+          "tip": "harita"
+        }
       },
       {
         "yazi": "1413",
         "metin": "1413'te Mehmed Çelebi kardeşlerine üstün geldi ve devleti yeniden tek bir hükümdar altında topladı.",
         "gorsel": [
-          "File:Sultan Gazi Çelebi Mohammed Han - السلطان الغازي چلبي محمد خان.jpg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "yil": "Fetret Devri",
+          "aylar": [
+            "1402",
+            "1403",
+            "1404",
+            "1406",
+            "1408",
+            "1410",
+            "1411",
+            "1413"
+          ],
+          "cevir_bit": 0.6,
+          "rozet": "11 yıl"
+        }
       },
       {
         "yazi": "Yeşil Cami",
@@ -247,7 +475,8 @@
     "kapak": "KARDEŞ KAVGASI",
     "kanca_gorsel": [
       "File:Houghton EC7 T4922 734c (B) - Mahomet I.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "fatih-bilim",
@@ -283,8 +512,47 @@
         "yazi": "Sahn-ı Seman",
         "metin": "Fatih Camii'nin çevresinde Sahn-ı Seman adlı medreseler kurdu. Bu medreseler uzun süre devletin en yüksek eğitim kurumları oldu.",
         "gorsel": [
-          "File:Frans Vervloet - View of the Fatih Mosque, Instanbul.jpeg"
-        ]
+          "-"
+        ],
+        "anim": {
+          "merkez": [
+            28.97,
+            41.03
+          ],
+          "genislik": 0.7,
+          "odak": [
+            28.9497,
+            41.0195
+          ],
+          "zoom": 1.12,
+          "etiketler": [
+            {
+              "ad": "Fatih Camii",
+              "lon": 28.9497,
+              "lat": 41.0195,
+              "bas": 0.1,
+              "yan": "sol"
+            }
+          ],
+          "vurgu": {
+            "lon": 28.9497,
+            "lat": 41.0195,
+            "bas": 0.15,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          },
+          "damga": {
+            "yazi": "Sahn-ı\nSeman",
+            "lon": 28.9497,
+            "lat": 41.0195,
+            "bas": 0.45,
+            "dy": -290
+          },
+          "tip": "harita"
+        }
       }
     ],
     "soru": "Fatih'in en çok hangi yönünü merak ediyorsun?",
@@ -297,7 +565,8 @@
     "kapak": "ALİ KUŞÇU",
     "kanca_gorsel": [
       "File:(Venice) Maometto II - Gentile Bellini - Museo Correr.jpg"
-    ]
+    ],
+    "stil": "animasyon"
   },
   {
     "id": "ikinci-bayezid",

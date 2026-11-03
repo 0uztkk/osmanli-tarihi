@@ -190,7 +190,7 @@ def arma(d, cx, cy, s, desen, ad, alfa=255):
     golge = [(x + 8 * s, y + 10 * s) for x, y in nok]
     d.polygon(golge, fill=(0, 0, 0, int(alfa * 0.35)))
     zemin = {"carpi": (238, 196, 70), "kanat": (168, 30, 40), "anahtar": (240, 232, 214),
-             "hilal": (178, 30, 36), "kartal": (238, 196, 70)}.get(desen, (200, 200, 200))
+             "hilal": (178, 30, 36), "kartal": (238, 196, 70), "halka": (40, 40, 52)}.get(desen, (200, 200, 200))
     d.polygon(nok, fill=zemin + (alfa,), outline=ALTIN + (alfa,), width=int(7 * s))
     a = alfa
     if desen == "carpi":
@@ -212,6 +212,10 @@ def arma(d, cx, cy, s, desen, ad, alfa=255):
             d.ellipse([bas[0] - 17 * s, bas[1] - 17 * s, bas[0] + 17 * s, bas[1] + 17 * s], outline=renk + (a,),
                       width=int(8 * s))
             d.line([uc, (uc[0] + yon * 16 * s, uc[1] + 10 * s)], fill=renk + (a,), width=int(9 * s))
+    elif desen == "halka":   # Timur'un üç halkası
+        for hx, hy in ((0, -30), (-30, 22), (30, 22)):
+            d.ellipse([cx + hx * s - 22 * s, cy + hy * s - 22 * s, cx + hx * s + 22 * s, cy + hy * s + 22 * s],
+                      outline=ALTIN + (a,), width=int(8 * s))
     elif desen == "hilal":
         r = 48 * s
         d.ellipse([cx - r - 10 * s, cy - r, cx + r - 10 * s, cy + r], fill=(250, 248, 240, a))
@@ -382,6 +386,8 @@ class Harita:
             onceki = parca[-2] if len(parca) > 1 else parca[-1]
             yon = 1 if bas[0] >= onceki[0] else -1
             boy = r.get("boy", 70)
+            if r.get("ikon") == "yok":
+                continue
             if r.get("ikon") == "ordu":
                 sancak(d, bas[0], bas[1], boy, r.get("taraf", "osmanli"), sn * 2)
                 continue
@@ -394,6 +400,7 @@ class Harita:
             if not a:
                 continue
             x, y = self.xy(e["lon"], e["lat"])
+            y += e.get("dy", 0)
             if e.get("tip") == "bolge":
                 yazi(d, (x, y), tr_buyuk(e["ad"]), F_BOLGE, (250, 240, 215), 4, alfa=a)
             else:
@@ -680,7 +687,61 @@ class Plan:
         return img
 
 
-TURLER = {"harita": Harita, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan}
+# ---------------------------------------------------------------- basamak (hiyerarşi)
+class Basamak:
+    """Alttan üste dizilen basamaklar: rütbeler, odalar, makamlar. En üstteki altın renkte parlar."""
+
+    def __init__(self, spec):
+        self.spec = spec
+        y = np.linspace(0, 1, H)[:, None, None]
+        zemin = np.array([70, 44, 30]) * (1 - y) + np.array([34, 22, 16]) * y
+        img = np.broadcast_to(zemin, (H, W, 3)).astype(np.float32).copy() + kagit_dokusu(13, 8)
+        taban = vinyet(Image.fromarray(img.clip(0, 255).astype(np.uint8)), 0.5)
+        d = ImageDraw.Draw(taban, "RGBA")
+        for i in range(-2, 14):   # arka planda geometrik desen (çini motifi)
+            for j in range(-2, 26):
+                cx, cy = i * 90 + (45 if j % 2 else 0), j * 80
+                d.polygon([(cx, cy - 30), (cx + 30, cy), (cx, cy + 30), (cx - 30, cy)], outline=(232, 190, 105, 22), width=2)
+        self.taban = taban
+
+    def kare(self, u, sn):
+        sp = self.spec
+        img = self.taban.copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        b = sp.get("baslik")
+        if b:
+            a = int(255 * evre(sn, 0.05, 0.4))
+            yazi(d, (W / 2, 260), tr_buyuk(b), F_UST_ALT, ALTIN, 4, alfa=a)
+        ogeler = sp["ogeler"]   # alttan üste
+        n = len(ogeler)
+        alt, ust = 1260, 380
+        adim = (alt - ust) / max(1, n - 1) if n > 1 else 0
+        for i, o in enumerate(ogeler):
+            bas = 0.05 + i * (0.7 / n)
+            e = evre(u, bas, 0.09)
+            if e <= 0:
+                continue
+            y = alt - i * adim
+            gen = 860 - i * (280 / max(1, n - 1)) if n > 1 else 640
+            x0, x1 = W / 2 - gen / 2, W / 2 + gen / 2
+            ofs = (1 - zipla(e)) * 60
+            son = i == n - 1
+            zemin = (176, 34, 34) if son else KREM
+            renk = (255, 236, 190) if son else MUREKKEP
+            d.rectangle([x0 + 8, y - 44 + 10 + ofs, x1 + 8, y + 44 + 10 + ofs], fill=(0, 0, 0, int(110 * e)))
+            d.rectangle([x0, y - 44 + ofs, x1, y + 44 + ofs], fill=zemin + (int(255 * e),), outline=ALTIN + (int(255 * e),), width=4)
+            et = tr_buyuk(o)
+            f = F_ARMA if d.textlength(et, font=F_BANT) > gen - 40 else F_BANT
+            yazi(d, (W / 2, y - f.size * 0.6 + ofs), et, f, renk, 0, alfa=int(255 * e))
+            if son and e >= 1:
+                for k in range(2):
+                    faz = (sn * 0.8 + k / 2) % 1
+                    r = gen / 2 + 20 + faz * 60
+                    d.rectangle([W / 2 - r, y - 44 - faz * 30, W / 2 + r, y + 44 + faz * 30], outline=ALTIN + (int(180 * (1 - faz)),), width=4)
+        return img
+
+
+TURLER = {"harita": Harita, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan, "basamak": Basamak}
 
 
 def hazirla(spec, sure=6.0):
