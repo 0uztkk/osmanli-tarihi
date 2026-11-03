@@ -174,7 +174,7 @@ def render(sahneler, bolumler, toplam, kapak, yol):
 
         # sol üst: kanal adı, sağ üst: tarih/isim etiketi
         d.text((48, 40), KANAL, font=F_KANAL, fill=ALTIN, stroke_width=3, stroke_fill=(20, 14, 10))
-        if s.get("yazi") and s["tur"] == "sahne":
+        if s.get("yazi") and s["tur"] == "sahne" and not s.get("anim"):
             et = s["yazi"]
             tw = d.textlength(et, font=F_ETIKET)
             d.rounded_rectangle([W - 48 - tw - 44, 30, W - 48, 30 + 62], 12, fill=(25, 15, 10), outline=ALTIN, width=2)

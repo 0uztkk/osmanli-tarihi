@@ -463,6 +463,15 @@ class Harita:
             if u >= rz.get("bas", 0):
                 a = int(255 * evre(u, rz["bas"], 0.1))
                 rozet(d, rz.get("x", W / 2), rz.get("y", 1200), tr_buyuk(rz["yazi"]), a)
+        # yavaş yakınlaşma (odağa doğru)
+        z = 1 + (sp.get("zoom", 1.10) - 1) * yumusak(u)
+        if z > 1.001:
+            ox, oy = self.xy(*sp["odak"]) if "odak" in sp else (W / 2, H / 2)
+            ww, hh = W / z, H / z
+            x0 = min(max(ox - ww / 2, 0), W - ww)
+            y0 = min(max(oy - hh / 2, 0), H - hh)
+            img = img.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + ww, y0 + hh))
+        d = ImageDraw.Draw(img, "RGBA")
         # üst başlık
         b = sp.get("baslik")
         if b:
@@ -485,14 +494,6 @@ class Harita:
                 yazi(d, (W / 2, y0 + 20 + (F_UST.size - f.size) * 0.6), b.get("ust", ""), f, (255, 236, 190), 6, alfa=a)
                 if b.get("alt"):
                     yazi(d, (W / 2, y0 + 170), tr_buyuk(b["alt"]), F_UST_ALT, ALTIN, 4, alfa=a)
-        # yavaş yakınlaşma (odağa doğru)
-        z = 1 + (sp.get("zoom", 1.10) - 1) * yumusak(u)
-        if z > 1.001:
-            ox, oy = self.xy(*sp["odak"]) if "odak" in sp else (W / 2, H / 2)
-            ww, hh = W / z, H / z
-            x0 = min(max(ox - ww / 2, 0), W - ww)
-            y0 = min(max(oy - hh / 2, 0), H - hh)
-            img = img.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + ww, y0 + hh))
         return img
 
     @staticmethod
@@ -623,7 +624,9 @@ class Takvim:
             yil = yil[0] if idx < len(aylar) - 1 else yil[-1]
         yazi(d, (W / 2, y0 + 22), str(yil), F_TAKVIM_YIL, (255, 240, 220), 0)
         ay = tr_buyuk(aylar[idx])
-        f = F_TAKVIM_AY if d.textlength(ay, font=F_TAKVIM_AY) < 500 else _f("DejaVuSerif-Bold.ttf", 92)
+        f = F_TAKVIM_AY
+        while d.textlength(ay, font=f) > 520 and f.size > 50:
+            f = _f("DejaVuSerif-Bold.ttf", f.size - 8)
         yazi(d, (W / 2, cy - 10), ay, f, MUREKKEP, 0)
         # çevrilen yaprak efekti
         faz = (u - 0.08) / max(0.05, cevir - 0.08) * (len(aylar) - 1)
@@ -633,7 +636,7 @@ class Takvim:
             d.polygon([(x0 + 6, y0 + 110), (x1 - 6, y0 + 110), (x1 - 6, yy), (x0 + 6, yy)], fill=(236, 226, 204, 200))
         rz = sp.get("rozet")
         if rz and u >= cevir:
-            rozet(d, W / 2 if not yatay() else W / 2 + 470, cy + 340 if not yatay() else cy, tr_buyuk(rz), int(255 * evre(u, cevir, 0.08)))
+            rozet(d, W / 2 if not yatay() else x1 + 80 + d.textlength(tr_buyuk(rz), font=F_ROZET) / 2, cy + 340 if not yatay() else cy, tr_buyuk(rz), int(255 * evre(u, cevir, 0.08)))
         return img
 
 
