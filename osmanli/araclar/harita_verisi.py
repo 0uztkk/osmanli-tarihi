@@ -17,6 +17,7 @@ for g in getattr(kara, "geoms", [kara]):
         continue
     halkalar.append([[round(x, 3), round(y, 3)] for x, y in g.exterior.coords])
 yol = os.path.join(ROOT, "osmanli", "assets", "harita_kara.json")
+os.makedirs(os.path.dirname(yol), exist_ok=True)
 with open(yol, "w") as f:
     json.dump(halkalar, f, separators=(",", ":"))
 print(len(halkalar), "halka", os.path.getsize(yol) // 1024, "KB")
