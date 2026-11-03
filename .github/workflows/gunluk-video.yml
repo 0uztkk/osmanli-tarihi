@@ -2,15 +2,22 @@ name: Osmanli tarihi video
 
 on:
   schedule:
-    - cron: "40 8 * * *"    # her gün 11:40 (Türkiye saati) -> Saray hayatı
-    - cron: "10 9 * * *"    #   yedek 12:10 (asıl çalıştıysa aynı başlığı görüp yüklemez)
-    - cron: "47 9 * * *"    #   2. yedek 12:47 (GitHub bazen zamanlanmış çalışmaları hiç başlatmıyor)
-    - cron: "25 14 * * *"   # her gün 17:25 (Türkiye saati) -> Tarihten portreler
-    - cron: "55 14 * * *"   #   yedek 17:55
-    - cron: "31 15 * * *"   #   2. yedek 18:31
-    - cron: "10 17 * * *"   # her gün 20:10 (Türkiye saati) -> Savaşlar
-    - cron: "40 17 * * *"   #   yedek 20:40
-    - cron: "19 18 * * *"   #   2. yedek 21:19
+    # GitHub zamanlanmış çalışmaları sık sık 30-60 dk geç başlatıyor ya da hiç başlatmıyor.
+    # Bu yüzden her video için yayın saatinden ÖNCE başlayan 4 deneme var; erken başlayan
+    # deneme yayın saatine kadar bekler. İlk yükleyen "yuklenenler" dalına işaret bırakır,
+    # sonraki denemeler bunu görüp hiçbir şey yapmadan çıkar.
+    - cron: "45 7 * * *"    # Saray hayatı  -> yayın 11:40 (Türkiye)
+    - cron: "15 8 * * *"
+    - cron: "45 8 * * *"
+    - cron: "20 9 * * *"
+    - cron: "30 13 * * *"   # Tarihten portreler -> yayın 17:25
+    - cron: "0 14 * * *"
+    - cron: "30 14 * * *"
+    - cron: "5 15 * * *"
+    - cron: "15 16 * * *"   # Savaşlar -> yayın 20:10
+    - cron: "45 16 * * *"
+    - cron: "15 17 * * *"
+    - cron: "50 17 * * *"
   workflow_dispatch:
     inputs:
       kategori:
@@ -29,6 +36,9 @@ on:
         description: "Sadece görsel kontrol raporu (yükleme yapmaz)"
         type: boolean
         default: false
+
+permissions:
+  contents: write
 
 concurrency:
   group: osmanli-video
@@ -54,31 +64,66 @@ jobs:
   uret-ve-yukle:
     if: github.event.inputs.gorsel_kontrol != 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 110
     steps:
       - uses: actions/checkout@v4
 
+      - name: Kategori, işaret ve yayın saati
+        id: plan
+        env:
+          CRON: ${{ github.event.schedule }}
+          GIRDI: ${{ github.event.inputs.kategori }}
+          SEED: ${{ github.event.inputs.seed }}
+        run: |
+          if [ -n "$CRON" ]; then
+            # kategori cron'un kendi saatinden çıkar (başlama gecikmesinden etkilenmez)
+            ch=$(echo "$CRON" | awk '{print $2}')
+            case "$ch" in 7|8|9) k=saray; hedef="08:40";; 13|14|15) k=kisiler; hedef="14:25";; 16|17) k=savaslar; hedef="17:10";; esac
+          else
+            k=${GIRDI:-savaslar}; hedef=""
+          fi
+          gun=${SEED:-$(TZ=Europe/Istanbul date +%Y%m%d)}
+          echo "kategori=$k" >> $GITHUB_OUTPUT
+          echo "isaret=$gun-$k" >> $GITHUB_OUTPUT
+          if git fetch -q origin yuklenenler 2>/dev/null && git cat-file -e "FETCH_HEAD:$gun-$k" 2>/dev/null; then
+            echo "Bugünün $k videosu zaten yüklenmiş ($gun-$k). Çıkılıyor."
+            echo "atla=1" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          if [ -n "$hedef" ]; then
+            fark=$(( $(date -u -d "today $hedef" +%s) - $(date -u +%s) ))
+            if [ $fark -gt 0 ] && [ $fark -lt 7200 ]; then
+              echo "Yayın saatine $((fark/60)) dk var, bekleniyor..."
+              sleep $fark
+            fi
+          fi
+
       - name: Araçları kur
+        if: steps.plan.outputs.atla != '1'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
 
       - uses: actions/setup-python@v5
+        if: steps.plan.outputs.atla != '1'
         with:
           python-version: "3.12"
 
       - name: Python paketleri
+        if: steps.plan.outputs.atla != '1'
         run: pip install -r requirements.txt
 
       - name: Videoyu üret
+        if: steps.plan.outputs.atla != '1'
         env:
           SEED: ${{ github.event.inputs.seed }}
           KONU: ${{ github.event.inputs.konu }}
-          KATEGORI: ${{ (github.event.schedule == '40 8 * * *' || github.event.schedule == '10 9 * * *' || github.event.schedule == '47 9 * * *') && 'saray' || (github.event.schedule == '25 14 * * *' || github.event.schedule == '55 14 * * *' || github.event.schedule == '31 15 * * *') && 'kisiler' || github.event.inputs.kategori || 'savaslar' }}
+          KATEGORI: ${{ steps.plan.outputs.kategori }}
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: python osmanli/build.py
 
       - name: Videoyu sakla (indirilebilir)
+        if: steps.plan.outputs.atla != '1'
         uses: actions/upload-artifact@v4
         with:
           name: osmanli-video
@@ -88,6 +133,7 @@ jobs:
           retention-days: 14
 
       - name: YouTube'a yükle
+        if: steps.plan.outputs.atla != '1'
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
@@ -95,3 +141,15 @@ jobs:
           BEKLENEN_KANAL: ${{ vars.KANAL_ADI || 'Sarayın Gölgesi' }}
           PRIVACY: ${{ github.event.inputs.privacy || 'public' }}
         run: python osmanli/yukle.py
+
+      - name: Yüklendi işaretini bırak
+        if: steps.plan.outputs.atla != '1' && (github.event_name == 'schedule' || github.event.inputs.privacy == 'public')
+        run: |
+          mkdir -p /tmp/isaret && cd /tmp/isaret
+          git init -q -b yuklenenler
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git fetch -q origin yuklenenler && git checkout -q -B yuklenenler origin/yuklenenler || true
+          date -u +%FT%TZ > "${{ steps.plan.outputs.isaret }}"
+          git add -A
+          git -c user.name=bot -c user.email=bot@users.noreply.github.com commit -q -m "${{ steps.plan.outputs.isaret }}"
+          git push -q origin yuklenenler
