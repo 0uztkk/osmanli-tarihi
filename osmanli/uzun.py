@@ -128,6 +128,9 @@ def sahne_hazirla(yol):
 
 
 def kare_uret(s, yerel):
+    if s.get("anim"):
+        u = s.get("anim_u", yerel)
+        return s["anim"].kare(u, u * s.get("anim_sure", 8.0))
     if s["mod"] == "sigdir":
         kare = s["bg"].copy()
         u = B.yumusak(yerel)
@@ -165,11 +168,12 @@ def render(sahneler, bolumler, toplam, kapak, yol):
         if i > 0 and t - s["bas"] < GECIS:
             o = sahneler[i - 1]
             kare = Image.blend(kare_uret(o, 1.0), kare, (t - s["bas"]) / GECIS)
-        kare.paste(G, (0, 0), G)
+        if not s.get("anim"):
+            kare.paste(G, (0, 0), G)
         d = ImageDraw.Draw(kare)
 
         # sol üst: kanal adı, sağ üst: tarih/isim etiketi
-        d.text((48, 40), KANAL, font=F_KANAL, fill=ALTIN)
+        d.text((48, 40), KANAL, font=F_KANAL, fill=ALTIN, stroke_width=3, stroke_fill=(20, 14, 10))
         if s.get("yazi") and s["tur"] == "sahne":
             et = s["yazi"]
             tw = d.textlength(et, font=F_ETIKET)
@@ -177,7 +181,7 @@ def render(sahneler, bolumler, toplam, kapak, yol):
             d.text((W - 48 - tw - 22, 40), et, font=F_ETIKET, fill=ALTIN)
 
         kart_suruyor = s.get("bolum_basi") is not None and t - s["bas"] < 2.6
-        if s["fg"] is None and s.get("yazi") and not kart_suruyor:   # görselsiz sahne: ortada süslü büyük yazı
+        if s["fg"] is None and s.get("yazi") and not kart_suruyor and not s.get("anim"):   # görselsiz sahne: ortada süslü büyük yazı
             et = B.tr_buyuk(s["yazi"])
             f = F_KAPAK
             while d.textlength(et, font=f) > 1500 and f.size > 60:
@@ -212,6 +216,10 @@ def render(sahneler, bolumler, toplam, kapak, yol):
         if s["kon_bas"] <= t <= s["kon_bit"] + 0.3:
             ilerle = (t - s["kon_bas"]) / max(0.1, s["kon_bit"] - s["kon_bas"])
             for a, b, parca in s["altyazi"]:
+                if a <= min(ilerle, 0.999) < b and s.get("kutu"):
+                    B.altyazi_kutu(d, parca, (min(ilerle, 0.999) - a) / (b - a), y=H - 175, ekran_w=W,
+                                   vurgu_renk=(255, 200, 80) if s["tur"] == "sahne" else (255, 160, 110))
+                    break
                 if a <= min(ilerle, 0.999) < b:
                     satirlar = B.satirla(d, parca, F_ALT, 1500)[:2]
                     y = H - 120 - len(satirlar) * 62
@@ -323,12 +331,18 @@ def main():
         return onbellek[anahtar]
 
     parcalar, kaynak = [("kanca", konu["kanca"], -1)], [(None, konu.get("kanca_gorsel") or konu["bolumler"][0]["sahneler"][0]["gorsel"], -1)]
+    animler = {0: konu["kanca_anim"]} if konu.get("kanca_anim") else {}
     for bi, bol in enumerate(konu["bolumler"]):
         for si, sh in enumerate(bol["sahneler"]):
             parcalar.append(("sahne", sh["metin"], bi))
-            kaynak.append((sh.get("yazi"), sh["gorsel"], bi if si == 0 else None))
+            if sh.get("anim"):
+                animler[len(kaynak)] = sh["anim"]
+            kaynak.append((sh.get("yazi"), ["-"] if sh.get("anim") else sh["gorsel"], bi if si == 0 else None))
     parcalar.append(("soru", konu["soru"], len(konu["bolumler"])))
-    kaynak.append((None, konu["bolumler"][-1]["sahneler"][-1]["gorsel"], None))
+    son = konu["bolumler"][-1]["sahneler"][-1]
+    kaynak.append((None, son["gorsel"] if not son.get("anim") else ["-"], None))
+    if son.get("anim"):
+        animler[len(kaynak) - 1] = ("dondur", len(kaynak) - 2)
 
     ses_yolu, zaman, toplam = ses_hazirla(parcalar)
     print(f"Süre: {toplam / 60:.1f} dk", flush=True)
@@ -336,6 +350,10 @@ def main():
     B.sinematik_yatak(ses_yolu, gecisler)   # yumuşak geçiş sesi yalnızca bölüm başlarında
 
     sahneler, hazir, bolum_zamanlari = [], {}, [(0, "Hikâyeye giriş")]
+    kutu = konu.get("stil", "animasyon") == "animasyon"
+    import animasyon
+    animasyon.ayarla(W, H)
+    anim_obj = {}
     for k, ((tur, metin, _), (a, b), (yazi, gliste, ilk)) in enumerate(zip(parcalar, zaman, kaynak)):
         g = gorsel_al(gliste)
         gorseller.append(g)
@@ -346,9 +364,19 @@ def main():
         bas = max(0.0, a - (1.6 if ilk is not None and ilk >= 0 else 0.3))
         if ilk is not None and ilk >= 0:
             bolum_zamanlari.append((int(bas), konu["bolumler"][ilk]["ad"]))
-        sahneler.append({"tur": tur, "yazi": yazi, "bg": bg, "fg": fg, "mod": mod, "bas": bas, "kon_bas": a, "kon_bit": b,
-                         "altyazi": altyazi_parcalari(metin), "hareket": k,
-                         "bolum_basi": ilk if (ilk is not None and ilk >= 0) else None})
+        sahne = {"tur": tur, "yazi": yazi, "bg": bg, "fg": fg, "mod": mod, "bas": bas, "kon_bas": a, "kon_bit": b,
+                 "altyazi": B.kutu_parcalari(metin, 34, 6) if kutu else altyazi_parcalari(metin), "hareket": k, "kutu": kutu,
+                 "bolum_basi": ilk if (ilk is not None and ilk >= 0) else None}
+        if k in animler:
+            if isinstance(animler[k], tuple):   # soru: son animasyonun son karesi
+                o, sure = anim_obj[animler[k][1]]
+                sahne.update(anim=o, anim_u=1.0, anim_sure=sure)
+            else:
+                ileri = zaman[k + 1][0] if k + 1 < len(zaman) else toplam
+                sure = max(1.0, ileri - bas)
+                anim_obj[k] = (animasyon.hazirla(animler[k], sure), sure)
+                sahne.update(anim=anim_obj[k][0], anim_sure=sure)
+        sahneler.append(sahne)
     sahneler[0]["bas"] = 0.0
 
     baslik = B.baslik_sec(seed, konu)

@@ -309,11 +309,11 @@ def altyazi_parcalari(metin):
 F_KUTU = font("DejaVuSans-Bold.ttf", 70)
 
 
-def kutu_parcalari(metin):
-    """Animasyonlu stil: 1-3 kelimelik kısa parçalar (tek satır)."""
+def kutu_parcalari(metin, en_fazla=17, kelime=3):
+    """Animasyonlu stil: 1-3 kelimelik kısa parçalar (tek satır). Uzun videoda daha uzun parçalar."""
     kelimeler, parcalar, p = metin.split(), [], []
     for k in kelimeler:
-        if p and (len(" ".join(p + [k])) > 17 or len(p) >= 3):
+        if p and (len(" ".join(p + [k])) > en_fazla or len(p) >= kelime):
             parcalar.append(" ".join(p)); p = []
         p.append(k)
         if k.endswith((".", "?", "!", ",", ":", ";")):
@@ -327,7 +327,7 @@ def kutu_parcalari(metin):
     return sinirlar
 
 
-def altyazi_kutu(d, parca, ic, y=1400, vurgu_renk=(255, 200, 80)):
+def altyazi_kutu(d, parca, ic, y=1400, vurgu_renk=(255, 200, 80), ekran_w=None):
     """Kanalın kendi stili: koyu mürekkep plaka, ince altın çerçeve, krem yazı;
     o an söylenen kelime altın renge döner ve altına kısa bir altın çizgi gelir."""
     kelimeler = parca.split()
@@ -341,6 +341,7 @@ def altyazi_kutu(d, parca, ic, y=1400, vurgu_renk=(255, 200, 80)):
     bosluk = d.textlength(" ", font=F_KUTU)
     gen = [d.textlength(k, font=F_KUTU) for k in kelimeler]
     tw = sum(gen) + bosluk * (len(kelimeler) - 1)
+    W = ekran_w or globals()["W"]
     x0, x1 = (W - tw) / 2 - 38, (W + tw) / 2 + 38
     d.rectangle([x0 + 8, y + 10, x1 + 8, y + 112], fill=(8, 6, 4))
     d.rectangle([x0, y, x1, y + 102], fill=(28, 20, 14), outline=(232, 190, 105), width=3)

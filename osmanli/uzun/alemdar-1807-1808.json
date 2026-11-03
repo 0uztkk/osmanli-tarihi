@@ -40,7 +40,28 @@
           "metin": "Yıllar geçtikçe saray ile yeniçeriler arasındaki gerilim büyüdü. Bir kıvılcım, her şeyi ateşe vermeye yetecekti. O kıvılcım, Boğaz'ın kıyısındaki küçük bir kalede çaktı.",
           "gorsel": [
             "File:Yeniçeri.jpg"
-          ]
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Nizam-ı Cedid",
+                "desen": "hilal"
+              }
+            ],
+            "bant": "Gerilim",
+            "karsi": {
+              "ad": "Yeniçeri Ocağı",
+              "desen": "kazan"
+            },
+            "arka": {
+              "merkez": [
+                28.97,
+                41.03
+              ],
+              "genislik": 0.9
+            }
+          }
         }
       ]
     },
@@ -52,7 +73,77 @@
           "metin": "1807 baharında, Boğaz kalelerinde görev yapan yamak askerlerine de yeni üniformalar giydirilmek istendi. Yamaklar bunu reddetti. Tartışma büyüdü ve kalede bir görevli öldürüldü.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              28.98,
+              41.1
+            ],
+            "genislik": 0.75,
+            "odak": [
+              28.99,
+              41.03
+            ],
+            "zoom": 1.08,
+            "baslik": {
+              "ust": "1807",
+              "alt": "Kabakçı isyanı",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Rumeli Kavağı",
+                "lon": 29.08,
+                "lat": 41.18,
+                "yan": "sol"
+              },
+              {
+                "ad": "Atmeydanı",
+                "lon": 28.975,
+                "lat": 41.006,
+                "bas": 0.5,
+                "yan": "sol"
+              },
+              {
+                "ad": "Boğaziçi",
+                "lon": 29.06,
+                "lat": 41.12,
+                "tip": "bolge"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    29.08,
+                    41.18
+                  ],
+                  [
+                    29.06,
+                    41.12
+                  ],
+                  [
+                    29.03,
+                    41.07
+                  ],
+                  [
+                    29.0,
+                    41.04
+                  ],
+                  [
+                    28.98,
+                    41.01
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.15,
+                "bit": 0.85,
+                "boy": 80
+              }
+            ],
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Kabakçı Mustafa",
@@ -106,7 +197,72 @@
           "metin": "1806'da Rusya ile yeni bir savaş başlamıştı ve Tuna boyu yeniden cepheye dönmüştü. Alemdar'ın askerleri bu savaşta önemli bir rol oynadı. Bu da ona hem büyük bir askeri güç hem de devlet katında itibar kazandırdı.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              27.0,
+              44.6
+            ],
+            "genislik": 10,
+            "odak": [
+              25.97,
+              43.85
+            ],
+            "zoom": 1.08,
+            "baslik": {
+              "ust": "1806",
+              "alt": "Tuna cephesi"
+            },
+            "etiketler": [
+              {
+                "ad": "Rusçuk",
+                "lon": 25.97,
+                "lat": 43.85,
+                "yan": "sol"
+              },
+              {
+                "ad": "Rusya",
+                "lon": 28.6,
+                "lat": 46.8,
+                "tip": "bolge"
+              },
+              {
+                "ad": "Tuna",
+                "lon": 27.3,
+                "lat": 44.25,
+                "tip": "bolge"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.8,
+                    46.9
+                  ],
+                  [
+                    27.9,
+                    45.6
+                  ],
+                  [
+                    26.6,
+                    44.4
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.1,
+                "bit": 0.6,
+                "boy": 80
+              }
+            ],
+            "carpisma": {
+              "lon": 26.4,
+              "lat": 44.15,
+              "bas": 0.62
+            },
+            "tip": "harita"
+          }
         }
       ]
     },
@@ -118,7 +274,67 @@
           "metin": "Yenilikleri destekleyen bazı devlet adamları İstanbul'dan kaçtı. Sığındıkları yer, Tuna kıyısındaki Rusçuk'tu. Orada onları güçlü bir ayan bekliyordu: Alemdar Mustafa Paşa.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              27.6,
+              42.5
+            ],
+            "genislik": 11,
+            "odak": [
+              25.97,
+              43.85
+            ],
+            "zoom": 1.08,
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Rusçuk",
+                "lon": 25.97,
+                "lat": 43.85,
+                "yan": "sol",
+                "bas": 0.4
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.01
+                  ],
+                  [
+                    27.6,
+                    41.9
+                  ],
+                  [
+                    26.6,
+                    43.0
+                  ],
+                  [
+                    25.97,
+                    43.8
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.05,
+                "bit": 0.5
+              }
+            ],
+            "damga": {
+              "yazi": "Rusçuk\nYaranı",
+              "lon": 25.97,
+              "lat": 43.85,
+              "bas": 0.55
+            },
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Alemdar Mustafa Paşa",
@@ -132,14 +348,122 @@
           "metin": "Önce isyanın sembolünü ortadan kaldırdılar. Alemdar'ın gönderdiği adamlar, Kabakçı Mustafa'yı Boğaz'daki yerinde baskınla öldürdü. Yol artık İstanbul'a açıktı.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              29.05,
+              41.12
+            ],
+            "genislik": 0.6,
+            "odak": [
+              29.08,
+              41.18
+            ],
+            "zoom": 1.1,
+            "etiketler": [
+              {
+                "ad": "Rumeli Kavağı",
+                "lon": 29.08,
+                "lat": 41.18,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 29.08,
+              "lat": 41.18,
+              "bas": 0.1,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "Kabakçı\nöldürüldü",
+              "lon": 29.08,
+              "lat": 41.18,
+              "bas": 0.5
+            },
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Temmuz 1808",
           "metin": "1808 yazında Alemdar, binlerce askeriyle İstanbul'a girdi. Şehirde kimse ona karşı koyacak güçte değildi. Hedefi tek bir yerdi: Topkapı Sarayı. Önce Edirne'ye geldi, ardından İstanbul'un kapılarına dayandı. Dördüncü Mustafa ilk başta onu bir müttefik gibi karşılamak zorunda kaldı.",
           "gorsel": [
             "File:Vue de la seconde Porte du Sérai appellée Orta-Kapousi - Choiseul-gouffier Gabriel Florent Auguste De - 1822.jpg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              27.6,
+              42.5
+            ],
+            "genislik": 11,
+            "odak": [
+              28.98,
+              41.01
+            ],
+            "zoom": 1.1,
+            "baslik": {
+              "ust": "1808",
+              "alt": "Temmuz · İstanbul'a yürüyüş",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Rusçuk",
+                "lon": 25.97,
+                "lat": 43.85,
+                "yan": "sol"
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sol",
+                "bas": 0.4
+              },
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sag",
+                "bas": 0.7
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    25.97,
+                    43.8
+                  ],
+                  [
+                    26.3,
+                    42.6
+                  ],
+                  [
+                    26.56,
+                    41.7
+                  ],
+                  [
+                    27.8,
+                    41.3
+                  ],
+                  [
+                    28.95,
+                    41.02
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.1,
+                "bit": 0.9,
+                "boy": 95
+              }
+            ],
+            "tip": "harita"
+          }
         }
       ]
     },
@@ -203,7 +527,153 @@
           "metin": "Alemdar, imparatorluğun dört bir yanındaki güçlü ayanları İstanbul'a çağırdı. 1808 sonbaharında, padişah ile ayanlar arasında Sened-i İttifak adlı bir belge imzalandı. Bu, merkezi yönetimle taşranın güçlü adamları arasında yazılı bir anlaşmaydı. Bazı tarihçiler bu belgeyi, padişahın yetkisini sınırlayan ilk yazılı adım olarak görür. Bazıları ise sadece ayanların gücünü kabul ettiren bir anlaşma olarak değerlendirir.",
           "gorsel": [
             "File:Portrait of Sultan Mahmud II of Turkey.jpg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              27.6,
+              41.4
+            ],
+            "genislik": 19,
+            "odak": [
+              28.98,
+              41.01
+            ],
+            "zoom": 1.06,
+            "baslik": {
+              "ust": "1808",
+              "alt": "Sened-i İttifak",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sag"
+              },
+              {
+                "ad": "Rusçuk",
+                "lon": 25.97,
+                "lat": 43.85,
+                "yan": "sol"
+              },
+              {
+                "ad": "Serez",
+                "lon": 23.55,
+                "lat": 41.09,
+                "yan": "sol"
+              },
+              {
+                "ad": "Yanya",
+                "lon": 20.85,
+                "lat": 39.67,
+                "yan": "sag"
+              },
+              {
+                "ad": "Karesi",
+                "lon": 27.88,
+                "lat": 39.65,
+                "yan": "sol"
+              },
+              {
+                "ad": "Bozok",
+                "lon": 34.8,
+                "lat": 39.82,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    25.97,
+                    43.85
+                  ],
+                  [
+                    28.9,
+                    41.05
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.45
+              },
+              {
+                "yol": [
+                  [
+                    23.55,
+                    41.09
+                  ],
+                  [
+                    28.9,
+                    41.0
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.15,
+                "bit": 0.5
+              },
+              {
+                "yol": [
+                  [
+                    20.85,
+                    39.67
+                  ],
+                  [
+                    28.9,
+                    40.98
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.2,
+                "bit": 0.55
+              },
+              {
+                "yol": [
+                  [
+                    27.88,
+                    39.65
+                  ],
+                  [
+                    28.95,
+                    40.98
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.25,
+                "bit": 0.5
+              },
+              {
+                "yol": [
+                  [
+                    34.8,
+                    39.82
+                  ],
+                  [
+                    29.05,
+                    41.0
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.3,
+                "bit": 0.6
+              }
+            ],
+            "damga": {
+              "yazi": "Sened-i\nİttifak",
+              "lon": 28.98,
+              "lat": 41.01,
+              "bas": 0.65,
+              "dx": -300,
+              "dy": -200
+            },
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Sekban-ı Cedid",
@@ -295,7 +765,24 @@
           "metin": "Tam on sekiz yıl bekledi. 1826'da, bu kez hazırlıklı olarak yeniçeri ocağını tamamen kaldırdı. Alemdar'ın patlattığı barut, aslında bir dönemin sonunu başlatmıştı.",
           "gorsel": [
             "File:Welt-Galleria T085.jpg"
-          ]
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "yil": "Sabırlı padişah",
+            "aylar": [
+              "1808",
+              "1810",
+              "1812",
+              "1815",
+              "1818",
+              "1821",
+              "1824",
+              "1826"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "18 yıl"
+          }
         },
         {
           "yazi": "Alemdar Caddesi",
@@ -318,5 +805,6 @@
     "sened-i ittifak",
     "yeniçeriler",
     "osmanlı tarihi belgesel"
-  ]
+  ],
+  "stil": "animasyon"
 }
