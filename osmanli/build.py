@@ -247,6 +247,9 @@ def yumusak(x):
 def sahne_kare(sahne, yerel, i):
     """Bir sahnenin metinsiz karesi (tam ekran). yerel: sahne içi ilerleme 0..1
     Kamera görselin uzun ekseni boyunca yavaşça kayar, aynı anda hafifçe yakınlaşır/uzaklaşır."""
+    if sahne.get("anim"):
+        u = sahne.get("anim_u", yerel)
+        return sahne["anim"].kare(u, u * sahne.get("anim_sure", 6.0))
     bg, fg = sahne["bg"], sahne["fg"]
     if fg is None:
         return bg.copy()
@@ -303,6 +306,51 @@ def altyazi_parcalari(metin):
     return sinirlar
 
 
+F_KUTU = font("DejaVuSans-Bold.ttf", 70)
+
+
+def kutu_parcalari(metin):
+    """Animasyonlu stil: 1-3 kelimelik kısa parçalar (tek satır)."""
+    kelimeler, parcalar, p = metin.split(), [], []
+    for k in kelimeler:
+        if p and (len(" ".join(p + [k])) > 17 or len(p) >= 3):
+            parcalar.append(" ".join(p)); p = []
+        p.append(k)
+        if k.endswith((".", "?", "!", ",", ":", ";")):
+            parcalar.append(" ".join(p)); p = []
+    if p:
+        parcalar.append(" ".join(p))
+    toplam = sum(len(x) + 2 for x in parcalar) or 1
+    sinirlar, b = [], 0.0
+    for x in parcalar:
+        sinirlar.append((b, b + (len(x) + 2) / toplam, x)); b += (len(x) + 2) / toplam
+    return sinirlar
+
+
+def altyazi_kutu(d, parca, ic, y=1400, vurgu_renk=(255, 204, 60)):
+    """Krem kutu içinde koyu yazı; o an söylenen kelimenin arkası sarı."""
+    kelimeler = parca.split()
+    uz = [len(k) + 1 for k in kelimeler]
+    hedef, n = ic * sum(uz), 0
+    for i, l in enumerate(uz):
+        if hedef < l:
+            n = i; break
+        hedef -= l
+        n = i
+    bosluk = d.textlength(" ", font=F_KUTU)
+    gen = [d.textlength(k, font=F_KUTU) for k in kelimeler]
+    tw = sum(gen) + bosluk * (len(kelimeler) - 1)
+    x0, x1 = (W - tw) / 2 - 34, (W + tw) / 2 + 34
+    d.rounded_rectangle([x0 + 7, y + 9, x1 + 7, y + 104], 18, fill=(0, 0, 0))
+    d.rounded_rectangle([x0, y, x1, y + 96], 18, fill=(246, 234, 204), outline=(48, 32, 20), width=5)
+    x = (W - tw) / 2
+    for i, k in enumerate(kelimeler):
+        if i == n:
+            d.rounded_rectangle([x - 10, y + 12, x + gen[i] + 10, y + 84], 12, fill=vurgu_renk)
+        d.text((x, y + 8), k, font=F_KUTU, fill=(40, 26, 16))
+        x += gen[i] + bosluk
+
+
 def kapanis_karti(d, yazi, gecen):
     """Videonun sonunda altın çerçeveli küçük kart; yukarıdan yumuşakça iner."""
     iner = min(1.0, gecen / 0.4)
@@ -335,19 +383,23 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
         if i > 0 and t - s["bas"] < GECIS:   # yumuşak geçiş
             onceki = sahneler[i - 1]
             kare = Image.blend(sahne_kare(onceki, 1.0, i - 1), kare, (t - s["bas"]) / GECIS)
-        kare.paste(GOLGE, (0, 0), GOLGE)
+        if not s.get("anim"):
+            kare.paste(GOLGE, (0, 0), GOLGE)
         d = ImageDraw.Draw(kare)
 
         # üstte kanal bandı ve ilerleme çizgisi
         d.rectangle([0, 0, int(W * t / toplam), 8], fill=ALTIN)
         ust = KATEGORI_ADI.get(kategori, "")
-        d.text(((W - d.textlength(ust, font=F_KUCUK)) / 2, 150), ust, font=F_KUCUK, fill=ALTIN)
+        d.text(((W - d.textlength(ust, font=F_KUCUK)) / 2, 150), ust, font=F_KUCUK, fill=ALTIN,
+               stroke_width=4, stroke_fill=(20, 14, 10))
 
         if s["tur"] == "kanca":
             # kapak yazısı: başlığı tekrar etmeyen en fazla 3 kelime (yt-package)
             ortala(d, satirla(d, tr_buyuk(kapak), F_KAPAK, 980)[:2], F_KAPAK, 205, (255, 236, 160), 12, 8)
         elif s["tur"] == "kapanis":
             kapanis_karti(d, s["yazi"], t - s["bas"])
+        elif s.get("anim"):
+            pass
         elif s.get("yazi"):
             et = tr_buyuk(s["yazi"]) if len(s["yazi"]) < 18 else s["yazi"]
             tw = d.textlength(et, font=F_ETIKET)
@@ -355,7 +407,7 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
                                 fill=(25, 15, 10), outline=ALTIN, width=3)
             d.text(((W - tw) / 2, 228), et, font=F_ETIKET, fill=ALTIN)
 
-        if s["fg"] is None:   # görsel yoksa: ortada büyük süslü yazı
+        if s["fg"] is None and not s.get("anim"):   # görsel yoksa: ortada büyük süslü yazı
             merkez = s.get("yazi") or KATEGORI_ADI.get(kategori, "")
             satirlar = satirla(d, tr_buyuk(merkez), F_DEV, 920)[:3]
             y0 = 800 - len(satirlar) * (F_DEV.size + 16) / 2
@@ -369,6 +421,10 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
         if s["kon_bas"] <= t <= s["kon_bit"] + 0.3:
             ilerle = (t - s["kon_bas"]) / max(0.1, s["kon_bit"] - s["kon_bas"])
             for a, b, parca in s["altyazi"]:
+                if a <= min(ilerle, 0.999) < b and s.get("kutu"):
+                    altyazi_kutu(d, parca, (min(ilerle, 0.999) - a) / (b - a),
+                                 vurgu_renk=(255, 204, 60) if s["tur"] == "sahne" else (255, 170, 90))
+                    break
                 if a <= min(ilerle, 0.999) < b:
                     satirlar = satirla(d, parca, F_ALT, 960)[:2]
                     ortala(d, satirlar, F_ALT, 1420 - (len(satirlar) - 1) * 38,
@@ -468,7 +524,7 @@ def main():
     from gorsel import bul
     kullanilan, gorseller = set(), []
     for sh in konu["sahneler"]:
-        gorseller.append(bul(sh["gorsel"], kategori, os.path.join(OUT, "img"), kullanilan))
+        gorseller.append(bul(sh.get("gorsel", ["-"]), kategori, os.path.join(OUT, "img"), kullanilan))
     kanca_gi = konu.get("kanca_sahne", 0)
     if konu.get("kanca_gorsel"):   # kanca için ayrı, en çarpıcı görsel
         ozel = bul(konu["kanca_gorsel"], kategori, os.path.join(OUT, "img"), kullanilan)
@@ -477,6 +533,10 @@ def main():
             kanca_gi = len(gorseller) - 1
     kapanis, aciklama_sorusu, kapanis_turu = kapanis_sec(konu, kategori, seed)
     print(f"Kapanış: {kapanis_turu}", flush=True)
+    animler = {j: sh["anim"] for j, sh in enumerate(konu["sahneler"]) if sh.get("anim")}
+    if konu.get("kanca_anim"):
+        kanca_gi = "kanca_anim"
+        animler[kanca_gi] = konu["kanca_anim"]
     parcalar = [("kanca", konu["kanca"], None, kanca_gi)] + \
                [("sahne", sh["metin"], sh.get("yazi"), j) for j, sh in enumerate(konu["sahneler"])] + \
                [("kapanis" if kart else "soru", m, kart, len(konu["sahneler"]) - 1) for m, kart in kapanis]
@@ -502,12 +562,26 @@ def main():
 
     hazir = {}
     sahneler = []
-    for (tur, metin, yazi, gi), (a, b) in zip(parcalar, zaman):
-        if gi not in hazir:
-            hazir[gi] = sahne_hazirla(gorseller[gi]["yol"] if gorseller[gi] else None)
-        bg, fg = hazir[gi]
-        sahneler.append({"tur": tur, "yazi": yazi, "bg": bg, "fg": fg, "bas": max(0.0, a - 0.2),
-                         "kon_bas": a, "kon_bit": b, "altyazi": altyazi_parcalari(metin)})
+    kutu = konu.get("stil") == "animasyon"
+    import animasyon
+    anim_obj = {}
+    for k, ((tur, metin, yazi, gi), (a, b)) in enumerate(zip(parcalar, zaman)):
+        sahne = {"tur": tur, "yazi": yazi, "bas": max(0.0, a - 0.2), "kon_bas": a, "kon_bit": b, "kutu": kutu,
+                 "altyazi": kutu_parcalari(metin) if kutu else altyazi_parcalari(metin)}
+        if gi in animler:
+            bitis = max(0.0, zaman[k + 1][0] - 0.2) if k + 1 < len(zaman) else toplam
+            if gi in anim_obj:   # soru/kapanış: son animasyon son karesinde durur
+                sahne.update(anim=anim_obj[gi][0], anim_u=1.0, anim_sure=anim_obj[gi][1])
+            else:
+                sure = bitis - sahne["bas"]
+                anim_obj[gi] = (animasyon.hazirla(animler[gi], sure), sure)
+                sahne.update(anim=anim_obj[gi][0], anim_sure=sure)
+            sahne.update(bg=None, fg=None)
+        else:
+            if gi not in hazir:
+                hazir[gi] = sahne_hazirla(gorseller[gi]["yol"] if gorseller[gi] else None)
+            sahne["bg"], sahne["fg"] = hazir[gi]
+        sahneler.append(sahne)
     sahneler[0]["bas"] = 0.0
 
     seed_baslik = baslik_sec(seed, konu)

@@ -1,0 +1,561 @@
+"""Kodla çizilen animasyonlu sahneler (Shorts, 1080x1920).
+
+Sahne JSON'unda "anim" alanı varsa görsel yerine bu modül çizer. Türler:
+
+  harita   Akdeniz haritası (Natural Earth, kamu malı): şehir etiketleri, ilerleyen filo rotaları,
+           çarpışma işareti, yanıp sönen bölge, mühür damgası, üst başlık, yavaş yakınlaşma.
+  taraflar Tarafların armaları yukarıdan iner, ortada ittifak bandı, altta karşı taraf.
+  takvim   Gün batımı denizinde filo; ortada yaprakları çevrilen takvim ve "8 AY SONRA" bandı.
+
+Her tür hazirla(spec) ile bir kez kurulur, sonra .kare(u, sn) ile her kare çizilir
+(u: sahne içi ilerleme 0..1, sn: sahne başından beri geçen saniye).
+"""
+import json, math, os
+
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+
+W, H = 1080, 1920
+HERE = os.path.dirname(os.path.abspath(__file__))
+FONT_DIR = "/usr/share/fonts/truetype/dejavu/"
+
+DENIZ_UST, DENIZ_ALT = (38, 78, 90), (22, 46, 58)
+SIG = (64, 112, 120)
+KARA = (226, 206, 160)
+KARA_KOYU = (196, 168, 120)
+KIYI = (82, 58, 38)
+KREM = (246, 234, 204)
+MUREKKEP = (48, 32, 20)
+ALTIN = (232, 190, 105)
+KIRMIZI = (176, 34, 34)
+OSMANLI = (178, 30, 36)
+DUSMAN = (40, 60, 140)
+
+
+def _f(ad, boy):
+    try:
+        return ImageFont.truetype(FONT_DIR + ad, boy)
+    except OSError:
+        return ImageFont.load_default()
+
+
+F_SEHIR = _f("DejaVuSerif-Bold.ttf", 40)
+F_BOLGE = _f("DejaVuSerif-Bold.ttf", 34)
+F_UST = _f("DejaVuSerif-Bold.ttf", 120)
+F_UST_ALT = _f("DejaVuSerif-Bold.ttf", 46)
+F_BANT = _f("DejaVuSerif-Bold.ttf", 54)
+F_ARMA = _f("DejaVuSerif-Bold.ttf", 32)
+F_DAMGA = _f("DejaVuSerif-Bold.ttf", 38)
+F_TAKVIM_YIL = _f("DejaVuSerif-Bold.ttf", 54)
+F_TAKVIM_AY = _f("DejaVuSerif-Bold.ttf", 120)
+F_ROZET = _f("DejaVuSerif-Bold.ttf", 52)
+
+
+def tr_buyuk(s):
+    return s.replace("i", "İ").replace("ı", "I").upper()
+
+
+def yumusak(x):
+    x = min(1.0, max(0.0, x))
+    return x * x * (3 - 2 * x)
+
+
+def zipla(x):
+    """0→1, sonunda hafif sekme (aşağı inen armalar, damga)."""
+    x = min(1.0, max(0.0, x))
+    if x < 0.7:
+        return yumusak(x / 0.7) * 1.08
+    return 1.08 - 0.08 * yumusak((x - 0.7) / 0.3)
+
+
+def evre(sn, bas, sure=0.45):
+    return min(1.0, max(0.0, (sn - bas) / sure))
+
+
+def yazi(d, xy, metin, fnt, renk=KREM, kontur=5, kontur_renk=MUREKKEP, ortala=True, alfa=255):
+    x, y = xy
+    if ortala:
+        x -= d.textlength(metin, font=fnt) / 2
+    d.text((x, y), metin, font=fnt, fill=renk + (alfa,), stroke_width=kontur, stroke_fill=kontur_renk + (alfa,))
+
+
+def kagit_dokusu(seed=3, guc=10):
+    rng = np.random.default_rng(seed)
+    g = rng.normal(0, 1, (H // 4, W // 4)).astype(np.float32)
+    g = np.array(Image.fromarray(((g + 3) * 40).clip(0, 255).astype(np.uint8)).resize((W, H), Image.BICUBIC),
+                 dtype=np.float32) / 255 - 0.6
+    ince = rng.normal(0, 0.5, (H, W)).astype(np.float32)
+    return (g * guc + ince * guc * 0.4)[..., None]
+
+
+def vinyet(img, guc=0.55):
+    a = np.asarray(img).astype(np.float32)
+    yy, xx = np.mgrid[0:H, 0:W]
+    r = ((xx - W / 2) / (W * 0.75)) ** 2 + ((yy - H * 0.45) / (H * 0.7)) ** 2
+    m = 1 - np.clip(r, 0, 1) ** 1.6 * guc
+    return Image.fromarray((a * m[..., None]).clip(0, 255).astype(np.uint8))
+
+
+# ---------------------------------------------------------------- ikonlar
+def kadirga(d, x, y, boy, yon=1, taraf="osmanli", sallan=0.0, alfa=255):
+    """Yandan kadırga: gövde, kürekler, latin yelken, flama. yon=1 sağa bakar."""
+    s = boy / 100.0
+    y += math.sin(sallan) * 3 * s
+
+    def p(px, py):
+        return (x + yon * px * s, y + py * s)
+
+    govde = KIYI if taraf == "osmanli" else (60, 44, 34)
+    # kürekler
+    for i in range(7):
+        kx = -38 + i * 12
+        aci = math.sin(sallan * 2 + i * 0.5) * 6
+        d.line([p(kx, 8), p(kx - 6 + aci, 30)], fill=(70, 50, 34, alfa), width=max(2, int(3 * s)))
+    d.polygon([p(-58, 0), p(52, 0), p(66, -10), p(48, 12), p(-48, 12), p(-64, -6)], fill=govde + (alfa,))
+    d.line([p(-58, 0), p(52, 0)], fill=ALTIN + (alfa,), width=max(2, int(3 * s)))
+    # direk ve yelken
+    d.line([p(0, 0), p(0, -78)], fill=(60, 40, 26, alfa), width=max(2, int(4 * s)))
+    yelken = KREM if taraf == "osmanli" else (236, 228, 210)
+    d.polygon([p(-34, -6), p(10, -84), p(30, -10)], fill=yelken + (alfa,), outline=(90, 70, 50, alfa))
+    d.line([p(-40, 0), p(14, -90)], fill=(60, 40, 26, alfa), width=max(2, int(3 * s)))
+    cx, cy = p(4, -32)
+    if taraf == "osmanli":
+        r = 11 * s
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=OSMANLI + (alfa,))
+        d.ellipse([cx - r * 0.55 + yon * r * 0.45, cy - r * 0.8, cx + r * 0.95 + yon * r * 0.45, cy + r * 0.8],
+                  fill=yelken + (alfa,))
+    else:
+        d.line([(cx, cy - 12 * s), (cx, cy + 12 * s)], fill=KIRMIZI + (alfa,), width=max(2, int(5 * s)))
+        d.line([(cx - 9 * s, cy - 3 * s), (cx + 9 * s, cy - 3 * s)], fill=KIRMIZI + (alfa,), width=max(2, int(5 * s)))
+    renk = OSMANLI if taraf == "osmanli" else DUSMAN
+    d.polygon([p(0, -78), p(0, -66), p(-22 + math.sin(sallan * 3) * 3, -72)], fill=renk + (alfa,))
+
+
+def capraz_kilic(d, x, y, s, alfa=255):
+    for yon in (1, -1):
+        uc = (x + yon * 70 * s, y - 70 * s)
+        kabza = (x - yon * 52 * s, y + 52 * s)
+        d.line([kabza, uc], fill=(235, 235, 240, alfa), width=int(14 * s))
+        d.line([kabza, uc], fill=(150, 150, 160, alfa), width=int(4 * s))
+        gx, gy = x - yon * 34 * s, y + 34 * s
+        d.line([(gx - 20 * s, gy - 20 * s * yon * -1), (gx + 20 * s, gy + 20 * s * yon * -1)],
+               fill=ALTIN + (alfa,), width=int(10 * s))
+        d.ellipse([kabza[0] - 9 * s, kabza[1] - 9 * s, kabza[0] + 9 * s, kabza[1] + 9 * s], fill=ALTIN + (alfa,))
+
+
+def kalkan_noktalari(cx, cy, w, h):
+    nok = [(cx - w / 2, cy - h / 2), (cx + w / 2, cy - h / 2)]
+    for i in range(13):
+        a = i / 12
+        x = cx + w / 2 - a * w
+        yy = cy - h / 2 + h * 0.45 + math.sin(a * math.pi) * h * 0.55
+        nok.append((x, yy if 0 < a < 1 else cy - h / 2 + h * 0.45))
+    return nok
+
+
+def arma(d, cx, cy, s, desen, ad, alfa=255):
+    w, h = 150 * s, 180 * s
+    nok = kalkan_noktalari(cx, cy, w, h)
+    golge = [(x + 8 * s, y + 10 * s) for x, y in nok]
+    d.polygon(golge, fill=(0, 0, 0, int(alfa * 0.35)))
+    zemin = {"carpi": (238, 196, 70), "kanat": (168, 30, 40), "anahtar": (240, 232, 214),
+             "hilal": (178, 30, 36), "kartal": (238, 196, 70)}.get(desen, (200, 200, 200))
+    d.polygon(nok, fill=zemin + (alfa,), outline=ALTIN + (alfa,), width=int(7 * s))
+    a = alfa
+    if desen == "carpi":
+        for yon in (1, -1):
+            d.line([(cx - 46 * s * yon, cy - 58 * s), (cx + 46 * s * yon, cy + 52 * s)], fill=(170, 30, 30, a),
+                   width=int(20 * s))
+    elif desen == "kanat":   # Venedik: hale içinde açık kitap
+        d.ellipse([cx - 54 * s, cy - 62 * s, cx + 54 * s, cy + 46 * s], outline=ALTIN + (a,), width=int(6 * s))
+        for yon in (1, -1):
+            d.polygon([(cx, cy - 22 * s), (cx + yon * 44 * s, cy - 34 * s), (cx + yon * 44 * s, cy + 24 * s),
+                       (cx, cy + 34 * s)], fill=ALTIN + (a,), outline=(120, 80, 30, a))
+            for k in range(3):
+                yy = cy - 14 * s + k * 14 * s
+                d.line([(cx + yon * 8 * s, yy), (cx + yon * 36 * s, yy - 9 * s)], fill=(140, 30, 34, a), width=max(2, int(3 * s)))
+    elif desen == "anahtar":
+        for yon, renk in ((1, (220, 170, 40)), (-1, (170, 170, 180))):
+            bas, uc = (cx - yon * 40 * s, cy + 44 * s), (cx + yon * 38 * s, cy - 50 * s)
+            d.line([bas, uc], fill=renk + (a,), width=int(11 * s))
+            d.ellipse([bas[0] - 17 * s, bas[1] - 17 * s, bas[0] + 17 * s, bas[1] + 17 * s], outline=renk + (a,),
+                      width=int(8 * s))
+            d.line([uc, (uc[0] + yon * 16 * s, uc[1] + 10 * s)], fill=renk + (a,), width=int(9 * s))
+    elif desen == "hilal":
+        r = 48 * s
+        d.ellipse([cx - r - 10 * s, cy - r, cx + r - 10 * s, cy + r], fill=(250, 248, 240, a))
+        d.ellipse([cx - r + 12 * s, cy - r * 0.82, cx + r * 0.82 + 12 * s, cy + r * 0.82], fill=zemin + (a,))
+        yildiz(d, cx + 40 * s, cy, 18 * s, (250, 248, 240, a))
+    # isim şeridi
+    tw = d.textlength(ad, font=F_ARMA)
+    y0 = cy + h / 2 + 18 * s
+    d.rounded_rectangle([cx - tw / 2 - 22, y0, cx + tw / 2 + 22, y0 + 54], 10, fill=KREM + (a,),
+                        outline=MUREKKEP + (a,), width=3)
+    d.text((cx - tw / 2, y0 + 9), ad, font=F_ARMA, fill=MUREKKEP + (a,))
+
+
+def yildiz(d, cx, cy, r, renk):
+    nok = []
+    for i in range(10):
+        aa = -math.pi / 2 + i * math.pi / 5
+        rr = r if i % 2 == 0 else r * 0.45
+        nok.append((cx + rr * math.cos(aa), cy + rr * math.sin(aa)))
+    d.polygon(nok, fill=renk)
+
+
+def damga(d, cx, cy, metin, olcek, alfa=255):
+    """Kırmızı mum mühür."""
+    r = 160 * olcek
+    nok = []
+    for i in range(40):
+        aa = i / 40 * math.tau
+        rr = r * (1 + 0.06 * math.sin(i * 2.7) + 0.04 * math.cos(i * 5.1))
+        nok.append((cx + rr * math.cos(aa), cy + rr * math.sin(aa)))
+    d.polygon([(x + 6, y + 8) for x, y in nok], fill=(0, 0, 0, int(alfa * 0.3)))
+    d.polygon(nok, fill=(160, 26, 30, alfa))
+    d.ellipse([cx - r * 0.78, cy - r * 0.78, cx + r * 0.78, cy + r * 0.78], outline=(120, 14, 18, alfa), width=int(6 * olcek) + 1)
+    satirlar = metin.split("\n")
+    fnt = F_DAMGA if olcek > 0.2 else F_ARMA
+    y = cy - len(satirlar) * 24 * olcek
+    for s in satirlar:
+        tw = d.textlength(s, font=fnt)
+        if olcek >= 0.99:
+            d.text((cx - tw / 2, y), s, font=fnt, fill=(250, 226, 200, alfa))
+        y += 48 * olcek
+
+
+def rozet(d, cx, cy, metin, alfa=255, fnt=F_ROZET, zemin=KREM, renk=MUREKKEP):
+    tw = d.textlength(metin, font=fnt)
+    d.rounded_rectangle([cx - tw / 2 - 34 + 6, cy - 44 + 8, cx + tw / 2 + 34 + 6, cy + 44 + 8], 44,
+                        fill=(0, 0, 0, int(alfa * 0.35)))
+    d.rounded_rectangle([cx - tw / 2 - 34, cy - 44, cx + tw / 2 + 34, cy + 44], 44, fill=zemin + (alfa,),
+                        outline=MUREKKEP + (alfa,), width=5)
+    d.text((cx - tw / 2, cy - fnt.size * 0.62), metin, font=fnt, fill=renk + (alfa,))
+
+
+def bant(d, cx, cy, metin, ilerle, alfa=255):
+    """Uçları kıvrık kurdele; soldan sağa açılır."""
+    tw = d.textlength(metin, font=F_BANT)
+    yarim = (tw / 2 + 60) * yumusak(ilerle)
+    if yarim < 4:
+        return
+    for yon in (1, -1):
+        ux = cx + yon * yarim
+        d.polygon([(ux - yon * 10, cy - 30), (ux + yon * 60, cy - 30), (ux + yon * 34, cy + 6), (ux + yon * 60, cy + 42),
+                   (ux - yon * 10, cy + 42)], fill=(130, 24, 28, alfa))
+    d.rectangle([cx - yarim, cy - 46, cx + yarim, cy + 46], fill=(176, 34, 34, alfa))
+    d.line([(cx - yarim, cy - 36), (cx + yarim, cy - 36)], fill=ALTIN + (alfa,), width=3)
+    d.line([(cx - yarim, cy + 36), (cx + yarim, cy + 36)], fill=ALTIN + (alfa,), width=3)
+    if ilerle > 0.6:
+        a = int(alfa * min(1, (ilerle - 0.6) / 0.4))
+        d.text((cx - tw / 2, cy - 33), metin, font=F_BANT, fill=(255, 240, 210, a))
+
+
+# ---------------------------------------------------------------- harita
+KARA_VERI = None
+
+
+def kara_verisi():
+    global KARA_VERI
+    if KARA_VERI is None:
+        with open(os.path.join(HERE, "assets", "harita_kara.json")) as f:
+            KARA_VERI = json.load(f)
+    return KARA_VERI
+
+
+class Harita:
+    def __init__(self, spec):
+        self.spec = spec
+        self.lonc, self.latc = spec["merkez"]
+        self.cos = math.cos(math.radians(self.latc))
+        self.k = W / (spec.get("genislik", 20) * self.cos)
+        self.taban = self._taban()
+
+    def xy(self, lon, lat):
+        return (W / 2 + (lon - self.lonc) * self.cos * self.k, H / 2 - (lat - self.latc) * self.k)
+
+    def _taban(self):
+        y = np.linspace(0, 1, H)[:, None, None]
+        deniz = np.array(DENIZ_UST) * (1 - y) + np.array(DENIZ_ALT) * y
+        deniz = np.broadcast_to(deniz, (H, W, 3)).astype(np.float32).copy()
+        maske = Image.new("L", (W, H), 0)
+        md = ImageDraw.Draw(maske)
+        for halka in kara_verisi():
+            nok = [self.xy(lon, lat) for lon, lat in halka]
+            xs = [p[0] for p in nok]
+            ys = [p[1] for p in nok]
+            if max(xs) < -50 or min(xs) > W + 50 or max(ys) < -50 or min(ys) > H + 50:
+                continue
+            md.polygon(nok, fill=255)
+        m = np.asarray(maske).astype(np.float32)[..., None] / 255
+        sig = np.asarray(maske.filter(ImageFilter.MaxFilter(25)).filter(ImageFilter.GaussianBlur(14))).astype(np.float32)[..., None] / 255
+        deniz = deniz * (1 - sig * 0.55) + np.array(SIG) * sig * 0.55
+        ic = np.asarray(maske.filter(ImageFilter.MinFilter(15)).filter(ImageFilter.GaussianBlur(18))).astype(np.float32)[..., None] / 255
+        kara = np.array(KARA_KOYU) * (1 - ic) + np.array(KARA) * ic
+        img = deniz * (1 - m) + kara * m
+        img += kagit_dokusu(5, 9)
+        taban = Image.fromarray(img.clip(0, 255).astype(np.uint8))
+        d = ImageDraw.Draw(taban)
+        # boylam/enlem ağı
+        for lon in range(-20, 70, 5 if self.spec.get("genislik", 20) > 8 else 1):
+            x, _ = self.xy(lon, self.latc)
+            d.line([(x, 0), (x, H)], fill=(255, 255, 255), width=1)
+        for lat in range(20, 60, 5 if self.spec.get("genislik", 20) > 8 else 1):
+            _, yy = self.xy(self.lonc, lat)
+            d.line([(0, yy), (W, yy)], fill=(255, 255, 255), width=1)
+        taban = Image.blend(Image.fromarray(img.clip(0, 255).astype(np.uint8)), taban, 0.12)
+        kenar = maske.filter(ImageFilter.FIND_EDGES).filter(ImageFilter.MaxFilter(3))
+        koyu = Image.new("RGB", (W, H), KIYI)
+        taban.paste(koyu, (0, 0), kenar)
+        # dalga çizgileri
+        d = ImageDraw.Draw(taban, "RGBA")
+        rng = np.random.default_rng(11)
+        mm = np.asarray(maske)
+        for _ in range(70):
+            x, y = int(rng.integers(30, W - 60)), int(rng.integers(200, H - 200))
+            if mm[y, x] or mm[y, min(W - 1, x + 40)]:
+                continue
+            d.arc([x, y, x + 22, y + 12], 200, 340, fill=(255, 255, 255, 60), width=2)
+            d.arc([x + 20, y, x + 42, y + 12], 200, 340, fill=(255, 255, 255, 60), width=2)
+        self._pusula(d)
+        return vinyet(taban, 0.5)
+
+    def _pusula(self, d):
+        cx, cy, r = W - 150, H - 520, 70
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=KREM + (150,), width=3)
+        for i in range(8):
+            aa = i * math.pi / 4 - math.pi / 2
+            rr = r if i % 2 == 0 else r * 0.55
+            uc = (cx + rr * math.cos(aa), cy + rr * math.sin(aa))
+            y1 = (cx + 12 * math.cos(aa + math.pi / 2), cy + 12 * math.sin(aa + math.pi / 2))
+            y2 = (cx + 12 * math.cos(aa - math.pi / 2), cy + 12 * math.sin(aa - math.pi / 2))
+            d.polygon([uc, y1, (cx, cy), ], fill=KREM + (170,))
+            d.polygon([uc, y2, (cx, cy)], fill=(120, 90, 60, 170))
+        yazi(d, (cx, cy - r - 46), "K", F_BOLGE, KREM, 3, alfa=200)
+
+    def kare(self, u, sn):
+        sp = self.spec
+        img = self.taban.copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        # rotalar
+        for r in sp.get("rotalar", []):
+            p = yumusak((u - r.get("bas", 0.05)) / max(0.05, r.get("bit", 0.6) - r.get("bas", 0.05)))
+            if p <= 0:
+                continue
+            nok = [self.xy(*q) for q in r["yol"]]
+            parca = self._kes(nok, p)
+            renk = OSMANLI if r.get("taraf") == "osmanli" else DUSMAN
+            for i in range(len(parca) - 1):
+                self._kesikli(d, parca[i], parca[i + 1], renk)
+            bas = parca[-1]
+            onceki = parca[-2] if len(parca) > 1 else parca[-1]
+            yon = 1 if bas[0] >= onceki[0] else -1
+            boy = r.get("boy", 70)
+            for g in range(r.get("gemi", 3)):
+                ox, oy = (-yon * 46 * g, 34 * (g % 2) * (1 if g % 4 < 2 else -1)) if g else (0, 0)
+                kadirga(d, bas[0] + ox, bas[1] + oy, boy, yon, r.get("taraf", "osmanli"), sn * 3 + g)
+        # etiketler
+        for e in sp.get("etiketler", []):
+            a = int(255 * evre(u, e.get("bas", 0.0), 0.12))
+            if not a:
+                continue
+            x, y = self.xy(e["lon"], e["lat"])
+            if e.get("tip") == "bolge":
+                yazi(d, (x, y), tr_buyuk(e["ad"]), F_BOLGE, (250, 240, 215), 4, alfa=a)
+            else:
+                d.ellipse([x - 11, y - 11, x + 11, y + 11], fill=MUREKKEP + (a,))
+                d.ellipse([x - 6, y - 6, x + 6, y + 6], fill=ALTIN + (a,))
+                ad = tr_buyuk(e["ad"])
+                tw = d.textlength(ad, font=F_SEHIR)
+                ex = x + 22 if e.get("yan", "sag") == "sag" else x - 22 - tw
+                if ex + tw > W - 60 or e.get("yan") == "sol":
+                    ex = x - 22 - tw
+                ex = max(50, ex)
+                d.rounded_rectangle([ex - 14, y - 30, ex + tw + 14, y + 26], 10, fill=KREM + (int(a * 0.92),),
+                                    outline=MUREKKEP + (a,), width=3)
+                d.text((ex, y - 26), ad, font=F_SEHIR, fill=MUREKKEP + (a,))
+        # bölge vurgusu
+        v = sp.get("vurgu")
+        if v and u >= v.get("bas", 0.2):
+            x, y = self.xy(v["lon"], v["lat"])
+            t = sn - v.get("bas", 0.2) * sp.get("_sure", 6)
+            for k in range(3):
+                faz = (t * 0.9 + k / 3) % 1
+                r = 40 + faz * 170
+                d.ellipse([x - r, y - r * 0.7, x + r, y + r * 0.7], outline=(255, 214, 90, int(230 * (1 - faz))), width=6)
+        # çarpışma
+        c = sp.get("carpisma")
+        if c and u >= c.get("bas", 0.6):
+            x, y = self.xy(c["lon"], c["lat"])
+            e = evre(u, c["bas"], 0.08)
+            for k in range(6):   # duman
+                aa = k * 1.05 + sn * 0.3
+                rr = 60 + 40 * e + 20 * math.sin(sn * 2 + k)
+                d.ellipse([x + math.cos(aa) * rr - 46, y + math.sin(aa) * rr * 0.6 - 36, x + math.cos(aa) * rr + 46,
+                           y + math.sin(aa) * rr * 0.6 + 36], fill=(70, 66, 62, int(110 * e)))
+            capraz_kilic(d, x, y, 0.9 * zipla(e) + 0.02 * math.sin(sn * 8))
+        # damga
+        dm = sp.get("damga")
+        if dm and u >= dm.get("bas", 0.5):
+            e = evre(u, dm["bas"], 0.06)
+            olcek = 1.8 - 0.8 * yumusak(e)
+            x, y = (self.xy(dm["lon"], dm["lat"]) if "lon" in dm else (W / 2, 700))
+            damga(d, x + dm.get("dx", 0), y + dm.get("dy", -230), tr_buyuk(dm["yazi"]), olcek, int(255 * min(1, e * 2)))
+        # sayaç rozeti (ör. "≈230 GEMİ")
+        for rz in sp.get("rozetler", []):
+            if u >= rz.get("bas", 0):
+                a = int(255 * evre(u, rz["bas"], 0.1))
+                rozet(d, rz.get("x", W / 2), rz.get("y", 1200), tr_buyuk(rz["yazi"]), a)
+        # üst başlık
+        b = sp.get("baslik")
+        if b:
+            a = int(255 * evre(sn, 0.1, 0.5))
+            d.rectangle([0, 230, W, 520], fill=(16, 26, 30, int(a * 0.55)))
+            yazi(d, (W / 2, 250), b.get("ust", ""), F_UST, (255, 236, 190), 6, alfa=a)
+            if b.get("alt"):
+                yazi(d, (W / 2, 400), tr_buyuk(b["alt"]), F_UST_ALT, ALTIN, 4, alfa=a)
+        # yavaş yakınlaşma (odağa doğru)
+        z = 1 + (sp.get("zoom", 1.10) - 1) * yumusak(u)
+        if z > 1.001:
+            ox, oy = self.xy(*sp["odak"]) if "odak" in sp else (W / 2, H / 2)
+            ww, hh = W / z, H / z
+            x0 = min(max(ox - ww / 2, 0), W - ww)
+            y0 = min(max(oy - hh / 2, 0), H - hh)
+            img = img.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + ww, y0 + hh))
+        return img
+
+    @staticmethod
+    def _kes(nok, p):
+        uz = [math.dist(nok[i], nok[i + 1]) for i in range(len(nok) - 1)]
+        hedef = sum(uz) * p
+        cikti = [nok[0]]
+        for i, l in enumerate(uz):
+            if hedef >= l:
+                cikti.append(nok[i + 1]); hedef -= l
+            else:
+                a = hedef / l if l else 0
+                cikti.append((nok[i][0] + (nok[i + 1][0] - nok[i][0]) * a, nok[i][1] + (nok[i + 1][1] - nok[i][1]) * a))
+                break
+        return cikti
+
+    @staticmethod
+    def _kesikli(d, a, b, renk):
+        l = math.dist(a, b)
+        n = int(l // 30) + 1
+        for i in range(n):
+            t0, t1 = i / n, min(1, (i + 0.6) / n)
+            d.line([(a[0] + (b[0] - a[0]) * t0, a[1] + (b[1] - a[1]) * t0),
+                    (a[0] + (b[0] - a[0]) * t1, a[1] + (b[1] - a[1]) * t1)], fill=(255, 250, 235, 230), width=10)
+            d.line([(a[0] + (b[0] - a[0]) * t0, a[1] + (b[1] - a[1]) * t0),
+                    (a[0] + (b[0] - a[0]) * t1, a[1] + (b[1] - a[1]) * t1)], fill=renk + (255,), width=6)
+
+
+# ---------------------------------------------------------------- taraflar
+class Taraflar:
+    def __init__(self, spec):
+        self.spec = spec
+        arka = spec.get("arka", {"merkez": [18, 40], "genislik": 26, "zoom": 1.0})
+        h = Harita(dict(arka, zoom=1.0))
+        img = h.taban.filter(ImageFilter.GaussianBlur(3))
+        self.taban = Image.blend(img, Image.new("RGB", (W, H), (20, 18, 16)), 0.45)
+
+    def kare(self, u, sn):
+        sp = self.spec
+        img = self.taban.copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        taraflar = sp["taraflar"]
+        n = len(taraflar)
+        for i, t in enumerate(taraflar):
+            e = evre(sn, 0.15 + i * 0.35, 0.5)
+            if e <= 0:
+                continue
+            cx = W / 2 + (i - (n - 1) / 2) * 320
+            hedef = 560
+            cy = -200 + (hedef + 200) * zipla(e)
+            arma(d, cx, cy, 1.25, t["desen"], tr_buyuk(t["ad"]))
+        bt = sp.get("bant")
+        if bt:
+            bant(d, W / 2, 860, tr_buyuk(bt), evre(sn, 0.25 + n * 0.35, 0.6))
+        k = sp.get("karsi")
+        if k:
+            e = evre(sn, 0.6 + n * 0.35, 0.5)
+            if e > 0:
+                capraz_kilic(d, W / 2, 1010, 0.55 * zipla(e))
+                arma(d, W / 2, 1450 - 260 * zipla(e) if e < 1 else 1190, 1.15, k["desen"], tr_buyuk(k["ad"]),
+                     int(255 * min(1, e * 2)))
+        return img
+
+
+# ---------------------------------------------------------------- takvim
+class Takvim:
+    def __init__(self, spec):
+        self.spec = spec
+        y = np.linspace(0, 1, H)[:, None, None]
+        gok = np.array([248, 214, 160]) * (1 - y) + np.array([226, 140, 92]) * y
+        img = np.broadcast_to(gok, (H, W, 3)).astype(np.float32).copy()
+        ufuk = int(H * 0.62)
+        yy = np.linspace(0, 1, H - ufuk)[:, None, None]
+        img[ufuk:] = np.array([70, 110, 130]) * (1 - yy) + np.array([30, 56, 72]) * yy
+        # güneş
+        cy, cx = ufuk - 60, W * 0.7
+        g = np.mgrid[0:H, 0:W]
+        r = np.sqrt((g[1] - cx) ** 2 + (g[0] - cy) ** 2)
+        img += (np.clip(1 - r / 520, 0, 1) ** 2 * 60)[..., None] * np.array([1, 0.8, 0.4])
+        img += kagit_dokusu(9, 7)
+        self.taban = vinyet(Image.fromarray(img.clip(0, 255).astype(np.uint8)), 0.45)
+        d = ImageDraw.Draw(self.taban, "RGBA")
+        d.ellipse([cx - 90, cy - 90, cx + 90, cy + 90], fill=(255, 236, 190, 200))
+        rng = np.random.default_rng(4)
+        for _ in range(60):
+            x, yy2 = int(rng.integers(0, W)), int(rng.integers(ufuk + 20, H))
+            d.line([(x, yy2), (x + int(rng.integers(20, 70)), yy2)], fill=(255, 255, 255, 50), width=3)
+        self.ufuk = ufuk
+
+    def kare(self, u, sn):
+        sp = self.spec
+        img = self.taban.copy()
+        d = ImageDraw.Draw(img, "RGBA")
+        if sp.get("filo", True):
+            ilerle = yumusak(u * 1.2)
+            for sira, (yb, boy, n) in enumerate(((self.ufuk + 40, 110, 6), (self.ufuk + 170, 170, 4), (self.ufuk + 340, 250, 3))):
+                for i in range(n):
+                    x = -300 + (W + 300) * (i + 0.5) / n + ilerle * 220 * (sira + 1) - 140 * (sira + 1)
+                    kadirga(d, x, yb, boy, 1, "osmanli", sn * 2.5 + i + sira)
+        # takvim kartı
+        e = evre(sn, 0.1, 0.5)
+        cy = 520 - 600 * (1 - zipla(e))
+        x0, x1, y0, y1 = W / 2 - 290, W / 2 + 290, cy - 250, cy + 250
+        d.rounded_rectangle([x0 + 10, y0 + 14, x1 + 10, y1 + 14], 30, fill=(0, 0, 0, 80))
+        d.rounded_rectangle([x0, y0, x1, y1], 30, fill=(250, 244, 228), outline=MUREKKEP, width=6)
+        d.rounded_rectangle([x0, y0, x1, y0 + 110], 30, fill=(176, 34, 34), outline=MUREKKEP, width=6)
+        d.rectangle([x0 + 3, y0 + 70, x1 - 3, y0 + 107], fill=(176, 34, 34))
+        for hx in (x0 + 130, x1 - 130):
+            d.rounded_rectangle([hx - 12, y0 - 34, hx + 12, y0 + 30], 10, fill=(90, 90, 96), outline=MUREKKEP, width=3)
+        aylar = sp.get("aylar") or [sp.get("ay", "")]
+        cevir = sp.get("cevir_bit", 0.55)
+        idx = min(len(aylar) - 1, int(yumusak(min(1, max(0, (u - 0.08) / max(0.05, cevir - 0.08)))) * (len(aylar) - 1) + 0.0001))
+        yil = sp.get("yil", "")
+        if isinstance(yil, list):
+            yil = yil[0] if idx < len(aylar) - 1 else yil[-1]
+        yazi(d, (W / 2, y0 + 22), str(yil), F_TAKVIM_YIL, (255, 240, 220), 0)
+        ay = tr_buyuk(aylar[idx])
+        f = F_TAKVIM_AY if d.textlength(ay, font=F_TAKVIM_AY) < 500 else _f("DejaVuSerif-Bold.ttf", 92)
+        yazi(d, (W / 2, cy - 10), ay, f, MUREKKEP, 0)
+        # çevrilen yaprak efekti
+        faz = (u - 0.08) / max(0.05, cevir - 0.08) * (len(aylar) - 1)
+        if 0 < faz < len(aylar) - 1:
+            k = faz % 1
+            yy = y0 + 110 + (y1 - y0 - 110) * (1 - k)
+            d.polygon([(x0 + 6, y0 + 110), (x1 - 6, y0 + 110), (x1 - 6, yy), (x0 + 6, yy)], fill=(236, 226, 204, 200))
+        rz = sp.get("rozet")
+        if rz and u >= cevir:
+            rozet(d, W / 2, cy + 340, tr_buyuk(rz), int(255 * evre(u, cevir, 0.08)))
+        return img
+
+
+TURLER = {"harita": Harita, "taraflar": Taraflar, "takvim": Takvim}
+
+
+def hazirla(spec, sure=6.0):
+    spec = dict(spec, _sure=sure)
+    return TURLER[spec["tip"]](spec)

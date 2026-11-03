@@ -811,52 +811,330 @@
   },
   {
     "id": "inebahti",
+    "stil": "animasyon",
+    "tur": "bilinen",
     "baslik": [
       "Sakalımızı Tıraş Ettiniz ⚔️ İnebahtı",
       "İnebahtı 1571: Yenilgi Sonrası Mucize ⚔️",
       "Bir Kışta Yeniden Kurulan Donanma ⚔️"
     ],
-    "kanca": "1571'de Osmanlı donanması yok edildi ama Sokullu sadece sakalımız kesildi dedi. Sence neden bu kadar emindi?",
+    "kapak": "SAKAL DAHA GÜR",
+    "kanca": "1571'de Osmanlı donanması bir günde yok oldu. Ama sadrazam Sokullu, sadece sakalımız kesildi dedi. Neden bu kadar emindi?",
+    "kanca_gorsel": [
+      "File:Battle of Lepanto 1571.jpg"
+    ],
     "sahneler": [
       {
         "yazi": "7 Ekim 1571",
-        "metin": "Osmanlı donanması, Haçlı ittifakının donanmasıyla Yunanistan kıyısındaki İnebahtı'da karşılaştı ve ağır bir yenilgi aldı.",
         "gorsel": [
-          "File:(Venice) Battaglia di Lepanto - Andrea Vicentino - Correr Museum.jpg"
-        ]
+          "-"
+        ],
+        "metin": "Yıl 1571. Osmanlı donanması, Yunanistan kıyısındaki İnebahtı limanında demirliydi.",
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            23.2,
+            39.6
+          ],
+          "genislik": 17,
+          "odak": [
+            22.3,
+            38.6
+          ],
+          "zoom": 1.1,
+          "baslik": {
+            "ust": "1571",
+            "alt": "İnebahtı · 7 Ekim"
+          },
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            },
+            {
+              "ad": "İnebahtı",
+              "lon": 21.83,
+              "lat": 38.39,
+              "bas": 0.45,
+              "yan": "sol"
+            },
+            {
+              "ad": "Ege",
+              "lon": 25.4,
+              "lat": 39.0,
+              "tip": "bolge"
+            },
+            {
+              "ad": "Akdeniz",
+              "lon": 21.0,
+              "lat": 35.2,
+              "tip": "bolge"
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.9,
+                  40.9
+                ],
+                [
+                  27.6,
+                  40.6
+                ],
+                [
+                  26.6,
+                  40.25
+                ],
+                [
+                  26.1,
+                  39.9
+                ],
+                [
+                  25.4,
+                  39.2
+                ],
+                [
+                  24.8,
+                  37.8
+                ],
+                [
+                  23.6,
+                  36.3
+                ],
+                [
+                  22.2,
+                  36.1
+                ],
+                [
+                  21.4,
+                  36.9
+                ],
+                [
+                  21.0,
+                  37.8
+                ],
+                [
+                  21.1,
+                  38.25
+                ],
+                [
+                  21.8,
+                  38.33
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.85,
+              "boy": 90,
+              "gemi": 3
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Kutsal İttifak",
+        "gorsel": [
+          "-"
+        ],
+        "metin": "Karşısında İspanya, Venedik ve Papalığın kurduğu Kutsal İttifak donanması vardı.",
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "İspanya",
+              "desen": "carpi"
+            },
+            {
+              "ad": "Venedik",
+              "desen": "kanat"
+            },
+            {
+              "ad": "Papalık",
+              "desen": "anahtar"
+            }
+          ],
+          "bant": "Kutsal İttifak",
+          "karsi": {
+            "ad": "Osmanlı",
+            "desen": "hilal"
+          },
+          "arka": {
+            "merkez": [
+              18,
+              40
+            ],
+            "genislik": 26
+          }
+        }
+      },
+      {
+        "yazi": "İnebahtı",
+        "gorsel": [
+          "-"
+        ],
+        "metin": "İki donanma körfezin ağzında çarpıştı. Akşam olmadan Osmanlı gemilerinin çoğu batmış ya da ele geçirilmişti.",
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            20.9,
+            38.5
+          ],
+          "genislik": 4.6,
+          "odak": [
+            21.05,
+            38.32
+          ],
+          "zoom": 1.14,
+          "etiketler": [],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  19.9,
+                  39.3
+                ],
+                [
+                  20.3,
+                  38.85
+                ],
+                [
+                  20.85,
+                  38.36
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.0,
+              "bit": 0.42,
+              "gemi": 4,
+              "boy": 80
+            },
+            {
+              "yol": [
+                [
+                  21.8,
+                  38.36
+                ],
+                [
+                  21.5,
+                  38.3
+                ],
+                [
+                  21.25,
+                  38.31
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.0,
+              "bit": 0.42,
+              "gemi": 4,
+              "boy": 80
+            }
+          ],
+          "carpisma": {
+            "lon": 21.05,
+            "lat": 38.33,
+            "bas": 0.42
+          },
+          "rozetler": [
+            {
+              "yazi": "≈ 400 gemi",
+              "x": 540,
+              "y": 1230,
+              "bas": 0.55
+            }
+          ]
+        }
       },
       {
         "yazi": "Kıbrıs",
-        "metin": "Ama aynı yıl Osmanlı, Kıbrıs'ın fethini tamamlamıştı. Ada Osmanlı'da kaldı.",
         "gorsel": [
-          "File:Siège de Famagouste (1571).jpg"
-        ]
+          "-"
+        ],
+        "metin": "Ama aynı yıl Osmanlı, Kıbrıs'ın fethini tamamlamıştı. Ada Osmanlı'da kaldı.",
+        "anim": {
+          "tip": "harita",
+          "merkez": [
+            31.2,
+            37.2
+          ],
+          "genislik": 12,
+          "odak": [
+            33.2,
+            35.3
+          ],
+          "zoom": 1.12,
+          "etiketler": [
+            {
+              "ad": "Kıbrıs",
+              "lon": 33.36,
+              "lat": 35.17,
+              "bas": 0.1
+            },
+            {
+              "ad": "Anadolu",
+              "lon": 32.5,
+              "lat": 39,
+              "tip": "bolge"
+            }
+          ],
+          "vurgu": {
+            "lon": 33.25,
+            "lat": 35.15,
+            "bas": 0.1
+          },
+          "damga": {
+            "yazi": "Fethedildi",
+            "lon": 33.3,
+            "lat": 35.1,
+            "bas": 0.45
+          }
+        }
       },
       {
         "yazi": "Sokullu Mehmed Paşa",
-        "metin": "Sadrazam Sokullu'ya atfedilen söze göre: Biz Kıbrıs'ı alarak kolunuzu kestik, siz donanmamızı yakarak sakalımızı tıraş ettiniz. Kol yerine gelmez, sakal daha gür çıkar.",
         "gorsel": [
           "File:Grand Vizier Sokollu Mehmed Pasha (portrait) mourning the sultan’s death; Nüzhet, fol. 41a.jpg"
-        ]
+        ],
+        "metin": "Sadrazam Sokullu'ya atfedilen söze göre: Biz Kıbrıs'ı alarak kolunuzu kestik, siz donanmamızı yakarak sakalımızı tıraş ettiniz. Kol yerine gelmez, sakal daha gür çıkar."
       },
       {
         "yazi": "1572",
-        "metin": "Gerçekten de Osmanlı tersaneleri bir kış içinde yeni bir donanma inşa etti ve ertesi yıl denize indirdi.",
         "gorsel": [
-          "File:The Arsenal from Pera - Pardoe Julia - 1839.jpg"
-        ]
+          "-"
+        ],
+        "metin": "Ve gerçekten de Osmanlı tersaneleri bir kış içinde yeni bir donanma kurdu, ertesi yaz denize indirdi.",
+        "anim": {
+          "tip": "takvim",
+          "yil": [
+            "1571",
+            "1572"
+          ],
+          "aylar": [
+            "Ekim",
+            "Kasım",
+            "Aralık",
+            "Ocak",
+            "Şubat",
+            "Mart",
+            "Nisan",
+            "Mayıs",
+            "Haziran"
+          ],
+          "cevir_bit": 0.6,
+          "rozet": "8 ay sonra"
+        }
       }
     ],
     "soru": "Sokullu'nun bu sözü sence haklı mıydı?",
     "etiketler": [
       "inebahtı deniz savaşı",
       "sokullu mehmed paşa",
-      "1571"
-    ],
-    "tur": "bilinen",
-    "kapak": "SAKAL DAHA GÜR",
-    "kanca_gorsel": [
-      "File:Battle of Lepanto 1571.jpg"
+      "1571",
+      "kutsal ittifak",
+      "kıbrıs fethi"
     ]
   },
   {
