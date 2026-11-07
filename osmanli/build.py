@@ -108,6 +108,11 @@ def tts_metni(metin):
     "Haliç'in" → "Haliçin", "1453'te" → "bin dört yüz elli üçte", "1550'lerde" → "bin beş yüz elllilerde"."""
     metin = re.sub(r"(\d+)['’](\w+)", lambda m: sayi_yazi(int(m.group(1))).replace(" ", "\u00a0") + m.group(2), metin)
     metin = re.sub(r"(?<=[^\W\d_])['’](?=[^\W\d_])", "", metin)
+    # Farsça tamlama tirelerini birleştir: "Kanun-i Esasi" → "Kanuni Esasi", "Nizam-ı Cedid" → "Nizamı Cedid"
+    # (altyazıda tire kalır, yalnızca ses metninden çıkar)
+    metin = re.sub(r"(?<=[^\W\d_])[-‐‑](?=[^\W\d_])", "", metin)
+    # yıl aralıkları: "1807-1808" → "1807 ile 1808"
+    metin = re.sub(r"(\d)\s*[-–]\s*(\d)", r"\1 ile \2", metin)
     metin = re.sub(r"\b\d{1,6}\b", lambda m: sayi_yazi(int(m.group())), metin)
     return metin.replace("\u00a0", " ")
 
