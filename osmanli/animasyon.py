@@ -200,7 +200,8 @@ def arma(d, cx, cy, s, desen, ad, alfa=255):
     golge = [(x + 8 * s, y + 10 * s) for x, y in nok]
     d.polygon(golge, fill=(0, 0, 0, int(alfa * 0.35)))
     zemin = {"carpi": (238, 196, 70), "kanat": (168, 30, 40), "anahtar": (240, 232, 214),
-             "hilal": (178, 30, 36), "kartal": (238, 196, 70), "halka": (40, 40, 52), "kazan": (120, 30, 34)}.get(desen, (200, 200, 200))
+             "hilal": (178, 30, 36), "kartal": (238, 196, 70), "halka": (40, 40, 52), "kazan": (120, 30, 34),
+             "bizans": (96, 30, 90), "defne": (150, 24, 30), "selcuklu": (40, 70, 110)}.get(desen, (200, 200, 200))
     d.polygon(nok, fill=zemin + (alfa,), outline=ALTIN + (alfa,), width=int(7 * s))
     a = alfa
     if desen == "carpi":
@@ -222,6 +223,33 @@ def arma(d, cx, cy, s, desen, ad, alfa=255):
             d.ellipse([bas[0] - 17 * s, bas[1] - 17 * s, bas[0] + 17 * s, bas[1] + 17 * s], outline=renk + (a,),
                       width=int(8 * s))
             d.line([uc, (uc[0] + yon * 16 * s, uc[1] + 10 * s)], fill=renk + (a,), width=int(9 * s))
+    elif desen in ("kartal", "selcuklu"):   # çift başlı kartal (Bizans, Selçuklu)
+        renk = (60, 30, 20, a) if desen == "kartal" else ALTIN + (a,)
+        d.ellipse([cx - 18 * s, cy - 30 * s, cx + 18 * s, cy + 34 * s], fill=renk)
+        for yon in (1, -1):
+            d.polygon([(cx + yon * 10 * s, cy - 20 * s), (cx + yon * 62 * s, cy - 54 * s), (cx + yon * 56 * s, cy - 20 * s),
+                       (cx + yon * 66 * s, cy - 16 * s), (cx + yon * 50 * s, cy + 8 * s), (cx + yon * 58 * s, cy + 14 * s),
+                       (cx + yon * 14 * s, cy + 20 * s)], fill=renk)
+            hx, hy = cx + yon * 20 * s, cy - 52 * s
+            d.line([(cx + yon * 6 * s, cy - 26 * s), (hx, hy)], fill=renk, width=int(9 * s))
+            d.ellipse([hx - 10 * s, hy - 10 * s, hx + 10 * s, hy + 10 * s], fill=renk)
+            d.polygon([(hx + yon * 8 * s, hy - 2 * s), (hx + yon * 22 * s, hy + 4 * s), (hx + yon * 8 * s, hy + 8 * s)], fill=(220, 120, 40, a))
+        d.line([(cx - 14 * s, cy + 34 * s), (cx - 24 * s, cy + 56 * s)], fill=renk, width=int(6 * s))
+        d.line([(cx + 14 * s, cy + 34 * s), (cx + 24 * s, cy + 56 * s)], fill=renk, width=int(6 * s))
+    elif desen == "bizans":   # mor zemin, altın haç ve dört köşede B harfi
+        d.rectangle([cx - 7 * s, cy - 60 * s, cx + 7 * s, cy + 50 * s], fill=ALTIN + (a,))
+        d.rectangle([cx - 50 * s, cy - 14 * s, cx + 50 * s, cy], fill=ALTIN + (a,))
+        fb = _f("DejaVuSerif-Bold.ttf", max(8, int(30 * s)))
+        for bx, by in ((-30, -44), (16, -44), (-30, 10), (16, 10)):
+            d.text((cx + bx * s, cy + by * s), "B", font=fb, fill=ALTIN + (a,))
+    elif desen == "defne":   # Roma: defne çelengi ve kartal başı yerine SPQR
+        for bas_aci in (110, -70):
+            for k in range(7):
+                aa = math.radians(bas_aci + k * 23)
+                x, y = cx + math.cos(aa) * 50 * s, cy + math.sin(aa) * 50 * s
+                d.ellipse([x - 11 * s, y - 6 * s, x + 11 * s, y + 6 * s], fill=ALTIN + (a,))
+        fb = _f("DejaVuSerif-Bold.ttf", max(8, int(26 * s)))
+        d.text((cx - d.textlength("SPQR", font=fb) / 2, cy - 16 * s), "SPQR", font=fb, fill=ALTIN + (a,))
     elif desen == "kazan":   # yeniçeri kazanı ve kaşığı
         d.chord([cx - 50 * s, cy - 40 * s, cx + 50 * s, cy + 50 * s], 0, 180, fill=(40, 34, 30, a), outline=ALTIN + (a,), width=int(5 * s))
         d.rectangle([cx - 56 * s, cy - 2 * s, cx + 56 * s, cy + 8 * s], fill=ALTIN + (a,))
@@ -275,6 +303,50 @@ def damga(d, cx, cy, metin, olcek, alfa=255):
         y += 48 * olcek
 
 
+def murekkep_damga(d, cx, cy, metin, olcek, alfa=255):
+    """Eğik basılmış kırmızı lastik damga: çift çerçeve, aşınmış mürekkep."""
+    satirlar = metin.split("\n")
+    gen = max(d.textlength(x, font=F_DAMGA) for x in satirlar) + 70
+    yuk = 56 * len(satirlar) + 40
+    katman = Image.new("RGBA", (int(gen) + 40, int(yuk) + 40), (0, 0, 0, 0))
+    k = ImageDraw.Draw(katman)
+    renk = (176, 28, 32, alfa)
+    k.rectangle([20, 20, 20 + gen, 20 + yuk], outline=renk, width=8)
+    k.rectangle([32, 32, 8 + gen, 8 + yuk], outline=renk, width=3)
+    y = 40
+    for x in satirlar:
+        k.text((20 + (gen - k.textlength(x, font=F_DAMGA)) / 2, y), x, font=F_DAMGA, fill=renk)
+        y += 56
+    rng = np.random.default_rng(len(metin))
+    a = np.asarray(katman).copy()
+    delik = rng.random(a.shape[:2]) < 0.18   # aşınmış mürekkep
+    a[..., 3][delik] = (a[..., 3][delik] * 0.25).astype(np.uint8)
+    katman = Image.fromarray(a).rotate(-9, expand=True, resample=Image.BICUBIC)
+    if olcek != 1:
+        katman = katman.resize((max(1, int(katman.width * olcek)), max(1, int(katman.height * olcek))))
+    d._image.paste(katman, (int(cx - katman.width / 2), int(cy - katman.height / 2)), katman)
+
+
+def ferman(d, cx, cy, metin, ilerle, alfa=255):
+    """Açılan ferman tomarı: iki rulo arasından yazı görünür."""
+    satirlar = tr_buyuk(metin).split("\n")
+    gen = max(d.textlength(x, font=F_DAMGA) for x in satirlar) + 90
+    yuk = 56 * len(satirlar) + 50
+    acik = yuk * yumusak(ilerle)
+    x0, x1 = cx - gen / 2, cx + gen / 2
+    d.rectangle([x0 + 8, cy - acik / 2 + 10, x1 + 8, cy + acik / 2 + 10], fill=(0, 0, 0, 70))
+    d.rectangle([x0, cy - acik / 2, x1, cy + acik / 2], fill=(244, 230, 196, alfa), outline=(150, 110, 60, alfa), width=3)
+    if ilerle > 0.6:
+        y = cy - 28 * len(satirlar)
+        for x in satirlar:
+            d.text((cx - d.textlength(x, font=F_DAMGA) / 2, y), x, font=F_DAMGA, fill=MUREKKEP + (int(alfa * min(1, (ilerle - 0.6) / 0.4)),))
+            y += 56
+    for yy in (cy - acik / 2, cy + acik / 2):
+        d.rounded_rectangle([x0 - 22, yy - 16, x1 + 22, yy + 16], 14, fill=(196, 150, 90, alfa), outline=(110, 74, 40, alfa), width=3)
+        for xx in (x0 - 22, x1 + 22):
+            d.ellipse([xx - 12, yy - 12, xx + 12, yy + 12], fill=ALTIN + (alfa,))
+
+
 def rozet(d, cx, cy, metin, alfa=255, fnt=F_ROZET, zemin=KREM, renk=MUREKKEP):
     tw = d.textlength(metin, font=fnt)
     d.rounded_rectangle([cx - tw / 2 - 34 + 6, cy - 44 + 8, cx + tw / 2 + 34 + 6, cy + 44 + 8], 44,
@@ -314,9 +386,23 @@ def kara_verisi():
     return KARA_VERI
 
 
+HARITA_TEMA = {
+    # deniz üst/alt, sığ su, kara, kara gölgesi, kıyı çizgisi, ağ rengi
+    "parsomen": dict(du=(38, 78, 90), da=(22, 46, 58), sig=(64, 112, 120), kara=(226, 206, 160), kk=(196, 168, 120),
+                     kiyi=(82, 58, 38), ag=(255, 255, 255), dalga=(255, 255, 255)),
+    "gece": dict(du=(16, 26, 48), da=(8, 12, 28), sig=(30, 54, 88), kara=(96, 88, 100), kk=(62, 56, 70),
+                 kiyi=(232, 190, 105), ag=(232, 190, 105), dalga=(140, 170, 220)),
+    "antika": dict(du=(170, 186, 172), da=(146, 166, 156), sig=(196, 206, 188), kara=(236, 220, 180), kk=(208, 184, 140),
+                   kiyi=(92, 62, 40), ag=(92, 62, 40), dalga=(92, 62, 40)),
+    "kizil": dict(du=(112, 50, 40), da=(64, 26, 24), sig=(150, 80, 62), kara=(232, 210, 168), kk=(196, 160, 116),
+                  kiyi=(40, 20, 16), ag=(255, 220, 180), dalga=(255, 200, 170)),
+}
+
+
 class Harita:
     def __init__(self, spec):
         self.spec = spec
+        self.t = HARITA_TEMA.get(spec.get("tema", "parsomen"), HARITA_TEMA["parsomen"])
         self.lonc, self.latc = spec["merkez"]
         self.cos = math.cos(math.radians(self.latc))
         self.k = W / (spec.get("genislik", 20) * self.cos)
@@ -327,7 +413,8 @@ class Harita:
 
     def _taban(self):
         y = np.linspace(0, 1, H)[:, None, None]
-        deniz = np.array(DENIZ_UST) * (1 - y) + np.array(DENIZ_ALT) * y
+        T = self.t
+        deniz = np.array(T["du"]) * (1 - y) + np.array(T["da"]) * y
         deniz = np.broadcast_to(deniz, (H, W, 3)).astype(np.float32).copy()
         maske = Image.new("L", (W, H), 0)
         md = ImageDraw.Draw(maske)
@@ -340,9 +427,9 @@ class Harita:
             md.polygon(nok, fill=255)
         m = np.asarray(maske).astype(np.float32)[..., None] / 255
         sig = np.asarray(maske.filter(ImageFilter.MaxFilter(25)).filter(ImageFilter.GaussianBlur(14))).astype(np.float32)[..., None] / 255
-        deniz = deniz * (1 - sig * 0.55) + np.array(SIG) * sig * 0.55
+        deniz = deniz * (1 - sig * 0.55) + np.array(T["sig"]) * sig * 0.55
         ic = np.asarray(maske.filter(ImageFilter.MinFilter(15)).filter(ImageFilter.GaussianBlur(18))).astype(np.float32)[..., None] / 255
-        kara = np.array(KARA_KOYU) * (1 - ic) + np.array(KARA) * ic
+        kara = np.array(T["kk"]) * (1 - ic) + np.array(T["kara"]) * ic
         img = deniz * (1 - m) + kara * m
         img += kagit_dokusu(5, 9)
         taban = Image.fromarray(img.clip(0, 255).astype(np.uint8))
@@ -350,14 +437,21 @@ class Harita:
         # boylam/enlem ağı
         for lon in range(-20, 70, 5 if self.spec.get("genislik", 20) > 8 else 1):
             x, _ = self.xy(lon, self.latc)
-            d.line([(x, 0), (x, H)], fill=(255, 255, 255), width=1)
+            d.line([(x, 0), (x, H)], fill=T["ag"], width=1)
         for lat in range(20, 60, 5 if self.spec.get("genislik", 20) > 8 else 1):
             _, yy = self.xy(self.lonc, lat)
-            d.line([(0, yy), (W, yy)], fill=(255, 255, 255), width=1)
+            d.line([(0, yy), (W, yy)], fill=T["ag"], width=1)
         taban = Image.blend(Image.fromarray(img.clip(0, 255).astype(np.uint8)), taban, 0.12)
         kenar = maske.filter(ImageFilter.FIND_EDGES).filter(ImageFilter.MaxFilter(3))
-        koyu = Image.new("RGB", (W, H), KIYI)
+        if self.spec.get("tema") == "antika":   # eski haritalardaki kıyıya paralel dalga çizgileri
+            for k, a in ((10, 150), (20, 100), (32, 60), (46, 35)):
+                halka = maske.filter(ImageFilter.MaxFilter(k * 2 + 1)).filter(ImageFilter.FIND_EDGES)
+                taban.paste(Image.new("RGB", (W, H), T["kiyi"]), (0, 0), halka.point(lambda v, a=a: a if v else 0))
+        koyu = Image.new("RGB", (W, H), T["kiyi"])
         taban.paste(koyu, (0, 0), kenar)
+        if self.spec.get("tema") == "gece":   # kıyıda altın ışıltı
+            parilti = kenar.filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(6))
+            taban.paste(Image.new("RGB", (W, H), (255, 210, 120)), (0, 0), parilti.point(lambda v: v // 2))
         # dalga çizgileri
         d = ImageDraw.Draw(taban, "RGBA")
         rng = np.random.default_rng(11)
@@ -366,10 +460,28 @@ class Harita:
             x, y = int(rng.integers(30, W - 60)), int(rng.integers(int(H * 0.1), int(H * 0.9)))
             if mm[y, x] or mm[y, min(W - 1, x + 40)]:
                 continue
-            d.arc([x, y, x + 22, y + 12], 200, 340, fill=(255, 255, 255, 60), width=2)
-            d.arc([x + 20, y, x + 42, y + 12], 200, 340, fill=(255, 255, 255, 60), width=2)
+            d.arc([x, y, x + 22, y + 12], 200, 340, fill=T["dalga"] + (60,), width=2)
+            d.arc([x + 20, y, x + 42, y + 12], 200, 340, fill=T["dalga"] + (60,), width=2)
         self._pusula(d)
-        return vinyet(taban, 0.5)
+        taban = vinyet(taban, 0.5 if self.spec.get("tema") != "gece" else 0.7)
+        if self.spec.get("tema") == "antika":   # süslü çift çerçeve
+            d = ImageDraw.Draw(taban)
+            for k, w in ((26, 6), (40, 2)):
+                d.rectangle([k, k, W - k, H - k], outline=T["kiyi"], width=w)
+            for cx, cy in ((26, 26), (W - 26, 26), (26, H - 26), (W - 26, H - 26)):
+                d.rectangle([cx - 12, cy - 12, cx + 12, cy + 12], fill=T["kiyi"])
+        return taban
+
+    def _bulutlar(self):
+        """Haritanın üstünden yavaşça geçen yarı saydam bulut/sis katmanı (bir kez üretilir)."""
+        rng = np.random.default_rng(int(abs(self.lonc * 100 + self.latc * 10)) % 1000)
+        kat = Image.new("L", (W * 2, H), 0)
+        d = ImageDraw.Draw(kat)
+        for _ in range(26):
+            x, y = int(rng.integers(0, W * 2)), int(rng.integers(0, H))
+            r = int(rng.integers(H // 14, H // 6))
+            d.ellipse([x - r * 1.8, y - r * 0.6, x + r * 1.8, y + r * 0.6], fill=int(rng.integers(40, 90)))
+        return kat.filter(ImageFilter.GaussianBlur(H // 30))
 
     def _pusula(self, d):
         cx, cy, r = (W - 150, H * 0.73, 70) if not yatay() else (W - 130, H * 0.62, 60)
@@ -396,8 +508,24 @@ class Harita:
             nok = [self.xy(*q) for q in r["yol"]]
             parca = self._kes(nok, p)
             renk = OSMANLI if r.get("taraf") == "osmanli" else DUSMAN
-            for i in range(len(parca) - 1):
-                self._kesikli(d, parca[i], parca[i + 1], renk)
+            cizgi = r.get("cizgi", sp.get("cizgi", "kesikli"))
+            if cizgi == "akan":     # düz parlak hat, üstünde akan ışık
+                d.line(parca, fill=(255, 250, 235, 200), width=14, joint="curve")
+                d.line(parca, fill=renk + (255,), width=8, joint="curve")
+                for i in range(len(parca) - 1):
+                    self._kesikli(d, parca[i], parca[i + 1], (255, 230, 160), faz=sn * 1.5, ince=True)
+            elif cizgi == "kalin":  # kalın ok gövdesi, ucunda ok başı
+                d.line(parca, fill=(20, 14, 10, 120), width=30, joint="curve")
+                d.line(parca, fill=renk + (230,), width=22, joint="curve")
+                if len(parca) > 1 and r.get("ikon") == "yok":
+                    (x0, y0), (x1, y1) = parca[-2], parca[-1]
+                    aa = math.atan2(y1 - y0, x1 - x0)
+                    d.polygon([(x1 + 38 * math.cos(aa), y1 + 38 * math.sin(aa)),
+                               (x1 + 34 * math.cos(aa + 2.4), y1 + 34 * math.sin(aa + 2.4)),
+                               (x1 + 34 * math.cos(aa - 2.4), y1 + 34 * math.sin(aa - 2.4))], fill=renk + (240,))
+            else:
+                for i in range(len(parca) - 1):
+                    self._kesikli(d, parca[i], parca[i + 1], renk)
             bas = parca[-1]
             onceki = parca[-2] if len(parca) > 1 else parca[-1]
             yon = 1 if bas[0] >= onceki[0] else -1
@@ -457,16 +585,39 @@ class Harita:
             e = evre(u, dm["bas"], 0.06)
             olcek = 1.8 - 0.8 * yumusak(e)
             x, y = (self.xy(dm["lon"], dm["lat"]) if "lon" in dm else (W / 2, 700))
-            damga(d, x + dm.get("dx", 0 if not yatay() else 300), y + dm.get("dy", -230 if not yatay() else -60), tr_buyuk(dm["yazi"]), olcek, int(255 * min(1, e * 2)))
+            dx, dy = x + dm.get("dx", 0 if not yatay() else 300), y + dm.get("dy", -230 if not yatay() else -60)
+            tip = dm.get("tip", sp.get("damga_tip", "muhur"))
+            if tip == "murekkep":
+                murekkep_damga(d, dx, dy, tr_buyuk(dm["yazi"]), olcek, int(255 * min(1, e * 2)))
+            elif tip == "ferman":
+                ferman(d, dx, dy, dm["yazi"], evre(u, dm["bas"], 0.15), 255)
+            else:
+                damga(d, dx, dy, tr_buyuk(dm["yazi"]), olcek, int(255 * min(1, e * 2)))
         # sayaç rozeti (ör. "≈230 GEMİ")
         for rz in sp.get("rozetler", []):
             if u >= rz.get("bas", 0):
                 a = int(255 * evre(u, rz["bas"], 0.1))
                 rozet(d, rz.get("x", W / 2), rz.get("y", 1200), tr_buyuk(rz["yazi"]), a)
-        # yavaş yakınlaşma (odağa doğru)
-        z = 1 + (sp.get("zoom", 1.10) - 1) * yumusak(u)
+        # bulut/sis geçişi
+        if sp.get("bulut"):
+            if not hasattr(self, "_bulut"):
+                self._bulut = self._bulutlar()
+            kx = int((sn * 28) % W)
+            maske = self._bulut.crop((kx, 0, kx + W, H))
+            renk = (255, 250, 240) if sp.get("tema") != "gece" else (120, 130, 160)
+            img.paste(Image.new("RGB", (W, H), renk), (0, 0), maske)
+        # kamera: yaklaş (varsayılan), uzaklaş ya da kaydır
+        kamera = sp.get("kamera", "yaklas")
+        zmax = sp.get("zoom", 1.10)
+        ox, oy = self.xy(*sp["odak"]) if "odak" in sp else (W / 2, H / 2)
+        if kamera == "uzaklas":
+            z = zmax + 0.08 - (zmax + 0.08 - 1) * yumusak(u)
+        elif kamera == "kaydir":
+            z = max(zmax, 1.12)
+            ox = ox + (0.5 - yumusak(u)) * W * 0.16
+        else:
+            z = 1 + (zmax - 1) * yumusak(u)
         if z > 1.001:
-            ox, oy = self.xy(*sp["odak"]) if "odak" in sp else (W / 2, H / 2)
             ww, hh = W / z, H / z
             x0 = min(max(ox - ww / 2, 0), W - ww)
             y0 = min(max(oy - hh / 2, 0), H - hh)
@@ -511,11 +662,15 @@ class Harita:
         return cikti
 
     @staticmethod
-    def _kesikli(d, a, b, renk):
+    def _kesikli(d, a, b, renk, faz=0.0, ince=False):
         l = math.dist(a, b)
         n = int(l // 30) + 1
         for i in range(n):
-            t0, t1 = i / n, min(1, (i + 0.6) / n)
+            t0, t1 = (i + faz % 1) / n, min(1, (i + faz % 1 + (0.25 if ince else 0.6)) / n)
+            if ince:
+                d.line([(a[0] + (b[0] - a[0]) * t0, a[1] + (b[1] - a[1]) * t0),
+                        (a[0] + (b[0] - a[0]) * t1, a[1] + (b[1] - a[1]) * t1)], fill=renk + (230,), width=4)
+                continue
             d.line([(a[0] + (b[0] - a[0]) * t0, a[1] + (b[1] - a[1]) * t0),
                     (a[0] + (b[0] - a[0]) * t1, a[1] + (b[1] - a[1]) * t1)], fill=(255, 250, 235, 230), width=10)
             d.line([(a[0] + (b[0] - a[0]) * t0, a[1] + (b[1] - a[1]) * t0),
@@ -571,23 +726,49 @@ class Taraflar:
 class Takvim:
     def __init__(self, spec):
         self.spec = spec
+        arka = spec.get("arka", "gunbatimi")
+        self.arka = arka
         y = np.linspace(0, 1, H)[:, None, None]
-        gok = np.array([248, 214, 160]) * (1 - y) + np.array([226, 140, 92]) * y
+        if arka == "gece":
+            gok = np.array([10, 16, 40]) * (1 - y) + np.array([40, 46, 90]) * y
+            deniz_u, deniz_a = [24, 34, 64], [8, 12, 26]
+        elif arka == "safak":
+            gok = np.array([150, 176, 210]) * (1 - y) + np.array([250, 200, 170]) * y
+            deniz_u, deniz_a = [120, 150, 170], [50, 80, 100]
+        else:
+            gok = np.array([248, 214, 160]) * (1 - y) + np.array([226, 140, 92]) * y
+            deniz_u, deniz_a = [70, 110, 130], [30, 56, 72]
         img = np.broadcast_to(gok, (H, W, 3)).astype(np.float32).copy()
         ufuk = int(H * 0.62)
         yy = np.linspace(0, 1, H - ufuk)[:, None, None]
-        img[ufuk:] = np.array([70, 110, 130]) * (1 - yy) + np.array([30, 56, 72]) * yy
+        img[ufuk:] = np.array(deniz_u) * (1 - yy) + np.array(deniz_a) * yy
         # güneş
         cy, cx = ufuk - 60, W * 0.7
         g = np.mgrid[0:H, 0:W]
         r = np.sqrt((g[1] - cx) ** 2 + (g[0] - cy) ** 2)
-        img += (np.clip(1 - r / 520, 0, 1) ** 2 * 60)[..., None] * np.array([1, 0.8, 0.4])
+        isik = np.array([1, 0.8, 0.4]) if arka != "gece" else np.array([0.5, 0.55, 0.8])
+        img += (np.clip(1 - r / 520, 0, 1) ** 2 * 60)[..., None] * isik
         img += kagit_dokusu(9, 7)
-        self.taban = vinyet(Image.fromarray(img.clip(0, 255).astype(np.uint8)), 0.45)
+        if arka == "parsomen":   # masa üstünde eski kâğıt: ufuk yok
+            img = np.broadcast_to(np.array([214, 190, 146], np.float32), (H, W, 3)).copy() + kagit_dokusu(9, 16)
+        self.taban = vinyet(Image.fromarray(img.clip(0, 255).astype(np.uint8)), 0.45 if arka != "parsomen" else 0.6)
         d = ImageDraw.Draw(self.taban, "RGBA")
-        d.ellipse([cx - 90, cy - 90, cx + 90, cy + 90], fill=(255, 236, 190, 200))
+        if arka == "gece":
+            rng0 = np.random.default_rng(17)
+            for _ in range(160):
+                x, yy3 = int(rng0.integers(0, W)), int(rng0.integers(0, ufuk - 20))
+                rr = float(rng0.uniform(1, 3.2))
+                d.ellipse([x - rr, yy3 - rr, x + rr, yy3 + rr], fill=(255, 250, 230, int(rng0.integers(120, 255))))
+            d.ellipse([cx - 70, cy - 300, cx + 70, cy - 160], fill=(250, 244, 220, 235))
+            d.ellipse([cx - 40, cy - 310, cx + 90, cy - 170], fill=(18, 24, 54, 255))
+        elif arka == "parsomen":
+            for i in range(0, W, 120):   # silik satır çizgileri, köşede mürekkep lekesi
+                d.line([(0, i * H / W + 80), (W, i * H / W + 80)], fill=(120, 90, 50, 30), width=2)
+            d.ellipse([W * 0.75, H * 0.78, W * 0.75 + 140, H * 0.78 + 90], fill=(60, 40, 30, 60))
+        else:
+            d.ellipse([cx - 90, cy - 90, cx + 90, cy + 90], fill=(255, 236, 190, 200))
         rng = np.random.default_rng(4)
-        for _ in range(60):
+        for _ in range(60 if arka != "parsomen" else 0):
             x, yy2 = int(rng.integers(0, W)), int(rng.integers(ufuk + 20, H))
             d.line([(x, yy2), (x + int(rng.integers(20, 70)), yy2)], fill=(255, 255, 255, 50), width=3)
         self.ufuk = ufuk
@@ -596,7 +777,7 @@ class Takvim:
         sp = self.spec
         img = self.taban.copy()
         d = ImageDraw.Draw(img, "RGBA")
-        if sp.get("filo", True):
+        if sp.get("filo", True) and self.arka != "parsomen":
             ilerle = yumusak(u * 1.2)
             o = H / 1920 if not yatay() else 0.62
             sirlar = ((self.ufuk + 40 * o, 110 * o, 6), (self.ufuk + 170 * o, 170 * o, 4), (self.ufuk + 340 * o, 250 * o, 3))
@@ -791,6 +972,30 @@ class Basamak:
 TURLER = {"harita": Harita, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan, "basamak": Basamak}
 
 
+def _cesit(spec):
+    """Spec'te belirtilmemiş görünüş seçeneklerini spec'in kendisinden türetilen tohumla seçer:
+    her sahne farklı tema, kamera, rota çizgisi, mühür ve takvim arka planı alır (her üretimde aynı)."""
+    import hashlib
+    h = int(hashlib.md5(json.dumps(spec, sort_keys=True, ensure_ascii=False).encode()).hexdigest(), 16)
+
+    def sec(secenekler, kaydir):
+        return secenekler[(h >> kaydir) % len(secenekler)]
+    if spec["tip"] == "harita":
+        spec.setdefault("tema", sec(["parsomen", "parsomen", "antika", "gece", "kizil", "antika"], 0))
+        spec.setdefault("kamera", sec(["yaklas", "yaklas", "uzaklas", "kaydir"], 4))
+        spec.setdefault("cizgi", sec(["kesikli", "akan", "kalin"], 8))
+        spec.setdefault("damga_tip", sec(["muhur", "murekkep", "ferman"], 12))
+        spec.setdefault("bulut", sec([True, False, False], 16))
+    elif spec["tip"] == "takvim":
+        spec.setdefault("arka", sec(["gunbatimi", "gece", "safak", "parsomen"], 0))
+    elif spec["tip"] == "taraflar":
+        spec.setdefault("arka", {"merkez": [18, 40], "genislik": 26})
+        spec["arka"] = dict(spec["arka"])
+        spec["arka"].setdefault("tema", sec(["parsomen", "gece", "antika", "kizil"], 0))
+    return spec
+
+
 def hazirla(spec, sure=6.0):
-    spec = dict(spec, _sure=sure)
+    spec = _cesit(dict(spec))
+    spec["_sure"] = sure
     return TURLER[spec["tip"]](spec)
