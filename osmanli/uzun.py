@@ -37,7 +37,7 @@ F_KANAL = B.font("DejaVuSans-Bold.ttf", 26)
 ALTIN = B.ALTIN
 KANAL = "SARAYIN GÖLGESİ"
 TAKVIM_BASI = datetime.date(2026, 11, 4)   # ilk uzun video (çarşamba)
-GUNLER = (2, 6)                             # çarşamba ve pazar
+# yayın günleri: build.uzun_yayin_gunu (gün aşırı)
 
 
 # ---------------------------------------------------------------- konu seçimi
@@ -51,9 +51,11 @@ def siradaki(bugun):
     Banka biterse None döner: aynı videoyu iki kez yüklememek için yükleme yapılmaz."""
     with open(os.path.join(HERE, "uzun", "sira.json"), encoding="utf-8") as f:
         sira = json.load(f)
+    if not B.uzun_yayin_gunu(bugun):
+        return None
     n, g = -1, TAKVIM_BASI
     while g <= bugun:
-        if g.weekday() in GUNLER:
+        if B.uzun_yayin_gunu(g):
             n += 1
         g += datetime.timedelta(days=1)
     if n < 0 or n >= len(sira):

@@ -443,7 +443,13 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
 
 # ---------------------------------------------------------------- video sonu (etkileşim)
 SAAT = {"saray": "11:40", "kisiler": "17:25", "savaslar": "20:10"}
-UZUN_BASI = datetime.date(2026, 11, 4)   # uzun video takvimi (uzun.py ile aynı): çarşamba ve pazar
+UZUN_BASI = datetime.date(2026, 11, 4)   # ilk uzun video
+GUN_ASIRI_BASI = datetime.date(2026, 11, 8)   # buradan itibaren bir gün var, bir gün yok
+
+
+def uzun_yayin_gunu(g):
+    """Uzun video takvimi: 4 Kasım, sonra 8 Kasım'dan itibaren gün aşırı. uzun.py de bunu kullanır."""
+    return g == UZUN_BASI or (g >= GUN_ASIRI_BASI and (g - GUN_ASIRI_BASI).days % 2 == 0)
 # 8'lik döngü: art arda videolar aynı kapanışı almaz, kabaca 4 videodan 1'i yalnızca soruyla biter
 DONGU = ["yarin", "bildin", "duz", "puan", "oneri", "yarin", "duz", "uzun"]
 KATEGORI_KAYMA = {"saray": 0, "kisiler": 1, "savaslar": 2}
@@ -458,7 +464,7 @@ def yayinlanmis_uzunlar(bugun):
         return []
     cikan, g, n = [], UZUN_BASI, 0
     while g < bugun and n < len(sira):
-        if g.weekday() in (2, 6):
+        if uzun_yayin_gunu(g):
             try:
                 with open(os.path.join(HERE, "uzun", f"{sira[n]}.json"), encoding="utf-8") as f:
                     cikan.append(json.load(f))
