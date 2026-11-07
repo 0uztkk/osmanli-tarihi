@@ -2,8 +2,12 @@ name: Uzun video (carsamba ve pazar)
 
 on:
   schedule:
-    - cron: "41 15 * * 3,0"   # çarşamba ve pazar 18:41 (Türkiye saati)
-    - cron: "11 17 * * 3,0"   #   yedek 20:11 (asıl yüklediyse aynı başlığı görüp yüklemez)
+    # GitHub zamanlanmış çalışmaları ~50 dk geç başlatıyor: erken başla, videoyu üret,
+    # yükleme için 18:41'i bekle. Yükleyen olursa sonrakiler aynı başlığı görüp yüklemez.
+    - cron: "40 14 * * 3,0"   # 17:40
+    - cron: "10 15 * * 3,0"   # 18:10
+    - cron: "41 15 * * 3,0"   # 18:41
+    - cron: "11 17 * * 3,0"   # yedek 20:11
   workflow_dispatch:
     inputs:
       konu:
@@ -30,7 +34,7 @@ concurrency:
 jobs:
   uret:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - name: Araçları kur
@@ -47,6 +51,11 @@ jobs:
           ONIZLEME_SN: ${{ github.event.inputs.onizleme_sn || '0' }}
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: python osmanli/uzun.py
+      - name: Yayın saatini bekle (18:41)
+        if: github.event_name == 'schedule'
+        run: |
+          fark=$(( $(date -u -d "today 15:41" +%s) - $(date -u +%s) ))
+          if [ $fark -gt 0 ] && [ $fark -lt 7200 ]; then echo "$((fark/60)) dk bekleniyor"; sleep $fark; fi
       - name: YouTube'a yükle
         if: github.event_name == 'schedule' || github.event.inputs.yukle == 'true'
         env:
