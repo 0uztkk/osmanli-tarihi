@@ -19,7 +19,57 @@
           "metin": "1718'de Pasarofça Antlaşması imzalandı. Osmanlı, Avusturya'ya karşı uzun süren savaşlardan yorgun düşmüştü ve bu barışla Belgrad başta olmak üzere önemli topraklar bıraktı. Ama aynı zamanda, uzun bir sessizlik dönemi başladı.",
           "gorsel": [
             "File:Sultan Ahmed III (1703-30) Rijksmuseum SK-A-2015.jpeg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              24.8,
+              43.4
+            ],
+            "genislik": 17,
+            "zoom": 1.05,
+            "odak": [
+              21.19,
+              44.62
+            ],
+            "baslik": {
+              "ust": "1718",
+              "alt": "Pasarofça Antlaşması",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Pasarofça",
+                "lon": 21.19,
+                "lat": 44.62,
+                "bas": 0.2
+              }
+            ],
+            "vurgu": {
+              "lon": 21.19,
+              "lat": 44.62,
+              "bas": 0.2,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "Barış",
+              "lon": 21.19,
+              "lat": 44.62,
+              "bas": 0.5,
+              "dx": -260,
+              "dy": 170
+            },
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Nevşehirli Damat İbrahim Paşa",
@@ -45,7 +95,108 @@
           "metin": "1720'de Yirmisekiz Çelebi Mehmed Efendi, elçi olarak Paris'e gönderildi. Fransız saraylarını, bahçelerini ve tiyatrolarını gördü. Döndüğünde yazdığı sefaretname, İstanbul'da büyük ilgi gördü.",
           "gorsel": [
             "File:Ambassadeur Sublime Porte P1600557.jpg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              16.5,
+              43.5
+            ],
+            "genislik": 32,
+            "zoom": 1.04,
+            "odak": [
+              2.35,
+              48.86
+            ],
+            "baslik": {
+              "ust": "1720",
+              "alt": "Paris elçiliği",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Toulon",
+                "lon": 5.93,
+                "lat": 43.12,
+                "bas": 0.5
+              },
+              {
+                "ad": "Paris",
+                "lon": 2.35,
+                "lat": 48.86,
+                "bas": 0.75
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.95,
+                    41.0
+                  ],
+                  [
+                    26.4,
+                    40.1
+                  ],
+                  [
+                    25.2,
+                    37.6
+                  ],
+                  [
+                    22.0,
+                    36.0
+                  ],
+                  [
+                    15.5,
+                    37.0
+                  ],
+                  [
+                    12.5,
+                    38.6
+                  ],
+                  [
+                    9.6,
+                    41.5
+                  ],
+                  [
+                    5.95,
+                    43.0
+                  ]
+                ],
+                "taraf": "osmanli",
+                "gemi": 2,
+                "bas": 0.05,
+                "bit": 0.6,
+                "boy": 80
+              },
+              {
+                "yol": [
+                  [
+                    5.93,
+                    43.12
+                  ],
+                  [
+                    4.8,
+                    45.76
+                  ],
+                  [
+                    2.35,
+                    48.86
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.6,
+                "bit": 0.85
+              }
+            ],
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Sadabad",
@@ -92,14 +243,132 @@
           "metin": "Doğuda ise işler kötüye gidiyordu. İran'da güçlenen Nadir, Osmanlı'nın daha önce aldığı şehirleri birer birer geri almaya başladı. 1730 yazında Tebriz'in de kaybedildiği haberi İstanbul'a ulaştı.",
           "gorsel": [
             "File:Nader Shah, A Rare Group of Six Portraits of Kings of Iran, Qajar Iran, First Half 19th century.jpg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              48.6,
+              35.4
+            ],
+            "genislik": 17,
+            "zoom": 1.05,
+            "odak": [
+              46.29,
+              38.08
+            ],
+            "baslik": {
+              "ust": "1730",
+              "alt": "İran cephesi",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Tebriz",
+                "lon": 46.29,
+                "lat": 38.08,
+                "yan": "sol"
+              },
+              {
+                "ad": "Hemedan",
+                "lon": 48.5,
+                "lat": 34.8
+              },
+              {
+                "ad": "İsfahan",
+                "lon": 51.67,
+                "lat": 32.65,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    51.67,
+                    32.65
+                  ],
+                  [
+                    48.6,
+                    34.7
+                  ],
+                  [
+                    46.4,
+                    37.9
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.1,
+                "bit": 0.75,
+                "boy": 90
+              }
+            ],
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Üsküdar'da bekleyen ordu",
           "metin": "Padişah ve sadrazam sefere çıkacaklarını ilan ettiler. Ordu Üsküdar'a geçti. Ama haftalar geçmesine rağmen yola çıkılmadı. Halk arasında, savaşın bahane olduğu ve kimsenin gerçekten gitmek istemediği konuşuluyordu.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              29.0,
+              41.03
+            ],
+            "genislik": 0.5,
+            "zoom": 1.06,
+            "odak": [
+              29.016,
+              41.027
+            ],
+            "etiketler": [
+              {
+                "ad": "Üsküdar",
+                "lon": 29.016,
+                "lat": 41.027,
+                "yan": "sag"
+              },
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.983,
+                    41.011
+                  ],
+                  [
+                    29.0,
+                    41.018
+                  ],
+                  [
+                    29.014,
+                    41.026
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.45,
+                "boy": 85
+              }
+            ],
+            "rozetler": [
+              {
+                "yazi": "Ordu bekliyor",
+                "x": 960,
+                "y": 200,
+                "bas": 0.55
+              }
+            ],
+            "tip": "harita"
+          }
         }
       ]
     },
@@ -144,14 +413,61 @@
           "metin": "İsyancılar padişaha bir liste gönderdi. Sadrazam Damat İbrahim Paşa'nın ve birkaç yakın adamının kendilerine teslim edilmesini istiyorlardı.",
           "gorsel": [
             "File:De grootvizier Nevşehirli Damat Ĭbrahim Pasa Rijksmuseum SK-A-2017.jpeg"
-          ]
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "İsyancıların listesi",
+            "ogeler": [
+              "Şeyhülislam",
+              "Kaptan-ı Derya",
+              "Kethüda",
+              "Sadrazam"
+            ]
+          }
         },
         {
           "yazi": "Sadrazamın sonu",
           "metin": "Üçüncü Ahmed, tahtını kurtarabilmek umuduyla on iki yıllık sadrazamından vazgeçti. Damat İbrahim Paşa öldürüldü ve cesedi isyancılara verildi. Ama kalabalık durmadı. Sadrazamın damadı Kapudan Mustafa Paşa ve kethüdası Mehmed Paşa da aynı akıbete uğradı. On iki yıl boyunca devleti yöneten aile, bir gecede yok olmuştu.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              28.985,
+              41.02
+            ],
+            "genislik": 0.5,
+            "zoom": 1.08,
+            "odak": [
+              28.983,
+              41.0115
+            ],
+            "etiketler": [
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.1,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "12 yıl\nsona erdi",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.45
+            },
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Tahttan çekiliş",
@@ -184,7 +500,64 @@
           "metin": "Anlatılana göre bir zamanlar ona borç veren kasap arkadaşı Yanaki'nin Boğdan beyi yapılmasını bile istedi. Devlet adamları için bu, artık durumun kontrolden çıktığının işaretiydi.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              28.3,
+              44.0
+            ],
+            "genislik": 19,
+            "zoom": 1.05,
+            "odak": [
+              27.59,
+              47.16
+            ],
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Boğdan",
+                "lon": 27.59,
+                "lat": 47.16,
+                "bas": 0.35
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.05
+                  ],
+                  [
+                    28.3,
+                    44.0
+                  ],
+                  [
+                    27.6,
+                    47.1
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.05,
+                "bit": 0.5
+              }
+            ],
+            "rozetler": [
+              {
+                "yazi": "Kasap Yanaki bey mi olacak?",
+                "x": 960,
+                "y": 200,
+                "bas": 0.55
+              }
+            ],
+            "tip": "harita"
+          }
         }
       ]
     },
@@ -210,7 +583,18 @@
           "metin": "Ama tahta çıktığı ilk haftalarda yapabileceği tek şey vardı: beklemek ve isyancılara karşı koyabilecek bir güç toplamak. Bunu da sessizce yaptı.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "yil": "1730",
+            "aylar": [
+              "Ekim",
+              "Kasım"
+            ],
+            "cevir_bit": 0.5,
+            "rozet": "Beklemek"
+          }
         }
       ]
     },
@@ -222,7 +606,19 @@
           "metin": "25 Kasım 1730'da Patrona Halil, kendisine yeni bir görev verileceği söylenerek saraya çağrıldı. Yanında en yakın adamları vardı.",
           "gorsel": [
             "File:Revan Kiosk dome Topkapi March 2008.JPG"
-          ]
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "yil": "1730",
+            "aylar": [
+              "28 Eylül",
+              "Ekim",
+              "25 Kasım"
+            ],
+            "cevir_bit": 0.55,
+            "rozet": "58 gün"
+          }
         },
         {
           "yazi": "Son toplantı",
@@ -278,5 +674,6 @@
     "sadabad",
     "1730",
     "osmanlı tarihi belgesel"
-  ]
+  ],
+  "stil": "animasyon"
 }

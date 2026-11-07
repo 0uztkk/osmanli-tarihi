@@ -45,7 +45,57 @@
           "metin": "Gelenek gereği Kösem, Eski Saray'a gönderildi. Sonraki altı yıl boyunca taht el değiştirdi durdu: önce Birinci Mustafa, sonra Genç Osman, sonra yeniden Birinci Mustafa.",
           "gorsel": [
             "File:Istanbul in the 16th century - left.jpg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              28.975,
+              41.02
+            ],
+            "genislik": 0.4,
+            "zoom": 1.06,
+            "odak": [
+              28.964,
+              41.011
+            ],
+            "etiketler": [
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sag"
+              },
+              {
+                "ad": "Eski Saray",
+                "lon": 28.964,
+                "lat": 41.011,
+                "yan": "sol",
+                "bas": 0.3
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.983,
+                    41.0115
+                  ],
+                  [
+                    28.974,
+                    41.012
+                  ],
+                  [
+                    28.965,
+                    41.011
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.5
+              }
+            ],
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Genç Osman",
@@ -78,7 +128,69 @@
           "metin": "Murad büyüyüp yönetimi eline aldığında, sert ve kararlı bir padişah oldu. Revan'ı ve Bağdat'ı geri aldı. Bu yıllarda Kösem'in etkisi azaldı, ama tamamen kaybolmadı.",
           "gorsel": [
             "File:Verovering van Bagdad door de Turken, 1638, RP-P-1896-A-19368-1955.jpg"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              37.0,
+              38.0
+            ],
+            "genislik": 26,
+            "zoom": 1.04,
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sag"
+              },
+              {
+                "ad": "Revan",
+                "lon": 44.51,
+                "lat": 40.18,
+                "bas": 0.35,
+                "yan": "sol"
+              },
+              {
+                "ad": "Bağdat",
+                "lon": 44.36,
+                "lat": 33.31,
+                "bas": 0.65,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.01
+                  ],
+                  [
+                    36.0,
+                    39.5
+                  ],
+                  [
+                    44.5,
+                    40.15
+                  ],
+                  [
+                    44.4,
+                    36.5
+                  ],
+                  [
+                    44.36,
+                    33.35
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.85,
+                "boy": 90
+              }
+            ],
+            "tip": "harita"
+          }
         },
         {
           "yazi": "1640",
@@ -111,7 +223,46 @@
           "metin": "Ayrıca çok büyük bir servete sahipti. Vakıfları, çiftlikleri ve gelirleri vardı. Bu servetin bir kısmını hayır işlerine harcıyor, bir kısmını da gerektiğinde askerlerin maaşlarını ödemek için kullanıyordu. Para, onun en etkili silahlarından biriydi.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              28.99,
+              41.02
+            ],
+            "genislik": 0.5,
+            "zoom": 1.06,
+            "odak": [
+              28.983,
+              41.0115
+            ],
+            "etiketler": [
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.1,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "rozetler": [
+              {
+                "yazi": "Vakıflar · çiftlikler · gelirler",
+                "x": 960,
+                "y": 200,
+                "bas": 0.3
+              }
+            ],
+            "tip": "harita"
+          }
         }
       ]
     },
@@ -177,7 +328,28 @@
           "metin": "1651 yazında sarayda bir söylenti yayıldı: Kösem, genç padişahı tahttan indirip yerine annesi daha uysal olan başka bir şehzadeyi geçirmeyi planlıyordu. Bu söylentinin ne kadar doğru olduğu bugün de tartışılır. Ama Turhan'ın tarafı, buna inanmayı seçti. Kösem'in desteklediği şehzadenin, İbrahim'in bir başka oğlu olan Süleyman olduğu anlatılır.",
           "gorsel": [
             "File:Sultan's Throne, Imperial Hall, Topkapı Palace Harem.jpg"
-          ]
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Kösem",
+                "desen": "kazan"
+              }
+            ],
+            "bant": "1651 · İki Valide",
+            "karsi": {
+              "ad": "Turhan",
+              "desen": "hilal"
+            },
+            "arka": {
+              "merkez": [
+                28.98,
+                41.03
+              ],
+              "genislik": 0.9
+            }
+          }
         }
       ]
     },
@@ -189,7 +361,18 @@
           "metin": "2 Eylül 1651 gecesi, Turhan Sultan'ın tarafını tutan saray görevlileri harekete geçti. Kösem'in dairesine girdiler. Hareme ait kapılar kapatılmış, dışarıdaki yeniçerilerin yardıma gelmesinin önü kesilmişti. Bu baskını, Turhan'ın en yakın adamı olan Darüssaade Ağası Uzun Süleyman Ağa yönetiyordu.",
           "gorsel": [
             "File:Topkapı Palace Harem, Exterior Details.jpg"
-          ]
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "yil": "1651",
+            "aylar": [
+              "Ağustos",
+              "2 Eylül"
+            ],
+            "cevir_bit": 0.45,
+            "rozet": "Son gece"
+          }
         },
         {
           "yazi": "Saklanma",
@@ -248,7 +431,42 @@
           "metin": "Arkasında İstanbul'da hâlâ ayakta duran eserler bıraktı. Üsküdar'daki Çinili Cami ve Eminönü'ndeki Büyük Valide Han bunların en bilinenleri. Kaynaklar onun yoksullara, öksüzlere ve borçlu mahkûmlara yaptığı yardımlardan da söz eder.",
           "gorsel": [
             "-"
-          ]
+          ],
+          "anim": {
+            "merkez": [
+              28.995,
+              41.02
+            ],
+            "genislik": 0.5,
+            "zoom": 1.06,
+            "etiketler": [
+              {
+                "ad": "Çinili Cami",
+                "lon": 29.023,
+                "lat": 41.022,
+                "yan": "sag",
+                "bas": 0.1
+              },
+              {
+                "ad": "Valide Han",
+                "lon": 28.968,
+                "lat": 41.013,
+                "yan": "sol",
+                "bas": 0.4
+              }
+            ],
+            "vurgu": {
+              "lon": 29.023,
+              "lat": 41.022,
+              "bas": 0.15,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "tip": "harita"
+          }
         },
         {
           "yazi": "Yeni Cami",
@@ -271,5 +489,6 @@
     "harem",
     "1651",
     "osmanlı tarihi belgesel"
-  ]
+  ],
+  "stil": "animasyon"
 }
