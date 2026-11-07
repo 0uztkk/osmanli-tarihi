@@ -1,0 +1,822 @@
+{
+  "id": "genc-osman-1622",
+  "stil": "animasyon",
+  "baslik": [
+    "Genç Osman: Kendi Askerlerinin Öldürdüğü Padişah",
+    "Genç Osman Nasıl Öldürüldü? 1622 Yedikule Olayı",
+    "Genç Osman ve Yeniçeriler: 17 Yaşında Bir Padişahın Sonu"
+  ],
+  "kapak": "İLK KEZ",
+  "kanca": "1622'de on yedi yaşında bir padişah, kendi askerlerinin elinde öldü. Bir gün önce imparatorluğun hâkimiydi. Dört yılda ne oldu da yeniçeriler kendi padişahını öldürdü? Bu videoda Genç Osman'ın hikâyesini anlatıyoruz, sonunda bu olayın Osmanlı'yı nasıl değiştirdiğini göreceksin.",
+  "kanca_gorsel": [
+    "File:Portrait of Osman II, Sultan of Turkey 1618-22 (4673807).jpg"
+  ],
+  "bolumler": [
+    {
+      "ad": "On dört yaşında padişah",
+      "sahneler": [
+        {
+          "yazi": "1617",
+          "metin": "1617'de Birinci Ahmed genç yaşta öldü. Oğulları küçük olduğu için taht, Ahmed'in kardeşi Birinci Mustafa'ya geçti. Bu, Osmanlı'da tahtın babadan oğula değil, ailenin en büyüğüne geçtiği ilk örnekti. Ahmed'in oğulları içinde en büyüğü Osman'dı, ama sarayda pek çok kişi tahtın bir çocuğa bırakılmasını tehlikeli buluyordu.",
+          "gorsel": [
+            "File:Ahmed I by John Young.jpg"
+          ]
+        },
+        {
+          "yazi": "Birinci Mustafa",
+          "metin": "Ama Mustafa yıllarını sarayın kapalı dairelerinde geçirmişti ve devlet işlerini yürütemedi. Saraydakiler onun ruh sağlığından şüphe ediyordu. Üç ay bile geçmeden tahttan indirildi. Kısa sürede devlet işleri durma noktasına geldi. Divan toplantılarında kararlar alınamıyor, sarayda herkes bir sonraki adımı bekliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "yil": "Birinci Mustafa",
+            "aylar": [
+              "Kasım 1617",
+              "Aralık",
+              "Ocak",
+              "Şubat 1618"
+            ],
+            "cevir_bit": 0.55,
+            "rozet": "Üç ay"
+          }
+        },
+        {
+          "yazi": "Osman",
+          "metin": "Yerine, Birinci Ahmed'in büyük oğlu Osman geçti. Henüz on dört yaşındaydı. Tarih onu Genç Osman adıyla hatırlayacaktı. Babasının ölümünden bu yana sarayda büyüyen Osman, birdenbire koca bir imparatorluğun başına geçmişti. Etrafında onu yönlendirmek isteyen pek çok güçlü insan vardı.",
+          "gorsel": [
+            "File:Osman II by John Young.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Büyük hayaller",
+      "sahneler": [
+        {
+          "yazi": "Hırslı bir genç",
+          "metin": "Osman yaşından çok daha cesur ve hırslıydı. Dedelerinin büyük seferlerini okumuş, onlar gibi ordunun başında savaşa gitmek istiyordu. Okçuluğu ve ata binmeyi seviyordu. Hocası Ömer Efendi onun en yakın danışmanıydı. Genç padişah, devletin eski gücünü ancak köklü değişikliklerle geri kazanabileceğine inanıyordu.",
+          "gorsel": [
+            "File:Portrait of Osman II, Sultan of Turkey 1618-22 (4673807).jpg"
+          ]
+        },
+        {
+          "yazi": "Yeniçeriler",
+          "metin": "Ama karşısında artık eski düzen yoktu. Yeniçeri Ocağı kalabalıklaşmış, disiplini bozulmuştu. Ocağa giren pek çok kişi savaştan çok maaşla ve ticaretle ilgileniyordu. Kuruluş yıllarında devşirmeyle seçilen ve sıkı bir eğitimden geçen bu askerler, artık evlenebiliyor, dükkân açabiliyor, oğullarını ocağa yazdırabiliyordu.",
+          "gorsel": [
+            "File:Janissary Recruitment in the Balkans-Suleymanname.jpg"
+          ]
+        },
+        {
+          "yazi": "Genç padişah ve ocak",
+          "metin": "Osman bu askerlere güvenmiyordu. Askerler de kendilerini sert sözlerle eleştiren bu genç padişahı sevmiyordu. İki taraf arasındaki gerilim, ilk büyük seferle birlikte açığa çıkacaktı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Genç Osman",
+                "desen": "hilal"
+              }
+            ],
+            "bant": "Güvensizlik",
+            "karsi": {
+              "ad": "Yeniçeri Ocağı",
+              "desen": "kazan"
+            },
+            "arka": {
+              "merkez": [
+                28.97,
+                41.03
+              ],
+              "genislik": 0.9
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Hotin seferi",
+      "sahneler": [
+        {
+          "yazi": "1621",
+          "metin": "1621'de Osman, Lehistan'a karşı sefere çıktı. Ordu İstanbul'dan Edirne'ye, oradan Tuna'yı geçerek kuzeye, Dinyester kıyısındaki Hotin kalesine yürüdü. Lehistan'la sınırdaki Kazak akınları ve Boğdan meselesi yüzünden gerilim uzun zamandır sürüyordu. Osman bu seferi, kendini kanıtlayacağı büyük fırsat olarak görüyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              27.6,
+              44.9
+            ],
+            "genislik": 27,
+            "zoom": 1.05,
+            "odak": [
+              26.49,
+              48.51
+            ],
+            "baslik": {
+              "ust": "1621",
+              "alt": "Hotin seferi",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sol",
+                "bas": 0.25
+              },
+              {
+                "ad": "Hotin",
+                "lon": 26.49,
+                "lat": 48.51,
+                "bas": 0.7,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.01
+                  ],
+                  [
+                    26.56,
+                    41.68
+                  ],
+                  [
+                    26.5,
+                    43.6
+                  ],
+                  [
+                    27.2,
+                    45.5
+                  ],
+                  [
+                    26.5,
+                    48.45
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.85,
+                "boy": 95
+              }
+            ],
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "Kuşatma",
+          "metin": "Hotin önünde aylarca süren kuşatma ve çatışmalar oldu. Osmanlı ordusu sayıca üstündü ama kesin bir zafer kazanamadı. Sonunda bir antlaşma yapıldı ve ordu geri döndü. Yağmurlar, salgınlar ve erzak sıkıntısı askerleri yıprattı. Kale düşmedi ve iki taraf da kesin bir üstünlük kuramadı.",
+          "gorsel": [
+            "File:Brandt Battle of Khotyn.png"
+          ]
+        },
+        {
+          "yazi": "Suçlu kim?",
+          "metin": "Osman bu sonucun suçunu yeniçerilere yükledi. Ona göre askerler isteksiz savaşmış, hatta savaş sırasında ganimet peşine düşmüştü. Yeniçeriler ise genç padişahın kendilerini aşağıladığını düşünüyordu. Seferden dönen ordu, zaferle değil yorgunluk ve kırgınlıkla İstanbul'a girdi. Bu kırgınlık bir daha kapanmayacaktı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              26.9,
+              47.8
+            ],
+            "genislik": 6,
+            "zoom": 1.08,
+            "odak": [
+              26.49,
+              48.51
+            ],
+            "etiketler": [
+              {
+                "ad": "Hotin",
+                "lon": 26.49,
+                "lat": 48.51,
+                "yan": "sol"
+              }
+            ],
+            "carpisma": {
+              "lon": 26.49,
+              "lat": 48.51,
+              "bas": 0.1
+            },
+            "damga": {
+              "yazi": "Zafer\nyok",
+              "lon": 26.49,
+              "lat": 48.51,
+              "bas": 0.5
+            },
+            "tip": "harita"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Öfke birikiyor",
+      "sahneler": [
+        {
+          "yazi": "Kardeş",
+          "metin": "Sefere çıkmadan önce bir şey daha olmuştu. Osman, tahta rakip olabileceği endişesiyle kardeşi Şehzade Mehmed'i öldürtmüştü. Bu karar, sarayda ve halk arasında derin bir rahatsızlık yarattı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              28.985,
+              41.02
+            ],
+            "genislik": 0.5,
+            "zoom": 1.08,
+            "odak": [
+              28.983,
+              41.0115
+            ],
+            "etiketler": [
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.1,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "Şehzade\nMehmed",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.45
+            },
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "Gelenek dışı evlilik",
+          "metin": "Dönüşte Osman, şeyhülislamın kızıyla evlendi. Padişahların cariyelerle aile kurduğu bir dönemde bu, alışılmadık bir karardı. Bazıları bunu Osman'ın sarayın eski düzenini değiştirme isteğine bağladı. Bu evlilik, saraydaki güçlü kadınların ve ağaların da padişaha mesafeli durmasına yol açtı.",
+          "gorsel": [
+            "File:In a Turkish coffee house.jpg"
+          ]
+        },
+        {
+          "yazi": "Kahvehanelerde",
+          "metin": "İstanbul'un kahvehanelerinde ve kışlalarında padişah hakkında konuşmalar artıyordu. Söylentilere göre Osman, yeniçerilerin maaşlarını kesmeye, hatta ocağı tamamen ortadan kaldırmaya hazırlanıyordu. Söylentiler doğru olsun ya da olmasın, askerlerin korkusu gerçekti. Ocak, varlığının tehlikede olduğunu düşünmeye başlamıştı.",
+          "gorsel": [
+            "File:An Officer of the Janissaries (Costume Plate) LACMA M.85.237.50.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Hac bahanesi",
+      "sahneler": [
+        {
+          "yazi": "Hacca gitmek",
+          "metin": "1622 baharında Osman, hacca gitmek istediğini açıkladı. Daha önce hiçbir Osmanlı padişahı hacca gitmemişti. Bu karar, şüpheleri birden alevlendirdi. Danışmanları bile bu yolculuğun uygun olmadığını söyledi. Şeyhülislam, padişahın hacca gitmesinin gerekli olmadığını, onun yerine adaletle yönetmesinin daha hayırlı olduğunu bildirdi.",
+          "gorsel": [
+            "File:Osman II by John Young.jpg"
+          ]
+        },
+        {
+          "yazi": "Gerçek plan",
+          "metin": "Pek çok tarihçiye göre gerçek amaç başkaydı. Osman, Anadolu'dan ve Suriye'den yeni askerler toplayarak yeniçerilerin yerine geçecek yeni bir ordu kurmak istiyordu. Bazı rivayetlere göre başkentin Bursa'ya ya da başka bir şehre taşınması bile konuşuluyordu. Bu planların ne kadarının gerçek olduğu bugün hâlâ tartışmalıdır.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              33.5,
+              35.9
+            ],
+            "genislik": 27,
+            "zoom": 1.04,
+            "baslik": {
+              "ust": "1622",
+              "alt": "Hac mı, yeni ordu mu?",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Anadolu",
+                "lon": 33.0,
+                "lat": 39.2,
+                "tip": "bolge"
+              },
+              {
+                "ad": "Şam",
+                "lon": 36.29,
+                "lat": 33.51,
+                "bas": 0.5,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    29.02,
+                    41.0
+                  ],
+                  [
+                    32.0,
+                    39.2
+                  ],
+                  [
+                    35.3,
+                    37.0
+                  ],
+                  [
+                    36.3,
+                    33.6
+                  ],
+                  [
+                    37.2,
+                    29.8
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.8
+              }
+            ],
+            "rozetler": [
+              {
+                "yazi": "Yeni bir ordu?",
+                "x": 650,
+                "y": 860,
+                "bas": 0.6
+              }
+            ],
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "Çadırlar Üsküdar'da",
+          "metin": "Padişahın çadırları Üsküdar'a kurulmaya başlandı. Yeniçeriler, Osman'ın İstanbul'dan ayrılırsa bir daha onlara güvenmeyeceğini ve yeni ordusuyla geri döneceğini düşündü. Hazinenin de padişahla birlikte gideceği söyleniyordu. Bu, askerlerin maaşlarının ödenmeyeceği korkusunu daha da büyüttü.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              29.0,
+              41.03
+            ],
+            "genislik": 0.5,
+            "zoom": 1.06,
+            "odak": [
+              29.016,
+              41.027
+            ],
+            "etiketler": [
+              {
+                "ad": "Üsküdar",
+                "lon": 29.016,
+                "lat": 41.027,
+                "yan": "sag"
+              },
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sol"
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.983,
+                    41.011
+                  ],
+                  [
+                    29.0,
+                    41.018
+                  ],
+                  [
+                    29.014,
+                    41.026
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.5,
+                "boy": 85
+              }
+            ],
+            "tip": "harita"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Atmeydanı'nda ayaklanma",
+      "sahneler": [
+        {
+          "yazi": "18 Mayıs 1622",
+          "metin": "18 Mayıs 1622'de yeniçeriler ve sipahiler Atmeydanı'nda toplandı. Kazanlarını devirdiler. Bu, ocağın padişaha karşı ayaklandığının işaretiydi. Kısa sürede medrese öğrencileri ve şehirdeki öfkeli kalabalıklar da onlara katıldı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              28.98,
+              41.02
+            ],
+            "genislik": 0.5,
+            "zoom": 1.08,
+            "odak": [
+              28.975,
+              41.006
+            ],
+            "baslik": {
+              "ust": "18 Mayıs",
+              "alt": "Atmeydanı · 1622",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Atmeydanı",
+                "lon": 28.975,
+                "lat": 41.006,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.1,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "Kazan\nkalktı",
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.5
+            },
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "İstekler",
+          "metin": "İsyancılar, padişahı yanlış yönlendirdiğini düşündükleri kişilerin teslim edilmesini istedi. Listede sadrazam Dilaver Paşa, padişahın hocası Ömer Efendi ve sarayın önemli ağaları vardı. Osman bu isteklere önce sert bir dille karşılık verdi. Ama kalabalığı dağıtacak gücü yoktu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "İsyancıların istekleri",
+            "ogeler": [
+              "Darüssaade Ağası",
+              "Hoca Ömer Efendi",
+              "Sadrazam Dilaver Paşa"
+            ]
+          }
+        },
+        {
+          "yazi": "Dilaver Paşa",
+          "metin": "Osman önce direndi. Ama kalabalık büyüyünce sadrazam Dilaver Paşa'yı teslim etmek zorunda kaldı. Paşa, sarayın kapısında isyancılar tarafından öldürüldü. Kalabalık bununla yetinmedi.",
+          "gorsel": [
+            "File:De grootvizier steekt de Atmeydanı (hippodroom) over, SK-A-1998.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Saraya giren kalabalık",
+      "sahneler": [
+        {
+          "yazi": "Mustafa yeniden",
+          "metin": "İsyancılar Topkapı Sarayı'na girdi. Yıllardır kapalı bir dairede tutulan Birinci Mustafa'yı bulup çıkardılar ve onu yeniden padişah ilan ettiler.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "yil": "Birinci Mustafa",
+            "aylar": [
+              "1618",
+              "19 Mayıs 1622"
+            ],
+            "cevir_bit": 0.45,
+            "rozet": "Yeniden tahtta"
+          }
+        },
+        {
+          "yazi": "Kaçış",
+          "metin": "Osman, sarayın dışında Ağa Kapısı'na sığınarak yeniçeri ağalarıyla anlaşmaya çalıştı. Ama artık kimse onu dinlemiyordu. Genç padişah yakalandı. Bir gün önce imparatorluğun hâkimi olan genç adam, şimdi kendi askerlerinin elinde bir esirdi.",
+          "gorsel": [
+            "File:Galanterieen der Turken-p203-Janissary Captain in ceremonial costume-large.jpg"
+          ]
+        },
+        {
+          "yazi": "Şehrin içinden",
+          "metin": "Kaynaklara göre Osman bir yük beygirine bindirilerek, halkın gözü önünde yeniçerilerin Orta Camii'ne götürüldü. Bir padişah için bundan ağır bir aşağılanma düşünmek zordu. Kalabalığın bir kısmı ona hakaret ediyor, bir kısmı ise olanlara inanamayarak sessizce izliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              28.957,
+              41.012
+            ],
+            "genislik": 0.42,
+            "zoom": 1.06,
+            "odak": [
+              28.952,
+              41.009
+            ],
+            "etiketler": [
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sag"
+              },
+              {
+                "ad": "Orta Camii",
+                "lon": 28.952,
+                "lat": 41.009,
+                "yan": "sol",
+                "bas": 0.5
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.983,
+                    41.0115
+                  ],
+                  [
+                    28.97,
+                    41.01
+                  ],
+                  [
+                    28.952,
+                    41.009
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.65,
+                "boy": 80
+              }
+            ],
+            "tip": "harita"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Yedikule",
+      "sahneler": [
+        {
+          "yazi": "Yedikule",
+          "metin": "Ertesi gün Osman, Yedikule Zindanları'na götürüldü. Yeni sadrazam Davud Paşa ve adamları da oraya geldi. Osman, Orta Camii'nde askerlere seslenip hayatını bağışlamalarını istemişti. Ama yanındakiler, onun hayatta kalmasının kendileri için tehlike olduğunu düşünüyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              28.945,
+              41.01
+            ],
+            "genislik": 0.5,
+            "zoom": 1.08,
+            "odak": [
+              28.923,
+              40.993
+            ],
+            "etiketler": [
+              {
+                "ad": "Orta Camii",
+                "lon": 28.952,
+                "lat": 41.009,
+                "yan": "sag"
+              },
+              {
+                "ad": "Yedikule",
+                "lon": 28.923,
+                "lat": 40.993,
+                "yan": "sol",
+                "bas": 0.4
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.952,
+                    41.009
+                  ],
+                  [
+                    28.94,
+                    41.0
+                  ],
+                  [
+                    28.924,
+                    40.994
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.6,
+                "boy": 80
+              }
+            ],
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "20 Mayıs 1622",
+          "metin": "20 Mayıs 1622'de Genç Osman, Yedikule'de boğularak öldürüldü. On yedi yaşındaydı. Kaynaklara göre son ana kadar direndi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              28.935,
+              41.0
+            ],
+            "genislik": 0.4,
+            "zoom": 1.1,
+            "odak": [
+              28.923,
+              40.993
+            ],
+            "etiketler": [
+              {
+                "ad": "Yedikule",
+                "lon": 28.923,
+                "lat": 40.993,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.923,
+              "lat": 40.993,
+              "bas": 0.1,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "20 Mayıs\n1622",
+              "lon": 28.923,
+              "lat": 40.993,
+              "bas": 0.45
+            },
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "Bir ilk",
+          "metin": "Osmanlı tarihinde bir padişah ilk kez kendi askerleri tarafından öldürülüyordu. Bu olay, sarayla ocak arasındaki dengeyi kökten değiştirdi. Artık herkes, yeniçerilerin bir padişahı tahttan indirip öldürebileceğini görmüştü. Sonraki yıllarda bu cesaret, başka padişahların da tahtını sallayacaktı.",
+          "gorsel": [
+            "File:Portrait of Osman II, Sultan of Turkey 1618-22 (4673807).jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Sonrası",
+      "sahneler": [
+        {
+          "yazi": "Abaza Mehmed Paşa",
+          "metin": "İstanbul'da olanlar taşrada büyük öfke yarattı. Erzurum valisi Abaza Mehmed Paşa, Genç Osman'ın intikamını almak adına ayaklandı. Bu isyan yıllarca sürdü. Abaza, Anadolu'da yeniçerileri hedef alan bir kıyıma girişti ve uzun süre bastırılamadı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "merkez": [
+              36.5,
+              39.6
+            ],
+            "genislik": 17,
+            "zoom": 1.04,
+            "baslik": {
+              "ust": "1622",
+              "alt": "Abaza isyanı",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Erzurum",
+                "lon": 41.27,
+                "lat": 39.9,
+                "yan": "sol"
+              },
+              {
+                "ad": "Ankara",
+                "lon": 32.85,
+                "lat": 39.93,
+                "bas": 0.5
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    41.27,
+                    39.9
+                  ],
+                  [
+                    38.5,
+                    39.75
+                  ],
+                  [
+                    35.5,
+                    39.8
+                  ],
+                  [
+                    32.95,
+                    39.93
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.1,
+                "bit": 0.75,
+                "boy": 90
+              }
+            ],
+            "tip": "harita"
+          }
+        },
+        {
+          "yazi": "Davud Paşa",
+          "metin": "Osman'ın ölümünde payı olan Davud Paşa da kısa süre sonra görevden alındı ve öldürüldü. Birinci Mustafa ise ancak bir yıl daha tahtta kalabildi.",
+          "gorsel": [
+            "File:An Officer of the Janissaries (Costume Plate) LACMA M.85.237.50.jpg"
+          ]
+        },
+        {
+          "yazi": "Dördüncü Murad",
+          "metin": "1623'te tahta, Osman'ın küçük kardeşi Murad çıktı. Ağabeyinin başına gelenleri unutmayacak ve yıllar sonra ocağa karşı çok daha sert davranacaktı.",
+          "gorsel": [
+            "File:Murad IV portrait. Topkapi Palace Museum Library, H. 2148, 11b.jpg"
+          ]
+        },
+        {
+          "yazi": "Erken gelen reform",
+          "metin": "Bazı tarihçiler Genç Osman'ı zamanından önce gelmiş bir reformcu olarak görür. Bazıları ise onu tecrübesiz ve aceleci bir genç olarak değerlendirir. Ama yeniçeri sorununun iki yüz yıl daha süreceği ve ancak 1826'da çözülebileceği kesindi.",
+          "gorsel": [
+            "File:Osman II by John Young.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Genç Osman'ı sona götüren şey hayallerinin büyüklüğü müydü, yoksa acelesi mi? Yorumlarda yaz.",
+  "etiketler": [
+    "genç osman",
+    "ikinci osman",
+    "1622",
+    "yedikule",
+    "yeniçeri isyanı",
+    "hotin seferi",
+    "birinci mustafa",
+    "osmanlı tarihi belgesel",
+    "osmanlı padişahları"
+  ]
+}
