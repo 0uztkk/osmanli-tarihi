@@ -1,0 +1,653 @@
+{
+  "id": "pargali-ibrahim-1536",
+  "stil": "animasyon",
+  "baslik": [
+    "Pargalı İbrahim Paşa: Padişahın Öldürttüğü Dost",
+    "Pargalı İbrahim Nasıl Öldü? 1536 Topkapı Gecesi",
+    "Kanuni ve İbrahim Paşa: Bir Dostluğun Kanlı Sonu"
+  ],
+  "kapak": "SON YEMEK",
+  "kanca": "1536'da bir sadrazam padişahla akşam yemeği yedi, sabah Topkapı'da ölü bulundu. Peki padişahın en yakın dostunu kim, neden öldürttü? Bir köle nasıl imparatorluğun ikinci adamı oldu, neden aynı sarayda boğuldu? Bu videoda Pargalı İbrahim'in hikâyesini anlatıyoruz, sonunda ölümüyle ilgili tartışmayı göreceksin.",
+  "kanca_gorsel": [
+    "File:Portrait Suleiman Magnificent.jpg"
+  ],
+  "bolumler": [
+    {
+      "ad": "Parga'dan Manisa'ya",
+      "sahneler": [
+        {
+          "yazi": "Parga",
+          "metin": "İbrahim, kaynaklara göre 1495 dolaylarında İyon kıyısındaki Parga'da doğdu. Rum bir ailenin çocuğuydu. Anlatılana göre küçük yaşta korsanların eline düştü ve köle olarak satıldı. O dönemde Parga Venedik'in elindeydi ve kıyılar korsan akınlarına açıktı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "uzaklas",
+            "cizgi": "kesikli",
+            "merkez": [
+              24.5,
+              38.8
+            ],
+            "genislik": 17,
+            "zoom": 1.05,
+            "baslik": {
+              "ust": "1495?",
+              "alt": "Parga'dan Manisa'ya",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Parga",
+                "lon": 20.4,
+                "lat": 39.28,
+                "yan": "sag"
+              },
+              {
+                "ad": "Manisa",
+                "lon": 27.43,
+                "lat": 38.62,
+                "yan": "sol",
+                "bas": 0.6
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    20.4,
+                    39.28
+                  ],
+                  [
+                    21.0,
+                    36.9
+                  ],
+                  [
+                    24.5,
+                    36.5
+                  ],
+                  [
+                    26.3,
+                    38.2
+                  ],
+                  [
+                    27.43,
+                    38.62
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.75
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Manisa",
+          "metin": "Yolu Manisa'ya, Şehzade Süleyman'ın sarayına çıktı. Hikâyeye göre keman çalıyor, birkaç dil biliyor ve çabuk öğreniyordu. Genç şehzadenin dikkatini kısa sürede çekti. Ondan önce hangi evlerde kaldığı ise kesin olarak bilinmiyor.",
+          "gorsel": [
+            "File:Frontispiece (folio 1v-2r). Ottoman court scene. Khusrau and Shirin, 1498–99 CE (MET 69.27).jpg"
+          ]
+        },
+        {
+          "yazi": "Yakın dost",
+          "metin": "İkisi aynı yaşlardaydı ve birlikte büyüdüler. Venedikli elçilerin raporlarına göre aynı odada uyuyacak, aynı sofrada yemek yiyecek kadar yakındılar. Bu dostluk bir imparatorluğun kaderini değiştirecekti. Sarayda bu yakınlık hem hayranlık hem kıskançlık uyandırıyordu.",
+          "gorsel": [
+            "File:Suleiman the Magnificent by Dell'Altissimo.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Hasodabaşından sadrazama",
+      "sahneler": [
+        {
+          "yazi": "1520",
+          "metin": "1520'de Yavuz Selim öldü, Süleyman tahta çıktı. İbrahim hemen sarayda hasodabaşı oldu. Padişahın en özel dairesi artık onun elindeydi. Herkes bu genç adamın adını öğrenmeye başladı. Çünkü hasodabaşı, padişaha ulaşan herkesin önünden geçmek zorunda olduğu adamdı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "safak",
+            "yil": "Süleyman tahtta",
+            "aylar": [
+              "Eylül 1520"
+            ],
+            "cevir_bit": 0.3,
+            "rozet": "Hasodabaşı"
+          }
+        },
+        {
+          "yazi": "1523",
+          "metin": "1523'te Süleyman sıradışı bir karar verdi. Yaşlı sadrazam Piri Mehmed Paşa emekliye ayrıldı, yerine vezirlik yapmamış İbrahim getirildi. Osmanlı sarayında böyle bir sıçrama görülmemişti. Bir hizmetkârın sadrazam olması, sarayın alışılmış sırasını altüst etmişti.",
+          "gorsel": [
+            "File:Topkapı Sarayı.jpg"
+          ]
+        },
+        {
+          "yazi": "Basamaklar",
+          "metin": "Birkaç yıl önce hizmetkâr olan adam artık devletin ikinci kişisiydi. Üstelik Rumeli Beylerbeyi unvanı da ona verildi. Sarayın eski paşaları bu yükselişi kolay kabul etmeyecekti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "İbrahim'in yükselişi",
+            "ogeler": [
+              "Şehzade hizmetkârı",
+              "Hasodabaşı",
+              "Rumeli Beylerbeyi",
+              "Sadrazam"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Hain Ahmed Paşa",
+      "sahneler": [
+        {
+          "yazi": "Ahmed Paşa",
+          "metin": "En çok öfkelenen, sadrazamlığı bekleyen Ahmed Paşa'ydı. Mısır valiliğine gönderildi. Ama 1524'te orada kendini sultan ilan etti. Tarih onu Hain Ahmed Paşa adıyla hatırlıyor. Kaynaklara göre bu unvan için kendi adına sikke bile kestirmişti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "İstanbul",
+                "desen": "hilal"
+              }
+            ],
+            "bant": "İsyan",
+            "karsi": {
+              "ad": "Ahmed Paşa",
+              "desen": "carpi"
+            },
+            "arka": {
+              "merkez": [
+                31,
+                34
+              ],
+              "genislik": 22,
+              "tema": "kizil"
+            }
+          }
+        },
+        {
+          "yazi": "Mısır",
+          "metin": "İsyan bastırıldı. Süleyman, Mısır'ı düzene koyması için İbrahim'i gönderdi. İbrahim Kahire'de yeni bir kanunname hazırladı. Bu düzen, Mısır'ın Osmanlı yönetiminin temeli oldu. Eyalet vergilerinden görevlilerin yetkilerine kadar her şey yazılı hâle getirildi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "kaydir",
+            "cizgi": "akan",
+            "merkez": [
+              30,
+              35.8
+            ],
+            "genislik": 22,
+            "zoom": 1.12,
+            "odak": [
+              31.24,
+              31
+            ],
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol"
+              },
+              {
+                "ad": "Kahire",
+                "lon": 31.24,
+                "lat": 30.04,
+                "yan": "sag",
+                "bas": 0.6
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.0
+                  ],
+                  [
+                    26.4,
+                    40.1
+                  ],
+                  [
+                    26.0,
+                    37.6
+                  ],
+                  [
+                    28.0,
+                    33.5
+                  ],
+                  [
+                    31.2,
+                    31.3
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.08,
+                "bit": 0.7,
+                "boy": 75
+              }
+            ],
+            "damga": {
+              "yazi": "Kanunname\nMısır",
+              "lon": 31.24,
+              "lat": 30.04,
+              "bas": 0.72,
+              "tip": "ferman",
+              "dx": -560,
+              "dy": -360
+            }
+          }
+        },
+        {
+          "yazi": "Dönüş",
+          "metin": "İbrahim İstanbul'a döndüğünde artık yalnızca padişahın dostu değildi. İşi bilen, ordu ve eyalet yöneten bir devlet adamı olarak görülüyordu. Süleyman ona her gün biraz daha yetki veriyordu. Sarayda artık önemli bir karar onun onayı olmadan pek alınmıyordu.",
+          "gorsel": [
+            "File:Portrait Suleiman Magnificent.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Atmeydanı'nda bir düğün",
+      "sahneler": [
+        {
+          "yazi": "1524",
+          "metin": "1524'te Atmeydanı'nda İbrahim için büyük bir düğün yapıldı. Yıllarca gelinin padişahın kız kardeşi Hatice Sultan olduğu söylendi. Bugün bazı tarihçiler bu bilgiyi sorguluyor.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "yaklas",
+            "merkez": [
+              28.975,
+              41.012
+            ],
+            "genislik": 0.5,
+            "zoom": 1.08,
+            "odak": [
+              28.975,
+              41.006
+            ],
+            "baslik": {
+              "ust": "1524",
+              "alt": "Atmeydanı",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Atmeydanı",
+                "lon": 28.975,
+                "lat": 41.006,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.15,
+              "renk": [
+                176,
+                34,
+                34
+              ]
+            },
+            "damga": {
+              "yazi": "Düğün",
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.5,
+              "tip": "muhur",
+              "dx": 260,
+              "dy": 190
+            }
+          }
+        },
+        {
+          "yazi": "Saray",
+          "metin": "İbrahim, Atmeydanı'nın kıyısındaki taş sarayda oturuyordu. Bu bina bugün de ayakta ve Türk ve İslam Eserleri Müzesi olarak hizmet veriyor. O dönemde bir vezirin böyle bir saray kullanması alışılmadık bir şeydi. Süleyman da 1530'daki şehzade düğünlerinde bu sarayın yanındaki meydanı kullandı.",
+          "gorsel": [
+            "File:Suleiman the Magnificent's arrival at the palace in Atmeydanı for the circumcision ceremony of his princes Mustafa, Mehmed, and Selim (Hünernâme).jpg"
+          ]
+        },
+        {
+          "yazi": "Mohaç",
+          "metin": "1526'da Mohaç'ta ordu Macarları ezdi ve Budin'e yol açıldı. İbrahim bu seferin başkomutanlarından biriydi. Zaferden sonra adı Avrupa'nın başkentlerinde konuşulur oldu. Macar kralı savaştan sağ çıkamadı ve krallık parçalandı.",
+          "gorsel": [
+            "File:Battle of Mohács, Turkish miniature.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Serasker Sultan",
+      "sahneler": [
+        {
+          "yazi": "Viyana yolu",
+          "metin": "1529'daki Viyana seferinde de İbrahim seraskerdi. Şehir alınamadı, ama İbrahim gücünü kaybetmedi. Tersine, padişah ona yeni unvanlar ve yeni yetkiler verdi. Kış yaklaşınca ordu geri döndü, ama İbrahim'in itibarı sarsılmadı.",
+          "gorsel": [
+            "File:Siegeofvienna1529.jpg"
+          ]
+        },
+        {
+          "yazi": "Altın miğfer",
+          "metin": "1532'de Venedik'te yaptırılmış dört katlı, altın kaplama bir miğfer İstanbul'a geldi. Tarihçilere göre bu gösterişli eşyanın arkasında İbrahim'in çevresi vardı. Hedef, Avrupa'ya gösteriş yapmaktı. Süleyman'ın adına yapılan gösterişin yanında, İbrahim'in adı da konuşuluyordu.",
+          "gorsel": [
+            "File:Tughra (Official Signature) of Sultan Süleiman the Magnificent (r. 1520–66) MET 116663.jpg"
+          ]
+        },
+        {
+          "yazi": "Elçilere",
+          "metin": "Habsburg elçilerinin raporlarına göre İbrahim onlara açıkça, bu imparatorluğu ben yönetiyorum, diyordu. Bu sözlerin ne kadarı doğru aktarıldı bilmiyoruz, ama sarayda duyulması bile tehlikeliydi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "İbrahim Paşa",
+                "desen": "hilal"
+              }
+            ],
+            "bant": "Kim yönetiyor?",
+            "karsi": {
+              "ad": "Habsburg elçileri",
+              "desen": "kartal"
+            },
+            "arka": {
+              "merkez": [
+                18,
+                44
+              ],
+              "genislik": 26,
+              "tema": "antika"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Bağdat yolunda düşmanlar",
+      "sahneler": [
+        {
+          "yazi": "Irakeyn",
+          "metin": "1533'te İbrahim doğuya, Safevilere karşı sefere çıktı. Tebriz'e girdi, sonra Süleyman da orduya katıldı ve birlikte Bağdat'a yürüdüler. Sefer iki yıla yakın sürdü.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "yaklas",
+            "cizgi": "kalin",
+            "merkez": [
+              39,
+              37.6
+            ],
+            "genislik": 28,
+            "zoom": 1.05,
+            "odak": [
+              44.4,
+              35.5
+            ],
+            "baslik": {
+              "ust": "1533",
+              "alt": "Irakeyn Seferi",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sag"
+              },
+              {
+                "ad": "Tebriz",
+                "lon": 46.3,
+                "lat": 38.08,
+                "yan": "sol",
+                "bas": 0.45
+              },
+              {
+                "ad": "Bağdat",
+                "lon": 44.36,
+                "lat": 33.31,
+                "yan": "sol",
+                "bas": 0.72
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.01
+                  ],
+                  [
+                    35.5,
+                    39.6
+                  ],
+                  [
+                    41.3,
+                    39.9
+                  ],
+                  [
+                    46.3,
+                    38.08
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.08,
+                "bit": 0.5
+              },
+              {
+                "yol": [
+                  [
+                    46.3,
+                    38.08
+                  ],
+                  [
+                    45.8,
+                    35.6
+                  ],
+                  [
+                    44.4,
+                    33.4
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.5,
+                "bit": 0.85,
+                "boy": 75
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Tebriz",
+          "metin": "Sefer boyunca İbrahim'in kendisine serasker sultan dedirttiği kaynaklarda geçer. Sultan kelimesi Osmanlı'da hanedan dışında kolay kullanılmazdı. Düşmanları bu ayrıntıyı unutmadı. Bu unvan, sonraki anlatılarda onun en büyük hatalarından biri sayıldı.",
+          "gorsel": [
+            "File:Matrakçı Nasuh Map of Tabriz (North orientation).jpg"
+          ]
+        },
+        {
+          "yazi": "İskender Çelebi",
+          "metin": "Hazine sorumlusu defterdar İskender Çelebi ile İbrahim arasında ağır bir çekişme vardı. 1535'te İskender Çelebi Bağdat'ta idam edildi. Rivayete göre son sözleriyle İbrahim'i padişaha şikâyet etti. Bu idam, iki adamın kavgasını İbrahim'in sonuna bağlayan hikâyelerin başlangıcı oldu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "parsomen",
+            "yil": "Bağdat",
+            "aylar": [
+              "Mart 1535"
+            ],
+            "cevir_bit": 0.3,
+            "rozet": "İdam"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Son akşam yemeği",
+      "sahneler": [
+        {
+          "yazi": "Dönüş",
+          "metin": "Ocak 1536'da ordu İstanbul'a döndü. Görünürde hiçbir şey değişmemişti. İbrahim yine padişahın yanındaydı, yine devletin başındaydı. Ama saraydaki hava değişmişti.",
+          "gorsel": [
+            "File:View of Eskisehir. Beyan-i Menazil-i Sefer-i 'Irakenyn-i Sultan Suleyman Han, 1537-1538 (Istanbul University Library, T. 5964).jpg"
+          ]
+        },
+        {
+          "yazi": "15 Mart 1536",
+          "metin": "Mart 1536'da, Ramazan ayında, İbrahim her zamanki gibi Topkapı'da padişahla yemek yedi ve gece sarayda kaldı. Bu, on üç yıldır alışılmış bir şeydi. Kimse bunun bir veda yemeği olacağını tahmin etmiyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "yaklas",
+            "merkez": [
+              28.985,
+              41.018
+            ],
+            "genislik": 0.42,
+            "zoom": 1.08,
+            "odak": [
+              28.983,
+              41.0115
+            ],
+            "baslik": {
+              "ust": "Mart 1536",
+              "alt": "Topkapı Sarayı",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Topkapı Sarayı",
+                "lon": 28.983,
+                "lat": 41.0115,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.983,
+              "lat": 41.0115,
+              "bas": 0.15,
+              "renk": [
+                200,
+                60,
+                60
+              ]
+            }
+          }
+        },
+        {
+          "yazi": "Sabah",
+          "metin": "Sabah cesedi bulundu. Boğularak öldürülmüştü. Rivayete göre duvarlarda boğuşma izleri vardı ve İbrahim sonuna kadar direnmişti. Saray bir süre sessizlik içinde kaldı. Ölümünün gerçek sebebi ise hiçbir zaman açıkça söylenmedi.",
+          "gorsel": [
+            "File:Privy Chamber Topkapi March 2008.JPG"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Yemin ve fetva rivayeti",
+      "sahneler": [
+        {
+          "yazi": "Söz",
+          "metin": "Yaygın bir rivayete göre Süleyman yıllar önce, yaşadığım sürece seni öldürtmeyeceğim, diye söz vermişti. Hikâyeye göre ise uyku ölümün kardeşidir diye bir fetva bulundu. Bu anlatının kaynağı zayıftır. Çoğu tarihçi bunu, sonradan anlatılan bir hikâye olarak görüyor.",
+          "gorsel": [
+            "File:Gate of Felicity Topkapi Istanbul 2007 007.jpg"
+          ]
+        },
+        {
+          "yazi": "Neden?",
+          "metin": "Neden öldürüldü? Tarihçiler hâlâ tartışıyor. Kimi aşırı gücünü, kimi serasker sultan meselesini, kimi İskender Çelebi'nin ölümünü gösterir. Hürrem'in rolü ise daha çok sonraki anlatılardan geliyor. Hürrem'in bu olaydaki rolünü kesin gösteren belge bulunmuyor.",
+          "gorsel": [
+            "File:Haseki Hürrem Sultan (Roxelana).jpg"
+          ]
+        },
+        {
+          "yazi": "Mirası",
+          "metin": "İbrahim'in malları hazineye geçti, naaşı gösterişsiz biçimde gömüldü. Yerine Ayas Mehmed Paşa geldi. Süleyman ise otuz yıl daha tahtta kaldı. Bir daha hiçbir vezir, padişahın dostu olarak bu kadar yükselmedi. Sarayı ise sonraki yüzyıllarda başka işlerde kullanıldı.",
+          "gorsel": [
+            "File:Walls of the Topkapı Palace Harem, Istanbul.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Makbul ve maktul",
+      "sahneler": [
+        {
+          "yazi": "İki lakap",
+          "metin": "Osmanlı kaynaklarında İbrahim'e iki lakap verilir. Sağlığında Makbul, yani sevilen, gözde. Ölümünden sonra Maktul, yani öldürülen. Bir hayatın bütün hikâyesi iki kelimenin arasında duruyor. Hangisinin onu daha iyi anlattığına sen karar ver.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "İki lakap",
+            "ogeler": [
+              "Makbul",
+              "Maktul"
+            ]
+          }
+        },
+        {
+          "yazi": "Saray bugün",
+          "metin": "Bugün Sultanahmet'te müze olan o taş bina hâlâ Atmeydanı'na bakıyor. Bir zamanlar padişahın bile konuk olduğu sarayda, sahibinin hikâyesini bilen pek azdır. Binanın taşları, yükselişin de düşüşün de sessiz tanığı olarak duruyor.",
+          "gorsel": [
+            "File:Suleiman the Magnificent's arrival at the palace in Atmeydanı for the circumcision ceremony of his princes Mustafa, Mehmed, and Selim (Hünernâme).jpg"
+          ]
+        },
+        {
+          "yazi": "Son söz",
+          "metin": "Bir köle çocuk, bir şehzadenin dostu oldu ve imparatorluğu yönetti. Sonra aynı dostun sarayında öldü. Süleyman'ın hiçbir zaman açıkça anlatmadığı sebep, hâlâ bu hikâyenin kalbinde duruyor. Bu yüzden Pargalı İbrahim hâlâ tartışılan bir isim olarak kalıyor.",
+          "gorsel": [
+            "File:Suleiman the Magnificent by Dell'Altissimo.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence İbrahim Paşa'yı öldürten şey kendi hırsı mıydı, yoksa saraydaki düşmanları mı? Yorumlarda yaz.",
+  "etiketler": [
+    "pargalı ibrahim paşa",
+    "kanuni sultan süleyman",
+    "1536",
+    "topkapı sarayı",
+    "irakeyn seferi",
+    "iskender çelebi",
+    "osmanlı tarihi belgesel",
+    "osmanlı sadrazamları"
+  ]
+}

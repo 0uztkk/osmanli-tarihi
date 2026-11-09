@@ -3798,5 +3798,199 @@
     ],
     "stil": "animasyon",
     "oto_animasyon": true
+  },
+  {
+    "id": "darussaade-agasi",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Harem'in En Güçlü Adamı 🏰",
+      "Darüssaade Ağası Kimdi? 🏰",
+      "Padişaha En Yakın Ağa 🏰"
+    ],
+    "kapak": "GÖRÜNMEZ GÜÇ",
+    "kanca": "Sence bir padişahın en güçlü adamı neden bir harem ağası olurdu? Darüssaade Ağası yüzyıllarca sarayın kapısını tuttu.",
+    "kanca_gorsel": [
+      "File:Gate of Felicity Topkapi Istanbul 2007 007.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Darüssaade Ağası",
+        "metin": "Harem'in başındaki ağaya Darüssaade Ağası denirdi. Bu makam, sarayın en güçlü makamlarından biri hâline geldi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Harem düzeni",
+          "ogeler": [
+            "Harem ağaları",
+            "Hazinedar",
+            "Darüssaade Ağası"
+          ]
+        }
+      },
+      {
+        "yazi": "Padişahın yanında",
+        "metin": "Bu ağa padişaha doğrudan ulaşabiliyordu. Valide sultanla padişah arasındaki haberleşme de çoğu kez onun üzerinden yürürdü.",
+        "gorsel": [
+          "File:Imperial Harem, Topkapı Palace, Istanbul.jpg"
+        ]
+      },
+      {
+        "yazi": "Kutsal şehirler",
+        "metin": "Yüzyılın sonundan itibaren Mekke ve Medine vakıflarının yönetimi de bu ağaya verildi. Elinde büyük bir gelir vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "Mekke ve Medine",
+          "aylar": [
+            "Vakıflar"
+          ],
+          "cevir_bit": 0.3,
+          "rozet": "Büyük gelir"
+        }
+      },
+      {
+        "yazi": "Düşüş",
+        "metin": "Bu güç tehlikeliydi. Birçok ağa isyanlarda kalabalığın hedefi oldu, görevden alındı ya da sürüldü.",
+        "gorsel": [
+          "File:Gate of Felicity Topkapi Istanbul 2007 007.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence saray en çok kimden korkmalıydı?",
+    "etiketler": [
+      "darüssaade ağası",
+      "harem ağası",
+      "topkapı sarayı",
+      "osmanlı sarayı"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "mor-oda-bizans",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Bizans'ta Mor Doğmak Ne Demek? 🏛️",
+      "Mor Odada Doğan Şehzadeler 🏛️",
+      "Bizans Sarayının Mor Odası 🏛️"
+    ],
+    "kapak": "DOĞUŞTAN TAHT",
+    "kanca": "Sence bir Bizans şehzadesinin doğduğu oda neden tahta giden yolu belirlerdi? Bu odanın duvarları mor taşlarla kaplıydı.",
+    "kanca_gorsel": [
+      "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Porfira",
+        "metin": "Konstantinopolis'teki Büyük Saray'da Porfira denen özel bir yapı vardı. Duvarları mor taşlarla kaplıydı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "yaklas",
+          "merkez": [
+            28.98,
+            41.05
+          ],
+          "genislik": 0.75,
+          "zoom": 1.08,
+          "odak": [
+            28.977,
+            41.003
+          ],
+          "baslik": {
+            "ust": "Porfira",
+            "alt": "Büyük Saray"
+          },
+          "etiketler": [
+            {
+              "ad": "Büyük Saray",
+              "lon": 28.977,
+              "lat": 41.003,
+              "bas": 0.2
+            }
+          ],
+          "vurgu": {
+            "lon": 28.977,
+            "lat": 41.003,
+            "bas": 0.2,
+            "renk": [
+              170,
+              80,
+              200
+            ]
+          }
+        }
+      },
+      {
+        "yazi": "Mor içinde doğanlar",
+        "metin": "Tahtta oturan imparatorun bu odada doğan çocuklarına, mor içinde doğmuş anlamına gelen Porfirogennetos denirdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Mor içinde",
+              "desen": "bizans"
+            }
+          ],
+          "bant": "Doğuştan hak",
+          "karsi": {
+            "ad": "Diğer çocuklar",
+            "desen": "defne"
+          },
+          "arka": {
+            "merkez": [
+              28.97,
+              41.03
+            ],
+            "genislik": 0.9,
+            "tema": "parsomen"
+          }
+        }
+      },
+      {
+        "yazi": "Anna Komnene",
+        "metin": "Bizanslı tarihçi Anna Komnene 1083'te bu odada doğdu ve bunu eserinde gururla yazdı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "Anna Komnene",
+          "aylar": [
+            "Aralık 1083"
+          ],
+          "cevir_bit": 0.3,
+          "rozet": "Mor içinde"
+        }
+      },
+      {
+        "yazi": "Bugün",
+        "metin": "Büyük Saray'dan bugün yalnızca izler kaldı. Ama mor içinde doğmak deyimi yüzyıllarca yaşadı.",
+        "gorsel": [
+          "File:Walls of Constantinople 1.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence doğduğu oda bir insana hak kazandırır mı?",
+    "etiketler": [
+      "bizans sarayı",
+      "porfirogennetos",
+      "anna komnene",
+      "büyük saray"
+    ],
+    "stil": "animasyon"
   }
 ]

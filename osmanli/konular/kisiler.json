@@ -3703,5 +3703,258 @@
     ],
     "stil": "animasyon",
     "oto_animasyon": true
+  },
+  {
+    "id": "katip-celebi",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Mirasını Kitaba Harcayan Osmanlı Bilgini 👑",
+      "Kâtip Çelebi Kimdi? 👑",
+      "Cihannüma'nın Yazarı 👑"
+    ],
+    "kapak": "KİTAP UĞRUNA",
+    "kanca": "1609'da doğan bir Osmanlı kâtibi, kendisine kalan mirasın tamamını kitaba harcadı. Sence bu kitaplar neden hâlâ okunuyor?",
+    "kanca_gorsel": [
+      "File:Houghton Typ 794.34.475 - Kâtip Çelebi, Kitab-ı cihannüma.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Asker kâtip",
+        "metin": "Kâtip Çelebi 1609'da İstanbul'da doğdu. Genç yaşta orduda kâtip olarak Bağdat ve Revan seferlerine gitti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "parsomen",
+          "kamera": "yaklas",
+          "cizgi": "kesikli",
+          "merkez": [
+            39,
+            38
+          ],
+          "genislik": 22,
+          "zoom": 1.05,
+          "baslik": {
+            "ust": "1609",
+            "alt": "Kâtip Çelebi"
+          },
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sag"
+            },
+            {
+              "ad": "Bağdat",
+              "lon": 44.36,
+              "lat": 33.31,
+              "yan": "sol",
+              "bas": 0.45
+            },
+            {
+              "ad": "Revan",
+              "lon": 44.51,
+              "lat": 40.18,
+              "yan": "sol",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  36,
+                  39.5
+                ],
+                [
+                  44.3,
+                  33.5
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.08,
+              "bit": 0.65,
+              "boy": 70
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Miras",
+        "metin": "Bir akrabasından kalan mirası kitaplara harcadı. Kendini tamamen okumaya ve yazmaya verdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "Kâtip Çelebi",
+          "aylar": [
+            "Miras",
+            "Kitap"
+          ],
+          "cevir_bit": 0.5,
+          "rozet": "Hepsi kitaba"
+        }
+      },
+      {
+        "yazi": "Cihannüma",
+        "metin": "En ünlü eseri Cihannüma, dünyayı anlatan bir coğrafya kitabıdır. Batılı haritalardan da yararlandı.",
+        "gorsel": [
+          "File:Houghton Typ 794.34.475 - Kâtip Çelebi, Kitab-ı cihannüma.jpg"
+        ]
+      },
+      {
+        "yazi": "Keşfü'z-Zünun",
+        "metin": "Keşfü'z-Zünun'da binlerce kitabı listeledi. Rivayete göre 1657'de kahvesini içerken aniden öldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Keşfü'z-Zünun",
+          "ogeler": [
+            "Kitap adları",
+            "Yazarlar",
+            "Dev bir katalog"
+          ]
+        }
+      }
+    ],
+    "soru": "Sen mirası neye harcardın?",
+    "etiketler": [
+      "kâtip çelebi",
+      "cihannüma",
+      "keşfü'z-zünun",
+      "osmanlı bilim"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "keykubad-1237",
+    "tur": "bilinen",
+    "baslik": [
+      "Selçuklu'nun Zehirlenen Sultanı 👑",
+      "Alaeddin Keykubad Nasıl Öldü? 👑",
+      "Anadolu'nun En Güçlü Sultanı 👑"
+    ],
+    "kapak": "SON ZİYAFET",
+    "kanca": "1237'de Selçuklu'nun en güçlü sultanı bir ziyafetten sonra öldü. Sence bu ölümün arkasında kim vardı?",
+    "kanca_gorsel": [
+      "File:Ertugrul Gazi sends his son Savci Bey to the Sultan Alaeddin Keykubad with the request to be allowed to populate a new area.. Miniature, Turkish, 1616. Tadj al-Tawarikh (The Crown of Chronicles).jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Alaiye",
+        "metin": "Alaeddin Keykubad 1221'de Kalonoros Kalesi'ni aldı ve adını Alaiye koydu. Bugünkü Alanya işte orasıdır.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "kaydir",
+          "merkez": [
+            33,
+            37.3
+          ],
+          "genislik": 10,
+          "zoom": 1.12,
+          "baslik": {
+            "ust": "1221",
+            "alt": "Alaiye"
+          },
+          "etiketler": [
+            {
+              "ad": "Alaiye",
+              "lon": 32.0,
+              "lat": 36.54,
+              "yan": "sag",
+              "bas": 0.2
+            }
+          ],
+          "vurgu": {
+            "lon": 32,
+            "lat": 36.54,
+            "bas": 0.2,
+            "renk": [
+              176,
+              34,
+              34
+            ]
+          }
+        }
+      },
+      {
+        "yazi": "Yassıçemen",
+        "metin": "1230'da Yassıçemen'de Harezmşah Celaleddin'i yendi ve Anadolu'yu büyük bir tehlikeden korudu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Selçuklu",
+              "desen": "selcuklu"
+            }
+          ],
+          "bant": "Yassıçemen",
+          "karsi": {
+            "ad": "Harezmşah",
+            "desen": "carpi"
+          },
+          "arka": {
+            "merkez": [
+              38,
+              39
+            ],
+            "genislik": 16,
+            "tema": "antika"
+          }
+        }
+      },
+      {
+        "yazi": "Yollar",
+        "metin": "Yolları kervansaraylarla donattı, ticareti büyüttü. Osmanlı kaynakları Ertuğrul'u da onun döneminde anlatır.",
+        "gorsel": [
+          "File:Ertugrul Gazi sends his son Savci Bey to the Sultan Alaeddin Keykubad with the request to be allowed to populate a new area.. Miniature, Turkish, 1616. Tadj al-Tawarikh (The Crown of Chronicles).jpg"
+        ]
+      },
+      {
+        "yazi": "Kayseri",
+        "metin": "1237'de Kayseri'de bir ziyafetin ardından öldü. Kaynaklara göre zehirlenmişti ve şüpheler oğlu Gıyaseddin üzerinde toplandı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "Kayseri",
+          "aylar": [
+            "1237"
+          ],
+          "cevir_bit": 0.3,
+          "rozet": "Son ziyafet"
+        }
+      }
+    ],
+    "soru": "Sence Keykubad gerçekten zehirlendi mi?",
+    "etiketler": [
+      "alaeddin keykubad",
+      "anadolu selçuklu",
+      "alanya",
+      "kayseri 1237"
+    ],
+    "stil": "animasyon"
   }
 ]

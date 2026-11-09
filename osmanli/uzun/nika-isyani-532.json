@@ -1,0 +1,613 @@
+{
+  "id": "nika-isyani-532",
+  "stil": "animasyon",
+  "baslik": [
+    "Nika İsyanı: Araba Yarışı İmparatoru Deviriyordu",
+    "Nika İsyanı 532: Eski Ayasofya Neden Yandı?",
+    "Justinianos ve Nika İsyanı: Bizans'ın En Kanlı Haftası"
+  ],
+  "kapak": "ALTI GÜN",
+  "kanca": "532 yılında bir araba yarışı, koca Bizans İmparatorluğu'nu devrilmenin eşiğine getirdi. Altı gün içinde şehir yanıyor, imparator kaçmayı düşünüyordu. Bugün İstanbul'da gördüğün Ayasofya bile bu yangının ardından yükseldi. Bu videoda Nika İsyanı'nı anlatıyoruz, sonunda imparatorun neden kaçmadığını göreceksin.",
+  "kanca_gorsel": [
+    "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+  ],
+  "bolumler": [
+    {
+      "ad": "Pistin iki tarafı",
+      "sahneler": [
+        {
+          "yazi": "Hipodrom",
+          "metin": "Konstantinopolis'in kalbinde dev bir yarış pisti vardı: Hipodrom. Bugün Sultanahmet'te gezdiğin Atmeydanı işte o pistin yeridir. Halk burada atlı araba yarışlarını izler, imparatorunu da burada yakından görürdü. İmparator locası doğrudan saraya bağlıydı, yani kalabalık ile tahtın arasında yalnızca birkaç basamak vardı.",
+          "gorsel": [
+            "File:De grootvizier steekt de Atmeydanı (hippodroom) over, SK-A-1998.jpg"
+          ]
+        },
+        {
+          "yazi": "Maviler ve Yeşiller",
+          "metin": "Yarışların iki büyük tarafı vardı: Maviler ve Yeşiller. Bunlar sıradan taraftarlar değildi. Kendi örgütleri, sokakları ve gücü olan gruplardı. Birbirlerinden nefret ederlerdi ve kavgaları sık sık kana bulaşırdı. Bir arabacının zaferi, sokakta bir cinayete dönüşebiliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Maviler",
+                "desen": "halka"
+              }
+            ],
+            "bant": "Düşmanlar",
+            "karsi": {
+              "ad": "Yeşiller",
+              "desen": "anahtar"
+            },
+            "arka": {
+              "merkez": [
+                28.97,
+                41.02
+              ],
+              "genislik": 0.9,
+              "tema": "gece"
+            }
+          }
+        },
+        {
+          "yazi": "Justinianos",
+          "metin": "Tahtta 527'den beri Justinianos oturuyordu. Yanında ise eski bir sahne sanatçısı olduğu anlatılan güçlü bir imparatoriçe vardı: Theodora. Justinianos büyük hayaller kuruyordu, ama hayallerin parasını halk ödüyordu. Pers savaşları, inşaatlar ve Roma'yı yeniden kurma düşüncesi, hazineyi hızla boşaltıyordu.",
+          "gorsel": [
+            "File:Istanbul in the 16th century - left.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Vergi ve idam sehpası",
+      "sahneler": [
+        {
+          "yazi": "Öfkenin adresleri",
+          "metin": "Halk özellikle üç kişiye öfkeliydi. Maliyeyi yöneten Kapadokyalı Yuannis ağır vergileriyle, hukukçu Tribonianos rüşvet söylentileriyle, şehrin valisi Eudaimon ise sert cezalarıyla anılıyordu. Sokakta konuşulan adlar hep bu üç adamdı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Halkın öfkesi",
+            "ogeler": [
+              "Vali Eudaimon",
+              "Hukukçu Tribonianos",
+              "Kapadokyalı Yuannis"
+            ]
+          }
+        },
+        {
+          "yazi": "Ocak 532",
+          "metin": "Ocak 532'de vali, kargaşa çıkaran birkaç kişiyi idama mahkûm etti. Kaynaklara göre ip iki kez koptu, iki adam yere düştü. Biri Maviler'den, öteki Yeşiller'dendi. Cellatlar yeniden denedi, ama sehpa da bozuldu. Kalabalık bunu bir işaret gibi gördü.",
+          "gorsel": [
+            "File:A Constantinople engraving by Jaspar Isaac.jpg"
+          ]
+        },
+        {
+          "yazi": "Kilise",
+          "metin": "Keşişler bu iki adamı kaldırıp bir kiliseye sığındırdı. Vali kiliseyi askerlerle çevirdi. Yıllardır birbirine düşman olan iki taraf, ilk kez aynı derdi paylaşıyordu. Halk, kurtulan adamları korumak için kiliseye doğru yürümeye başladı.",
+          "gorsel": [
+            "File:Walls of Constantinople 1.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Nika diye bağıran şehir",
+      "sahneler": [
+        {
+          "yazi": "13 Ocak",
+          "metin": "13 Ocak'ta imparator yarışları izlemek için locasına geçti. Kalabalık, iki adamın affedilmesini istedi. Justinianos sessiz kaldı. Yarışlar birbirini izledi, cevap gelmedi. Sessizlik her yarışta biraz daha büyüyen bir öfkeye dönüştü.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "safak",
+            "yil": "Ocak 532",
+            "aylar": [
+              "11",
+              "12",
+              "13"
+            ],
+            "cevir_bit": 0.45,
+            "rozet": "Yarış günü"
+          }
+        },
+        {
+          "yazi": "Nika",
+          "metin": "Yirmi ikinci yarışta pisti sarsan bir ses yükseldi. Maviler ve Yeşiller aynı anda aynı sözü haykırdı: Nika! Yani kazan! Yarışçılara bağırılan bu söz, artık imparatora karşı söyleniyordu. Tarih bu ayaklanmayı o tek kelimeyle hatırlayacaktı.",
+          "gorsel": [
+            "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+          ]
+        },
+        {
+          "yazi": "Valinin binası",
+          "metin": "Aynı gece kalabalık sokaklara taştı. Valinin binasını bastılar, mahkûmları serbest bıraktılar ve binayı ateşe verdiler. İsyan artık yarış pistinin dışındaydı. Rakip iki taraf şimdi omuz omuza yürüyordu.",
+          "gorsel": [
+            "File:1840 S.D.U.K. Map of Constantinople ( Istanbul, Turkey ) - Geographicus - Istanbul-sduk-1841.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Alevler içinde şehir",
+      "sahneler": [
+        {
+          "yazi": "Yanan semtler",
+          "metin": "Sonraki günlerde yangınlar yayıldı. Sarayın Khalke Kapısı, Senato binası, Zeuksippos Hamamı ve çevredeki yapılar alevlere teslim oldu. Şehrin en gösterişli bölgesi kısa sürede küle dönüyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "uzaklas",
+            "bulut": true,
+            "merkez": [
+              28.982,
+              41.015
+            ],
+            "genislik": 0.45,
+            "zoom": 1.06,
+            "baslik": {
+              "ust": "Yangın",
+              "alt": "Şehrin kalbi",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Ayasofya",
+                "lon": 28.98,
+                "lat": 41.0086,
+                "yan": "sag"
+              },
+              {
+                "ad": "Hipodrom",
+                "lon": 28.975,
+                "lat": 41.006,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 28.98,
+              "lat": 41.0086,
+              "bas": 0.1,
+              "renk": [
+                255,
+                150,
+                60
+              ]
+            }
+          }
+        },
+        {
+          "yazi": "Eski Ayasofya",
+          "metin": "Yanan yapılar arasında eski Ayasofya da vardı. O kilise, bugün gördüğün kubbeli yapı değildi; Theodosius döneminden kalma daha küçük bir bazilikaydı. Birkaç saat içinde kül oldu. İmparator sarayının hemen yanındaki bu yangın, Justinianos'a tehlikenin ne kadar yakın olduğunu gösteriyordu.",
+          "gorsel": [
+            "File:İstanbul, 1629 (Kitab-ı Bahriye).jpg"
+          ]
+        },
+        {
+          "yazi": "Geri adım",
+          "metin": "Justinianos geri adım attı. Halkın istediği üç adamı görevden aldı. Ama artık mesele vergi değildi. Kalabalık, tahtın kendisini konuşmaya başlamıştı. Çünkü geri adım, korkunun işareti gibi okunmuştu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "parsomen",
+            "yil": "Görevden alındı",
+            "aylar": [
+              "Eudaimon",
+              "Tribonianos",
+              "Yuannis"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "Yetmedi"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Yeni imparator aranıyor",
+      "sahneler": [
+        {
+          "yazi": "Asker çağrısı",
+          "metin": "İmparator sarayına kapandı ve Trakya'dan asker getirtti. Komutan Belisarios sokaklarda kalabalığı dağıtmaya çalıştı, ama yangın ve karmaşa içinde başarılı olamadı. Sokak savaşları günlerce sürdü ve yangınlar yeni mahallelere sıçradı.",
+          "gorsel": [
+            "File:Walls of Constantinople 1.jpg"
+          ]
+        },
+        {
+          "yazi": "18 Ocak",
+          "metin": "18 Ocak Pazar sabahı Justinianos, elinde İncil'le Hipodrom'daki locasına çıktı. Af ilan etti, yemin etti. Kalabalığın bir bölümü onu alkışladı, büyük bölümü ise yuhaladı. Aynı yerde, beş gün önce bağırılan Nika sesi yine yükseldi.",
+          "gorsel": [
+            "File:De grootvizier steekt de Atmeydanı (hippodroom) over, SK-A-1998.jpg"
+          ]
+        },
+        {
+          "yazi": "Hipatios",
+          "metin": "Bu kez kalabalık yeni bir imparator buldu: eski imparator Anastasios'un yeğeni Hipatios. Onu Konstantin Forumu'nda taçlandırdılar ve Hipodrom'daki imparator locasına oturttular. Prokopios'a göre karısı onu kolundan tutup bırakmak istedi, ama kalabalık Hipatios'u sürükleyerek götürdü.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "kaydir",
+            "cizgi": "kalin",
+            "merkez": [
+              28.972,
+              41.012
+            ],
+            "genislik": 0.42,
+            "zoom": 1.12,
+            "odak": [
+              28.975,
+              41.006
+            ],
+            "etiketler": [
+              {
+                "ad": "Konstantin Forumu",
+                "lon": 28.971,
+                "lat": 41.0087,
+                "yan": "sol"
+              },
+              {
+                "ad": "Hipodrom",
+                "lon": 28.975,
+                "lat": 41.006,
+                "yan": "sag",
+                "bas": 0.45
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.971,
+                    41.0087
+                  ],
+                  [
+                    28.973,
+                    41.0075
+                  ],
+                  [
+                    28.975,
+                    41.006
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.6
+              }
+            ],
+            "damga": {
+              "yazi": "İkinci\nimparator",
+              "lon": 28.975,
+              "lat": 41.006,
+              "bas": 0.62,
+              "tip": "muhur",
+              "dx": 460,
+              "dy": -170
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Kaçmak mı, kalmak mı",
+      "sahneler": [
+        {
+          "yazi": "Gemiler hazır",
+          "metin": "Sarayda son toplantı yapılıyordu. Gemiler hazırdı. Kaynaklara göre Justinianos ve yakın adamları, Boğaz'dan kaçmayı ciddi biçimde konuşuyordu. Hazineyi yüklemek için bile hazırlık yapılmıştı. Bir kararla Konstantinopolis bambaşka bir imparatorun şehrine dönüşebilirdi.",
+          "gorsel": [
+            "File:View of constantinople by evening light.jpg"
+          ]
+        },
+        {
+          "yazi": "Mor kefen",
+          "metin": "Tarihçi Prokopios'a göre tam o sırada Theodora söz aldı. Kaçarsan yaşarsın, dedi, ama ben bu sözü kabul etmem: Mor, en güzel kefendir. Tarihçiler bu cümlenin aynen söylenip söylenmediğini hâlâ tartışıyor.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "yaklas",
+            "merkez": [
+              28.977,
+              41.008
+            ],
+            "genislik": 0.42,
+            "zoom": 1.06,
+            "odak": [
+              28.977,
+              41.0015
+            ],
+            "etiketler": [
+              {
+                "ad": "Büyük Saray",
+                "lon": 28.977,
+                "lat": 41.0015,
+                "yan": "sag"
+              }
+            ],
+            "damga": {
+              "yazi": "Mor, en güzel\nkefendir",
+              "lon": 28.977,
+              "lat": 41.0015,
+              "bas": 0.25,
+              "tip": "ferman",
+              "dx": -360,
+              "dy": -170
+            }
+          }
+        },
+        {
+          "yazi": "Karar",
+          "metin": "Toplantının havası değişti. İmparator kalmaya karar verdi. Belisarios ve Mundus adlı iki komutan emir aldı. Plan basitti: kalabalık Hipodrom'da toplanmıştı, kapılar kapatılacaktı. Şimdi yalnızca doğru anı beklemek gerekiyordu.",
+          "gorsel": [
+            "File:Istanbul in the 16th century - right.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Altın keseleri ve kılıçlar",
+      "sahneler": [
+        {
+          "yazi": "Narses",
+          "metin": "Önce saray hadımı Narses devreye girdi. Kaynaklara göre elinde altın keseleriyle Hipodrom'a gitti, Maviler'in önde gelenlerine Hipatios'un Yeşiller'in adamı olduğunu hatırlattı. Birlik çatlamaya başladı. Maviler arasında, neden Yeşiller'in imparatoru için savaşalım sorusu dolaşmaya başladı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Narses",
+                "desen": "bizans"
+              }
+            ],
+            "bant": "Altın",
+            "karsi": {
+              "ad": "Maviler",
+              "desen": "halka"
+            },
+            "arka": {
+              "merkez": [
+                28.97,
+                41.02
+              ],
+              "genislik": 0.9,
+              "tema": "antika"
+            }
+          }
+        },
+        {
+          "yazi": "İki kapı",
+          "metin": "Sonra Belisarios ile Mundus, askerleriyle iki ayrı kapıdan Hipodrom'a girdi. Kalabalık sıkışmıştı, silahlı değildi ve kaçacak yeri yoktu. Yarış pisti bir anda kapana dönüştü. Asker kapıları tutunca kaçış yolları tek tek kapandı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Hipodrom · 18 Ocak 532",
+            "birlikler": [
+              {
+                "xy": [
+                  960,
+                  640
+                ],
+                "wh": [
+                  720,
+                  300
+                ],
+                "taraf": "dusman",
+                "etiket": "Kalabalık",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  120,
+                  640
+                ],
+                "hedef": [
+                  470,
+                  640
+                ],
+                "wh": [
+                  220,
+                  160
+                ],
+                "taraf": "osmanli",
+                "etiket": "Belisarios",
+                "bas": 0.15,
+                "bit": 0.6
+              },
+              {
+                "xy": [
+                  1800,
+                  640
+                ],
+                "hedef": [
+                  1450,
+                  640
+                ],
+                "wh": [
+                  220,
+                  160
+                ],
+                "taraf": "osmanli",
+                "etiket": "Mundus",
+                "bas": 0.25,
+                "bit": 0.7
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  120,
+                  480
+                ],
+                "son_xy": [
+                  520,
+                  480
+                ],
+                "taraf": "osmanli",
+                "bas": 0.15
+              },
+              {
+                "bas_xy": [
+                  1800,
+                  480
+                ],
+                "son_xy": [
+                  1400,
+                  480
+                ],
+                "taraf": "osmanli",
+                "bas": 0.25
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                960,
+                400
+              ],
+              "bas": 0.75
+            }
+          }
+        },
+        {
+          "yazi": "Bilanço",
+          "metin": "Katliam saatlerce sürdü. Prokopios ölü sayısını otuz bin olarak verir, başka kaynaklar daha yüksek rakamlar söyler. Kesin sayıyı bilmiyoruz, ama şehir o gün tarihinin en kanlı günlerinden birini yaşadı. Hipodrom'un kumu o gün yarış değil, ölü taşıdı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "uzaklas",
+            "merkez": [
+              28.975,
+              41.012
+            ],
+            "genislik": 0.45,
+            "zoom": 1.05,
+            "etiketler": [
+              {
+                "ad": "Hipodrom",
+                "lon": 28.975,
+                "lat": 41.006,
+                "yan": "sol"
+              }
+            ],
+            "rozetler": [
+              {
+                "yazi": "≈ 30 bin ölü (Prokopios)",
+                "x": 960,
+                "y": 900,
+                "bas": 0.4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Hipatios'un sonu",
+      "sahneler": [
+        {
+          "yazi": "Ertesi gün",
+          "metin": "Hipatios ve kardeşi Pompeius yakalandı. Hipatios kendisini kalabalığın zorladığını söyledi. Ertesi gün ikisi de idam edildi ve bedenleri denize atıldı. Tahtta geçirdiği süre bir günden azdı.",
+          "gorsel": [
+            "File:Walls of Constantinople 1.jpg"
+          ]
+        },
+        {
+          "yazi": "Hesaplaşma",
+          "metin": "Justinianos, ayaklanmaya karışan senatörleri sürgüne gönderdi, mallarına el koydu. Görevden alınan adamlar kısa süre sonra yeniden iş başına geldi. Yuannis ve Tribonianos eski güçlerine kavuştu. Mallar sonradan bir ölçüde ailelere geri verildi, ama korku yerleşmişti.",
+          "gorsel": [
+            "File:1840 S.D.U.K. Map of Constantinople ( Istanbul, Turkey ) - Geographicus - Istanbul-sduk-1841.jpg"
+          ]
+        },
+        {
+          "yazi": "Yeni düzen",
+          "metin": "Maviler ve Yeşiller uzun süre sessiz kaldı. Justinianos artık Roma'nın tek hâkimiydi, tahtına rakip yoktu. Şimdi önünde yanmış bir şehir ve inşa edilecek büyük bir kilise vardı. Ayaklanmanın ardından başkent bir daha aynı olmayacaktı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Ayaklanmanın sonu",
+            "ogeler": [
+              "Ayaklananlar",
+              "Senatörler",
+              "Hipatios",
+              "Justinianos"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Küllerden doğan Ayasofya",
+      "sahneler": [
+        {
+          "yazi": "23 Şubat 532",
+          "metin": "Yangından sadece bir ay kadar sonra, 23 Şubat 532'de, yeni Ayasofya'nın inşaatı başladı. Justinianos işi mimar Anthemios ve İsidoros'a verdi. Hedef, daha önce görülmemiş bir kubbeydi. İşin başına binlerce işçi getirildi ve inşaat büyük bir hızla ilerledi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gunbatimi",
+            "yil": "532",
+            "aylar": [
+              "Ocak",
+              "Şubat"
+            ],
+            "cevir_bit": 0.5,
+            "rozet": "İnşaat başladı"
+          }
+        },
+        {
+          "yazi": "Beş yıl sonra",
+          "metin": "27 Aralık 537'de kilise açıldı. Rivayete göre Justinianos içeri girince, Süleyman seni geçtim, demişti. Bu söz muhtemelen sonraki yüzyılların hikâyesidir, ama kubbe bugün hâlâ ayakta.",
+          "gorsel": [
+            "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+          ]
+        },
+        {
+          "yazi": "Bir yarışın mirası",
+          "metin": "Bir idam sehpası, iki kopan ip ve bir yarış günü. İstanbul'un simgesi olan bina, binlerce insanın öldüğü bir haftanın üzerine yükseldi. Ayasofya'nın önünden bir dahaki geçişinde bunu hatırla.",
+          "gorsel": [
+            "File:De grootvizier steekt de Atmeydanı (hippodroom) over, SK-A-1998.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Justinianos'u tahtta tutan şey Theodora'nın cesareti miydi, yoksa kapıların kapatılması mı? Yorumlarda yaz.",
+  "etiketler": [
+    "nika isyanı",
+    "justinianos",
+    "theodora",
+    "bizans tarihi",
+    "ayasofya",
+    "hipodrom",
+    "belisarios",
+    "konstantinopolis",
+    "bizans sarayı"
+  ]
+}

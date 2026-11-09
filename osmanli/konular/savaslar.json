@@ -4830,5 +4830,367 @@
     ],
     "stil": "animasyon",
     "oto_animasyon": true
+  },
+  {
+    "id": "cezayir-1541",
+    "tur": "bilinen",
+    "baslik": [
+      "Şarlken'in Cezayir Hezimeti ⚔️",
+      "Cezayir 1541: Fırtına Donanmayı Yuttu ⚔️",
+      "Bir Fırtına Tarihi Değiştirdi ⚔️"
+    ],
+    "kapak": "BİR GECEDE",
+    "kanca": "1541'de Şarlken Cezayir'e dev bir donanmayla geldi. Sence bir fırtına bir imparatoru durdurabilir mi?",
+    "kanca_gorsel": [
+      "File:Beleg van Algiers 1541.png"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Ekim 1541",
+        "metin": "Ekim 1541'de Şarlken büyük bir donanmayla Cezayir'e çıktı. Yanında Meksika'yı fetheden Cortes bile vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "parsomen",
+          "kamera": "yaklas",
+          "cizgi": "akan",
+          "merkez": [
+            5,
+            38.4
+          ],
+          "genislik": 14,
+          "zoom": 1.05,
+          "odak": [
+            3.06,
+            36.75
+          ],
+          "baslik": {
+            "ust": "1541",
+            "alt": "Cezayir"
+          },
+          "etiketler": [
+            {
+              "ad": "Cezayir",
+              "lon": 3.06,
+              "lat": 36.75,
+              "yan": "sag",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  9.5,
+                  41
+                ],
+                [
+                  6,
+                  39.5
+                ],
+                [
+                  3.4,
+                  37.1
+                ]
+              ],
+              "taraf": "dusman",
+              "gemi": 3,
+              "bas": 0.08,
+              "bit": 0.7
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Hasan Ağa",
+        "metin": "Şehri Hayreddin Paşa'nın vekili Hasan Ağa savunuyordu. Askerleri sayıca çok azdı.",
+        "gorsel": [
+          "File:Beleg van Algiers 1541.png"
+        ]
+      },
+      {
+        "yazi": "Fırtına",
+        "metin": "Çıkarmadan hemen sonra fırtına koptu. Gemilerin birçoğu battı, erzak ve barut denize gitti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "Ekim 1541",
+          "aylar": [
+            "Fırtına"
+          ],
+          "cevir_bit": 0.25,
+          "rozet": "Gemiler battı"
+        }
+      },
+      {
+        "yazi": "Geri çekilme",
+        "metin": "Şarlken kalan askerlerini gemilere bindirdi ve Cezayir'den sonuç alamadan döndü. Akdeniz'de Osmanlı'nın gücü arttı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "uzaklas",
+          "merkez": [
+            4,
+            37.8
+          ],
+          "genislik": 12,
+          "zoom": 1.05,
+          "etiketler": [
+            {
+              "ad": "Cezayir",
+              "lon": 3.06,
+              "lat": 36.75,
+              "yan": "sag"
+            }
+          ],
+          "damga": {
+            "yazi": "Geri döndü",
+            "lon": 3.06,
+            "lat": 36.75,
+            "bas": 0.35,
+            "tip": "muhur"
+          }
+        }
+      }
+    ],
+    "soru": "Sence bu sonuç şans mıydı, savunma mı?",
+    "etiketler": [
+      "cezayir 1541",
+      "şarlken",
+      "hasan ağa",
+      "osmanlı denizciliği"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "malazgirt-1071",
+    "tur": "bilinen",
+    "baslik": [
+      "Malazgirt 1071: Esir Alınan İmparator ⚔️",
+      "Alparslan ve Romen Diyojen ⚔️",
+      "Anadolu'nun Kapısını Açan Savaş ⚔️"
+    ],
+    "kapak": "BİR GÜNDE BİTTİ",
+    "kanca": "26 Ağustos 1071'de bir Selçuklu sultanı Bizans imparatorunu savaş alanında esir aldı. Sence sultan ona ne yaptı?",
+    "kanca_gorsel": [
+      "File:Walls of Constantinople 1.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Yürüyüş",
+        "metin": "Romen Diyojen büyük bir orduyla doğuya yürüdü. Sultan Alparslan onu Malazgirt'te karşıladı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "cizgi": "kalin",
+          "merkez": [
+            36,
+            40
+          ],
+          "genislik": 24,
+          "zoom": 1.05,
+          "baslik": {
+            "ust": "1071",
+            "alt": "Malazgirt"
+          },
+          "etiketler": [
+            {
+              "ad": "Konstantinopolis",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sag"
+            },
+            {
+              "ad": "Malazgirt",
+              "lon": 42.53,
+              "lat": 39.14,
+              "yan": "sol",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  35,
+                  40
+                ],
+                [
+                  42.4,
+                  39.2
+                ]
+              ],
+              "taraf": "dusman",
+              "ikon": "ordu",
+              "bas": 0.08,
+              "bit": 0.7,
+              "boy": 70
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Sahte kaçış",
+        "metin": "Türk süvarileri geri çekilir gibi yaptı. Bizans ordusu onları kovalarken düzeni bozuldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Malazgirt · 26 Ağustos 1071",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                1150
+              ],
+              "hedef": [
+                540,
+                1050
+              ],
+              "wh": [
+                520,
+                150
+              ],
+              "taraf": "dusman",
+              "etiket": "Bizans",
+              "etiket_ust": false,
+              "bas": 0.1,
+              "bit": 0.5
+            },
+            {
+              "xy": [
+                250,
+                720
+              ],
+              "hedef": [
+                150,
+                860
+              ],
+              "wh": [
+                200,
+                120
+              ],
+              "taraf": "osmanli",
+              "etiket": "Süvari",
+              "bas": 0.1,
+              "bit": 0.5
+            },
+            {
+              "xy": [
+                830,
+                720
+              ],
+              "hedef": [
+                930,
+                860
+              ],
+              "wh": [
+                200,
+                120
+              ],
+              "taraf": "osmanli",
+              "etiket": "Süvari",
+              "bas": 0.15,
+              "bit": 0.55
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                150,
+                720
+              ],
+              "son_xy": [
+                220,
+                960
+              ],
+              "taraf": "osmanli",
+              "bas": 0.55
+            },
+            {
+              "bas_xy": [
+                930,
+                720
+              ],
+              "son_xy": [
+                860,
+                960
+              ],
+              "taraf": "osmanli",
+              "bas": 0.6
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              720
+            ],
+            "bas": 0.75
+          }
+        }
+      },
+      {
+        "yazi": "Esir imparator",
+        "metin": "Romen Diyojen esir düştü. Kaynaklara göre Alparslan ona iyi davrandı ve fidyeyle serbest bıraktı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Alparslan",
+              "desen": "selcuklu"
+            }
+          ],
+          "bant": "Esaret",
+          "karsi": {
+            "ad": "Romen Diyojen",
+            "desen": "bizans"
+          },
+          "arka": {
+            "merkez": [
+              40,
+              40
+            ],
+            "genislik": 12,
+            "tema": "kizil"
+          }
+        }
+      },
+      {
+        "yazi": "Dönüş",
+        "metin": "Dönen Romen tahtını kaybetti ve gözlerine mil çekildi. Anadolu'nun kapısı artık Türklere açıktı.",
+        "gorsel": [
+          "File:Walls of Constantinople 1.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence bu savaşın en önemli sonucu neydi?",
+    "etiketler": [
+      "malazgirt 1071",
+      "alparslan",
+      "romen diyojen",
+      "selçuklu tarihi"
+    ],
+    "stil": "animasyon"
   }
 ]
