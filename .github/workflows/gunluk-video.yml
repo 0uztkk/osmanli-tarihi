@@ -99,10 +99,10 @@ jobs:
           fi
 
       - name: Araçları kur
+        timeout-minutes: 15
         if: steps.plan.outputs.atla != '1'
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          bash .github/scripts/araclari_kur.sh
 
       - uses: actions/setup-python@v5
         if: steps.plan.outputs.atla != '1'
