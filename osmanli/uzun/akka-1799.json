@@ -1,0 +1,785 @@
+{
+  "id": "akka-1799",
+  "stil": "animasyon",
+  "baslik": [
+    "Akka Kuşatması 1799: Napolyon'u Durduran Osmanlı Kalesi",
+    "Napolyon Akka'da Neden Yenildi? Cezzar Ahmed Paşa",
+    "Cezzar Ahmed Paşa ve Napolyon: Akka Surlarında İki Ay"
+  ],
+  "kapak": "GERİ DÖNDÜ",
+  "kanca": "Hayal et: 1799'da Napolyon, bir Osmanlı kalesinin önünde iki ay kuşatma yaptı ve binlerce asker kaybetti. Sonra geri döndü, ama neden? Karşısında kasap lakaplı bir paşa, bir İngiliz denizci ve eski bir sınıf arkadaşı vardı. Bu videoda Akka kuşatmasını anlatıyoruz, sonunda Napolyon'un bu kale için söylediği anlatılan sözü göreceksin.",
+  "kanca_gorsel": [
+    "File:Ottoman shore cannon in Jaffa.JPG"
+  ],
+  "bolumler": [
+    {
+      "ad": "Mısır'a çıkan general",
+      "sahneler": [
+        {
+          "yazi": "1798",
+          "metin": "Temmuz 1798'de genç general Napolyon Bonapart, Fransız ordusuyla İskenderiye'ye çıktı. Mısır kâğıt üstünde Osmanlı'ya bağlıydı, ama ülkeyi Memlük beyleri yönetiyordu. Napolyon Memlükleri Piramitler önünde yendi ve Kahire'ye girdi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "uzaklas",
+            "cizgi": "kesikli",
+            "merkez": [
+              18.5,
+              37.0
+            ],
+            "genislik": 32,
+            "zoom": 1.05,
+            "baslik": {
+              "ust": "1798",
+              "alt": "Mısır seferi",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Tulon",
+                "lon": 5.93,
+                "lat": 43.12,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Malta",
+                "lon": 14.5,
+                "lat": 35.9,
+                "yan": "sag",
+                "bas": 0.3
+              },
+              {
+                "ad": "İskenderiye",
+                "lon": 29.92,
+                "lat": 31.2,
+                "yan": "sol",
+                "bas": 0.6
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    5.93,
+                    43.12
+                  ],
+                  [
+                    8.5,
+                    40.0
+                  ],
+                  [
+                    14.5,
+                    35.9
+                  ],
+                  [
+                    20.0,
+                    33.5
+                  ],
+                  [
+                    26.0,
+                    32.0
+                  ],
+                  [
+                    29.92,
+                    31.2
+                  ]
+                ],
+                "taraf": "dusman",
+                "gemi": 3,
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Nil'de kaybedilen filo",
+          "metin": "Ama bir ay sonra her şey değişti. Ağustos 1798'de İngiliz amiral Nelson, Ebukır koyunda demirli Fransız donanmasını büyük ölçüde yok etti. Napolyon artık Mısır'da mahsur kalmıştı. Fransa'ya dönmenin kolay bir yolu yoktu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "İstanbul'un cevabı",
+          "metin": "İstanbul'da Üçüncü Selim tahttaydı. Osmanlı, Eylül 1798'de Fransa'ya savaş ilan etti. Yüzyıllardır düşman olduğu Rusya ile ve İngiltere ile aynı safa geçti. Mısır'ı geri almak için Suriye'de ve Rodos'ta kuvvet toplanmaya başladı.",
+          "gorsel": [
+            "File:Sultan lll. Selim.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Kasap lakaplı paşa",
+      "sahneler": [
+        {
+          "yazi": "Cezzar Ahmed",
+          "metin": "Suriye kıyısında güçlü bir adam vardı: Cezzar Ahmed Paşa. Bosna'da doğmuş, gençliğinde Mısır'da Memlük beylerinin hizmetinde yükselmişti. Cezzar, kasap demekti. Lakabın nereden geldiği farklı anlatılır, ama sert cezalarıyla tanındığı kesindir.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Cezzar'ın yükselişi",
+            "ogeler": [
+              "Bosna",
+              "Mısır'da Memlük hizmeti",
+              "Sayda valisi",
+              "Akka'nın efendisi"
+            ]
+          }
+        },
+        {
+          "yazi": "Akka",
+          "metin": "Cezzar, Sayda valisiydi ama merkezini Akka'ya taşımıştı. Bu eski liman şehri bir zamanlar Haçlıların son kalelerinden biriydi. Paşa yıllar içinde surları onardı, şehre cami, han ve hamam yaptırdı. Akka onun küçük başkentiydi. İstanbul'dan uzakta, kendi askerleri ve kendi kurallarıyla yaşayan bir paşaydı. Ama Fransızlara karşı padişahın safındaydı.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Napolyon'un planı",
+          "metin": "Napolyon, Osmanlı ordusunun Suriye'den gelmesini beklemek istemedi. Önce kendisi Suriye'ye yürüyecekti. Ona göre Akka düşerse kıyı boyunca bütün yol açılırdı. Yüzyıllar önce Haçlıların çarpıştığı topraklar, yeniden bir savaş alanı olacaktı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Çölde yürüyen ordu",
+      "sahneler": [
+        {
+          "yazi": "Şubat 1799",
+          "metin": "Şubat 1799'da yaklaşık on üç bin Fransız askeri Sina Çölü'ne girdi. El-Ariş kalesi teslim oldu, Gazze direnmeden kapılarını açtı. Ordu kıyı boyunca kuzeye ilerliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "kaydir",
+            "cizgi": "akan",
+            "merkez": [
+              33.2,
+              31.5
+            ],
+            "genislik": 9.5,
+            "zoom": 1.12,
+            "etiketler": [
+              {
+                "ad": "Kahire",
+                "lon": 31.24,
+                "lat": 30.04,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "El-Ariş",
+                "lon": 33.8,
+                "lat": 31.13,
+                "yan": "sag",
+                "bas": 0.3
+              },
+              {
+                "ad": "Yafa",
+                "lon": 34.75,
+                "lat": 32.05,
+                "yan": "sol",
+                "bas": 0.5
+              },
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92,
+                "yan": "sag",
+                "bas": 0.62
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    31.24,
+                    30.04
+                  ],
+                  [
+                    32.3,
+                    30.8
+                  ],
+                  [
+                    33.8,
+                    31.13
+                  ],
+                  [
+                    34.47,
+                    31.5
+                  ],
+                  [
+                    34.75,
+                    32.05
+                  ],
+                  [
+                    34.9,
+                    32.5
+                  ],
+                  [
+                    35.07,
+                    32.92
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.65
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Yafa",
+          "metin": "Mart başında Fransızlar Yafa'yı kuşattı. Surlarda gedik açıldı ve şehir alındı. Ardından askerler şehri günlerce yağmaladı. Yafa'nın düşüşü, kıyıdaki diğer şehirleri korkutmak için de kullanıldı.",
+          "gorsel": [
+            "File:Ottoman shore cannon in Jaffa.JPG"
+          ]
+        },
+        {
+          "yazi": "Yafa esirleri",
+          "metin": "Yafa'da teslim olan binlerce asker esir alındı. Napolyon, onları besleyecek erzakı ve koruyacak askeri olmadığını söyledi. Kararı ağırdı: Esirlerin büyük bölümü kıyıda öldürüldü. Kaynaklar sayı konusunda anlaşamaz. Kısa süre sonra Fransız ordusunda veba görülmeye başladı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gunbatimi",
+            "yil": "Mart 1799",
+            "aylar": [
+              "Yafa düştü",
+              "Esirler",
+              "Veba"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "Ağır bedel"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Denizden gelen sürpriz",
+      "sahneler": [
+        {
+          "yazi": "Akka'nın müttefikleri",
+          "metin": "Akka'da Cezzar yalnız değildi. İngiliz komodor Sidney Smith gemileriyle kıyıdaydı. Yanında Phélippeaux adında kraliyetçi bir Fransız subayı vardı. Phélippeaux, Paris'teki askerî okulda Napolyon'un sınıf arkadaşıydı. Şimdi surları onun karşısında güçlendiriyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Cezzar",
+                "desen": "hilal"
+              },
+              {
+                "ad": "Sidney Smith",
+                "desen": "carpi"
+              }
+            ],
+            "bant": "Akka savunması",
+            "karsi": {
+              "ad": "Napolyon",
+              "desen": "kartal"
+            },
+            "arka": {
+              "merkez": [
+                35.0,
+                32.9
+              ],
+              "genislik": 3,
+              "tema": "parsomen"
+            }
+          }
+        },
+        {
+          "yazi": "Kayıp toplar",
+          "metin": "Napolyon ağır kuşatma toplarını, yükü ağır olduğu için gemilerle gönderiyordu. Sidney Smith bu gemileri Karmel Burnu açıklarında yakaladı. Toplar Akka surlarına çıkarıldı ve namluları Fransızlara çevrildi. Napolyon, kuşatmaya en önemli silahlarını kaybederek başladı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "yaklas",
+            "cizgi": "kesikli",
+            "merkez": [
+              34.95,
+              32.85
+            ],
+            "genislik": 1.1,
+            "zoom": 1.08,
+            "odak": [
+              34.96,
+              32.83
+            ],
+            "etiketler": [
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Karmel Burnu",
+                "lon": 34.96,
+                "lat": 32.83,
+                "yan": "sol",
+                "bas": 0.4
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    34.62,
+                    32.45
+                  ],
+                  [
+                    34.75,
+                    32.65
+                  ],
+                  [
+                    34.88,
+                    32.82
+                  ]
+                ],
+                "taraf": "dusman",
+                "gemi": 2,
+                "boy": 55,
+                "bas": 0.05,
+                "bit": 0.45
+              }
+            ],
+            "damga": {
+              "yazi": "Ele geçti",
+              "lon": 34.88,
+              "lat": 32.82,
+              "bas": 0.55,
+              "tip": "murekkep",
+              "dx": -330,
+              "dy": 160
+            }
+          }
+        },
+        {
+          "yazi": "Mart 1799",
+          "metin": "Mart ortasında Fransız ordusu Akka önüne ulaştı ve şehri karadan çevirdi. Deniz tarafı ise İngiliz gemilerinin elindeydi. Napolyon'un elinde yalnızca hafif sahra topları kalmıştı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Surların önünde iki ay",
+      "sahneler": [
+        {
+          "yazi": "Kuşatma",
+          "metin": "Fransızlar surların doğusunda siperler kazdı ve bir köşe kulesine yüklendi. Hafif toplarla gedik açmak uzun sürüyordu. Her gedik açıldığında savunmacılar onu gece boyunca yeniden kapatıyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Akka · Mart–Mayıs 1799",
+            "birlikler": [
+              {
+                "xy": [
+                  520,
+                  600
+                ],
+                "wh": [
+                  520,
+                  420
+                ],
+                "taraf": "osmanli",
+                "etiket": "Akka surları",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  1600,
+                  600
+                ],
+                "hedef": [
+                  1050,
+                  600
+                ],
+                "wh": [
+                  260,
+                  300
+                ],
+                "taraf": "dusman",
+                "etiket": "Fransızlar",
+                "bas": 0.15,
+                "bit": 0.65
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  1600,
+                  900
+                ],
+                "son_xy": [
+                  1000,
+                  900
+                ],
+                "taraf": "dusman",
+                "bas": 0.3
+              }
+            ],
+            "toplar": [
+              {
+                "xy": [
+                  760,
+                  470
+                ],
+                "bas": 0.4
+              },
+              {
+                "xy": [
+                  760,
+                  730
+                ],
+                "bas": 0.5
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                810,
+                600
+              ],
+              "bas": 0.72
+            }
+          }
+        },
+        {
+          "yazi": "Lağımlar",
+          "metin": "Fransızlar surların altına lağımlar kazdı. Savunmacılar da karşı lağımlarla onları bulmaya çalıştı. Toprağın altında bile savaş sürüyordu. Hücumlar birbirini izledi, ama surlar ayakta kaldı. Deniz tarafından İngiliz gemilerinin topları da siperlere ateş açıyor, Fransızların işini daha da zorlaştırıyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Phélippeaux",
+          "metin": "Kuşatmanın ortasında Phélippeaux öldü. Kaynaklar ölümünü veba ya da güneş çarpmasıyla açıklar. Eski sınıf arkadaşının geri çekilişini göremedi, ama kurduğu savunma hatları yerinde duruyordu.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Tabor Dağı'nda savaş",
+      "sahneler": [
+        {
+          "yazi": "16 Nisan 1799",
+          "metin": "Bu sırada Şam'dan gelen kalabalık bir Osmanlı yardım ordusu, Fransızların arkasına yöneldi. 16 Nisan'da General Kléber'in birlikleri Tabor Dağı yakınında sıkıştı. Napolyon kuşatmadan ayırdığı askerlerle yetişti ve yardım ordusunu dağıttı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "uzaklas",
+            "cizgi": "kalin",
+            "bulut": true,
+            "merkez": [
+              35.25,
+              32.8
+            ],
+            "genislik": 1.4,
+            "zoom": 1.06,
+            "baslik": {
+              "ust": "Tabor",
+              "alt": "16 Nisan 1799",
+              "yer": "sol"
+            },
+            "etiketler": [
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Tabor Dağı",
+                "lon": 35.39,
+                "lat": 32.69,
+                "yan": "sag",
+                "bas": 0.3,
+                "dy": 80
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    35.07,
+                    32.92
+                  ],
+                  [
+                    35.2,
+                    32.82
+                  ],
+                  [
+                    35.39,
+                    32.69
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.5
+              }
+            ],
+            "carpisma": {
+              "lon": 35.39,
+              "lat": 32.69,
+              "bas": 0.6
+            }
+          }
+        },
+        {
+          "yazi": "Zafer ama",
+          "metin": "Napolyon açık arazide yine kazanmıştı. Ama Akka hâlâ ayaktaydı ve asıl hedef oydu. Kazandığı her meydan savaşı, onu kaleye bir adım bile yaklaştırmıyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Veba",
+          "metin": "Ordunun içinde ise başka bir düşman büyüyordu: veba. Hastanelere taşınan askerlerin sayısı her gün artıyordu. Sıcak, susuzluk ve hastalık, kuşatmayı Fransızlar için de bir kapana çeviriyordu.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Rodos'tan gelen gemiler",
+      "sahneler": [
+        {
+          "yazi": "Mayıs 1799",
+          "metin": "Mayıs başında ufukta yelkenler göründü. Rodos'tan yola çıkan Osmanlı takviyeleri denizden geliyordu. Napolyon, bu askerler karaya çıkmadan şehri almak için son bir büyük hücum emretti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "kaydir",
+            "cizgi": "akan",
+            "merkez": [
+              32.0,
+              34.4
+            ],
+            "genislik": 12,
+            "zoom": 1.12,
+            "etiketler": [
+              {
+                "ad": "Rodos",
+                "lon": 28.22,
+                "lat": 36.43,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92,
+                "yan": "sag",
+                "bas": 0.6
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.22,
+                    36.43
+                  ],
+                  [
+                    30.0,
+                    35.4
+                  ],
+                  [
+                    32.4,
+                    34.4
+                  ],
+                  [
+                    34.4,
+                    33.3
+                  ],
+                  [
+                    34.95,
+                    32.95
+                  ]
+                ],
+                "taraf": "osmanli",
+                "gemi": 4,
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "İç hat",
+          "metin": "Fransızlar gedikten içeri girmeyi başardı. Ama Cezzar ve müttefikleri surların arkasına ikinci bir savunma hattı kurmuştu. İçeri girenler bu hatta sıkıştı ve geri püskürtüldü. Akka'nın kapısı yine açılmadı.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Son hücum",
+          "metin": "Mayıs'ın ilk yarısında hücumlar birbirini izledi. Her biri ağır kayıpla bitti. Sonunda Napolyon gerçeği kabul etti. 20 Mayıs'ta kuşatmanın kaldırılmasına karar verildi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "parsomen",
+            "yil": "1799",
+            "aylar": [
+              "7 Mayıs",
+              "10 Mayıs",
+              "20 Mayıs"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "Kuşatma bitti"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Geri dönen ordu",
+      "sahneler": [
+        {
+          "yazi": "Çekiliş",
+          "metin": "20 Mayıs gecesi Fransız ordusu sessizce çekilmeye başladı. Taşıyamadıkları ağır yük geride bırakıldı. Dönüş yolunda veba hastalarının durumu bugün hâlâ tartışılan iddialara konu oldu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Kahire",
+          "metin": "Haziran'da Kahire'ye dönen Napolyon, seferi bir zafer gibi anlattı. Ama ordu ağır kayıp vermiş, Suriye'de hiçbir şehir elde tutulamamıştı. Akka, onun ilk büyük başarısızlıklarından biri olarak tarihe geçti.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Gizli dönüş",
+          "metin": "Ağustos 1799'da Napolyon ordusunu Kléber'e bıraktı ve birkaç gemiyle gizlice Fransa'ya döndü. Üç ay sonra bir darbeyle iktidarı ele geçirdi. Akka'da durdurulan general, Avrupa'nın en güçlü adamı olma yolundaydı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Napolyon'un yolu",
+            "ogeler": [
+              "Mısır · 1798",
+              "Akka · 1799",
+              "Fransa'ya dönüş",
+              "Birinci Konsül · 1799",
+              "İmparator · 1804"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Ya Akka düşseydi",
+      "sahneler": [
+        {
+          "yazi": "O söz",
+          "metin": "Napolyon yıllar sonra Akka'dan söz ederken, o kale düşseydi Doğu'yu bambaşka bir yola sokacağını anlattı. Bu söz farklı biçimlerde aktarılır ve sürgün yıllarının anlatımlarından gelir. Yani bir hatıra, belki de biraz pişmanlık.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "yaklas",
+            "merkez": [
+              35.0,
+              32.7
+            ],
+            "genislik": 3.2,
+            "zoom": 1.08,
+            "odak": [
+              35.07,
+              32.92
+            ],
+            "etiketler": [
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92,
+                "yan": "sag",
+                "bas": 0.05
+              }
+            ],
+            "vurgu": {
+              "lon": 35.07,
+              "lat": 32.92,
+              "bas": 0.2
+            },
+            "damga": {
+              "yazi": "Akka düşseydi...",
+              "lon": 35.07,
+              "lat": 32.92,
+              "bas": 0.5,
+              "tip": "ferman",
+              "dx": 380,
+              "dy": 120
+            }
+          }
+        },
+        {
+          "yazi": "Cezzar'ın sonu",
+          "metin": "Cezzar Ahmed Paşa, Napolyon'u durduran adam olarak anıldı. Akka'da yaşamaya devam etti ve 1804'te orada öldü. Yaptırdığı cami bugün hâlâ şehrin ortasında duruyor. Napolyon'u geri çeviren surların büyük bölümü de bugün hâlâ ayakta.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Küçük kale",
+          "metin": "Koca bir ordu, deniz kıyısındaki küçük bir şehrin önünde iki ay kaldı. Bir paşanın inadı, bir İngiliz denizci ve eski bir sınıf arkadaşı, Napolyon'un Doğu hayalini Akka surlarının önünde bitirdi.",
+          "gorsel": [
+            "File:Ottoman soldiers.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Akka'yı kurtaran şey Cezzar'ın inadı mıydı, yoksa denizden gelen yardım mı? Yorumlarda yaz.",
+  "etiketler": [
+    "akka kuşatması",
+    "napolyon",
+    "cezzar ahmed paşa",
+    "osmanlı tarihi",
+    "üçüncü selim",
+    "sidney smith",
+    "mısır seferi",
+    "1799",
+    "yafa"
+  ]
+}

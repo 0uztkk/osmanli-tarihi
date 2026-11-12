@@ -3956,5 +3956,318 @@
       "kayseri 1237"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "candarli-halil",
+    "tur": "bilinen",
+    "baslik": [
+      "Çandarlı Halil Paşa: İdam Edilen İlk Sadrazam 👑",
+      "Fatih Çandarlı Halil'i Neden İdam Ettirdi? 👑",
+      "İstanbul'un Fethine Karşı Çıkan Vezir 👑"
+    ],
+    "kapak": "FETİHTEN SONRA",
+    "kanca": "1453'te İstanbul fethedildi ve birkaç gün sonra devletin en güçlü veziri tutuklandı. Sence Fatih neden onu affetmedi?",
+    "kanca_gorsel": [
+      "File:Bellini, Gentile - Portrait of Mehmed II - National Gallery, London.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Vezir ailesi",
+        "metin": "Çandarlılar, Osmanlı'nın ilk büyük vezir ailesiydi. Halil Paşa, İkinci Murad'ın en güvendiği adamıydı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Çandarlı ailesi",
+          "ogeler": [
+            "Kara Halil Hayreddin",
+            "Ali Paşa",
+            "İbrahim Paşa",
+            "Halil Paşa"
+          ]
+        }
+      },
+      {
+        "yazi": "Eski kırgınlık",
+        "metin": "1446'da genç Mehmed'in tahttan indirilmesinde onun parmağı olduğu düşünülür. Mehmed bunu unutmadı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Mehmed",
+              "desen": "hilal"
+            }
+          ],
+          "bant": "Eski hesap",
+          "karsi": {
+            "ad": "Çandarlı Halil",
+            "desen": "anahtar"
+          },
+          "arka": {
+            "merkez": [
+              27.5,
+              41.2
+            ],
+            "genislik": 4,
+            "tema": "kizil"
+          }
+        }
+      },
+      {
+        "yazi": "Kuşatmaya karşı",
+        "metin": "Kuşatma sırasında barış yapılmasını savundu. Düşmanları onun Bizans'tan hediye aldığını söyledi, ama bu hiç kanıtlanmadı.",
+        "gorsel": [
+          "File:Siege of Constantinople BnF MS Fr 9087.jpg"
+        ]
+      },
+      {
+        "yazi": "Edirne",
+        "metin": "Fetihten sonra tutuklanıp Edirne'ye götürüldü ve birkaç hafta sonra idam edildi. Osmanlı'da idam edilen ilk veziriazam olarak anılır.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "uzaklas",
+          "cizgi": "kesikli",
+          "merkez": [
+            27.8,
+            41.4
+          ],
+          "genislik": 4,
+          "zoom": 1.08,
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "yan": "sol",
+              "bas": 0.45
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  28.0,
+                  41.3
+                ],
+                [
+                  26.56,
+                  41.68
+                ]
+              ],
+              "taraf": "dusman",
+              "ikon": "yok",
+              "bas": 0.1,
+              "bit": 0.5
+            }
+          ],
+          "damga": {
+            "yazi": "1453",
+            "lon": 26.56,
+            "lat": 41.68,
+            "bas": 0.55,
+            "tip": "muhur",
+            "dx": 120,
+            "dy": -300
+          }
+        }
+      }
+    ],
+    "soru": "Sence Çandarlı Halil bir hain miydi, yoksa sadece temkinli bir devlet adamı mı?",
+    "etiketler": [
+      "çandarlı halil paşa",
+      "fatih sultan mehmed",
+      "istanbulun fethi",
+      "sadrazam"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kuyucu-murad",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kuyucu Murad Paşa ve Celali İsyanları 👑",
+      "Kuyucu Lakaplı Sadrazam: Murad Paşa 👑",
+      "Celalileri Bastıran Yaşlı Vezir 👑"
+    ],
+    "kapak": "SEKSEN YAŞINDA",
+    "kanca": "Hayal et: Seksen yaşını geçmiş bir vezir, Anadolu'yu yakıp yıkan isyancıların üzerine yürüyor. Ona neden Kuyucu dendi?",
+    "kanca_gorsel": [
+      "File:Portrait of Sultan Ahmed I.png"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Celaliler",
+        "metin": "1600'lerin başında Anadolu'da Celali denen isyancılar köyleri yağmalıyordu. Halk köylerini bırakıp kaçıyordu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "yaklas",
+          "bulut": true,
+          "merkez": [
+            34.5,
+            38.6
+          ],
+          "genislik": 12,
+          "zoom": 1.08,
+          "baslik": {
+            "ust": "Celali",
+            "alt": "Anadolu yanıyor"
+          },
+          "etiketler": [
+            {
+              "ad": "Ankara",
+              "lon": 32.85,
+              "lat": 39.93,
+              "yan": "sag",
+              "bas": 0.2
+            },
+            {
+              "ad": "Halep",
+              "lon": 37.16,
+              "lat": 36.2,
+              "yan": "sag",
+              "bas": 0.4
+            }
+          ],
+          "vurgu": {
+            "lon": 34.5,
+            "lat": 38.8,
+            "bas": 0.3,
+            "renk": [
+              255,
+              140,
+              60
+            ]
+          }
+        }
+      },
+      {
+        "yazi": "1606",
+        "metin": "Kasım 1606'da Avusturya ile barış yapıldı. Birkaç hafta sonra Birinci Ahmed, seksenini geçmiş Murad Paşa'yı veziriazam yaptı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "1606",
+          "aylar": [
+            "Kasım",
+            "Aralık"
+          ],
+          "cevir_bit": 0.5,
+          "rozet": "Veziriazam"
+        }
+      },
+      {
+        "yazi": "Oruç Ovası",
+        "metin": "1607'de Halep'te kendi başına buyruk davranan Canbuladoğlu Ali Paşa'yı yendi. Ardından diğer Celali liderlerinin üzerine yürüdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Oruç Ovası · 1607",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                1300
+              ],
+              "hedef": [
+                540,
+                1010
+              ],
+              "wh": [
+                380,
+                170
+              ],
+              "taraf": "osmanli",
+              "etiket": "Murad Paşa",
+              "etiket_ust": false,
+              "bas": 0.15,
+              "bit": 0.6
+            },
+            {
+              "xy": [
+                540,
+                640
+              ],
+              "hedef": [
+                540,
+                820
+              ],
+              "wh": [
+                340,
+                160
+              ],
+              "taraf": "dusman",
+              "etiket": "Canbuladoğlu",
+              "bas": 0.15,
+              "bit": 0.6
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                200,
+                1250
+              ],
+              "son_xy": [
+                300,
+                900
+              ],
+              "taraf": "osmanli",
+              "bas": 0.35
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              915
+            ],
+            "bas": 0.7
+          }
+        }
+      },
+      {
+        "yazi": "Kuyular",
+        "metin": "Lakabının, öldürülen isyancıları kuyulara doldurmasından geldiği anlatılır. 1611'de Diyarbakır'da, sefer yolunda öldü.",
+        "gorsel": [
+          "File:Portrait of Sultan Ahmed I.png"
+        ]
+      }
+    ],
+    "soru": "Sence Murad Paşa Anadolu'ya düzen mi getirdi, yoksa korku mu?",
+    "etiketler": [
+      "kuyucu murad paşa",
+      "celali isyanları",
+      "birinci ahmed",
+      "sadrazam"
+    ],
+    "stil": "animasyon"
   }
 ]

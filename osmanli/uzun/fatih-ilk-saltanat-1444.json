@@ -1,0 +1,762 @@
+{
+  "id": "fatih-ilk-saltanat-1444",
+  "stil": "animasyon",
+  "baslik": [
+    "Fatih'in İlk Saltanatı: Tahttan İndirilen Çocuk Sultan",
+    "Fatih Neden Tahttan İndirildi? 1444-1446 Krizi",
+    "II. Murad ve Oğlu Mehmed: Bir Tahtta İki Padişah"
+  ],
+  "kapak": "GERİ ÇAĞRILAN BABA",
+  "kanca": "Hayal et: İstanbul'u fetheden Fatih, on iki yaşında tahta çıktı ama iki yıl sonra tahttan indirildi. Onu indiren kimdi? Sarayın çağrısıyla geri dönen kendi babası. Arada bir haçlı ordusu, bir kralın ölümü ve bir yeniçeri isyanı var. Bu videoda Fatih'in az bilinen ilk saltanatını anlatıyoruz, sonunda bu yılların ona neler öğrettiğini göreceksin.",
+  "kanca_gorsel": [
+    "File:Enthronement of Mehmed II Fatih in 1444. Miniature, 1616, Ottoman (Musée Jacquemart-André, Ms 13141).jpg"
+  ],
+  "bolumler": [
+    {
+      "ad": "Tahta en uzak şehzade",
+      "sahneler": [
+        {
+          "yazi": "Üç şehzade",
+          "metin": "Mehmed 1432'de Edirne'de doğdu. İkinci Murad'ın üçüncü oğluydu, yani tahta en uzak şehzadeydi. Ama ağabeyi Ahmed 1437'de, Alaeddin Ali de 1443'te genç yaşta öldü. Bazı kaynaklar Alaeddin'in Amasya'da boğdurulduğunu yazar. On bir yaşındaki Mehmed artık tek varisti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Tahtın varisleri",
+            "ogeler": [
+              "Ahmed · öldü 1437",
+              "Alaeddin Ali · öldü 1443",
+              "Mehmed"
+            ]
+          }
+        },
+        {
+          "yazi": "Manisa",
+          "metin": "Babası onu Manisa'ya sancakbeyi olarak gönderdi ve başına sert hocalar verdi. Anlatılana göre Molla Gürani, padişahın izniyle derse elinde sopayla girdi. Şımarık şehzade, o günden sonra kitaplarına daha ciddi oturdu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "yaklas",
+            "cizgi": "akan",
+            "merkez": [
+              27.2,
+              40.15
+            ],
+            "genislik": 10,
+            "zoom": 1.08,
+            "odak": [
+              27.43,
+              38.61
+            ],
+            "baslik": {
+              "ust": "Manisa",
+              "alt": "Şehzade sancağı",
+              "yer": "sol"
+            },
+            "etiketler": [
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sag"
+              },
+              {
+                "ad": "Manisa",
+                "lon": 27.43,
+                "lat": 38.61,
+                "yan": "sag",
+                "bas": 0.45
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    26.56,
+                    41.68
+                  ],
+                  [
+                    26.7,
+                    40.4
+                  ],
+                  [
+                    27.2,
+                    39.4
+                  ],
+                  [
+                    27.43,
+                    38.61
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.5
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Yorgun padişah",
+          "metin": "İkinci Murad ise yorgundu. 1443'te Macar komutan Hunyadi Yanoş, Balkanlar'da kışın ortasında derinlere kadar ilerlemişti. Doğuda Karamanoğulları da fırsat kolluyordu. Murad iki cephede birden savaşmaktan bıkmıştı.",
+          "gorsel": [
+            "File:Paolo Veronese (Nachfolger) - Sultan Murad II. - 2237 - Bavarian State Painting Collections.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Babanın şaşırtan kararı",
+      "sahneler": [
+        {
+          "yazi": "1444 yazı",
+          "metin": "1444 yazında Murad, Macarlarla on yıllık bir barış imzaladı. Sonra Karamanoğulları ile de anlaştı. İki cephe de susmuştu. Herkes padişahın şimdi rahat bir nefes alacağını düşünüyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "safak",
+            "yil": "1444",
+            "aylar": [
+              "Haziran",
+              "Temmuz",
+              "Ağustos"
+            ],
+            "cevir_bit": 0.5,
+            "rozet": "İki barış"
+          }
+        },
+        {
+          "yazi": "Tahttan çekiliş",
+          "metin": "Ama Murad kimsenin beklemediği bir şey yaptı. Ağustos 1444'te tahtı on iki yaşındaki oğluna bıraktı ve kendisi Manisa'ya çekildi. Neden böyle yaptığını tarihçiler hâlâ tartışıyor. Kimi oğlunun ölümüyle sarsıldığını, kimi sadece dinlenmek istediğini söyler.",
+          "gorsel": [
+            "File:Enthronement of Mehmed II Fatih in 1444. Miniature, 1616, Ottoman (Musée Jacquemart-André, Ms 13141).jpg"
+          ]
+        },
+        {
+          "yazi": "İki cephe",
+          "metin": "Edirne'de tahtta bir çocuk oturuyordu, ama devleti Veziriazam Çandarlı Halil Paşa yönetiyordu. Karşısında genç padişahın lalası Şehabeddin Paşa ve Zağanos Paşa vardı. Saray kısa sürede iki cepheye bölündü.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Şehabeddin",
+                "desen": "kanat"
+              },
+              {
+                "ad": "Zağanos",
+                "desen": "hilal"
+              }
+            ],
+            "bant": "Sarayda iki cephe",
+            "karsi": {
+              "ad": "Çandarlı Halil",
+              "desen": "anahtar"
+            },
+            "arka": {
+              "merkez": [
+                26.56,
+                41.68
+              ],
+              "genislik": 3.0,
+              "tema": "antika"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Bozulan barış yemini",
+      "sahneler": [
+        {
+          "yazi": "Kardinal",
+          "metin": "Tahtta bir çocuğun oturduğu haberi Avrupa'ya hızla yayıldı. Papa'nın temsilcisi Kardinal Cesarini, Macar Kralı Vladislav'a imzaladığı barışın geçersiz olduğunu söyledi. Kaynaklara göre kralı yeminini bozmaya o ikna etti.",
+          "gorsel": [
+            "File:Thuróczy krónika - Hunyadi János.jpg"
+          ]
+        },
+        {
+          "yazi": "Tuna'yı geçen ordu",
+          "metin": "Eylül 1444'te haçlı ordusu Tuna'yı geçti ve Karadeniz kıyısına doğru ilerledi. Plan basitti: Venedik gemileri Çanakkale Boğazı'nı tutacak, Murad Anadolu'dan Rumeli'ye geçemeyecekti. Böylece haçlılar Edirne'deki çocuk padişahın karşısına tek başına çıkacaktı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "kaydir",
+            "cizgi": "kalin",
+            "merkez": [
+              25.8,
+              41.8
+            ],
+            "genislik": 11,
+            "zoom": 1.1,
+            "etiketler": [
+              {
+                "ad": "Varna",
+                "lon": 27.91,
+                "lat": 43.21,
+                "yan": "sag",
+                "bas": 0.5
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sol"
+              },
+              {
+                "ad": "Çanakkale",
+                "lon": 26.4,
+                "lat": 40.15,
+                "yan": "sol",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    22.4,
+                    44.65
+                  ],
+                  [
+                    24.0,
+                    43.9
+                  ],
+                  [
+                    25.6,
+                    43.5
+                  ],
+                  [
+                    26.9,
+                    43.3
+                  ],
+                  [
+                    27.91,
+                    43.21
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.55
+              }
+            ],
+            "damga": {
+              "yazi": "Boğaz\nkapalı",
+              "lon": 26.4,
+              "lat": 40.15,
+              "bas": 0.65,
+              "tip": "murekkep",
+              "dx": 330,
+              "dy": -170
+            }
+          }
+        },
+        {
+          "yazi": "Edirne'de korku",
+          "metin": "Edirne'de büyük bir korku başladı. Devlet adamları Murad'ın geri dönmesini istedi. Rivayete göre genç Mehmed babasına şöyle yazdı: Padişah sizseniz gelin ordunuzun başına geçin. Padişah bensem, size emrediyorum, gelin. Bu mektubun gerçekten yazılıp yazılmadığı tartışmalıdır.",
+          "gorsel": [
+            "File:Edirne - btv1b101009150.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Geri dönen padişah",
+      "sahneler": [
+        {
+          "yazi": "Boğaz'dan geçiş",
+          "metin": "Murad, Venedik gemilerinin tuttuğu Çanakkale yerine İstanbul Boğazı'ndan geçti. Kaynaklara göre Cenevizli gemiler, para karşılığında askerleri karşıya taşıdı. Ordu hızla kuzeye, haçlıların peşine düştü.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "uzaklas",
+            "cizgi": "kesikli",
+            "merkez": [
+              28.4,
+              41.9
+            ],
+            "genislik": 9,
+            "zoom": 1.08,
+            "etiketler": [
+              {
+                "ad": "Boğaziçi",
+                "lon": 29.06,
+                "lat": 41.1,
+                "yan": "sag",
+                "bas": 0.2
+              },
+              {
+                "ad": "Varna",
+                "lon": 27.91,
+                "lat": 43.21,
+                "yan": "sag",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    29.6,
+                    40.4
+                  ],
+                  [
+                    29.2,
+                    40.9
+                  ],
+                  [
+                    29.06,
+                    41.1
+                  ],
+                  [
+                    28.4,
+                    41.8
+                  ],
+                  [
+                    27.9,
+                    42.6
+                  ],
+                  [
+                    27.91,
+                    43.21
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.1,
+                "bit": 0.7
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Mızraktaki antlaşma",
+          "metin": "Kasım 1444'te iki ordu Varna yakınlarında karşı karşıya geldi. Anlatılana göre Murad, haçlıların bozduğu antlaşma metnini bir mızrağın ucuna taktırıp ordunun önünde taşıttı. Bu sahne, sonraki kroniklerde sık sık anlatılan bir rivayettir.",
+          "gorsel": [
+            "File:Murad II and Władysław III of Poland.jpg"
+          ]
+        },
+        {
+          "yazi": "10 Kasım 1444",
+          "metin": "10 Kasım sabahı savaş başladı. Haçlı süvarileri önce Osmanlı kanatlarını sarstı. Anadolu birlikleri geri çekildi ve bir an savaşın kaybedildiği sanıldı. Ama Murad'ın merkezde, yeniçerilerin arasında kaldığı biliniyordu.",
+          "gorsel": [
+            "File:Battle of Varna, Jan Matejko.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Varna'da düşen kral",
+      "sahneler": [
+        {
+          "yazi": "Kralın hücumu",
+          "metin": "Genç Kral Vladislav, zaferi tek hamlede bitirmek istedi. Ağır zırhlı şövalyeleriyle doğrudan padişahın bulunduğu merkeze saldırdı. Yeniçeriler hendeklerin ve kalkanların arkasında bekliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Varna · 10 Kasım 1444",
+            "birlikler": [
+              {
+                "xy": [
+                  960,
+                  760
+                ],
+                "wh": [
+                  380,
+                  170
+                ],
+                "taraf": "osmanli",
+                "etiket": "Yeniçeriler",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  400,
+                  640
+                ],
+                "wh": [
+                  260,
+                  140
+                ],
+                "taraf": "osmanli",
+                "etiket": "Rumeli",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  1520,
+                  640
+                ],
+                "wh": [
+                  260,
+                  140
+                ],
+                "taraf": "osmanli",
+                "etiket": "Anadolu",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  960,
+                  330
+                ],
+                "hedef": [
+                  960,
+                  560
+                ],
+                "wh": [
+                  240,
+                  120
+                ],
+                "taraf": "dusman",
+                "etiket": "Kral Vladislav",
+                "bas": 0.2,
+                "bit": 0.6
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  960,
+                  300
+                ],
+                "son_xy": [
+                  960,
+                  600
+                ],
+                "taraf": "dusman",
+                "bas": 0.2
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                960,
+                640
+              ],
+              "bas": 0.7
+            }
+          }
+        },
+        {
+          "yazi": "Düşen taç",
+          "metin": "Kral yeniçerilerin arasına daldı. Atı vuruldu ve yere düştü. Kaynaklara göre bir yeniçeri onun başını kesti, baş bir mızrağa takılıp gösterildi. Kralını kaybeden haçlı ordusu dağıldı. Hunyadi kaçtı, Kardinal Cesarini de bu kaçış sırasında öldü.",
+          "gorsel": [
+            "File:Bitwa pod Warną (fragment - Władysław).jpg"
+          ]
+        },
+        {
+          "yazi": "Yine Manisa",
+          "metin": "Zafer büyüktü, ama Murad yine tahta oturmadı. Savaştan sonra Manisa'ya geri döndü. Taht yine on iki yaşındaki Mehmed'deydi. Ancak herkes artık asıl gücün kimde olduğunu görmüştü.",
+          "gorsel": [
+            "File:Paolo Veronese (Nachfolger) - Sultan Murad II. - 2237 - Bavarian State Painting Collections.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Genç padişahın hayalleri",
+      "sahneler": [
+        {
+          "yazi": "Surlar",
+          "metin": "Varna'dan sonra Edirne sarayında yeni bir fikir konuşulmaya başladı: Konstantinopolis. Kaynaklara göre Zağanos ve Şehabeddin Paşalar, genç padişahı şehri kuşatmaya teşvik ediyordu. Çandarlı Halil ise bunun çok erken ve çok tehlikeli olduğunu düşünüyordu.",
+          "gorsel": [
+            "File:Walls of Constantinople 1.jpg"
+          ]
+        },
+        {
+          "yazi": "Orhan kozu",
+          "metin": "Bizans'ın elinde güçlü bir koz vardı. Şehirde Osmanlı hanedanından Orhan adında bir şehzade yaşıyordu. Bizans gerektiğinde onu taht iddiasıyla serbest bırakabilirdi. Bir çocuk padişahın karşısına çıkacak bir rakip, Osmanlı'yı yeniden iç savaşa sürükleyebilirdi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Bizans",
+                "desen": "bizans"
+              },
+              {
+                "ad": "Şehzade Orhan",
+                "desen": "halka"
+              }
+            ],
+            "bant": "Taht kozu",
+            "karsi": {
+              "ad": "Mehmed",
+              "desen": "hilal"
+            },
+            "arka": {
+              "merkez": [
+                28.97,
+                41.02
+              ],
+              "genislik": 0.9,
+              "tema": "gece"
+            }
+          }
+        },
+        {
+          "yazi": "Ayarı düşen akçe",
+          "metin": "Hazine de zorlanıyordu. Kaynaklara göre bu dönemde akçenin gümüş oranı düşürüldü. Yani askerin cebine giren para kâğıt üstünde aynıydı, ama çarşıda daha az şey alıyordu. Bu öfke, yeniçeri kışlalarında sessizce büyüdü.",
+          "gorsel": [
+            "File:Yeniçeri.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Buçuktepe'de yeniçeri isyanı",
+      "sahneler": [
+        {
+          "yazi": "1446",
+          "metin": "1446'da Edirne'deki yeniçeriler ayaklandı. Maaşlarının artırılmasını istiyorlardı. Kaynaklara göre Şehabeddin Paşa'nın konağına saldırdılar ve paşa canını zor kurtardı. Sonra şehrin yakınındaki Buçuktepe'de toplandılar.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "yaklas",
+            "bulut": true,
+            "merkez": [
+              26.56,
+              41.68
+            ],
+            "genislik": 1.6,
+            "zoom": 1.1,
+            "odak": [
+              26.56,
+              41.68
+            ],
+            "baslik": {
+              "ust": "1446",
+              "alt": "Edirne ayakta",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sol"
+              }
+            ],
+            "vurgu": {
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.25,
+              "renk": [
+                255,
+                140,
+                60
+              ]
+            },
+            "damga": {
+              "yazi": "Buçuktepe",
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.55,
+              "tip": "muhur",
+              "dx": -380,
+              "dy": 230
+            }
+          }
+        },
+        {
+          "yazi": "Zam",
+          "metin": "İsyanı yatıştırmanın yolu paraydı. Yeniçerilerin günlük ulufesine zam yapıldı ve askerler dağıldı. Ama bu küçük zam büyük bir şey öğretti: Kılıç kuşanan asker, istediğini zorla alabilirdi.",
+          "gorsel": [
+            "File:An Officer of the Janissaries (Costume Plate) LACMA M.85.237.50.jpg"
+          ]
+        },
+        {
+          "yazi": "Arkadaki el",
+          "metin": "Bazı tarihçiler bu isyanın arkasında Çandarlı Halil Paşa'nın olduğunu düşünür. Çünkü isyan, tam da onun istediği sonucu doğurdu. Çandarlı, Manisa'ya haber gönderip Murad'ı yeniden tahta çağırdı.",
+          "gorsel": [
+            "File:Square of the Fountain, Adrianople.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "İkinci kez tahttan iniş",
+      "sahneler": [
+        {
+          "yazi": "Babanın dönüşü",
+          "metin": "1446'da Murad Edirne'ye geldi ve tahta yeniden oturdu. Bu kez kalıcıydı. On dört yaşındaki Mehmed, hiçbir açıklama yapılmadan Manisa'ya gönderildi. Yani Fatih, daha çocukken tahttan indirilmiş bir padişahtı.",
+          "gorsel": [
+            "File:Murad II and Władysław III of Poland.jpg"
+          ]
+        },
+        {
+          "yazi": "Bekleyiş",
+          "metin": "Mehmed sonraki yılları Manisa'da geçirdi. 1448'de İkinci Kosova Savaşı'nda babasının yanında savaştı. Okudu, dil öğrendi, haritalara baktı. Kendisini kimin indirdiğini de unutmadı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gunbatimi",
+            "yil": "Manisa",
+            "aylar": [
+              "1446",
+              "1447",
+              "1448",
+              "1449",
+              "1450"
+            ],
+            "cevir_bit": 0.7,
+            "rozet": "Bekleyiş"
+          }
+        },
+        {
+          "yazi": "Sessiz kırgınlık",
+          "metin": "Rivayete göre Mehmed, Çandarlı'nın kendisini bir çocuk gibi gördüğünü hiç affetmedi. Çandarlı ise genç şehzadenin aceleciliğinden korkuyordu. İkisi arasındaki bu soğukluk, yıllar sonra çok pahalıya patlayacaktı.",
+          "gorsel": [
+            "File:Bellini, Gentile - Sultan Mehmet II.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Beni seven ardımca gelsin",
+      "sahneler": [
+        {
+          "yazi": "Şubat 1451",
+          "metin": "Şubat 1451'de İkinci Murad Edirne'de öldü. Haber Manisa'ya ulaşınca Mehmed hemen yola çıktı. Rivayete göre atına binerken, beni seven ardımca gelsin, dedi. On sekiz yaşında ikinci kez tahta oturdu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "kaydir",
+            "cizgi": "akan",
+            "merkez": [
+              26.9,
+              40.15
+            ],
+            "genislik": 11,
+            "zoom": 1.12,
+            "etiketler": [
+              {
+                "ad": "Manisa",
+                "lon": 27.43,
+                "lat": 38.61,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sag",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    27.43,
+                    38.61
+                  ],
+                  [
+                    27.0,
+                    39.4
+                  ],
+                  [
+                    26.6,
+                    40.1
+                  ],
+                  [
+                    26.4,
+                    40.4
+                  ],
+                  [
+                    26.6,
+                    41.0
+                  ],
+                  [
+                    26.56,
+                    41.68
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.55
+              }
+            ],
+            "damga": {
+              "yazi": "Beni seven\nardımca gelsin",
+              "lon": 26.4,
+              "lat": 40.4,
+              "bas": 0.6,
+              "tip": "ferman",
+              "dx": 420,
+              "dy": 60
+            }
+          }
+        },
+        {
+          "yazi": "29 Mayıs 1453",
+          "metin": "İki yıl sonra Mehmed, babasının bir zamanlar uzak durduğu şehri aldı ve Fatih oldu. Fetihten kısa süre sonra Çandarlı Halil Paşa tutuklandı ve idam edildi. Sıklıkla Osmanlı'da idam edilen ilk veziriazam olarak anılır. Kesin sebebini kaynaklar farklı anlatır.",
+          "gorsel": [
+            "File:Le siège de Constantinople (1453) by Jean Le Tavernier after 1455.jpg"
+          ]
+        },
+        {
+          "yazi": "Bir çocuğun dersi",
+          "metin": "On iki yaşında tahta çıkan, iki yıl sonra indirilen o çocuk, bir şey öğrenmişti: Padişah, ordusuna ve vezirine boyun eğerse tahtı elinde tutamazdı. Fatih'in sonraki sert kararlarının kökü belki de bu iki yılda yatıyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Mehmed'in yolu",
+            "ogeler": [
+              "Manisa · 1443",
+              "Tahtta · 1444",
+              "İndirildi · 1446",
+              "Yeniden tahtta · 1451",
+              "Fatih · 1453"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "soru": "Sence İkinci Murad, oğlunu tahttan indirerek onu korudu mu, yoksa Fatih'i daha sert biri mi yaptı? Yorumlarda yaz.",
+  "etiketler": [
+    "fatih sultan mehmed",
+    "ikinci murad",
+    "varna savaşı",
+    "buçuktepe isyanı",
+    "çandarlı halil paşa",
+    "osmanlı tarihi",
+    "edirne",
+    "1444",
+    "mehmed fetihler sultanı"
+  ]
+}

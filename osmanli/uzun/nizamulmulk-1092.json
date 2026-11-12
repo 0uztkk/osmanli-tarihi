@@ -1,0 +1,730 @@
+{
+  "id": "nizamulmulk-1092",
+  "stil": "animasyon",
+  "baslik": [
+    "Nizamülmülk Suikastı: Selçuklu'yu Sarsan 35 Gün",
+    "Nizamülmülk'ü Kim Öldürdü? 1092 Selçuklu Krizi",
+    "Melikşah ve Nizamülmülk: Taç ile Divitin Sonu"
+  ],
+  "kapak": "İKİ ÖLÜM",
+  "kanca": "Hayal et: 1092'de Selçuklu'nun en güçlü veziri bir fedainin hançeriyle öldü. Otuz beş gün sonra sultan da öldü, ama neden? Arkalarında dört yaşında bir sultan, hırslı bir hatun ve birbirine düşen şehzadeler kaldı. Bu videoda Büyük Selçuklu'yu sarsan o yılı anlatıyoruz, sonunda bu ölümlerin bir imparatorluğu nasıl parçaladığını göreceksin.",
+  "kanca_gorsel": [
+    "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
+  ],
+  "bolumler": [
+    {
+      "ad": "Otuz yıllık vezir",
+      "sahneler": [
+        {
+          "yazi": "Nizamülmülk",
+          "metin": "Asıl adı Hasan'dı, ama tarih onu Nizamülmülk, yani devletin düzeni diye hatırladı. Horasan'da, Tus yakınlarında doğmuş bir bürokrattı. Alp Arslan'ın veziri oldu, ardından oğlu Melikşah'ın. Neredeyse otuz yıl boyunca devletin bütün kalemleri onun elinden geçti.",
+          "gorsel": [
+            "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
+          ]
+        },
+        {
+          "yazi": "Büyük Selçuklu",
+          "metin": "Melikşah döneminde Selçuklu toprakları Orta Asya'dan Anadolu'ya, Kafkasya'dan Suriye'ye uzanıyordu. Başkent İsfahan'dı. Bağdat'taki Abbasi halifesi de sultanın gölgesinde yaşıyordu. Bu dev ülkeyi bir arada tutan, büyük ölçüde vezirin kurduğu düzendi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "uzaklas",
+            "merkez": [
+              46.5,
+              35.5
+            ],
+            "genislik": 26,
+            "zoom": 1.06,
+            "baslik": {
+              "ust": "1092",
+              "alt": "Büyük Selçuklu",
+              "yer": "sol"
+            },
+            "etiketler": [
+              {
+                "ad": "İsfahan",
+                "lon": 51.67,
+                "lat": 32.65,
+                "yan": "sag",
+                "bas": 0.15
+              },
+              {
+                "ad": "Bağdat",
+                "lon": 44.36,
+                "lat": 33.31,
+                "yan": "sol",
+                "bas": 0.3
+              },
+              {
+                "ad": "Rey",
+                "lon": 51.43,
+                "lat": 35.6,
+                "yan": "sag",
+                "bas": 0.45
+              },
+              {
+                "ad": "Dımaşk",
+                "lon": 36.3,
+                "lat": 33.51,
+                "yan": "sol",
+                "bas": 0.55
+              }
+            ],
+            "vurgu": {
+              "lon": 51.67,
+              "lat": 32.65,
+              "bas": 0.2
+            }
+          }
+        },
+        {
+          "yazi": "Nizamiye",
+          "metin": "Vezirin en kalıcı eseri okullardı. 1067'de Bağdat'ta açılan Nizamiye Medresesi'ni başka şehirlerdekiler izledi. Devlete memur ve âlim yetiştiren bu medreseler, yüzyıllar boyunca örnek alındı. Vezir bir de kitap yazdı: Siyasetname, yani bir sultan nasıl yönetmeli sorusunun cevabı.",
+          "gorsel": [
+            "File:Mufradat Page WDL6830.png"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Taç ile divit",
+      "sahneler": [
+        {
+          "yazi": "Ortak mısın?",
+          "metin": "Ama vezir yaşlandıkça gücü sultanı rahatsız etmeye başladı. Oğulları ve torunları devletin önemli görevlerindeydi. Rivayete göre Melikşah ona, saltanatta benim ortağım mısın, diye haber gönderdi. Vezir de, benim divitim senin tacına bağlıdır, biri kalkarsa öteki de kalkar, diye cevap verdi.",
+          "gorsel": [
+            "File:Petition to a Ruler WDL6843.png"
+          ]
+        },
+        {
+          "yazi": "Veliaht kavgası",
+          "metin": "Sarayda bir de veliaht kavgası vardı. Sultanın güçlü eşi Terken Hatun, küçük oğlu Mahmud'u tahta hazırlıyordu. Yanında kendi veziri Tacülmülk vardı. Nizamülmülk ise sultanın büyük oğlu Berkyaruk'u destekliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Terken Hatun",
+                "desen": "kanat"
+              },
+              {
+                "ad": "Tacülmülk",
+                "desen": "anahtar"
+              }
+            ],
+            "bant": "Veliaht kavgası",
+            "karsi": {
+              "ad": "Nizamülmülk",
+              "desen": "selcuklu"
+            },
+            "arka": {
+              "merkez": [
+                51.67,
+                32.9
+              ],
+              "genislik": 6,
+              "tema": "kizil"
+            }
+          }
+        },
+        {
+          "yazi": "Soğuyan ilişki",
+          "metin": "1092'ye gelindiğinde sultanla vezir arasındaki bağ iyice gerilmişti. Kaynakların bir bölümüne göre Melikşah, vezirini görevden almayı ve yerine Tacülmülk'ü getirmeyi düşünüyordu. Ama buna fırsat kalmayacaktı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Sahne'deki sahte derviş",
+      "sahneler": [
+        {
+          "yazi": "Bağdat yolu",
+          "metin": "Ekim 1092'de sultan ve bütün ordugâh İsfahan'dan Bağdat'a doğru yola çıktı. Yaşlı vezir de yanındaydı. Kervan, Nihavend yakınlarında Sahne denen yerde konakladı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "kaydir",
+            "cizgi": "kesikli",
+            "merkez": [
+              48.6,
+              33.8
+            ],
+            "genislik": 13,
+            "zoom": 1.12,
+            "etiketler": [
+              {
+                "ad": "İsfahan",
+                "lon": 51.67,
+                "lat": 32.65,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Bağdat",
+                "lon": 44.36,
+                "lat": 33.31,
+                "yan": "sol",
+                "bas": 0.1
+              },
+              {
+                "ad": "Sahne",
+                "lon": 47.69,
+                "lat": 34.48,
+                "yan": "sag",
+                "bas": 0.5
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    51.67,
+                    32.65
+                  ],
+                  [
+                    50.6,
+                    33.4
+                  ],
+                  [
+                    49.4,
+                    34.0
+                  ],
+                  [
+                    48.4,
+                    34.3
+                  ],
+                  [
+                    47.69,
+                    34.48
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.5
+              }
+            ],
+            "damga": {
+              "yazi": "Son konak",
+              "lon": 47.69,
+              "lat": 34.48,
+              "bas": 0.6,
+              "tip": "muhur",
+              "dx": 0,
+              "dy": 230
+            }
+          }
+        },
+        {
+          "yazi": "14 Ekim 1092",
+          "metin": "Ramazan ayıydı. 14 Ekim akşamı vezir iftardan sonra çadırına taşınırken, derviş kılığında bir genç elinde dilekçeyle yaklaştı. Dilekçeyi uzatır gibi yapıp hançerini çekti. Nizamülmülk birkaç dakika içinde öldü. Yetmiş yaşını geçmişti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gece",
+            "yil": "Ramazan 1092",
+            "aylar": [
+              "13 Ekim",
+              "14 Ekim"
+            ],
+            "cevir_bit": 0.45,
+            "rozet": "Hançer"
+          }
+        },
+        {
+          "yazi": "Alamut",
+          "metin": "Katil oracıkta öldürüldü. Cinayet, Hasan Sabbah'ın Kazvin yakınlarındaki dağlarda, Alamut Kalesi'nde örgütlediği İsmaili fedailere bağlandı. Bu suikast, bu fedailerin en ünlü saldırılarından biri olarak anılır. Ama bazı kaynaklar parmağı başka yöne, sarayın içine uzatır.",
+          "gorsel": [
+            "File:Tehran Gate in Qazvin - Old.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Otuz beş gün sonra",
+      "sahneler": [
+        {
+          "yazi": "Bağdat'ta sultan",
+          "metin": "Melikşah yoluna devam etti ve Bağdat'a ulaştı. Halifeyle arası gergindi. Kaynaklara göre halifeden şehri terk etmesini bile istemişti. Vezirin ölümü, sultanın planlarını hiç durdurmamış gibiydi. Kaynaklara göre vezirliğe Tacülmülk'ü getirmişti. Saray, Terken Hatun'un tarafının kazandığını düşünüyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "19 Kasım 1092",
+          "metin": "Sonra sultan ava çıktı. Döndükten kısa süre sonra hastalandı ve 19 Kasım 1092'de öldü. Daha otuz yedi yaşındaydı. Veziriyle sultanı arasında yalnızca otuz beş gün vardı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "safak",
+            "yil": "1092",
+            "aylar": [
+              "14 Ekim",
+              "1 Kasım",
+              "19 Kasım"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "35 gün"
+          }
+        },
+        {
+          "yazi": "Zehir söylentisi",
+          "metin": "Bu kadar ani bir ölüm söylentisiz kalmadı. Kimileri sultanın zehirlendiğini, kimileri vezirin adamlarının intikam aldığını söyledi. Kesin bir kanıt yok. Ama devleti otuz yıl yöneten iki adam, bir ay içinde ortadan kalkmıştı. Üstelik sultan arkasında açıkça belirlenmiş bir veliaht bırakmamıştı. Bu boşluk, birkaç gün içinde saray kavgasına dönüştü.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Dört yaşında sultan",
+      "sahneler": [
+        {
+          "yazi": "Gizlenen ölüm",
+          "metin": "Terken Hatun hızlı davrandı. Kaynaklara göre sultanın ölümünü bir süre gizledi ve cenazeyle birlikte İsfahan'a yöneldi. Halifeyi de dört yaşındaki oğlu Mahmud adına hutbe okutmaya razı etti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "uzaklas",
+            "cizgi": "akan",
+            "bulut": true,
+            "merkez": [
+              48.0,
+              33.8
+            ],
+            "genislik": 11,
+            "zoom": 1.06,
+            "etiketler": [
+              {
+                "ad": "Bağdat",
+                "lon": 44.36,
+                "lat": 33.31,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "İsfahan",
+                "lon": 51.67,
+                "lat": 32.65,
+                "yan": "sag",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    44.36,
+                    33.31
+                  ],
+                  [
+                    45.8,
+                    33.9
+                  ],
+                  [
+                    47.7,
+                    34.3
+                  ],
+                  [
+                    49.4,
+                    33.9
+                  ],
+                  [
+                    51.67,
+                    32.65
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "yok",
+                "bas": 0.1,
+                "bit": 0.55
+              }
+            ],
+            "damga": {
+              "yazi": "Ölüm\ngizlendi",
+              "lon": 46.5,
+              "lat": 34.1,
+              "bas": 0.6,
+              "tip": "murekkep",
+              "dx": 0,
+              "dy": 230
+            }
+          }
+        },
+        {
+          "yazi": "Berkyaruk",
+          "metin": "Ama Nizamülmülk'ün adamları, yani Nizamiye diye anılan köleler ve askerler, susmadı. On üç yaşlarındaki Berkyaruk'u İsfahan'dan kaçırdılar ve Rey'e götürüp sultan ilan ettiler. Böylece aynı anda iki çocuk sultan vardı ve ikisinin de arkasında kılıçlı büyükler duruyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "İki sultan",
+          "metin": "Bir yanda dört yaşındaki Mahmud ve annesi Terken Hatun, öbür yanda on üç yaşındaki Berkyaruk ve babasının ölü vezirine bağlı askerler. Selçuklu tahtı artık iki çocuğun adına savaşan büyüklerin elindeydi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Mahmud",
+                "desen": "hilal"
+              },
+              {
+                "ad": "Terken Hatun",
+                "desen": "kanat"
+              }
+            ],
+            "bant": "İki sultan",
+            "karsi": {
+              "ad": "Berkyaruk",
+              "desen": "selcuklu"
+            },
+            "arka": {
+              "merkez": [
+                50.5,
+                34.5
+              ],
+              "genislik": 9,
+              "tema": "gece"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Vezirin adamları intikam alıyor",
+      "sahneler": [
+        {
+          "yazi": "Borucerd",
+          "metin": "1093'ün başında iki taraf Borucerd yakınlarında karşılaştı. Terken Hatun'un ordusu yenildi. Tacülmülk yakalandı ve Nizamülmülk'ün adamları tarafından öldürüldü. Vezir ölmüştü, ama adamları onun intikamını almıştı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Borucerd · 1093",
+            "birlikler": [
+              {
+                "xy": [
+                  520,
+                  600
+                ],
+                "hedef": [
+                  800,
+                  600
+                ],
+                "wh": [
+                  320,
+                  160
+                ],
+                "taraf": "osmanli",
+                "etiket": "Berkyaruk",
+                "bas": 0.15,
+                "bit": 0.6
+              },
+              {
+                "xy": [
+                  1400,
+                  600
+                ],
+                "hedef": [
+                  1130,
+                  600
+                ],
+                "wh": [
+                  320,
+                  160
+                ],
+                "taraf": "dusman",
+                "etiket": "Tacülmülk",
+                "bas": 0.15,
+                "bit": 0.6
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  300,
+                  820
+                ],
+                "son_xy": [
+                  760,
+                  820
+                ],
+                "taraf": "osmanli",
+                "bas": 0.3
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                965,
+                470
+              ],
+              "bas": 0.65
+            }
+          }
+        },
+        {
+          "yazi": "Terken'in sonu",
+          "metin": "Terken Hatun pes etmedi. Yeni müttefikler aradı, kaynaklara göre evlilik teklifleri bile yaptı. Ama 1094'te İsfahan'da öldü. Kısa süre sonra küçük Mahmud da çiçek hastalığından hayatını kaybetti.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Fırsat kollayanlar",
+          "metin": "Bu karmaşa, Hasan Sabbah'ın kalelerine de nefes aldırdı. Merkez kendi kavgasıyla uğraşırken, fedailerin kaleleri birer birer güçlendi. Selçuklu sarayında artık kimse güvende değildi.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Amca tahta göz dikiyor",
+      "sahneler": [
+        {
+          "yazi": "Tutuş",
+          "metin": "Ama tahtın bir talibi daha vardı: Melikşah'ın kardeşi Tutuş. Suriye'den yola çıktı, kuzeydeki şehirleri birer birer aldı ve İran'a yürüdü. Ona göre tahtın varisi yeğenleri değil, kendisiydi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "kaydir",
+            "cizgi": "kalin",
+            "merkez": [
+              44.0,
+              35.0
+            ],
+            "genislik": 24,
+            "zoom": 1.12,
+            "etiketler": [
+              {
+                "ad": "Dımaşk",
+                "lon": 36.3,
+                "lat": 33.51,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "Rey",
+                "lon": 51.43,
+                "lat": 35.6,
+                "yan": "sag",
+                "bas": 0.6
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    36.3,
+                    33.51
+                  ],
+                  [
+                    37.2,
+                    36.0
+                  ],
+                  [
+                    40.0,
+                    37.0
+                  ],
+                  [
+                    43.1,
+                    36.3
+                  ],
+                  [
+                    46.5,
+                    35.5
+                  ],
+                  [
+                    51.43,
+                    35.6
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Ölenler",
+          "metin": "1095'in başında Tutuş, Rey yakınlarında Berkyaruk'un ordusuna yenildi ve savaşta öldü. Böylece üç yıl içinde vezir, sultan, Tacülmülk, Terken Hatun, küçük Mahmud ve Tutuş ortadan kalkmıştı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Üç yılda düşenler",
+            "ogeler": [
+              "Nizamülmülk · 1092",
+              "Melikşah · 1092",
+              "Tacülmülk · 1093",
+              "Terken ve Mahmud · 1094",
+              "Tutuş · 1095"
+            ]
+          }
+        },
+        {
+          "yazi": "Yorgun sultan",
+          "metin": "Berkyaruk tahtta kaldı, ama hiç rahat edemedi. Saltanatının büyük bölümü bu kez kardeşi Muhammed Tapar'la savaşarak geçti. 1105'te, yirmi beş yaşlarında öldüğünde ülke çoktan bölünmüştü.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Melikşah'ın parçalanan mirası",
+      "sahneler": [
+        {
+          "yazi": "Kardeş kavgası",
+          "metin": "Berkyaruk ile Muhammed Tapar defalarca karşı karşıya geldi. Şehirler el değiştirdi, hazine savaşlara aktı. Emirler bir gün bir kardeşin, ertesi gün ötekinin yanına geçiyordu. Melikşah'ın tek elde topladığı güç, oğullarının kavgasında eriyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Bölünen harita",
+          "metin": "Anadolu'da Süleyman Şah'ın kurduğu Türkiye Selçukluları kendi yolunu çizdi. Suriye'de Tutuş'un oğulları ayrı devletler kurdu. Büyük Selçuklu, kâğıt üstünde tek bir devlet olsa da gerçekte parçalara ayrılmıştı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "yaklas",
+            "merkez": [
+              41.0,
+              36.5
+            ],
+            "genislik": 26,
+            "zoom": 1.05,
+            "etiketler": [
+              {
+                "ad": "İznik",
+                "lon": 29.72,
+                "lat": 40.43,
+                "yan": "sag",
+                "bas": 0.1
+              },
+              {
+                "ad": "Halep",
+                "lon": 37.16,
+                "lat": 36.2,
+                "yan": "sag",
+                "bas": 0.3
+              },
+              {
+                "ad": "Dımaşk",
+                "lon": 36.3,
+                "lat": 33.51,
+                "yan": "sol",
+                "bas": 0.4
+              },
+              {
+                "ad": "İsfahan",
+                "lon": 51.67,
+                "lat": 32.65,
+                "yan": "sag",
+                "bas": 0.5
+              }
+            ],
+            "rozetler": [
+              {
+                "yazi": "Tek devlet, çok sultan",
+                "x": 960,
+                "y": 930,
+                "bas": 0.6
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "1096",
+          "metin": "Tam da bu sırada Avrupa'da Birinci Haçlı Seferi başladı. Haçlılar Anadolu'ya ve Suriye'ye geldiğinde karşılarında birleşik bir Selçuklu cephesi yoktu. Birçok tarihçi, haçlıların ilk başarılarını bu dağınıklığa bağlar.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Divit düşünce taç",
+      "sahneler": [
+        {
+          "yazi": "Kalan eser",
+          "metin": "Nizamülmülk'ün medreseleri ve Siyasetname'si, kendisinden yüzyıllarca uzun yaşadı. Onun yetiştirdiği bürokrasi geleneği, sonraki Türk-İslam devletlerinde de izlerini sürdürdü.",
+          "gorsel": [
+            "File:Mufradat Page WDL6830.png"
+          ]
+        },
+        {
+          "yazi": "Şüpheliler",
+          "metin": "Peki vezirin ölümünden kim sorumluydu? Kaynakların çoğu İsmaili fedaileri gösterir. Bazıları Tacülmülk'ü, bazıları sultanın kendisini işaret eder. Tarihçiler hâlâ tartışıyor.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "parsomen",
+            "yil": "Şüpheliler",
+            "aylar": [
+              "Fedailer",
+              "Tacülmülk",
+              "Melikşah"
+            ],
+            "cevir_bit": 0.65,
+            "rozet": "Kesin değil"
+          }
+        },
+        {
+          "yazi": "Sözün gerçeği",
+          "metin": "Ama bir şey kesin: Rivayetteki o söz doğru çıktı. Divit düştüğünde taç da yerinde duramadı. Otuz beş gün içinde iki ölüm, dünyanın en büyük devletlerinden birini parçalanma yoluna soktu.",
+          "gorsel": [
+            "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Nizamülmülk'ü fedailer mi öldürttü, yoksa sarayın içinden biri mi? Yorumlarda yaz.",
+  "etiketler": [
+    "nizamülmülk",
+    "melikşah",
+    "büyük selçuklu",
+    "hasan sabbah",
+    "terken hatun",
+    "berkyaruk",
+    "selçuklu tarihi",
+    "alamut",
+    "siyasetname"
+  ]
+}

@@ -5192,5 +5192,352 @@
       "selçuklu tarihi"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "hattin-1187",
+    "tur": "bilinen",
+    "baslik": [
+      "Hıttin 1187: Kudüs'ü Kaybettiren Susuzluk ⚔️",
+      "Selahaddin Eyyubi Hıttin'de Nasıl Kazandı? ⚔️",
+      "Hıttin Savaşı: Haçlıların Susuz Kaldığı Gün ⚔️"
+    ],
+    "kapak": "4 TEMMUZ",
+    "kanca": "4 Temmuz 1187'de bir haçlı ordusu susuzluktan yürüyemez hâle geldi. Sence Selahaddin bu orduyu nasıl yakaladı?",
+    "kanca_gorsel": [
+      "-"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Taberiye",
+        "metin": "Selahaddin Eyyubi, Taberiye'yi kuşattı. Kudüs Kralı Guy, ordusunu sulu Saffuriye'den çıkarıp çöle yürüttü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "kaydir",
+          "cizgi": "kalin",
+          "merkez": [
+            35.42,
+            32.78
+          ],
+          "genislik": 0.5,
+          "zoom": 1.12,
+          "baslik": {
+            "ust": "Hıttin",
+            "alt": "Temmuz 1187"
+          },
+          "etiketler": [
+            {
+              "ad": "Saffuriye",
+              "lon": 35.28,
+              "lat": 32.75,
+              "yan": "sol",
+              "bas": 0.05
+            },
+            {
+              "ad": "Taberiye",
+              "lon": 35.53,
+              "lat": 32.79,
+              "yan": "sag",
+              "bas": 0.2,
+              "dy": -90
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  35.28,
+                  32.75
+                ],
+                [
+                  35.36,
+                  32.77
+                ],
+                [
+                  35.45,
+                  32.8
+                ]
+              ],
+              "taraf": "dusman",
+              "ikon": "ordu",
+              "bas": 0.1,
+              "bit": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Susuz gece",
+        "metin": "Yaz sıcağında yolda su yoktu. Gece Müslüman askerler kuru otları ateşe verdi. Duman, susuz askerleri daha da bitirdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gunbatimi",
+          "yil": "1187",
+          "aylar": [
+            "3 Temmuz",
+            "4 Temmuz"
+          ],
+          "cevir_bit": 0.5,
+          "rozet": "Susuz gece"
+        }
+      },
+      {
+        "yazi": "Hıttin Boynuzları",
+        "metin": "Haçlılar Hıttin Boynuzları denen iki tepeye sıkıştı. Kral Guy esir düştü, kutsal saydıkları haç emanetini de kaybettiler.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Hıttin · 4 Temmuz 1187",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                960
+              ],
+              "wh": [
+                300,
+                200
+              ],
+              "taraf": "dusman",
+              "etiket": "Kral Guy",
+              "etiket_ust": false
+            },
+            {
+              "xy": [
+                140,
+                960
+              ],
+              "hedef": [
+                300,
+                960
+              ],
+              "wh": [
+                160,
+                260
+              ],
+              "taraf": "osmanli",
+              "etiket": "Selahaddin",
+              "bas": 0.15,
+              "bit": 0.55
+            },
+            {
+              "xy": [
+                940,
+                960
+              ],
+              "hedef": [
+                780,
+                960
+              ],
+              "wh": [
+                160,
+                260
+              ],
+              "taraf": "osmanli",
+              "bas": 0.2,
+              "bit": 0.6
+            },
+            {
+              "xy": [
+                540,
+                1500
+              ],
+              "hedef": [
+                540,
+                1240
+              ],
+              "wh": [
+                300,
+                140
+              ],
+              "taraf": "osmanli",
+              "bas": 0.25,
+              "bit": 0.65
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              760
+            ],
+            "bas": 0.72
+          }
+        }
+      },
+      {
+        "yazi": "Kudüs",
+        "metin": "Selahaddin esir krala soğuk su ikram ettirdi. Üç ay sonra, Ekim 1187'de Kudüs ona teslim oldu.",
+        "gorsel": [
+          "-"
+        ]
+      }
+    ],
+    "soru": "Sence Hıttin'i kazandıran Selahaddin'in planı mıydı, yoksa haçlıların susuzluğu mu?",
+    "etiketler": [
+      "hıttin savaşı",
+      "selahaddin eyyubi",
+      "haçlı seferleri",
+      "kudüs"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kosova-1448",
+    "tur": "az-bilinen",
+    "baslik": [
+      "İkinci Kosova 1448: Hunyadi'nin Son Büyük Seferi ⚔️",
+      "Üç Gün Süren Savaş: İkinci Kosova 1448 ⚔️",
+      "II. Murad ve Hunyadi: Kosova'da İkinci Kez ⚔️"
+    ],
+    "kapak": "16 YAŞINDA ŞEHZADE",
+    "kanca": "1448'de Kosova ovasında iki ordu üç gün boyunca savaştı. Sence on altı yaşındaki şehzade Mehmed orada ne öğrendi?",
+    "kanca_gorsel": [
+      "File:Thuróczy krónika - Hunyadi János.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Hunyadi",
+        "metin": "Varna'dan dört yıl sonra Macar komutan Hunyadi Yanoş yeni bir ordu topladı ve güneye yürüdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "uzaklas",
+          "cizgi": "kalin",
+          "merkez": [
+            22.8,
+            44.6
+          ],
+          "genislik": 9,
+          "zoom": 1.08,
+          "etiketler": [
+            {
+              "ad": "Buda",
+              "lon": 19.04,
+              "lat": 47.5,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Kosova",
+              "lon": 21.1,
+              "lat": 42.7,
+              "yan": "sag",
+              "bas": 0.55
+            },
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "yan": "sol",
+              "bas": 0.3
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  19.04,
+                  47.5
+                ],
+                [
+                  20.2,
+                  45.8
+                ],
+                [
+                  20.9,
+                  44.3
+                ],
+                [
+                  21.1,
+                  42.7
+                ]
+              ],
+              "taraf": "dusman",
+              "ikon": "ordu",
+              "bas": 0.05,
+              "bit": 0.55
+            },
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  24.5,
+                  42.4
+                ],
+                [
+                  22.6,
+                  42.5
+                ],
+                [
+                  21.5,
+                  42.6
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.2,
+              "bit": 0.62
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Üç gün",
+        "metin": "17 Ekim'de başlayan savaş üç gün sürdü. İkinci Murad'ın yanında on altı yaşındaki oğlu Mehmed de vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "Ekim 1448",
+          "aylar": [
+            "17",
+            "18",
+            "19"
+          ],
+          "cevir_bit": 0.6,
+          "rozet": "Üç gün"
+        }
+      },
+      {
+        "yazi": "Bozgun",
+        "metin": "Sonunda Hunyadi'nin ordusu dağıldı. Kosova, bir kez daha Osmanlı'nın Balkanlar'daki gücünü gösterdi.",
+        "gorsel": [
+          "File:Paolo Veronese (Nachfolger) - Sultan Murad II. - 2237 - Bavarian State Painting Collections.jpg"
+        ]
+      },
+      {
+        "yazi": "Fidye",
+        "metin": "Hunyadi kaçtı, ama Sırp despotu tarafından yakalandı. Ancak fidye ve anlaşmayla serbest bırakıldı.",
+        "gorsel": [
+          "File:Thuróczy krónika - Hunyadi János.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Varna ve Kosova, genç Mehmed'i nasıl bir komutan yaptı?",
+    "etiketler": [
+      "ikinci kosova savaşı",
+      "hunyadi yanoş",
+      "ikinci murad",
+      "fatih sultan mehmed"
+    ],
+    "stil": "animasyon"
   }
 ]

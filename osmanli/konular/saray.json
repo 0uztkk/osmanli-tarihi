@@ -3992,5 +3992,259 @@
       "büyük saray"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "baklava-alayi",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Yeniçerilere Baklava Dağıtılan Gün 🏰",
+      "Baklava Alayı: Ramazan'da Sarayın Geleneği 🏰",
+      "Padişahın Yeniçerilere Baklava Hediyesi 🏰"
+    ],
+    "kapak": "TEPSİ TEPSİ",
+    "kanca": "Hayal et: Ramazan'ın on beşinde Topkapı'dan yüzlerce tepsi baklava çıkıyor ve kışlaya taşınıyor. Bu tören neden bu kadar önemliydi?",
+    "kanca_gorsel": [
+      "File:Palace kitchens Topkapi 2007 022.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Ramazan'ın 15'i",
+        "metin": "Ramazan'ın on beşinde padişah Hırka-i Saadet'i ziyaret ederdi. Aynı gün saray mutfaklarında tepsi tepsi baklava pişerdi.",
+        "gorsel": [
+          "File:Palace kitchens Topkapi 2007 011.jpg"
+        ]
+      },
+      {
+        "yazi": "Tepsiler",
+        "metin": "Baklavalar yeniçerilere ayrılmıştı. Anlatılana göre her on yeniçeriye bir tepsi düşerdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "Ramazan",
+          "aylar": [
+            "14",
+            "15"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Baklava günü"
+        }
+      },
+      {
+        "yazi": "Baklava Alayı",
+        "metin": "Tepsiler bezlere sarılır, iki yeniçerinin omzundaki sırıklarla saraydan kışlalara taşınırdı. Halk yol boyunca bu alayı izlerdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "cizgi": "akan",
+          "merkez": [
+            28.968,
+            41.02
+          ],
+          "genislik": 0.4,
+          "zoom": 1.1,
+          "odak": [
+            28.967,
+            41.01
+          ],
+          "baslik": {
+            "ust": "Baklava Alayı",
+            "alt": "Saraydan kışlaya"
+          },
+          "etiketler": [
+            {
+              "ad": "Topkapı Sarayı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "yan": "sag",
+              "bas": 0.05,
+              "dy": -70
+            },
+            {
+              "ad": "Et Meydanı",
+              "lon": 28.952,
+              "lat": 41.009,
+              "yan": "sol",
+              "bas": 0.45
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.983,
+                  41.0115
+                ],
+                [
+                  28.97,
+                  41.012
+                ],
+                [
+                  28.952,
+                  41.009
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.1,
+              "bit": 0.55
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Bir mesaj",
+        "metin": "Baklava, padişahın askerine bir jestiydi. Gelenek, Yeniçeri Ocağı 1826'da kaldırılana kadar sürdü.",
+        "gorsel": [
+          "File:Galanterieen der Turken-p203-Janissary Captain in ceremonial costume-large.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence bu tören bir ikram mıydı, yoksa yeniçerinin gönlünü alma yolu mu?",
+    "etiketler": [
+      "baklava alayı",
+      "yeniçeri",
+      "ramazan",
+      "topkapı sarayı"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kubadabad",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kubadabad: Göl Kıyısındaki Selçuklu Sarayı 🏛️",
+      "Selçuklu Sultanının Göl Kenarındaki Sarayı 🏛️",
+      "Kubadabad Çinileri ve Alaeddin Keykubad 🏛️"
+    ],
+    "kapak": "KARTALLI DUVARLAR",
+    "kanca": "Sence bir Selçuklu sultanı neden Konya'dan uzakta, bir göl kıyısına saray yaptırdı? Bu sarayın duvarları yıldız biçimli çinilerle kaplıydı.",
+    "kanca_gorsel": [
+      "-"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Beyşehir Gölü",
+        "metin": "1230'lu yıllarda Sultan Birinci Alaeddin Keykubad, Beyşehir Gölü'nün kıyısında bir saray yaptırdı. Adı Kubadabad'dı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "parsomen",
+          "kamera": "yaklas",
+          "merkez": [
+            32.0,
+            37.75
+          ],
+          "genislik": 2.2,
+          "zoom": 1.1,
+          "odak": [
+            31.57,
+            37.62
+          ],
+          "baslik": {
+            "ust": "Kubadabad",
+            "alt": "Göl sarayı"
+          },
+          "etiketler": [
+            {
+              "ad": "Konya",
+              "lon": 32.48,
+              "lat": 37.87,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Kubadabad",
+              "lon": 31.57,
+              "lat": 37.62,
+              "yan": "sol",
+              "bas": 0.35
+            }
+          ],
+          "vurgu": {
+            "lon": 31.57,
+            "lat": 37.62,
+            "bas": 0.4,
+            "renk": [
+              90,
+              180,
+              220
+            ]
+          }
+        }
+      },
+      {
+        "yazi": "Yıldız çiniler",
+        "metin": "Duvarlar yıldız ve haç biçimli çinilerle kaplıydı. Üzerlerinde kartallar, aslanlar, saray insanları ve hayali yaratıklar vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Çift başlı kartal",
+              "desen": "kartal"
+            }
+          ],
+          "bant": "Çinilerdeki figürler",
+          "karsi": {
+            "ad": "Selçuklu sarayı",
+            "desen": "selcuklu"
+          },
+          "arka": {
+            "merkez": [
+              31.8,
+              37.7
+            ],
+            "genislik": 1.5,
+            "tema": "antika"
+          }
+        }
+      },
+      {
+        "yazi": "Kazılar",
+        "metin": "Kalıntılar 1949'da yeniden fark edildi. 1965'te başlayan kazılarda çıkan çinilerin çoğu bugün Konya'daki Karatay Müzesi'nde.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "Kubadabad",
+          "aylar": [
+            "1949",
+            "1965"
+          ],
+          "cevir_bit": 0.5,
+          "rozet": "Kazılar başladı"
+        }
+      },
+      {
+        "yazi": "Sultanın sarayı",
+        "metin": "Kubadabad, bir Selçuklu sultanının gündelik saray hayatını gösteren nadir yerlerden biri. Göl kıyısındaki temeller hâlâ yerinde.",
+        "gorsel": [
+          "File:Ertugrul Gazi sends his son Savci Bey to the Sultan Alaeddin Keykubad with the request to be allowed to populate a new area.. Miniature, Turkish, 1616. Tadj al-Tawarikh (The Crown of Chronicles).jpg"
+        ]
+      }
+    ],
+    "soru": "Sence bir sultan sarayının duvarlarına neden hayvan ve insan figürleri koydururdu?",
+    "etiketler": [
+      "kubadabad sarayı",
+      "alaeddin keykubad",
+      "selçuklu sarayı",
+      "beyşehir gölü"
+    ],
+    "stil": "animasyon"
   }
 ]
