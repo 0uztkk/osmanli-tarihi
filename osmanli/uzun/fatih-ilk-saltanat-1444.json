@@ -44,9 +44,9 @@
             "cizgi": "akan",
             "merkez": [
               27.2,
-              40.15
+              39.8
             ],
-            "genislik": 10,
+            "genislik": 12,
             "zoom": 1.08,
             "odak": [
               27.43,
@@ -197,9 +197,9 @@
             "cizgi": "kalin",
             "merkez": [
               25.8,
-              41.8
+              41.4
             ],
-            "genislik": 11,
+            "genislik": 13,
             "zoom": 1.1,
             "etiketler": [
               {
@@ -219,7 +219,7 @@
                 "ad": "Çanakkale",
                 "lon": 26.4,
                 "lat": 40.15,
-                "yan": "sol",
+                "yan": "sag",
                 "bas": 0.55
               }
             ],
@@ -259,8 +259,8 @@
               "lat": 40.15,
               "bas": 0.65,
               "tip": "murekkep",
-              "dx": 330,
-              "dy": -170
+              "dx": -260,
+              "dy": -90
             }
           }
         },
@@ -654,9 +654,9 @@
             "cizgi": "akan",
             "merkez": [
               26.9,
-              40.15
+              40.0
             ],
-            "genislik": 11,
+            "genislik": 12.5,
             "zoom": 1.12,
             "etiketler": [
               {

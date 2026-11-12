@@ -27,10 +27,10 @@
             "kamera": "uzaklas",
             "cizgi": "kesikli",
             "merkez": [
-              18.5,
-              37.0
+              17.5,
+              36.8
             ],
-            "genislik": 32,
+            "genislik": 40,
             "zoom": 1.05,
             "baslik": {
               "ust": "1798",
@@ -164,9 +164,9 @@
             "cizgi": "akan",
             "merkez": [
               33.2,
-              31.5
+              31.3
             ],
-            "genislik": 9.5,
+            "genislik": 11,
             "zoom": 1.12,
             "etiketler": [
               {
