@@ -5216,14 +5216,24 @@
         "anim": {
           "tip": "harita",
           "tema": "kizil",
-          "kamera": "kaydir",
+          "kamera": "yaklas",
           "cizgi": "kalin",
           "merkez": [
             35.42,
             32.78
           ],
           "genislik": 0.5,
-          "zoom": 1.12,
+          "zoom": 1.08,
+          "vurgu": {
+            "lon": 35.45,
+            "lat": 32.8,
+            "bas": 0.55,
+            "renk": [
+              255,
+              150,
+              60
+            ]
+          },
           "etiketler": [
             {
               "ad": "Saffuriye",
