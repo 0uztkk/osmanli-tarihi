@@ -2,7 +2,7 @@
 
 **Başlık seçenekleri:** Cem Sultan: Avrupa'da 13 Yıl Rehine Kalan Şehzade · Cem Sultan Neden Papa'nın Rehinesi Oldu? · Cem ve Bayezid: Osmanlı'nın En Uzun Taht Kavgası
 **Kapak yazısı:** 13 YIL REHİNE
-**Süre:** yaklaşık 6 dakika (841 kelime anlatım) · 7 bölüm · 5 Shorts'a bölünür
+**Süre:** yaklaşık 6 dakika (845 kelime anlatım) · 7 bölüm · 5 Shorts'a bölünür
 
 ## Görsel stil rehberi (bütün yapay zeka araçlarına aynen ver)
 
@@ -135,7 +135,7 @@ Görsel: Rodos limanı, şövalye kalesinin duvarları. Kadırgadan inen Cem; be
 
 **Misafir mi, esir mi** **[SHORTS]**
 
-Anlatım: Cem kendini misafir sanıyordu. Ama şövalyeler için o, padişaha karşı ellerindeki en değerli kozdu. Kapı arkasından kilitlendi.
+Anlatım: Cem kendini misafir sanıyordu. Ama şövalyeler için o, padişaha karşı ellerindeki en değerli kozdu. Kısa süre sonra kapısının önüne nöbetçiler kondu.
 
 Görsel: Kale koridorunda ilerleyen Cem; arkasından ağır bir kapı kapanır, anahtar çevrilir. Kamera anahtara yaklaşır.
 
