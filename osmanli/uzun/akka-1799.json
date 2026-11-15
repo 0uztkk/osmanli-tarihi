@@ -7,17 +7,43 @@
     "Cezzar Ahmed Paşa ve Napolyon: Akka Surlarında İki Ay"
   ],
   "kapak": "GERİ DÖNDÜ",
-  "kanca": "Hayal et: 1799'da Napolyon, bir Osmanlı kalesinin önünde iki ay kuşatma yaptı ve binlerce asker kaybetti. Sonra geri döndü, ama neden? Karşısında kasap lakaplı bir paşa, bir İngiliz denizci ve eski bir sınıf arkadaşı vardı. Bu videoda Akka kuşatmasını anlatıyoruz, sonunda Napolyon'un bu kale için söylediği anlatılan sözü göreceksin.",
+  "kanca": "Hayal et: 1799'da Napolyon, bir Osmanlı kalesinin önünde iki ay kuşatma yaptı ve binlerce asker kaybetti. Sonra geri döndü, ama neden? Karşısında kasap lakaplı bir paşa, bir İngiliz denizci ve eski bir sınıf arkadaşı vardı.",
   "kanca_gorsel": [
     "File:Ottoman shore cannon in Jaffa.JPG"
   ],
   "bolumler": [
     {
+      "ad": "Surların önünde bir general",
+      "sahneler": [
+        {
+          "yazi": "Mayıs 1799",
+          "metin": "Mayıs 1799, Akdeniz kıyısında küçük bir liman şehri. Surların önünde Avrupa'nın en ünlü generali iki aydır bekliyor. Askerleri sonunda gedikten içeri giriyor, ama içeride ikinci bir duvarla karşılaşıyor. İki aydır her hücum aynı surlarda durmuştu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Kasap lakaplı paşa",
+          "metin": "Surların arkasında yaşlı bir Osmanlı paşası var. Lakabı Cezzar, yani kasap. Yanında bir İngiliz denizci ve Napolyon'un eski sınıf arkadaşı.",
+          "gorsel": [
+            "File:Ottoman soldiers.jpg"
+          ]
+        },
+        {
+          "yazi": "Geri dönüş",
+          "metin": "Birkaç gün sonra Napolyon ordusunu geri çeviriyor. Mısır'ı alan general, burada ilk büyük başarısızlığını yaşıyor. Peki Napolyon bu küçük kaleye nasıl geldi?",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
       "ad": "Mısır'a çıkan general",
       "sahneler": [
         {
           "yazi": "1798",
-          "metin": "Temmuz 1798'de genç general Napolyon Bonapart, Fransız ordusuyla İskenderiye'ye çıktı. Mısır kâğıt üstünde Osmanlı'ya bağlıydı, ama ülkeyi Memlük beyleri yönetiyordu. Napolyon Memlükleri Piramitler önünde yendi ve Kahire'ye girdi.",
+          "metin": "Temmuz 1798'de genç general Napolyon Bonapart, Fransız ordusuyla İskenderiye'ye çıktı. Mısır kâğıt üstünde Osmanlı'ya bağlıydı, ama ülkeyi Memlük beyleri yönetiyordu. Napolyon Memlükleri Piramitler önünde yendi ve Kahire'ye girdi. Ama Ağustos'ta İngiliz amiral Nelson, Ebukır'da Fransız donanmasını büyük ölçüde yok etti ve Napolyon Mısır'da mahsur kaldı.",
           "gorsel": [
             "-"
           ],
@@ -97,24 +123,12 @@
           }
         },
         {
-          "yazi": "Nil'de kaybedilen filo",
-          "metin": "Ama bir ay sonra her şey değişti. Ağustos 1798'de İngiliz amiral Nelson, Ebukır koyunda demirli Fransız donanmasını büyük ölçüde yok etti. Napolyon artık Mısır'da mahsur kalmıştı. Fransa'ya dönmenin kolay bir yolu yoktu.",
-          "gorsel": [
-            "-"
-          ]
-        },
-        {
           "yazi": "İstanbul'un cevabı",
           "metin": "İstanbul'da Üçüncü Selim tahttaydı. Osmanlı, Eylül 1798'de Fransa'ya savaş ilan etti. Yüzyıllardır düşman olduğu Rusya ile ve İngiltere ile aynı safa geçti. Mısır'ı geri almak için Suriye'de ve Rodos'ta kuvvet toplanmaya başladı.",
           "gorsel": [
             "File:Sultan lll. Selim.jpg"
           ]
-        }
-      ]
-    },
-    {
-      "ad": "Kasap lakaplı paşa",
-      "sahneler": [
+        },
         {
           "yazi": "Cezzar Ahmed",
           "metin": "Suriye kıyısında güçlü bir adam vardı: Cezzar Ahmed Paşa. Bosna'da doğmuş, gençliğinde Mısır'da Memlük beylerinin hizmetinde yükselmişti. Cezzar, kasap demekti. Lakabın nereden geldiği farklı anlatılır, ama sert cezalarıyla tanındığı kesindir.",
@@ -133,15 +147,8 @@
           }
         },
         {
-          "yazi": "Akka",
-          "metin": "Cezzar, Sayda valisiydi ama merkezini Akka'ya taşımıştı. Bu eski liman şehri bir zamanlar Haçlıların son kalelerinden biriydi. Paşa yıllar içinde surları onardı, şehre cami, han ve hamam yaptırdı. Akka onun küçük başkentiydi. İstanbul'dan uzakta, kendi askerleri ve kendi kurallarıyla yaşayan bir paşaydı. Ama Fransızlara karşı padişahın safındaydı.",
-          "gorsel": [
-            "-"
-          ]
-        },
-        {
           "yazi": "Napolyon'un planı",
-          "metin": "Napolyon, Osmanlı ordusunun Suriye'den gelmesini beklemek istemedi. Önce kendisi Suriye'ye yürüyecekti. Ona göre Akka düşerse kıyı boyunca bütün yol açılırdı. Yüzyıllar önce Haçlıların çarpıştığı topraklar, yeniden bir savaş alanı olacaktı.",
+          "metin": "Cezzar merkezini Akka'ya taşımış, bir zamanlar Haçlıların son kalelerinden olan bu şehrin surlarını onarmıştı. Napolyon ise Osmanlı ordusunu beklemek istemedi. Önce kendisi Suriye'ye yürüyecekti. Ona göre Akka düşerse kıyı boyunca bütün yol açılırdı.",
           "gorsel": [
             "-"
           ]

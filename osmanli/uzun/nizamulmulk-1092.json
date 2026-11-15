@@ -7,17 +7,43 @@
     "Melikşah ve Nizamülmülk: Taç ile Divitin Sonu"
   ],
   "kapak": "İKİ ÖLÜM",
-  "kanca": "Hayal et: 1092'de Selçuklu'nun en güçlü veziri bir fedainin hançeriyle öldü. Otuz beş gün sonra sultan da öldü, ama neden? Arkalarında dört yaşında bir sultan, hırslı bir hatun ve birbirine düşen şehzadeler kaldı. Bu videoda Büyük Selçuklu'yu sarsan o yılı anlatıyoruz, sonunda bu ölümlerin bir imparatorluğu nasıl parçaladığını göreceksin.",
+  "kanca": "Hayal et: 1092'de Selçuklu'nun en güçlü veziri bir fedainin hançeriyle öldü. Otuz beş gün sonra sultan da öldü, ama neden? Arkalarında dört yaşında bir sultan, hırslı bir hatun ve birbirine düşen şehzadeler kaldı.",
   "kanca_gorsel": [
     "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
   ],
   "bolumler": [
     {
+      "ad": "Bir Ramazan akşamı",
+      "sahneler": [
+        {
+          "yazi": "14 Ekim 1092",
+          "metin": "14 Ekim 1092, bir Ramazan akşamı. İran'ın dağlık yollarında koca bir ordugâh konaklamış. Yetmiş yaşını geçmiş bir adam iftardan sonra çadırına taşınıyor. Otuz yıldır dünyanın en büyük devletlerinden birini o yönetiyor.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Dilekçe",
+          "metin": "Derviş kılığında bir genç yaklaşıyor, elinde bir dilekçe var. Vezir dilekçeyi almak için ona dönüyor. Hançer o anda çıkıyor.",
+          "gorsel": [
+            "File:Petition to a Ruler WDL6843.png"
+          ]
+        },
+        {
+          "yazi": "Otuz beş gün",
+          "metin": "Büyük Selçuklu'nun veziri Nizamülmülk böyle öldü. Ama asıl şaşırtıcı olan otuz beş gün sonra yaşanacaktı. Bu iki ölüm, koca bir imparatorluğu parçalanma yoluna sokacaktı. Hikâyeye otuz yıl önceden başlayalım.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
       "ad": "Otuz yıllık vezir",
       "sahneler": [
         {
           "yazi": "Nizamülmülk",
-          "metin": "Asıl adı Hasan'dı, ama tarih onu Nizamülmülk, yani devletin düzeni diye hatırladı. Horasan'da, Tus yakınlarında doğmuş bir bürokrattı. Alp Arslan'ın veziri oldu, ardından oğlu Melikşah'ın. Neredeyse otuz yıl boyunca devletin bütün kalemleri onun elinden geçti.",
+          "metin": "Asıl adı Hasan'dı, ama tarih onu Nizamülmülk, yani devletin düzeni diye hatırladı. Horasan'da, Tus yakınlarında doğmuş bir bürokrattı. Alp Arslan'ın veziri oldu, ardından oğlu Melikşah'ın. Neredeyse otuz yıl boyunca devletin bütün kalemleri onun elinden geçti. Bağdat'taki Nizamiye Medresesi'ni kurdu ve Siyasetname'yi yazdı.",
           "gorsel": [
             "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
           ]
@@ -81,22 +107,10 @@
           }
         },
         {
-          "yazi": "Nizamiye",
-          "metin": "Vezirin en kalıcı eseri okullardı. 1067'de Bağdat'ta açılan Nizamiye Medresesi'ni başka şehirlerdekiler izledi. Devlete memur ve âlim yetiştiren bu medreseler, yüzyıllar boyunca örnek alındı. Vezir bir de kitap yazdı: Siyasetname, yani bir sultan nasıl yönetmeli sorusunun cevabı.",
-          "gorsel": [
-            "File:Mufradat Page WDL6830.png"
-          ]
-        }
-      ]
-    },
-    {
-      "ad": "Taç ile divit",
-      "sahneler": [
-        {
           "yazi": "Ortak mısın?",
           "metin": "Ama vezir yaşlandıkça gücü sultanı rahatsız etmeye başladı. Oğulları ve torunları devletin önemli görevlerindeydi. Rivayete göre Melikşah ona, saltanatta benim ortağım mısın, diye haber gönderdi. Vezir de, benim divitim senin tacına bağlıdır, biri kalkarsa öteki de kalkar, diye cevap verdi.",
           "gorsel": [
-            "File:Petition to a Ruler WDL6843.png"
+            "File:Mufradat Page WDL6830.png"
           ]
         },
         {
@@ -131,19 +145,19 @@
               "tema": "kizil"
             }
           }
-        },
-        {
-          "yazi": "Soğuyan ilişki",
-          "metin": "1092'ye gelindiğinde sultanla vezir arasındaki bağ iyice gerilmişti. Kaynakların bir bölümüne göre Melikşah, vezirini görevden almayı ve yerine Tacülmülk'ü getirmeyi düşünüyordu. Ama buna fırsat kalmayacaktı.",
-          "gorsel": [
-            "-"
-          ]
         }
       ]
     },
     {
       "ad": "Sahne'deki sahte derviş",
       "sahneler": [
+        {
+          "yazi": "Soğuyan ilişki",
+          "metin": "1092'ye gelindiğinde sultanla vezir arasındaki bağ iyice gerilmişti. Kaynakların bir bölümüne göre Melikşah, vezirini görevden almayı ve yerine Tacülmülk'ü getirmeyi düşünüyordu. Ama buna fırsat kalmayacaktı.",
+          "gorsel": [
+            "-"
+          ]
+        },
         {
           "yazi": "Bağdat yolu",
           "metin": "Ekim 1092'de sultan ve bütün ordugâh İsfahan'dan Bağdat'a doğru yola çıktı. Yaşlı vezir de yanındaydı. Kervan, Nihavend yakınlarında Sahne denen yerde konakladı.",
@@ -227,7 +241,7 @@
         },
         {
           "yazi": "14 Ekim 1092",
-          "metin": "Ramazan ayıydı. 14 Ekim akşamı vezir iftardan sonra çadırına taşınırken, derviş kılığında bir genç elinde dilekçeyle yaklaştı. Dilekçeyi uzatır gibi yapıp hançerini çekti. Nizamülmülk birkaç dakika içinde öldü. Yetmiş yaşını geçmişti.",
+          "metin": "Ve o Ramazan akşamı geldi. 14 Ekim'de vezir iftardan sonra çadırına taşınırken, derviş kılığındaki genç dilekçeyi uzatır gibi yapıp hançerini çekti. Nizamülmülk birkaç dakika içinde öldü.",
           "gorsel": [
             "-"
           ],
