@@ -34,3 +34,13 @@ görmüş ve sıkılmış biri. "Bunu bilmiyordum" dediği anda kalır. Tarihçi
 - Yapı: kanca (≤ 15 sn içinde soru açılır) → 4 sahne (her biri tek fikir, ekranda tarih/isim etiketi)
   → kapanış sorusu.
 - Yorumlar açık; çocuklara yönelik değil.
+
+## Analizden çıkanlar (15 Kasım 2026, 41 Shorts + 5 uzun; rapor: kanal-analiz dalı)
+Örneklem küçük; yön gösterir, kanun değildir. Her pazartesi yeni rapor çıkar, buraya ona göre bakılır.
+- Shorts'ta bir insanın hikâyesi kazanıyor: kişiler kategorisi medyan ~990 izlenme ve %77 izlenme oranı,
+  saray/savaş ~400. Saray ve savaş konularını da bir kişinin kararı, hatası ya da sonu üzerinden anlat.
+- Az bilinen konular (medyan ~860) bilinenlerden (~450) iyi. Bilinen konuda da az bilinen bir açı seç.
+- Osmanlı dışı Shorts zayıf (3 videoda medyan ~280): payı düşük tut, Osmanlı'ya bağlanan konuları seç.
+- Kapanış: "sıradakini sen seç" ve "yarın aynı saatte" en iyisi, "takipte kal" en zayıfı (artık kullanılmıyor).
+- Uzun videolarda izleyici ortalama 1,7 dakikada çıkıyor (%20-37). İlk bölüm hikâyenin en sert anıyla açılsın;
+  geçmiş/arka plan anlatımı ikinci bölüme kaysın. Kanca ≤ 45 kelime, ilk sahne 30 saniyeyi geçmesin.

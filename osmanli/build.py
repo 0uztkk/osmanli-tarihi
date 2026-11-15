@@ -530,8 +530,8 @@ def kapanis_sec(konu, kategori, seed):
         ozel = {e.casefold() for e in konu.get("etiketler", [])} - {"osmanlı tarihi", "osmanlı tarihi belgesel"}
         uzun = next((u for u in yayinlanmis_uzunlar(gun)
                      if ozel & {e.casefold() for e in u.get("etiketler", [])}), None)
-        if not uzun:
-            tur = "takip"
+        if not uzun:   # "takipte kal" kapanışı en zayıf sonuç verdi (analiz 15.11.2026): seçtirme kapanışı
+            tur = "oneri"
 
     if tur == "yarin":
         sonraki = konu_sec(kategori, int((gun + datetime.timedelta(days=1)).strftime("%Y%m%d")))
