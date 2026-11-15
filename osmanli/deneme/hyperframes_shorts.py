@@ -122,7 +122,7 @@ def main():
             kel = parca.split()
             spans = "".join(f'<span class="w">{html.escape(w)}</span> ' for w in kel)
             cid = f"c{k}_{i}"
-            altyazi.append(f'<div class="alt" id="{cid}">{spans}</div>')
+            altyazi.append(f'<div class="alt" id="{cid}"><span class="ic">{spans}</span></div>')
             tl.append(f'tl.set("#{cid}", {{autoAlpha:1}}, {t0:.3f});')
             tl.append(f'tl.from("#{cid} .w", {{y:40, scale:0.7, autoAlpha:0, duration:0.22, stagger:{(t1 - t0) / max(1, len(kel)) * 0.6:.3f}, ease:"back.out(2)"}}, {t0:.3f});')
             for wi in range(len(kel)):   # konuşulan kelime altın renge döner
@@ -131,7 +131,8 @@ def main():
             tl.append(f'tl.set("#{cid}", {{autoAlpha:0}}, {t1:.3f});')
 
     kapak = html.escape(B.tr_buyuk(konu.get("kapak") or ""))
-    harfler = "".join(f'<span class="h">{c if c != " " else "&nbsp;"}</span>' for c in kapak)
+    harfler = " ".join('<span class="kel">' + "".join(f'<span class="h">{c}</span>' for c in kel) + '</span>'
+                       for kel in kapak.split())   # kelime bölünmesin, harfler tek tek düşsün
     tl.append('tl.from("#kapak .h", {y:-120, autoAlpha:0, rotation:-8, duration:0.5, stagger:0.04, ease:"back.out(2.2)"}, 0.15);')
     tl.append(f'tl.to("#kapak", {{autoAlpha:0, y:-40, duration:0.4}}, {max(1.0, son[0] - 0.3):.3f});')
     tl.append(f'tl.fromTo("#ilerleme", {{scaleX:0}}, {{scaleX:1, duration:{toplam:.3f}, ease:"none"}}, 0);')
@@ -155,10 +156,10 @@ html,body{{margin:0;background:#000}}
 #flash{{position:absolute;inset:0;z-index:90;background:radial-gradient(circle at 70% 30%,rgba(255,226,170,.95),rgba(255,180,90,.35) 45%,transparent 75%);opacity:0;pointer-events:none}}
 #ust{{position:absolute;top:150px;width:100%;text-align:center;z-index:95;color:#e8be69;font-weight:800;font-size:34px;letter-spacing:6px;text-shadow:0 3px 10px #000}}
 #ilerleme{{position:absolute;top:0;left:0;width:100%;height:8px;background:#e8be69;transform-origin:0 50%;z-index:96}}
-#kapak{{position:absolute;top:230px;width:100%;text-align:center;z-index:95;font-family:'Playfair Display','DejaVu Serif',serif;font-weight:700;font-size:118px;line-height:1.05;color:#ffe9a8;text-shadow:0 0 30px rgba(255,190,90,.55),0 6px 0 #2a1608,0 10px 30px #000;padding:0 50px}}
-.h{{display:inline-block}}
+#kapak{{position:absolute;top:230px;width:100%;text-align:center;z-index:95;font-family:'Playfair Display','DejaVu Serif',serif;font-weight:700;font-size:104px;line-height:1.08;color:#ffe9a8;text-shadow:0 0 30px rgba(255,190,90,.55),0 6px 0 #2a1608,0 10px 30px #000;padding:0 50px}}
+.h{{display:inline-block}} .kel{{display:inline-block;white-space:nowrap}}
 .etiket{{position:absolute;top:225px;left:60px;z-index:95;padding:14px 30px;background:rgba(25,15,10,.88);border:3px solid #e8be69;border-radius:14px;color:#e8be69;font-family:'Playfair Display',serif;font-weight:700;font-size:54px;visibility:hidden}}
-.alt{{position:absolute;top:1330px;left:60px;right:60px;z-index:97;text-align:center;font-weight:800;font-size:78px;line-height:1.15;color:#fff;text-shadow:0 0 6px #000,0 5px 0 #000,0 8px 24px rgba(0,0,0,.9);visibility:hidden}}
+.alt{{position:absolute;top:1320px;left:0;right:0;z-index:97;text-align:center;visibility:hidden}} .alt .ic{{display:inline-block;padding:14px 34px 18px;background:rgba(18,10,6,.86);border:3px solid #e8be69;border-radius:18px;font-weight:800;font-size:76px;line-height:1.1;color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.6)}}
 .w{{display:inline-block}}
 .kart{{position:absolute;top:760px;left:90px;right:90px;z-index:96;text-align:center;padding:40px 20px;background:linear-gradient(#b3241f,#7d1512);border:5px solid #e8be69;border-radius:28px;color:#fff3cf;font-family:'Playfair Display',serif;font-weight:700;font-size:76px;box-shadow:0 20px 60px rgba(0,0,0,.7);visibility:hidden}}
 </style></head>
