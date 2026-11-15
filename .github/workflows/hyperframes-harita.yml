@@ -1,0 +1,47 @@
+name: HyperFrames harita denemesi (yüklemez)
+
+# Yeni nesil harita animasyonu denemesi (Mohaç 1526). Üretim hattına dokunmaz, YouTube'a yüklemez.
+# Çıktı: hyperframes-harita dalı (harita.mp4 + kareler).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  harita:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Araçları kur
+        timeout-minutes: 15
+        run: bash .github/scripts/araclari_kur.sh
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save --no-package-lock gsap@3.14.2 @fontsource/playfair-display @fontsource/inter
+      - run: python osmanli/deneme/hf_harita.py
+      - name: Render
+        working-directory: out/hfh
+        run: |
+          npx -y hyperframes lint . || true
+          start=$(date +%s)
+          npx -y hyperframes render --output ../harita.mp4 --fps 30 2>&1 | tail -30
+          echo "RENDER_SURESI=$(( $(date +%s) - start )) sn" | tee ../harita_sure.txt
+      - name: Kareler ve dal
+        if: always()
+        run: |
+          mkdir -p /tmp/c/kareler
+          cp out/harita.mp4 out/harita_sure.txt out/hfh/index.html /tmp/c/ || true
+          for t in 0.5 2 4 6.5 9 11 12.6 13.8 15 17 20; do
+            ffmpeg -y -loglevel error -ss $t -i out/harita.mp4 -frames:v 1 -vf scale=540:-2 /tmp/c/kareler/k$t.jpg || true
+          done
+          cd /tmp/c
+          git init -q -b hyperframes-harita
+          git -c user.name=deneme -c user.email=deneme@users.noreply.github.com add -A
+          git -c user.name=deneme -c user.email=deneme@users.noreply.github.com commit -q -m "Harita denemesi ${{ github.run_id }}" || true
+          git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" hyperframes-harita
