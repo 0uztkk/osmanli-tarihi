@@ -1,0 +1,74 @@
+name: HyperFrames denemesi (yüklemez)
+
+# Aynı Shorts'u hem mevcut sistemle hem HyperFrames ile üretir, yan yana karşılaştırma videosu çıkarır.
+# Üretim hattına dokunmaz, YouTube'a hiçbir şey yüklemez. Çıktı: hyperframes-deneme dalı.
+on:
+  workflow_dispatch:
+    inputs:
+      kategori:
+        default: "kisiler"
+      konu:
+        default: "cem-sultan"
+
+permissions:
+  contents: write
+
+jobs:
+  deneme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Araçları kur
+        timeout-minutes: 15
+        run: bash .github/scripts/araclari_kur.sh
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install -r requirements.txt
+      - run: npm install --no-save --no-package-lock gsap@3.14.2 @fontsource/playfair-display @fontsource/inter
+      - name: Mevcut sistemle üret
+        env:
+          KONU: ${{ github.event.inputs.konu }}
+          KATEGORI: ${{ github.event.inputs.kategori }}
+          SEED: "20261116"
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+        run: python osmanli/build.py
+      - name: HyperFrames projesini kur
+        env:
+          KONU: ${{ github.event.inputs.konu }}
+          KATEGORI: ${{ github.event.inputs.kategori }}
+          SEED: "20261116"
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+        run: python osmanli/deneme/hyperframes_shorts.py
+      - name: HyperFrames ile render
+        working-directory: out/hf
+        run: |
+          npx -y hyperframes doctor || true
+          npx -y hyperframes lint . || true
+          start=$(date +%s)
+          npx -y hyperframes render --output ../hf.mp4 --fps 30 2>&1 | tail -40
+          echo "RENDER_SURESI=$(( $(date +%s) - start )) sn" | tee ../hf_sure.txt
+      - name: Karşılaştırma ve kareler
+        run: |
+          mkdir -p /tmp/c/kareler
+          cp out/video.mp4 /tmp/c/mevcut.mp4
+          cp out/hf.mp4 /tmp/c/hyperframes.mp4
+          cp out/hf_sure.txt out/hf/index.html /tmp/c/
+          ffmpeg -y -loglevel error -i out/video.mp4 -i out/hf.mp4 -filter_complex \
+            "[0:v]scale=540:960[a];[1:v]scale=540:960[b];[a][b]hstack=inputs=2[v]" -map "[v]" -map 1:a? \
+            -c:v libx264 -crf 26 -preset veryfast -c:a aac -shortest /tmp/c/yan_yana.mp4
+          for t in 1 6 12 20 28 36; do
+            ffmpeg -y -loglevel error -ss $t -i /tmp/c/yan_yana.mp4 -frames:v 1 /tmp/c/kareler/k$t.jpg
+          done
+      - name: Sonuçları hyperframes-deneme dalına koy
+        if: always()
+        run: |
+          mkdir -p /tmp/c && cd /tmp/c
+          git init -q -b hyperframes-deneme
+          git -c user.name=deneme -c user.email=deneme@users.noreply.github.com add -A
+          git -c user.name=deneme -c user.email=deneme@users.noreply.github.com commit -q -m "HyperFrames denemesi ${{ github.run_id }}" || true
+          git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" hyperframes-deneme
