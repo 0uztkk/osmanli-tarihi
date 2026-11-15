@@ -272,6 +272,42 @@ def sahne_kare(sahne, yerel, i):
     return fg.resize((W, H), Image.BILINEAR, box=(cx, cy, cx + ww, cy + wh))
 
 
+def shorts_kapak(sahne, kategori, kapak, yol):
+    """Shorts kapak resmi (1080x1920): kanca sahnesinin altyazısız karesi, ortada koyu bant ve
+    büyük kapak yazısı. YouTube'un rastgele seçtiği ara kare (yarım altyazı) yerine kullanılır."""
+    global GOLGE
+    GOLGE = GOLGE or golge_katmani()
+    kare = sahne_kare(sahne, 0.5, 0).convert("RGB")
+    if not sahne.get("anim"):
+        kare.paste(GOLGE, (0, 0), GOLGE)
+    else:   # harita/takvim etiketleri kapak yazısıyla karışmasın: arka planı yumuşat ve koyulaştır
+        kare = ImageEnhance.Brightness(kare.filter(ImageFilter.GaussianBlur(7))).enhance(0.7)
+    kare = ImageEnhance.Contrast(ImageEnhance.Color(kare).enhance(1.15)).enhance(1.1)
+    bant = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(bant).rectangle([0, 640, W, 1180], fill=150)
+    bant = bant.filter(ImageFilter.GaussianBlur(70))
+    kare.paste(Image.new("RGB", (W, H), (12, 8, 6)), (0, 0), bant)
+    d = ImageDraw.Draw(kare)
+    ust = KATEGORI_ADI.get(kategori, "")
+    d.text(((W - d.textlength(ust, font=F_KUCUK)) / 2, 150), ust, font=F_KUCUK, fill=ALTIN,
+           stroke_width=4, stroke_fill=(20, 14, 10))
+    metin = tr_buyuk(kapak)
+    boy = 170
+    while boy > 80:
+        f = font("DejaVuSerif-Bold.ttf", boy)
+        satirlar = satirla(d, metin, f, 980)
+        if len(satirlar) <= 2 and max(d.textlength(x, font=f) for x in satirlar) <= 980:
+            break
+        boy -= 8
+    y0 = 910 - len(satirlar) * (boy + 14) / 2
+    ortala(d, satirlar, f, y0, (255, 230, 150), 14, 10)
+    yy = y0 + len(satirlar) * (boy + 14) + 30
+    d.line([(W / 2 - 200, yy), (W / 2 - 24, yy)], fill=ALTIN, width=5)
+    d.line([(W / 2 + 24, yy), (W / 2 + 200, yy)], fill=ALTIN, width=5)
+    d.polygon([(W / 2, yy - 14), (W / 2 + 14, yy), (W / 2, yy + 14), (W / 2 - 14, yy)], fill=ALTIN)
+    kare.save(yol, quality=92)
+
+
 def satirla(draw, metin, fnt, genislik):
     kelimeler, satirlar, s = metin.split(), [], ""
     for k in kelimeler:
@@ -603,6 +639,10 @@ def main():
     seed_baslik = baslik_sec(seed, konu)
     print(f"Süre: {toplam:.1f} sn, kare: {int(toplam * FPS)}", flush=True)
     render(sahneler, toplam, kategori, konu.get("kapak") or emojisiz(seed_baslik), os.path.join(OUT, "v.mp4"))
+    try:
+        shorts_kapak(sahneler[0], kategori, konu.get("kapak") or emojisiz(seed_baslik), os.path.join(OUT, "kapak.jpg"))
+    except Exception as e:   # kapak resmi yoksa video yine yüklenir, YouTube kendi karesini seçer
+        print("UYARI: kapak resmi üretilemedi:", e, flush=True)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(OUT, "v.mp4"),
                     "-i", os.path.join(OUT, "audio.wav"), "-map", "0:v", "-map", "1:a",
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest",

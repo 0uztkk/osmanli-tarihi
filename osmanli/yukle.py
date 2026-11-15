@@ -29,7 +29,15 @@ def main():
     if zaten_yuklendi(yt, meta["title"]):
         print("Bu video zaten yüklenmiş:", meta["title"], "– tekrar yüklenmedi.")
         return
-    yukle(os.path.join(OUT, "video.mp4"), meta, os.environ.get("PRIVACY", "public"), yt)
+    vid = yukle(os.path.join(OUT, "video.mp4"), meta, os.environ.get("PRIVACY", "public"), yt)
+    kapak = os.path.join(OUT, "kapak.jpg")
+    if vid and os.path.exists(kapak):
+        try:   # YouTube rastgele bir ara kare (yarım altyazı) seçmesin
+            from googleapiclient.http import MediaFileUpload
+            yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(kapak, mimetype="image/jpeg")).execute()
+            print("Kapak resmi ayarlandı.")
+        except Exception as e:   # telefon doğrulaması yoksa ya da Shorts'ta izin verilmezse video yine yüklenmiş olur
+            print("UYARI: Kapak resmi ayarlanamadı:", e)
 
 
 if __name__ == "__main__":
