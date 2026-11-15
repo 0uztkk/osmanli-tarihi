@@ -1,0 +1,340 @@
+{
+  "id": "cem-sultan-animasyon",
+  "durum": "taslak – dış yapımlı animasyon",
+  "baslik": [
+    "Cem Sultan: Avrupa'da 13 Yıl Rehine Kalan Şehzade",
+    "Cem Sultan Neden Papa'nın Rehinesi Oldu?",
+    "Cem ve Bayezid: Osmanlı'nın En Uzun Taht Kavgası"
+  ],
+  "kapak": "13 YIL REHİNE",
+  "kanca": "Hayal et: bir Osmanlı şehzadesi on üç yıl boyunca Avrupa'da rehine olarak elden ele geçti. Şövalyeler, krallar ve Papa ona sahip olmak için yarıştı. Sonunda İtalya'da öldü ve zehirlendiği söylendi. Bu, Cem Sultan'ın hikâyesi.",
+  "soru": "Sence Cem Sultan'ın hikâyesindeki asıl kötü kimdi: ağabeyi Bayezid mi, şövalyeler mi, yoksa Papa mı? Yorumlarda yaz.",
+  "etiketler": [
+    "cem sultan",
+    "ikinci bayezid",
+    "fatih sultan mehmed",
+    "rodos şövalyeleri",
+    "papa",
+    "borgia",
+    "osmanlı şehzadesi",
+    "osmanlı tarihi",
+    "bourganeuf"
+  ],
+  "stil": [
+    "Görsel dil: 2D sinematik animasyon, Osmanlı minyatürü esintili renkler (lacivert, kırmızı, altın), yumuşak ışık, hafif kâğıt dokusu. Gerçekçi oranlar ama çizgi film abartısı yok.",
+    "Çerçeve: 16:9 (1920x1080) üret, ama ana karakter ve önemli olay hep ortadaki dikey şeritte dursun (Shorts için 9:16 kırpılacak).",
+    "Her sahne 4-8 saniyelik tek bir hareket: kamera yavaş yaklaşır/kayar, karakter tek bir şey yapar. Hızlı kurgu yerine sakin, ağır geçişler.",
+    "Ekranda yazı: sadece yer/tarih etiketi (ör. 'Bursa · 1481'). Altyazıyı biz ekleriz.",
+    "Kan, şiddet: gösterilmez, ima edilir (gölge, düşen kılıç, kapanan kapı). YouTube yaş sınırı yemeyelim.",
+    "Ses: kalın erkek belgesel sesi (kanalın mevcut sesi), altında kısık orkestral/ney müziği."
+  ],
+  "karakterler": [
+    [
+      "Cem Sultan",
+      "1459 doğumlu; hikâyede 21-35 yaş. İnce yüzlü, kısa kara sakal, beyaz kavuk ve sorguç, kırmızı-altın kaftan. Şair ruhlu, hüzünlü bakış. Sürgünde kaftanı soluklaşır, sakalı uzar."
+    ],
+    [
+      "İkinci Bayezid",
+      "Ağabey, 1481'de 33 yaşında. Daha yaşlı ve ağırbaşlı, gür kara sakal, sade koyu yeşil kaftan, büyük beyaz kavuk. Soğukkanlı, az konuşan."
+    ],
+    [
+      "Fatih Sultan Mehmed",
+      "Yalnızca açılışta: yaşlı, hasta, ordugâh çadırında yatan padişah. Yüzü gösterilmeden de verilebilir."
+    ],
+    [
+      "Pierre d'Aubusson",
+      "Rodos Şövalyeleri'nin Üstadı. Yaşlı, beyaz sakallı, siyah cüppe üzerinde beyaz haç. Kibar ama hesapçı."
+    ],
+    [
+      "Papa VIII. Innocentius",
+      "Yaşlı, beyaz-kırmızı papalık giysisi. Vatikan salonları."
+    ],
+    [
+      "Papa VI. Alexander (Borgia)",
+      "Daha iri, sert bakışlı, kırmızı-altın giysi. Gölgeli sahneler."
+    ],
+    [
+      "Fransa Kralı VIII. Charles",
+      "Genç kral, zırh ve mavi-altın zambaklı pelerin."
+    ]
+  ],
+  "bolumler": [
+    {
+      "ad": "Napoli'de bir ölüm",
+      "sahneler": [
+        {
+          "yazi": "Şubat 1495 · Napoli",
+          "metin": "Şubat 1495. Napoli yakınlarında, yabancı bir ülkede otuz beş yaşında bir adam ölüyor. Bir Osmanlı şehzadesi. On üç yıldır vatanından uzakta, Avrupa'nın sarayları ve kaleleri arasında elden ele geçmiş bir rehine.",
+          "gorsel_tarifi": "Yağmurlu gece, İtalyan şatosunda mum ışığıyla aydınlanan dar oda. Yatakta solgun Cem; pencereden Vezüv silueti. Kamera yavaşça geri çekilir."
+        },
+        {
+          "yazi": "Bir ölü, iki soru",
+          "metin": "Ölümünden hemen sonra bir söylenti yayılıyor: zehirlenmiş. Peki bir padişah oğlu neden İtalya'da ölür? Ve onu bu odaya kim getirdi? Hikâye on dört yıl önce, bir ordugâhta başlıyor.",
+          "gorsel_tarifi": "Mum söner; duman bir haritaya dönüşür: Napoli'den İstanbul'a uzanan kesikli bir çizgi geriye doğru çizilir."
+        }
+      ]
+    },
+    {
+      "ad": "Taht yarışı",
+      "sahneler": [
+        {
+          "yazi": "3 Mayıs 1481 · Gebze",
+          "metin": "3 Mayıs 1481. Fatih Sultan Mehmed, sefer yolunda Gebze yakınlarındaki ordugâhta öldü. Geride iki oğul vardı: Amasya'da otuz üç yaşındaki Bayezid, Konya'da yirmi bir yaşındaki Cem.",
+          "gorsel_tarifi": "Gece, sessiz bir ordugâh. Büyük padişah çadırının önünde nöbetçiler; içeriden bir hekim başını eğerek çıkar. Rüzgârda sancak."
+        },
+        {
+          "yazi": "İki kardeş",
+          "metin": "İki kardeş birbirine hiç benzemiyordu. Bayezid sakin, dindar ve temkinliydi. Cem ise şiir yazan, güreşen, cesur bir gençti; anlatılana göre babasına daha çok benziyordu. Sarayda ikisinin de destekçileri vardı.",
+          "gorsel_tarifi": "Bölünmüş ekran: solda Amasya'da sessizce Kur'an okuyan Bayezid, sağda Konya'da ok atan, sonra şiir yazan Cem."
+        },
+        {
+          "yazi": "Kuralı herkes biliyor",
+          "metin": "Osmanlı'da tahtı kazanan kardeş, öbürünü yaşatmazdı. Bu yüzden bu bir taht yarışıydı. İstanbul'a ilk ulaşan, imparatorluğu ve hayatı kazanacaktı.",
+          "gorsel_tarifi": "Anadolu haritası: Amasya ve Konya'da iki ışık yanar, ikisinden İstanbul'a doğru iki çizgi uzanmaya başlar."
+        },
+        {
+          "yazi": "Yakalanan ulak",
+          "metin": "Veziriazam Karamani Mehmed Paşa, Cem'in tarafındaydı ve ona gizlice haber yolladı. Ama kaynaklara göre ulak yolda yakalandı. Haber Cem'e geç ulaştı, Bayezid'in adamlarına ise erken.",
+          "gorsel_tarifi": "Gece dağ yolunda dörtnala giden bir atlı; ağaçların arasından çıkan askerler yolu keser. Mühürlü mektup yere düşer."
+        },
+        {
+          "yazi": "Yeniçeriler",
+          "metin": "İstanbul'da yeniçeriler durumu öğrenince ayaklandı ve veziriazamı öldürdü. Bayezid 21 Mayıs'ta şehre girdi ve padişah ilan edildi. Cem yarışı daha başlamadan kaybetmişti.",
+          "gorsel_tarifi": "İstanbul sokaklarında kalabalık yeniçeriler, kazanlar ve meşaleler. Sonra Topkapı kapısından alayla giren Bayezid; kamera onun yüzünde durur."
+        }
+      ],
+      "shorts": {
+        "no": 1,
+        "kanca": "Hayal et: 1481'de padişah öldü ve iki oğlu tahta ilk ulaşmak için yarışa başladı. Kazanan imparatorluğu alacaktı, kaybedenin ne olacağı belliydi.",
+        "sahneler": [
+          "3 Mayıs 1481",
+          "Kuralı herkes biliyor",
+          "Yakalanan ulak",
+          "Yeniçeriler"
+        ],
+        "soru": "Sence Cem İstanbul'a önce varsaydı, tarih nasıl değişirdi?",
+        "baslik": [
+          "Fatih Öldü, Oğulları Yarışa Başladı 👑",
+          "Cem ile Bayezid'in Taht Yarışı 👑",
+          "1481: İki Şehzade, Tek Taht 👑"
+        ],
+        "kapak": "İLK VARAN KAZANIR"
+      }
+    },
+    {
+      "ad": "Padişahlar arasında akrabalık olmaz",
+      "sahneler": [
+        {
+          "yazi": "Bursa · Mayıs 1481",
+          "metin": "Cem pes etmedi. Konya'dan yola çıktı, İnegöl'ü aldı, karşısına çıkan kuvveti yendi ve eski başkent Bursa'ya girdi. Kaynaklara göre adına hutbe okutup para bastırdı. Anadolu'nun padişahı olduğunu ilan etti.",
+          "gorsel_tarifi": "Bursa'nın yeşil tepeleri ve Ulu Cami. Genç Cem tahta oturur, etrafında beyler. Altın bir sikkeye yakın çekim."
+        },
+        {
+          "yazi": "Teklif",
+          "metin": "Sonra ağabeyine bir teklif gönderdi: imparatorluğu ikiye bölelim. Rumeli senin, Anadolu benim. Kardeş kanı dökülmesin.",
+          "gorsel_tarifi": "Bir harita masası; Cem'in eli Boğaz'ın üzerinden geçen bir çizgi çizer. Mektup mühürlenir."
+        },
+        {
+          "yazi": "Cevap",
+          "metin": "Bayezid'in cevabı kısa oldu. Tarihe geçen söze göre: Padişahlar arasında akrabalık olmaz. Ve ordusuyla Bursa'ya yürüdü.",
+          "gorsel_tarifi": "İstanbul sarayında Bayezid mektubu okur, yavaşça katlar ve mumun alevine tutar. Arkada ordunun hazırlandığı avlu."
+        },
+        {
+          "yazi": "Yenişehir · 19 Haziran 1481",
+          "metin": "19 Haziran 1481'de iki kardeşin orduları Yenişehir ovasında karşılaştı. Cem yenildi. Ailesini de yanına alıp güneye, Memlük Sultanlığı'na kaçtı.",
+          "gorsel_tarifi": "Ova üzerinde iki ordu; toz bulutu. Sonra gün batımında küçük bir grup atlı güneye doğru uzaklaşır."
+        }
+      ],
+      "shorts": {
+        "no": 2,
+        "kanca": "Sence bir şehzade ağabeyine imparatorluğu ikiye bölmeyi teklif etse ne cevap alırdı? 1481'de Cem bunu denedi.",
+        "sahneler": [
+          "Bursa · Mayıs 1481",
+          "Teklif",
+          "Cevap",
+          "Yenişehir · 19 Haziran 1481"
+        ],
+        "soru": "Sence Bayezid haklı mıydı, imparatorluk ikiye bölünse ne olurdu?",
+        "baslik": [
+          "Padişahlar Arasında Akrabalık Olmaz 👑",
+          "Cem Sultan İmparatorluğu Bölmek İstedi 👑",
+          "Bursa'da Padişah İlan Edilen Şehzade 👑"
+        ],
+        "kapak": "İKİYE BÖLELİM"
+      }
+    },
+    {
+      "ad": "Hac yolundan şövalyelere",
+      "sahneler": [
+        {
+          "yazi": "Kahire",
+          "metin": "Kahire'de Memlük sultanı Kayıtbay onu onurla karşıladı. Cem buradan Mekke'ye gitti ve hacca gitmiş tek Osmanlı şehzadesi olarak tarihe geçti. Bayezid ona yüklü bir para teklif etti, sessizce yaşaması için. Cem reddetti.",
+          "gorsel_tarifi": "Kahire'nin minareleri, Nil kıyısında karşılama alayı. Ardından çölde kervan ve uzakta Kâbe silueti."
+        },
+        {
+          "yazi": "Çiçek Hatun",
+          "metin": "Yanında annesi Çiçek Hatun da vardı. Oğlunu Kahire'ye kadar izledi ve orada kaldı. Kaynaklara göre anne ile oğul bir daha birbirlerini görmeyecekti.",
+          "gorsel_tarifi": "Kahire'de bir avluda vedalaşan anne ve oğul; Cem atına binerken annesi kapıda kalır. Kamera annenin yüzünde durur."
+        },
+        {
+          "yazi": "İkinci deneme",
+          "metin": "1482'de Karamanoğlu Kasım Bey'le birleşip Anadolu'ya döndü ve Konya'yı kuşattı. Ama başaramadı. Yollar kapanmıştı, Mısır'a dönüş de mümkün değildi. Ağabeyinin askerleri her yerdeydi.",
+          "gorsel_tarifi": "Konya surları önünde küçük bir ordu; surlardan oklar. Sonra dağ geçidinde kapanan yollar, haritada daralan bir çember."
+        },
+        {
+          "yazi": "Kudüs teklifi",
+          "metin": "Bayezid bir kez daha teklif yaptı: Kudüs'e yerleş, sana gelir bağlayayım, sessizce yaşa. Cem yine imparatorluğun bir parçasını istedi. Ağabeyi yine reddetti. Artık gidecek bir yeri kalmamıştı.",
+          "gorsel_tarifi": "Çöl kenarında bir çadırda mektubu okuyan Cem; mektubu yavaşça yere bırakır, gözü ufka, denize doğru kayar."
+        },
+        {
+          "yazi": "Rodos · 29 Temmuz 1482",
+          "metin": "Cem son bir karar verdi. 29 Temmuz 1482'de, güvenli geçiş sözü alarak Rodos'a, Osmanlı'nın düşmanı Saint Jean Şövalyeleri'ne sığındı. Üstat Pierre d'Aubusson onu törenle karşıladı.",
+          "gorsel_tarifi": "Rodos limanı, şövalye kalesinin duvarları. Kadırgadan inen Cem; beyaz haçlı siyah cüppeli şövalyeler eğilerek selam verir."
+        },
+        {
+          "yazi": "Misafir mi, esir mi",
+          "metin": "Cem kendini misafir sanıyordu. Ama şövalyeler için o, padişaha karşı ellerindeki en değerli kozdu. Kapı arkasından kilitlendi.",
+          "gorsel_tarifi": "Kale koridorunda ilerleyen Cem; arkasından ağır bir kapı kapanır, anahtar çevrilir. Kamera anahtara yaklaşır."
+        }
+      ],
+      "shorts": {
+        "no": 3,
+        "kanca": "1482'de bir Osmanlı şehzadesi canını kurtarmak için düşmanı Rodos şövalyelerine sığındı. Sence bu hamle ona neye mal oldu?",
+        "sahneler": [
+          "Kahire",
+          "Rodos · 29 Temmuz 1482",
+          "Misafir mi, esir mi"
+        ],
+        "soru": "Sence Cem Rodos'a gitmekle hata mı yaptı, başka seçeneği var mıydı?",
+        "baslik": [
+          "Rodos Şövalyelerine Sığınan Osmanlı Şehzadesi 👑",
+          "Hacca Giden Tek Osmanlı Şehzadesi 👑",
+          "Cem Sultan Neden Rodos'a Gitti? 👑"
+        ],
+        "kapak": "MİSAFİR Mİ, ESİR Mİ"
+      }
+    },
+    {
+      "ad": "Kuledeki şehzade",
+      "sahneler": [
+        {
+          "yazi": "Gizli pazarlık",
+          "metin": "D'Aubusson hemen İstanbul'la gizli bir anlaşma yaptı. Bayezid, kardeşinin tutulması için şövalyelere her yıl on binlerce altın duka ödeyecekti. Şövalyeler de karşılığında Cem'i serbest bırakmayacaktı.",
+          "gorsel_tarifi": "Mumla aydınlanan masa; bir yanda şövalye, öbür yanda Osmanlı elçisi. Masaya bırakılan altın keseleri, imzalanan belge."
+        },
+        {
+          "yazi": "Fransa",
+          "metin": "Ekim 1482'de Cem, Macaristan'a gideceği söylenerek gemiyle Nice'e götürüldü. Bir yıl orada kaldı. Sonra şövalyeler onu Fransa'nın içlerine, d'Aubusson'un memleketi Limousin'e taşıdı.",
+          "gorsel_tarifi": "Akdeniz'de giden gemi, güvertede denize bakan Cem. Ardından Nice kıyısı, sonra yağmurlu Fransız kırsalında atlı muhafızlarla ilerleyen bir arabası."
+        },
+        {
+          "yazi": "Bourganeuf",
+          "metin": "Burada Bourganeuf kasabasında, kaynaklara göre özellikle onun için yükseltilmiş bir kuleye kondu. Cem yaklaşık beş yıl Fransa'nın şatolarında ve bu kulede yaşadı. Bu yıllarda şiirler yazdı.",
+          "gorsel_tarifi": "Sisli bir Fransız kasabasında yüksek taş kule. Pencerede mum ışığı; içeride Cem yazı masasında, önünde divit ve kâğıt."
+        },
+        {
+          "yazi": "Avrupa'nın kozu",
+          "metin": "Bu arada Avrupa'nın kralları bir planı konuşuyordu: Cem'i bir Haçlı ordusunun başına geçirip Osmanlı'ya göndermek. Macaristan kralı onu istiyordu, Papa da. Bayezid için bu, başının üzerinde sallanan bir kılıçtı.",
+          "gorsel_tarifi": "Bir Avrupa harita masası etrafında taçlı figürler; masanın ortasına küçük bir kavuklu piyon konur. Eller piyona uzanır."
+        },
+        {
+          "yazi": "Bir aşk rivayeti",
+          "metin": "Fransa yıllarından bir de aşk hikâyesi anlatılır: Savoie'da genç bir soylu kızla Cem arasında bir yakınlık doğduğu söylenir. Bu, sonraki yüzyılların romanlarına konu olmuş bir rivayettir; kesin bir kanıtı yoktur.",
+          "gorsel_tarifi": "Bahar bahçesinde uzaktan birbirine bakan iki figür; sahne hafif sisli, rüya gibi. Üzerine 'Rivayet' etiketi."
+        },
+        {
+          "yazi": "Şiirle mektup",
+          "metin": "Rivayete göre ağabeyine şöyle yazdı: Sen gül yataklarda keyifle yatarken, ben dert ocağında küller içinde yatıyorum, sebep ne? Bayezid'in cevabı da rivayet edilir: Devlet bize ezelden yazılmış, sen bu takdire razı olmuyorsun, sebep bu.",
+          "gorsel_tarifi": "Ekran ikiye bölünür: solda soğuk kulede yazan Cem, sağda sarayda okuyan Bayezid. Kâğıt bir yandan öbür yana uçar."
+        }
+      ],
+      "shorts": {
+        "no": 4,
+        "kanca": "Hayal et: bir Osmanlı şehzadesi Fransa'da sadece onun için yapılmış bir kulede yıllarca esir tutuldu. Parayı da ağabeyi ödedi.",
+        "sahneler": [
+          "Gizli pazarlık",
+          "Bourganeuf",
+          "Şiirle mektup"
+        ],
+        "soru": "Sence Bayezid kardeşini neden öldürtmedi de para ödeyip tutturdu?",
+        "baslik": [
+          "Fransa'da Kuleye Kapatılan Osmanlı Şehzadesi 👑",
+          "Kardeşini Esir Tutmak İçin Para Ödeyen Padişah 👑",
+          "Cem Sultan'ın Fransa'daki Kulesi 👑"
+        ],
+        "kapak": "PARAYLA ESİR"
+      }
+    },
+    {
+      "ad": "Papa'nın rehinesi",
+      "sahneler": [
+        {
+          "yazi": "Roma · 13 Mart 1489",
+          "metin": "Avrupa'nın kralları bu rehineyi istiyordu. Sonunda Papa Sekizinci Innocentius kazandı. Cem 13 Mart 1489'da Roma'ya törenle getirildi. Kâğıt üstünde onurlu bir konuktu.",
+          "gorsel_tarifi": "Roma sokaklarında kalabalık; atlı alay içinde kavuklu Cem. Vatikan'da Papa'nın huzuruna çıkış; Cem eğilmeden durur."
+        },
+        {
+          "yazi": "Altın kafes",
+          "metin": "Cem Vatikan'da bir dairede yaşadı. Ava çıkmasına, müzik dinlemesine izin veriliyordu, ama asla yalnız bırakılmıyordu. Kaynaklara göre Papa onu Hristiyan yapmaya da çalıştı. Cem reddetti.",
+          "gorsel_tarifi": "Vatikan'ın freskli bir salonunda kanun çalan bir müzisyen, pencere önünde oturan Cem; kapıda iki muhafız. Sonra Papa'nın uzattığı haçı Cem'in nazikçe geri itmesi."
+        },
+        {
+          "yazi": "Papa'ya ödenen para",
+          "metin": "Bayezid bu kez parayı Papa'ya ödemeye başladı: her yıl kırk bin duka. Karşılığında Cem tutulacak, Osmanlı'ya karşı kullanılmayacaktı. Rehine, iki taraf için de bir sigortaydı.",
+          "gorsel_tarifi": "Vatikan hazinesine sayılan altınlar. Pencereden bakan Cem; dışarıda Roma'nın kubbeleri."
+        },
+        {
+          "yazi": "Fresk",
+          "metin": "Bir rivayete göre Vatikan'daki Borgia dairelerinde ressam Pinturicchio'nun yaptığı bir freskte kavuklu bir atlı vardır ve bu figürün Cem olduğu söylenir. Rehine, sarayın duvarlarına bile girmişti.",
+          "gorsel_tarifi": "Renkli bir Rönesans freskinin üzerinde kamera gezinir; kalabalığın içinde beyaz kavuklu bir atlıda durur."
+        },
+        {
+          "yazi": "Borgia",
+          "metin": "1492'de Papalığa Borgia ailesinden Altıncı Alexander geçti. 1494'te Fransa Kralı Sekizinci Charles İtalya'ya girdi ve Papa'yı Cem'i teslim etmeye zorladı. Cem Ocak 1495'te Fransız ordusuyla Roma'dan çıkarıldı.",
+          "gorsel_tarifi": "Karanlık bir salonda Papa Alexander; kapıdan zırhlı Fransız askerleri girer. Kış yolunda Fransız ordusu, aralarında atlı ve hasta görünümlü Cem."
+        },
+        {
+          "yazi": "Son",
+          "metin": "Birkaç hafta sonra, Şubat 1495'te, Napoli Krallığı'nda öldü. Hemen zehirlendiği söylendi, parmaklar Papa'yı gösterdi. Ama bu kanıtlanamadı; bir hastalıktan ölmüş olması da mümkün. Tarihçiler hâlâ tartışıyor.",
+          "gorsel_tarifi": "Açılıştaki odaya dönüş: Napoli'de mum ışığında yatan Cem. Kapıda fısıldaşan iki gölge. Kamera boş bir kadehe yaklaşır."
+        }
+      ],
+      "shorts": {
+        "no": 5,
+        "kanca": "1489'da bir Osmanlı şehzadesi Roma'ya getirildi ve Papa'nın en değerli rehinesi oldu. Sence bu oyun nasıl bitti?",
+        "sahneler": [
+          "Roma · 13 Mart 1489",
+          "Papa'ya ödenen para",
+          "Son"
+        ],
+        "soru": "Sence Cem Sultan zehirlendi mi, yoksa hastalıktan mı öldü?",
+        "baslik": [
+          "Papa'nın Rehinesi Olan Osmanlı Şehzadesi 👑",
+          "Cem Sultan Zehirlendi mi? 👑",
+          "Roma'da Esir Bir Osmanlı Şehzadesi 👑"
+        ],
+        "kapak": "ZEHİR Mİ?"
+      }
+    },
+    {
+      "ad": "Bursa'ya dönüş",
+      "sahneler": [
+        {
+          "yazi": "Dört yıl",
+          "metin": "Bayezid üç gün yas ilan etti ve kardeşinin cenazesini istedi. Ama cenaze de bir pazarlık konusu oldu. Cem'in bedeni ancak yaklaşık dört yıl sonra Osmanlı topraklarına ulaştı.",
+          "gorsel_tarifi": "Kurşun bir tabutun gemiye yüklenmesi. Gemi sisli bir denizde uzaklaşır."
+        },
+        {
+          "yazi": "İki divan",
+          "metin": "Geride Türkçe ve Farsça iki divan bıraktı. Gurbet ve kader üzerine yazdığı şiirler, onun hikâyesini ağabeyinin zaferlerinden daha uzun yaşattı.",
+          "gorsel_tarifi": "Eski bir divan sayfası açılır; mürekkepli satırlar rüzgârda yapraklara dönüşüp uçar."
+        },
+        {
+          "yazi": "Muradiye",
+          "metin": "Bugün Bursa'da, Muradiye Külliyesi'nde yatıyor. Ömrünün son on üç yılını sürgünde geçiren şehzade, sonunda bir zamanlar padişah ilan edildiği şehre döndü.",
+          "gorsel_tarifi": "Bursa Muradiye'de çinili türbe; içeri vuran gün ışığı sandukanın üzerine düşer. Kamera yavaşça yükselir, Bursa'ya bakar."
+        }
+      ]
+    }
+  ]
+}
