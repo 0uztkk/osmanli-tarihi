@@ -181,8 +181,8 @@ def main():
         tl.append(f'tl.fromTo("#ay", {{y:30, autoAlpha:0}}, {{y:0, autoAlpha:1, duration:0.35, ease:"power2.out"}}, {t:.2f});')
     tl.append('tl.fromTo("#takvim", {autoAlpha:0, x:-60}, {autoAlpha:1, x:0, duration:0.6, ease:"power3.out"}, 1.6);')
     gec = lambda s: round(YURU[0] + (YURU[1] - YURU[0]) * oran(osm, xy(*SEHIR[s])), 2)
-    notlar = [(2.2, "Kanuni İstanbul'dan yola çıkıyor"), (gec("Belgrad") - 0.3, "Belgrad'dan Tuna boyunca kuzeye"),
-              (9.4, "Macar ordusu Budin'den iniyor"), (12.6, "Mohaç ovası")]
+    notlar = [(2.2, "Kanuni İstanbul'dan yola çıkıyor"), (5.4, "Balkanlar'dan Belgrad'a, Tuna'ya"),
+              (9.6, "Macar ordusu Budin'den iniyor"), (12.6, "Mohaç ovası")]
     for i, (t, m) in enumerate(notlar):
         tl.append(f'tl.fromTo("#not{i}", {{autoAlpha:0, y:40}}, {{autoAlpha:1, y:0, duration:0.45, ease:"power3.out"}}, {t});')
         son = notlar[i + 1][0] - 0.2 if i + 1 < len(notlar) else CARP - 0.1
