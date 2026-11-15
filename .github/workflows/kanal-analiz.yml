@@ -1,0 +1,57 @@
+name: Kanal analizi
+
+# İzlenme analizi ve eski Shorts kapakları. Rapor Actions özetine ve kanal-analiz dalına yazılır;
+# her çalıştırma tarihli bir anlık görüntü bırakır, böylece sonraki raporlar önce/sonra kıyaslayabilir.
+on:
+  schedule:
+    - cron: "23 6 * * 1"   # her pazartesi 09:23 (TR)
+  workflow_dispatch:
+    inputs:
+      kapak:
+        description: "Eski Shorts kapakları: yok / onizle (sadece üret) / uygula (YouTube'da ayarla)"
+        default: "yok"
+
+permissions:
+  contents: write
+
+jobs:
+  analiz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Araçları kur
+        if: github.event.inputs.kapak == 'onizle' || github.event.inputs.kapak == 'uygula'
+        timeout-minutes: 15
+        run: bash .github/scripts/araclari_kur.sh
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Eski Shorts kapakları
+        if: github.event.inputs.kapak == 'onizle' || github.event.inputs.kapak == 'uygula'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          UYGULA: ${{ github.event.inputs.kapak == 'uygula' && '1' || '' }}
+        run: python osmanli/araclar/eski_kapaklar.py
+      - name: İzlenme analizi
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python osmanli/araclar/kanal_analizi.py
+      - name: Raporu kanal-analiz dalına koy
+        run: |
+          D=/tmp/analiz
+          if git fetch -q origin kanal-analiz 2>/dev/null; then
+            git worktree add -q $D FETCH_HEAD
+            cd $D && git checkout -q -B kanal-analiz
+          else
+            mkdir -p $D && cd $D && git init -q -b kanal-analiz
+          fi
+          cp -r $GITHUB_WORKSPACE/out/analiz/. $D/
+          git -c user.name=analiz -c user.email=analiz@users.noreply.github.com add -A
+          git -c user.name=analiz -c user.email=analiz@users.noreply.github.com commit -q -m "Analiz ${{ github.run_id }}" || true
+          git push -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" kanal-analiz
