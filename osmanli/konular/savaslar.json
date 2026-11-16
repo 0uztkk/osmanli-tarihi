@@ -5545,5 +5545,375 @@
       "fatih sultan mehmed"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "sinop-1853",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Sinop Baskını 1853: Birkaç Saatte Yanan Donanma ⚔️",
+      "Kırım Savaşı'nın Fitili: Sinop Baskını 1853 ⚔️",
+      "Sinop Limanında Yanan Filo ve Osman Paşa ⚔️"
+    ],
+    "kapak": "TEK GEMİ KAÇTI",
+    "kanca": "30 Kasım 1853'te Sinop limanındaki Osmanlı filosu birkaç saat içinde neredeyse tamamen yok edildi. Sence bu baskın neden Avrupa'yı savaşa soktu?",
+    "kanca_gorsel": [
+      "-"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Kasım 1853",
+        "metin": "Osmanlı ile Rusya savaştaydı. Osman Paşa komutasındaki bir Osmanlı filosu, kötü havadan korunmak için Sinop limanına sığınmıştı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "kaydir",
+          "cizgi": "kesikli",
+          "merkez": [
+            34.3,
+            43.3
+          ],
+          "genislik": 6,
+          "zoom": 1.08,
+          "etiketler": [
+            {
+              "ad": "Sivastopol",
+              "lon": 33.52,
+              "lat": 44.6,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Sinop",
+              "lon": 35.15,
+              "lat": 42.03,
+              "yan": "sag",
+              "bas": 0.5
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  33.52,
+                  44.45
+                ],
+                [
+                  33.9,
+                  43.8
+                ],
+                [
+                  34.5,
+                  43.0
+                ],
+                [
+                  35.0,
+                  42.3
+                ],
+                [
+                  35.1,
+                  42.08
+                ]
+              ],
+              "taraf": "dusman",
+              "gemi": 3,
+              "bas": 0.05,
+              "bit": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "30 Kasım",
+        "metin": "Amiral Nahimov'un gemileri limana girdi. Rus topları patlayıcı mermiler atıyordu ve ahşap Osmanlı gemileri hızla alev aldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Sinop · 30 Kasım 1853",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                1320
+              ],
+              "wh": [
+                520,
+                200
+              ],
+              "taraf": "osmanli",
+              "etiket": "Osmanlı filosu",
+              "etiket_ust": false
+            },
+            {
+              "xy": [
+                540,
+                520
+              ],
+              "hedef": [
+                540,
+                900
+              ],
+              "wh": [
+                440,
+                180
+              ],
+              "taraf": "dusman",
+              "etiket": "Nahimov",
+              "bas": 0.1,
+              "bit": 0.55
+            }
+          ],
+          "toplar": [
+            {
+              "xy": [
+                300,
+                950
+              ],
+              "bas": 0.5
+            },
+            {
+              "xy": [
+                780,
+                950
+              ],
+              "bas": 0.58
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              1120
+            ],
+            "bas": 0.7
+          }
+        }
+      },
+      {
+        "yazi": "Taif",
+        "metin": "Saatler içinde filonun neredeyse tamamı battı ya da yandı. Yalnızca Taif vapuru kaçıp haberi İstanbul'a ulaştırdı. Yaralı Osman Paşa esir düştü.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "Mart 1854",
+        "metin": "Haber Londra ve Paris'te büyük öfke yarattı. Mart 1854'te İngiltere ve Fransa, Osmanlı'nın yanında Rusya'ya savaş açtı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gunbatimi",
+          "yil": "1854",
+          "aylar": [
+            "Mart"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Kırım Savaşı büyüdü"
+        }
+      }
+    ],
+    "soru": "Sence Sinop baskını olmasaydı İngiltere ve Fransa yine de savaşa girer miydi?",
+    "etiketler": [
+      "sinop baskını",
+      "kırım savaşı",
+      "osman paşa",
+      "1853"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "egri-1552",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Eğri Kuşatması 1552: Osmanlı'nın Alamadığı Kale ⚔️",
+      "Eğri Kalesi 1552: Kırk Güne Yakın Süren Kuşatma ⚔️",
+      "Kara Ahmed Paşa ve Eğri Kalesi'nin Direnişi ⚔️"
+    ],
+    "kapak": "SURLAR DAYANDI",
+    "kanca": "1552'de büyük bir Osmanlı ordusu, iki bin kişinin savunduğu bir kalenin önünde kırk güne yakın bekledi ve geri döndü. Sence Eğri'yi ne kurtardı?",
+    "kanca_gorsel": [
+      "-"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1552 seferi",
+        "metin": "1552'de Kara Ahmed Paşa ve Budin beylerbeyi Ali Paşa, Macaristan'da birçok kaleyi aldı. Sıra kuzeydeki Eğri'ye geldi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "uzaklas",
+          "cizgi": "kalin",
+          "bulut": true,
+          "merkez": [
+            19.9,
+            47.4
+          ],
+          "genislik": 4.5,
+          "zoom": 1.06,
+          "etiketler": [
+            {
+              "ad": "Budin",
+              "lon": 19.04,
+              "lat": 47.5,
+              "yan": "sol",
+              "bas": 0.05
+            },
+            {
+              "ad": "Eğri",
+              "lon": 20.38,
+              "lat": 47.9,
+              "yan": "sag",
+              "bas": 0.5
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  19.04,
+                  47.5
+                ],
+                [
+                  19.6,
+                  47.6
+                ],
+                [
+                  20.0,
+                  47.75
+                ],
+                [
+                  20.36,
+                  47.88
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.05,
+              "bit": 0.55
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Dobó",
+        "metin": "Kaleyi István Dobó komutasında yaklaşık iki bin asker savunuyordu. Karşılarındaki ordu kat kat kalabalıktı.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "Hücumlar",
+        "metin": "Toplar surlarda gedikler açtı, lağımlar kazıldı. Ama her hücum geri püskürtüldü. Macar anlatılarına göre kadınlar da surlarda savaştı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Eğri · 1552",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                700
+              ],
+              "wh": [
+                480,
+                300
+              ],
+              "taraf": "dusman",
+              "etiket": "Eğri Kalesi"
+            },
+            {
+              "xy": [
+                540,
+                1500
+              ],
+              "hedef": [
+                540,
+                1080
+              ],
+              "wh": [
+                460,
+                200
+              ],
+              "taraf": "osmanli",
+              "etiket": "Kara Ahmed Paşa",
+              "etiket_ust": false,
+              "bas": 0.15,
+              "bit": 0.6
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                200,
+                1400
+              ],
+              "son_xy": [
+                300,
+                920
+              ],
+              "taraf": "osmanli",
+              "bas": 0.35
+            },
+            {
+              "bas_xy": [
+                880,
+                1400
+              ],
+              "son_xy": [
+                780,
+                920
+              ],
+              "taraf": "osmanli",
+              "bas": 0.42
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              880
+            ],
+            "bas": 0.72
+          }
+        }
+      },
+      {
+        "yazi": "Geri dönüş",
+        "metin": "Ekim'de kış yaklaşırken kuşatma kaldırıldı. Eğri ancak 1596'da, Üçüncü Mehmed'in seferinde Osmanlı'ya geçti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "1552",
+          "aylar": [
+            "Eylül",
+            "Ekim"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Kuşatma kalktı"
+        }
+      }
+    ],
+    "soru": "Sence Eğri'yi surlar mı kurtardı, yoksa yaklaşan kış mı?",
+    "etiketler": [
+      "eğri kuşatması",
+      "kara ahmed paşa",
+      "macaristan",
+      "1552"
+    ],
+    "stil": "animasyon"
   }
 ]

@@ -1,0 +1,727 @@
+{
+  "id": "tepedelenli-ali-pasa-1822",
+  "stil": "animasyon",
+  "baslik": [
+    "Tepedelenli Ali Paşa: Sultana Kafa Tutan Yanya Valisi",
+    "Yanya Aslanı Tepedelenli: II. Mahmud'a Karşı İki Yıl",
+    "Tepedelenli Ali Paşa 1822: Göldeki Adada Son Gece"
+  ],
+  "kapak": "FİTİL ELİNDE",
+  "kanca": "Hayal et: Seksen yaşlarında bir paşa, barut deposunun başında sultanın ordusunu bekliyor. Teslim olursa ölecek, ama kaleyi havaya uçurmaya hazır. İki yıl direnen Yanya Aslanı Tepedelenli Ali Paşa sonunda nasıl düştü?",
+  "kanca_gorsel": [
+    "File:Mahmud II by John Young.jpg"
+  ],
+  "bolumler": [
+    {
+      "ad": "Barut deposundaki yaşlı paşa",
+      "sahneler": [
+        {
+          "yazi": "Ocak 1822",
+          "metin": "Ocak 1822, Yanya. Şehrin kalesi aylardır kuşatma altında. İçeride seksen yaşlarında bir paşa, son adamlarıyla barut deposunun yanında bekliyor. Kaynaklara göre bir adamına emir vermişti: Ali Paşa'dan haber gelmezse barut ateşlenecekti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "yaklas",
+            "merkez": [
+              20.87,
+              39.67
+            ],
+            "genislik": 0.6,
+            "zoom": 1.08,
+            "odak": [
+              20.85,
+              39.668
+            ],
+            "baslik": {
+              "ust": "Yanya",
+              "alt": "Ocak 1822",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Yanya Kalesi",
+                "lon": 20.85,
+                "lat": 39.668,
+                "yan": "sol",
+                "bas": 0.1
+              },
+              {
+                "ad": "Göldeki ada",
+                "lon": 20.889,
+                "lat": 39.676,
+                "yan": "sag",
+                "bas": 0.35
+              }
+            ],
+            "vurgu": {
+              "lon": 20.85,
+              "lat": 39.668,
+              "bas": 0.3,
+              "renk": [
+                255,
+                140,
+                60
+              ]
+            },
+            "damga": {
+              "yazi": "Barut deposu",
+              "lon": 20.85,
+              "lat": 39.668,
+              "bas": 0.6,
+              "tip": "muhur",
+              "dx": -300,
+              "dy": 180
+            }
+          }
+        },
+        {
+          "yazi": "Pazarlık",
+          "metin": "Dışarıda sultanın komutanı Hurşid Ahmed Paşa var. Ali Paşa, depoyu silah gibi kullanarak pazarlık ediyor. Sonunda kaleden çıkıp göldeki küçük adaya geçmeyi kabul ediyor. Bu, hayatının son pazarlığı olacak.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Yanya Aslanı",
+          "metin": "Bu adam, kırk yılı aşkın süre Osmanlı'nın batı ucunu neredeyse bir hükümdar gibi yönetti. Avrupa onu Yanya Aslanı diye tanıyordu. Peki bir dağ köyünden çıkan biri buraya nasıl geldi?",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Dağ geçitlerinin beyi",
+      "sahneler": [
+        {
+          "yazi": "Tepedelen",
+          "metin": "Ali, 1740 dolaylarında Tepedelen'de doğdu. Babası küçük bir yerel beydi ve Ali çocukken öldürüldü. Kaynaklara göre ailenin ayakta kalmasında annesi Hamko'nun sert iradesi büyük rol oynadı.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Eşkıya ile devlet arası",
+          "metin": "Genç Ali, dağlarda eşkıyalıkla devlet hizmeti arasında gidip gelen bir hayat yaşadı. Bir gün eşkıya kovalıyor, ertesi gün onlarla anlaşıyordu. Bu ikili oyun ona hem adam hem de para kazandırdı. Rakip beyleri birer birer saf dışı bıraktı, bazen savaşla, bazen evlilik ve ittifakla.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Yükseliş",
+          "metin": "Devlet onu dağ yollarını koruyan derbentler başbuğu yaptı. 1788 dolaylarında Yanya'nın yönetimini ele geçirdi. Oğulları da zamanla çevredeki sancaklara ve Mora'ya vali oldu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Ali'nin yükselişi",
+            "ogeler": [
+              "Tepedelen",
+              "Derbentler başbuğu",
+              "Yanya · 1788",
+              "Yanya Aslanı"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Napolyon'a karşı Preveze",
+      "sahneler": [
+        {
+          "yazi": "Yanya sarayı",
+          "metin": "Yanya'da kendi sarayını, kendi ordusunu ve kendi hazinesini kurdu. İstanbul'a vergisini gönderiyor, sadakatini bildiriyor, ama bölgede istediğini yapıyordu. Yollar güvenliydi, ticaret canlıydı, ama muhaliflerine karşı son derece sertti. Yanya, onun zamanında bölgenin en kalabalık ve zengin şehirlerinden biri oldu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Fransızlar",
+          "metin": "1797'de Venedik yıkılınca, kıyıdaki eski Venedik kasabaları Fransızların eline geçti. Preveze de bunlardan biriydi. Ali Paşa bu kasabaları kendi topraklarına katmak istiyordu. Bir yandan da Fransızlarla mektuplaşıyor, rüzgârın nereden eseceğini kolluyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Ekim 1798",
+          "metin": "Osmanlı, Napolyon'un Mısır'a çıkmasının ardından Fransa'ya savaş açınca fırsat doğdu. Ekim 1798'de Ali Paşa'nın askerleri Preveze yakınında Fransız birliğini yendi ve kasabaya girdi. Bu zafer, İstanbul'un gözünde onun değerini artırdı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Preveze · Ekim 1798",
+            "birlikler": [
+              {
+                "xy": [
+                  560,
+                  600
+                ],
+                "wh": [
+                  300,
+                  220
+                ],
+                "taraf": "dusman",
+                "etiket": "Fransızlar",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  1550,
+                  600
+                ],
+                "hedef": [
+                  980,
+                  600
+                ],
+                "wh": [
+                  420,
+                  280
+                ],
+                "taraf": "osmanli",
+                "etiket": "Ali Paşa",
+                "bas": 0.15,
+                "bit": 0.6
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  1500,
+                  380
+                ],
+                "son_xy": [
+                  820,
+                  420
+                ],
+                "taraf": "osmanli",
+                "bas": 0.35
+              },
+              {
+                "bas_xy": [
+                  1500,
+                  820
+                ],
+                "son_xy": [
+                  820,
+                  780
+                ],
+                "taraf": "osmanli",
+                "bas": 0.42
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                740,
+                600
+              ],
+              "bas": 0.72
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Lord Byron'ın ünlü ev sahibi",
+      "sahneler": [
+        {
+          "yazi": "Ekim 1809",
+          "metin": "Ekim 1809'da genç İngiliz şair Lord Byron, Tepedelen'de Ali Paşa'nın konuğu oldu. Paşa onu nazikçe ağırladı ve bir babaya yakışır ilgiyle konuştu. Byron bu yolculuğu sonradan ünlü şiiri Childe Harold'da anlattı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gunbatimi",
+            "yil": "1809",
+            "aylar": [
+              "Ekim"
+            ],
+            "cevir_bit": 0.5,
+            "rozet": "Byron geldi"
+          }
+        },
+        {
+          "yazi": "Bir mektup",
+          "metin": "Byron annesine yazdığı mektupta paşanın kibar tavrını anlattı. Ama aynı mektupta onun acımasız bir hükümdar olarak tanındığını da ekledi. Ali Paşa iki yüzlü bir ün taşıyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Avrupa'nın gözü",
+          "metin": "İngilizler, Fransızlar ve Ruslar Yanya'ya elçiler gönderdi. Ali Paşa onlarla İstanbul'u araya koymadan görüşüyordu. 1819'da İngilizlerden kıyıdaki Parga'yı da aldı. Gücü artık bir valininkini çok aşmıştı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "İstanbul'da bir suikast",
+      "sahneler": [
+        {
+          "yazi": "İkinci Mahmud",
+          "metin": "İstanbul'da tahtta İkinci Mahmud vardı. Genç sultan, merkezden kopan güçlü valileri tek tek devletin denetimine almak istiyordu. Listenin başında Ali Paşa vardı. Ama böyle bir adama dokunmak için bir bahane gerekiyordu.",
+          "gorsel": [
+            "File:Mahmud II by John Young.jpg"
+          ]
+        },
+        {
+          "yazi": "Şubat 1820",
+          "metin": "1820'de İstanbul'da, Ali Paşa'nın eski adamı ve sonra düşmanı olan İsmail Paşo Bey'e suikast girişiminde bulunuldu. Girişimin arkasında Ali Paşa'nın olduğu düşünüldü. Bu, sultan için son damla oldu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Ferman",
+          "metin": "İkinci Mahmud, Ali Paşa'yı görevlerinden aldı ve asi ilan etti. Fermanın arkasından Yanya'ya bir ordu yola çıktı. Yaşlı paşa teslim olmak yerine savaşmayı seçti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "uzaklas",
+            "cizgi": "kesikli",
+            "merkez": [
+              24.9,
+              40.4
+            ],
+            "genislik": 11,
+            "zoom": 1.06,
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "Yanya",
+                "lon": 20.85,
+                "lat": 39.67,
+                "yan": "sag",
+                "bas": 0.5
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.98,
+                    41.01
+                  ],
+                  [
+                    26.5,
+                    41.2
+                  ],
+                  [
+                    24.5,
+                    40.9
+                  ],
+                  [
+                    22.9,
+                    40.6
+                  ],
+                  [
+                    21.6,
+                    40.0
+                  ],
+                  [
+                    20.85,
+                    39.67
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ],
+            "damga": {
+              "yazi": "Asi ilan edildi",
+              "lon": 20.85,
+              "lat": 39.67,
+              "bas": 0.65,
+              "tip": "ferman",
+              "dx": 360,
+              "dy": 140
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Yanya surlarında iki yıl",
+      "sahneler": [
+        {
+          "yazi": "Ağustos 1820",
+          "metin": "1820 yazında sultanın askerleri Yanya önüne geldi. Kaynaklara göre Ali Paşa, düşman barınmasın diye şehrin bir bölümünü yaktırdı ve kaleye kapandı. Birçok adamı ise onu bırakıp sultanın tarafına geçti.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Kuşatma",
+          "metin": "Kale sağlamdı, içeride erzak ve barut boldu. Toplar aylarca sustu, sonra yeniden konuştu. Kuşatma, İstanbul'un sandığından çok daha uzun sürdü. Ali Paşa, hazinesinin bir kısmını adamlarını elinde tutmak için harcıyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Yanya Kalesi · 1820–1822",
+            "birlikler": [
+              {
+                "xy": [
+                  960,
+                  560
+                ],
+                "wh": [
+                  460,
+                  360
+                ],
+                "taraf": "dusman",
+                "etiket": "Ali Paşa",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  300,
+                  560
+                ],
+                "hedef": [
+                  560,
+                  560
+                ],
+                "wh": [
+                  220,
+                  300
+                ],
+                "taraf": "osmanli",
+                "etiket": "Sultanın ordusu",
+                "bas": 0.15,
+                "bit": 0.55
+              },
+              {
+                "xy": [
+                  1620,
+                  560
+                ],
+                "hedef": [
+                  1360,
+                  560
+                ],
+                "wh": [
+                  220,
+                  300
+                ],
+                "taraf": "osmanli",
+                "bas": 0.2,
+                "bit": 0.6
+              }
+            ],
+            "toplar": [
+              {
+                "xy": [
+                  520,
+                  360
+                ],
+                "bas": 0.45
+              },
+              {
+                "xy": [
+                  1400,
+                  360
+                ],
+                "bas": 0.55
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                730,
+                560
+              ],
+              "bas": 0.75
+            }
+          }
+        },
+        {
+          "yazi": "Hurşid Paşa",
+          "metin": "1821'de komuta, Mora valisi Hurşid Ahmed Paşa'ya verildi. Hurşid, askerlerinin büyük bölümünü Mora'dan alıp Yanya'ya getirdi. Bu karar, kimsenin beklemediği bir sonuç doğuracaktı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Mora'da başlayan isyan",
+      "sahneler": [
+        {
+          "yazi": "Mart 1821",
+          "metin": "Mart 1821'de Mora'da Rum isyanı başladı. Bölgedeki Osmanlı kuvvetlerinin önemli bir kısmı Yanya'da olduğu için isyan hızla yayıldı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "uzaklas",
+            "cizgi": "akan",
+            "bulut": true,
+            "merkez": [
+              21.6,
+              38.6
+            ],
+            "genislik": 7,
+            "zoom": 1.1,
+            "etiketler": [
+              {
+                "ad": "Yanya",
+                "lon": 20.85,
+                "lat": 39.67,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Mora",
+                "lon": 21.7,
+                "lat": 37.65,
+                "yan": "sag",
+                "bas": 0.3,
+                "tip": "bolge"
+              },
+              {
+                "ad": "Tripoliçe",
+                "lon": 22.37,
+                "lat": 37.51,
+                "yan": "sag",
+                "bas": 0.5
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    22.37,
+                    37.51
+                  ],
+                  [
+                    21.9,
+                    38.1
+                  ],
+                  [
+                    21.5,
+                    38.7
+                  ],
+                  [
+                    21.1,
+                    39.2
+                  ],
+                  [
+                    20.85,
+                    39.62
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.45
+              }
+            ],
+            "vurgu": {
+              "lon": 22.37,
+              "lat": 37.51,
+              "bas": 0.5,
+              "renk": [
+                255,
+                140,
+                60
+              ]
+            }
+          }
+        },
+        {
+          "yazi": "Bağlantı",
+          "metin": "Ali Paşa'nın isyancılarla haberleştiği, onları kışkırttığı da ileri sürüldü. Bu iddianın ne kadar doğru olduğu tarihçiler arasında hâlâ tartışılıyor. Kesin olan, iki olayın birbirini beslediğiydi. Biri bitmeden öteki büyümeye başlamıştı.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Ekim 1821",
+          "metin": "Ekim 1821'de Mora'nın merkezi Tripoliçe isyancıların eline geçti. Hurşid Paşa'nın ailesi ve hazinesi de oradaydı. Şehrin düşüşü kanlı oldu, binlerce kişi hayatını kaybetti. Yanya'daki kuşatma, imparatorluğa beklenenden çok daha pahalıya patlıyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gece",
+            "yil": "1821",
+            "aylar": [
+              "Mart",
+              "Ekim"
+            ],
+            "cevir_bit": 0.55,
+            "rozet": "Mora karıştı"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Gölün ortasındaki manastır",
+      "sahneler": [
+        {
+          "yazi": "Ada",
+          "metin": "Ocak 1822'de Ali Paşa, kaleden göldeki adaya, küçük bir manastıra geçti. Gölün suları adayı kaleden ayırıyordu. Kaynaklara göre sultanın affını bekliyordu. Barut deposundaki adamına ise yalnızca kendi işaretiyle teslim olmasını söylemişti.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "İşaret",
+          "metin": "Rivayete göre o işaret bir şekilde ele geçirildi ve depodaki adam teslim oldu. Ali Paşa'nın son pazarlık kozu böylece elinden çıktı. Artık adada birkaç adamıyla yalnızdı.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "24 Ocak 1822",
+          "metin": "24 Ocak 1822'de sultanın adamları adaya geldi. Ali Paşa teslim olmadı ve çatışma çıktı. Anlatılana göre manastırın döşemesinin altından açılan ateşle vuruldu. Seksen yaşını geçmiş paşa orada öldü. Kuşatma, iki yıla yakın bir sürenin ardından böyle bitti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "kaydir",
+            "cizgi": "kalin",
+            "merkez": [
+              20.875,
+              39.672
+            ],
+            "genislik": 0.45,
+            "zoom": 1.08,
+            "etiketler": [
+              {
+                "ad": "Yanya Kalesi",
+                "lon": 20.85,
+                "lat": 39.668,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "Manastır",
+                "lon": 20.889,
+                "lat": 39.676,
+                "yan": "sag",
+                "bas": 0.3
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    20.85,
+                    39.668
+                  ],
+                  [
+                    20.865,
+                    39.672
+                  ],
+                  [
+                    20.878,
+                    39.675
+                  ],
+                  [
+                    20.887,
+                    39.676
+                  ]
+                ],
+                "taraf": "osmanli",
+                "gemi": 1,
+                "boy": 50,
+                "bas": 0.1,
+                "bit": 0.5
+              }
+            ],
+            "damga": {
+              "yazi": "24 Ocak 1822",
+              "lon": 20.889,
+              "lat": 39.676,
+              "bas": 0.6,
+              "tip": "murekkep",
+              "dx": 320,
+              "dy": 160
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Kesik baş ve bir roman",
+      "sahneler": [
+        {
+          "yazi": "Bab-ı Hümayun",
+          "metin": "Ali Paşa'nın başı İstanbul'a gönderildi ve Topkapı Sarayı'nın kapısında, suçlarını yazan bir levhayla halka gösterildi. Oğulları da kısa süre sonra öldürüldü. Hazinesinin akıbeti ise yıllarca efsanelere konu oldu.",
+          "gorsel": [
+            "File:Vue de la première Porte du Sérai appellée Babi-Humayun - Choiseul-gouffier Gabriel Florent Auguste De - 1822.jpg"
+          ]
+        },
+        {
+          "yazi": "İki mezar",
+          "metin": "Başı, oğullarınınkilerle birlikte İstanbul'da Silivrikapı dışında gömüldü. Bedeni ise Yanya'da, kalenin içinde toprağa verildi. Yanya Aslanı'nın iki ayrı mezarı oldu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Monte Kristo",
+          "metin": "Hikâyesi Avrupa'da da yaşadı. Alexandre Dumas, Monte Kristo Kontu romanında Yanya paşasını ve ona ihanet edilmesini olay örgüsüne kattı. Romandaki Haydée, o paşanın kızı olarak anlatılır.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Tepedelenli'nin yolu",
+            "ogeler": [
+              "Tepedelen · 1740'lar",
+              "Yanya · 1788",
+              "Asi · 1820",
+              "Ada · 1822",
+              "Monte Kristo · 1844"
+            ]
+          }
+        },
+        {
+          "yazi": "Bir vali",
+          "metin": "Bir dağ köyünden çıkan çocuk, kırk yılda sultana kafa tutan bir valiye dönüştü. Onu deviren savaş ise imparatorluğa beklenmedik bir bedel ödetti: Mora'daki isyan büyüdü ve birkaç yıl sonra yeni bir devlet doğdu.",
+          "gorsel": [
+            "File:Portrait of Sultan Mahmud II of Turkey.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Tepedelenli Ali Paşa'yı yıkmak İkinci Mahmud için doğru karar mıydı, yoksa pahalı bir hata mı? Yorumlarda yaz.",
+  "etiketler": [
+    "tepedelenli ali paşa",
+    "yanya",
+    "ikinci mahmud",
+    "osmanlı tarihi",
+    "hurşid ahmed paşa",
+    "lord byron",
+    "1822",
+    "yanya aslanı",
+    "monte kristo kontu"
+  ]
+}

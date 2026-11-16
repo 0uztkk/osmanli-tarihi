@@ -4269,5 +4269,241 @@
       "sadrazam"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "cezayirli-hasan-pasa",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Cezayirli Gazi Hasan Paşa ve Evcil Aslanı 👑",
+      "Aslanıyla Gezen Kaptan-ı Derya: Cezayirli Hasan 👑",
+      "Cezayirli Hasan Paşa: Çeşme'den Limni'ye Bir Kaptan 👑"
+    ],
+    "kapak": "ATEŞTEN SAĞ ÇIKTI",
+    "kanca": "Hayal et: Bir Osmanlı kaptanı İstanbul'da yanında evcil bir aslanla dolaşıyor. Sence bu adam 1770'te donanmanın yandığı geceden nasıl sağ çıktı?",
+    "kanca_gorsel": [
+      "File:Jacob Philipp Hackert Chesma Burning.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Çeşme 1770",
+        "metin": "1770'te Rus donanması Çeşme limanında Osmanlı donanmasını yaktı. Hasan, savaşan kaptanlar arasındaydı ve yaralı olarak kurtuldu.",
+        "gorsel": [
+          "File:Ivan Constantinovich Aivazovsky - Battle of Çesme at Night.JPG"
+        ]
+      },
+      {
+        "yazi": "Limni",
+        "metin": "Aynı yıl Ruslar Limni adasındaki kaleyi kuşatıyordu. Hasan topladığı gönüllülerle adaya çıktı ve kuşatmayı kaldırttı. Gazi unvanı buradan geldi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "yaklas",
+          "cizgi": "kalin",
+          "merkez": [
+            25.9,
+            40.0
+          ],
+          "genislik": 2.6,
+          "zoom": 1.08,
+          "odak": [
+            25.3,
+            39.9
+          ],
+          "etiketler": [
+            {
+              "ad": "Çanakkale",
+              "lon": 26.4,
+              "lat": 40.15,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Limni",
+              "lon": 25.25,
+              "lat": 39.88,
+              "yan": "sol",
+              "bas": 0.45
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.25,
+                  40.05
+                ],
+                [
+                  26.0,
+                  40.0
+                ],
+                [
+                  25.7,
+                  39.95
+                ],
+                [
+                  25.45,
+                  39.92
+                ]
+              ],
+              "taraf": "osmanli",
+              "gemi": 2,
+              "boy": 55,
+              "bas": 0.05,
+              "bit": 0.5
+            }
+          ],
+          "damga": {
+            "yazi": "Gazi",
+            "lon": 25.3,
+            "lat": 39.9,
+            "bas": 0.6,
+            "tip": "ferman"
+          }
+        }
+      },
+      {
+        "yazi": "Kaptan-ı Derya",
+        "metin": "Kısa süre sonra Kaptan-ı Derya oldu ve donanmayı yeniden kurmaya çalıştı. Anlatılanlara göre yanında evcil bir aslanla dolaşırdı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Hasan'ın yükselişi",
+          "ogeler": [
+            "Cezayir'de denizci",
+            "Çeşme · 1770",
+            "Limni · 1770",
+            "Kaptan-ı Derya",
+            "Sadrazam · 1789"
+          ]
+        }
+      },
+      {
+        "yazi": "Ezine'deki kazı",
+        "metin": "1790'da sefer sırasında Şumnu'da öldü. Bugün Çanakkale'nin Ezine ilçesinde, ona ait köşk ve çiftliğin kalıntıları kazıyla gün yüzüne çıkarılıyor.",
+        "gorsel": [
+          "-"
+        ]
+      }
+    ],
+    "soru": "Sence Cezayirli Hasan Paşa'nın ününü Limni zaferi mi büyüttü, yoksa aslanı mı?",
+    "etiketler": [
+      "cezayirli gazi hasan paşa",
+      "kaptan-ı derya",
+      "çeşme baskını",
+      "limni"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "turhan-sultan",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Turhan Sultan: Kösem'den Sonra Sarayın Gücü 👑",
+      "Yeni Cami'yi Bitiren Valide: Turhan Sultan 👑",
+      "Turhan Hatice Sultan ve Köprülü Mehmed Paşa 👑"
+    ],
+    "kapak": "BOĞAZA İKİ KALE",
+    "kanca": "1651'de Kösem Sultan sarayda öldürüldü ve gücü genç bir valide aldı. Sence Turhan Sultan çöken devleti kime emanet etti?",
+    "kanca_gorsel": [
+      "File:Portrait of Hatice Turhan Sultan. Attributed to Paul Rycaut, consul in Smyrna, 1660-67 (detail).jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1651",
+        "metin": "Turhan, Sultan İbrahim'in eşi ve küçük Dördüncü Mehmed'in annesiydi. 1651'de Kösem öldürülünce valide sultan oldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1651",
+          "aylar": [
+            "Eylül"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Valide Sultan"
+        }
+      },
+      {
+        "yazi": "Köprülü",
+        "metin": "1656'da hazine boştu, isyanlar sürüyordu. Turhan, yaşlı Köprülü Mehmed Paşa'yı sadrazam yaptı. Kaynaklara göre paşa geniş yetki şartı koşmuştu.",
+        "gorsel": [
+          "File:Portrait of Hatice Turhan Sultan. Attributed to Paul Rycaut, consul in Smyrna, 1660-67 (detail).jpg"
+        ]
+      },
+      {
+        "yazi": "Boğazın kaleleri",
+        "metin": "Venedik donanması Çanakkale Boğazı'nı kapatmaya çalışıyordu. Turhan, boğazın girişine iki kale yaptırdı: Seddülbahir ve Kumkale.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "merkez": [
+            26.25,
+            40.1
+          ],
+          "genislik": 1.2,
+          "zoom": 1.08,
+          "odak": [
+            26.19,
+            40.03
+          ],
+          "etiketler": [
+            {
+              "ad": "Seddülbahir",
+              "lon": 26.18,
+              "lat": 40.045,
+              "yan": "sol",
+              "bas": 0.1
+            },
+            {
+              "ad": "Kumkale",
+              "lon": 26.2,
+              "lat": 40.0,
+              "yan": "sag",
+              "bas": 0.35,
+              "dy": 60
+            }
+          ],
+          "vurgu": {
+            "lon": 26.19,
+            "lat": 40.02,
+            "bas": 0.3
+          },
+          "damga": {
+            "yazi": "1659",
+            "lon": 26.19,
+            "lat": 40.02,
+            "bas": 0.6,
+            "tip": "murekkep"
+          }
+        }
+      },
+      {
+        "yazi": "Yeni Cami",
+        "metin": "Yarım kalmış Yeni Cami'yi de o tamamlattı, cami 1665'te açıldı. Türbesi bugün hâlâ caminin yanında durur.",
+        "gorsel": [
+          "File:Yeni Cami mosque and Eminönü bazaar.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Turhan Sultan'ın en büyük hamlesi Köprülü'yü seçmek miydi, yoksa boğaz kaleleri mi?",
+    "etiketler": [
+      "turhan sultan",
+      "hatice turhan",
+      "köprülü mehmed paşa",
+      "yeni cami"
+    ],
+    "stil": "animasyon"
   }
 ]

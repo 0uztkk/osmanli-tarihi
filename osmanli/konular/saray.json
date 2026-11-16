@@ -4246,5 +4246,232 @@
       "beyşehir gölü"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "elci-kabulu",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Topkapı'da Elçi Kabulü: Kolundan Tutulan Elçiler 🏛️",
+      "Osmanlı Elçi Kabulü: Elçiler Neden Kolundan Tutulurdu? 🏛️",
+      "Arz Odası: Sultanın Elçileri Kabul Ettiği Oda 🏰"
+    ],
+    "kapak": "TEK KELİME YOK",
+    "kanca": "Hayal et: Bir Avrupa elçisi sultanın huzuruna çıkıyor, ama iki kapıcı onu kollarından sıkıca tutuyor. Sence Osmanlı sarayı elçileri neden böyle karşılardı?",
+    "kanca_gorsel": [
+      "File:Lucjan Wędrychowski - Audience of a Polish envoy before the Ottoman Sultan.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Ulufe günü",
+        "metin": "Elçiler çoğu zaman yeniçerilerin maaş aldığı ulufe gününe çağrılırdı. Avluda binlerce asker sessizce bekler, elçi bu gücü kendi gözüyle görürdü.",
+        "gorsel": [
+          "File:Jean Baptiste Vanmour - The Ambassadorial Delegation Passing through the Second Courtyard of the Topkapı Palace - Google Art Project.jpg"
+        ]
+      },
+      {
+        "yazi": "Divan yemeği",
+        "metin": "Önce Divan'da veziriazamla yemek yenirdi. Ardından elçiye ve adamlarına hilat denen törenlik kaftanlar giydirilirdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Elçinin günü",
+          "ogeler": [
+            "Ulufe dağıtımı",
+            "Divan yemeği",
+            "Hilat giydirme",
+            "Arz Odası"
+          ]
+        }
+      },
+      {
+        "yazi": "Arz Odası",
+        "metin": "Babüssaade'den geçen elçiyi iki kapıcıbaşı kollarından tutarak sultanın önüne götürürdü. Elçi konuşur, sultan çoğu zaman tek kelime etmezdi.",
+        "gorsel": [
+          "File:Gate of Felicity Topkapi Istanbul 2007 007.jpg"
+        ]
+      },
+      {
+        "yazi": "Kosova'dan kalan kural",
+        "metin": "Rivayete göre bu kural, Birinci Murad'ın 1389'da Kosova'da huzuruna gelen bir Sırp tarafından öldürülmesinden sonra kondu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "uzaklas",
+          "cizgi": "kesikli",
+          "merkez": [
+            24.8,
+            42.0
+          ],
+          "genislik": 11,
+          "zoom": 1.06,
+          "etiketler": [
+            {
+              "ad": "Kosova",
+              "lon": 21.17,
+              "lat": 42.66,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol",
+              "bas": 0.4
+            }
+          ],
+          "vurgu": {
+            "lon": 21.17,
+            "lat": 42.66,
+            "bas": 0.15
+          },
+          "damga": {
+            "yazi": "1389",
+            "lon": 21.17,
+            "lat": 42.66,
+            "bas": 0.55,
+            "tip": "murekkep"
+          }
+        }
+      }
+    ],
+    "soru": "Sence elçileri kolundan tutmak bir güvenlik önlemi miydi, yoksa bir güç gösterisi mi?",
+    "etiketler": [
+      "elçi kabulü",
+      "arz odası",
+      "topkapı sarayı",
+      "osmanlı diplomasisi"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "varegler",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Bizans Sarayının Viking Muhafızları: Varegler 🏰",
+      "Ayasofya'daki Viking Yazısı ve Varang Muhafızları 🏰",
+      "Bizans İmparatorunu Koruyan Baltalı Vikingler 🏰"
+    ],
+    "kapak": "KUZEYDEN GELDİLER",
+    "kanca": "Hayal et: Bizans imparatorunu suikastten koruyan yüzlerce muhafız, kuzeyden gelmiş baltalı Vikinglerdi. Sence imparator canını neden onlara emanet etti?",
+    "kanca_gorsel": [
+      "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+    ],
+    "sahneler": [
+      {
+        "yazi": "988",
+        "metin": "988 dolaylarında Kiev prensi Vladimir, İmparator İkinci Basileios'a binlerce savaşçı gönderdi. Bizans bu askerlerle bir iç isyanı bastırdı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "parsomen",
+          "kamera": "kaydir",
+          "cizgi": "akan",
+          "merkez": [
+            30.0,
+            45.6
+          ],
+          "genislik": 12,
+          "zoom": 1.08,
+          "etiketler": [
+            {
+              "ad": "Kiev",
+              "lon": 30.52,
+              "lat": 50.45,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Konstantinopolis",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol",
+              "bas": 0.55
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  30.52,
+                  50.45
+                ],
+                [
+                  32.0,
+                  48.0
+                ],
+                [
+                  32.6,
+                  46.6
+                ],
+                [
+                  31.0,
+                  45.0
+                ],
+                [
+                  29.6,
+                  43.0
+                ],
+                [
+                  29.1,
+                  41.3
+                ]
+              ],
+              "taraf": "dusman",
+              "gemi": 3,
+              "bas": 0.05,
+              "bit": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Varang muhafızı",
+        "metin": "Bu savaşçılardan sarayın muhafız birliği doğdu. Bizanslılar onlara Varang derdi. İki elle kullanılan baltaları ve sadakatleriyle tanınırlardı.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "Harald",
+        "metin": "Norveçli Harald Hardrada da gençliğinde bu birlikte hizmet etti. Sonra ülkesine dönüp kral oldu ve 1066'da İngiltere'de savaşırken öldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Harald'ın yolu",
+          "ogeler": [
+            "Norveç",
+            "Kiev",
+            "Konstantinopolis",
+            "Norveç kralı",
+            "İngiltere · 1066"
+          ]
+        }
+      },
+      {
+        "yazi": "Ayasofya",
+        "metin": "Ayasofya'nın üst galerisinde, mermer korkulukta İskandinav runlarıyla kazınmış bir yazı hâlâ durur. Okunabilen kısmında Halfdan adı geçer.",
+        "gorsel": [
+          "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+        ]
+      }
+    ],
+    "soru": "Sence bir imparatorun canını yabancı muhafızlara emanet etmesi akıllıca mıydı?",
+    "etiketler": [
+      "varang muhafızları",
+      "bizans sarayı",
+      "vikingler",
+      "ayasofya"
+    ],
+    "stil": "animasyon"
   }
 ]

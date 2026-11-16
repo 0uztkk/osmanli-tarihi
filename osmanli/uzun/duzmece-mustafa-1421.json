@@ -1,0 +1,731 @@
+{
+  "id": "duzmece-mustafa-1421",
+  "stil": "animasyon",
+  "baslik": [
+    "Düzmece Mustafa 1421: Bizans'ın Tahta Çıkardığı Şehzade",
+    "II. Murad ve Amcası Mustafa: Ulubat Köprüsü 1422",
+    "Düzmece Mustafa Gerçek miydi? Osmanlı Tahtı Kavgası"
+  ],
+  "kapak": "SAHTE Mİ?",
+  "kanca": "Hayal et: Ankara Savaşı'nda kaybolan bir şehzade, yaklaşık yirmi yıl sonra Bizans gemisinden iniyor. Osmanlı tahtını istiyor, karşısında genç yeğeni İkinci Murad var. Kaynaklar ona Düzmece dedi, ama gerçekten sahte miydi?",
+  "kanca_gorsel": [
+    "File:Paolo Veronese (Nachfolger) - Sultan Murad II. - 2237 - Bavarian State Painting Collections.jpg"
+  ],
+  "bolumler": [
+    {
+      "ad": "Yıkık köprünün iki yakası",
+      "sahneler": [
+        {
+          "yazi": "Ocak 1422",
+          "metin": "Ocak 1422, Bursa'nın batısında Ulubat Gölü. Gölden çıkan suyun üstündeki köprü yıkılmış. Bir yakada şehzade Mustafa'nın ordusu, öbür yakada genç Sultan İkinci Murad'ın askerleri bekliyor. Aralarında yalnızca soğuk su var.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "yaklas",
+            "merkez": [
+              28.55,
+              40.15
+            ],
+            "genislik": 1.3,
+            "zoom": 1.08,
+            "odak": [
+              28.6,
+              40.17
+            ],
+            "baslik": {
+              "ust": "Ulubat",
+              "alt": "Ocak 1422",
+              "yer": "sol"
+            },
+            "etiketler": [
+              {
+                "ad": "Ulubat",
+                "lon": 28.6,
+                "lat": 40.17,
+                "yan": "sag",
+                "bas": 0.1
+              },
+              {
+                "ad": "Bursa",
+                "lon": 29.06,
+                "lat": 40.19,
+                "yan": "sol",
+                "bas": 0.3
+              }
+            ],
+            "vurgu": {
+              "lon": 28.6,
+              "lat": 40.17,
+              "bas": 0.3
+            },
+            "damga": {
+              "yazi": "Köprü yıkıldı",
+              "lon": 28.6,
+              "lat": 40.17,
+              "bas": 0.55,
+              "tip": "murekkep",
+              "dx": -320,
+              "dy": 170
+            }
+          }
+        },
+        {
+          "yazi": "Karşı yakadan ses",
+          "metin": "Gece boyunca karşı yakadan Mustafa'nın askerlerine seslenilir. Rumeli'nin tanınmış akıncı beylerinden Mihaloğlu, eski silah arkadaşlarını Murad'ın safına çağırır. Sesler suyun üstünden rahatça duyulur.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Sabah",
+          "metin": "Sabah olduğunda Mustafa'nın ordusu erimiştir. Beyler birer birer karşıya geçmiş, en güvendiği müttefik de gece kaçmıştır. Yanında birkaç adamı kalmıştır. Peki tahtı isteyen bu adam kimdi?",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Ankara'da kaybolan şehzade",
+      "sahneler": [
+        {
+          "yazi": "1402",
+          "metin": "Hikâye 1402'de, Ankara Savaşı'nda başlar. Yıldırım Bayezid, Timur'a yenildi ve esir düştü. Oğullarından Mustafa da o gün savaş alanındaydı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Yıldırım Bayezid",
+                "desen": "hilal"
+              }
+            ],
+            "bant": "Ankara · 1402",
+            "karsi": {
+              "ad": "Timur",
+              "desen": "halka"
+            },
+            "arka": {
+              "merkez": [
+                32.85,
+                39.93
+              ],
+              "genislik": 8,
+              "tema": "kizil"
+            }
+          }
+        },
+        {
+          "yazi": "Kayıp",
+          "metin": "Savaştan sonra Mustafa'dan haber alınamadı. Bazı kaynaklar onun öldüğünü yazar. Bazılarına göre Timur onu esir olarak Semerkant'a götürmüştü. Yıllarca adı bile anılmadı.",
+          "gorsel": [
+            "File:A miniature depicting the capture of Bayezid I.jpg"
+          ]
+        },
+        {
+          "yazi": "Fetret",
+          "metin": "Bayezid esaretteyken öldü. Geride kalan oğulları on bir yıl boyunca birbirleriyle savaştı. Kardeşler birbirine karşı Bizans'tan, Sırp ve Türkmen beylerinden yardım aldı. Sonunda 1413'te Çelebi Mehmed tek başına tahtta kaldı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Kardeşler savaşı",
+            "ogeler": [
+              "Ankara · 1402",
+              "Süleyman, İsa, Musa",
+              "Çelebi Mehmed · 1413"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "ad": "İlk ortaya çıkış",
+      "sahneler": [
+        {
+          "yazi": "1415",
+          "metin": "Birkaç yıl sonra Rumeli'de bir adam ortaya çıktı. Kendisinin Bayezid'in oğlu Mustafa olduğunu söylüyordu. İddiası doğruysa Çelebi Mehmed'in ağabeyiydi ve tahtta onun da hakkı vardı. Eflak beyi Mirçe onu destekliyordu, yanında Aydın yöresinin eski beyi Cüneyd vardı.",
+          "gorsel": [
+            "File:Mehmed I miniature.jpg"
+          ]
+        },
+        {
+          "yazi": "Selanik",
+          "metin": "Çelebi Mehmed ordusuyla üzerine yürüdü. Mustafa yenildi ve Bizans'ın elindeki Selanik'e sığındı. Bizans onu teslim etmedi. Şehzade artık pazarlık masasındaki en değerli taştı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "kaydir",
+            "cizgi": "akan",
+            "merkez": [
+              24.6,
+              41.2
+            ],
+            "genislik": 7,
+            "zoom": 1.1,
+            "etiketler": [
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Selanik",
+                "lon": 22.94,
+                "lat": 40.64,
+                "yan": "sol",
+                "bas": 0.55,
+                "dy": 70
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    26.56,
+                    41.68
+                  ],
+                  [
+                    25.4,
+                    41.1
+                  ],
+                  [
+                    24.0,
+                    40.95
+                  ],
+                  [
+                    22.98,
+                    40.66
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ],
+            "vurgu": {
+              "lon": 22.94,
+              "lat": 40.64,
+              "bas": 0.65
+            }
+          }
+        },
+        {
+          "yazi": "Limni",
+          "metin": "Bir anlaşma yapıldı. Bizans, Mustafa'yı Limni adasında gözetim altında tutacaktı. Çelebi Mehmed de bunun karşılığında her yıl yüklü bir para ödeyecekti. Bizans, elinde bir şehzade tutmanın değerini biliyordu. Mehmed için bu, rakibini uzak tutmanın bedeliydi.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Saklanan sultan ölümü",
+      "sahneler": [
+        {
+          "yazi": "Mayıs 1421",
+          "metin": "Mayıs 1421'de Çelebi Mehmed Edirne'de öldü. Kaynaklara göre vezirler ölümü kırk gün kadar sakladı. Askerlere sultanın hasta olduğu söylendi. Amaç, veliaht tahta oturmadan ordunun ve beylerin karışmasını önlemekti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "gece",
+            "yil": "1421",
+            "aylar": [
+              "Mayıs",
+              "Haziran"
+            ],
+            "cevir_bit": 0.55,
+            "rozet": "Ölüm saklandı"
+          }
+        },
+        {
+          "yazi": "İkinci Murad",
+          "metin": "Bu sürede veliaht Murad, Amasya'dan Bursa'ya getirildi ve tahta çıktı. Henüz çok gençti. Saltanatının ilk günlerinden itibaren karşısında güçlü bir rakip olacaktı. Babasının ölümü ancak ondan sonra duyuruldu.",
+          "gorsel": [
+            "File:Paolo Veronese (Nachfolger) - Sultan Murad II. - 2237 - Bavarian State Painting Collections.jpg"
+          ]
+        },
+        {
+          "yazi": "Bizans'ın isteği",
+          "metin": "Bizans, Mehmed'in küçük oğullarından ikisinin rehine olarak gönderilmesini istedi. Murad'ın vezirleri bunu reddetti. Bizans da elindeki kozu oynamaya karar verdi: Mustafa serbest bırakılacaktı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Gelibolu için büyük pazarlık",
+      "sahneler": [
+        {
+          "yazi": "Pazarlık",
+          "metin": "Anlaşma basitti. Bizans, Mustafa'yı ve Cüneyd'i gemilerle Rumeli'ye çıkaracaktı. Mustafa tahta geçerse karşılığında Gelibolu'yu Bizans'a verecekti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Mustafa",
+                "desen": "hilal"
+              },
+              {
+                "ad": "Bizans",
+                "desen": "bizans"
+              }
+            ],
+            "bant": "Gelibolu pazarlığı",
+            "karsi": {
+              "ad": "İkinci Murad",
+              "desen": "hilal"
+            },
+            "arka": {
+              "merkez": [
+                26.5,
+                40.6
+              ],
+              "genislik": 6,
+              "tema": "gece"
+            }
+          }
+        },
+        {
+          "yazi": "Ağustos 1421",
+          "metin": "1421 yazında Bizans gemileri Mustafa'yı Gelibolu yakınlarında karaya çıkardı. Rumeli'deki pek çok bey, Bayezid'in oğlunu görmek için ona katıldı. Kâğıt üstünde, Bizans'ın planı işliyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "uzaklas",
+            "cizgi": "kesikli",
+            "merkez": [
+              25.9,
+              40.3
+            ],
+            "genislik": 3.4,
+            "zoom": 1.08,
+            "etiketler": [
+              {
+                "ad": "Limni",
+                "lon": 25.25,
+                "lat": 39.9,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "Gelibolu",
+                "lon": 26.67,
+                "lat": 40.41,
+                "yan": "sag",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    25.3,
+                    39.95
+                  ],
+                  [
+                    25.8,
+                    40.05
+                  ],
+                  [
+                    26.1,
+                    40.08
+                  ],
+                  [
+                    26.3,
+                    40.25
+                  ],
+                  [
+                    26.6,
+                    40.38
+                  ]
+                ],
+                "taraf": "dusman",
+                "gemi": 2,
+                "boy": 55,
+                "bas": 0.05,
+                "bit": 0.55
+              }
+            ]
+          }
+        },
+        {
+          "yazi": "Bayezid Paşa",
+          "metin": "Murad, tecrübeli veziri Bayezid Paşa'yı bir orduyla Mustafa'nın üzerine gönderdi. Edirne yakınlarında iki ordu karşılaştı. Ama Bayezid Paşa'nın askerleri saf değiştirdi ve paşa öldürüldü. Rumeli askerleri, Bayezid'in oğluna karşı savaşmak istememişti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Edirne yakınları · 1421",
+            "birlikler": [
+              {
+                "xy": [
+                  520,
+                  600
+                ],
+                "wh": [
+                  360,
+                  240
+                ],
+                "taraf": "osmanli",
+                "etiket": "Bayezid Paşa",
+                "etiket_ust": false
+              },
+              {
+                "xy": [
+                  1500,
+                  600
+                ],
+                "hedef": [
+                  1000,
+                  600
+                ],
+                "wh": [
+                  380,
+                  260
+                ],
+                "taraf": "dusman",
+                "etiket": "Mustafa",
+                "bas": 0.15,
+                "bit": 0.6
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  520,
+                  330
+                ],
+                "son_xy": [
+                  940,
+                  330
+                ],
+                "taraf": "osmanli",
+                "bas": 0.45
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                760,
+                600
+              ],
+              "bas": 0.72
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Edirne'de yeni sultan",
+      "sahneler": [
+        {
+          "yazi": "Edirne",
+          "metin": "Mustafa, Osmanlı'nın Rumeli'deki başkenti Edirne'ye girdi ve sultan olarak tanındı. Adına para bastırdığı da bilinir. Rumeli artık onun, Anadolu Murad'ındı. Devlet yeniden ikiye bölünmüştü.",
+          "gorsel": [
+            "File:Edirne - btv1b101009150.jpg"
+          ]
+        },
+        {
+          "yazi": "Tutulmayan söz",
+          "metin": "Bizans elçileri Gelibolu'yu istemeye geldi. Mustafa sözünü tutmadı. Bir Osmanlı şehzadesi olarak boğazın kilidini Bizans'a veremezdi. Bizans, kendi elleriyle yeni bir düşman yaratmıştı. Üstelik Murad da artık Bizans'a güvenmiyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Anadolu'ya",
+          "metin": "Kış gelince Mustafa işi bitirmek istedi. Ordusuyla boğazı geçip Anadolu'ya çıktı ve Bursa'ya doğru yürüdü. Murad ise Bursa'da savunmaya hazırlanıyordu. Yolunun üstünde Ulubat vardı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Ulubat'ta dağılan ordu",
+      "sahneler": [
+        {
+          "yazi": "Mihaloğlu",
+          "metin": "Murad'ın yanında beklenmedik biri vardı: Mihaloğlu Mehmed Bey. Kardeşler savaşında yanlış tarafı tuttuğu için yıllardır hapisteydi. Murad onu serbest bıraktı, çünkü Rumeli beyleri onu dinlerdi. Rivayete göre Mihaloğlu suyun kıyısına gelip beylere adlarıyla seslendi.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Cüneyd'in kaçışı",
+          "metin": "Mihaloğlu'nun çağrısı işe yaradı. Rumeli beyleri birer birer karşı yakaya geçti. Cüneyd de bir gece adamlarıyla Aydın'a kaçtı. Mustafa'nın elinde ordu kalmamıştı.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Kaçış",
+          "metin": "Mustafa geri dönüp Gelibolu'dan Rumeli'ye geçti. Murad da peşinden geldi. Sultanın askerlerini boğazdan Cenevizli gemileri geçirdi. Mustafa Edirne'de tutunamadı ve kaçarken yakalandı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "kaydir",
+            "cizgi": "kalin",
+            "merkez": [
+              27.6,
+              40.95
+            ],
+            "genislik": 4.6,
+            "zoom": 1.1,
+            "etiketler": [
+              {
+                "ad": "Ulubat",
+                "lon": 28.6,
+                "lat": 40.17,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Gelibolu",
+                "lon": 26.67,
+                "lat": 40.41,
+                "yan": "sol",
+                "bas": 0.3
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68,
+                "yan": "sag",
+                "bas": 0.5
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    28.6,
+                    40.17
+                  ],
+                  [
+                    27.9,
+                    40.3
+                  ],
+                  [
+                    27.2,
+                    40.35
+                  ],
+                  [
+                    26.67,
+                    40.41
+                  ],
+                  [
+                    26.6,
+                    40.9
+                  ],
+                  [
+                    26.56,
+                    41.6
+                  ]
+                ],
+                "taraf": "dusman",
+                "ikon": "yok",
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ],
+            "damga": {
+              "yazi": "Yakalandı",
+              "lon": 26.56,
+              "lat": 41.68,
+              "bas": 0.66,
+              "tip": "ferman",
+              "dx": 380,
+              "dy": 140
+            }
+          }
+        },
+        {
+          "yazi": "Edirne",
+          "metin": "Kaynaklara göre Mustafa Edirne'de asıldı. Osmanlı kroniklerine göre bir sahtekâr böyle cezalandırılmıştı. Ölümüyle Rumeli yeniden Murad'a bağlandı. Ama Bizans için hikâye bitmemişti.",
+          "gorsel": [
+            "File:Square of the Fountain, Adrianople.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "İstanbul surlarında intikam",
+      "sahneler": [
+        {
+          "yazi": "Haziran 1422",
+          "metin": "Haziran 1422'de Murad, Bizans'tan hesap sormak için İstanbul'u kuşattı. Surların önüne toprak tabyalar yapıldı. Ağustos sonunda büyük bir hücum başladı. Bu, şehre yapılan en ciddi Osmanlı kuşatmalarından biriydi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "safak",
+            "yil": "1422",
+            "aylar": [
+              "Haziran",
+              "Ağustos",
+              "Eylül"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "Kuşatma"
+          }
+        },
+        {
+          "yazi": "Surlar",
+          "metin": "Kara surları bir kez daha dayandı. Bizanslı bir yazar, şehrin Meryem Ana'nın yardımıyla kurtulduğunu anlatır. Osmanlı tarafında ise Bursa'nın ünlü şeyhi Emir Sultan'ın orduda olduğu aktarılır. Hücum geri püskürtüldü ve şehir düşmedi.",
+          "gorsel": [
+            "File:Walls of Constantinople 1.jpg"
+          ]
+        },
+        {
+          "yazi": "Küçük Mustafa",
+          "metin": "Eylül'de Murad'a kötü bir haber geldi. Küçük kardeşi, daha çocuk yaştaki Mustafa, Anadolu'da isyan etmiş ve Bursa'yı kuşatmıştı. Onu Karamanoğulları ve Germiyanoğulları destekliyordu, Bizans'ın da işin içinde olduğu düşünülür.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "kizil",
+            "kamera": "yaklas",
+            "bulut": true,
+            "merkez": [
+              29.6,
+              40.5
+            ],
+            "genislik": 2.6,
+            "zoom": 1.08,
+            "odak": [
+              29.06,
+              40.19
+            ],
+            "etiketler": [
+              {
+                "ad": "Bursa",
+                "lon": 29.06,
+                "lat": 40.19,
+                "yan": "sag",
+                "bas": 0.3
+              },
+              {
+                "ad": "İznik",
+                "lon": 29.72,
+                "lat": 40.43,
+                "yan": "sag",
+                "bas": 0.45
+              }
+            ],
+            "vurgu": {
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.35,
+              "renk": [
+                255,
+                140,
+                60
+              ]
+            },
+            "damga": {
+              "yazi": "Kuşatıldı",
+              "lon": 29.06,
+              "lat": 40.19,
+              "bas": 0.6,
+              "tip": "muhur",
+              "dx": 320,
+              "dy": -150
+            }
+          }
+        },
+        {
+          "yazi": "Eylül 1422",
+          "metin": "Murad kuşatmayı kaldırdı ve Anadolu'ya geçti. İstanbul, bu kez bir şehzadenin isyanı sayesinde kurtulmuştu. Ama Murad'ın önünde şimdi kendi kardeşi vardı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Sahte miydi, gerçek mi?",
+      "sahneler": [
+        {
+          "yazi": "İznik",
+          "metin": "Kaynaklara göre Küçük Mustafa'ya kendi lalası ihanet etti. Çocuk şehzade yakalandı ve 1423 başında İznik'te öldürüldü. Murad'ın tahtına karşı son iddia da böyle sona erdi.",
+          "gorsel": [
+            "File:Nicée Les muraille vues de la porte d'Ieni Cheir - Launay Louis De - 1913.jpg"
+          ]
+        },
+        {
+          "yazi": "Düzmece",
+          "metin": "Osmanlı kronikleri amcayı hep Düzmece Mustafa diye andı, yani sahte. Ama Bizanslı yazarlar onu Bayezid'in gerçek oğlu sayar. Bugün birçok tarihçi de onun gerçek şehzade olabileceğini düşünüyor. Belki de Ankara'dan sağ çıkan bir şehzade, yıllar sonra tahtını geri istemişti. Kesin bir cevap yok.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Bizans'ın kozu",
+          "metin": "Bizans bu oyunu bırakmadı. Otuz yıl sonra, 1453'te, şehirde bir başka Osmanlı şehzadesi Orhan Çelebi vardı. Murad'ın oğlu Fatih Sultan Mehmed bu kozu da şehirle birlikte ortadan kaldırdı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Bizans'ın şehzade kozu",
+            "ogeler": [
+              "Mustafa · 1421",
+              "Küçük Mustafa · 1422",
+              "Orhan Çelebi · 1453",
+              "İstanbul'un fethi"
+            ]
+          }
+        },
+        {
+          "yazi": "Bir köprü",
+          "metin": "Yıkık bir köprü, bir gecede dağılan bir ordu ve tahta iki kez uzanan Bizans. İkinci Murad'ın saltanatı, amcasıyla kardeşini aynı yıl içinde yenerek başladı. Ve bir soru hâlâ cevapsız: Limni'den gelen adam kimdi?",
+          "gorsel": [
+            "File:Paolo Veronese (Nachfolger) - Sultan Murad II. - 2237 - Bavarian State Painting Collections.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Düzmece Mustafa gerçekten Bayezid'in oğlu muydu, yoksa Bizans'ın çıkardığı bir sahtekâr mı? Yorumlarda yaz.",
+  "etiketler": [
+    "düzmece mustafa",
+    "ikinci murad",
+    "osmanlı tarihi",
+    "mustafa çelebi",
+    "çelebi mehmed",
+    "ulubat",
+    "bizans",
+    "1422 istanbul kuşatması",
+    "küçük mustafa"
+  ]
+}
