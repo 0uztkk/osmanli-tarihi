@@ -488,37 +488,13 @@
             "-"
           ],
           "anim": {
-            "tip": "harita",
+            "tip": "sefer",
             "tema": "antika",
-            "kamera": "kaydir",
             "cizgi": "kalin",
-            "merkez": [
-              27.6,
-              40.95
-            ],
-            "genislik": 4.6,
-            "zoom": 1.1,
-            "etiketler": [
+            "zaman": [
               {
-                "ad": "Ulubat",
-                "lon": 28.6,
-                "lat": 40.17,
-                "yan": "sag",
-                "bas": 0.05
-              },
-              {
-                "ad": "Gelibolu",
-                "lon": 26.67,
-                "lat": 40.41,
-                "yan": "sol",
-                "bas": 0.3
-              },
-              {
-                "ad": "Edirne",
-                "lon": 26.56,
-                "lat": 41.68,
-                "yan": "sag",
-                "bas": 0.5
+                "yazi": "Ocak 1422",
+                "bas": 0.0
               }
             ],
             "rotalar": [
@@ -550,20 +526,66 @@
                   ]
                 ],
                 "taraf": "dusman",
-                "ikon": "yok",
-                "bas": 0.05,
-                "bit": 0.6
+                "bas": 0.06,
+                "bit": 0.62,
+                "takip": true
+              },
+              {
+                "yol": [
+                  [
+                    29.06,
+                    40.19
+                  ],
+                  [
+                    28.4,
+                    40.12
+                  ],
+                  [
+                    27.5,
+                    40.2
+                  ],
+                  [
+                    26.85,
+                    40.3
+                  ],
+                  [
+                    26.95,
+                    40.9
+                  ],
+                  [
+                    26.72,
+                    41.55
+                  ]
+                ],
+                "taraf": "osmanli",
+                "bas": 0.25,
+                "bit": 0.74
               }
             ],
-            "damga": {
-              "yazi": "Yakalandı",
-              "lon": 26.56,
-              "lat": 41.68,
-              "bas": 0.66,
-              "tip": "ferman",
-              "dx": 380,
-              "dy": 140
-            }
+            "etiketler": [
+              {
+                "ad": "Ulubat",
+                "lon": 28.6,
+                "lat": 40.17
+              },
+              {
+                "ad": "Gelibolu",
+                "lon": 26.67,
+                "lat": 40.41,
+                "yan": "sol"
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68
+              }
+            ],
+            "carpisma": {
+              "lon": 26.57,
+              "lat": 41.6,
+              "bas": 0.76
+            },
+            "son": "carpisma"
           }
         },
         {

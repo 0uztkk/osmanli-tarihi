@@ -286,30 +286,13 @@
             "-"
           ],
           "anim": {
-            "tip": "harita",
-            "tema": "antika",
-            "kamera": "uzaklas",
+            "tip": "sefer",
+            "tema": "kizil",
             "cizgi": "kesikli",
-            "merkez": [
-              24.9,
-              40.4
-            ],
-            "genislik": 11,
-            "zoom": 1.06,
-            "etiketler": [
+            "zaman": [
               {
-                "ad": "İstanbul",
-                "lon": 28.98,
-                "lat": 41.01,
-                "yan": "sol",
-                "bas": 0.05
-              },
-              {
-                "ad": "Yanya",
-                "lon": 20.85,
-                "lat": 39.67,
-                "yan": "sag",
-                "bas": 0.5
+                "yazi": "1820",
+                "bas": 0.0
               }
             ],
             "rotalar": [
@@ -320,20 +303,20 @@
                     41.01
                   ],
                   [
-                    26.5,
-                    41.2
+                    26.56,
+                    41.68
                   ],
                   [
                     24.5,
-                    40.9
+                    41.0
                   ],
                   [
-                    22.9,
-                    40.6
+                    22.94,
+                    40.64
                   ],
                   [
                     21.6,
-                    40.0
+                    40.2
                   ],
                   [
                     20.85,
@@ -341,20 +324,35 @@
                   ]
                 ],
                 "taraf": "osmanli",
-                "ikon": "ordu",
-                "bas": 0.05,
-                "bit": 0.6
+                "bas": 0.06,
+                "bit": 0.8,
+                "takip": true
               }
             ],
-            "damga": {
-              "yazi": "Asi ilan edildi",
-              "lon": 20.85,
-              "lat": 39.67,
-              "bas": 0.65,
-              "tip": "ferman",
-              "dx": 360,
-              "dy": 140
-            }
+            "etiketler": [
+              {
+                "ad": "İstanbul",
+                "lon": 28.98,
+                "lat": 41.01
+              },
+              {
+                "ad": "Edirne",
+                "lon": 26.56,
+                "lat": 41.68
+              },
+              {
+                "ad": "Selanik",
+                "lon": 22.94,
+                "lat": 40.64,
+                "yan": "sol"
+              },
+              {
+                "ad": "Yanya",
+                "lon": 20.85,
+                "lat": 39.67
+              }
+            ],
+            "son": "genel"
           }
         }
       ]

@@ -165,44 +165,17 @@
             "-"
           ],
           "anim": {
-            "tip": "harita",
+            "tip": "sefer",
             "tema": "parsomen",
-            "kamera": "kaydir",
             "cizgi": "akan",
-            "merkez": [
-              33.2,
-              31.3
-            ],
-            "genislik": 11,
-            "zoom": 1.12,
-            "etiketler": [
+            "zaman": [
               {
-                "ad": "Kahire",
-                "lon": 31.24,
-                "lat": 30.04,
-                "yan": "sol",
-                "bas": 0.05
+                "yazi": "Şubat 1799",
+                "bas": 0.0
               },
               {
-                "ad": "El-Ariş",
-                "lon": 33.8,
-                "lat": 31.13,
-                "yan": "sag",
-                "bas": 0.3
-              },
-              {
-                "ad": "Yafa",
-                "lon": 34.75,
-                "lat": 32.05,
-                "yan": "sol",
-                "bas": 0.5
-              },
-              {
-                "ad": "Akka",
-                "lon": 35.07,
-                "lat": 32.92,
-                "yan": "sag",
-                "bas": 0.62
+                "yazi": "Mart 1799",
+                "bas": 0.55
               }
             ],
             "rotalar": [
@@ -238,11 +211,41 @@
                   ]
                 ],
                 "taraf": "dusman",
-                "ikon": "ordu",
-                "bas": 0.05,
-                "bit": 0.65
+                "bas": 0.06,
+                "bit": 0.82,
+                "takip": true
               }
-            ]
+            ],
+            "etiketler": [
+              {
+                "ad": "Kahire",
+                "lon": 31.24,
+                "lat": 30.04,
+                "yan": "sol"
+              },
+              {
+                "ad": "El-Ariş",
+                "lon": 33.8,
+                "lat": 31.13
+              },
+              {
+                "ad": "Gazze",
+                "lon": 34.47,
+                "lat": 31.5
+              },
+              {
+                "ad": "Yafa",
+                "lon": 34.75,
+                "lat": 32.05,
+                "yan": "sol"
+              },
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92
+              }
+            ],
+            "son": "genel"
           }
         },
         {
@@ -588,30 +591,14 @@
             "-"
           ],
           "anim": {
-            "tip": "harita",
-            "tema": "parsomen",
-            "kamera": "kaydir",
+            "tip": "sefer",
+            "tema": "antika",
             "cizgi": "akan",
-            "merkez": [
-              32.0,
-              34.4
-            ],
-            "genislik": 12,
-            "zoom": 1.12,
-            "etiketler": [
+            "yakinlik": 1.6,
+            "zaman": [
               {
-                "ad": "Rodos",
-                "lon": 28.22,
-                "lat": 36.43,
-                "yan": "sol",
-                "bas": 0.05
-              },
-              {
-                "ad": "Akka",
-                "lon": 35.07,
-                "lat": 32.92,
-                "yan": "sag",
-                "bas": 0.6
+                "yazi": "Mayıs 1799",
+                "bas": 0.0
               }
             ],
             "rotalar": [
@@ -639,11 +626,32 @@
                   ]
                 ],
                 "taraf": "osmanli",
+                "ikon": "gemi",
                 "gemi": 4,
-                "bas": 0.05,
-                "bit": 0.6
+                "bas": 0.06,
+                "bit": 0.8,
+                "takip": true
               }
-            ]
+            ],
+            "etiketler": [
+              {
+                "ad": "Rodos",
+                "lon": 28.22,
+                "lat": 36.43,
+                "yan": "sol"
+              },
+              {
+                "ad": "Kıbrıs",
+                "lon": 33.2,
+                "lat": 35.1
+              },
+              {
+                "ad": "Akka",
+                "lon": 35.07,
+                "lat": 32.92
+              }
+            ],
+            "son": "genel"
           }
         },
         {

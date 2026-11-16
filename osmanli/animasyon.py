@@ -5,6 +5,8 @@ Sahne JSON'unda "anim" alanı varsa görsel yerine bu modül çizer. Türler:
   harita   Akdeniz haritası (Natural Earth, kamu malı): şehir etiketleri, ilerleyen filo rotaları,
            çarpışma işareti, yanıp sönen bölge, mühür damgası, üst başlık, yavaş yakınlaşma.
   taraflar Tarafların armaları yukarıdan iner, ortada ittifak bandı, altta karşı taraf.
+  sefer    Orduyu izleyen kamera: yürüyen asker birlikleri, arkalarında toz, yolda beliren şehir iğneleri,
+           çarpışmada parlama/duman/sarsıntı, köşede ay plaketi; sonda genel görünüme açılır.
   takvim   Gün batımı denizinde filo; ortada yaprakları çevrilen takvim ve "8 AY SONRA" bandı.
 
 Her tür hazirla(spec) ile bir kez kurulur, sonra .kare(u, sn) ile her kare çizilir
@@ -677,6 +679,293 @@ class Harita:
                     (a[0] + (b[0] - a[0]) * t1, a[1] + (b[1] - a[1]) * t1)], fill=renk + (255,), width=6)
 
 
+# ---------------------------------------------------------------- sefer (orduyu izleyen kamera)
+def _yumusat(noktalar, adim=10):
+    """Catmull-Rom: köşeleri yuvarlatılmış yoğun nokta dizisi (ordu, çizgi ve toz aynı yolu izler)."""
+    if len(noktalar) < 3:
+        a, b = noktalar[0], noktalar[-1]
+        return [(a[0] + (b[0] - a[0]) * i / adim, a[1] + (b[1] - a[1]) * i / adim) for i in range(adim + 1)]
+    p = [noktalar[0]] + list(noktalar) + [noktalar[-1]]
+    cikti = []
+    for i in range(1, len(p) - 2):
+        p0, p1, p2, p3 = p[i - 1], p[i], p[i + 1], p[i + 2]
+        for s in range(adim):
+            t = s / adim
+            t2, t3 = t * t, t * t * t
+            cikti.append(tuple(0.5 * ((2 * p1[j]) + (-p0[j] + p2[j]) * t + (2 * p0[j] - 5 * p1[j] + 4 * p2[j] - p3[j]) * t2 +
+                                      (-p0[j] + 3 * p1[j] - 3 * p2[j] + p3[j]) * t3) for j in (0, 1)))
+    cikti.append(tuple(p[-2]))
+    return cikti
+
+
+def _yol_noktasi(yol, f):
+    """Yolun toplam uzunluğunun f oranındaki nokta ve oradaki yön açısı."""
+    uz = [math.dist(yol[i], yol[i + 1]) for i in range(len(yol) - 1)]
+    hedef = sum(uz) * min(1.0, max(0.0, f))
+    for i, l in enumerate(uz):
+        if hedef <= l and l > 0:
+            a = hedef / l
+            return ((yol[i][0] + (yol[i + 1][0] - yol[i][0]) * a, yol[i][1] + (yol[i + 1][1] - yol[i][1]) * a),
+                    math.atan2(yol[i + 1][1] - yol[i][1], yol[i + 1][0] - yol[i][0]))
+        hedef -= l
+    return yol[-1], math.atan2(yol[-1][1] - yol[-2][1], yol[-1][0] - yol[-2][0]) if len(yol) > 1 else 0.0
+
+
+def _yol_orani(yol, nokta):
+    """Bir noktanın (ör. şehir) yol üzerindeki en yakın yerinin uzunluk oranı ve uzaklığı."""
+    i = min(range(len(yol)), key=lambda j: math.dist(yol[j], nokta))
+    toplam = sum(math.dist(yol[j], yol[j + 1]) for j in range(len(yol) - 1)) or 1
+    return sum(math.dist(yol[j], yol[j + 1]) for j in range(i)) / toplam, math.dist(yol[i], nokta)
+
+
+def ordu_birligi(d, x, y, aci, s, taraf, sn, alfa=255, sira=3, kol=5):
+    """Yürüyen asker birliği: sancağın arkasında sıra sıra miğferli, mızraklı askerler (adım adım sallanır)."""
+    renk = OSMANLI if taraf == "osmanli" else DUSMAN
+    koyu = tuple(int(c * 0.55) for c in renk)
+    ux, uy = math.cos(aci), math.sin(aci)          # yürüyüş yönü
+    nx, ny = -uy, ux                               # yana doğru
+    askerler = []
+    for j in range(kol):
+        for i in range(sira):
+            geri = (j + 1) * 17 * s + (i % 2) * 8 * s
+            yan = (i - (sira - 1) / 2) * 15 * s
+            px, py = x - ux * geri + nx * yan, y - uy * geri + ny * yan
+            askerler.append((py, px, j, i))
+    for py, px, j, i in sorted(askerler):          # arkadakiler (yukarıdakiler) önce
+        zip_ = abs(math.sin(sn * 7 + j * 1.3 + i * 0.7)) * 3 * s
+        py -= zip_
+        d.line([(px + 5 * s, py - 4 * s), (px + 8 * s, py - 30 * s)], fill=(70, 50, 32, alfa), width=max(1, int(2 * s)))
+        d.polygon([(px + 8 * s, py - 30 * s), (px + 6 * s, py - 36 * s), (px + 10 * s, py - 35 * s)], fill=(200, 200, 205, alfa))
+        d.rounded_rectangle([px - 5 * s, py - 6 * s, px + 5 * s, py + 7 * s], max(1, int(2 * s)), fill=renk + (alfa,),
+                            outline=koyu + (alfa,))
+        d.ellipse([px - 4 * s, py - 13 * s, px + 4 * s, py - 5 * s], fill=(222, 190, 150, alfa))
+        if taraf == "osmanli":   # sivri miğfer / börk
+            d.polygon([(px - 5 * s, py - 10 * s), (px + 5 * s, py - 10 * s), (px, py - 19 * s)], fill=(236, 232, 220, alfa))
+        else:
+            d.chord([px - 5 * s, py - 16 * s, px + 5 * s, py - 6 * s], 180, 360, fill=(150, 150, 160, alfa))
+    sancak(d, x, y + 6 * s, 62 * s, taraf, sn * 2, alfa)
+
+
+class Sefer:
+    """Orduyu izleyen kamera: harita büyük çözünürlükte bir kez çizilir; kamera genel görünümden
+    yürüyen birliğin üstüne iner, onunla birlikte ilerler, geçtiği şehirlerin iğneleri belirir,
+    arkasında toz kalkar; çarpışmada parlama, duman ve sarsıntı olur, sonda genel görünüme açılır.
+
+    spec: rotalar [{yol, taraf, bas, bit, takip?}], etiketler [{ad, lon, lat, yan?}], carpisma {lon, lat, bas},
+          zaman [{yazi, bas}] (köşede çevrilen ay/yıl plaketi), baslik {ust, alt}, tema, cizgi,
+          yakinlik (takip yakınlaşması, 1.4-2.2), son ("genel" | "carpisma"), merkez/genislik (yoksa rotadan hesaplanır)."""
+    OLCEK = 2.0
+
+    def __init__(self, spec):
+        global W, H
+        self.spec = spec
+        noktalar = [q for r in spec["rotalar"] for q in r["yol"]] + \
+                   [(e["lon"], e["lat"]) for e in spec.get("etiketler", [])]
+        if "merkez" in spec:
+            lonc, latc = spec["merkez"]
+            gen = spec.get("genislik", 12)
+        else:
+            lons, lats = [p[0] for p in noktalar], [p[1] for p in noktalar]
+            lonc, latc = (min(lons) + max(lons)) / 2, (min(lats) + max(lats)) / 2
+            cos = math.cos(math.radians(latc))
+            gen_lon = (max(lons) - min(lons)) * 1.35 + 0.6
+            gen_lat = ((max(lats) - min(lats)) * 1.35 + 0.6) * W / H / cos
+            gen = max(gen_lon, gen_lat, 1.2)
+        self.ekran = (W, H)
+        S = self.OLCEK
+        W, H = int(self.ekran[0] * S), int(self.ekran[1] * S)
+        try:
+            h = Harita({"merkez": [lonc, latc], "genislik": gen, "tema": spec.get("tema", "parsomen"), "zoom": 1.0})
+        finally:
+            W, H = self.ekran
+        self.taban, self.lonc, self.latc, self.cos, self.k = h.taban, lonc, latc, h.cos, h.k
+        self.BW, self.BH = self.taban.size
+        self.yollar = [_yumusat([self.bxy(*q) for q in r["yol"]]) for r in spec["rotalar"]]
+        ti = next((i for i, r in enumerate(spec["rotalar"]) if r.get("takip")), 0)
+        self.takip = ti
+        # şehir iğneleri: verilmemişse ordu yanından geçerken belirir
+        self.igneler = []
+        for e in spec.get("etiketler", []):
+            p = self.bxy(e["lon"], e["lat"])
+            bas = e.get("bas")
+            if bas is None:
+                en_iyi = None
+                for i, r in enumerate(spec["rotalar"]):
+                    f, uz = _yol_orani(self.yollar[i], p)
+                    t = r.get("bas", 0.08) + (r.get("bit", 0.7) - r.get("bas", 0.08)) * f - 0.04
+                    if en_iyi is None or uz < en_iyi[1]:
+                        en_iyi = (t, uz)
+                bas = max(0.0, en_iyi[0])
+            self.igneler.append((e, p, bas))
+
+    def bxy(self, lon, lat):
+        return (self.BW / 2 + (lon - self.lonc) * self.cos * self.k, self.BH / 2 - (lat - self.latc) * self.k)
+
+    def _ilerleme(self, r, u):
+        return yumusak((u - r.get("bas", 0.08)) / max(0.05, r.get("bit", 0.7) - r.get("bas", 0.08)))
+
+    def _kamera(self, u, sn):
+        """(merkez_x, merkez_y, yakınlaşma) – büyük tuval koordinatında."""
+        sp = self.spec
+        S = self.OLCEK
+        zt = sp.get("yakinlik", 1.8)
+        genel = (self.BW / 2, self.BH / 2, 1.0)
+        r = sp["rotalar"][self.takip]
+        p = self._ilerleme(r, u)
+        bas, _ = _yol_noktasi(self.yollar[self.takip], p)
+        c = sp.get("carpisma")
+        if c and u >= c.get("bas", 0.75) - 0.06:
+            cx, cy = self.bxy(c["lon"], c["lat"])
+            a = yumusak((u - c.get("bas", 0.75) + 0.06) / 0.08)
+            bas = (bas[0] + (cx - bas[0]) * a, bas[1] + (cy - bas[1]) * a)
+        giris = yumusak((u - 0.0) / max(0.05, r.get("bas", 0.08) + 0.06))
+        cik = sp.get("son", "genel") == "genel" and u > 0.88
+        a = giris * (1 - (yumusak((u - 0.88) / 0.12) if cik else 0))
+        z = 1 + (zt - 1) * a
+        x = genel[0] + (bas[0] - genel[0]) * a
+        y = genel[1] + (bas[1] - genel[1]) * a
+        if c and u >= c.get("bas", 0.75):   # çarpışma sarsıntısı
+            t = (u - c["bas"]) * sp.get("_sure", 8)
+            g = max(0.0, 1 - t / 0.7) * 14 * S
+            x += math.sin(sn * 53) * g
+            y += math.cos(sn * 47) * g
+        return x, y, min(z, S)
+
+    def kare(self, u, sn):
+        sp = self.spec
+        EW, EH = self.ekran
+        cx, cy, z = self._kamera(u, sn)
+        ww, hh = self.BW / z, self.BH / z
+        x0 = min(max(cx - ww / 2, 0), self.BW - ww)
+        y0 = min(max(cy - hh / 2, 0), self.BH - hh)
+        img = self.taban.resize((EW, EH), Image.BILINEAR, box=(x0, y0, x0 + ww, y0 + hh))
+        d = ImageDraw.Draw(img, "RGBA")
+        oran = EW / ww
+        olc = max(0.8, min(1.7, oran * 1.5))       # ikon ölçeği yakınlaşmayla büyür
+
+        def ex(p):
+            return ((p[0] - x0) * oran, (p[1] - y0) * oran)
+
+        # rotalar ve ordular
+        ordular = []
+        for i, r in enumerate(sp["rotalar"]):
+            p = self._ilerleme(r, u)
+            if p <= 0:
+                continue
+            yol = [ex(q) for q in self.yollar[i]]
+            parca = Harita._kes(yol, p)
+            renk = OSMANLI if r.get("taraf") == "osmanli" else DUSMAN
+            cizgi = r.get("cizgi", sp.get("cizgi", "kesikli"))
+            if cizgi == "kalin":
+                d.line(parca, fill=(20, 14, 10, 110), width=int(24 * olc), joint="curve")
+                d.line(parca, fill=renk + (220,), width=int(16 * olc), joint="curve")
+            elif cizgi == "akan":
+                d.line(parca, fill=(255, 250, 235, 200), width=int(12 * olc), joint="curve")
+                d.line(parca, fill=renk + (255,), width=int(7 * olc), joint="curve")
+                for k in range(len(parca) - 1):
+                    Harita._kesikli(d, parca[k], parca[k + 1], (255, 230, 160), faz=sn * 1.5, ince=True)
+            else:
+                for k in range(len(parca) - 1):
+                    Harita._kesikli(d, parca[k], parca[k + 1], renk)
+            (hx, hy), aci = _yol_noktasi(yol, p)
+            # toz: ordunun geçtiği yerde kalkıp sönen bulutçuklar
+            rng = np.random.default_rng(i * 97 + 5)
+            ofs = rng.random((18, 3))
+            yuruyor = p < 0.999
+            for k in range(18):
+                gp = p - (k + 1) * 0.012
+                if gp <= 0:
+                    break
+                (tx, ty), _ = _yol_noktasi(yol, gp)
+                yas = k / 18
+                rr = (10 + 26 * yas) * olc
+                al = int((70 if yuruyor else 30) * (1 - yas))
+                tx += (ofs[k, 0] - 0.5) * 30 * olc
+                ty += (ofs[k, 1] - 0.5) * 18 * olc - yas * 14 * olc
+                d.ellipse([tx - rr, ty - rr * 0.6, tx + rr, ty + rr * 0.6], fill=(214, 196, 160, al))
+            ordular.append((hy, hx, aci, r, p))
+        for hy, hx, aci, r, p in sorted(ordular, key=lambda o: o[0]):
+            if r.get("ikon", "ordu") == "gemi":
+                for g in range(r.get("gemi", 3)):
+                    kadirga(d, hx - math.cos(aci) * 50 * g * olc, hy - math.sin(aci) * 50 * g * olc + 26 * (g % 2) * olc,
+                            70 * olc, 1 if math.cos(aci) >= 0 else -1, r.get("taraf", "osmanli"), sn * 3 + g)
+            else:
+                ordu_birligi(d, hx, hy, aci, olc * 1.3, r.get("taraf", "osmanli"), sn if p < 0.999 else 0)
+        # çarpışma: parlama, duman, kılıçlar
+        c = sp.get("carpisma")
+        if c and u >= c.get("bas", 0.75):
+            x, y = ex(self.bxy(c["lon"], c["lat"]))
+            t = (u - c["bas"]) * sp.get("_sure", 8)
+            e_ = min(1.0, t / 0.4)
+            rng = np.random.default_rng(7)
+            for k in range(12):
+                aa = rng.random() * math.tau
+                hiz = 60 + rng.random() * 120
+                rr = (46 + t * 34) * olc
+                px = x + math.cos(aa) * hiz * min(1.0, t) * olc
+                py = y + math.sin(aa) * hiz * 0.6 * min(1.0, t) * olc - t * 18 * olc
+                d.ellipse([px - rr, py - rr * 0.7, px + rr, py + rr * 0.7], fill=(78, 72, 66, int(120 * max(0.25, 1 - t / 4))))
+            capraz_kilic(d, x, y - 10 * olc, 0.8 * olc * zipla(e_) + 0.02 * math.sin(sn * 8))
+        # şehir iğneleri
+        for e, p, bas in self.igneler:
+            e_ = evre(u, bas, 0.06)
+            if e_ <= 0:
+                continue
+            x, y = ex(p)
+            a = int(255 * min(1, e_ * 2))
+            yuk = 46 * olc * zipla(e_)
+            d.line([(x, y), (x, y - yuk)], fill=MUREKKEP + (a,), width=max(2, int(4 * olc)))
+            d.ellipse([x - 7, y - 4, x + 7, y + 4], fill=(0, 0, 0, a // 3))
+            d.ellipse([x - 12 * olc, y - yuk - 12 * olc, x + 12 * olc, y - yuk + 12 * olc], fill=KIRMIZI + (a,),
+                      outline=MUREKKEP + (a,), width=2)
+            ad = tr_buyuk(e["ad"])
+            tw = d.textlength(ad, font=F_SEHIR)
+            sag = e.get("yan", "sag") == "sag"
+            lx = x + 24 * olc if sag else x - 24 * olc - tw
+            if lx + tw > EW - 40:
+                lx = x - 24 * olc - tw
+            lx = max(40, lx)
+            ly = y - yuk + e.get("dy", 0)
+            d.rounded_rectangle([lx - 12, ly - 28, lx + tw + 12, ly + 26], 10, fill=KREM + (int(a * 0.93),),
+                                outline=MUREKKEP + (a,), width=3)
+            d.text((lx, ly - 25), ad, font=F_SEHIR, fill=MUREKKEP + (a,))
+        if c and u >= c.get("bas", 0.75):
+            t = (u - c["bas"]) * sp.get("_sure", 8)
+            parla = max(0.0, 1 - t / 0.35)
+            if parla > 0:
+                img.paste(Image.new("RGB", (EW, EH), (255, 244, 214)), (0, 0),
+                          Image.new("L", (EW, EH), int(150 * parla)))
+                d = ImageDraw.Draw(img, "RGBA")
+        # zaman plaketi (köşede çevrilen ay/yıl)
+        zaman = [zz for zz in sp.get("zaman", []) if u >= zz.get("bas", 0)]
+        if zaman:
+            zz = zaman[-1]
+            e_ = evre(u, zz.get("bas", 0), 0.05)
+            metin = tr_buyuk(zz["yazi"])
+            tw = d.textlength(metin, font=F_UST_ALT)
+            px, py = (60, 60) if yatay() else (60, 150)
+            d.rounded_rectangle([px + 6, py + 8, px + tw + 66, py + 96], 14, fill=(0, 0, 0, 80))
+            d.rounded_rectangle([px, py, px + tw + 60, py + 88], 14, fill=(22, 30, 34, 225), outline=ALTIN + (255,), width=3)
+            d.text((px + 30, py + 44 - F_UST_ALT.size * 0.62 + (1 - yumusak(e_)) * 24), metin, font=F_UST_ALT,
+                   fill=(255, 236, 190, int(255 * e_)))
+        # başlık plaketi (sağ üst / dikeyde üst bant)
+        b = sp.get("baslik")
+        if b:
+            a = int(255 * evre(sn, 0.1, 0.5))
+            alt = tr_buyuk(b.get("alt", ""))
+            gen = max(d.textlength(b.get("ust", ""), font=F_UST), d.textlength(alt, font=F_UST_ALT)) + 80
+            if yatay():
+                bx0, by0 = EW - 60 - gen, 60
+            else:
+                bx0, by0 = (EW - gen) / 2, 300
+            d.rounded_rectangle([bx0 + 8, by0 + 8, bx0 + gen + 8, by0 + 288], 18, fill=(0, 0, 0, int(a * 0.3)))
+            d.rounded_rectangle([bx0, by0, bx0 + gen, by0 + 280], 18, fill=(22, 30, 34, int(a * 0.82)), outline=ALTIN + (a,), width=3)
+            yazi(d, (bx0 + gen / 2, by0 + 18), b.get("ust", ""), F_UST, (255, 236, 190), 6, alfa=a)
+            if alt:
+                yazi(d, (bx0 + gen / 2, by0 + 175), alt, F_UST_ALT, ALTIN, 4, alfa=a)
+        return img
+
+
 # ---------------------------------------------------------------- taraflar
 class Taraflar:
     def __init__(self, spec):
@@ -969,7 +1258,7 @@ class Basamak:
         return img
 
 
-TURLER = {"harita": Harita, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan, "basamak": Basamak}
+TURLER = {"harita": Harita, "sefer": Sefer, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan, "basamak": Basamak}
 
 
 def _cesit(spec):
@@ -986,6 +1275,9 @@ def _cesit(spec):
         spec.setdefault("cizgi", sec(["kesikli", "akan", "kalin"], 8))
         spec.setdefault("damga_tip", sec(["muhur", "murekkep", "ferman"], 12))
         spec.setdefault("bulut", sec([True, False, False], 16))
+    elif spec["tip"] == "sefer":
+        spec.setdefault("tema", sec(["parsomen", "antika", "parsomen", "kizil"], 0))
+        spec.setdefault("cizgi", sec(["kesikli", "akan", "kalin"], 8))
     elif spec["tip"] == "takvim":
         spec.setdefault("arka", sec(["gunbatimi", "gece", "safak", "parsomen"], 0))
     elif spec["tip"] == "taraflar":
