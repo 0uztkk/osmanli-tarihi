@@ -1389,7 +1389,7 @@ def haritadan_mekan(spec):
     e = spec["etiketler"][0]
     m = {"tip": "mekan", "yer": e["ad"], "lon": e["lon"], "lat": e["lat"]}
     b = spec.get("baslik") or {}
-    if b.get("alt"):
+    if b.get("alt") and tr_buyuk(b["alt"]) != tr_buyuk(e["ad"]):
         m["alt"] = b["alt"]
     for k in ("damga", "damga_tip"):
         if k in spec:

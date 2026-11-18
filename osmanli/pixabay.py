@@ -63,7 +63,8 @@ YAPILAR = [   # (yer adında geçen, arama, en erken yıl, etiketlerde mutlaka o
     ("atmeydanı", "obelisk of theodosius", 390, "obelisk"),
     ("hipodrom", "obelisk of theodosius", 390, "obelisk"),
 ]
-YAPI_YASAK = {"night", "illuminated", "illumination", "lights", "lighting", "interior", "inside", "museum", "tiles"}
+YAPI_YASAK = {"night", "illuminated", "illumination", "lights", "lighting", "interior", "inside", "museum", "tiles",
+              "flower", "flowers", "tulip", "tulips", "garden", "park", "tree", "trees", "spring", "cat", "bird", "food"}
 
 
 def var():
@@ -145,9 +146,15 @@ def atmosfer_video(metin, tohum=0):
     return None
 
 
+YAPI_FOTO = os.environ.get("PIXABAY_YAPI", "0") == "1"   # varsayılan kapalı: bkz. aşağıdaki not
+
+
 def yapi_fotografi(yer, yil):
-    """Yapının fotoğrafı (yerel jpg yolu) ya da None. yil: konunun en erken yılı (bilinmiyorsa None -> kullanılmaz)."""
-    if not var() or yil is None:
+    """Yapının fotoğrafı (yerel jpg yolu) ya da None. yil: konunun en erken yılı (bilinmiyorsa None -> kullanılmaz).
+    NOT: Denemede (Kösem, Topkapı) gelen fotoğraf lale bahçesi ve arkada bulanık turistlerdi; etiketler modern
+    ayrıntıları (turist, lamba, iskele) güvenilir biçimde göstermiyor. Tarih farkı riski yüzünden kapalı;
+    yer sahneleri çizim silueti kullanır. Açmak için PIXABAY_YAPI=1."""
+    if not var() or yil is None or not YAPI_FOTO:
         return None
     ad = yer.lower().replace("I", "ı").replace("İ", "i")
     eslesen = next(((q, since, g) for anahtar, q, since, g in YAPILAR if anahtar in ad), None)
