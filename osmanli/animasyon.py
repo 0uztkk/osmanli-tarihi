@@ -7,6 +7,8 @@ Sahne JSON'unda "anim" alanı varsa görsel yerine bu modül çizer. Türler:
   taraflar Tarafların armaları yukarıdan iner, ortada ittifak bandı, altta karşı taraf.
   sefer    Orduyu izleyen kamera: yürüyen asker birlikleri, arkalarında toz, yolda beliren şehir iğneleri,
            çarpışmada parlama/duman/sarsıntı, köşede ay plaketi; sonda genel görünüme açılır.
+  mekan    Şehir içi yer (cami, saray, kule, meydan...): gök, uzak şehir silueti, binanın silueti ve suda yansıması,
+           üstüne düşen iğne, ad plaketi, köşede bölge haritası madalyonu. Yakın (≤0.8°) harita sahneleri buna çevrilir.
   takvim   Gün batımı denizinde filo; ortada yaprakları çevrilen takvim ve "8 AY SONRA" bandı.
 
 Her tür hazirla(spec) ile bir kez kurulur, sonra .kare(u, sn) ile her kare çizilir
@@ -966,6 +968,420 @@ class Sefer:
         return img
 
 
+# ---------------------------------------------------------------- mekan (şehir içi yer: bina silueti)
+BINA_TURU = [   # ad içinde geçen kelime → bina türü (sıra önemli: "Yıldız Camii" saray değil cami)
+    ("cami", ("cami", "ayasofya", "süleymaniye", "külliye", "eyüp sultan", "mescit")),
+    ("kule", ("kule",)),
+    ("carsi", ("çarşı", "bedesten", "tahtakale")),
+    ("kale", ("kale", "hisar", "kavağı", "seddülbahir", "kumkale", "surlar")),
+    ("meydan", ("meydan", "hipodrom")),
+    ("konak", ("konağı", "konak", "köşk", "babıali", "yalı")),
+    ("manastir", ("manastır", "kilise")),
+    ("saray", ("saray", "topkapı", "dolmabahçe", "çırağan", "yıldız", "harem", "sadabad")),
+    ("kiyi", ("boğaz", "üsküdar", "tophane", "karaköy", "galata", "liman", "haliç")),
+]
+SEHIRLER = [("İstanbul", 28.98, 41.01), ("Edirne", 26.56, 41.68), ("Bursa", 29.06, 40.19), ("Yanya", 20.85, 39.67),
+            ("Konya", 32.48, 37.87), ("Kahire", 31.24, 30.04), ("Şam", 36.29, 33.51), ("Bağdat", 44.36, 33.31),
+            ("Selanik", 22.94, 40.64), ("Amasya", 35.83, 40.65), ("Manisa", 27.43, 38.61), ("Akka", 35.07, 32.92),
+            ("Belgrad", 20.46, 44.82), ("Budin", 19.04, 47.5), ("Taberiye", 35.53, 32.79), ("Çanakkale", 26.4, 40.15)]
+MEKAN_RENK = {   # gök üst, gök alt, deniz üst, deniz alt, siluet, uzak siluet, pencere ışığı
+    "gunbatimi": ((58, 40, 72), (246, 168, 104), (96, 62, 78), (28, 20, 34), (34, 22, 30), (128, 78, 84), (255, 206, 120)),
+    "gece": ((6, 10, 28), (42, 50, 96), (22, 30, 60), (6, 8, 20), (12, 14, 28), (40, 46, 80), (255, 204, 110)),
+    "safak": ((70, 96, 150), (246, 204, 170), (120, 140, 168), (46, 62, 90), (48, 46, 68), (140, 132, 156), (255, 226, 170)),
+    "parsomen": ((226, 206, 164), (214, 190, 146), (200, 178, 136), (186, 160, 118), (184, 156, 112), (196, 174, 134), (150, 40, 34)),
+}
+
+
+def bina_turu(ad):
+    a = ad.lower().replace("I", "ı").replace("İ", "i")
+    for tur, kelimeler in BINA_TURU:
+        if any(k in a for k in kelimeler):
+            return tur
+    return "sehir"
+
+
+def _kubbe(d, cx, ty, r, renk, cizgi=None, alem=False, cz=2):
+    """ty: kubbenin oturduğu çizgi; yarım elips kubbe, tepede alem."""
+    d.chord([cx - r, ty - r * 0.95, cx + r, ty + r * 0.95], 180, 360, fill=renk, outline=cizgi, width=cz)
+    d.line([(cx, ty - r * 0.95), (cx, ty - r * 0.95 - r * 0.28)], fill=cizgi or renk, width=max(2, int(r * 0.08)))
+    if alem:   # hilal
+        rr = r * 0.12
+        y0 = ty - r * 0.95 - r * 0.28 - rr
+        d.arc([cx - rr, y0 - rr, cx + rr, y0 + rr], 300, 240, fill=cizgi or renk, width=max(2, int(rr * 0.5)))
+
+
+def _minare(d, x, by, s, boy, renk, cizgi=None, cz=2):
+    w = 3.4 * s
+    d.rectangle([x - w / 2, by - boy * s, x + w / 2, by], fill=renk, outline=cizgi, width=cz)
+    for k in (0.62, 0.8):
+        yy = by - boy * s * k
+        d.rectangle([x - w * 0.95, yy - 1.4 * s, x + w * 0.95, yy + 0.6 * s], fill=renk, outline=cizgi, width=cz)
+    d.polygon([(x - w / 2, by - boy * s), (x + w / 2, by - boy * s), (x, by - boy * s - 11 * s)], fill=renk, outline=cizgi)
+
+
+def _pencereler(d, x0, x1, y, s, isik, rng, yogun=0.6):
+    if isik is None:
+        return
+    x = x0 + 3 * s
+    while x < x1 - 3 * s:
+        if rng.random() < yogun:
+            d.rounded_rectangle([x, y - 3.2 * s, x + 1.8 * s, y], max(1, int(s * 0.8)), fill=isik)
+        x += 4.6 * s
+
+
+def bina_ciz(d, tur, cx, by, s, renk, cizgi=None, isik=None, minare=4, seed=1):
+    """by: zemin çizgisi, s: birim (bina ~100 birim genişliğinde)."""
+    rng = np.random.default_rng(seed)
+    cz = max(2, int(s * 0.5))
+    if tur == "cami":
+        d.rectangle([cx - 40 * s, by - 16 * s, cx + 40 * s, by], fill=renk, outline=cizgi, width=cz)
+        for k in (-30, -16, 16, 30):
+            _kubbe(d, cx + k * s, by - 16 * s, 6 * s, renk, cizgi, cz=cz)
+        d.rectangle([cx - 24 * s, by - 24 * s, cx + 24 * s, by - 16 * s], fill=renk, outline=cizgi, width=cz)
+        for k in (-17, 17):
+            _kubbe(d, cx + k * s, by - 24 * s, 11 * s, renk, cizgi, cz=cz)
+        d.rectangle([cx - 17 * s, by - 31 * s, cx + 17 * s, by - 24 * s], fill=renk, outline=cizgi, width=cz)
+        _kubbe(d, cx, by - 31 * s, 19 * s, renk, cizgi, alem=True, cz=cz)
+        xs = {2: (-46, 46), 4: (-48, -36, 36, 48), 6: (-50, -42, -34, 34, 42, 50)}.get(minare, (-48, 48))
+        for k in xs:
+            _minare(d, cx + k * s, by, s, 62 if abs(k) > 40 else 52, renk, cizgi, cz)
+        _pencereler(d, cx - 38 * s, cx + 38 * s, by - 5 * s, s, isik, rng, 0.5)
+    elif tur == "saray":
+        d.rectangle([cx - 52 * s, by - 13 * s, cx + 52 * s, by], fill=renk, outline=cizgi, width=cz)
+        for i in range(-52, 52, 5):   # mazgallar
+            d.rectangle([cx + i * s, by - 15.5 * s, cx + (i + 2.6) * s, by - 13 * s], fill=renk, outline=cizgi, width=1)
+        d.rectangle([cx - 40 * s, by - 22 * s, cx - 4 * s, by - 13 * s], fill=renk, outline=cizgi, width=cz)
+        for k in (-34, -24, -14):
+            _kubbe(d, cx + k * s, by - 22 * s, 4 * s, renk, cizgi, cz=cz)
+        d.rectangle([cx + 14 * s, by - 46 * s, cx + 22 * s, by - 13 * s], fill=renk, outline=cizgi, width=cz)   # Adalet Kulesi
+        d.polygon([(cx + 13 * s, by - 46 * s), (cx + 23 * s, by - 46 * s), (cx + 18 * s, by - 62 * s)], fill=renk, outline=cizgi)
+        for k in (-8, 8):   # kapı kuleleri
+            d.rectangle([cx + (k - 3.5) * s, by - 28 * s, cx + (k + 3.5) * s, by], fill=renk, outline=cizgi, width=cz)
+            d.polygon([(cx + (k - 4.5) * s, by - 28 * s), (cx + (k + 4.5) * s, by - 28 * s), (cx + k * s, by - 40 * s)],
+                      fill=renk, outline=cizgi)
+        d.chord([cx - 4 * s, by - 14 * s, cx + 4 * s, by - 2 * s], 180, 360, fill=isik or (20, 14, 10))
+        d.rectangle([cx - 4 * s, by - 8 * s, cx + 4 * s, by], fill=isik or (20, 14, 10))
+        for k in (-58, -48, 30, 40, 50):   # selviler
+            d.ellipse([cx + (k - 2.2) * s, by - 30 * s, cx + (k + 2.2) * s, by + 1 * s], fill=renk, outline=cizgi, width=1)
+        _pencereler(d, cx + 26 * s, cx + 52 * s, by - 5 * s, s, isik, rng)
+        _pencereler(d, cx - 40 * s, cx - 12 * s, by - 16 * s, s, isik, rng)
+    elif tur == "kule":
+        d.rectangle([cx - 30 * s, by - 8 * s, cx + 30 * s, by], fill=renk, outline=cizgi, width=cz)
+        d.rectangle([cx - 9 * s, by - 62 * s, cx + 9 * s, by - 8 * s], fill=renk, outline=cizgi, width=cz)
+        d.rectangle([cx - 11 * s, by - 68 * s, cx + 11 * s, by - 62 * s], fill=renk, outline=cizgi, width=cz)
+        d.polygon([(cx - 11 * s, by - 68 * s), (cx + 11 * s, by - 68 * s), (cx, by - 92 * s)], fill=renk, outline=cizgi)
+        if isik:
+            for yy in (by - 66 * s, by - 50 * s, by - 34 * s, by - 20 * s):
+                d.rectangle([cx - 1.2 * s, yy - 3 * s, cx + 1.2 * s, yy], fill=isik)
+        for k in (-26, -18, 18, 26):
+            d.rectangle([cx + (k - 4) * s, by - 16 * s, cx + (k + 4) * s, by - 8 * s], fill=renk, outline=cizgi, width=cz)
+            d.polygon([(cx + (k - 5) * s, by - 16 * s), (cx + (k + 5) * s, by - 16 * s), (cx + k * s, by - 22 * s)], fill=renk, outline=cizgi)
+    elif tur in ("kale", "manastir") and tur == "kale":
+        d.rectangle([cx - 50 * s, by - 18 * s, cx + 50 * s, by], fill=renk, outline=cizgi, width=cz)
+        for i in range(-50, 50, 6):
+            d.rectangle([cx + i * s, by - 22 * s, cx + (i + 3) * s, by - 18 * s], fill=renk, outline=cizgi, width=1)
+        for k in (-46, -16, 16, 46):
+            d.rectangle([cx + (k - 6) * s, by - 32 * s, cx + (k + 6) * s, by], fill=renk, outline=cizgi, width=cz)
+            for j in (-6, -2, 2):
+                d.rectangle([cx + (k + j) * s, by - 36 * s, cx + (k + j + 2.4) * s, by - 32 * s], fill=renk, outline=cizgi, width=1)
+        d.rectangle([cx - 8 * s, by - 46 * s, cx + 8 * s, by - 18 * s], fill=renk, outline=cizgi, width=cz)
+        for j in (-8, -3.5, 1, 5.5):
+            d.rectangle([cx + j * s, by - 50 * s, cx + (j + 2.5) * s, by - 46 * s], fill=renk, outline=cizgi, width=1)
+        d.chord([cx - 5 * s, by - 12 * s, cx + 5 * s, by + 2 * s], 180, 360, fill=isik or (20, 14, 10))
+    elif tur == "manastir":
+        d.rectangle([cx - 30 * s, by - 18 * s, cx + 30 * s, by], fill=renk, outline=cizgi, width=cz)
+        d.rectangle([cx - 10 * s, by - 26 * s, cx + 10 * s, by - 18 * s], fill=renk, outline=cizgi, width=cz)
+        _kubbe(d, cx, by - 26 * s, 10 * s, renk, cizgi, cz=cz)
+        for k in (-22, 22):
+            _kubbe(d, cx + k * s, by - 18 * s, 6 * s, renk, cizgi, cz=cz)
+        for k in (-46, -40, 40, 48):
+            d.ellipse([cx + (k - 2.4) * s, by - 30 * s, cx + (k + 2.4) * s, by + 1 * s], fill=renk, outline=cizgi, width=1)
+        _pencereler(d, cx - 28 * s, cx + 28 * s, by - 6 * s, s, isik, rng)
+    elif tur == "meydan":
+        bina_ciz(d, "cami", cx + 18 * s, by - 2 * s, s * 0.62, renk, cizgi, isik, 6, seed)
+        d.polygon([(cx - 36 * s, by), (cx - 30 * s, by), (cx - 31.5 * s, by - 44 * s), (cx - 33 * s, by - 50 * s),
+                   (cx - 34.5 * s, by - 44 * s)], fill=renk, outline=cizgi)   # dikilitaş
+        d.polygon([(cx - 14 * s, by), (cx - 8 * s, by), (cx - 9.5 * s, by - 40 * s), (cx - 12.5 * s, by - 40 * s)],
+                  fill=renk, outline=cizgi)   # örme dikilitaş
+        for i in range(-56, 56, 3):   # kalabalık
+            hh = 2.4 + rng.random() * 1.4
+            d.ellipse([cx + i * s, by - hh * s - 2 * s, cx + (i + 2) * s, by - hh * s], fill=renk, outline=cizgi, width=1)
+            d.rectangle([cx + (i + 0.2) * s, by - hh * s - 0.5 * s, cx + (i + 1.8) * s, by], fill=renk)
+    elif tur == "konak":
+        d.rectangle([cx - 36 * s, by - 6 * s, cx + 36 * s, by], fill=renk, outline=cizgi, width=cz)
+        d.rectangle([cx - 32 * s, by - 20 * s, cx + 32 * s, by - 6 * s], fill=renk, outline=cizgi, width=cz)
+        d.rectangle([cx - 36 * s, by - 34 * s, cx + 36 * s, by - 20 * s], fill=renk, outline=cizgi, width=cz)   # cumbalı üst kat
+        d.polygon([(cx - 42 * s, by - 34 * s), (cx + 42 * s, by - 34 * s), (cx + 28 * s, by - 46 * s), (cx - 28 * s, by - 46 * s)],
+                  fill=renk, outline=cizgi)
+        d.rectangle([cx + 12 * s, by - 52 * s, cx + 16 * s, by - 42 * s], fill=renk, outline=cizgi, width=1)
+        _pencereler(d, cx - 32 * s, cx + 32 * s, by - 24 * s, s, isik, rng, 0.7)
+        _pencereler(d, cx - 28 * s, cx + 28 * s, by - 10 * s, s, isik, rng, 0.5)
+    elif tur == "carsi":
+        d.rectangle([cx - 46 * s, by - 16 * s, cx + 46 * s, by], fill=renk, outline=cizgi, width=cz)
+        for k in range(-40, 41, 16):
+            _kubbe(d, cx + k * s, by - 16 * s, 7 * s, renk, cizgi, cz=cz)
+        for k in range(-40, 41, 10):
+            d.chord([cx + (k - 2.5) * s, by - 9 * s, cx + (k + 2.5) * s, by - 3 * s], 180, 360, fill=isik or (20, 14, 10))
+            d.rectangle([cx + (k - 2.5) * s, by - 6 * s, cx + (k + 2.5) * s, by], fill=isik or (20, 14, 10))
+    else:   # sehir / kiyi: iki cami ve evler
+        for i in range(-56, 56, 9):
+            hh = 8 + rng.random() * 10
+            d.rectangle([cx + i * s, by - hh * s, cx + (i + 8) * s, by], fill=renk, outline=cizgi, width=1)
+            d.polygon([(cx + (i - 1) * s, by - hh * s), (cx + (i + 9) * s, by - hh * s), (cx + (i + 4) * s, by - (hh + 4) * s)],
+                      fill=renk, outline=cizgi)
+            if isik and rng.random() < 0.6:
+                d.rectangle([cx + (i + 3) * s, by - (hh - 3) * s, cx + (i + 5) * s, by - (hh - 6) * s], fill=isik)
+        bina_ciz(d, "cami", cx - 22 * s, by - 6 * s, s * 0.55, renk, cizgi, isik, 2, seed + 1)
+        bina_ciz(d, "cami", cx + 26 * s, by - 4 * s, s * 0.7, renk, cizgi, isik, 4, seed + 2)
+
+
+class Mekan:
+    """Şehir içindeki bir yer: düz harita yerine gök, uzak şehir silueti, ortada binanın silueti ve suda yansıması.
+    Binanın üstüne iğne düşer, adı plakette çıkar; köşede madalyonda bölge haritası ve konum noktası.
+    spec: yer (ad), bina (cami|saray|kule|kale|meydan|konak|carsi|manastir|sehir; yoksa addan tahmin), alt (ikinci satır;
+          yoksa en yakın şehir), lon/lat (madalyon için), arka (gunbatimi|gece|safak|parsomen), minare (2|4|6), damga."""
+    OLCEK = 2
+
+    def __init__(self, spec):
+        self.spec = spec
+        S = self.OLCEK
+        self.BW, self.BH = W * S, H * S
+        BW, BH = self.BW, self.BH
+        arka = spec.get("arka", "gunbatimi")
+        gu, ga, du, da, sil, uzak, isik = MEKAN_RENK.get(arka, MEKAN_RENK["gunbatimi"])
+        parsomen = arka == "parsomen"
+        self.ufuk = ufuk = int(BH * (0.66 if yatay() else 0.6))
+        y = np.linspace(0, 1, ufuk)[:, None, None]
+        gok = np.array(gu) * (1 - y) + np.array(ga) * y
+        img = np.zeros((BH, BW, 3), np.float32)
+        img[:ufuk] = gok
+        yy = np.linspace(0, 1, BH - ufuk)[:, None, None]
+        img[ufuk:] = np.array(du) * (1 - yy) + np.array(da) * yy
+        gx = BW * (0.72 if yatay() else 0.7)
+        if not parsomen:   # güneş/ay ışığı
+            g = np.mgrid[0:BH:4, 0:BW:4]
+            r = np.sqrt((g[1] - gx) ** 2 + (g[0] - (ufuk - BH * 0.06)) ** 2)
+            hale = np.clip(1 - r / (BH * 0.42), 0, 1) ** 2 * (55 if arka != "gece" else 25)
+            hale = np.asarray(Image.fromarray(hale.astype(np.float32)).resize((BW, BH), Image.BILINEAR))
+            img += hale[..., None] * (np.array([1, 0.8, 0.45]) if arka != "gece" else np.array([0.6, 0.65, 0.9]))
+        taban = Image.fromarray(img.clip(0, 255).astype(np.uint8))
+        d = ImageDraw.Draw(taban, "RGBA")
+        rng = np.random.default_rng(len(spec.get("yer", "")) * 7 + 3)
+        if arka == "gece":
+            for _ in range(260):
+                x, yy3 = int(rng.integers(0, BW)), int(rng.integers(0, int(ufuk * 0.85)))
+                rr = float(rng.uniform(1.5, 4.5))
+                d.ellipse([x - rr, yy3 - rr, x + rr, yy3 + rr], fill=(255, 250, 230, int(rng.integers(110, 255))))
+            my = ufuk - BH * 0.36
+            d.ellipse([gx - 70, my - 70, gx + 70, my + 70], fill=(250, 244, 220, 240))
+            d.ellipse([gx - 34, my - 82, gx + 96, my + 52], fill=gu + (255,))
+        elif not parsomen:
+            d.ellipse([gx - 110, ufuk - BH * 0.06 - 110, gx + 110, ufuk - BH * 0.06 + 110], fill=(255, 236, 190, 210))
+        # uzak şehir silueti
+        cz = None if not parsomen else MUREKKEP + (150,)
+        x = -BW * 0.05
+        s_uzak = BW / (900 if yatay() else 520)
+        while x < BW * 1.05:
+            tur = ["cami", "sehir", "kule", "cami", "sehir"][int(rng.integers(0, 5))]
+            sc = s_uzak * float(rng.uniform(0.5, 0.85))
+            if tur == "kule":
+                sc *= 0.7
+            bina_ciz(d, tur, x, ufuk + 2, sc, uzak + (255,), cz, None, int(rng.choice([2, 4])), int(rng.integers(0, 99)))
+            x += sc * float(rng.uniform(70, 120))
+        if not parsomen:   # pus
+            pus = Image.new("L", (BW, BH), 0)
+            ImageDraw.Draw(pus).rectangle([0, ufuk - BH * 0.12, BW, ufuk], fill=70)
+            pus = pus.filter(ImageFilter.GaussianBlur(BH * 0.03))
+            taban.paste(Image.new("RGB", (BW, BH), ga), (0, 0), pus)
+            d = ImageDraw.Draw(taban, "RGBA")
+        # ana bina
+        self.tur = spec.get("bina") or bina_turu(spec.get("yer", ""))
+        s = BW / (290 if yatay() else 150)
+        if self.tur == "kule":
+            s *= 0.85 if not yatay() else 1.0
+        self.bx, self.by, self.s = BW * (0.5 if not yatay() else 0.5), ufuk + 4 * s, s
+        isik_r = isik + (255,) if arka in ("gece", "gunbatimi") else None
+        renk = sil + (255,)
+        cizgi = MUREKKEP + (255,) if parsomen else None
+        katman = Image.new("RGBA", (BW, BH), (0, 0, 0, 0))
+        kd = ImageDraw.Draw(katman)
+        bina_ciz(kd, self.tur, self.bx, self.by, s, renk, cizgi, isik_r, spec.get("minare", 4), len(spec.get("yer", "")))
+        # suda yansıma
+        kutu = katman.crop((0, 0, BW, int(self.by)))
+        yans = kutu.transpose(Image.FLIP_TOP_BOTTOM).filter(ImageFilter.GaussianBlur(6))
+        a = np.asarray(yans).copy()
+        sol = np.linspace(0.55, 0.0, a.shape[0])[:, None]
+        a[..., 3] = (a[..., 3] * sol).astype(np.uint8)
+        if not parsomen:
+            taban.paste(Image.fromarray(a), (0, int(self.by)), Image.fromarray(a))
+        taban.paste(katman, (0, 0), katman)
+        d = ImageDraw.Draw(taban, "RGBA")
+        if not parsomen:
+            for _ in range(140):
+                x, y2 = int(rng.integers(0, BW)), int(rng.integers(int(self.by) + 10, BH))
+                d.line([(x, y2), (x + int(rng.integers(30, 120)), y2)], fill=(255, 240, 210, int(rng.integers(20, 60))), width=3)
+        else:
+            for y2 in range(int(self.by) + 30, BH, 46):
+                for x in range(int(rng.integers(0, 80)), BW, 160):
+                    d.arc([x, y2, x + 60, y2 + 20], 200, 340, fill=MUREKKEP + (90,), width=3)
+        taban = taban.filter(ImageFilter.GaussianBlur(0.6))
+        self.taban = vinyet_buyuk(taban, 0.45)
+        self.tepe = self._tepe()
+        self.madalyon = self._madalyon()
+
+    def _tepe(self):
+        """İğnenin düşeceği nokta: binanın en yüksek yerinin biraz altı (büyük tuvalde)."""
+        boy = {"cami": 62, "saray": 48, "kule": 88, "kale": 44, "meydan": 46, "konak": 46, "carsi": 22, "manastir": 34}.get(self.tur, 36)
+        return self.bx, self.by - boy * self.s
+
+    def _madalyon(self):
+        sp = self.spec
+        if "lon" not in sp:
+            return None
+        R = 120 if not yatay() else 110
+        n = R * 2
+        lon, lat = sp["lon"], sp["lat"]
+        gen = sp.get("madalyon_genislik", 5.0)
+        cos = math.cos(math.radians(lat))
+        k = n / (gen * cos)
+        img = Image.new("RGB", (n, n), (52, 92, 104))
+        d = ImageDraw.Draw(img)
+        for halka in kara_verisi():
+            nok = [(n / 2 + (a - lon) * cos * k, n / 2 - (b - lat) * k) for a, b in halka]
+            xs = [p[0] for p in nok]
+            ys = [p[1] for p in nok]
+            if max(xs) < 0 or min(xs) > n or max(ys) < 0 or min(ys) > n:
+                continue
+            d.polygon(nok, fill=(232, 214, 170), outline=(90, 64, 40))
+        maske = Image.new("L", (n, n), 0)
+        ImageDraw.Draw(maske).ellipse([0, 0, n - 1, n - 1], fill=255)
+        return img, maske, R
+
+    def kare(self, u, sn):
+        sp = self.spec
+        S = self.OLCEK
+        z = 1.0 + 0.07 * yumusak(u)
+        ww, hh = self.BW / z, self.BH / z
+        tx, ty = self._tepe()
+        ox = self.BW / 2 + (tx - self.BW / 2) * 0.3 * yumusak(u)
+        oy = self.BH / 2 + (ty - self.BH / 2) * 0.15 * yumusak(u)
+        x0 = min(max(ox - ww / 2, 0), self.BW - ww)
+        y0 = min(max(oy - hh / 2, 0), self.BH - hh)
+        img = self.taban.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + ww, y0 + hh))
+        d = ImageDraw.Draw(img, "RGBA")
+        oran = W / ww
+
+        def ex(px, py):
+            return ((px - x0) * oran, (py - y0) * oran)
+
+        # kuşlar
+        if sp.get("arka", "gunbatimi") != "parsomen":
+            renk_k = (30, 24, 30, 200) if sp.get("arka") != "gece" else (200, 200, 220, 150)
+            for k in range(5):
+                bx = (W * (0.1 + k * 0.13) + sn * (38 + k * 6)) % (W * 1.2) - W * 0.1
+                by = H * (0.14 + 0.05 * math.sin(k * 2.1)) + math.sin(sn * 1.3 + k) * 8
+                kan = 9 + 3 * math.sin(sn * 9 + k * 1.7)
+                d.line([(bx - 14, by - kan), (bx, by), (bx + 14, by - kan)], fill=renk_k, width=3)
+        # iğne
+        px, py = ex(tx, ty)
+        e = evre(u, 0.12, 0.12)
+        if e > 0:
+            yuk = 80 + (1 - zipla(e)) * H * 0.25
+            if e >= 1:
+                for k in range(2):
+                    faz = (sn * 0.7 + k / 2) % 1
+                    r = 30 + faz * 120
+                    d.ellipse([px - r, py - r * 0.4, px + r, py + r * 0.4], outline=(255, 214, 90, int(200 * (1 - faz))), width=5)
+            d.line([(px, py), (px, py - yuk + 20)], fill=MUREKKEP + (255,), width=6)
+            d.ellipse([px - 26, py - yuk - 26, px + 26, py - yuk + 26], fill=KIRMIZI + (255,), outline=MUREKKEP + (255,), width=4)
+            d.ellipse([px - 9, py - yuk - 9, px + 9, py - yuk + 9], fill=(250, 236, 210, 255))
+        # ad plaketi
+        e2 = evre(u, 0.2, 0.1)
+        if e2 > 0:
+            a = int(255 * e2)
+            ad = tr_buyuk(sp.get("yer", ""))
+            alt = sp.get("alt")
+            if alt is None and "lon" in sp:
+                en = min(SEHIRLER, key=lambda c: math.dist((c[1], c[2]), (sp["lon"], sp["lat"])))
+                alt = en[0] if math.dist((en[1], en[2]), (sp["lon"], sp["lat"])) < 0.6 else ""
+            alt = tr_buyuk(alt or "")
+            sinir = W * 0.55 if yatay() else W - 160
+            f = F_UST
+            while d.textlength(ad, font=f) > sinir and f.size > 60:
+                f = _f("DejaVuSerif-Bold.ttf", f.size - 8)
+            gen = max(d.textlength(ad, font=f), d.textlength(alt, font=F_UST_ALT)) + 90
+            yuk = f.size + (94 if alt else 40)
+            if yatay():
+                bx0, by0 = 70, 70
+            else:
+                bx0, by0 = (W - gen) / 2, H * 0.115
+            by0 += (1 - yumusak(e2)) * 30
+            d.rounded_rectangle([bx0 + 8, by0 + 8, bx0 + gen + 8, by0 + yuk + 8], 18, fill=(0, 0, 0, int(a * 0.3)))
+            d.rounded_rectangle([bx0, by0, bx0 + gen, by0 + yuk], 18, fill=(22, 30, 34, int(a * 0.84)), outline=ALTIN + (a,), width=3)
+            yazi(d, (bx0 + gen / 2, by0 + 14), ad, f, (255, 236, 190), 6, alfa=a)
+            if alt:
+                yazi(d, (bx0 + gen / 2, by0 + f.size + 22), alt, F_UST_ALT, ALTIN, 4, alfa=a)
+        # madalyon: bölge haritası ve konum
+        if self.madalyon:
+            e3 = evre(u, 0.3, 0.12)
+            if e3 > 0:
+                harita, maske, R = self.madalyon
+                cx, cy = (W - R - 70, R + 70) if yatay() else (W - R - 60, H * 0.31)
+                a = int(255 * e3)
+                d.ellipse([cx - R - 10 + 6, cy - R - 10 + 8, cx + R + 10 + 6, cy + R + 10 + 8], fill=(0, 0, 0, a // 3))
+                d.ellipse([cx - R - 10, cy - R - 10, cx + R + 10, cy + R + 10], fill=ALTIN + (a,))
+                m = maske.point(lambda v: v * a // 255)
+                img.paste(harita, (int(cx - R), int(cy - R)), m)
+                d = ImageDraw.Draw(img, "RGBA")
+                faz = (sn * 0.9) % 1
+                r = 8 + faz * 30
+                d.ellipse([cx - r, cy - r, cx + r, cy + r], outline=KIRMIZI + (int(a * (1 - faz)),), width=4)
+                d.ellipse([cx - 9, cy - 9, cx + 9, cy + 9], fill=KIRMIZI + (a,), outline=(255, 255, 255, a), width=3)
+        # damga (eski harita sahnelerinden gelebilir)
+        dm = sp.get("damga")
+        if dm and u >= dm.get("bas", 0.5):
+            e4 = evre(u, dm["bas"], 0.06)
+            olcek = 1.8 - 0.8 * yumusak(e4)
+            dx, dy = (W * 0.5, H * 0.8) if not yatay() else (W * 0.78, H * 0.78)
+            tip = dm.get("tip", sp.get("damga_tip", "muhur"))
+            if tip == "murekkep":
+                murekkep_damga(d, dx, dy, tr_buyuk(dm["yazi"]), olcek, int(255 * min(1, e4 * 2)))
+            elif tip == "ferman":
+                ferman(d, dx, dy, dm["yazi"], evre(u, dm["bas"], 0.15), 255)
+            else:
+                damga(d, dx, dy, tr_buyuk(dm["yazi"]), olcek * 0.8, int(255 * min(1, e4 * 2)))
+        return img
+
+
+def vinyet_buyuk(img, guc=0.5):
+    w, h = img.size
+    a = np.asarray(img).astype(np.float32)
+    yy, xx = np.mgrid[0:h, 0:w]
+    r = ((xx - w / 2) / (w * 0.75)) ** 2 + ((yy - h * 0.45) / (h * 0.7)) ** 2
+    m = 1 - np.clip(r, 0, 1) ** 1.6 * guc
+    return Image.fromarray((a * m[..., None]).clip(0, 255).astype(np.uint8))
+
+
+def harita_mekan_mi(spec):
+    """Şehir içi (yakın) harita sahnesi mi: ≤0.8 derece genişlik, rota yok. Bunlar Mekan olarak çizilir."""
+    return spec.get("tip") == "harita" and spec.get("genislik", 20) <= 0.8 and not spec.get("rotalar") \
+        and spec.get("etiketler")
+
+
+def haritadan_mekan(spec):
+    e = spec["etiketler"][0]
+    m = {"tip": "mekan", "yer": e["ad"], "lon": e["lon"], "lat": e["lat"]}
+    b = spec.get("baslik") or {}
+    if b.get("alt"):
+        m["alt"] = b["alt"]
+    for k in ("damga", "damga_tip"):
+        if k in spec:
+            m[k] = spec[k]
+    if "tema" in spec:
+        m["arka"] = {"gece": "gece", "kizil": "gunbatimi", "antika": "parsomen", "parsomen": "safak"}.get(spec["tema"], "gunbatimi")
+    return m
+
+
 # ---------------------------------------------------------------- taraflar
 class Taraflar:
     def __init__(self, spec):
@@ -1258,7 +1674,7 @@ class Basamak:
         return img
 
 
-TURLER = {"harita": Harita, "sefer": Sefer, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan, "basamak": Basamak}
+TURLER = {"harita": Harita, "sefer": Sefer, "mekan": Mekan, "taraflar": Taraflar, "takvim": Takvim, "plan": Plan, "basamak": Basamak}
 
 
 def _cesit(spec):
@@ -1275,6 +1691,8 @@ def _cesit(spec):
         spec.setdefault("cizgi", sec(["kesikli", "akan", "kalin"], 8))
         spec.setdefault("damga_tip", sec(["muhur", "murekkep", "ferman"], 12))
         spec.setdefault("bulut", sec([True, False, False], 16))
+    elif spec["tip"] == "mekan":
+        spec.setdefault("arka", sec(["gunbatimi", "gece", "safak", "gunbatimi", "parsomen"], 0))
     elif spec["tip"] == "sefer":
         spec.setdefault("tema", sec(["parsomen", "antika", "parsomen", "kizil"], 0))
         spec.setdefault("cizgi", sec(["kesikli", "akan", "kalin"], 8))
@@ -1288,6 +1706,8 @@ def _cesit(spec):
 
 
 def hazirla(spec, sure=6.0):
+    if harita_mekan_mi(spec):   # şehir içi düz harita yerine bina silueti
+        spec = haritadan_mekan(spec)
     spec = _cesit(dict(spec))
     spec["_sure"] = sure
     return TURLER[spec["tip"]](spec)
