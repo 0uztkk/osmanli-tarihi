@@ -34,6 +34,23 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+      - name: Pixabay anahtarını denetle
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          mkdir -p out
+          python - <<'PY' | tee out/pixabay_kontrol.txt
+          import json, os, urllib.request, urllib.parse
+          k = os.environ.get("PIXABAY_API_KEY", "").strip()
+          if not k:
+              print("Pixabay: anahtar YOK (PIXABAY_API_KEY tanımlı değil)")
+          else:
+              try:
+                  r = json.load(urllib.request.urlopen("https://pixabay.com/api/?" + urllib.parse.urlencode({"key": k, "q": "hagia sophia", "per_page": 3}), timeout=20))
+                  print(f"Pixabay: anahtar ÇALIŞIYOR (hagia sophia: {r.get('totalHits')} sonuç)")
+              except Exception as e:
+                  print(f"Pixabay: anahtar var ama istek başarısız: {type(e).__name__} {getattr(e, 'code', '')}")
+          PY
       - name: Örnek video üret
         env:
           KATEGORI: ${{ github.event.inputs.kategori || 'savaslar' }}
@@ -55,7 +72,7 @@ jobs:
       - name: Çıktıları onizleme-ciktilari dalına koy
         if: always()
         run: |
-          mkdir -p /tmp/cikti && for f in out/video.mp4 out/meta.json out/log.txt out/kareler out/ara; do cp -r $f /tmp/cikti/ 2>/dev/null || true; done
+          mkdir -p /tmp/cikti && for f in out/video.mp4 out/meta.json out/log.txt out/kareler out/ara out/pixabay_kontrol.txt; do cp -r $f /tmp/cikti/ 2>/dev/null || true; done
           cd /tmp/cikti
           git init -q -b onizleme-ciktilari
           git -c user.name=onizleme -c user.email=onizleme@users.noreply.github.com add -A
