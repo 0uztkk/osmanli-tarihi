@@ -46,10 +46,13 @@ jobs:
               print("Pixabay: anahtar YOK (PIXABAY_API_KEY tanımlı değil)")
           else:
               try:
-                  r = json.load(urllib.request.urlopen("https://pixabay.com/api/?" + urllib.parse.urlencode({"key": k, "q": "hagia sophia", "per_page": 3}), timeout=20))
+                  req = urllib.request.Request("https://pixabay.com/api/?" + urllib.parse.urlencode({"key": k, "q": "hagia sophia", "per_page": 3}),
+                                               headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) SarayinGolgesiBot/1.0", "Accept": "*/*"})
+                  r = json.load(urllib.request.urlopen(req, timeout=20))
                   print(f"Pixabay: anahtar ÇALIŞIYOR (hagia sophia: {r.get('totalHits')} sonuç)")
               except Exception as e:
-                  print(f"Pixabay: anahtar var ama istek başarısız: {type(e).__name__} {getattr(e, 'code', '')}")
+                  govde = e.read()[:200] if hasattr(e, "read") else b""
+                  print(f"Pixabay: anahtar var ama istek başarısız: {type(e).__name__} {getattr(e, 'code', '')} {govde!r}")
           PY
       - name: Örnek video üret
         env:
