@@ -130,6 +130,8 @@ def sahne_hazirla(yol):
 
 
 def kare_uret(s, yerel):
+    if s.get("klip"):   # görselsiz sahne: Pixabay atmosfer videosu
+        return s["klip"].kare(yerel)
     if s.get("anim"):
         u = s.get("anim_u", yerel)
         return s["anim"].kare(u, u * s.get("anim_sure", 8.0))
@@ -353,8 +355,10 @@ def main():
 
     sahneler, hazir, bolum_zamanlari = [], {}, [(0, "Hikâyeye giriş")]
     kutu = konu.get("stil", "animasyon") == "animasyon"
-    import animasyon
+    import animasyon, pixabay
     animasyon.ayarla(W, H)
+    animasyon.YIL = pixabay.konu_yili(konu)
+    print(f"Pixabay: {'açık' if pixabay.var() else 'kapalı'}, konu yılı: {animasyon.YIL}", flush=True)
     anim_obj = {}
     for k, ((tur, metin, _), (a, b), (yazi, gliste, ilk)) in enumerate(zip(parcalar, zaman, kaynak)):
         g = gorsel_al(gliste)
@@ -378,6 +382,8 @@ def main():
                 sure = max(1.0, ileri - bas)
                 anim_obj[k] = (animasyon.hazirla(animler[k], sure), sure)
                 sahne.update(anim=anim_obj[k][0], anim_sure=sure)
+        if not sahne.get("anim") and fg is None:
+            sahne["klip"] = pixabay.klip_hazirla(metin, W, H, k)
         sahneler.append(sahne)
     sahneler[0]["bas"] = 0.0
 

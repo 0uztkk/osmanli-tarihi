@@ -50,6 +50,7 @@ jobs:
           UZUN_KONU: ${{ github.event.inputs.konu }}
           ONIZLEME_SN: ${{ github.event.inputs.onizleme_sn || '0' }}
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: python osmanli/uzun.py
       - name: Yayın saatini bekle (18:41)
         if: github.event_name == 'schedule'

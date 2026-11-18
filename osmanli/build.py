@@ -67,6 +67,17 @@ def konu_sec(kategori, seed, konu_id=""):
     konular = [k for k in konular if not k.get("yayinlandi")]   # elle yayınlanmış konular sıradan çıkar
     gun = datetime.datetime.strptime(str(seed), "%Y%m%d").date()
     sira = (gun - BASLANGIC).days % len(konular)
+    # özel günde (yıl dönümü) ekstra yüklenen konu, 30 gün içinde sırası gelirse tekrar çıkmasın:
+    # o gün yerine sıranın yarısı kadar ilerideki konu kullanılır (geri kalan sıra değişmez)
+    try:
+        with open(os.path.join(HERE, "ozel_gunler.json"), encoding="utf-8") as f:
+            ozel = json.load(f)
+    except OSError:
+        ozel = []
+    yakin = {o["konu"] for o in ozel if o["kategori"] == kategori and
+             0 < (gun - datetime.datetime.strptime(o["tarih"], "%Y%m%d").date()).days <= 30}
+    if konular[sira]["id"] in yakin:
+        sira = (sira + len(konular) // 2) % len(konular)
     return konular[sira]
 
 
@@ -257,6 +268,8 @@ def sahne_kare(sahne, yerel, i):
         return sahne["anim"].kare(u, u * sahne.get("anim_sure", 6.0))
     bg, fg = sahne["bg"], sahne["fg"]
     if fg is None:
+        if sahne.get("klip"):   # görselsiz sahne: Pixabay atmosfer videosu
+            return sahne["klip"].kare(yerel)
         return bg.copy()
     u = yumusak(yerel)
     z = 1.0 + 0.07 * (u if i % 2 == 0 else 1 - u)
@@ -615,7 +628,9 @@ def main():
     hazir = {}
     sahneler = []
     kutu = konu.get("stil", "animasyon") == "animasyon"   # yeni altyazı stili artık her videoda
-    import animasyon
+    import animasyon, pixabay
+    animasyon.YIL = pixabay.konu_yili(konu)
+    print(f"Pixabay: {'açık' if pixabay.var() else 'kapalı'}, konu yılı: {animasyon.YIL}", flush=True)
     anim_obj = {}
     for k, ((tur, metin, yazi, gi), (a, b)) in enumerate(zip(parcalar, zaman)):
         sahne = {"tur": tur, "yazi": yazi, "bas": max(0.0, a - 0.2), "kon_bas": a, "kon_bit": b, "kutu": kutu,
@@ -633,6 +648,8 @@ def main():
             if gi not in hazir:
                 hazir[gi] = sahne_hazirla(gorseller[gi]["yol"] if gorseller[gi] else None)
             sahne["bg"], sahne["fg"] = hazir[gi]
+            if sahne["fg"] is None:
+                sahne["klip"] = pixabay.klip_hazirla(metin, W, H, k)
         sahneler.append(sahne)
     sahneler[0]["bas"] = 0.0
 

@@ -30,6 +30,9 @@ def ayarla(w, h):
 
 def yatay():
     return W > H
+
+
+YIL = None   # konunun en erken yılı (build.py / uzun.py ayarlar); Pixabay yapı fotoğrafında dönem denetimi için
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT_DIR = "/usr/share/fonts/truetype/dejavu/"
 
@@ -1181,8 +1184,10 @@ class Mekan:
         cz = None if not parsomen else MUREKKEP + (150,)
         x = -BW * 0.05
         s_uzak = BW / (900 if yatay() else 520)
-        while x < BW * 1.05:
-            tur = ["cami", "sehir", "kule", "cami", "sehir"][int(rng.integers(0, 5))]
+        bizans = YIL is not None and YIL < 1453 and "lon" in spec and \
+            min(math.dist((spec["lon"], spec["lat"]), c) for c in ((28.98, 41.01), (22.94, 40.64))) < 0.6
+        while x < BW * 1.05:   # fetihten önceki Konstantinopolis/Selanik'te minare yok
+            tur = (["manastir", "kale", "manastir", "kule"] if bizans else ["cami", "sehir", "kule", "cami", "sehir"])[int(rng.integers(0, 4 if bizans else 5))]
             sc = s_uzak * float(rng.uniform(0.5, 0.85))
             if tur == "kule":
                 sc *= 0.7
@@ -1196,6 +1201,8 @@ class Mekan:
             d = ImageDraw.Draw(taban, "RGBA")
         # ana bina
         self.tur = spec.get("bina") or bina_turu(spec.get("yer", ""))
+        if bizans and self.tur in ("cami", "sehir", "meydan"):
+            self.tur = "manastir"   # fetihten önce minaresiz kilise
         s = BW / (290 if yatay() else 150)
         if self.tur == "kule":
             s *= 0.85 if not yatay() else 1.0
@@ -1226,6 +1233,16 @@ class Mekan:
                     d.arc([x, y2, x + 60, y2 + 20], 200, 340, fill=MUREKKEP + (90,), width=3)
         taban = taban.filter(ImageFilter.GaussianBlur(0.6))
         self.taban = vinyet_buyuk(taban, 0.45)
+        self.foto = False
+        try:   # dönemine uygun gerçek yapı fotoğrafı varsa çizim yerine o (pin yok, plaket ve madalyon kalır)
+            import pixabay
+            yol = pixabay.yapi_fotografi(spec.get("yer", ""), YIL)
+            if yol:
+                im = pixabay.kapla(Image.open(yol).convert("RGB"), BW, BH)
+                self.taban = vinyet_buyuk(pixabay.eskit(im, 0.88, 0.35), 0.55)
+                self.foto = True
+        except Exception as e:  # noqa: BLE001
+            print("Mekan fotoğrafı atlandı:", e, flush=True)
         self.tepe = self._tepe()
         self.madalyon = self._madalyon()
 
@@ -1275,16 +1292,16 @@ class Mekan:
             return ((px - x0) * oran, (py - y0) * oran)
 
         # kuşlar
-        if sp.get("arka", "gunbatimi") != "parsomen":
+        if sp.get("arka", "gunbatimi") != "parsomen" and not self.foto:
             renk_k = (30, 24, 30, 200) if sp.get("arka") != "gece" else (200, 200, 220, 150)
             for k in range(5):
                 bx = (W * (0.1 + k * 0.13) + sn * (38 + k * 6)) % (W * 1.2) - W * 0.1
                 by = H * (0.14 + 0.05 * math.sin(k * 2.1)) + math.sin(sn * 1.3 + k) * 8
                 kan = 9 + 3 * math.sin(sn * 9 + k * 1.7)
                 d.line([(bx - 14, by - kan), (bx, by), (bx + 14, by - kan)], fill=renk_k, width=3)
-        # iğne
+        # iğne (fotoğrafta binanın yeri bilinmediği için yok)
         px, py = ex(tx, ty)
-        e = evre(u, 0.12, 0.12)
+        e = evre(u, 0.12, 0.12) if not self.foto else 0
         if e > 0:
             yuk = 80 + (1 - zipla(e)) * H * 0.25
             if e >= 1:

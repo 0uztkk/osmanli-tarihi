@@ -60,6 +60,7 @@ jobs:
           KONU: ${{ github.event.inputs.konu }}
           KAPANIS: ${{ github.event.inputs.kapanis }}
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           set -o pipefail
           durum=0
