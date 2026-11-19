@@ -5915,5 +5915,445 @@
       "1552"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "pelekanon-1329",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Pelekanon 1329: Orhan Bey Bizans İmparatoruna Karşı ⚔️",
+      "Bizans İmparatoru Orhan Bey'le Savaşınca Ne Oldu? ⚔️",
+      "İznik'i Kurtarmaya Gelen İmparator: Pelekanon 1329 ⚔️"
+    ],
+    "kapak": "OK YAĞDI",
+    "kanca": "Hayal et: 1329'da Bizans imparatoru İznik'i kurtarmak için bizzat sefere çıktı, ama yaralanıp geri döndü. Sence onu ne durdurdu?",
+    "kanca_gorsel": [
+      "File:Orhan Gazi - Manyal Palace Museum.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1329",
+        "metin": "1329'da Orhan Bey İznik'i kuşatıyordu. Bizans İmparatoru Üçüncü Andronikos şehri kurtarmak için ordusuyla İstanbul'dan çıktı ve Marmara kıyısı boyunca ilerledi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "parsomen",
+          "cizgi": "kesikli",
+          "yakinlik": 2.0,
+          "zaman": [
+            {
+              "yazi": "Haziran 1329",
+              "bas": 0.0
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.02,
+                  41.0
+                ],
+                [
+                  29.07,
+                  40.97
+                ],
+                [
+                  29.13,
+                  40.93
+                ],
+                [
+                  29.2,
+                  40.89
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.06,
+              "bit": 0.6,
+              "takip": true
+            },
+            {
+              "yol": [
+                [
+                  29.72,
+                  40.43
+                ],
+                [
+                  29.6,
+                  40.6
+                ],
+                [
+                  29.42,
+                  40.75
+                ],
+                [
+                  29.27,
+                  40.86
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.1,
+              "bit": 0.62
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Konstantinopolis",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            },
+            {
+              "ad": "İznik",
+              "lon": 29.72,
+              "lat": 40.43
+            },
+            {
+              "ad": "Pelekanon",
+              "lon": 29.23,
+              "lat": 40.88,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 29.23,
+            "lat": 40.88,
+            "bas": 0.68
+          },
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "İmparator sahada",
+        "metin": "İki ordu Pelekanon'da karşılaştı. Bu, bir Osmanlı beyi ile bir Bizans imparatorunun savaş meydanındaki ilk karşılaşmasıydı.",
+        "gorsel": [
+          "File:Ottoman Sultan Orhan I with his son Suleyman Pasha (miniature), from The Cream of Histories (Zubdat al-tawarikh) by Sayyid Luqman-i 'Ashuri, T 414.146.jpg"
+        ]
+      },
+      {
+        "yazi": "Yaralanan imparator",
+        "metin": "Çarpışmalar sonuçsuz kaldı, ama Andronikos bacağından yaralandı. Kaynaklara göre imparatorun ağır yaralandığı söylentisi Bizans ordusunda paniğe yol açtı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Pelekanon · 1329",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                620
+              ],
+              "wh": [
+                460,
+                240
+              ],
+              "taraf": "dusman",
+              "etiket": "Andronikos"
+            },
+            {
+              "xy": [
+                540,
+                1560
+              ],
+              "hedef": [
+                540,
+                1060
+              ],
+              "wh": [
+                460,
+                220
+              ],
+              "taraf": "osmanli",
+              "etiket": "Orhan Bey",
+              "etiket_ust": false,
+              "bas": 0.1,
+              "bit": 0.55
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                180,
+                1400
+              ],
+              "son_xy": [
+                260,
+                820
+              ],
+              "taraf": "osmanli",
+              "bas": 0.35
+            },
+            {
+              "bas_xy": [
+                900,
+                1400
+              ],
+              "son_xy": [
+                820,
+                820
+              ],
+              "taraf": "osmanli",
+              "bas": 0.42
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              880
+            ],
+            "bas": 0.7
+          }
+        }
+      },
+      {
+        "yazi": "İznik düştü",
+        "metin": "Bizans ordusu dağınık biçimde geri çekildi. Yardım alamayan İznik, 1331'de Orhan Bey'e teslim oldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "1331",
+          "aylar": [
+            "Mart"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "İznik teslim oldu"
+        }
+      }
+    ],
+    "soru": "Sence imparator yaralanmasaydı İznik kurtulur muydu?",
+    "etiketler": [
+      "pelekanon savaşı",
+      "orhan bey",
+      "iznik",
+      "üçüncü andronikos"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "miryokefalon-1176",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Miryokefalon 1176: Bizans'ın Anadolu Umudu Bitti ⚔️",
+      "Kılıç Arslan ve Manuel: Miryokefalon Pususu ⚔️",
+      "Malazgirt'ten Sonra İkinci Darbe: Miryokefalon ⚔️"
+    ],
+    "kapak": "DAR GEÇİT",
+    "kanca": "1176'da Bizans imparatoru Konya'yı almak için yürüdü, ama ordusu dar bir geçitte pusuya düştü. Sence Kılıç Arslan neden barış önerdi?",
+    "kanca_gorsel": [
+      "File:Walls of Constantinople 1.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1176",
+        "metin": "1176'da Bizans İmparatoru Birinci Manuel Komnenos, Selçuklu başkenti Konya'ya yürüdü. Ordusunun arkasında kuşatma makineleri taşıyan uzun bir kol vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "kalin",
+          "yakinlik": 1.8,
+          "zaman": [
+            {
+              "yazi": "Eylül 1176",
+              "bas": 0.0
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.1,
+                  37.83
+                ],
+                [
+                  29.6,
+                  37.9
+                ],
+                [
+                  30.1,
+                  37.95
+                ],
+                [
+                  30.5,
+                  37.98
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.06,
+              "bit": 0.66,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Denizli",
+              "lon": 29.1,
+              "lat": 37.78,
+              "yan": "sol"
+            },
+            {
+              "ad": "Miryokefalon",
+              "lon": 30.55,
+              "lat": 38.0
+            },
+            {
+              "ad": "Konya",
+              "lon": 32.48,
+              "lat": 37.87,
+              "bas": 0.1
+            }
+          ],
+          "carpisma": {
+            "lon": 30.55,
+            "lat": 38.0,
+            "bas": 0.74
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Pusu",
+        "metin": "17 Eylül 1176'da ordu, Miryokefalon kalesi yakınlarında dar bir geçide girdi. Yeri tartışmalıdır. Tepelerde Kılıç Arslan'ın askerleri bekliyordu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Miryokefalon · 1176",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                1700
+              ],
+              "hedef": [
+                540,
+                1050
+              ],
+              "wh": [
+                200,
+                520
+              ],
+              "taraf": "dusman",
+              "etiket": "Bizans ordusu",
+              "etiket_ust": false,
+              "bas": 0.05,
+              "bit": 0.5
+            },
+            {
+              "xy": [
+                170,
+                820
+              ],
+              "wh": [
+                200,
+                320
+              ],
+              "taraf": "osmanli",
+              "etiket": "Selçuklu",
+              "bas": 0.45
+            },
+            {
+              "xy": [
+                910,
+                820
+              ],
+              "wh": [
+                200,
+                320
+              ],
+              "taraf": "osmanli",
+              "etiket": "Selçuklu",
+              "bas": 0.5
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                280,
+                900
+              ],
+              "son_xy": [
+                440,
+                1000
+              ],
+              "taraf": "osmanli",
+              "bas": 0.6
+            },
+            {
+              "bas_xy": [
+                800,
+                900
+              ],
+              "son_xy": [
+                640,
+                1000
+              ],
+              "taraf": "osmanli",
+              "bas": 0.64
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              1000
+            ],
+            "bas": 0.75
+          }
+        }
+      },
+      {
+        "yazi": "Panik",
+        "metin": "Selçuklu askerleri ağırlık kolunu vurdu. İmparatorun kayınbiraderi Antakyalı Baudouin çarpışmada öldü. Kaynaklara göre Manuel kaçmayı bile düşündü.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "Barış",
+        "metin": "Ertesi gün Kılıç Arslan barış önerdi. Şartı, Dorylaion ile bir başka sınır kalesinin yıkılmasıydı. Kaynaklara göre Manuel bu yenilgiyi Malazgirt'e benzetti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Kılıç Arslan",
+              "desen": "selcuklu"
+            }
+          ],
+          "bant": "Barış şartı",
+          "karsi": {
+            "ad": "Manuel",
+            "desen": "bizans"
+          },
+          "arka": {
+            "merkez": [
+              31,
+              38.5
+            ],
+            "genislik": 12,
+            "tema": "kizil"
+          }
+        }
+      }
+    ],
+    "soru": "Sence Kılıç Arslan barış yaparak doğru mu yaptı?",
+    "etiketler": [
+      "miryokefalon savaşı",
+      "kılıç arslan",
+      "manuel komnenos",
+      "anadolu selçuklu"
+    ],
+    "stil": "animasyon"
   }
 ]

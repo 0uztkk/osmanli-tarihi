@@ -1,0 +1,922 @@
+{
+  "id": "otlukbeli-1473",
+  "stil": "animasyon",
+  "baslik": [
+    "Otlukbeli Savaşı 1473: Fatih ile Uzun Hasan Hesaplaşması",
+    "Uzun Hasan Fatih'e Karşı: Otlukbeli'ye Giden Yol",
+    "Fatih'in Doğu Seferi 1473: Fırat Yenilgisi ve Otlukbeli"
+  ],
+  "kapak": "YEDİ GÜN SONRA",
+  "kanca": "Hayal et: 1473 yazında Fatih'in ordusu Fırat kıyısında ağır bir yenilgi aldı ve bir beylerbeyi nehirde boğuldu. Yedi gün sonra aynı ordu, doğunun en güçlü hükümdarının karşısına çıktı. Sence ne değişti?",
+  "kanca_gorsel": [
+    "File:Otlukbeli savasi.png"
+  ],
+  "bolumler": [
+    {
+      "ad": "Fırat kıyısında felaket",
+      "sahneler": [
+        {
+          "yazi": "4 Ağustos 1473",
+          "metin": "4 Ağustos 1473, Erzincan yakınlarında Fırat kıyısı. Rumeli beylerbeyi Has Murad Paşa öncü kuvvetlerle nehri geçti ve geri çekilen Akkoyunlu süvarilerinin peşine düştü. Ama bu bir tuzaktı. Akkoyunlu atlıları kaçar gibi yapıyor, Osmanlı öncülerini nehirden uzağa çekiyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "gece",
+            "kamera": "yaklas",
+            "cizgi": "kesikli",
+            "bulut": false,
+            "merkez": [
+              39.9,
+              40.35
+            ],
+            "genislik": 5,
+            "zoom": 1.08,
+            "odak": [
+              39.85,
+              39.74
+            ],
+            "baslik": {
+              "ust": "Fırat",
+              "alt": "4 Ağustos 1473",
+              "yer": "sol"
+            },
+            "etiketler": [
+              {
+                "ad": "Erzincan",
+                "lon": 39.49,
+                "lat": 39.75,
+                "yan": "sol",
+                "bas": 0.05
+              },
+              {
+                "ad": "Tercan",
+                "lon": 40.39,
+                "lat": 39.78,
+                "yan": "sag",
+                "bas": 0.15
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    39.5,
+                    39.72
+                  ],
+                  [
+                    39.7,
+                    39.73
+                  ],
+                  [
+                    39.85,
+                    39.74
+                  ],
+                  [
+                    40.0,
+                    39.8
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.1,
+                "bit": 0.5
+              }
+            ],
+            "damga": {
+              "yazi": "Pusu",
+              "lon": 40.0,
+              "lat": 39.8,
+              "bas": 0.62,
+              "tip": "murekkep",
+              "dx": 220,
+              "dy": -160
+            }
+          }
+        },
+        {
+          "yazi": "Nehirde biten takip",
+          "metin": "Dar bir geçitte pusuya düşen Osmanlı askerleri dağıldı. Kaynaklara göre Has Murad Paşa, geri dönüp nehri geçmeye çalışırken boğuldu. Birçok tanınmış bey de esir düştü. Ordugâhta haberi duyan askerler arasında korku yayıldı. Fatih'in karşısındaki rakip, kolay lokma değildi.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Yedi gün",
+          "metin": "Fatih Sultan Mehmed seferin ilk büyük darbesini almıştı. Ama yalnızca yedi gün sonra aynı ordu, doğunun en güçlü hükümdarıyla meydan savaşına girecekti. Peki bu iki güç neden karşı karşıya geldi?",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "takvim",
+            "filo": false,
+            "arka": "safak",
+            "yil": "Ağustos 1473",
+            "aylar": [
+              "4 Ağustos",
+              "11 Ağustos"
+            ],
+            "cevir_bit": 0.6,
+            "rozet": "Yedi gün sonra"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Doğunun yükselen hükümdarı",
+      "sahneler": [
+        {
+          "yazi": "Akkoyunlu",
+          "metin": "Uzun Hasan, Diyarbakır merkezli Akkoyunlu Türkmenlerinin beyiydi. Lakabını uzun boyundan aldığı anlatılır. Birkaç yıl içinde topraklarını Doğu Anadolu'dan İran içlerine kadar genişletti. Akkoyunlular, Karakoyunlularla uzun yıllar boyunca bölgenin hâkimiyeti için çekişmişti.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Bozkırın atlıları",
+          "metin": "Akkoyunlu ordusunun gücü hızlı Türkmen süvarilerindeydi. Bu atlılar uzun mesafeleri kısa sürede geçebiliyor, düşmanı açık arazide yıpratıyordu. Uzun Hasan bu orduyla doğunun iki büyük gücünü üst üste yendi.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "İki büyük zafer",
+          "metin": "1467'de Karakoyunlu hükümdarı Cihan Şah'ı, 1469'da Timurlu hükümdar Ebu Said'i yendi. Tebriz artık onun başkentiydi. Doğuda ona kafa tutabilecek bir güç kalmamıştı. Bu iki zafer, Uzun Hasan'ı İslam dünyasının en güçlü hükümdarlarından biri yaptı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Uzun Hasan'ın yükselişi",
+            "ogeler": [
+              "Diyarbakır",
+              "Cihan Şah · 1467",
+              "Ebu Said · 1469",
+              "Tebriz"
+            ]
+          }
+        },
+        {
+          "yazi": "Trabzon bağı",
+          "metin": "Uzun Hasan'ın eşi Despina Hatun, Trabzon Rum İmparatorluğu'nun son hükümdar ailesindendi. Fatih 1461'de Trabzon'u almıştı. Kaynaklara göre Uzun Hasan bu topraklar üzerinde hak iddia ediyordu.",
+          "gorsel": [
+            "File:Bellini, Gentile - Sultan Mehmet II.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Venedik'ten gelen elçiler",
+      "sahneler": [
+        {
+          "yazi": "Düşmanın düşmanı",
+          "metin": "Osmanlı ile Venedik 1463'ten beri savaştaydı. Venedik, Fatih'i doğudan sıkıştıracak bir müttefik arıyordu ve elçilerini Uzun Hasan'ın sarayına gönderdi. Venedikli elçilerin Tebriz'e yolculukları aylar sürüyordu. Getirdikleri teklif açıktı: Fatih'e iki cepheden birden saldırmak.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Uzun Hasan",
+                "desen": "halka"
+              },
+              {
+                "ad": "Venedik",
+                "desen": "kanat"
+              }
+            ],
+            "bant": "Doğu ittifakı",
+            "karsi": {
+              "ad": "Fatih",
+              "desen": "hilal"
+            },
+            "arka": {
+              "merkez": [
+                33,
+                40
+              ],
+              "genislik": 26,
+              "tema": "gece"
+            }
+          }
+        },
+        {
+          "yazi": "Ulaşmayan toplar",
+          "metin": "Uzun Hasan'ın en çok istediği şey top ve tüfekti. Venedik birkaç gemiyle top, silah ve bir usta gönderdi. Ama gemiler İçel kıyısına geldiğinde Osmanlı önlemleri yüzünden bu yük Uzun Hasan'a ulaşamadı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "parsomen",
+            "kamera": "uzaklas",
+            "cizgi": "akan",
+            "merkez": [
+              24,
+              40.5
+            ],
+            "genislik": 34,
+            "zoom": 1.06,
+            "etiketler": [
+              {
+                "ad": "Venedik",
+                "lon": 12.33,
+                "lat": 45.44,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "İçel kıyısı",
+                "lon": 34.15,
+                "lat": 36.46,
+                "yan": "sol",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    12.4,
+                    45.3
+                  ],
+                  [
+                    14.5,
+                    43.8
+                  ],
+                  [
+                    18.6,
+                    40.1
+                  ],
+                  [
+                    21.0,
+                    36.9
+                  ],
+                  [
+                    25.0,
+                    35.6
+                  ],
+                  [
+                    29.5,
+                    35.6
+                  ],
+                  [
+                    33.0,
+                    36.0
+                  ],
+                  [
+                    34.0,
+                    36.35
+                  ]
+                ],
+                "taraf": "dusman",
+                "gemi": 3,
+                "bas": 0.05,
+                "bit": 0.6
+              }
+            ],
+            "damga": {
+              "yazi": "Ulaşmadı",
+              "lon": 34.0,
+              "lat": 36.35,
+              "bas": 0.68,
+              "tip": "ferman",
+              "dx": -480,
+              "dy": -260
+            }
+          }
+        },
+        {
+          "yazi": "Karaman sorunu",
+          "metin": "Uzun Hasan, Osmanlı'nın yeni aldığı Karaman topraklarında taht kavgası yapan Karamanoğlu beylerini de koruyordu. Fatih için doğu sınırı artık açık bir tehditti. Doğuda güçlenen bir rakip, batıda Venedik donanması ve arada huzursuz bir Karaman. Fatih bu düğümü çözmek zorundaydı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Tokat ateşler içinde",
+      "sahneler": [
+        {
+          "yazi": "1472",
+          "metin": "1472'de Akkoyunlu kuvvetleri Osmanlı topraklarına girdi. Kaynaklara göre yirmi ila otuz bin kişilik bir ordu Tokat'a ulaştı, şehri yağmalayıp ateşe verdi.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "sefer",
+            "tema": "kizil",
+            "cizgi": "kalin",
+            "yakinlik": 1.7,
+            "zaman": [
+              {
+                "yazi": "1472",
+                "bas": 0.0
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    39.49,
+                    39.75
+                  ],
+                  [
+                    38.8,
+                    39.85
+                  ],
+                  [
+                    38.0,
+                    39.95
+                  ],
+                  [
+                    37.3,
+                    40.15
+                  ],
+                  [
+                    36.6,
+                    40.3
+                  ]
+                ],
+                "taraf": "dusman",
+                "bas": 0.06,
+                "bit": 0.7,
+                "takip": true
+              }
+            ],
+            "etiketler": [
+              {
+                "ad": "Erzincan",
+                "lon": 39.49,
+                "lat": 39.75,
+                "yan": "sag"
+              },
+              {
+                "ad": "Sivas",
+                "lon": 37.02,
+                "lat": 39.75
+              },
+              {
+                "ad": "Tokat",
+                "lon": 36.55,
+                "lat": 40.31,
+                "yan": "sol"
+              },
+              {
+                "ad": "Amasya",
+                "lon": 35.83,
+                "lat": 40.65,
+                "yan": "sol",
+                "bas": 0.75
+              }
+            ],
+            "carpisma": {
+              "lon": 36.55,
+              "lat": 40.31,
+              "bas": 0.74
+            },
+            "son": "carpisma"
+          }
+        },
+        {
+          "yazi": "Amasya'dan gelen şehzade",
+          "metin": "Amasya sancakbeyi Şehzade Bayezid üzerlerine yürüyünce Akkoyunlu askerleri geri çekildi. Ama yağmanın haberi İstanbul'da büyük öfke yarattı.",
+          "gorsel": [
+            "File:Ottoman Sultan Bayezid II (miniature), from The Cream of Histories (Zubdat al-tawarikh) by Sayyid Luqman-i 'Ashuri.jpg"
+          ]
+        },
+        {
+          "yazi": "Eflatunpınarı",
+          "metin": "Aynı yıl Karaman'a da Akkoyunlu kuvvetleri girdi. Konya'daki Şehzade Mustafa, Beyşehir yakınlarındaki Eflatunpınarı'nda onları yendi. Fatih artık kesin bir hesaplaşmaya karar vermişti.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "harita",
+            "tema": "antika",
+            "kamera": "uzaklas",
+            "cizgi": "kalin",
+            "bulut": true,
+            "merkez": [
+              32.15,
+              37.95
+            ],
+            "genislik": 2.4,
+            "zoom": 1.06,
+            "baslik": {
+              "ust": "1472",
+              "alt": "Eflatunpınarı",
+              "yer": "sag"
+            },
+            "etiketler": [
+              {
+                "ad": "Konya",
+                "lon": 32.48,
+                "lat": 37.87,
+                "yan": "sag",
+                "bas": 0.05
+              },
+              {
+                "ad": "Eflatunpınarı",
+                "lon": 31.74,
+                "lat": 37.81,
+                "yan": "sol",
+                "bas": 0.4
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    32.48,
+                    37.87
+                  ],
+                  [
+                    32.2,
+                    37.86
+                  ],
+                  [
+                    31.95,
+                    37.83
+                  ],
+                  [
+                    31.77,
+                    37.81
+                  ]
+                ],
+                "taraf": "osmanli",
+                "ikon": "ordu",
+                "bas": 0.08,
+                "bit": 0.5
+              }
+            ],
+            "carpisma": {
+              "lon": 31.76,
+              "lat": 37.81,
+              "bas": 0.6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Kırk günlük yürüyüş",
+      "sahneler": [
+        {
+          "yazi": "Mart 1473",
+          "metin": "Mart 1473'te Fatih Üsküdar'dan yola çıktı. İstanbul'da küçük oğlu Cem'i bıraktı. Şehzade Mustafa ordusuyla Beypazarı'nda, Şehzade Bayezid Kazova'da babasına katıldı. Bu, Fatih'in hayatındaki en büyük seferlerden biriydi. Kaynaklar ordunun büyüklüğü için farklı sayılar verir, ama hepsi kalabalık bir ordudan söz eder.",
+          "gorsel": [
+            "File:The Lord of the Two Lands and the Two Seas Sultan Mehmed the Conqueror Smelling a Rose, from the Sarayı Albums; c. late 15th century (31765534698).jpg"
+          ]
+        },
+        {
+          "yazi": "Doğuya",
+          "metin": "Ordu Sivas, Niksar, Koyulhisar ve Şebinkarahisar üzerinden Erzincan'a ilerledi. Kaynaklara göre yaklaşık kırk gün boyunca Uzun Hasan'ın ordusuyla hiç karşılaşmadı. Yolda Osmanlı öncüleri sürekli keşif yapıyor, Akkoyunlu ordusunun yerini bulmaya çalışıyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "sefer",
+            "tema": "parsomen",
+            "cizgi": "akan",
+            "yakinlik": 1.9,
+            "zaman": [
+              {
+                "yazi": "Bahar 1473",
+                "bas": 0.0
+              },
+              {
+                "yazi": "Yaz 1473",
+                "bas": 0.55
+              }
+            ],
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    29.02,
+                    41.02
+                  ],
+                  [
+                    29.9,
+                    40.75
+                  ],
+                  [
+                    31.0,
+                    40.4
+                  ],
+                  [
+                    31.92,
+                    40.17
+                  ],
+                  [
+                    33.5,
+                    40.0
+                  ],
+                  [
+                    35.2,
+                    40.0
+                  ],
+                  [
+                    37.02,
+                    39.75
+                  ],
+                  [
+                    36.96,
+                    40.59
+                  ],
+                  [
+                    37.83,
+                    40.3
+                  ],
+                  [
+                    38.42,
+                    40.29
+                  ],
+                  [
+                    39.0,
+                    39.95
+                  ],
+                  [
+                    39.49,
+                    39.75
+                  ]
+                ],
+                "taraf": "osmanli",
+                "bas": 0.05,
+                "bit": 0.84,
+                "takip": true
+              }
+            ],
+            "etiketler": [
+              {
+                "ad": "Beypazarı",
+                "lon": 31.92,
+                "lat": 40.17
+              },
+              {
+                "ad": "Sivas",
+                "lon": 37.02,
+                "lat": 39.75,
+                "yan": "sol"
+              },
+              {
+                "ad": "Niksar",
+                "lon": 36.96,
+                "lat": 40.59,
+                "yan": "sol"
+              },
+              {
+                "ad": "Şebinkarahisar",
+                "lon": 38.42,
+                "lat": 40.29
+              },
+              {
+                "ad": "Erzincan",
+                "lon": 39.49,
+                "lat": 39.75
+              }
+            ],
+            "son": "genel"
+          }
+        },
+        {
+          "yazi": "Bekleyen rakip",
+          "metin": "Uzun Hasan doğrudan savaşa girmiyor, Fırat'ın doğusunda bekliyordu. Kalabalık Osmanlı ordusu için her geçen gün erzak ve su demekti.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Fırat'taki tuzak",
+      "sahneler": [
+        {
+          "yazi": "Mahmud Paşa'nın uyarısı",
+          "metin": "Erzincan yakınlarında iki ordu Fırat'ın iki yakasına geldi. Kaynaklara göre veziriazam Mahmud Paşa, Has Murad Paşa'yı ileri gitmemesi için uyardı. Tecrübesiz olduğu söylenen beylerbeyi dinlemedi.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Sahte çekilme",
+          "metin": "Has Murad'ın askerleri nehri geçti. Karşılarındaki Akkoyunlu süvarileri geri çekiliyormuş gibi yaptı, Osmanlı öncüleri peşlerine düştü. Dar bir geçitte dört bir yandan kuşatıldılar.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "plan",
+            "baslik": "Fırat · 4 Ağustos 1473",
+            "nehir": "Fırat",
+            "birlikler": [
+              {
+                "xy": [
+                  1560,
+                  540
+                ],
+                "hedef": [
+                  1040,
+                  540
+                ],
+                "wh": [
+                  260,
+                  200
+                ],
+                "taraf": "osmanli",
+                "etiket": "Has Murad Paşa",
+                "bas": 0.1,
+                "bit": 0.55
+              },
+              {
+                "xy": [
+                  360,
+                  380
+                ],
+                "hedef": [
+                  700,
+                  380
+                ],
+                "wh": [
+                  240,
+                  170
+                ],
+                "taraf": "dusman",
+                "etiket": "Akkoyunlu",
+                "bas": 0.45,
+                "bit": 0.75
+              },
+              {
+                "xy": [
+                  360,
+                  760
+                ],
+                "hedef": [
+                  700,
+                  760
+                ],
+                "wh": [
+                  240,
+                  170
+                ],
+                "taraf": "dusman",
+                "etiket": "Pusu",
+                "etiket_ust": false,
+                "bas": 0.5,
+                "bit": 0.78
+              }
+            ],
+            "oklar": [
+              {
+                "bas_xy": [
+                  1500,
+                  860
+                ],
+                "son_xy": [
+                  1060,
+                  860
+                ],
+                "taraf": "osmanli",
+                "bas": 0.15
+              }
+            ],
+            "carpisma": {
+              "xy": [
+                870,
+                540
+              ],
+              "bas": 0.8
+            }
+          }
+        },
+        {
+          "yazi": "Ağır kayıp",
+          "metin": "Kaynaklar bu çarpışmada Osmanlı kaybını dört bin kişi olarak verir. Turahanoğlu Ömer Bey gibi tanınmış komutanlar esir düştü. Akkoyunlu kampında zafer havası esiyordu. Bu yenilgi, Uzun Hasan'a büyük bir özgüven verdi.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Yaralı ordu",
+          "metin": "Fatih kayıpları dinledi ama geri dönmedi. Ordu toplandı, saflar yeniden düzenlendi. Osmanlı ordusu birkaç gün sonra yeniden Akkoyunlularla yüz yüze gelecekti.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Otlukbeli sabahı",
+      "sahneler": [
+        {
+          "yazi": "11 Ağustos 1473",
+          "metin": "11 Ağustos 1473 sabahı iki ordu, Tercan yakınlarındaki Otlukbeli tepelerinde karşı karşıya geldi. Uzun Hasan bu kez savaştan kaçınmadı.",
+          "gorsel": [
+            "File:Bellini, Gentile - Portrait of Mehmed II - National Gallery, London.jpg"
+          ]
+        },
+        {
+          "yazi": "Osmanlı dizilişi",
+          "metin": "Merkezde Fatih, yeniçeriler ve toplarla duruyordu. Sağ kanatta Şehzade Bayezid, sol kanatta Şehzade Mustafa ve Anadolu beylerbeyi Davud Paşa vardı. Padişahın iki yanında sipahiler ve silahdarlar yer alıyordu.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "taraflar",
+            "taraflar": [
+              {
+                "ad": "Bayezid",
+                "desen": "anahtar"
+              },
+              {
+                "ad": "Fatih",
+                "desen": "hilal"
+              },
+              {
+                "ad": "Mustafa",
+                "desen": "kazan"
+              }
+            ],
+            "bant": "Osmanlı ordusu",
+            "karsi": {
+              "ad": "Uzun Hasan",
+              "desen": "halka"
+            },
+            "arka": {
+              "merkez": [
+                40.0,
+                39.95
+              ],
+              "genislik": 4,
+              "tema": "kizil"
+            }
+          }
+        },
+        {
+          "yazi": "İki ayrı ordu",
+          "metin": "Karşıda hızlı ve kalabalık Türkmen süvarileri vardı. Osmanlı tarafında ise top ve tüfek. Bu savaş, iki farklı savaş usulünün de karşılaşmasıydı.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Toplar ve tüfekler",
+      "sahneler": [
+        {
+          "yazi": "Çarpışma",
+          "metin": "Akkoyunlu süvarileri Osmanlı kanatlarına yüklendi. Sol kanatta Davud Paşa saldırıyı karşıladı. Merkezdeki topların ve tüfeklerin ateşi hücumların gücünü kırdı.",
+          "gorsel": [
+            "File:Otlukbeli savasi.png"
+          ]
+        },
+        {
+          "yazi": "Zeynel'in sonu",
+          "metin": "Şehzade Mustafa'nın birlikleri Uzun Hasan'ın oğlu Zeynel'in üzerine yürüdü. Zeynel çarpışmada öldü. Kesilen başı önce Mustafa'ya, sonra Fatih'e götürüldü. Bu haber, Akkoyunlu saflarında moralleri çökertti.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Davud Paşa'nın direnişi",
+          "metin": "Anadolu askerleri bir an sarsılsa da dağılmadı. Davud Paşa sol kanadı ayakta tutarken Akkoyunlu hücumları birbiri ardına geri döndü.",
+          "gorsel": [
+            "File:Ottoman soldiers.jpg"
+          ]
+        },
+        {
+          "yazi": "Çekilen hükümdar",
+          "metin": "Gün bitmeden Uzun Hasan savaş alanından çekildi ve ordusu dağıldı. Esir düşen Türkmen askerlerinin çoğu öldürüldü. Kaynaklar kesin bir sayı vermez.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "sefer",
+            "tema": "antika",
+            "cizgi": "kesikli",
+            "yakinlik": 1.4,
+            "zaman": [
+              {
+                "yazi": "11 Ağustos 1473",
+                "bas": 0.0
+              }
+            ],
+            "merkez": [
+              41.8,
+              40.0
+            ],
+            "genislik": 6,
+            "rotalar": [
+              {
+                "yol": [
+                  [
+                    40.02,
+                    39.97
+                  ],
+                  [
+                    40.8,
+                    39.92
+                  ],
+                  [
+                    41.6,
+                    39.85
+                  ],
+                  [
+                    42.6,
+                    39.75
+                  ],
+                  [
+                    43.6,
+                    39.6
+                  ]
+                ],
+                "taraf": "dusman",
+                "bas": 0.1,
+                "bit": 0.78,
+                "takip": true
+              }
+            ],
+            "etiketler": [
+              {
+                "ad": "Otlukbeli",
+                "lon": 40.02,
+                "lat": 39.97,
+                "yan": "sol"
+              },
+              {
+                "ad": "Erzurum",
+                "lon": 41.27,
+                "lat": 39.9
+              },
+              {
+                "ad": "Tebriz yolu",
+                "lon": 43.6,
+                "lat": 39.6,
+                "yan": "sol"
+              }
+            ],
+            "son": "genel"
+          }
+        }
+      ]
+    },
+    {
+      "ad": "Doğu kapısı kapandı",
+      "sahneler": [
+        {
+          "yazi": "Dönüş",
+          "metin": "Fatih, Uzun Hasan'ı İran içlerine kadar kovalamadı. Dönüş yolunda Şebinkarahisar kalesi teslim oldu ve ordu batıya, İstanbul'a döndü. Uzun bir seferden sonra askerler yorgundu ve kış yaklaşıyordu.",
+          "gorsel": [
+            "-"
+          ]
+        },
+        {
+          "yazi": "Sonrası",
+          "metin": "Uzun Hasan bir daha Osmanlı'ya karşı büyük bir sefere çıkamadı ve 1478'de öldü. Doğudaki müttefikini kaybeden Venedik ise 1479'da Osmanlı ile barış yaptı.",
+          "gorsel": [
+            "-"
+          ],
+          "anim": {
+            "tip": "basamak",
+            "baslik": "Otlukbeli'den sonra",
+            "ogeler": [
+              "Otlukbeli · 1473",
+              "Uzun Hasan öldü · 1478",
+              "Venedik barışı · 1479"
+            ]
+          }
+        },
+        {
+          "yazi": "Bir kitabın adı",
+          "metin": "Zaferin bir izi de kitaplarda kaldı. Uzun Hasan'ın elçisi olarak gelip Fatih'in hizmetine giren âlim Ali Kuşçu, anlatılana göre bir astronomi eserine bu zaferin anısına Fethiye adını verdi.",
+          "gorsel": [
+            "File:Fatih Sultan Mehmed und Ali Kuşçu.jpg"
+          ]
+        },
+        {
+          "yazi": "Bir hafta",
+          "metin": "Fırat'ta ağır bir yenilgi alan ordu, bir hafta sonra doğudaki en büyük rakibini dağıtmıştı. Otlukbeli, Anadolu'nun doğusunda kimin söz sahibi olacağını belirleyen gün oldu.",
+          "gorsel": [
+            "-"
+          ]
+        }
+      ]
+    }
+  ],
+  "soru": "Sence Otlukbeli'yi Osmanlı'ya ne kazandırdı: toplar mı, yoksa Fırat'ta alınan ders mi? Yorumlarda yaz.",
+  "etiketler": [
+    "otlukbeli savaşı",
+    "uzun hasan",
+    "fatih sultan mehmed",
+    "akkoyunlu",
+    "1473",
+    "şehzade bayezid",
+    "şehzade mustafa",
+    "has murad paşa",
+    "osmanlı tarihi"
+  ]
+}

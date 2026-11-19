@@ -4505,5 +4505,268 @@
       "yeni cami"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "gedik-ahmed-pasa",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Gedik Ahmed Paşa: İtalya'ya Çıkan Osmanlı Veziri 👑",
+      "Otranto 1480'i Alan Paşa Neden Öldürüldü? 👑",
+      "Gedik Ahmed Paşa: Kefe'den Otranto'ya Bir Komutan 👑"
+    ],
+    "kapak": "KENDİ PADİŞAHI",
+    "kanca": "1480'de bir Osmanlı paşası İtalya'ya çıktı ve Otranto'yu aldı. İki yıl sonra kendi padişahının emriyle öldürüldü. Sence neden?",
+    "kanca_gorsel": [
+      "File:Kadırga Minyatür.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Kefe · 1475",
+        "metin": "1475'te Gedik Ahmed Paşa donanmayla Kırım'a gitti ve Cenevizlilerin elindeki Kefe'yi aldı. Karadeniz'in kuzey kıyısı Osmanlı'ya açıldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "yaklas",
+          "cizgi": "kalin",
+          "merkez": [
+            32.2,
+            43.6
+          ],
+          "genislik": 9,
+          "zoom": 1.08,
+          "odak": [
+            35.38,
+            45.03
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Kefe",
+              "lon": 35.38,
+              "lat": 45.03,
+              "yan": "sol",
+              "bas": 0.55
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.05,
+                  41.2
+                ],
+                [
+                  30.5,
+                  42.2
+                ],
+                [
+                  32.5,
+                  43.4
+                ],
+                [
+                  34.3,
+                  44.4
+                ],
+                [
+                  35.35,
+                  44.98
+                ]
+              ],
+              "taraf": "osmanli",
+              "gemi": 3,
+              "bas": 0.05,
+              "bit": 0.6
+            }
+          ],
+          "damga": {
+            "yazi": "1475",
+            "lon": 35.38,
+            "lat": 45.03,
+            "bas": 0.68,
+            "tip": "muhur",
+            "dx": -220,
+            "dy": 260
+          }
+        }
+      },
+      {
+        "yazi": "Otranto · 1480",
+        "metin": "1480 yazında Arnavutluk kıyısından denizi geçti, İtalya'nın güneyine çıktı ve Otranto'yu kuşatıp aldı. Haber bütün İtalya'da büyük korku yarattı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "akan",
+          "yakinlik": 1.6,
+          "zaman": [
+            {
+              "yazi": "1480",
+              "bas": 0.0
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  19.45,
+                  40.45
+                ],
+                [
+                  19.1,
+                  40.35
+                ],
+                [
+                  18.8,
+                  40.25
+                ],
+                [
+                  18.5,
+                  40.15
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "gemi",
+              "gemi": 3,
+              "bas": 0.06,
+              "bit": 0.65,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Avlonya",
+              "lon": 19.49,
+              "lat": 40.47,
+              "yan": "sag"
+            },
+            {
+              "ad": "Otranto",
+              "lon": 18.49,
+              "lat": 40.15,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 18.49,
+            "lat": 40.15,
+            "bas": 0.72
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Yarım kalan sefer",
+        "metin": "Gedik Ahmed kışı geçirmek için Arnavutluk'a dönmüştü. Mayıs 1481'de Fatih ölünce yeni sefer yapılmadı ve Otranto aynı yıl elden çıktı.",
+        "gorsel": [
+          "File:Gentile Bellini, Mehmed II, 1430-1481, Sultan of the Turks 1451 (obverse), c. 1480, NGA 44574.jpg"
+        ]
+      },
+      {
+        "yazi": "1482",
+        "metin": "Gedik Ahmed, Cem Sultan'a karşı İkinci Bayezid'in yanında savaştı. Ama yeni padişah, askerler arasında sözü geçen bu paşadan çekindi. 1482'de Edirne'de öldürüldü.",
+        "gorsel": [
+          "File:Ottoman Sultan Bayezid II (miniature), from The Cream of Histories (Zubdat al-tawarikh) by Sayyid Luqman-i 'Ashuri.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Fatih yaşasaydı Otranto Osmanlı'da kalır mıydı?",
+    "etiketler": [
+      "gedik ahmed paşa",
+      "otranto",
+      "kefe",
+      "ikinci bayezid"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "ali-kuscu",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Ali Kuşçu: Uzun Hasan'ın Elçisi Fatih'in Âlimi Oldu 🔭",
+      "Semerkant'tan İstanbul'a Bir Astronom: Ali Kuşçu 🔭",
+      "Ali Kuşçu ve Fatih: Ayasofya'daki Astronom 🔭"
+    ],
+    "kapak": "GERİ DÖNMEDİ",
+    "kanca": "Hayal et: Bir astronom, rakip bir hükümdarın elçisi olarak Fatih'in huzuruna geldi ve İstanbul'da kaldı. Sence Fatih onu nasıl kazandı?",
+    "kanca_gorsel": [
+      "File:Fatih Sultan Mehmed und Ali Kuşçu.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Semerkant",
+        "metin": "Ali Kuşçu, Semerkant'ta Uluğ Bey'in rasathanesinde yetişti. Kuşçu lakabı, babasının hükümdarın doğancısı olmasından gelir. 1449'da Uluğ Bey öldürüldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1449",
+          "aylar": [
+            "Ekim"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Uluğ Bey öldü"
+        }
+      },
+      {
+        "yazi": "Elçi",
+        "metin": "Kuşçu, Tebriz'de Uzun Hasan'ın hizmetine girdi ve onun elçisi olarak Fatih'e gönderildi. Anlatılana göre Fatih, görevi bitince geri gelmesini istedi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Ali Kuşçu'nun yolu",
+          "ogeler": [
+            "Semerkant",
+            "Herat",
+            "Tebriz",
+            "İstanbul"
+          ]
+        }
+      },
+      {
+        "yazi": "Ayasofya",
+        "metin": "Ali Kuşçu ailesiyle İstanbul'a yerleşti ve Ayasofya medresesinde ders verdi. Otlukbeli zaferinin ardından bir astronomi eserine Fethiye adını verdi.",
+        "gorsel": [
+          "File:Fatih Sultan Mehmed und Ali Kuşçu.jpg"
+        ]
+      },
+      {
+        "yazi": "Eyüp",
+        "metin": "Dünya'nın kendi ekseni etrafında dönmesinin imkânsız olmadığını tartıştı. 1474'te İstanbul'da öldü ve Eyüp'e defnedildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Eyüp Sultan",
+          "lon": 28.934,
+          "lat": 41.048,
+          "arka": "safak"
+        }
+      }
+    ],
+    "soru": "Sence Ali Kuşçu'yu İstanbul'da tutan Fatih miydi, yoksa Ayasofya'daki kürsü mü?",
+    "etiketler": [
+      "ali kuşçu",
+      "fatih sultan mehmed",
+      "uluğ bey",
+      "astronomi"
+    ],
+    "stil": "animasyon"
   }
 ]

@@ -4473,5 +4473,283 @@
       "ayasofya"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "culus-bahsisi",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Cülus Bahşişi: Padişahın Tahta Çıkma Bedeli 👑",
+      "Yeniçeriler Yeni Padişahtan Neden Para İsterdi? 👑",
+      "1481'de Yerleşen Gelenek: Cülus Bahşişi 👑"
+    ],
+    "kapak": "KESE AÇILDI",
+    "kanca": "1481'de Fatih ölünce yeniçeriler İstanbul'u karıştırdı ve yeni padişahtan para istedi. Sence İkinci Bayezid bu parayı neden ödedi?",
+    "kanca_gorsel": [
+      "File:Konstantin Kapidagli. Jülüs ceremony (Enthronement ceremony) of Selim III. c. 1789. Topkapi Saray museum..jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Mayıs 1481",
+        "metin": "Mayıs 1481'de Fatih Sultan Mehmed sefer yolunda öldü. Haber İstanbul'a ulaşınca yeniçeriler ayaklandı, sadrazam Karamani Mehmed Paşa öldürüldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1481",
+          "aylar": [
+            "Mayıs"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Taht boş"
+        }
+      },
+      {
+        "yazi": "Amasya'dan İstanbul'a",
+        "metin": "Amasya'daki Şehzade Bayezid hızla İstanbul'a geldi. Tahta çıkarken yeniçerilere bahşiş verdi. Kaynaklara göre bu bahşiş bundan sonra bir geleneğe dönüştü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "kesikli",
+          "yakinlik": 1.7,
+          "zaman": [
+            {
+              "yazi": "Mayıs 1481",
+              "bas": 0.0
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  35.83,
+                  40.65
+                ],
+                [
+                  34.8,
+                  41.0
+                ],
+                [
+                  33.8,
+                  41.1
+                ],
+                [
+                  32.6,
+                  41.0
+                ],
+                [
+                  31.6,
+                  40.75
+                ],
+                [
+                  30.4,
+                  40.75
+                ],
+                [
+                  29.02,
+                  41.02
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.06,
+              "bit": 0.8,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Amasya",
+              "lon": 35.83,
+              "lat": 40.65,
+              "yan": "sol"
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "Her tahtın bedeli",
+        "metin": "Artık her yeni padişah tahta çıkınca bahşiş dağıtırdı. 1566'da İkinci Selim'in tahta çıkışında da yeniçeriler bahşiş için ayaklandı.",
+        "gorsel": [
+          "File:Konstantin Kapidagli. Jülüs ceremony (Enthronement ceremony) of Selim III. c. 1789. Topkapi Saray museum..jpg"
+        ]
+      },
+      {
+        "yazi": "1774",
+        "metin": "Padişahlar sık değiştikçe hazine zorlandı. Kaynaklara göre 1774'te tahta çıkan Birinci Abdülhamid, hazinenin boş olduğunu söyleyerek bahşiş dağıtmadı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Cülus bahşişi",
+          "ogeler": [
+            "1481 · İkinci Bayezid",
+            "1566 · İkinci Selim",
+            "1774 · Bahşiş yok"
+          ]
+        }
+      }
+    ],
+    "soru": "Sence cülus bahşişi padişahı güçlendirdi mi, yoksa yeniçerilere mi bağladı?",
+    "etiketler": [
+      "cülus bahşişi",
+      "yeniçeriler",
+      "ikinci bayezid",
+      "osmanlı sarayı"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "magnaura-aslanlari",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Bizans Sarayının Kükreyen Altın Aslanları 🏛️",
+      "949: Bizans İmparatorunun Havaya Yükselen Tahtı 🏛️",
+      "Magnaura Sarayı: Elçileri Şaşırtan Mekanik Taht 🏛️"
+    ],
+    "kapak": "ÜÇ KEZ EĞİLDİ",
+    "kanca": "Hayal et: 949'da bir elçi Bizans imparatorunun önünde yere kapandı, başını kaldırdığında taht havaya yükselmişti. Sence bu nasıl oldu?",
+    "kanca_gorsel": [
+      "File:Harald Jerichau - Konstantins søjle, den egyptiske obelisk, den blå Moske og Hagia Sophia.png"
+    ],
+    "sahneler": [
+      {
+        "yazi": "949",
+        "metin": "949'da İtalyalı elçi Liutprand, Venedik'ten gemiyle Konstantinopolis'e geldi. İmparator Yedinci Konstantin onu Magnaura sarayında kabul etti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "uzaklas",
+          "cizgi": "akan",
+          "merkez": [
+            21,
+            40.8
+          ],
+          "genislik": 20,
+          "zoom": 1.06,
+          "etiketler": [
+            {
+              "ad": "Venedik",
+              "lon": 12.33,
+              "lat": 45.44,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Konstantinopolis",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  12.4,
+                  45.3
+                ],
+                [
+                  14.5,
+                  43.8
+                ],
+                [
+                  18.6,
+                  40.1
+                ],
+                [
+                  21.0,
+                  36.9
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  28.95,
+                  41.0
+                ]
+              ],
+              "taraf": "dusman",
+              "gemi": 1,
+              "bas": 0.05,
+              "bit": 0.65
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Altın aslanlar",
+        "metin": "Tahtın önünde yaldızlı bir ağaç vardı, dallarındaki mekanik kuşlar ötüyordu. Tahtın iki yanındaki altın kaplı aslanlar ağızlarını açıp kükrüyordu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Büyük Saray",
+          "bina": "saray",
+          "alt": "Konstantinopolis",
+          "lon": 28.977,
+          "lat": 41.004,
+          "arka": "gece"
+        }
+      },
+      {
+        "yazi": "Yükselen taht",
+        "metin": "Liutprand imparatorun önünde üç kez yere kapandı. Başını kaldırdığında taht tavana yakın bir yüksekliğe çıkmış, imparator başka giysilerle oturuyordu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Magnaura'da kabul",
+          "ogeler": [
+            "Yere kapanış",
+            "Kükreyen aslanlar",
+            "Ötüşen kuşlar",
+            "Yükselen taht"
+          ]
+        }
+      },
+      {
+        "yazi": "Bir gösteri",
+        "metin": "Liutprand, önceden sorup öğrendiği için şaşırmadığını yazar. Düzeneklerin nasıl çalıştığı tam bilinmiyor, ama amaç belliydi: elçileri etkilemek.",
+        "gorsel": [
+          "File:Walls of Constantinople 1.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence bu gösteri elçileri gerçekten etkiler miydi?",
+    "etiketler": [
+      "bizans sarayı",
+      "magnaura",
+      "liutprand",
+      "mekanik taht"
+    ],
+    "stil": "animasyon"
   }
 ]
