@@ -5941,12 +5941,6 @@
           "tema": "parsomen",
           "cizgi": "kesikli",
           "yakinlik": 2.0,
-          "zaman": [
-            {
-              "yazi": "Haziran 1329",
-              "bas": 0.0
-            }
-          ],
           "rotalar": [
             {
               "yol": [
@@ -6160,12 +6154,6 @@
           "tema": "antika",
           "cizgi": "kalin",
           "yakinlik": 1.8,
-          "zaman": [
-            {
-              "yazi": "Eylül 1176",
-              "bas": 0.0
-            }
-          ],
           "rotalar": [
             {
               "yol": [
