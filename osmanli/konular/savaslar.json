@@ -6343,5 +6343,293 @@
       "anadolu selçuklu"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "ankara-1402-sirp-sovalyeler",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Ankara 1402: Yıldırım'ın Yanında Savaşan Sırp Şövalyeler ⚔️",
+      "Babası Kosova'da Öldü, O Ankara'da Osmanlı İçin Savaştı ⚔️",
+      "Stefan Lazareviç ve Ankara Savaşı 1402 ⚔️"
+    ],
+    "kapak": "ENİŞTESİ İÇİN",
+    "kanca": "1402'de Ankara'da Osmanlı saflarında savaşan zırhlı şövalyelerin komutanı, babası Kosova'da Osmanlılara karşı ölmüş bir prensti. Sence neden savaştı?",
+    "kanca_gorsel": [
+      "File:A miniature depicting the capture of Bayezid I.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Temmuz 1402",
+        "metin": "Timur, Bayezid'in beklediği yoldan gelmedi. Kayseri üzerinden dolaşıp Ankara'ya yöneldi. Osmanlı ordusu yaz sıcağında geri döndü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "kalin",
+          "yakinlik": 1.6,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  37.02,
+                  39.75
+                ],
+                [
+                  36.2,
+                  39.2
+                ],
+                [
+                  35.48,
+                  38.73
+                ],
+                [
+                  34.5,
+                  39.1
+                ],
+                [
+                  33.6,
+                  39.6
+                ],
+                [
+                  33.0,
+                  39.9
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.06,
+              "bit": 0.66,
+              "takip": true
+            },
+            {
+              "yol": [
+                [
+                  36.55,
+                  40.31
+                ],
+                [
+                  35.6,
+                  40.4
+                ],
+                [
+                  34.6,
+                  40.4
+                ],
+                [
+                  33.6,
+                  40.2
+                ],
+                [
+                  33.05,
+                  40.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.12,
+              "bit": 0.68
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Sivas",
+              "lon": 37.02,
+              "lat": 39.75
+            },
+            {
+              "ad": "Kayseri",
+              "lon": 35.48,
+              "lat": 38.73,
+              "yan": "sol"
+            },
+            {
+              "ad": "Ankara",
+              "lon": 32.85,
+              "lat": 39.93,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 33.02,
+            "lat": 39.95,
+            "bas": 0.74
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Kosova'nın oğlu",
+        "metin": "Osmanlı saflarında Sırp despotu Stefan Lazareviç vardı. Babası Lazar, 1389'da Kosova'da Osmanlılara karşı savaşırken ölmüştü. Kız kardeşi Olivera ise Bayezid'in eşiydi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Bayezid",
+              "desen": "hilal"
+            },
+            {
+              "ad": "Stefan",
+              "desen": "kartal"
+            }
+          ],
+          "bant": "Ankara · 1402",
+          "karsi": {
+            "ad": "Timur",
+            "desen": "halka"
+          },
+          "arka": {
+            "merkez": [
+              33,
+              39.9
+            ],
+            "genislik": 10,
+            "tema": "antika"
+          }
+        }
+      },
+      {
+        "yazi": "Son ana kadar",
+        "metin": "Bazı Anadolu beylerinin askerleri Timur'a geçti. Kaynaklara göre Stefan'ın zırhlı süvarileri ise sonuna kadar dövüştü.",
+        "gorsel": [
+          "File:Bayezid I. Semailname (Millet Library, Ali Emîrî Collection, History, MS no. 1216).jpg"
+        ]
+      },
+      {
+        "yazi": "Esaret",
+        "metin": "Bayezid ve Olivera esir düştü. Stefan ise şehzade Süleyman Çelebi ile birlikte savaş alanından çekildi.",
+        "gorsel": [
+          "File:A miniature depicting the capture of Bayezid I.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Stefan Ankara'da eniştesi için mi savaştı, yoksa kendi ülkesi için mi?",
+    "etiketler": [
+      "ankara savaşı",
+      "stefan lazareviç",
+      "yıldırım bayezid",
+      "timur"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "belgrad-1456-ogle-canlari",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Belgrad 1456 ve Avrupa'da Çalan Öğle Çanları ⚔️",
+      "Avrupa'da Öğle Çanları Neden Belgrad'la Anılır? ⚔️",
+      "Hunyadi'nin Son Zaferi: Belgrad 1456 ⚔️"
+    ],
+    "kapak": "PAPA'NIN EMRİ",
+    "kanca": "1456'da Papa bütün Hristiyanlara her öğle vakti çan çalınmasını emretti, birkaç hafta sonra Belgrad'dan haber geldi. Sence bu çanlar neyi anıyor?",
+    "kanca_gorsel": [
+      "File:Siege of Belgrade (1456), Ottoman miniature.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Haziran 1456",
+        "metin": "Fatih Belgrad'ı kuşatmaya hazırlanırken Papa Üçüncü Kallistus bir emir yayımladı: Her gün öğle vakti çanlar çalınacak, Hristiyanlar dua edecekti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "1456",
+          "aylar": [
+            "Haziran",
+            "Temmuz"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Öğle çanı"
+        }
+      },
+      {
+        "yazi": "Tuna'da gemiler",
+        "metin": "Temmuz ortasında Hunyadi Yanoş'un gemileri Tuna'daki Osmanlı gemi hattını yardı. Kaleye asker ve erzak ulaştı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "akan",
+          "yakinlik": 1.8,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  20.25,
+                  45.15
+                ],
+                [
+                  20.3,
+                  45.02
+                ],
+                [
+                  20.38,
+                  44.9
+                ],
+                [
+                  20.45,
+                  44.83
+                ]
+              ],
+              "taraf": "dusman",
+              "ikon": "gemi",
+              "gemi": 3,
+              "bas": 0.06,
+              "bit": 0.66,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Tuna",
+              "lon": 20.25,
+              "lat": 45.15,
+              "yan": "sol"
+            },
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 20.44,
+            "lat": 44.84,
+            "bas": 0.72
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Kuşatma kalktı",
+        "metin": "Şiddetli çarpışmalarda Fatih yaralandı ve Osmanlı ordusu kuşatmayı kaldırdı. Hunyadi ise birkaç hafta sonra salgın hastalıktan öldü.",
+        "gorsel": [
+          "File:Siege of Belgrade (1456), Ottoman miniature.jpg"
+        ]
+      },
+      {
+        "yazi": "Çanlar",
+        "metin": "Papa'nın emri zaferden önce verilmişti. Ama Avrupa'da öğle çanları zamanla Belgrad'daki bu zaferle anılır oldu.",
+        "gorsel": [
+          "-"
+        ]
+      }
+    ],
+    "soru": "Sence Belgrad'ı kurtaran Tuna'daki gemiler miydi, yoksa Hunyadi'nin kendisi mi?",
+    "etiketler": [
+      "belgrad kuşatması",
+      "hunyadi yanoş",
+      "öğle çanı",
+      "fatih sultan mehmed"
+    ],
+    "stil": "animasyon"
   }
 ]

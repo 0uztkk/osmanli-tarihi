@@ -4762,5 +4762,77 @@
       "astronomi"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "sokullu-suikast-1579",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Sokullu Mehmed Paşa Nasıl Öldürüldü? 1579 🗡️",
+      "Üç Padişaha Hizmet Eden Sadrazamın Sonu 🗡️",
+      "Sokullu'ya Dilekçe Verir Gibi Yaklaşan Adam 🗡️"
+    ],
+    "kapak": "TEK BIÇAK",
+    "kanca": "1579'da üç padişaha hizmet etmiş bir sadrazam, dilekçe verir gibi yaklaşan bir adamın bıçağıyla öldü. Sence Sokullu'yu kim hedef aldı?",
+    "kanca_gorsel": [
+      "File:Grand Vizier Sokollu Mehmed Pasha (portrait) mourning the sultan’s death; Nüzhet, fol. 41a.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Üç padişah",
+        "metin": "Sokullu Mehmed Paşa; Kanuni, İkinci Selim ve Üçüncü Murad dönemlerinde yaklaşık on dört yıl sadrazamlık yaptı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Sokullu'nun padişahları",
+          "ogeler": [
+            "Kanuni · 1565",
+            "İkinci Selim",
+            "Üçüncü Murad"
+          ]
+        }
+      },
+      {
+        "yazi": "Rakipler",
+        "metin": "Üçüncü Murad döneminde saraydaki rakipleri güçlendi. Sokullu'nun adamları birer birer görevden alınıyordu.",
+        "gorsel": [
+          "File:Grand Vizier Sokollu Mehmed Pasha (portrait) mourning the sultan’s death; Nüzhet, fol. 41a.jpg"
+        ]
+      },
+      {
+        "yazi": "Ekim 1579",
+        "metin": "Ekim 1579'da dervişe benzeyen bir adam, dilekçe verir gibi yaklaşıp onu bıçakladı. Sokullu kısa süre sonra öldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1579",
+          "aylar": [
+            "Ekim"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Suikast"
+        }
+      },
+      {
+        "yazi": "Cevapsız soru",
+        "metin": "Saldırganın neden saldırdığı kaynaklarda farklı anlatılır. Arkasında başka birinin olup olmadığı hâlâ tartışılır.",
+        "gorsel": [
+          "-"
+        ]
+      }
+    ],
+    "soru": "Sence Sokullu'nun ölümü sadece bir öfke miydi, yoksa saraydaki bir planın parçası mı?",
+    "etiketler": [
+      "sokullu mehmed paşa",
+      "sokullu suikastı",
+      "üçüncü murad",
+      "1579"
+    ],
+    "stil": "animasyon"
   }
 ]

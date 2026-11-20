@@ -4745,5 +4745,176 @@
       "mekanik taht"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "hakem-ve-sems-1554",
+    "tur": "az-bilinen",
+    "baslik": [
+      "İstanbul'un İlk Kahvehanesini Açan İki Adam ☕",
+      "Hakem ve Şems: Tahtakale'deki İlk Kahvehane ☕",
+      "1554'te Halep ve Şam'dan Gelen İki Kahveci ☕"
+    ],
+    "kapak": "SERVETLE DÖNDÜ",
+    "kanca": "1554'te Halep'ten ve Şam'dan gelen iki adam Tahtakale'de bir dükkân açtı ve İstanbul'un alışkanlıkları değişti. Sence ne satıyorlardı?",
+    "kanca_gorsel": [
+      "File:Ivan Constantinovich Aivazovsky - Coffee-house by the Ortaköy Mosque in Constantinople.JPG"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1554",
+        "metin": "Tarihçi Peçevi'ye göre Halepli Hakem ile Şamlı Şems adında iki adam 1554 dolaylarında İstanbul'a geldi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "cizgi": "akan",
+          "merkez": [
+            32.5,
+            37.2
+          ],
+          "genislik": 13,
+          "zoom": 1.06,
+          "odak": [
+            28.97,
+            41.02
+          ],
+          "etiketler": [
+            {
+              "ad": "Halep",
+              "lon": 37.16,
+              "lat": 36.2,
+              "yan": "sol",
+              "bas": 0.05
+            },
+            {
+              "ad": "Şam",
+              "lon": 36.29,
+              "lat": 33.51,
+              "yan": "sol",
+              "bas": 0.1
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sag",
+              "bas": 0.55
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  37.16,
+                  36.2
+                ],
+                [
+                  35.3,
+                  37.0
+                ],
+                [
+                  33.0,
+                  38.6
+                ],
+                [
+                  30.5,
+                  40.1
+                ],
+                [
+                  29.1,
+                  40.95
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.05,
+              "bit": 0.6
+            },
+            {
+              "yol": [
+                [
+                  36.29,
+                  33.51
+                ],
+                [
+                  36.1,
+                  35.5
+                ],
+                [
+                  35.0,
+                  37.0
+                ],
+                [
+                  32.6,
+                  38.9
+                ],
+                [
+                  30.3,
+                  40.3
+                ],
+                [
+                  29.1,
+                  40.98
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.12,
+              "bit": 0.65
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Tahtakale",
+        "metin": "Tahtakale'de bir dükkân açıp kahve satmaya başladılar. Peçevi'ye göre burada okumuşlar ve şairler toplanır, tavla ve satranç oynanırdı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Tahtakale",
+          "bina": "carsi",
+          "alt": "İstanbul",
+          "lon": 28.968,
+          "lat": 41.016,
+          "arka": "gunbatimi"
+        }
+      },
+      {
+        "yazi": "Servetle dönüş",
+        "metin": "Dükkân öyle tuttu ki şehirde benzerleri açıldı. Anlatılana göre Şems birkaç yıl sonra büyük bir kazançla memleketine döndü.",
+        "gorsel": [
+          "File:Ivan Constantinovich Aivazovsky - Coffee-house by the Ortaköy Mosque in Constantinople.JPG"
+        ]
+      },
+      {
+        "yazi": "Bitmeyen dükkân",
+        "metin": "Sonraki yüzyılda kahvehaneler defalarca yasaklandı ama hep yeniden açıldı. İki yabancının dükkânı, bir şehrin geleneğine dönüştü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Kahvehanenin yolu",
+          "ogeler": [
+            "Tahtakale · 1554",
+            "Yasaklar",
+            "Bütün şehirde"
+          ]
+        }
+      }
+    ],
+    "soru": "Sence kahvehaneler İstanbul'u neden bu kadar çabuk sardı?",
+    "etiketler": [
+      "ilk kahvehane",
+      "tahtakale",
+      "peçevi",
+      "osmanlı'da kahve"
+    ],
+    "stil": "animasyon"
   }
 ]
