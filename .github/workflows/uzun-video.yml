@@ -1,4 +1,4 @@
-name: Uzun video (gun asiri)
+name: Uzun video (haftalik, cumartesi)
 
 on:
   schedule:

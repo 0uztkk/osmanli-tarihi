@@ -2456,11 +2456,11 @@
   {
     "id": "mahya",
     "baslik": [
-      "Minareler Arasındaki Işıklı Yazılar 🌙",
-      "Mahya: Osmanlı'nın Ramazan Geleneği 🌙",
-      "Ramazan Gecelerinin Işıkları 🌙"
+      "Gökyüzüne Yazı Yazan Müezzin: Mahya 🌙",
+      "Minareler Arasına İlk Yazıyı Kim Astı? 🌙",
+      "Mahya: 400 Yıllık Ramazan Geleneği 🌙"
     ],
-    "kanca": "Hayal et: 1600'lerin İstanbul'unda iki minare arasında kandillerden yazılar parlıyor. Bu gelenek neden hiç kaybolmadı?",
+    "kanca": "Rivayete göre 1600'lerde bir müezzin, iki minare arasına kandillerle gökyüzüne yazı yazdı. Sence bu ustalık neden dört yüz yıl kaybolmadı?",
     "sahneler": [
       {
         "yazi": "Mahya",
@@ -2506,7 +2506,7 @@
       },
       {
         "yazi": "On yedinci yüzyıl",
-        "metin": "Bu geleneğin on yedinci yüzyılda İstanbul'da başladığı kabul edilir. Mahyacılık özel bir ustalık işiydi.",
+        "metin": "Rivayete göre ilk mahyayı Birinci Ahmed döneminde Hafız Ali Efendi adında bir müezzin kurdu. Mahyacılık zamanla ustadan çırağa geçen bir sanata dönüştü.",
         "gorsel": [
           "File:Sueleymaniye painting by Osman.jpg"
         ]
@@ -2533,7 +2533,7 @@
       "osmanlı kültürü"
     ],
     "tur": "bilinen",
-    "kapak": "KANDİLLİ YAZILAR",
+    "kapak": "İPLERE KANDİL",
     "kanca_gorsel": [
       "File:Sultanahmetmosque.jpg"
     ],
@@ -2717,11 +2717,11 @@
   {
     "id": "tugra",
     "baslik": [
-      "Padişahın İmzası: Tuğra ✒️",
-      "Tuğra Nasıl Okunur? ✒️",
-      "Her Padişahın Kendi Tuğrası ✒️"
+      "Padişahın İmzasını Atan Adam: Nişancı ✒️",
+      "Tuğrayı Padişah Değil Nişancı Çekerdi ✒️",
+      "Tuğranın İçinde Saklı Kelimeler ✒️"
     ],
-    "kanca": "Bu bir resim değil, bir padişahın imzası. Sence tuğranın içinde gerçekte hangi kelimeler saklı?",
+    "kanca": "Hayal et: fermanın altındaki padişah imzasını çoğu zaman padişah değil, başka bir devlet adamı çekerdi. Sence bu adam kimdi ve ne kadar güçlüydü?",
     "sahneler": [
       {
         "yazi": "Tuğra",
@@ -2794,7 +2794,7 @@
       "hat sanatı"
     ],
     "tur": "bilinen",
-    "kapak": "SULTAN İMZASI",
+    "kapak": "BAŞKASININ ELİ",
     "kanca_gorsel": [
       "File:Tughra Suleiman.jpg"
     ],
@@ -2804,15 +2804,15 @@
   {
     "id": "dolmabahce",
     "baslik": [
-      "Dolmabahçe'nin Dev Avizesi 🏰",
-      "Padişahlar Neden Dolmabahçe'ye Taşındı? 🏰",
-      "Dolmabahçe Sarayı'nın Hikâyesi 🏰"
+      "Topkapı'yı Terk Eden Padişah: Dolmabahçe 1856 🏰",
+      "Abdülmecid Neden Topkapı'dan Taşındı? 🏰",
+      "Dolmabahçe'nin 4,5 Tonluk Avizesi 🏰"
     ],
-    "kanca": "Dolmabahçe'deki bir avizenin yaklaşık dört buçuk ton olduğu söylenir. Sence Abdülmecid Topkapı'yı neden bıraktı?",
+    "kanca": "Abdülmecid Avrupa saraylarıyla yarışan bir saray istedi. Saray 1856'da bittiğinde devlet ilk dış borcunu çoktan almıştı. Sence neden Topkapı'yı bıraktı?",
     "sahneler": [
       {
         "yazi": "1856",
-        "metin": "Sultan Abdülmecid, Avrupa saraylarına benzeyen yeni bir saray istedi. Dolmabahçe Sarayı 1856'da tamamlandı.",
+        "metin": "Sultan Abdülmecid, Avrupa saraylarına benzeyen yeni bir saray istedi. Dolmabahçe 1856'da tamamlandı. Devlet ise Kırım Savaşı sırasında, 1854'te ilk dış borcunu almıştı.",
         "gorsel": [
           "-"
         ],
@@ -2881,7 +2881,7 @@
       "osmanlı sarayları"
     ],
     "tur": "bilinen",
-    "kapak": "4,5 TON",
+    "kapak": "AVRUPA GİBİ",
     "kanca_gorsel": [
       "File:Chandelier of the Entrance Hall of Dolmabahçe Palace, Istanbul.jpg"
     ],
@@ -3382,11 +3382,11 @@
   {
     "id": "saltanat-kayiklari",
     "baslik": [
-      "Padişahlar Boğaz'da Nasıl Gezerdi? 🚣",
-      "Saltanat Kayıkları 🚣",
-      "Kırk Kürekçili Kayık 🚣"
+      "Padişahın Kayığında Dümeni Tutan Adam 🚣",
+      "Saltanat Kayığı ve Bostancıbaşının Gücü 🚣",
+      "Kırk Kürekçili Saltanat Kayığı 🚣"
     ],
-    "kanca": "Biliyor musun, İstanbul'da padişahın en önemli aracı onlarca kürekçinin çektiği bir kayıktı? Boğaz'da nasıl gezerlerdi?",
+    "kanca": "Hayal et: padişahın kayığını onlarca kürekçi çekiyor, dümendeki bostancıbaşı ise padişahla baş başa konuşuyor. Sence bu yakınlık ona düşman kazandırır mıydı?",
     "sahneler": [
       {
         "yazi": "Su şehri",
@@ -3439,7 +3439,7 @@
       },
       {
         "yazi": "Kürekçiler",
-        "metin": "Bu kayıkları onlarca kürekçi çekerdi. Kürekçiler, sarayın bostancı ocağından seçilirdi.",
+        "metin": "Bu kayıkları onlarca bostancı çekerdi. Dümende ise bostancıbaşı otururdu. Anlatılana göre yol boyunca padişahla baş başa konuşabilen birkaç kişiden biriydi.",
         "gorsel": [
           "-"
         ],
@@ -3488,14 +3488,14 @@
         ]
       }
     ],
-    "soru": "Boğaz'da kayıkla gezmek ister miydin?",
+    "soru": "Sence dümende oturmak bir paşaya ne kadar güç verirdi?",
     "etiketler": [
       "saltanat kayığı",
       "boğaziçi",
       "osmanlı istanbulu"
     ],
     "tur": "bilinen",
-    "kapak": "KÜREKÇİLER",
+    "kapak": "BAŞ BAŞA",
     "kanca_gorsel": [
       "File:Fausto Zonaro - Amusement on the Caique - Google Art Project.jpg"
     ],
@@ -3505,11 +3505,11 @@
   {
     "id": "valide-alayi",
     "baslik": [
-      "Valide Sultan Saraya Nasıl Gelirdi? 👑",
-      "Valide Alayı Nedir? 👑",
-      "Eski Saray'dan Topkapı'ya Yolculuk 👑"
+      "Eski Saray'dan Çıkıp En Güçlü Kadın Olmak 👑",
+      "Oğlu Tahta Çıkan Kadının Saraya Dönüşü 👑",
+      "Valide Alayı: Bir Annenin Saraya Dönüşü 👑"
     ],
-    "kanca": "Hayal et: oğlu padişah olan bir anne, İstanbul sokaklarından görkemli bir alayla saraya taşınıyor. Valide Alayı'nda neler olurdu?",
+    "kanca": "Bir padişah ölünce haremi Eski Saray'a gönderilirdi. Ama oğlu tahta çıkan kadın, sokakları dolduran bir alayla geri dönerdi. Sence ne değişirdi?",
     "sahneler": [
       {
         "yazi": "Eski Saray",
@@ -3611,7 +3611,7 @@
         ]
       }
     ],
-    "soru": "Bu geleneği biliyor muydun?",
+    "soru": "Sence Valide Sultan olmak bir kadına padişahtan bile fazla güç verebilir miydi?",
     "etiketler": [
       "valide sultan",
       "osmanlı törenleri",
@@ -3629,7 +3629,7 @@
     "id": "kilic-kusanma",
     "baslik": [
       "Osmanlı'da Taç Yerine Kılıç 🗡️",
-      "Kılıç Kuşanma Töreni Nedir? 🗡️",
+      "Padişahlar Taç Giymez, Kılıç Kuşanırdı 🗡️",
       "Yeni Padişah Neden Eyüp'e Giderdi? 🗡️"
     ],
     "kanca": "Osmanlı padişahları taç giymezdi. Sence tahta çıkan bir padişaha Eyüp Sultan'da neden bir kılıç kuşatılırdı?",
@@ -3715,11 +3715,11 @@
   {
     "id": "kutuphane-ahmed3",
     "baslik": [
-      "Sarayın Ortasındaki Kütüphane 📚",
-      "III. Ahmed Kütüphanesi 📚",
-      "Padişahın Kitap Tutkusu 📚"
+      "Kütüphane Yaptırıp Tahtını Kaybeden Padişah 📚",
+      "Üçüncü Ahmed: Sarayın Ortasına Kütüphane 📚",
+      "1719'dan 1730'a: Hattat Padişahın Sonu 📚"
     ],
-    "kanca": "Üçüncü Ahmed, 1719'da Topkapı'nın tam ortasına bir kütüphane yaptırdı. Sence orada hangi hazineler saklandı?",
+    "kanca": "Üçüncü Ahmed 1719'da sarayın ortasına bir kütüphane yaptırdı. On bir yıl sonra bir isyan onu tahttan indirdi. Sence kitaplar ona ne kazandırdı?",
     "sahneler": [
       {
         "yazi": "1719",
@@ -3778,21 +3778,21 @@
         ]
       },
       {
-        "yazi": "Çeşme",
-        "metin": "Ayasofya'nın yanındaki ünlü Üçüncü Ahmed Çeşmesi de onun döneminde yapıldı.",
+        "yazi": "1730",
+        "metin": "1730'da Patrona Halil isyanıyla tahttan indirildi. Yaptırdığı kütüphane ise bugün hâlâ sarayın ortasında duruyor.",
         "gorsel": [
           "File:Sultans Ahmet III's Fountain by the Gate of the Seraglio in Constantinople.jpg"
         ]
       }
     ],
-    "soru": "Sen hangi kitabı saklardın?",
+    "soru": "Sence Üçüncü Ahmed'i isyanla tahttan indiren şey neydi?",
     "etiketler": [
       "üçüncü ahmed",
       "topkapı sarayı",
       "osmanlı kütüphaneleri"
     ],
     "tur": "bilinen",
-    "kapak": "EL YAZMALARI",
+    "kapak": "ON BİR YILDA",
     "kanca_gorsel": [
       "File:Ahmed III library interior Topkapi March pano.jpg"
     ],
@@ -3875,9 +3875,9 @@
     "id": "mor-oda-bizans",
     "tur": "az-bilinen",
     "baslik": [
-      "Bizans'ta Mor Doğmak Ne Demek? 🏛️",
+      "Bizans'ta Tahtı Belirleyen Mor Oda 🏛️",
       "Mor Odada Doğan Şehzadeler 🏛️",
-      "Bizans Sarayının Mor Odası 🏛️"
+      "Anna Komnene ve Bizans Sarayının Mor Odası 🏛️"
     ],
     "kapak": "DOĞUŞTAN TAHT",
     "kanca": "Sence bir Bizans şehzadesinin doğduğu oda neden tahta giden yolu belirlerdi? Bu odanın duvarları mor taşlarla kaplıydı.",

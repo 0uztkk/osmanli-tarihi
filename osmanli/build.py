@@ -28,6 +28,14 @@ MAKS_SURE = 58.0                           # Shorts sınırı 60 sn; pay bırak�
 FONT_DIR = "/usr/share/fonts/truetype/dejavu/"
 ALTIN = (232, 190, 105)
 KATEGORI_ADI = {"savaslar": "SAVAŞLAR VE İSYANLAR", "saray": "SARAY VE İSTANBUL", "kisiler": "TARİHTEN PORTRELER"}
+# Numaralı seri kimliği (analiz 21.11): videonun üstünde ve başlığın sonunda "Saray Sırları #22".
+# Her kategoriden her gün bir video çıktığı için numara, konu sırasının ilk gününden bu yana geçen gün + 1.
+SERI = {"saray": "Saray Sırları", "kisiler": "Padişahlar ve Paşalar", "savaslar": "Savaş Günlüğü"}
+SERI_YAZI = None   # main() ayarlar; boşsa üstte kategori adı yazar
+
+
+def ust_yazi(kategori):
+    return SERI_YAZI or KATEGORI_ADI.get(kategori, "")
 
 
 def font(ad, boyut):
@@ -301,7 +309,7 @@ def shorts_kapak(sahne, kategori, kapak, yol):
     bant = bant.filter(ImageFilter.GaussianBlur(70))
     kare.paste(Image.new("RGB", (W, H), (12, 8, 6)), (0, 0), bant)
     d = ImageDraw.Draw(kare)
-    ust = KATEGORI_ADI.get(kategori, "")
+    ust = ust_yazi(kategori)
     d.text(((W - d.textlength(ust, font=F_KUCUK)) / 2, 150), ust, font=F_KUCUK, fill=ALTIN,
            stroke_width=4, stroke_fill=(20, 14, 10))
     metin = tr_buyuk(kapak)
@@ -448,7 +456,7 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
 
         # üstte kanal bandı ve ilerleme çizgisi
         d.rectangle([0, 0, int(W * t / toplam), 8], fill=ALTIN)
-        ust = KATEGORI_ADI.get(kategori, "")
+        ust = ust_yazi(kategori)
         d.text(((W - d.textlength(ust, font=F_KUCUK)) / 2, 150), ust, font=F_KUCUK, fill=ALTIN,
                stroke_width=4, stroke_fill=(20, 14, 10))
 
@@ -501,9 +509,15 @@ UZUN_BASI = datetime.date(2026, 11, 4)   # ilk uzun video
 GUN_ASIRI_BASI = datetime.date(2026, 11, 8)   # buradan itibaren bir gün var, bir gün yok
 
 
+HAFTALIK_BASI = datetime.date(2026, 11, 28)   # buradan itibaren haftada bir, cumartesi (analiz 20.11: uzun izlenme %24)
+
+
 def uzun_yayin_gunu(g):
-    """Uzun video takvimi: 4 Kasım, sonra 8 Kasım'dan itibaren gün aşırı. uzun.py de bunu kullanır."""
-    return g == UZUN_BASI or (g >= GUN_ASIRI_BASI and (g - GUN_ASIRI_BASI).days % 2 == 0)
+    """Uzun video takvimi: 4 Kasım; 8-20 Kasım gün aşırı; 28 Kasım'dan itibaren her cumartesi.
+    Geçmiş günler değişmez (sıra sayımı buna dayanır). uzun.py de bunu kullanır."""
+    if g >= HAFTALIK_BASI:
+        return g.weekday() == 5
+    return g == UZUN_BASI or (GUN_ASIRI_BASI <= g <= datetime.date(2026, 11, 20) and (g - GUN_ASIRI_BASI).days % 2 == 0)
 # 8'lik döngü: art arda videolar aynı kapanışı almaz, kabaca 4 videodan 1'i yalnızca soruyla biter
 DONGU = ["yarin", "bildin", "duz", "puan", "oneri", "yarin", "duz", "uzun"]
 KATEGORI_KAYMA = {"saray": 0, "kisiler": 1, "savaslar": 2}
@@ -537,6 +551,11 @@ def kapanis_sec(konu, kategori, seed):
     soru = konu["soru"]
     kaotik = kategori == "savaslar" or konu.get("tur") == "az-bilinen"
 
+    if konu.get("devam"):   # iki bölümlük hikâyenin 1. bölümü: tek istek, takip etmek için gerçek bir sebep
+        sonraki = konu_sec(kategori, int((gun + datetime.timedelta(days=1)).strftime("%Y%m%d")))
+        if sonraki["id"] == konu["devam"]:
+            m = "Hikâyenin devamı yarın aynı saatte. Kaçırmamak için takip et."
+            return [(m, f"DEVAMI YARIN {SAAT.get(kategori, '')}")], soru + "\n\nHikâyenin devamı yarın aynı saatte.", "devam"
     if tur == "puan" and not kaotik:
         tur = "bildin"
     if tur == "uzun":
@@ -577,6 +596,7 @@ def kapanis_sec(konu, kategori, seed):
 
 # ---------------------------------------------------------------- ana akış
 def main():
+    global SERI_YAZI
     kategori = (os.environ.get("KATEGORI") or "savaslar").strip().lower()
     if kategori not in KATEGORI_ADI:
         sys.exit(f"Bilinmeyen KATEGORI: {kategori}")
@@ -654,6 +674,14 @@ def main():
     sahneler[0]["bas"] = 0.0
 
     seed_baslik = baslik_sec(seed, konu)
+    yuklenecek_baslik, seri = seed_baslik, None
+    if not (os.environ.get("KONU") or "").strip():   # elle/özel gün seçilen konu seriye numara almaz
+        gun = datetime.datetime.strptime(str(seed), "%Y%m%d").date()
+        seri = f"{SERI[kategori]} #{(gun - BASLANGIC).days + 1}"
+        SERI_YAZI = tr_buyuk(seri)
+        if len(seed_baslik) + len(seri) + 3 <= 75:   # konu zaten ilk 40 karakterde; seri sonda kesilse de olur
+            yuklenecek_baslik = f"{seed_baslik} | {seri}"
+        print(f"Seri: {seri}", flush=True)
     print(f"Süre: {toplam:.1f} sn, kare: {int(toplam * FPS)}", flush=True)
     render(sahneler, toplam, kategori, konu.get("kapak") or emojisiz(seed_baslik), os.path.join(OUT, "v.mp4"))
     try:
@@ -665,7 +693,7 @@ def main():
                     "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest",
                     "-movflags", "+faststart", os.path.join(OUT, "video.mp4")], check=True)
 
-    meta = meta_olustur(konu, kategori, seed_baslik, gorseller, aciklama_sorusu)
+    meta = meta_olustur(konu, kategori, yuklenecek_baslik, gorseller, aciklama_sorusu, seri)
     meta["kapanis"] = kapanis_turu
     with open(os.path.join(OUT, "meta.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
@@ -680,7 +708,7 @@ def tr_baslik_harf(s):
     return " ".join((w[:1].replace("i", "İ").replace("ı", "I").upper() + w[1:]) if w else w for w in s.split(" "))
 
 
-def meta_olustur(konu, kategori, baslik, gorseller, soru=None):
+def meta_olustur(konu, kategori, baslik, gorseller, soru=None, seri=None):
     """yt-seo: açıklamanın ilk iki satırı arama kutusuna yazılan kelimeleri taşır ("...daha fazla"nın üstü),
     sonra kaynak, sonra uzun hâl. Etiketler en fazla 15 ve yalnızca ayırt edici yazımlar için."""
     sanatcilar = sorted({g["sanatci"] for g in gorseller if g and g.get("sanatci")})
@@ -692,6 +720,8 @@ def meta_olustur(konu, kategori, baslik, gorseller, soru=None):
     satir2 = "Osmanlı tarihi: " + ", ".join(aramalar[:-1]) + (f" ve {aramalar[-1]}" if len(aramalar) > 1 else "".join(aramalar)) + \
              " hakkında kısa bir hikâye."
     uzun = " ".join(sh["metin"] for sh in konu["sahneler"])
+    if seri:
+        satir2 += f"\n{seri}"
     aciklama = (f"{satir1}\n{satir2}\n\n"
                 f"{uzun}\n\n"
                 f"{soru or konu['soru']}\n\n"

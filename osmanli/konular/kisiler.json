@@ -4834,5 +4834,249 @@
       "1579"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "oruc-reis-1",
+    "tur": "az-bilinen",
+    "devam": "oruc-reis-2",
+    "baslik": [
+      "Oruç Reis 1. Bölüm: Esir Kürekçiden Kaptana ⚓",
+      "Barbaros'un Ağabeyi Oruç Reis (1/2) ⚓",
+      "Kolunu Kaybeden Kaptan: Oruç Reis (1/2) ⚓"
+    ],
+    "kapak": "TEK KOLLA",
+    "kanca": "Hayal et: Midillili bir denizci şövalyelerin kadırgasında esir kürekçi oldu, yıllar sonra bir kolunu kaybetti ama denizden çekilmedi. Sence Oruç Reis'i ne durdurabilirdi?",
+    "kanca_gorsel": [
+      "File:Kadırga Minyatür.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Midilli",
+        "metin": "Oruç Midilli'de doğdu. Kardeşleri İlyas, İshak ve sonradan Barbaros diye tanınacak olan Hızır'dı. Dört kardeş de denizle büyüdü.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "Esaret",
+        "metin": "Gençliğinde Rodos şövalyeleriyle bir çatışmada esir düştü, kardeşi İlyas bu çatışmada öldü. Kaynaklara göre Oruç yıllarca şövalyelerin kadırgalarında kürek çekti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "yaklas",
+          "cizgi": "kesikli",
+          "merkez": [
+            27.2,
+            37.6
+          ],
+          "genislik": 5,
+          "zoom": 1.08,
+          "odak": [
+            28.22,
+            36.43
+          ],
+          "etiketler": [
+            {
+              "ad": "Midilli",
+              "lon": 26.55,
+              "lat": 39.1,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Rodos",
+              "lon": 28.22,
+              "lat": 36.43,
+              "yan": "sol",
+              "bas": 0.3
+            }
+          ],
+          "damga": {
+            "yazi": "Esir",
+            "lon": 28.22,
+            "lat": 36.43,
+            "bas": 0.55,
+            "tip": "murekkep"
+          }
+        }
+      },
+      {
+        "yazi": "Kuzey Afrika",
+        "metin": "Nasıl kurtulduğu farklı anlatılır. Özgür kalınca Hızır'la birlikte Kuzey Afrika kıyılarına yöneldi ve Tunus'tan Akdeniz'e açıldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Oruç'un yolu",
+          "ogeler": [
+            "Midilli",
+            "Rodos'ta esir",
+            "Tunus",
+            "Bicaye · 1512"
+          ]
+        }
+      },
+      {
+        "yazi": "Bicaye · 1512",
+        "metin": "1512'de İspanyolların elindeki Bicaye kalesine saldırdı. Bir mermi kolunu parçaladı ve Oruç kolunu kaybetti. Rivayete göre sonradan gümüş bir kol taktırdı.",
+        "gorsel": [
+          "File:Kadırga Minyatür.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Oruç Reis'i bu kadar inatçı yapan neydi?",
+    "etiketler": [
+      "oruç reis",
+      "barbaros",
+      "kuzey afrika",
+      "osmanlı denizcileri"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "oruc-reis-2",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Oruç Reis 2. Bölüm: Cezayir'i Alan Tek Kollu Kaptan ⚓",
+      "Oruç Reis'in Sonu ve Barbaros'un Başlangıcı (2/2) ⚓",
+      "Tilimsan 1518: Oruç Reis'in Son Kaçışı (2/2) ⚓"
+    ],
+    "kapak": "AĞABEYDEN KARDEŞE",
+    "kanca": "Önceki bölümde Oruç Reis kolunu kaybetmişti. 1516'da bu tek kollu kaptan Cezayir'i aldı, ama iki yıl sonra peşindeki İspanyollardan kaçamadı. Sence sonunu ne belirledi?",
+    "kanca_gorsel": [
+      "File:Hayreddin Barbarossa.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1516",
+        "metin": "Cezayir halkı İspanyollara karşı yardım istedi. Oruç 1516'da şehre girdi ve kısa sürede Cezayir'in hâkimi oldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "parsomen",
+          "cizgi": "kesikli",
+          "yakinlik": 1.7,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  5.77,
+                  36.82
+                ],
+                [
+                  5.0,
+                  36.95
+                ],
+                [
+                  4.2,
+                  36.95
+                ],
+                [
+                  3.5,
+                  36.85
+                ],
+                [
+                  3.06,
+                  36.76
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "gemi",
+              "gemi": 3,
+              "bas": 0.06,
+              "bit": 0.7,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Cicel",
+              "lon": 5.77,
+              "lat": 36.82,
+              "yan": "sag"
+            },
+            {
+              "ad": "Cezayir",
+              "lon": 3.06,
+              "lat": 36.75,
+              "yan": "sol"
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "Tilimsan",
+        "metin": "1517'de batıdaki Tilimsan'ı da aldı. Ama İspanyollar Kuzey Afrika'daki bu yeni gücü kendileri için büyük bir tehlike olarak görüyordu.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "1518",
+        "metin": "1518'de İspanyollar Tilimsan'ı kuşattı. Oruç şehirden çıkıp kaçtı ama yetiştiler ve çarpışarak öldü. Rivayete göre peşindekileri oyalamak için yola altın saçtı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gunbatimi",
+          "yil": "1518",
+          "aylar": [
+            "Tilimsan"
+          ],
+          "cevir_bit": 0.45,
+          "rozet": "Son kaçış"
+        }
+      },
+      {
+        "yazi": "Hızır",
+        "metin": "Ağabeyinin ölümünden sonra Hızır, Cezayir'i Osmanlı'ya bağlamak için Yavuz Sultan Selim'e elçi gönderdi. Barbaros Hayreddin'in Osmanlı'daki yolu böyle başladı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Hızır",
+              "desen": "anahtar"
+            },
+            {
+              "ad": "Yavuz",
+              "desen": "hilal"
+            }
+          ],
+          "bant": "Cezayir · 1519",
+          "karsi": {
+            "ad": "İspanya",
+            "desen": "carpi"
+          },
+          "arka": {
+            "merkez": [
+              5,
+              38
+            ],
+            "genislik": 16,
+            "tema": "gece"
+          }
+        }
+      }
+    ],
+    "soru": "Sence Oruç Reis yaşasaydı Cezayir yine Osmanlı'ya bağlanır mıydı?",
+    "etiketler": [
+      "oruç reis",
+      "barbaros hayreddin",
+      "cezayir",
+      "yavuz sultan selim"
+    ],
+    "stil": "animasyon"
   }
 ]

@@ -91,6 +91,31 @@ def analytics_al(ids, bas, bit):
         return None, str(e)[:300]
 
 
+def ilk_30sn_al(uzunlar):
+    """Uzun videolarda 30. saniyede hâlâ izleyenlerin oranı (audienceWatchRatio, elapsedVideoTimeRatio)."""
+    sonuc = {}
+    try:
+        from google.oauth2.credentials import Credentials
+        from googleapiclient.discovery import build
+        cr = Credentials(token=None, refresh_token=os.environ["YT_REFRESH_TOKEN"], token_uri="https://oauth2.googleapis.com/token",
+                         client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"])
+        ya = build("youtubeAnalytics", "v2", credentials=cr, cache_discovery=False)
+        for k in uzunlar:
+            if not k.get("sure_sn"):
+                continue
+            r = ya.reports().query(ids="channel==MINE", startDate=k["yayin"][:10],
+                                   endDate=datetime.date.today().isoformat(), metrics="audienceWatchRatio",
+                                   dimensions="elapsedVideoTimeRatio", filters=f"video=={k['id']}").execute()
+            satirlar = sorted(r.get("rows", []))
+            hedef = 30 / k["sure_sn"]
+            uygun = [s for s in satirlar if s[0] >= hedef]
+            if uygun:
+                sonuc[k["id"]] = round(uygun[0][1] * 100)
+    except Exception as e:
+        print("İlk 30 sn verisi alınamadı:", str(e)[:200])
+    return sonuc
+
+
 def ozet(liste, anahtar="izlenme"):
     v = [x[anahtar] for x in liste]
     if not v:
@@ -124,14 +149,15 @@ def main():
         sn, st = v["snippet"], v["statistics"]
         yay = datetime.datetime.fromisoformat(sn["publishedAt"].replace("Z", "+00:00"))
         gun = max(0.5, (simdi - yay).total_seconds() / 86400)
-        bilgi = eslesme.get(norm(B.emojisiz(sn["title"])))
+        seri = re.search(r"\s*\|\s*([^|]*#\d+)\s*$", sn["title"])   # "... | Saray Sırları #22"
+        bilgi = eslesme.get(norm(B.emojisiz(sn["title"][:seri.start()] if seri else sn["title"])))
         sure = sure_sn(v["contentDetails"].get("duration"))
         tur = bilgi[0] if bilgi else ("shorts" if sure <= 180 else "uzun")
         k = {"id": v["id"], "baslik": sn["title"], "yayin": yay.astimezone(TR).strftime("%Y-%m-%d %H:%M"),
              "gun_adi": GUNLER[yay.astimezone(TR).weekday()], "saat": yay.astimezone(TR).strftime("%H"),
              "tur": tur, "kategori": bilgi[1] if bilgi else "?", "konu": bilgi[2]["id"] if bilgi else None,
              "sure_sn": sure, "izlenme": int(st.get("viewCount", 0)), "begeni": int(st.get("likeCount", 0)),
-             "yorum": int(st.get("commentCount", 0)), "gun": round(gun, 1)}
+             "yorum": int(st.get("commentCount", 0)), "gun": round(gun, 1), "seri": bool(seri)}
         k["gunluk"] = k["izlenme"] / gun
         if bilgi:
             konu = bilgi[2]
@@ -157,6 +183,11 @@ def main():
             k["ort_izlenme_sn"] = round(a.get("averageViewDuration", 0))
             k["abone"] = int(a.get("subscribersGained", 0))
             k["paylasim"] = int(a.get("shares", 0))
+            k["abone_1000"] = round(k["abone"] * 1000 / k["izlenme"], 2) if k["izlenme"] else 0
+        ilk30 = ilk_30sn_al([k for k in kayitlar if k["tur"] == "uzun"])
+        for k in kayitlar:
+            if k["id"] in ilk30:
+                k["ilk_30sn"] = ilk30[k["id"]]
 
     sh = [k for k in kayitlar if k["tur"] == "shorts"]
     uz = [k for k in kayitlar if k["tur"] == "uzun"]
@@ -173,6 +204,13 @@ def main():
             r.append(f"- Uzun video ortalama izlenme yüzdesi: %{statistics.mean([k['izlenme_yuzdesi'] for k in uz]):.0f}, "
                      f"ortalama izlenme {statistics.mean([k['ort_izlenme_sn'] for k in uz]) / 60:.1f} dk")
         r.append(f"- Videolardan gelen abone: {sum(k['abone'] for k in kayitlar)}")
+        for ad, l in (("Shorts", sh), ("Uzun", uz)):
+            iz = sum(k["izlenme"] for k in l)
+            if iz:
+                r.append(f"- {ad}: 1.000 izlenme başına abone **{sum(k['abone'] for k in l) * 1000 / iz:.2f}**")
+        otuz = [k["ilk_30sn"] for k in uz if "ilk_30sn" in k]
+        if otuz:
+            r.append(f"- Uzun videolarda 30. saniyede kalan izleyici: medyan %{statistics.median(otuz):.0f}")
     else:
         r.append(f"\n> İzlenme süresi / izlenme yüzdesi alınamadı (YouTube Analytics izni yok): `{hata}`\n"
                  "> Bunun için YT_REFRESH_TOKEN'ı `yt-analytics.readonly` izniyle yeniden almak gerekir.")
@@ -190,6 +228,8 @@ def main():
     r += grup_tablosu("Yayın günü", olgun, lambda k: k["gun_adi"])
     if an:
         r += grup_tablosu("Kategori – izlenme yüzdesi", olgun, lambda k: k["kategori"], "izlenme_yuzdesi")
+        r += grup_tablosu("Kategori – 1.000 izlenme başına abone", olgun, lambda k: k["kategori"], "abone_1000")
+        r += grup_tablosu("Seri etiketi (Saray Sırları #N vb.)", olgun, lambda k: "seri" if k.get("seri") else "serisiz")
 
     def tablo(liste, baslik):
         s = [f"\n## {baslik}\n", "| Yayın | Başlık | İzlenme | Gün başı | Beğeni | Yorum" + (" | İzlenme % | Abone" if an else "") + " |",
@@ -201,6 +241,10 @@ def main():
     r += tablo(sorted(olgun, key=lambda k: -k["gunluk"])[:8], "En iyi Shorts (gün başı izlenme)")
     r += tablo(sorted(olgun, key=lambda k: k["gunluk"])[:8], "En zayıf Shorts (gün başı izlenme)")
     r += tablo(uz, "Uzun videolar")
+    if any("ilk_30sn" in k for k in uz):
+        r += ["\n### Uzun videolar – ilk 30 saniye\n", "| Yayın | Başlık | 30. saniyede kalan | Ort. izlenme |", "|---|---|---|---|"]
+        r += [f"| {k['yayin'][5:]} | {k['baslik'][:48]} | %{k['ilk_30sn']} | {k['ort_izlenme_sn'] / 60:.1f} dk |"
+              for k in uz if "ilk_30sn" in k]
     r += tablo(sorted(kayitlar, key=lambda k: k["yayin"], reverse=True), "Bütün videolar (yeniden eskiye)")
 
     os.makedirs(OUT, exist_ok=True)

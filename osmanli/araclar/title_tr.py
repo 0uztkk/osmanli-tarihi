@@ -2,7 +2,7 @@
 """title_tr.py – yt-package/title.py kurallarının Türkçe uyarlaması (başlık + kapak yazısı birlikte).
 
 Kurallar: ≤60 karakter (masaüstü arama), konu ilk 40 karakterde (mobil akış), en fazla 2 büyük harfli
-kelime, belirsiz sıfat yerine sayı/isim/tarih, ilk üç kelime dolgu olmamalı, kapak yazısı başlığı
+kelime, "Nedir/Ne demek" gibi ansiklopedik kalıp yok, belirsiz sıfat yerine sayı/isim/tarih, ilk üç kelime dolgu olmamalı, kapak yazısı başlığı
 tekrar etmemeli ve en fazla 3 kelime olmalı.
 
     python3 title_tr.py --title "..." --kapak "70 GEMİ KARADAN"
@@ -20,6 +20,9 @@ DOLGU = {"bir", "bu", "şu", "ve", "ile", "de", "da", "ne", "neden", "nasıl", "
 
 
 def kelimeler(t): return re.findall(r"[0-9a-zçğıöşüâîû]+", t.replace("I", "ı").replace("İ", "i").lower())
+
+
+ANSIKLOPEDIK = re.compile(r"\b(nedir|ne demek|neydi|ne anlama gelir|ne işe yarardı)\b")
 
 
 def kok(w): return w[:5]   # Türkçe ekler için kaba kök karşılaştırması
@@ -44,6 +47,8 @@ def denetle(baslik, kapak=None, konu_kelimeleri=()):
         iyi.append("sayı/isim/tarih var")
     else:
         sorun.append(("somut-yok", "sayı, tarih ya da özel isim yok"))
+    if ANSIKLOPEDIK.search(" ".join(kelimeler(t))):   # analiz 20.11: bu başlıklar medyan 234, diğerleri 628
+        sorun.append(("ansiklopedik", '"Nedir/Ne demek" yerine kişi, çatışma ya da gizem'))
     if not [w for w in kelimeler(t)[:3] if w not in DOLGU]:
         sorun.append(("öne-al", "ilk üç kelime dolgu"))
     if kapak is not None:

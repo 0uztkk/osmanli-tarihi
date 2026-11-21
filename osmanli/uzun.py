@@ -37,7 +37,7 @@ F_KANAL = B.font("DejaVuSans-Bold.ttf", 26)
 ALTIN = B.ALTIN
 KANAL = "SARAYIN GÖLGESİ"
 TAKVIM_BASI = datetime.date(2026, 11, 4)   # ilk uzun video (çarşamba)
-# yayın günleri: build.uzun_yayin_gunu (gün aşırı)
+# yayın günleri: build.uzun_yayin_gunu (28 Kasım 2026dan itibaren her cumartesi)
 
 
 # ---------------------------------------------------------------- konu seçimi
