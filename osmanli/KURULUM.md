@@ -32,7 +32,7 @@ Yeni depo → **Settings → Secrets and variables → Actions**
 ## 6. Deneme (5 dk)
 Actions → **Osmanli tarihi video** → Run workflow → `privacy: private` → çalıştır.
 YouTube Studio'da özel video görünecek. Beğenirsen hiçbir şey yapma; zamanlanmış çalıştırmalar
-her gün 11:40 (saray), 17:25 (portreler), 20:10 (savaşlar/isyanlar) herkese açık yükler.
+her gün 14:40 (saray), 17:25 (portreler), 20:10 (savaşlar/isyanlar) herkese açık yükler.
 
 ## Neler hazır
 - 107 konu: 35 savaş/isyan, 38 saray/İstanbul, 34 portre. 16'sı az bilinen kaotik olaylar

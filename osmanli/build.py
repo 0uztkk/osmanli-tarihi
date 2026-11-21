@@ -496,7 +496,7 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
 
 
 # ---------------------------------------------------------------- video sonu (etkileşim)
-SAAT = {"saray": "11:40", "kisiler": "17:25", "savaslar": "20:10"}
+SAAT = {"saray": "14:40", "kisiler": "17:25", "savaslar": "20:10"}
 UZUN_BASI = datetime.date(2026, 11, 4)   # ilk uzun video
 GUN_ASIRI_BASI = datetime.date(2026, 11, 8)   # buradan itibaren bir gün var, bir gün yok
 

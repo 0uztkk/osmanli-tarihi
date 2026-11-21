@@ -1,6 +1,6 @@
 # Osmanlı tarihi – otomatik YouTube Shorts
 
-Her gün 3 Shorts: 11:40 saray ve İstanbul, 17:25 tarihten portreler, 20:10 savaşlar ve isyanlar (TR saati).
+Her gün 3 Shorts: 14:40 saray ve İstanbul, 17:25 tarihten portreler, 20:10 savaşlar ve isyanlar (TR saati).
 Google TTS seslendirme, Wikimedia Commons'tan elle seçilmiş kamu malı tablolar, YouTube Data API ile yükleme.
 
 - `osmanli/konular/*.json` – 107 konu (kanca, 4 sahne, kapak yazısı, başlık kalıpları, seçilmiş görseller)

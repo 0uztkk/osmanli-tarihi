@@ -6,10 +6,10 @@ on:
     # Bu yüzden her video için yayın saatinden ÖNCE başlayan 4 deneme var; erken başlayan
     # deneme yayın saatine kadar bekler. İlk yükleyen "yuklenenler" dalına işaret bırakır,
     # sonraki denemeler bunu görüp hiçbir şey yapmadan çıkar.
-    - cron: "45 7 * * *"    # Saray hayatı  -> yayın 11:40 (Türkiye)
-    - cron: "15 8 * * *"
-    - cron: "45 8 * * *"
-    - cron: "20 9 * * *"
+    - cron: "45 10 * * *"   # Saray hayatı  -> yayın 14:40 (Türkiye); 11:40 slotu en zayıftı (analiz 20.11)
+    - cron: "15 11 * * *"
+    - cron: "45 11 * * *"
+    - cron: "20 12 * * *"
     - cron: "30 13 * * *"   # Tarihten portreler -> yayın 17:25
     - cron: "0 14 * * *"
     - cron: "30 14 * * *"
@@ -18,9 +18,9 @@ on:
     - cron: "45 16 * * *"
     - cron: "15 17 * * *"
     - cron: "50 17 * * *"
-    - cron: "5 10 * * *"    # Özel gün (yıl dönümü) Shorts'u -> yayın 14:40; osmanli/ozel_gunler.json'da o gün yoksa hemen çıkar
-    - cron: "35 10 * * *"
-    - cron: "5 11 * * *"
+    - cron: "5 8 * * *"     # Özel gün (yıl dönümü) Shorts'u -> yayın 12:40; osmanli/ozel_gunler.json'da o gün yoksa hemen çıkar
+    - cron: "35 8 * * *"
+    - cron: "5 9 * * *"
   workflow_dispatch:
     inputs:
       kategori:
@@ -81,7 +81,7 @@ jobs:
           if [ -n "$CRON" ]; then
             # kategori cron'un kendi saatinden çıkar (başlama gecikmesinden etkilenmez)
             ch=$(echo "$CRON" | awk '{print $2}')
-            case "$ch" in 7|8|9) k=saray; hedef="08:40";; 13|14|15) k=kisiler; hedef="14:25";; 16|17) k=savaslar; hedef="17:10";; 10|11) k=ozel; hedef="11:40";; esac
+            case "$ch" in 10|11|12) k=saray; hedef="11:40";; 13|14|15) k=kisiler; hedef="14:25";; 16|17) k=savaslar; hedef="17:10";; 8|9) k=ozel; hedef="09:40";; esac
           else
             k=${GIRDI:-savaslar}; hedef=""
           fi
