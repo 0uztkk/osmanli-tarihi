@@ -55,3 +55,6 @@ görmüş ve sıkılmış biri. "Bunu bilmiyordum" dediği anda kalır. Tarihçi
 - İki bölümlük hikâye: 1. bölüme "devam": "<2. bölümün id'si>" yazılır ve iki konu bankada art arda durur.
   1. bölüm tek istekle biter: "Hikâyenin devamı yarın aynı saatte. Kaçırmamak için takip et." (takip çağrısı yalnızca burada).
 - Kanal geneli (28 gün): izlemeye devam eden %42,8, kaydırıp geçen %57,2. İlk 2 saniye en büyük kaldıraç.
+- Görsel kaynağı: Wikimedia Commons'a ek olarak The Met Open Access (yalnızca isPublicDomain). Sahne "gorsel"
+  listesine "Met:<kimlik>" yazılır. Adaylar met-ara.yml ile aranır, numaralı sayfalar met-adaylar dalına gelir.
+  Eserin gösterdiği olay/kişi kontrol edilir; başka bir olayın tablosu o olayın görseli olarak kullanılmaz.

@@ -295,10 +295,8 @@ def meta_olustur(konu, baslik, bolum_zamanlari, gorseller, toplam):
     satir2 = ("Osmanlı tarihi belgeseli: " + ", ".join(aramalar[:-1]) + f" ve {aramalar[-1]} "
               "baştan sona, bölüm bölüm.")
     bolumler = bolum_listesi(bolum_zamanlari, toplam)
-    sanatcilar = sorted({g["sanatci"] for g in gorseller if g and g.get("sanatci")})
-    gorsel = "Görseller: Wikimedia Commons'taki kamu malı tarihi eserler"
-    if sanatcilar:
-        gorsel += " (" + ", ".join(sanatcilar[:6]) + ")"
+    from gorsel import kaynak_satiri
+    gorsel = kaynak_satiri(gorseller, uzun=True)
     aciklama = (f"{konu['kanca'].split('. ')[0].rstrip('.')}.\n{satir2}\n\n"
                 f"Bölümler:\n{bolumler}\n\n"
                 f"{konu['soru']}\n\n"

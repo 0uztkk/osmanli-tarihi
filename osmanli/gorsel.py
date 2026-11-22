@@ -7,6 +7,7 @@ video o sahnede yazılı/desenli arka plana geçer.
 import hashlib, html, json, os, re, sys, time, urllib.parse, urllib.request
 
 API = "https://commons.wikimedia.org/w/api.php"
+MET = "https://collectionapi.metmuseum.org/public/collection/v1"   # The Met Open Access: kamu malı eserler (CC0)
 UA = "OsmanliShortsBot/1.0 (https://github.com/efeeminaa1/mina-ile-efe; otomatik egitim videolari)"
 GENISLIK = 1280   # Wikimedia'nın standart küçük resim genişliklerinden biri
 
@@ -44,6 +45,39 @@ def sanatci(meta):
     return a[:40] if a and "unknown" not in a.lower() and "bilinmiyor" not in a.lower() else ""
 
 
+def met_eser(nesne_id):
+    """The Met açık arşivinden tek eser: yalnızca isPublicDomain=true ve görseli olanlar kabul edilir."""
+    try:
+        o = json.loads(_get(f"{MET}/objects/{int(nesne_id)}"))
+    except Exception as e:
+        print(f"  Met eseri alınamadı ({nesne_id}): {e}", file=sys.stderr)
+        return None
+    url = o.get("primaryImage") or o.get("primaryImageSmall")
+    if not o.get("isPublicDomain") or not url:
+        return None
+    return {"baslik": f"Met:{o['objectID']}", "url": url, "w": 0, "h": 0,
+            "sanatci": (o.get("artistDisplayName") or "").split(" (")[0][:40] or "The Met",
+            "sayfa": o.get("objectURL", ""), "kaynak": "met", "eser": o.get("title", ""), "tarih": o.get("objectDate", "")}
+
+
+def met_ara(sorgu, limit=40):
+    """The Met'te arama: kamu malı ve görselli eserler (en alakalı önce)."""
+    try:
+        r = json.loads(_get(f"{MET}/search?" + urllib.parse.urlencode({"q": sorgu, "hasImages": "true"})))
+    except Exception as e:
+        print(f"  Met araması başarısız ({sorgu}): {e}", file=sys.stderr)
+        return []
+    sonuc = []
+    for nid in (r.get("objectIDs") or [])[:limit * 2]:
+        e = met_eser(nid)
+        if e:
+            sonuc.append(e)
+        if len(sonuc) >= limit:
+            break
+        time.sleep(0.02)
+    return sonuc
+
+
 def ara(sorgu, limit=12, genislik=GENISLIK):
     """Sorgu için uygun adayları (en alakalı önce) döner: [{baslik, url, w, h, sanatci}]"""
     p = {
@@ -51,6 +85,9 @@ def ara(sorgu, limit=12, genislik=GENISLIK):
         "iiprop": "url|size|mime|extmetadata", "iiurlwidth": str(genislik),
         "iiextmetadatafilter": "LicenseShortName|License|Artist",
     }
+    if sorgu.startswith("Met:"):   # The Met açık arşivinden elle seçilmiş eser
+        e = met_eser(sorgu[4:])
+        return [e] if e else []
     if sorgu.startswith("File:"):   # elle seçilmiş belirli bir dosya
         p["titles"] = sorgu
     else:
@@ -88,7 +125,7 @@ def bul(sorgular, kategori, klasor, kullanilan=None):
     sorgular = list(sorgular)
     if not sorgular or sorgular == ["-"]:
         return None   # bu sahne bilerek yazılı sahne
-    elle = [q for q in sorgular if q.startswith("File:")]
+    elle = [q for q in sorgular if q.startswith(("File:", "Met:"))]
     # Elle seçilmiş dosya varsa yalnızca o denenir: bulunamazsa rastgele bir tablo yerine yazılı sahne
     # gösterilir; çünkü genel aramalar başka bir olayın görselini getirebilir.
     deneme = elle if elle else sorgular + YEDEK.get(kategori, [])
@@ -125,4 +162,21 @@ def indir(aday, klasor):
                 time.sleep(2 * (deneme + 1))
         else:
             return None
-    return {"yol": yol, "baslik": aday["baslik"], "sanatci": aday["sanatci"], "sayfa": aday.get("sayfa", "")}
+    return {"yol": yol, "baslik": aday["baslik"], "sanatci": aday["sanatci"], "sayfa": aday.get("sayfa", ""),
+            "kaynak": aday.get("kaynak", "commons")}
+
+
+def kaynak_satiri(gorseller, uzun=False):
+    """Açıklamadaki görsel teşekkür satırı: Commons ve/veya The Met."""
+    g = [x for x in gorseller if x]
+    sanatcilar = sorted({x["sanatci"] for x in g if x.get("sanatci") and x["sanatci"] != "The Met"})
+    yerler = []
+    if any(x.get("kaynak", "commons") == "commons" for x in g) or not g:
+        yerler.append("Wikimedia Commons")
+    if any(x.get("kaynak") == "met" for x in g):
+        yerler.append("The Metropolitan Museum of Art (Open Access)")
+    s = "Görseller: " + " ve ".join(yerler) + (" arşivlerindeki" if len(yerler) > 1 else "'taki" if yerler == ["Wikimedia Commons"] else " arşivindeki") + \
+        " kamu malı " + ("tarihi " if uzun else "") + "eserler"
+    if sanatcilar:
+        s += " (" + ", ".join(sanatcilar[:6 if uzun else 4]) + ")"
+    return s

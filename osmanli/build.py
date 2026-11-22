@@ -726,10 +726,8 @@ def tr_baslik_harf(s):
 def meta_olustur(konu, kategori, baslik, gorseller, soru=None, seri=None):
     """yt-seo: açıklamanın ilk iki satırı arama kutusuna yazılan kelimeleri taşır ("...daha fazla"nın üstü),
     sonra kaynak, sonra uzun hâl. Etiketler en fazla 15 ve yalnızca ayırt edici yazımlar için."""
-    sanatcilar = sorted({g["sanatci"] for g in gorseller if g and g.get("sanatci")})
-    gorsel_satiri = "Görseller: Wikimedia Commons'taki kamu malı eserler"
-    if sanatcilar:
-        gorsel_satiri += " (" + ", ".join(sanatcilar[:4]) + ")"
+    from gorsel import kaynak_satiri
+    gorsel_satiri = kaynak_satiri(gorseller)
     aramalar = [tr_baslik_harf(e) for e in konu.get("etiketler", [])[:3]]
     satir1 = konu["kanca"]
     satir2 = "Osmanlı tarihi: " + ", ".join(aramalar[:-1]) + (f" ve {aramalar[-1]}" if len(aramalar) > 1 else "".join(aramalar)) + \
