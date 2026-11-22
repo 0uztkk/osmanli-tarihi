@@ -62,13 +62,19 @@ def met_eser(nesne_id):
 
 def met_ara(sorgu, limit=40):
     """The Met'te arama: kamu malı ve görselli eserler (en alakalı önce)."""
+    # /v1/search 1 Ekim 2026'da kaldırıldı; /v1.1/search sayfalı (offset, limit)
     try:
-        r = json.loads(_get(f"{MET}/search?" + urllib.parse.urlencode({"q": sorgu, "hasImages": "true"})))
+        r = json.loads(_get(MET.replace("/v1", "/v1.1") + "/search?" +
+                            urllib.parse.urlencode({"q": sorgu, "hasImages": "true", "limit": limit * 2, "offset": 0})))
     except Exception as e:
         print(f"  Met araması başarısız ({sorgu}): {e}", file=sys.stderr)
         return []
+    kimlikler = r.get("objectIDs") or [x.get("objectID") if isinstance(x, dict) else x
+                                        for x in (r.get("results") or r.get("data") or r.get("objects") or [])]
+    if not kimlikler:
+        print(f"  Met araması boş ({sorgu}): {str(r)[:200]}", file=sys.stderr)
     sonuc = []
-    for nid in (r.get("objectIDs") or [])[:limit * 2]:
+    for nid in [k for k in kimlikler if k][:limit * 2]:
         e = met_eser(nid)
         if e:
             sonuc.append(e)

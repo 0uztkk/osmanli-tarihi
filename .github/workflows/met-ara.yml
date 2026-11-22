@@ -26,7 +26,7 @@ jobs:
       - run: pip install pillow==11.0.0
       - name: API tanı (durum kodları)
         run: |
-          for u in "public/collection/v1/objects/45734" "public/collection/v1/search?q=ottoman&hasImages=true" "public/collection/v1/departments" "public/collection/v1/objects"; do
+          for u in "public/collection/v1.1/search?q=ottoman&hasImages=true&limit=5" "public/collection/v1.1/search?q=ottoman&hasImages=true&limit=5&offset=5"; do
             echo "$(curl -s -o /tmp/r.txt -w '%{http_code}' "https://collectionapi.metmuseum.org/$u") $u :: $(head -c 300 /tmp/r.txt)" | tee -a met_tani.txt
           done
       - name: Ara
