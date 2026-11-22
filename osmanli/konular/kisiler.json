@@ -5078,5 +5078,147 @@
       "yavuz sultan selim"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "kara-mustafa-idam-1683",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kara Mustafa Paşa Neden İdam Edildi? 1683 👑",
+      "Viyana'dan Sonra Boğdurulan Sadrazam: Kara Mustafa 👑",
+      "Merzifonlu'nun İdamı ve Osmanlı'ya Bedeli 👑"
+    ],
+    "kapak": "BELGRAD'DA KEMENT",
+    "kanca": "1683'te Viyana önünde yenilen sadrazam, üç ay sonra Belgrad'da padişahın emriyle boğuldu. Ama asıl bedeli ondan sonra devlet ödedi. Sence neden?",
+    "kanca_gorsel": [
+      "File:Peeters - Kara Mustafa.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Eylül 1683",
+        "metin": "Merzifonlu Kara Mustafa Paşa iki ay boyunca Viyana'yı kuşattı. 12 Eylül'de Lehistan kralı Sobieski'nin yardım ordusu tepelerden indi ve Osmanlı ordusu dağıldı.",
+        "gorsel": [
+          "File:Battle of Vienna 1683.PNG"
+        ]
+      },
+      {
+        "yazi": "Geri çekiliş",
+        "metin": "Ordu Macaristan üzerinden geri çekildi. Ekim'de Estergon da kaybedildi. Kara Mustafa kışı geçirmek için Belgrad'a vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "kesikli",
+          "yakinlik": 1.6,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  16.37,
+                  48.21
+                ],
+                [
+                  17.2,
+                  47.9
+                ],
+                [
+                  17.63,
+                  47.68
+                ],
+                [
+                  18.4,
+                  47.6
+                ],
+                [
+                  19.04,
+                  47.5
+                ],
+                [
+                  19.4,
+                  46.6
+                ],
+                [
+                  19.9,
+                  45.6
+                ],
+                [
+                  20.46,
+                  44.82
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.06,
+              "bit": 0.78,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "yan": "sol"
+            },
+            {
+              "ad": "Budin",
+              "lon": 19.04,
+              "lat": 47.5
+            },
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "yan": "sol"
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "25 Aralık 1683",
+        "metin": "Edirne'deki Dördüncü Mehmed'in emriyle 25 Aralık 1683'te Belgrad'da idam edildi. Saraydaki rakiplerinin padişahı ikna ettiği anlatılır.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1683",
+          "aylar": [
+            "Eylül",
+            "Aralık"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Belgrad'da idam"
+        }
+      },
+      {
+        "yazi": "Asıl bedel",
+        "metin": "1684'te Avusturya, Lehistan ve Venedik Kutsal İttifak'ta birleşti. Budin 1686'da kaybedildi ve savaş 1699'da Karlofça Antlaşması'na kadar sürdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Viyana'dan Karlofça'ya",
+          "ogeler": [
+            "Viyana · 1683",
+            "Kutsal İttifak · 1684",
+            "Budin · 1686",
+            "Karlofça · 1699"
+          ]
+        }
+      }
+    ],
+    "soru": "Sence Viyana yenilgisinin tek suçlusu Kara Mustafa Paşa mıydı?",
+    "etiketler": [
+      "kara mustafa paşa",
+      "viyana kuşatması",
+      "karlofça",
+      "dördüncü mehmed"
+    ],
+    "stil": "animasyon"
   }
 ]
