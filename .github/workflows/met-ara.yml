@@ -24,6 +24,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pillow==11.0.0
+      - name: API tanı (durum kodları)
+        run: |
+          for u in "public/collection/v1/objects/45734" "public/collection/v1/search?q=ottoman&hasImages=true" "public/collection/v1/departments" "public/collection/v1/objects"; do
+            echo "$(curl -s -o /tmp/r.txt -w '%{http_code}' "https://collectionapi.metmuseum.org/$u") $u :: $(head -c 300 /tmp/r.txt)" | tee -a met_tani.txt
+          done
       - name: Ara
         env:
           ARAMALAR: ${{ github.event.inputs.aramalar }}
@@ -39,7 +44,7 @@ jobs:
         if: always()
         run: |
           mkdir -p /tmp/cikti && cp -r out/met/. /tmp/cikti/ 2>/dev/null || true
-          cp met_log.txt /tmp/cikti/ || true
+          cp met_log.txt met_tani.txt /tmp/cikti/ 2>/dev/null || true
           cd /tmp/cikti
           git init -q -b met-adaylar
           git -c user.name=met -c user.email=met@users.noreply.github.com add -A
