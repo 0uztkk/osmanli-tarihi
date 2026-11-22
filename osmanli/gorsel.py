@@ -48,6 +48,7 @@ def sanatci(meta):
 def met_eser(nesne_id):
     """The Met açık arşivinden tek eser: yalnızca isPublicDomain=true ve görseli olanlar kabul edilir."""
     try:
+        time.sleep(0.5)   # The Met'in hız sınırına uy
         o = json.loads(_get(f"{MET}/objects/{int(nesne_id)}"))
     except Exception as e:
         print(f"  Met eseri alınamadı ({nesne_id}): {e}", file=sys.stderr)
@@ -80,7 +81,6 @@ def met_ara(sorgu, limit=40):
             sonuc.append(e)
         if len(sonuc) >= limit:
             break
-        time.sleep(0.02)
     return sonuc
 
 
@@ -158,8 +158,11 @@ def indir(aday, klasor):
     if not os.path.exists(yol):
         for deneme in range(3):
             try:
+                veri = _get(aday["url"], timeout=60)
+                from PIL import Image
+                Image.open(__import__("io").BytesIO(veri)).verify()   # HTML/bozuk yanıt görsel sanılmasın
                 with open(yol, "wb") as f:
-                    f.write(_get(aday["url"], timeout=60))
+                    f.write(veri)
                 break
             except Exception as e:
                 print(f"  İndirme hatası ({deneme + 1}/3): {e}", file=sys.stderr)
