@@ -3391,7 +3391,7 @@
       "Kut'ül Amare 1916: Unutulan Zafer ⚔️",
       "General Townshend'in Teslimi ⚔️"
     ],
-    "kanca": "Sence 1916'da İngiliz ordusundan on üç bini aşkın asker neden Halil Paşa'ya teslim oldu? Kut kuşatması beş ay sürdü.",
+    "kanca": "On üç bini aşkın İngiliz askeri 1916'da teslim oldu. Kut kuşatması beş ay sürmüştü. Sence Halil Paşa bunu nasıl başardı?",
     "sahneler": [
       {
         "yazi": "1915",
@@ -3613,7 +3613,7 @@
       "Cerbe 1560: Haçlı Donanmasına Darbe ⚔️",
       "Akdeniz'de Unutulan Zafer ⚔️"
     ],
-    "kanca": "Hayal et: bir Haçlı donanması 1560'ta bir sabah limanda kıstırıldı. Piyale Paşa oraya nasıl bu kadar hızlı yetişti?",
+    "kanca": "Bir Haçlı donanması 1560'ta limanda kıstırıldı. Piyale Paşa oraya beklenmedik bir hızla yetişti. Sence nasıl?",
     "sahneler": [
       {
         "yazi": "1560",
@@ -4031,7 +4031,7 @@
       "İstanbul'da İki Haftalık Kaos ⚔️",
       "Bir İsyan Bir Padişahı Nasıl Götürdü? ⚔️"
     ],
-    "kanca": "Sence 1909'da İstanbul'da başlayan bir isyan, otuz üç yıllık bir saltanatı iki haftada nasıl bitirdi?",
+    "kanca": "Otuz üç yıllık bir saltanat iki haftada bitti. 1909'da İstanbul'da başlayan bir isyan her şeyi değiştirdi. Sence nasıl?",
     "sahneler": [
       {
         "yazi": "1909",
@@ -4732,7 +4732,7 @@
       "Belgrad 1521: Kanuni'nin İlk Zaferi ⚔️",
       "29 Ağustos: Kanuni'nin Uğurlu Günü ⚔️"
     ],
-    "kanca": "Fatih'in 1456'da alamadığı kaleyi, onun soyundan gelen Kanuni tahta çıktığı ilk yıl aldı. Sence 29 Ağustos neden uğurluydu?",
+    "kanca": "Fatih'in alamadığı kaleyi Kanuni tahttaki ilk yılında aldı. Belgrad 1521'de düştü. Sence 29 Ağustos neden uğurluydu?",
     "sahneler": [
       {
         "yazi": "1520",
@@ -5555,7 +5555,7 @@
       "Sinop Limanında Yanan Filo ve Osman Paşa ⚔️"
     ],
     "kapak": "TEK GEMİ KAÇTI",
-    "kanca": "30 Kasım 1853'te Sinop limanındaki Osmanlı filosu birkaç saat içinde neredeyse tamamen yok edildi. Sence bu baskın neden Avrupa'yı savaşa soktu?",
+    "kanca": "Osmanlı filosu Sinop limanında birkaç saatte yok edildi. 30 Kasım 1853'teki bu baskın Avrupa'yı savaşa soktu. Sence neden?",
     "kanca_gorsel": [
       "-"
     ],
@@ -5736,7 +5736,7 @@
       "Kara Ahmed Paşa ve Eğri Kalesi'nin Direnişi ⚔️"
     ],
     "kapak": "SURLAR DAYANDI",
-    "kanca": "1552'de büyük bir Osmanlı ordusu, iki bin kişinin savunduğu bir kalenin önünde kırk güne yakın bekledi ve geri döndü. Sence Eğri'yi ne kurtardı?",
+    "kanca": "İki bin kişilik bir kale koca bir Osmanlı ordusunu durdurdu. 1552'de Eğri önünde kırk güne yakın beklendi. Sence kaleyi ne kurtardı?",
     "kanca_gorsel": [
       "-"
     ],
@@ -5925,7 +5925,7 @@
       "İznik'i Kurtarmaya Gelen İmparator: Pelekanon 1329 ⚔️"
     ],
     "kapak": "BACAĞINDAN YARALI",
-    "kanca": "Hayal et: 1329'da Bizans imparatoru İznik'i kurtarmak için bizzat sefere çıktı, ama yaralanıp geri döndü. Sence onu ne durdurdu?",
+    "kanca": "Bir Bizans imparatoru Orhan Bey'e karşı bizzat savaştı. 1329'da yaralanıp geri döndü. Sence onu ne durdurdu?",
     "kanca_gorsel": [
       "File:Orhan Gazi - Manyal Palace Museum.jpg"
     ],
@@ -6138,7 +6138,7 @@
       "Malazgirt'ten Sonra İkinci Darbe: Miryokefalon ⚔️"
     ],
     "kapak": "DAR GEÇİT",
-    "kanca": "1176'da Bizans imparatoru Konya'yı almak için yürüdü, ama ordusu dar bir geçitte pusuya düştü. Sence Kılıç Arslan neden barış önerdi?",
+    "kanca": "Bizans imparatoru Konya'ya yürürken dar bir geçitte pusuya düştü. 1176'da Kılıç Arslan ona barış önerdi. Sence neden?",
     "kanca_gorsel": [
       "File:Walls of Constantinople 1.jpg"
     ],
@@ -6629,6 +6629,182 @@
       "hunyadi yanoş",
       "öğle çanı",
       "fatih sultan mehmed"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "rodos-1480",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Rodos 1480: Fatih'in Alamadığı Ada ⚔️",
+      "Surlara Çıkan Ordu Neden Geri Döndü? Rodos 1480 ⚔️",
+      "Mesih Paşa ve Rodos Kuşatması 1480 ⚔️"
+    ],
+    "kapak": "SON HÜCUM",
+    "kanca": "Osmanlı askerleri 1480'de Rodos surlarının tepesine kadar çıktı. Sonra geri çekildiler ve ada kırk iki yıl daha düşmedi. Sence neden?",
+    "kanca_gorsel": [
+      "File:Kadırga Minyatür.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Mayıs 1480",
+        "metin": "1480'de Fatih'in gönderdiği donanma Mesih Paşa komutasında Rodos'a çıktı. Ada, Hospitalier şövalyelerinin elindeydi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "parsomen",
+          "cizgi": "kesikli",
+          "yakinlik": 1.7,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.0,
+                  36.95
+                ],
+                [
+                  28.1,
+                  36.75
+                ],
+                [
+                  28.2,
+                  36.55
+                ],
+                [
+                  28.23,
+                  36.44
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "gemi",
+              "gemi": 4,
+              "bas": 0.06,
+              "bit": 0.65,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Marmaris",
+              "lon": 28.27,
+              "lat": 36.85,
+              "yan": "sag"
+            },
+            {
+              "ad": "Rodos",
+              "lon": 28.22,
+              "lat": 36.43,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 28.23,
+            "lat": 36.44,
+            "bas": 0.72
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Kuşatma",
+        "metin": "Şövalyelerin başında Pierre d'Aubusson vardı. Osmanlı topları surları haftalarca dövdü, ama savunmacılar gedikleri her gece yeniden kapattı.",
+        "gorsel": [
+          "-"
+        ]
+      },
+      {
+        "yazi": "Son hücum",
+        "metin": "Temmuz sonundaki büyük hücumda askerler surlara çıktı. Rivayete göre o anda yağmanın yasak olduğu duyuruldu ve askerin hevesi kırıldı. Hücum geri püskürtüldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Rodos · Temmuz 1480",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                640
+              ],
+              "wh": [
+                520,
+                280
+              ],
+              "taraf": "dusman",
+              "etiket": "Rodos surları"
+            },
+            {
+              "xy": [
+                540,
+                1560
+              ],
+              "hedef": [
+                540,
+                1020
+              ],
+              "wh": [
+                460,
+                220
+              ],
+              "taraf": "osmanli",
+              "etiket": "Mesih Paşa",
+              "etiket_ust": false,
+              "bas": 0.1,
+              "bit": 0.5
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                540,
+                1200
+              ],
+              "son_xy": [
+                540,
+                860
+              ],
+              "taraf": "osmanli",
+              "bas": 0.45
+            },
+            {
+              "bas_xy": [
+                540,
+                760
+              ],
+              "son_xy": [
+                540,
+                1100
+              ],
+              "taraf": "dusman",
+              "bas": 0.7
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              840
+            ],
+            "bas": 0.6
+          }
+        }
+      },
+      {
+        "yazi": "Kırk iki yıl",
+        "metin": "Kuşatma Ağustos'ta kaldırıldı. Ertesi yıl Fatih öldü. Rodos ancak 1522'de Kanuni tarafından alınabildi.",
+        "gorsel": [
+          "-"
+        ]
+      }
+    ],
+    "soru": "Sence Rodos'u kurtaran surlar mıydı, yoksa son anda verilen bir karar mı?",
+    "etiketler": [
+      "rodos kuşatması",
+      "mesih paşa",
+      "fatih sultan mehmed",
+      "1480"
     ],
     "stil": "animasyon"
   }

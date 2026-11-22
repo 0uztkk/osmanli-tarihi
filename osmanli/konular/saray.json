@@ -2373,7 +2373,7 @@
       "Kafesten Tahta Çıkan Padişah 👑",
       "Hanedanın Son Erkeği 👑"
     ],
-    "kanca": "Sence her an öldürülme korkusuyla kafeste yaşayan Sultan İbrahim, tahta çıkınca nasıl bir padişah oldu?",
+    "kanca": "Kafeste her an öldürülmeyi bekleyen şehzade bir gün padişah oldu. Hanedanın hayatta kalan tek erkeğiydi. Sence tahtta nasıl biri oldu?",
     "sahneler": [
       {
         "yazi": "Kafeste yıllar",
@@ -2634,7 +2634,7 @@
       "1509 Depremi: Kıyamet-i Suğra 🌍",
       "45 Gün Süren Sarsıntılar 🌍"
     ],
-    "kanca": "Hayal et: 1509'da İstanbul sallandı, surlar çöktü ve sarsıntılar haftalarca sürdü. Halk buna neden küçük kıyamet dedi?",
+    "kanca": "1509'da İstanbul'un surları bir depremle çöktü. Sarsıntılar haftalarca sürdü ve halk buna küçük kıyamet dedi. Sence şehir nasıl ayağa kalktı?",
     "sahneler": [
       {
         "yazi": "10 Eylül 1509",
@@ -4002,7 +4002,7 @@
       "Padişahın Yeniçerilere Baklava Hediyesi 🏰"
     ],
     "kapak": "TEPSİ TEPSİ",
-    "kanca": "Hayal et: Ramazan'ın on beşinde Topkapı'dan yüzlerce tepsi baklava çıkıyor ve kışlaya taşınıyor. Bu tören neden bu kadar önemliydi?",
+    "kanca": "Yeniçerilere her Ramazan padişahtan baklava giderdi. Topkapı'dan yüzlerce tepsi çıkar, kışlaya taşınırdı. Sence bu bir ikram mıydı, yoksa bir gönül alma mı?",
     "kanca_gorsel": [
       "File:Palace kitchens Topkapi 2007 022.jpg"
     ],
@@ -4256,7 +4256,7 @@
       "Arz Odası: Sultanın Elçileri Kabul Ettiği Oda 🏰"
     ],
     "kapak": "TEK KELİME YOK",
-    "kanca": "Hayal et: Bir Avrupa elçisi sultanın huzuruna çıkıyor, ama iki kapıcı onu kollarından sıkıca tutuyor. Sence Osmanlı sarayı elçileri neden böyle karşılardı?",
+    "kanca": "Padişahın önüne çıkan elçiyi iki adam kollarından tutardı. Rivayete göre sebep 1389'daki bir suikastti. Sence ne olmuştu?",
     "kanca_gorsel": [
       "File:Lucjan Wędrychowski - Audience of a Polish envoy before the Ottoman Sultan.jpg"
     ],
@@ -4914,6 +4914,105 @@
       "tahtakale",
       "peçevi",
       "osmanlı'da kahve"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "sancak-i-serif-1826",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Yeniçerilere Karşı Açılan Kutsal Sancak 1826 🏴",
+      "Sancak-ı Şerif: Sefere Giden Kutsal Emanet 🏴",
+      "İkinci Mahmud Sancak-ı Şerif'i Neden Çıkardı? 🏴"
+    ],
+    "kapak": "HALK TOPLANDI",
+    "kanca": "Kutsal sancak 1826'da yeniçerilere karşı açıldı ve yüzyıllık ocak birkaç günde yıkıldı. Sence İkinci Mahmud neden bu sancağı çıkardı?",
+    "kanca_gorsel": [
+      "File:Mahmud II by John Young.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Sancak-ı Şerif",
+        "metin": "Sancak-ı Şerif, Peygamber'e ait olduğuna inanılan sancaktı. Kutsal Emanetler arasında Topkapı'da korunurdu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Topkapı Sarayı",
+          "bina": "saray",
+          "alt": "İstanbul",
+          "lon": 28.983,
+          "lat": 41.0115,
+          "arka": "gece"
+        }
+      },
+      {
+        "yazi": "Seferde",
+        "metin": "Büyük seferlerde ordunun önünde taşınırdı. Kaynaklara göre 1596'da Üçüncü Mehmed onu Eğri seferine götürdü. Haçova'da da ordunun yanındaydı.",
+        "gorsel": [
+          "File:Sultan Mehmet III at the 1596 Battle of Haçova, north of Erlau in Hungary (left page). Nadir Diwan, ca. 1605. Topkapi Palace Museum Library, H.889.jpg"
+        ]
+      },
+      {
+        "yazi": "Haziran 1826",
+        "metin": "Haziran 1826'da yeniçeriler kazan kaldırdı. İkinci Mahmud Sancak-ı Şerif'i çıkartıp Sultanahmet'te halkı ve askeri onun altında topladı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "1826",
+          "aylar": [
+            "15 Haziran",
+            "17 Haziran"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Sancak açıldı"
+        }
+      },
+      {
+        "yazi": "Ocağın sonu",
+        "metin": "Yeniçeri kışlaları topa tutuldu ve birkaç gün içinde ocak kaldırıldı. Yüzyıllardır padişahları deviren güç, bu sancağın altında sona erdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "İkinci Mahmud",
+              "desen": "hilal"
+            },
+            {
+              "ad": "Halk",
+              "desen": "anahtar"
+            }
+          ],
+          "bant": "Sancak-ı Şerif",
+          "karsi": {
+            "ad": "Yeniçeriler",
+            "desen": "kazan"
+          },
+          "arka": {
+            "merkez": [
+              28.97,
+              41.01
+            ],
+            "genislik": 1.6,
+            "tema": "kizil"
+          }
+        }
+      }
+    ],
+    "soru": "Sence İkinci Mahmud yeniçerileri sancak olmadan da yenebilir miydi?",
+    "etiketler": [
+      "sancak-ı şerif",
+      "kutsal emanetler",
+      "ikinci mahmud",
+      "vaka-i hayriye"
     ],
     "stil": "animasyon"
   }

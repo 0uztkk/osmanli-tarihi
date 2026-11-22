@@ -2356,7 +2356,7 @@
       "Çıraklık, Kalfalık, Ustalık 🕌",
       "Mimar Sinan Kaç Eser Yaptı? 🕌"
     ],
-    "kanca": "Sence yeniçeri olarak başlayan Mimar Sinan, üç yüzü aşkın eserinden hangisine ustalık eserim dedi?",
+    "kanca": "Üç yüzü aşkın eser yapan Sinan, yalnızca birine ustalık eserim dedi. Yeniçeri olarak başlamıştı. Sence hangisini seçti ve neden?",
     "sahneler": [
       {
         "yazi": "Mimar Sinan",
@@ -2443,7 +2443,7 @@
       "Piri Reis Haritasında Ne Var? 🗺️",
       "1929'da Topkapı'da Bulunan Harita 🗺️"
     ],
-    "kanca": "1513'te çizilen bir Osmanlı haritası Amerika kıyılarını gösteriyor ve dört yüz yıl kayıptı. Sence Piri Reis kimin haritasını kullandı?",
+    "kanca": "Amerika'yı gösteren bir Osmanlı haritası dört yüz yıl kayıptı. 1513'te Piri Reis onu çizdi. Sence kimin haritasını kullandı?",
     "sahneler": [
       {
         "yazi": "1513",
@@ -4109,7 +4109,7 @@
       "Celalileri Bastıran Yaşlı Vezir 👑"
     ],
     "kapak": "SEKSEN YAŞINDA",
-    "kanca": "Hayal et: Seksen yaşını geçmiş bir vezir, Anadolu'yu yakıp yıkan isyancıların üzerine yürüyor. Ona neden Kuyucu dendi?",
+    "kanca": "Seksen yaşını geçmiş bir vezir isyancıların üzerine yürüdü. Anadolu'yu yakıp yıkan Celalileri o bastırdı. Sence ona neden Kuyucu dendi?",
     "kanca_gorsel": [
       "File:Portrait of Sultan Ahmed I.png"
     ],
@@ -4279,7 +4279,7 @@
       "Cezayirli Hasan Paşa: Çeşme'den Limni'ye Bir Kaptan 👑"
     ],
     "kapak": "ATEŞTEN SAĞ ÇIKTI",
-    "kanca": "Hayal et: Bir Osmanlı kaptanı İstanbul'da yanında evcil bir aslanla dolaşıyor. Sence bu adam 1770'te donanmanın yandığı geceden nasıl sağ çıktı?",
+    "kanca": "Bu Osmanlı kaptanı İstanbul'da evcil bir aslanla dolaşırdı. 1770'te donanmanın yandığı geceden de yaralı kurtuldu. Sence nasıl?",
     "kanca_gorsel": [
       "File:Jacob Philipp Hackert Chesma Burning.jpg"
     ],
@@ -4692,7 +4692,7 @@
       "Ali Kuşçu ve Fatih: Ayasofya'daki Astronom 🔭"
     ],
     "kapak": "GERİ DÖNMEDİ",
-    "kanca": "Hayal et: Bir astronom, rakip bir hükümdarın elçisi olarak Fatih'in huzuruna geldi ve İstanbul'da kaldı. Sence Fatih onu nasıl kazandı?",
+    "kanca": "Fatih'e elçi olarak gelen astronom bir daha geri dönmedi. Düşman hükümdar Uzun Hasan'ın adamıydı. Sence Fatih onu nasıl kazandı?",
     "kanca_gorsel": [
       "File:Fatih Sultan Mehmed und Ali Kuşçu.jpg"
     ],
@@ -4772,7 +4772,7 @@
       "Sokullu'ya Dilekçe Verir Gibi Yaklaşan Adam 🗡️"
     ],
     "kapak": "TEK BIÇAK",
-    "kanca": "1579'da üç padişaha hizmet etmiş bir sadrazam, dilekçe verir gibi yaklaşan bir adamın bıçağıyla öldü. Sence Sokullu'yu kim hedef aldı?",
+    "kanca": "Dilekçe uzatan bir adam, üç padişaha hizmet etmiş sadrazamı bıçakladı. 1579'da Sokullu böyle öldü. Sence onu kim hedef aldı?",
     "kanca_gorsel": [
       "File:Grand Vizier Sokollu Mehmed Pasha (portrait) mourning the sultan’s death; Nüzhet, fol. 41a.jpg"
     ],
@@ -5218,6 +5218,142 @@
       "viyana kuşatması",
       "karlofça",
       "dördüncü mehmed"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "fatih-olumu-1481",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Fatih Sultan Mehmed Nasıl Öldü? 1481 👑",
+      "Fatih'in Son Seferi: Nereye Gidiyordu? 👑",
+      "Gebze'de Biten Sefer: Fatih'in Ölümü 👑"
+    ],
+    "kapak": "GİZLİ HEDEF",
+    "kanca": "Fatih son seferine çıktığında hedefini kimseye söylemedi. Üç gün sonra Gebze yakınlarında öldü. Sence zehirlendi mi?",
+    "kanca_gorsel": [
+      "File:Bellini, Gentile - Portrait of Mehmed II - National Gallery, London.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Nisan 1481",
+        "metin": "1481 baharında Fatih büyük bir orduyla Üsküdar'a geçti. Seferin nereye olduğu gizli tutuluyordu; Rodos'tan Memlüklere kadar farklı tahminler yapılır.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "akan",
+          "yakinlik": 2.0,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.98,
+                  41.01
+                ],
+                [
+                  29.02,
+                  41.02
+                ],
+                [
+                  29.15,
+                  40.93
+                ],
+                [
+                  29.3,
+                  40.84
+                ],
+                [
+                  29.42,
+                  40.8
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.06,
+              "bit": 0.7,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            },
+            {
+              "ad": "Gebze",
+              "lon": 29.43,
+              "lat": 40.8
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "3 Mayıs 1481",
+        "metin": "Ordu Gebze yakınlarındaki Hünkârçayırı'nda konakladı. Fatih burada ağırlaştı ve 3 Mayıs 1481'de öldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gunbatimi",
+          "yil": "1481",
+          "aylar": [
+            "Nisan",
+            "3 Mayıs"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Hünkârçayırı"
+        }
+      },
+      {
+        "yazi": "Zehir mi?",
+        "metin": "Ölümünden hekimi Yakub Paşa'nın sorumlu olduğu da söylendi. Kaynaklar onun uzun süredir gut hastası olduğunu da yazar. Tarihçiler hâlâ tartışıyor.",
+        "gorsel": [
+          "File:The Lord of the Two Lands and the Two Seas Sultan Mehmed the Conqueror Smelling a Rose, from the Sarayı Albums; c. late 15th century (31765534698).jpg"
+        ]
+      },
+      {
+        "yazi": "Gizli ölüm",
+        "metin": "Ölüm bir süre gizlendi, çünkü iki oğlu da tahta uzaktı. Haber yayılınca İstanbul karıştı ve iki kardeş arasında taht kavgası başladı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Bayezid",
+              "desen": "anahtar"
+            }
+          ],
+          "bant": "Taht kavgası",
+          "karsi": {
+            "ad": "Cem",
+            "desen": "kartal"
+          },
+          "arka": {
+            "merkez": [
+              31.5,
+              39.5
+            ],
+            "genislik": 14,
+            "tema": "gece"
+          }
+        }
+      }
+    ],
+    "soru": "Sence Fatih eceliyle mi öldü, yoksa zehirlendi mi?",
+    "etiketler": [
+      "fatih sultan mehmed",
+      "fatihin ölümü",
+      "1481",
+      "cem sultan"
     ],
     "stil": "animasyon"
   }

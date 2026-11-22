@@ -140,7 +140,7 @@ def ses_uret(parcalar, cache):
     """Her parçayı seslendirir. Döner: (ses dizisi, [(başlangıç, bitiş), ...])"""
     from seslendirme import seslendir
     bosluk = np.zeros(int(SR * 0.35), dtype=np.float32)
-    ses, zaman, t = [np.zeros(int(SR * 0.25), dtype=np.float32)], [], 0.25
+    ses, zaman, t = [np.zeros(int(SR * 0.08), dtype=np.float32)], [], 0.08   # ses hemen başlasın (ilk 2 sn kaydırma)
     for metin in parcalar:
         a = seslendir(tts_metni(metin), cache)
         if a is None:   # anahtar yok: okuma süresini tahmin et, sessiz kal
@@ -430,6 +430,9 @@ def kapanis_karti(d, yazi, gecen):
     d.text(((W - tw) / 2, y + 22), yazi, font=F_ETIKET, fill=(255, 236, 160))
 
 
+ACILIS = 0.8   # sn: açılış hareketi
+
+
 def render(sahneler, toplam, kategori, kapak, vid_yol):
     global GOLGE
     GOLGE = GOLGE or golge_katmani()
@@ -450,6 +453,10 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
         if i > 0 and t - s["bas"] < GECIS:   # yumuşak geçiş
             onceki = sahneler[i - 1]
             kare = Image.blend(sahne_kare(onceki, 1.0, i - 1), kare, (t - s["bas"]) / GECIS)
+        if i == 0 and t < ACILIS:   # açılış: ilk karede hareket olsun (yakından hızla geri çekilen kamera)
+            z = 1 + 0.22 * (1 - yumusak(t / ACILIS))
+            ww, hh = W / z, H / z
+            kare = kare.resize((W, H), Image.BILINEAR, box=((W - ww) / 2, (H - hh) * 0.42, (W + ww) / 2, (H - hh) * 0.42 + hh))
         if not s.get("anim"):
             kare.paste(GOLGE, (0, 0), GOLGE)
         d = ImageDraw.Draw(kare)
@@ -462,7 +469,15 @@ def render(sahneler, toplam, kategori, kapak, vid_yol):
 
         if s["tur"] == "kanca":
             # kapak yazısı: başlığı tekrar etmeyen en fazla 3 kelime (yt-package)
-            ortala(d, satirla(d, tr_buyuk(kapak), F_KAPAK, 980)[:2], F_KAPAK, 205, (255, 236, 160), 12, 8)
+            satirlar = satirla(d, tr_buyuk(kapak), F_KAPAK, 980)[:2]
+            e = min(1.0, t / 0.35) if i == 0 else 1.0   # açılışta kapak yazısı büyükten yerine oturur
+            if e >= 1:
+                ortala(d, satirlar, F_KAPAK, 205, (255, 236, 160), 12, 8)
+            else:
+                en = max(d.textlength(x, font=F_KAPAK) for x in satirlar)
+                olc = min(1 + 0.35 * (1 - yumusak(e)), 1060 / max(1, en))
+                fk = font("DejaVuSerif-Bold.ttf", int(F_KAPAK.size * olc))
+                ortala(d, satirlar, fk, 205 - (fk.size - F_KAPAK.size) / 2, (255, 236, 160), 12, 8)
         elif s["tur"] == "kapanis":
             kapanis_karti(d, s["yazi"], t - s["bas"])
         elif s.get("anim"):
