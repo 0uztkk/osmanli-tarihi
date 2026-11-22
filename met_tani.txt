@@ -1,0 +1,2 @@
+200 public/collection/v1.1/search?q=ottoman&hasImages=true&limit=5 :: {"total":696,"objectIDs":[5477,17493,450466,391732,484436]}
+200 public/collection/v1.1/search?q=ottoman&hasImages=true&limit=5&offset=5 :: {"total":696,"objectIDs":[772912,632134,452366,438662,840169]}
