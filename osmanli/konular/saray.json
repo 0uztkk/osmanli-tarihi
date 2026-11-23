@@ -5015,5 +5015,299 @@
       "vaka-i hayriye"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "dallam-orgu-1599",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Topkapı'da Kendi Kendine Çalan Org 1599 🎹",
+      "Kraliçe Elizabeth'in Padişaha Gönderdiği Makine 🎹",
+      "Thomas Dallam ve Kaybolan Saray Orgu 🎹"
+    ],
+    "kapak": "SAHİPSİZ MÜZİK",
+    "kanca": "1599'da Topkapı'da kimse dokunmadan bir müzik başladı ve padişah yerinden kalktı. Sence bu makine sonra neden ortadan kayboldu?",
+    "kanca_gorsel": [
+      "File:Unknown - Portrait of sultan Mehmed III (1595–1603) - MP 4089 - National Museum in Warsaw.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Londra → İstanbul",
+        "metin": "1599'da İngiltere Kraliçesi Birinci Elizabeth, Üçüncü Mehmed'e büyük bir hediye gönderdi: saatli, kendi kendine çalan bir org. Onu kuracak kişi orgcu Thomas Dallam'dı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "uzaklas",
+          "cizgi": "kesikli",
+          "merkez": [
+            14.5,
+            44.0
+          ],
+          "genislik": 40,
+          "zoom": 1.0,
+          "etiketler": [
+            {
+              "ad": "Londra",
+              "lon": -0.13,
+              "lat": 51.5,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  -0.13,
+                  51.3
+                ],
+                [
+                  -5.5,
+                  48.3
+                ],
+                [
+                  -9.6,
+                  43.2
+                ],
+                [
+                  -9.6,
+                  38.7
+                ],
+                [
+                  -5.6,
+                  36.0
+                ],
+                [
+                  3.0,
+                  37.6
+                ],
+                [
+                  11.0,
+                  37.6
+                ],
+                [
+                  16.5,
+                  36.6
+                ],
+                [
+                  22.0,
+                  36.2
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  28.95,
+                  41.0
+                ]
+              ],
+              "taraf": "dusman",
+              "gemi": 1,
+              "bas": 0.05,
+              "bit": 0.7
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Bozulan hediye",
+        "metin": "Uzun deniz yolculuğunda org nemden ve sarsıntıdan zarar gördü. Dallam sarayda haftalarca onu onardı. Bu hikâyeyi çoğunlukla onun kendi tuttuğu günlükten biliyoruz.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Topkapı Sarayı",
+          "bina": "saray",
+          "alt": "İstanbul",
+          "lon": 28.983,
+          "lat": 41.0115,
+          "arka": "safak"
+        }
+      },
+      {
+        "yazi": "Eylül 1599",
+        "metin": "Sonunda org padişahın önünde kendi kendine çaldı. Dallam'ın anlattığına göre Üçüncü Mehmed çok etkilendi ve onun İstanbul'da kalmasını istedi. Dallam kabul etmedi, ülkesine döndü.",
+        "gorsel": [
+          "File:Unknown - Portrait of sultan Mehmed III (1595–1603) - MP 4089 - National Museum in Warsaw.jpg"
+        ]
+      },
+      {
+        "yazi": "Kayıp org",
+        "metin": "Org bugüne ulaşmadı. Sonraki yıllarda İstanbul'a gelen gezginlerin aktardığına göre Birinci Ahmed onu kırdırdı. Gerçekte ne olduğu kesin bilinmiyor.",
+        "gorsel": [
+          "File:Privy Chamber Topkapi March 2008.JPG"
+        ]
+      }
+    ],
+    "soru": "Sence Birinci Ahmed bu orgu neden kırdırmış olabilir?",
+    "etiketler": [
+      "thomas dallam",
+      "üçüncü mehmed",
+      "birinci elizabeth",
+      "topkapı sarayı"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "ahizade-idami-1634",
+    "tur": "az-bilinen",
+    "baslik": [
+      "İdam Edilen İlk Şeyhülislam 1634 ⚖️",
+      "Dördüncü Murad Şeyhülislamı Neden Boğdurdu? ⚖️",
+      "Ahizade Hüseyin Efendi'nin Sonu 1634 ⚖️"
+    ],
+    "kapak": "FETVA SUSTU",
+    "kanca": "Padişahlar sadrazamlarını idam ettirirdi ama şeyhülislama dokunmazdı. 1634'te Dördüncü Murad bu kuralı bozdu. Sence Ahizade Hüseyin Efendi'nin suçu neydi?",
+    "kanca_gorsel": [
+      "File:Murad IV portrait. Topkapi Palace Museum Library, H. 2148, 11b.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Şeyhülislam",
+        "metin": "Şeyhülislam, devletin en yüksek din âlimiydi. Savaş, barış, hatta padişahın bazı kararları onun fetvasıyla meşru sayılırdı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "İlmiye yolu",
+          "ogeler": [
+            "Müderris",
+            "Kadı",
+            "Kazasker",
+            "Şeyhülislam"
+          ]
+        }
+      },
+      {
+        "yazi": "Murad'ın düzeni",
+        "metin": "1630'larda genç Dördüncü Murad, isyanlarla sarsılmış İstanbul'u sert bir düzenle yönetiyordu. En küçük muhalefet bile cezalandırılıyordu.",
+        "gorsel": [
+          "File:Murad IV portrait. Topkapi Palace Museum Library, H. 2148, 11b.jpg"
+        ]
+      },
+      {
+        "yazi": "1634",
+        "metin": "Kaynaklara göre Ahizade, padişaha karşı bir hazırlığın içinde olmakla suçlandı. Bu suçlamanın ne kadar doğru olduğu tartışılır. Önce sürgüne gönderildi, kısa süre sonra padişahın emriyle boğduruldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1634",
+          "aylar": [
+            "Sürgün",
+            "İdam"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Ahizade"
+        }
+      },
+      {
+        "yazi": "Kırılan kural",
+        "metin": "Ahizade Hüseyin Efendi, Osmanlı tarihinde idam edilen ilk şeyhülislam olarak anılır. Olay ilmiye çevrelerinde derin bir sarsıntı yarattı.",
+        "gorsel": [
+          "File:IV. Murat.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence bir padişahın şeyhülislamı idam ettirmesi gücünü artırır mı, yoksa zayıflatır mı?",
+    "etiketler": [
+      "ahizade hüseyin efendi",
+      "şeyhülislam",
+      "dördüncü murad",
+      "1634"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "ikinci-suleyman-kafes-1687",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kırk Yıl Kafeste Bekleyen Padişah 1687 👑",
+      "İkinci Süleyman Kapıyı Neden Açmak İstemedi? 👑",
+      "Kafesten Tahta Uzanan Yol: İkinci Süleyman 👑"
+    ],
+    "kapak": "ÖLÜM SANDI",
+    "kanca": "1687'de kapısına gelen adamlar onu tahta çıkarmak istiyordu, ama o öldürüleceğini sandı. İkinci Süleyman yaklaşık kırk yıldır kafesteydi. Sence bu korku nereden geliyordu?",
+    "kanca_gorsel": [
+      "File:Sultan's Throne, Imperial Hall, Topkapı Palace Harem.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1648",
+        "metin": "Süleyman altı yaşındayken ağabeyi Dördüncü Mehmed tahta çıktı. O andan sonra sarayın kafes denen dairelerinde, dış dünyadan kopuk yaşadı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Topkapı Harem",
+          "bina": "saray",
+          "alt": "İstanbul",
+          "lon": 28.983,
+          "lat": 41.0115,
+          "arka": "gece"
+        }
+      },
+      {
+        "yazi": "Korku",
+        "metin": "Eski taht kavgalarını biliyordu. Rivayete göre Dördüncü Mehmed kardeşlerini öldürtmeyi düşündü ama annesi Turhan Sultan araya girdi.",
+        "gorsel": [
+          "File:Sultan Mehmed IV (2).jpg"
+        ]
+      },
+      {
+        "yazi": "Kasım 1687",
+        "metin": "1687'deki ağır yenilgilerden sonra ordu ayaklandı ve Dördüncü Mehmed tahttan indirildi. Anlatılana göre onu almaya gelenleri görünce Süleyman kapıyı açmak istemedi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "1687",
+          "aylar": [
+            "Ağustos",
+            "8 Kasım"
+          ],
+          "cevir_bit": 0.55,
+          "rozet": "Cülus"
+        }
+      },
+      {
+        "yazi": "Geç gelen taht",
+        "metin": "Kırk beş yaşında tahta çıktı ve yalnızca üç buçuk yıl hüküm sürdü. Devlet o sırada uzun bir savaşın içindeydi, hazine boştu.",
+        "gorsel": [
+          "File:Sultan's Throne, Imperial Hall, Topkapı Palace Harem.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence kırk yıl kafeste yaşamış biri iyi bir padişah olabilir miydi?",
+    "etiketler": [
+      "ikinci süleyman",
+      "kafes",
+      "dördüncü mehmed",
+      "1687"
+    ],
+    "stil": "animasyon"
   }
 ]

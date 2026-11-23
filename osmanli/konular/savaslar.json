@@ -6807,5 +6807,1322 @@
       "1480"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "cirmen-1371",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Gece Baskınında Ölen İki Sırp Hükümdarı ⚔️ 1371",
+      "Çirmen 1371: Meriç Kıyısında Gece Baskını ⚔️",
+      "Sırp Ordusu Edirne'ye Yürüdü ve Dönmedi ⚔️"
+    ],
+    "kapak": "UYUYAN ORDU",
+    "kanca": "1371'de büyük bir Sırp ordusu Edirne'ye yürüdü, ama Meriç kıyısını geçemedi. Padişah o sırada savaş alanında bile değildi. Sence bu orduyu kim durdurdu?",
+    "kanca_gorsel": [
+      "File:Murad I miniature.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Eylül 1371",
+        "metin": "Osmanlılar Edirne'yi almış, Balkanlarda ilerliyordu. Sırp kralı Vukaşin ile kardeşi Despot Uglješa büyük bir orduyla Meriç vadisinden Edirne'ye yürüdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "kalin",
+          "yakinlik": 1.7,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  23.55,
+                  41.09
+                ],
+                [
+                  24.1,
+                  41.35
+                ],
+                [
+                  24.75,
+                  41.6
+                ],
+                [
+                  25.4,
+                  41.75
+                ],
+                [
+                  26.05,
+                  41.76
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.05,
+              "bit": 0.66,
+              "takip": true
+            },
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  26.45,
+                  41.73
+                ],
+                [
+                  26.3,
+                  41.76
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.45,
+              "bit": 0.7
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Serez",
+              "lon": 23.55,
+              "lat": 41.09
+            },
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "yan": "sag"
+            },
+            {
+              "ad": "Çirmen",
+              "lon": 26.18,
+              "lat": 41.85
+            }
+          ],
+          "carpisma": {
+            "lon": 26.18,
+            "lat": 41.76,
+            "bas": 0.72
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Murad uzakta",
+        "metin": "Birinci Murad o sırada Anadolu'daydı. Rumeli'deki Osmanlı kuvveti düşmandan çok küçüktü. Kaynaklar komutanı farklı verir; en çok Lala Şahin Paşa'nın adı geçer.",
+        "gorsel": [
+          "File:Murad I miniature.jpg"
+        ]
+      },
+      {
+        "yazi": "Gece baskını",
+        "metin": "Rivayete göre Sırp ordusu nehir kıyısında kamp kurup gevşedi. Osmanlı akıncıları gece ansızın saldırdı; kaçanların bir kısmı Meriç'te boğuldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Çirmen · 26 Eylül 1371",
+          "nehir": "Meriç",
+          "birlikler": [
+            {
+              "xy": [
+                460,
+                760
+              ],
+              "wh": [
+                560,
+                300
+              ],
+              "taraf": "dusman",
+              "etiket": "Sırp ordugâhı"
+            },
+            {
+              "xy": [
+                300,
+                1600
+              ],
+              "hedef": [
+                400,
+                1020
+              ],
+              "wh": [
+                300,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Akıncılar",
+              "etiket_ust": false,
+              "bas": 0.1,
+              "bit": 0.5
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                400,
+                1180
+              ],
+              "son_xy": [
+                440,
+                900
+              ],
+              "taraf": "osmanli",
+              "bas": 0.4
+            },
+            {
+              "bas_xy": [
+                620,
+                760
+              ],
+              "son_xy": [
+                900,
+                700
+              ],
+              "taraf": "dusman",
+              "bas": 0.65
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              450,
+              900
+            ],
+            "bas": 0.55
+          }
+        }
+      },
+      {
+        "yazi": "Sonuç",
+        "metin": "Vukaşin ve Uglješa bu savaşta öldü. Makedonya'daki Sırp beyleri Osmanlı'ya bağlandı ve Balkanlarda yeni bir yol açıldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Lala Şahin",
+              "desen": "hilal"
+            }
+          ],
+          "bant": "Çirmen 1371",
+          "karsi": {
+            "ad": "Vukaşin",
+            "desen": "kartal"
+          },
+          "arka": {
+            "merkez": [
+              24.5,
+              42.0
+            ],
+            "genislik": 8,
+            "tema": "gece"
+          }
+        }
+      }
+    ],
+    "soru": "Sence küçük bir kuvvetin büyük orduyu gece baskınıyla yenmesi şans mıydı, taktik mi?",
+    "etiketler": [
+      "çirmen savaşı",
+      "sırpsındığı",
+      "lala şahin paşa",
+      "1371"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "turnadag-1515",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Başı Kahire'ye Gönderilen Türkmen Beyi ⚔️ 1515",
+      "Turnadağ 1515: Yavuz'un Dulkadir Hesabı ⚔️",
+      "Yavuz Neden Dulkadir Beyine Döndü? ⚔️"
+    ],
+    "kapak": "GÖZDAĞI",
+    "kanca": "Çaldıran'dan bir yıl sonra Yavuz bir Türkmen beyine ordu gönderdi, ama asıl mesaj Kahire'ye gidiyordu. Sence bu savaş kime gözdağıydı?",
+    "kanca_gorsel": [
+      "File:Portraits of Selim I, in 1524 (contemporary) and 1579.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1514",
+        "metin": "1514'teki Çaldıran seferinde Dulkadir Beyi Alaüddevle, Osmanlı ordusuna yardım etmedi. Kaynaklara göre ordunun ikmal yollarını da tehdit etti. Yavuz bunu unutmadı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "parsomen",
+          "kamera": "uzaklas",
+          "cizgi": "kesikli",
+          "bulut": true,
+          "merkez": [
+            37.2,
+            38.6
+          ],
+          "genislik": 8,
+          "zoom": 1.06,
+          "odak": [
+            37.2,
+            38.2
+          ],
+          "etiketler": [
+            {
+              "ad": "Elbistan",
+              "lon": 37.2,
+              "lat": 38.2,
+              "yan": "sag",
+              "bas": 0.1
+            },
+            {
+              "ad": "Maraş",
+              "lon": 36.93,
+              "lat": 37.58,
+              "yan": "sol",
+              "bas": 0.25
+            },
+            {
+              "ad": "Dulkadir",
+              "lon": 36.6,
+              "lat": 38.75,
+              "tip": "bolge",
+              "bas": 0.05
+            }
+          ],
+          "damga": {
+            "yazi": "Hesap",
+            "lon": 37.2,
+            "lat": 38.2,
+            "bas": 0.55,
+            "tip": "muhur",
+            "dy": -260
+          }
+        }
+      },
+      {
+        "yazi": "Haziran 1515",
+        "metin": "1515'te Hadım Sinan Paşa komutasındaki ordu Dulkadir topraklarına girdi. İki ordu Elbistan yakınlarındaki Turnadağ'da karşılaştı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "akan",
+          "yakinlik": 1.9,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  35.48,
+                  38.72
+                ],
+                [
+                  35.95,
+                  38.6
+                ],
+                [
+                  36.45,
+                  38.45
+                ],
+                [
+                  36.85,
+                  38.3
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.65,
+              "takip": true
+            },
+            {
+              "yol": [
+                [
+                  36.93,
+                  37.58
+                ],
+                [
+                  37.05,
+                  37.85
+                ],
+                [
+                  37.0,
+                  38.1
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.3,
+              "bit": 0.66
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Kayseri",
+              "lon": 35.48,
+              "lat": 38.72
+            },
+            {
+              "ad": "Maraş",
+              "lon": 36.93,
+              "lat": 37.58,
+              "yan": "sag"
+            },
+            {
+              "ad": "Elbistan",
+              "lon": 37.2,
+              "lat": 38.2,
+              "yan": "sag"
+            }
+          ],
+          "carpisma": {
+            "lon": 36.93,
+            "lat": 38.22,
+            "bas": 0.7
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Bozgun",
+        "metin": "Dulkadir ordusu dağıldı. Alaüddevle savaşta öldürüldü; kaynaklara göre başı ve bazı yakınlarının başları Memlük sultanına gönderildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Sinan Paşa",
+              "desen": "hilal"
+            }
+          ],
+          "bant": "Turnadağ 1515",
+          "karsi": {
+            "ad": "Alaüddevle",
+            "desen": "halka"
+          },
+          "arka": {
+            "merkez": [
+              36.8,
+              38.3
+            ],
+            "genislik": 5,
+            "tema": "kizil"
+          }
+        }
+      },
+      {
+        "yazi": "Mısır'a yol",
+        "metin": "Dulkadirliler Memlüklerin koruduğu bir beylikti. Bu savaşla iki devlet arasındaki tampon kalktı. Bir yıl sonra Osmanlı ve Memlük orduları Mercidabık'ta karşı karşıya geldi.",
+        "gorsel": [
+          "File:Battle of Marj Dabiq (1516) (miniature). Selīm-nāma, by Şūkrī-i Bitlisī, 1524 (National Library of Israel, Ms. Yah. Ar. 1116) Folio 209.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Yavuz bu başlarla Memlük sultanına ne demek istedi?",
+    "etiketler": [
+      "turnadağ savaşı",
+      "yavuz sultan selim",
+      "dulkadiroğulları",
+      "1515"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "koszeg-1532",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Küçük Bir Kale Kanuni'yi Haftalarca Durdurdu ⚔️",
+      "Kőszeg 1532: Viyana Yolundaki Küçük Kale ⚔️",
+      "Jurišić Kanuni'ye Neden Teslim Olmadı? ⚔️"
+    ],
+    "kapak": "BİR AVUÇ ASKER",
+    "kanca": "Kanuni 1532'de dev bir orduyla Viyana yönüne yürüdü, ama küçük bir kasabanın surlarında haftalarca takıldı. Kalede yalnızca birkaç yüz savunmacı vardı. Sence ordu neden geçemedi?",
+    "kanca_gorsel": [
+      "File:Suleiman the Magnificent by Dell'Altissimo.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Nisan 1532",
+        "metin": "Kanuni Nisan 1532'de İstanbul'dan büyük bir sefere çıktı. Hedefin Viyana ya da Habsburg ordusuyla bir meydan savaşı olduğu düşünülüyordu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "parsomen",
+          "cizgi": "kalin",
+          "yakinlik": 1.6,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  20.46,
+                  44.82
+                ],
+                [
+                  19.6,
+                  45.6
+                ],
+                [
+                  18.7,
+                  46.3
+                ],
+                [
+                  17.6,
+                  47.0
+                ],
+                [
+                  16.6,
+                  47.38
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.66,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "yan": "sag"
+            },
+            {
+              "ad": "Kőszeg",
+              "lon": 16.54,
+              "lat": 47.39,
+              "yan": "sol"
+            },
+            {
+              "ad": "Viyana",
+              "lon": 16.37,
+              "lat": 48.21,
+              "yan": "sag"
+            }
+          ],
+          "carpisma": {
+            "lon": 16.56,
+            "lat": 47.39,
+            "bas": 0.72
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Ağustos 1532",
+        "metin": "Ağustos başında ordunun önemli bir kısmı Kőszeg önünde durdu. Kaleyi Nikola Jurišić birkaç yüz asker ve kasabaya sığınan köylülerle savunuyordu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Kőszeg Kalesi",
+          "bina": "kale",
+          "alt": "Macaristan",
+          "lon": 16.54,
+          "lat": 47.39,
+          "arka": "gunbatimi"
+        }
+      },
+      {
+        "yazi": "Gedikler",
+        "metin": "Toplar surları yıktı, hücumlar defalarca tekrarlandı. Savunmacılar gedikleri her seferinde kapattı ve kale üç haftadan uzun dayandı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Kőszeg · Ağustos 1532",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                620
+              ],
+              "wh": [
+                440,
+                260
+              ],
+              "taraf": "dusman",
+              "etiket": "Jurišić"
+            },
+            {
+              "xy": [
+                300,
+                1500
+              ],
+              "hedef": [
+                330,
+                1050
+              ],
+              "wh": [
+                300,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Hücum",
+              "etiket_ust": false,
+              "bas": 0.1,
+              "bit": 0.45
+            },
+            {
+              "xy": [
+                780,
+                1500
+              ],
+              "hedef": [
+                750,
+                1050
+              ],
+              "wh": [
+                300,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Toplar",
+              "etiket_ust": false,
+              "bas": 0.2,
+              "bit": 0.5
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                360,
+                950
+              ],
+              "son_xy": [
+                460,
+                760
+              ],
+              "taraf": "osmanli",
+              "bas": 0.45
+            },
+            {
+              "bas_xy": [
+                720,
+                950
+              ],
+              "son_xy": [
+                620,
+                760
+              ],
+              "taraf": "osmanli",
+              "bas": 0.55
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              760
+            ],
+            "bas": 0.65
+          }
+        }
+      },
+      {
+        "yazi": "Onurlu son",
+        "metin": "Sonunda bir anlaşma yapıldı: kaleye Osmanlı sancağı çekildi ama savunmacılar yerinde kaldı. Mevsim ilerlemişti; ordu Viyana'ya yürümedi ve geri döndü.",
+        "gorsel": [
+          "File:Suleiman the Magnificent by Dell'Altissimo.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Kőszeg'i kurtaran surlar mıydı, yoksa geç kalan mevsim mi?",
+    "etiketler": [
+      "kőszeg kuşatması",
+      "kanuni sultan süleyman",
+      "nikola jurišić",
+      "1532"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "petervaradin-1716",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Savaş Alanında Ölen Sadrazam ⚔️ Petervaradin 1716",
+      "Damat Ali Paşa'nın Son Savaşı 1716 ⚔️",
+      "Prens Eugen Petervaradin'de Ne Yaptı? ⚔️"
+    ],
+    "kapak": "DÖNMEDİ",
+    "kanca": "1716'da Osmanlı ordusunun başındaki sadrazam zafer bekliyordu, ama savaş alanından sağ dönemedi ve ordu bozguna uğradı. Sence Damat Ali Paşa nerede hata yaptı?",
+    "kanca_gorsel": [
+      "File:Prinz Eugene of Savoy.PNG"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1716",
+        "metin": "Damat Silahdar Ali Paşa 1715'te Mora'yı Venedik'ten geri almıştı. 1716'da Avusturya savaşa girince ordunun başında Tuna'ya yürüdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "akan",
+          "yakinlik": 1.8,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  24.75,
+                  42.15
+                ],
+                [
+                  23.32,
+                  42.7
+                ],
+                [
+                  21.9,
+                  43.32
+                ],
+                [
+                  20.9,
+                  44.3
+                ],
+                [
+                  20.46,
+                  44.82
+                ],
+                [
+                  19.9,
+                  45.22
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.68,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "yan": "sol"
+            },
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "yan": "sag"
+            },
+            {
+              "ad": "Petervaradin",
+              "lon": 19.87,
+              "lat": 45.25,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 19.88,
+            "lat": 45.25,
+            "bas": 0.74
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "5 Ağustos 1716",
+        "metin": "Osmanlı ordusu Petervaradin kalesinin önünde siper kazdı. Prens Eugen sabah erkenden saldırdı. Yeniçeriler önce Avusturya piyadesini geri itti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Petervaradin · 5 Ağustos 1716",
+          "nehir": "Tuna",
+          "birlikler": [
+            {
+              "xy": [
+                440,
+                620
+              ],
+              "wh": [
+                520,
+                220
+              ],
+              "taraf": "dusman",
+              "etiket": "Prens Eugen"
+            },
+            {
+              "xy": [
+                420,
+                1400
+              ],
+              "hedef": [
+                420,
+                950
+              ],
+              "wh": [
+                420,
+                200
+              ],
+              "taraf": "osmanli",
+              "etiket": "Yeniçeriler",
+              "etiket_ust": false,
+              "bas": 0.1,
+              "bit": 0.45
+            },
+            {
+              "xy": [
+                120,
+                520
+              ],
+              "hedef": [
+                150,
+                1330
+              ],
+              "wh": [
+                180,
+                160
+              ],
+              "taraf": "dusman",
+              "etiket": "Süvari",
+              "bas": 0.5,
+              "bit": 0.85
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                420,
+                1050
+              ],
+              "son_xy": [
+                430,
+                760
+              ],
+              "taraf": "osmanli",
+              "bas": 0.35
+            },
+            {
+              "bas_xy": [
+                140,
+                700
+              ],
+              "son_xy": [
+                190,
+                1250
+              ],
+              "taraf": "dusman",
+              "bas": 0.6
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              240,
+              1180
+            ],
+            "bas": 0.78
+          }
+        }
+      },
+      {
+        "yazi": "Kanat çöktü",
+        "metin": "Avusturya süvarileri yandan saldırınca Osmanlı hatları dağıldı. Damat Ali Paşa askerleri toparlamaya çalışırken ağır yaralandı ve kısa süre sonra öldü.",
+        "gorsel": [
+          "File:Prinz Eugene of Savoy.PNG"
+        ]
+      },
+      {
+        "yazi": "Sonrası",
+        "metin": "Ertesi yıl Eugen Belgrad'ı da aldı. 1718'de Pasarofça Antlaşması imzalandı; Osmanlı Belgrad'ı ancak 1739'da geri alabildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "1718",
+          "aylar": [
+            "1716",
+            "1717",
+            "1718"
+          ],
+          "cevir_bit": 0.6,
+          "rozet": "Pasarofça"
+        }
+      }
+    ],
+    "soru": "Sence Damat Ali Paşa kaleye saldırmak yerine beklese sonuç değişir miydi?",
+    "etiketler": [
+      "petervaradin savaşı",
+      "damat ali paşa",
+      "prens eugen",
+      "1716"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "medine-mudafaasi-1919",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Savaş Bittiği Hâlde Teslim Olmayan Paşa ⚔️ Medine",
+      "Fahreddin Paşa Medine'yi Neden Bırakmadı? ⚔️",
+      "Medine Müdafaası 1916-1919 ⚔️"
+    ],
+    "kapak": "İKİ AY DAHA",
+    "kanca": "Osmanlı Ekim 1918'de savaşı bitiren ateşkesi imzaladı, ama Medine'deki paşa teslim olmadı. Kuşatılmış şehirde iki aydan uzun direndi. Sence neden?",
+    "kanca_gorsel": [
+      "File:Medina Güterbahnhof und Werkstätten. LCCN2002714727.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1916",
+        "metin": "1916'da Mekke Şerifi Hüseyin, Osmanlı'ya karşı ayaklandı. Medine'nin savunması Fahreddin Paşa'ya verildi. Şehri dünyaya bağlayan tek hat Hicaz Demiryolu'ydu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "kaydir",
+          "cizgi": "kesikli",
+          "bulut": false,
+          "merkez": [
+            37.6,
+            29.4
+          ],
+          "genislik": 11,
+          "zoom": 1.0,
+          "etiketler": [
+            {
+              "ad": "Şam",
+              "lon": 36.29,
+              "lat": 33.51,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Medine",
+              "lon": 39.6,
+              "lat": 24.47,
+              "yan": "sol",
+              "bas": 0.4
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  36.29,
+                  33.51
+                ],
+                [
+                  36.1,
+                  31.0
+                ],
+                [
+                  36.6,
+                  28.4
+                ],
+                [
+                  38.0,
+                  26.6
+                ],
+                [
+                  39.6,
+                  24.5
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "yok",
+              "bas": 0.05,
+              "bit": 0.45
+            }
+          ],
+          "damga": {
+            "yazi": "Kuşatma",
+            "lon": 39.6,
+            "lat": 24.47,
+            "bas": 0.6,
+            "tip": "murekkep",
+            "dy": -260
+          }
+        }
+      },
+      {
+        "yazi": "Kuşatma",
+        "metin": "Demiryolu sürekli baskına uğradı ve şehir dış dünyadan kesildi. Garnizon yıllarca açlıkla ve hastalıkla uğraştı.",
+        "gorsel": [
+          "File:Medina Güterbahnhof und Werkstätten. LCCN2002714727.jpg"
+        ]
+      },
+      {
+        "yazi": "Mondros",
+        "metin": "30 Ekim 1918'de Mondros Ateşkesi imzalandı ve Medine'nin teslimi istendi. Fahreddin Paşa İstanbul'dan gelen emre rağmen şehri bırakmayı reddetti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1918",
+          "aylar": [
+            "30 Ekim",
+            "Kasım",
+            "Aralık"
+          ],
+          "cevir_bit": 0.6,
+          "rozet": "Mondros"
+        }
+      },
+      {
+        "yazi": "Ocak 1919",
+        "metin": "Sonunda kendi subayları da teslimden yana olunca Ocak 1919'da Medine'yi bıraktı. Esir alındı ve bir süre Malta'da tutuldu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Fahreddin Paşa",
+              "desen": "hilal"
+            }
+          ],
+          "bant": "Medine",
+          "karsi": {
+            "ad": "Kuşatma",
+            "desen": "carpi"
+          },
+          "arka": {
+            "merkez": [
+              39.6,
+              24.5
+            ],
+            "genislik": 4,
+            "tema": "kizil"
+          }
+        }
+      }
+    ],
+    "soru": "Sence Fahreddin Paşa emre uymayıp direnmekte haklı mıydı?",
+    "etiketler": [
+      "fahreddin paşa",
+      "medine müdafaası",
+      "hicaz demiryolu",
+      "1919"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kosedag-1243",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kösedağ 1243: Selçuklu'yu Bir Günde Bitiren Savaş ⚔️",
+      "Moğollar Anadolu'ya Nasıl Girdi? Kösedağ ⚔️",
+      "İkinci Keyhüsrev Ordusunu Neden Bıraktı? ⚔️"
+    ],
+    "kapak": "SULTAN KAÇTI",
+    "kanca": "Selçuklu ordusu 1243'te Moğollara karşı kaynaklara göre sayıca güçlüydü, ama savaş bir günde bitti ve sultan kaçtı. Sence ne oldu?",
+    "kanca_gorsel": [
+      "File:Ertugrul Gazi sends his son Savci Bey to the Sultan Alaeddin Keykubad with the request to be allowed to populate a new area.. Miniature, Turkish, 1616. Tadj al-Tawarikh (The Crown of Chronicles).jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1242",
+        "metin": "Alaeddin Keykubad'ın ölümünden sonra tahta oğlu İkinci Gıyaseddin Keyhüsrev geçti. Doğudan Baycu Noyan komutasındaki Moğol ordusu ilerliyordu; 1242'de Erzurum'u almıştı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "kesikli",
+          "yakinlik": 1.7,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  41.27,
+                  39.9
+                ],
+                [
+                  40.4,
+                  39.8
+                ],
+                [
+                  39.5,
+                  39.75
+                ],
+                [
+                  38.9,
+                  40.0
+                ],
+                [
+                  38.5,
+                  40.15
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.05,
+              "bit": 0.66,
+              "takip": true
+            },
+            {
+              "yol": [
+                [
+                  37.02,
+                  39.75
+                ],
+                [
+                  37.5,
+                  39.95
+                ],
+                [
+                  38.0,
+                  40.15
+                ],
+                [
+                  38.3,
+                  40.25
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.3,
+              "bit": 0.68
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Erzurum",
+              "lon": 41.27,
+              "lat": 39.9,
+              "yan": "sag"
+            },
+            {
+              "ad": "Erzincan",
+              "lon": 39.49,
+              "lat": 39.75
+            },
+            {
+              "ad": "Sivas",
+              "lon": 37.02,
+              "lat": 39.75,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 38.4,
+            "lat": 40.2,
+            "bas": 0.72
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "26 Haziran 1243",
+        "metin": "İki ordu Sivas ile Erzincan arasında, Kösedağ'da karşılaştı. Kaynaklara göre Selçuklu öncüsü saldırdı, Moğollar geri çekilir gibi yapıp öncüyü çevirdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "Kösedağ · 26 Haziran 1243",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                720
+              ],
+              "hedef": [
+                540,
+                620
+              ],
+              "wh": [
+                600,
+                220
+              ],
+              "taraf": "dusman",
+              "etiket": "Baycu Noyan",
+              "bas": 0.3,
+              "bit": 0.5
+            },
+            {
+              "xy": [
+                540,
+                1500
+              ],
+              "hedef": [
+                540,
+                900
+              ],
+              "wh": [
+                360,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Selçuklu öncüsü",
+              "etiket_ust": false,
+              "bas": 0.05,
+              "bit": 0.45
+            },
+            {
+              "xy": [
+                130,
+                400
+              ],
+              "hedef": [
+                180,
+                900
+              ],
+              "wh": [
+                180,
+                160
+              ],
+              "taraf": "dusman",
+              "etiket": "Pusu",
+              "bas": 0.5,
+              "bit": 0.8
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                540,
+                1100
+              ],
+              "son_xy": [
+                540,
+                780
+              ],
+              "taraf": "osmanli",
+              "bas": 0.2
+            },
+            {
+              "bas_xy": [
+                200,
+                560
+              ],
+              "son_xy": [
+                400,
+                880
+              ],
+              "taraf": "dusman",
+              "bas": 0.6
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              460,
+              900
+            ],
+            "bas": 0.78
+          }
+        }
+      },
+      {
+        "yazi": "Kaçış",
+        "metin": "Öncünün dağıldığını gören sultan gece ordugâhı bıraktı; önce Tokat'a, oradan Konya'ya kaçtı. Büyük ordu savaşmadan dağıldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "parsomen",
+          "kamera": "uzaklas",
+          "cizgi": "kalin",
+          "bulut": false,
+          "merkez": [
+            35.6,
+            39.3
+          ],
+          "genislik": 9,
+          "zoom": 1.04,
+          "odak": [
+            36.5,
+            39.6
+          ],
+          "etiketler": [
+            {
+              "ad": "Kösedağ",
+              "lon": 38.4,
+              "lat": 40.2,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Tokat",
+              "lon": 36.55,
+              "lat": 40.31,
+              "yan": "sol",
+              "bas": 0.25,
+              "dy": 70
+            },
+            {
+              "ad": "Konya",
+              "lon": 32.48,
+              "lat": 37.87,
+              "yan": "sag",
+              "bas": 0.5
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  38.4,
+                  40.2
+                ],
+                [
+                  37.4,
+                  40.3
+                ],
+                [
+                  36.55,
+                  40.31
+                ],
+                [
+                  35.4,
+                  39.3
+                ],
+                [
+                  33.8,
+                  38.5
+                ],
+                [
+                  32.5,
+                  37.9
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.08,
+              "bit": 0.7
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Sonrası",
+        "metin": "Selçuklu Sultanlığı ayakta kaldı ama Moğollara vergi veren bir devlete dönüştü. Anadolu'da güç dağıldıkça yeni Türkmen beylikleri doğdu; bunlardan biri Osmanlı'ydı.",
+        "gorsel": [
+          "File:Ertugrul Gazi sends his son Savci Bey to the Sultan Alaeddin Keykubad with the request to be allowed to populate a new area.. Miniature, Turkish, 1616. Tadj al-Tawarikh (The Crown of Chronicles).jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Kösedağ olmasaydı Osmanlı beyliği yine doğar mıydı?",
+    "etiketler": [
+      "kösedağ savaşı",
+      "anadolu selçuklu",
+      "moğollar",
+      "1243"
+    ],
+    "stil": "animasyon"
   }
 ]

@@ -5356,5 +5356,650 @@
       "cem sultan"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "mahmud-pasa-1474",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Fatih Sadrazamını Yedikule'de Boğdurdu 1474 👑",
+      "Mahmud Paşa: Fatih'in En Güvendiği Adam 👑",
+      "Fatih Kendi Sadrazamını Neden Öldürttü? 👑"
+    ],
+    "kapak": "SON GECE",
+    "kanca": "Fatih'in yıllarca en güvendiği veziri 1474'te idam edildi, ama suçu bugün bile tartışılıyor. Halk ona sonradan Veli dedi. Sence Mahmud Paşa'yı ne öldürdü?",
+    "kanca_gorsel": [
+      "File:Bellini, Gentile - Portrait of Mehmed II - National Gallery, London.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Esir çocuk",
+        "metin": "Mahmud, Bizans ve Sırp soylularıyla akraba bir aileden geliyordu. Kaynaklara göre çocukken esir düştü ve Osmanlı sarayında yetişti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Mahmud'un yükselişi",
+          "ogeler": [
+            "Esir çocuk",
+            "Saray",
+            "Beylerbeyi",
+            "Sadrazam · 1456"
+          ]
+        }
+      },
+      {
+        "yazi": "Sağ kol",
+        "metin": "1456'da sadrazam oldu. Sırbistan'dan Bosna'ya kadar Fatih'in birçok seferinde ordunun önündeydi. Şiir yazan, âlimleri koruyan bir devlet adamıydı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "akan",
+          "yakinlik": 1.8,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  26.56,
+                  41.68
+                ],
+                [
+                  24.75,
+                  42.15
+                ],
+                [
+                  23.32,
+                  42.7
+                ],
+                [
+                  21.9,
+                  43.32
+                ],
+                [
+                  20.4,
+                  43.85
+                ],
+                [
+                  18.41,
+                  43.86
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.06,
+              "bit": 0.7,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Edirne",
+              "lon": 26.56,
+              "lat": 41.68,
+              "yan": "sol"
+            },
+            {
+              "ad": "Sofya",
+              "lon": 23.32,
+              "lat": 42.7
+            },
+            {
+              "ad": "Bosna",
+              "lon": 18.41,
+              "lat": 43.86
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "Gözden düşüş",
+        "metin": "1474'te Fatih'in oğlu Şehzade Mustafa öldü. Rivayete göre Mahmud Paşa'nın şehzadeyle arası kötüydü ve yasa katılmadığı söylendi. Rakipleri bunu padişaha taşıdı.",
+        "gorsel": [
+          "File:Bellini, Gentile - Portrait of Mehmed II - National Gallery, London.jpg"
+        ]
+      },
+      {
+        "yazi": "Temmuz 1474",
+        "metin": "Fatih onu önce görevden aldı, sonra hapsettirdi ve Yedikule'de boğdurdu. İstanbul'daki camisi ve semti bugün hâlâ onun adını taşıyor.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Yedikule Hisarı",
+          "bina": "kale",
+          "alt": "İstanbul",
+          "lon": 28.923,
+          "lat": 40.994,
+          "arka": "gece"
+        }
+      }
+    ],
+    "soru": "Sence Fatih, Mahmud Paşa'yı idam ettirmekle hata mı yaptı?",
+    "etiketler": [
+      "mahmud paşa",
+      "fatih sultan mehmed",
+      "yedikule",
+      "1474"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "koprulu-sartlari-1656",
+    "tur": "bilinen",
+    "baslik": [
+      "Şart Koşarak Sadrazam Olan Paşa 1656 👑",
+      "Köprülü Mehmed Paşa Hangi Şartları İstedi? 👑",
+      "Çöken Devleti Devralan Yaşlı Paşa 👑"
+    ],
+    "kapak": "ŞARTIM VAR",
+    "kanca": "1656'da devlet çöküyordu ve sadrazamlık yetmişini geçmiş bir paşaya teklif edildi. Paşa hemen kabul etmedi, önce şart koştu. Sence ne istedi?",
+    "kanca_gorsel": [
+      "File:Portrait of Hatice Turhan Sultan. Attributed to Paul Rycaut, consul in Smyrna, 1660-67 (detail).jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1656",
+        "metin": "1656 baharında İstanbul'da askerler ayaklandı, devlet adamları Atmeydanı'ndaki çınara asıldı. Yazın Venedik donanması Çanakkale Boğazı'nı kapattı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "yaklas",
+          "cizgi": "kalin",
+          "bulut": false,
+          "merkez": [
+            26.6,
+            40.3
+          ],
+          "genislik": 4.5,
+          "zoom": 1.08,
+          "odak": [
+            26.35,
+            40.1
+          ],
+          "etiketler": [
+            {
+              "ad": "Çanakkale",
+              "lon": 26.4,
+              "lat": 40.15,
+              "yan": "sag",
+              "bas": 0.1
+            },
+            {
+              "ad": "Bozcaada",
+              "lon": 26.03,
+              "lat": 39.83,
+              "yan": "sol",
+              "bas": 0.3
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  25.3,
+                  39.3
+                ],
+                [
+                  25.75,
+                  39.7
+                ],
+                [
+                  26.15,
+                  40.0
+                ]
+              ],
+              "taraf": "dusman",
+              "gemi": 3,
+              "bas": 0.1,
+              "bit": 0.5
+            }
+          ],
+          "damga": {
+            "yazi": "Abluka",
+            "lon": 26.4,
+            "lat": 40.15,
+            "bas": 0.6,
+            "tip": "murekkep",
+            "dy": -240
+          }
+        }
+      },
+      {
+        "yazi": "Turhan Sultan",
+        "metin": "Devleti fiilen Valide Turhan Sultan yönetiyordu. Eylül 1656'da sadrazamlığı Köprülü Mehmed Paşa'ya teklif etti.",
+        "gorsel": [
+          "File:Portrait of Hatice Turhan Sultan. Attributed to Paul Rycaut, consul in Smyrna, 1660-67 (detail).jpg"
+        ]
+      },
+      {
+        "yazi": "Şartlar",
+        "metin": "Kaynaklara göre paşa, kararlarına karışılmamasını, atamaları kendisinin yapmasını ve hakkındaki şikâyetlerin dinlenmemesini istedi. Şartlar kabul edildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Paşanın şartları",
+          "ogeler": [
+            "Şikâyet dinlenmeyecek",
+            "Atamaları ben yapacağım",
+            "Kararlarıma karışılmayacak"
+          ]
+        }
+      },
+      {
+        "yazi": "Köprülüler",
+        "metin": "Köprülü isyancıları ve rakiplerini sert biçimde ortadan kaldırdı, 1657'de Boğaz'daki ablukayı kırdı. Ondan sonra oğlu Fazıl Ahmed Paşa da sadrazam oldu ve dönem onların adıyla anıldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Köprülü",
+              "desen": "anahtar"
+            }
+          ],
+          "bant": "1656-1661",
+          "karsi": {
+            "ad": "İsyancılar",
+            "desen": "kazan"
+          },
+          "arka": {
+            "merkez": [
+              29.0,
+              41.0
+            ],
+            "genislik": 6,
+            "tema": "antika"
+          }
+        }
+      }
+    ],
+    "soru": "Sence bir devlet adamına bu kadar yetki vermek doğru muydu?",
+    "etiketler": [
+      "köprülü mehmed paşa",
+      "turhan sultan",
+      "köprülüler",
+      "1656"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "cigalazade-sinan-pasa",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Esir Düşen Cenevizli Sadrazam Oldu ⚓",
+      "Cığalazade Sinan Paşa ve Messina'daki Anne ⚓",
+      "Messina Önünde Annesini İsteyen Paşa ⚓"
+    ],
+    "kapak": "ANNEMİ GETİRİN",
+    "kanca": "Osmanlı donanması 1598'de Messina önüne geldi, ama kaptan paşa şehre saldırmak yerine annesini istedi. Bu paşa yıllar önce bu sulardan esir götürülmüş bir çocuktu. Sence annesi onu tanıdı mı?",
+    "kanca_gorsel": [
+      "File:Kadırga Minyatür.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Esir · 1561",
+        "metin": "Scipione Cicala, Cenevizli soylu bir denizci ailesinin oğluydu. 1561'de babasıyla birlikte Osmanlı denizcilerine esir düştü ve İstanbul'a getirildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "kaydir",
+          "cizgi": "akan",
+          "merkez": [
+            21.0,
+            38.8
+          ],
+          "genislik": 20,
+          "zoom": 1.0,
+          "etiketler": [
+            {
+              "ad": "Messina",
+              "lon": 15.55,
+              "lat": 38.19,
+              "yan": "sol",
+              "bas": 0.05
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  15.7,
+                  38.1
+                ],
+                [
+                  18.6,
+                  37.6
+                ],
+                [
+                  22.0,
+                  36.2
+                ],
+                [
+                  24.6,
+                  36.4
+                ],
+                [
+                  25.2,
+                  37.6
+                ],
+                [
+                  26.4,
+                  40.1
+                ],
+                [
+                  28.95,
+                  41.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "gemi": 2,
+              "bas": 0.08,
+              "bit": 0.7
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Saraydan paşalığa",
+        "metin": "Sarayda yetişti, Müslüman oldu ve Sinan adını aldı. Yıllar içinde yeniçeri ağası, sonra kaptan paşa oldu; sultan soyundan bir hanımla evlendi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "baslik": "Cığalazade'nin yolu",
+          "ogeler": [
+            "Esir",
+            "Saray",
+            "Yeniçeri ağası",
+            "Kaptan paşa",
+            "Sadrazam · 1596"
+          ]
+        }
+      },
+      {
+        "yazi": "Haçova · 1596",
+        "metin": "1596'da Haçova'da savaştı, zaferin ardından sadrazam yapıldı. Ama savaştan kaçan askerleri sert biçimde cezalandırdı ve görevi yalnızca birkaç hafta sürdü.",
+        "gorsel": [
+          "File:Battle of Mezőkeresztes 1596.jpg"
+        ]
+      },
+      {
+        "yazi": "Messina · 1598",
+        "metin": "Kaptan paşa olarak donanmayla Messina önüne geldi. Kaynaklara göre annesini görmek istedi ve annesi gemisine getirildi. Esir çocuk, yıllar sonra annesinin karşısına bir Osmanlı paşası olarak çıkmıştı.",
+        "gorsel": [
+          "File:Kadırga Minyatür.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Cığalazade annesini gördükten sonra ne hissetmiştir?",
+    "etiketler": [
+      "cığalazade sinan paşa",
+      "scipione cicala",
+      "kaptan paşa",
+      "messina"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kilic-ali-pasa",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Bozgundan Düşman Sancağıyla Dönen Paşa ⚓",
+      "Uluç Ali Neden Kılıç Ali Oldu? ⚓",
+      "Bir Kışta Yeni Donanma Kuran Kaptan ⚓"
+    ],
+    "kapak": "TEK TESELLİ",
+    "kanca": "İnebahtı'da Osmanlı donanması ezildi, ama bir paşa İstanbul'a düşman sancağıyla döndü. Padişah ona yeni bir ad verdi. Sence o gün ne yaptı?",
+    "kanca_gorsel": [
+      "File:Battle of Lepanto 1571.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Calabria",
+        "metin": "Asıl adı Giovanni Dionigi Galeni'ydi, İtalya'nın Calabria kıyısında doğdu. Gençken esir düştü ve kürek mahkûmu oldu. Sonra Müslüman olup Uluç Ali adıyla tanındı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "cizgi": "kesikli",
+          "bulut": true,
+          "merkez": [
+            16.8,
+            39.2
+          ],
+          "genislik": 6,
+          "zoom": 1.1,
+          "odak": [
+            17.1,
+            39.0
+          ],
+          "etiketler": [
+            {
+              "ad": "Calabria",
+              "lon": 16.4,
+              "lat": 39.3,
+              "tip": "bolge"
+            },
+            {
+              "ad": "Le Castella",
+              "lon": 17.03,
+              "lat": 38.91,
+              "yan": "sag",
+              "bas": 0.2
+            }
+          ],
+          "damga": {
+            "yazi": "Esir",
+            "lon": 17.03,
+            "lat": 38.91,
+            "bas": 0.55,
+            "tip": "ferman",
+            "dy": -260
+          }
+        }
+      },
+      {
+        "yazi": "7 Ekim 1571",
+        "metin": "İnebahtı'da Osmanlı sol kanadını o yönetiyordu. Merkez çökerken Malta şövalyelerinin amiral gemisine saldırdı ve sancağını ele geçirdi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "baslik": "İnebahtı · 7 Ekim 1571",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                560
+              ],
+              "wh": [
+                760,
+                200
+              ],
+              "taraf": "dusman",
+              "etiket": "Kutsal İttifak"
+            },
+            {
+              "xy": [
+                540,
+                1200
+              ],
+              "wh": [
+                440,
+                200
+              ],
+              "taraf": "osmanli",
+              "etiket": "Merkez",
+              "etiket_ust": false
+            },
+            {
+              "xy": [
+                860,
+                1500
+              ],
+              "hedef": [
+                800,
+                820
+              ],
+              "wh": [
+                260,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Uluç Ali",
+              "etiket_ust": false,
+              "bas": 0.15,
+              "bit": 0.55
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                540,
+                700
+              ],
+              "son_xy": [
+                540,
+                1060
+              ],
+              "taraf": "dusman",
+              "bas": 0.1
+            },
+            {
+              "bas_xy": [
+                820,
+                1100
+              ],
+              "son_xy": [
+                760,
+                680
+              ],
+              "taraf": "osmanli",
+              "bas": 0.5
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              740,
+              660
+            ],
+            "bas": 0.62
+          }
+        }
+      },
+      {
+        "yazi": "Kaçış",
+        "metin": "Savaş kaybedilince gemilerini topladı, çemberi yararak kurtuldu ve bağlı gemilerle İstanbul'a döndü. Getirdiği sancak, bozgunun içindeki tek teselliydi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "parsomen",
+          "cizgi": "kesikli",
+          "yakinlik": 1.5,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  21.2,
+                  38.25
+                ],
+                [
+                  20.9,
+                  37.6
+                ],
+                [
+                  21.4,
+                  36.6
+                ],
+                [
+                  22.6,
+                  36.25
+                ],
+                [
+                  24.0,
+                  36.9
+                ],
+                [
+                  25.3,
+                  38.2
+                ],
+                [
+                  26.2,
+                  40.0
+                ],
+                [
+                  28.95,
+                  41.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "gemi",
+              "gemi": 4,
+              "bas": 0.06,
+              "bit": 0.72,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "İnebahtı",
+              "lon": 21.83,
+              "lat": 38.39,
+              "yan": "sag"
+            },
+            {
+              "ad": "İstanbul",
+              "lon": 28.98,
+              "lat": 41.01,
+              "yan": "sol"
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "Kılıç Ali · 1572",
+        "metin": "İkinci Selim ona Kılıç adını verdi ve kaptan paşa yaptı. Sokullu ile birlikte bir kış içinde yeni bir donanma kurdu; 1572 baharında donanma yeniden denizdeydi.",
+        "gorsel": [
+          "File:Portrait of Sultan Selim II (reigned 1566-1574) circa 1600-1610.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence bir donanmayı bir kışta yeniden kurmak mı zordu, yoksa bozgundan sağ çıkmak mı?",
+    "etiketler": [
+      "kılıç ali paşa",
+      "uluç ali",
+      "inebahtı",
+      "1571"
+    ],
+    "stil": "animasyon"
   }
 ]
