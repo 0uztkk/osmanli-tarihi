@@ -8124,5 +8124,660 @@
       "1243"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "kanije-1601",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kanije 1601: Toplarını Bırakıp Kaçan Ordu ⚔️",
+      "Tiryaki Hasan Paşa Kanije'yi Nasıl Tuttu? ⚔️",
+      "Yetmiş Gün Dayanan Kale: Kanije 1601 ⚔️"
+    ],
+    "kapak": "KIŞ GELDİ",
+    "kanca": "Kalede birkaç bin asker vardı, dışarıda kat kat büyük bir ordu. Yetmiş gün sonra kaçan taraf kuşatanlar oldu ve toplarını geride bıraktılar. Sence Tiryaki Hasan Paşa ne yaptı?",
+    "kanca_gorsel": [
+      "File:An Officer of the Janissaries (Costume Plate) LACMA M.85.237.50.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Eylül 1601",
+        "metin": "Kanije bir yıl önce Osmanlılara geçmişti. 1601'de Arşidük Ferdinand komutasındaki Habsburg ve Papalık ordusu kaleyi geri almak için yürüdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "antika",
+          "cizgi": "kesikli",
+          "yakinlik": 2.0,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  15.44,
+                  47.07
+                ],
+                [
+                  15.8,
+                  46.85
+                ],
+                [
+                  16.2,
+                  46.68
+                ],
+                [
+                  16.6,
+                  46.52
+                ],
+                [
+                  16.95,
+                  46.46
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.05,
+              "bit": 0.7,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Graz",
+              "lon": 15.44,
+              "lat": 47.07,
+              "yan": "sol"
+            },
+            {
+              "ad": "Kanije",
+              "lon": 16.99,
+              "lat": 46.45,
+              "yan": "sag"
+            }
+          ],
+          "carpisma": {
+            "lon": 16.99,
+            "lat": 46.45,
+            "bas": 0.76
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Kuşatma",
+        "metin": "Kalede Tiryaki Hasan Paşa'nın emrinde yedi ile dokuz bin arası asker vardı. Savunma iki ay sürdü; kuşatmanın Papalık komutanı ve topçu başı bu sırada öldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                980
+              ],
+              "wh": [
+                300,
+                260
+              ],
+              "taraf": "osmanli",
+              "etiket": "Kanije",
+              "etiket_ust": false
+            },
+            {
+              "xy": [
+                540,
+                420
+              ],
+              "hedef": [
+                540,
+                620
+              ],
+              "wh": [
+                640,
+                180
+              ],
+              "taraf": "dusman",
+              "etiket": "Habsburg",
+              "bas": 0.05,
+              "bit": 0.35
+            },
+            {
+              "xy": [
+                160,
+                1500
+              ],
+              "hedef": [
+                260,
+                1320
+              ],
+              "wh": [
+                260,
+                160
+              ],
+              "taraf": "dusman",
+              "etiket": "Papalık",
+              "etiket_ust": false,
+              "bas": 0.15,
+              "bit": 0.45
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                540,
+                720
+              ],
+              "son_xy": [
+                540,
+                840
+              ],
+              "taraf": "dusman",
+              "bas": 0.35
+            },
+            {
+              "bas_xy": [
+                640,
+                1120
+              ],
+              "son_xy": [
+                820,
+                1400
+              ],
+              "taraf": "osmanli",
+              "bas": 0.6
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              830
+            ],
+            "bas": 0.5
+          }
+        }
+      },
+      {
+        "yazi": "18 Kasım 1601",
+        "metin": "Kış bastırdı, erzak tükendi. Kuşatma ordusu çekildi; kaynaklara göre geride onlarca ağır top, binlerce tüfek ve mızrak kaldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "1601",
+          "aylar": [
+            "Eylül",
+            "Ekim",
+            "18 Kasım"
+          ],
+          "cevir_bit": 0.6,
+          "rozet": "Kuşatma bitti"
+        }
+      },
+      {
+        "yazi": "Ödül",
+        "metin": "İstanbul'da günlerce şenlik yapıldı ve Tiryaki Hasan Paşa vezirlik rütbesiyle ödüllendirildi. Kanije, Osmanlı'nın batı sınırındaki en önemli kalelerinden biri olarak kaldı.",
+        "gorsel": [
+          "File:Unknown - Portrait of sultan Mehmed III (1595–1603) - MP 4089 - National Museum in Warsaw.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Kanije'yi kurtaran paşanın sabrı mı, yoksa kış mıydı?",
+    "etiketler": [
+      "kanije kuşatması",
+      "tiryaki hasan paşa",
+      "uzun savaş",
+      "1601"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "bagdat-1638",
+    "tur": "bilinen",
+    "baslik": [
+      "Bağdat 1638: Padişahın Bizzat Yürüdüğü Kuşatma ⚔️",
+      "Dördüncü Murad Bağdat'ı Nasıl Geri Aldı? ⚔️",
+      "Sadrazamın Düştüğü Hücum: Bağdat 1638 ⚔️"
+    ],
+    "kapak": "14 YIL SONRA",
+    "kanca": "Bağdat on dört yıldır Safevilerdeydi ve iki kuşatma boşa gitmişti. 1638'de padişah orduyu bizzat yürüttü; son hücumda sadrazamı öldü. Sence şehir nasıl düştü?",
+    "kanca_gorsel": [
+      "File:Verovering van Bagdad door de Turken, 1638, RP-P-1896-A-19368-1955.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1638",
+        "metin": "Dördüncü Murad 1638'de İstanbul'dan yola çıktı ve orduyu bizzat yönetti. Ordu aylar süren bir yürüyüşle Anadolu'yu ve Mezopotamya'yı geçti.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "kizil",
+          "cizgi": "akan",
+          "yakinlik": 1.4,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.02,
+                  41.02
+                ],
+                [
+                  30.5,
+                  39.8
+                ],
+                [
+                  32.5,
+                  37.9
+                ],
+                [
+                  35.3,
+                  37.0
+                ],
+                [
+                  38.8,
+                  37.2
+                ],
+                [
+                  41.5,
+                  36.9
+                ],
+                [
+                  43.1,
+                  36.3
+                ],
+                [
+                  44.0,
+                  34.8
+                ],
+                [
+                  44.36,
+                  33.32
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.04,
+              "bit": 0.74,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Üsküdar",
+              "lon": 29.02,
+              "lat": 41.02,
+              "yan": "sag"
+            },
+            {
+              "ad": "Bağdat",
+              "lon": 44.36,
+              "lat": 33.31,
+              "yan": "sol"
+            }
+          ],
+          "carpisma": {
+            "lon": 44.36,
+            "lat": 33.31,
+            "bas": 0.8
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "Kuşatma",
+        "metin": "Ordu kışa doğru Bağdat surlarına ulaştı. Toplar surları günlerce dövdü; kuşatma kaynaklara göre kırk gün kadar sürdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                560
+              ],
+              "wh": [
+                760,
+                220
+              ],
+              "taraf": "dusman",
+              "etiket": "Bağdat surları"
+            },
+            {
+              "xy": [
+                300,
+                1500
+              ],
+              "hedef": [
+                330,
+                1050
+              ],
+              "wh": [
+                300,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Topçular",
+              "etiket_ust": false,
+              "bas": 0.05,
+              "bit": 0.35
+            },
+            {
+              "xy": [
+                780,
+                1600
+              ],
+              "hedef": [
+                760,
+                1000
+              ],
+              "wh": [
+                300,
+                180
+              ],
+              "taraf": "osmanli",
+              "etiket": "Yeniçeriler",
+              "etiket_ust": false,
+              "bas": 0.35,
+              "bit": 0.65
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                330,
+                960
+              ],
+              "son_xy": [
+                420,
+                700
+              ],
+              "taraf": "osmanli",
+              "bas": 0.3
+            },
+            {
+              "bas_xy": [
+                760,
+                900
+              ],
+              "son_xy": [
+                660,
+                700
+              ],
+              "taraf": "osmanli",
+              "bas": 0.62
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              560,
+              680
+            ],
+            "bas": 0.75
+          }
+        }
+      },
+      {
+        "yazi": "Aralık 1638",
+        "metin": "Genel hücumda sadrazam Tayyar Mehmed Paşa öldü ve padişah mührü orada Kemankeş Mustafa Paşa'ya verdi. Kısa süre sonra Safevi garnizonu teslim oldu.",
+        "gorsel": [
+          "File:Verovering van Bagdad door de Turken, 1638, RP-P-1896-A-19368-1955.jpg"
+        ]
+      },
+      {
+        "yazi": "Bağdat Köşkü",
+        "metin": "Bağdat bundan sonra 1917'ye kadar Osmanlı'da kaldı. Zaferin anısına Topkapı Sarayı'nda Bağdat Köşkü yaptırıldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Bağdat Köşkü",
+          "bina": "konak",
+          "alt": "Topkapı Sarayı",
+          "lon": 28.984,
+          "lat": 41.013,
+          "arka": "gunbatimi"
+        }
+      }
+    ],
+    "soru": "Sence Bağdat'ı padişahın orada olması mı aldırdı, yoksa toplar mı?",
+    "etiketler": [
+      "bağdat seferi",
+      "dördüncü murad",
+      "safeviler",
+      "1638"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "slankamen-1691",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Slankamen 1691: Sadrazamı Vurulan Ordu ⚔️",
+      "Fazıl Mustafa Paşa Slankamen'de Nasıl Öldü? ⚔️",
+      "Savaşın Ortasında Düşen Sadrazam 1691 ⚔️"
+    ],
+    "kapak": "TEK KURŞUN",
+    "kanca": "Osmanlı ordusu kaynaklara göre sayıca üstündü ve savaş sürüyordu. Sonra tek bir kurşun sadrazamı yere serdi ve ordu dağıldı. Sence bir komutanın ölümü orduyu neden bu kadar sarstı?",
+    "kanca_gorsel": [
+      "File:An Officer of the Janissaries (Costume Plate) LACMA M.85.237.50.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1690",
+        "metin": "Köprülüzade Fazıl Mustafa Paşa sadrazam olunca orduyu toparladı ve 1690'da Belgrad'ı geri aldı. Ertesi yaz Tuna boyunca kuzeye yürüdü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "gece",
+          "cizgi": "kalin",
+          "yakinlik": 2.2,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  20.46,
+                  44.82
+                ],
+                [
+                  20.42,
+                  44.92
+                ],
+                [
+                  20.35,
+                  45.03
+                ],
+                [
+                  20.27,
+                  45.12
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.66,
+              "takip": true
+            },
+            {
+              "yol": [
+                [
+                  19.86,
+                  45.25
+                ],
+                [
+                  19.98,
+                  45.22
+                ],
+                [
+                  20.1,
+                  45.18
+                ],
+                [
+                  20.22,
+                  45.15
+                ]
+              ],
+              "taraf": "dusman",
+              "bas": 0.25,
+              "bit": 0.68
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Belgrad",
+              "lon": 20.46,
+              "lat": 44.82,
+              "yan": "sag"
+            },
+            {
+              "ad": "Petervaradin",
+              "lon": 19.86,
+              "lat": 45.25,
+              "yan": "sol"
+            },
+            {
+              "ad": "Slankamen",
+              "lon": 20.25,
+              "lat": 45.14,
+              "yan": "sag"
+            }
+          ],
+          "carpisma": {
+            "lon": 20.25,
+            "lat": 45.14,
+            "bas": 0.74
+          },
+          "son": "carpisma"
+        }
+      },
+      {
+        "yazi": "19 Ağustos 1691",
+        "metin": "İki ordu Tuna kıyısındaki Slankamen'de karşılaştı. Karşısında Habsburg komutanı Baden Uçbeyi Ludwig Wilhelm vardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Habsburg",
+              "desen": "kartal"
+            }
+          ],
+          "bant": "Slankamen",
+          "karsi": {
+            "ad": "Osmanlı",
+            "desen": "hilal"
+          },
+          "arka": {
+            "merkez": [
+              20.25,
+              45.1
+            ],
+            "genislik": 4,
+            "tema": "antika"
+          }
+        }
+      },
+      {
+        "yazi": "Kurşun",
+        "metin": "Savaşın ortasında Fazıl Mustafa Paşa bir kurşunla vurulup öldü. Haber yayılınca saflar çözüldü ve ordu geri çekildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                600
+              ],
+              "wh": [
+                700,
+                200
+              ],
+              "taraf": "dusman",
+              "etiket": "Habsburg"
+            },
+            {
+              "xy": [
+                540,
+                1250
+              ],
+              "wh": [
+                520,
+                220
+              ],
+              "taraf": "osmanli",
+              "etiket": "Sadrazam",
+              "etiket_ust": false
+            },
+            {
+              "xy": [
+                540,
+                1250
+              ],
+              "hedef": [
+                540,
+                1650
+              ],
+              "wh": [
+                380,
+                160
+              ],
+              "taraf": "osmanli",
+              "etiket": "Geri çekiliş",
+              "etiket_ust": false,
+              "bas": 0.6,
+              "bit": 0.9
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                540,
+                720
+              ],
+              "son_xy": [
+                540,
+                1100
+              ],
+              "taraf": "dusman",
+              "bas": 0.15
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              1150
+            ],
+            "bas": 0.42
+          }
+        }
+      },
+      {
+        "yazi": "1699",
+        "metin": "Slankamen bozgunu savaşın yönünü belirledi. Sekiz yıl sonra imzalanan Karlofça Antlaşması'yla Osmanlı Macaristan'ın büyük bölümünü bıraktı.",
+        "gorsel": [
+          "File:Thugra of the Treaty of Karlowitz (the original of the document is in the Vienna State Archives).jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Fazıl Mustafa Paşa yaşasaydı Karlofça imzalanır mıydı?",
+    "etiketler": [
+      "slankamen",
+      "köprülüzade fazıl mustafa paşa",
+      "karlofça",
+      "1691"
+    ],
+    "stil": "animasyon"
   }
 ]

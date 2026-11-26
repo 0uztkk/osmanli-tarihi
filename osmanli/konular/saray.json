@@ -5309,5 +5309,356 @@
       "1687"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "kira-malchi-1600",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Askerlerin Teslim İstediği Kadın: Kira 1600 👑",
+      "Safiye Sultan'ın Kirası Neden Hedef Oldu? 👑",
+      "Kraliçeye Mektup Yazan Saray Aracısı 👑"
+    ],
+    "kapak": "KİMSE KORUMADI",
+    "kanca": "1600 baharında ayaklanan askerler padişahtan bir paşayı değil, bir kadını istedi. Esperanza Malchi sarayın içinde yaşamıyordu, ama Valide Sultan'ın sırlarını biliyordu. Sence onu neden hedef seçtiler?",
+    "kanca_gorsel": [
+      "File:Imperial Harem, Topkapı Palace, Istanbul.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Kira",
+        "metin": "Kira, harem kadınlarının dışarıdaki işlerini gören kadınlara verilen addı. Esperanza Malchi, Üçüncü Mehmed'in annesi Safiye Sultan'ın kirasıydı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "mekan",
+          "yer": "Topkapı Harem",
+          "bina": "saray",
+          "alt": "İstanbul",
+          "lon": 28.983,
+          "lat": 41.0115,
+          "arka": "safak"
+        }
+      },
+      {
+        "yazi": "1599",
+        "metin": "Valide Sultan adına alışveriş yaptı, hediye ve mektup taşıdı. İngiltere Kraliçesi Birinci Elizabeth'e yazdığı bir mektup bugün hâlâ duruyor.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Safiye Sultan",
+              "desen": "hilal"
+            }
+          ],
+          "bant": "Mektuplar",
+          "karsi": {
+            "ad": "Kraliçe Elizabeth",
+            "desen": "halka"
+          },
+          "arka": {
+            "merkez": [
+              14,
+              46
+            ],
+            "genislik": 30,
+            "tema": "antika"
+          }
+        }
+      },
+      {
+        "yazi": "Ayaklanma",
+        "metin": "Akçenin değeri düşmüştü ve maaşını değersiz parayla alan sipahiler ayaklandı. Öfkelerini sarayın gözdesi kiraya yönelttiler ve teslim edilmesini istediler.",
+        "gorsel": [
+          "File:Unknown - Portrait of sultan Mehmed III (1595–1603) - MP 4089 - National Museum in Warsaw.jpg"
+        ]
+      },
+      {
+        "yazi": "1 Nisan 1600",
+        "metin": "Kira ve büyük oğlu Kaymakam Halil Paşa'nın konağı yakınında öldürüldü. Kaynaklara göre küçük oğullarından biri kaçmayı başardı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1600",
+          "aylar": [
+            "Mart",
+            "1 Nisan"
+          ],
+          "cevir_bit": 0.5,
+          "rozet": "Kiranın sonu"
+        }
+      }
+    ],
+    "soru": "Sence Safiye Sultan kirasını kurtarabilir miydi?",
+    "etiketler": [
+      "esperanza malchi",
+      "safiye sultan",
+      "kira",
+      "1600"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "birinci-mustafa-1618",
+    "tur": "az-bilinen",
+    "baslik": [
+      "İki Kez Tahttan İndirilen Padişah 👑",
+      "Birinci Mustafa Tahta Neden İki Kez Çıktı? 👑",
+      "Kafesten Tahta, Tahttan Kafese: 1618 👑"
+    ],
+    "kapak": "ÜÇ AY",
+    "kanca": "Tahta iki kez çıktı, ikisinde de kısa süre sonra indirildi. Birinci Mustafa'yı tahta taşıyan ne ordusuydu ne de bir zaferi. Sence onu oraya kim çıkardı?",
+    "kanca_gorsel": [
+      "File:Sultan's Throne, Imperial Hall, Topkapı Palace Harem.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Kasım 1617",
+        "metin": "Birinci Ahmed genç yaşta öldüğünde oğulları çok küçüktü. Osmanlı'da ilk kez tahta padişahın oğlu değil, kardeşi geçti: Birinci Mustafa.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "safak",
+          "yil": "1617",
+          "aylar": [
+            "Kasım"
+          ],
+          "cevir_bit": 0.35,
+          "rozet": "İlk kez kardeş"
+        }
+      },
+      {
+        "yazi": "Şubat 1618",
+        "metin": "Davranışları sarayı tedirgin etti; kaynaklar onun ruh sağlığının yerinde olmadığını yazar. Üç ay sonra indirildi, yerine yeğeni Genç Osman geçti.",
+        "gorsel": [
+          "File:Portrait of Osman II, Sultan of Turkey 1618-22 (4673807).jpg"
+        ]
+      },
+      {
+        "yazi": "Mayıs 1622",
+        "metin": "Genç Osman'ı deviren yeniçeriler Mustafa'yı kafesten çıkarıp yeniden tahta oturttu. Rivayete göre onu bulduklarında günlerdir aç ve korku içindeydi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "gece",
+          "kamera": "kaydir",
+          "cizgi": "akan",
+          "bulut": false,
+          "merkez": [
+            28.95,
+            41.0
+          ],
+          "genislik": 0.9,
+          "zoom": 1.05,
+          "odak": [
+            28.97,
+            41.01
+          ],
+          "etiketler": [
+            {
+              "ad": "Topkapı",
+              "lon": 28.983,
+              "lat": 41.0115,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Yedikule",
+              "lon": 28.922,
+              "lat": 40.994,
+              "yan": "sol",
+              "bas": 0.3
+            }
+          ],
+          "damga": {
+            "yazi": "Yeniden",
+            "lon": 28.983,
+            "lat": 41.0115,
+            "bas": 0.6,
+            "tip": "murekkep",
+            "dy": -240
+          }
+        }
+      },
+      {
+        "yazi": "Eylül 1623",
+        "metin": "İkinci saltanatı da bir buçuk yıl sürmedi. Devlet karışınca yine indirildi ve tahta on bir yaşındaki Dördüncü Murad çıktı.",
+        "gorsel": [
+          "File:Murad IV portrait. Topkapi Palace Museum Library, H. 2148, 11b.jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Birinci Mustafa'yı ikinci kez tahta çıkarmak kimin işine yarıyordu?",
+    "etiketler": [
+      "birinci mustafa",
+      "kafes",
+      "genç osman",
+      "1618"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kuleli-1859",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kuleli 1859: Padişaha Karşı Kurulan Cemiyet 👑",
+      "Toplantıyı Ele Veren Paşa: Kuleli 1859 👑",
+      "Abdülmecid'i İndirmek İsteyenler 1859 👑"
+    ],
+    "kapak": "İHBAR",
+    "kanca": "Padişahı tahttan indirmek için gizlice toplanıyorlardı, ama aralarına aldıkları paşa onları ele verdi. Yakalandılar ve idama mahkûm edildiler. Sonra padişah beklenmedik bir karar verdi. Sence ne?",
+    "kanca_gorsel": [
+      "File:Chandelier of the Crystal Staircase, Dolmabahçe Palace, Istanbul.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1859",
+        "metin": "Kırım Savaşı'ndan sonra bir grup, kaynaklara göre Islahat Fermanı'na ve saray harcamalarına öfkelenerek Sultan Abdülmecid'e karşı gizli bir cemiyet kurdu.",
+        "gorsel": [
+          "File:Sultan Abdülmecid - Google Art Project.jpg"
+        ]
+      },
+      {
+        "yazi": "İhbar",
+        "metin": "Cemiyetin başında Şeyh Ahmed Efendi vardı. Üyeler Mirliva Hasan Paşa'yı da davet etti; paşa onlara katılır gibi yaptı ve her şeyi seraskere anlattı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Gizli cemiyet",
+              "desen": "kanat"
+            }
+          ],
+          "bant": "İhbar",
+          "karsi": {
+            "ad": "Hasan Paşa",
+            "desen": "anahtar"
+          },
+          "arka": {
+            "merkez": [
+              29.0,
+              41.03
+            ],
+            "genislik": 1.2,
+            "tema": "gece"
+          }
+        }
+      },
+      {
+        "yazi": "14 Eylül 1859",
+        "metin": "Hükümet bir toplantıyı bastı ve cemiyet üyelerini yakaladı. Hepsi Çengelköy'deki Kuleli Kışlası'nda tutulup yargılandı; olay adını buradan aldı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "cizgi": "kesikli",
+          "bulut": true,
+          "merkez": [
+            29.02,
+            41.04
+          ],
+          "genislik": 0.5,
+          "zoom": 1.08,
+          "odak": [
+            29.04,
+            41.05
+          ],
+          "etiketler": [
+            {
+              "ad": "Tophane",
+              "lon": 28.981,
+              "lat": 41.027,
+              "yan": "sol",
+              "bas": 0.05
+            },
+            {
+              "ad": "Kuleli",
+              "lon": 29.051,
+              "lat": 41.054,
+              "yan": "sag",
+              "bas": 0.35
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  28.982,
+                  41.026
+                ],
+                [
+                  29.01,
+                  41.035
+                ],
+                [
+                  29.035,
+                  41.047
+                ],
+                [
+                  29.05,
+                  41.053
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "gemi",
+              "bas": 0.1,
+              "bit": 0.6
+            }
+          ],
+          "damga": {
+            "yazi": "Kuleli",
+            "lon": 29.051,
+            "lat": 41.054,
+            "bas": 0.65,
+            "tip": "muhur",
+            "dy": -220
+          }
+        }
+      },
+      {
+        "yazi": "Af",
+        "metin": "Beş kişi idama mahkûm edildi. Abdülmecid bu cezaları ömür boyu kalebentliğe çevirdi; diğerleri sürgüne ya da hapse gönderildi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "parsomen",
+          "yil": "1859",
+          "aylar": [
+            "Eylül"
+          ],
+          "cevir_bit": 0.3,
+          "rozet": "İdam yerine sürgün"
+        }
+      }
+    ],
+    "soru": "Sence Abdülmecid onları affederek doğru mu yaptı?",
+    "etiketler": [
+      "kuleli vakası",
+      "abdülmecid",
+      "1859",
+      "gizli cemiyet"
+    ],
+    "stil": "animasyon"
   }
 ]

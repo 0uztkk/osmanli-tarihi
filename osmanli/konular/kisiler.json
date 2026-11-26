@@ -6001,5 +6001,492 @@
       "1571"
     ],
     "stil": "animasyon"
+  },
+  {
+    "id": "alparslan-olum-1072",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Alparslan'ın Son Günü: Bir Esir ve Bir Hançer 🏹",
+      "Malazgirt'in Galibi Nasıl Öldü? 1072 🏹",
+      "Oku Iskalayan Sultan: Alparslan 1072 🏹"
+    ],
+    "kapak": "TEK HATA",
+    "kanca": "Malazgirt'te bir imparatoru esir alan sultan, yaklaşık bir yıl sonra bir esirin hançeriyle yaralandı. Alparslan'ın son günü hâlâ tartışılır. Sence o gün ne ters gitti?",
+    "kanca_gorsel": [
+      "-"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1072",
+        "metin": "Malazgirt'ten sonra Alparslan Horasan üzerinden doğuya, Maveraünnehir'e sefere çıktı. Ordusu Ceyhun Nehri kıyısında Berzem adlı bir kaleyi kuşattı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "antika",
+          "kamera": "yaklas",
+          "cizgi": "kesikli",
+          "bulut": true,
+          "merkez": [
+            55.4,
+            36.3
+          ],
+          "genislik": 10,
+          "zoom": 1.06,
+          "odak": [
+            55.4,
+            36.1
+          ],
+          "etiketler": [
+            {
+              "ad": "Rey",
+              "lon": 51.43,
+              "lat": 35.6,
+              "yan": "sag",
+              "bas": 0.05
+            },
+            {
+              "ad": "Nişabur",
+              "lon": 58.8,
+              "lat": 36.2,
+              "yan": "sol",
+              "bas": 0.45
+            },
+            {
+              "ad": "Horasan",
+              "lon": 56.5,
+              "lat": 34.8,
+              "tip": "bolge",
+              "bas": 0.6
+            }
+          ],
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  51.43,
+                  35.6
+                ],
+                [
+                  53.0,
+                  36.0
+                ],
+                [
+                  54.4,
+                  36.2
+                ],
+                [
+                  56.5,
+                  36.3
+                ],
+                [
+                  58.8,
+                  36.2
+                ]
+              ],
+              "taraf": "osmanli",
+              "ikon": "ordu",
+              "bas": 0.08,
+              "bit": 0.75
+            }
+          ]
+        }
+      },
+      {
+        "yazi": "Kale komutanı",
+        "metin": "Kale düşünce komutanı Yusuf el-Harezmi huzura getirildi. Kaynaklara göre sultana ağır sözler söyledi; Alparslan onu okla kendisi vurmak istedi.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Alparslan",
+              "desen": "selcuklu"
+            }
+          ],
+          "bant": "Berzem Kalesi",
+          "karsi": {
+            "ad": "Yusuf el-Harezmi",
+            "desen": "carpi"
+          },
+          "arka": {
+            "merkez": [
+              53,
+              36
+            ],
+            "genislik": 12,
+            "tema": "kizil"
+          }
+        }
+      },
+      {
+        "yazi": "Kayan ayak",
+        "metin": "Rivayete göre sultanın ayağı kaydı ve ok hedefi ıskaladı. Yusuf üzerine atılıp hançerle onu yaraladı; kendisi de orada öldürüldü.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "plan",
+          "birlikler": [
+            {
+              "xy": [
+                540,
+                640
+              ],
+              "wh": [
+                420,
+                200
+              ],
+              "taraf": "osmanli",
+              "etiket": "Alparslan"
+            },
+            {
+              "xy": [
+                540,
+                1500
+              ],
+              "hedef": [
+                540,
+                900
+              ],
+              "wh": [
+                240,
+                170
+              ],
+              "taraf": "dusman",
+              "etiket": "Yusuf",
+              "etiket_ust": false,
+              "bas": 0.3,
+              "bit": 0.62
+            }
+          ],
+          "oklar": [
+            {
+              "bas_xy": [
+                540,
+                760
+              ],
+              "son_xy": [
+                760,
+                1260
+              ],
+              "taraf": "osmanli",
+              "bas": 0.08
+            },
+            {
+              "bas_xy": [
+                540,
+                1300
+              ],
+              "son_xy": [
+                540,
+                820
+              ],
+              "taraf": "dusman",
+              "bas": 0.45
+            }
+          ],
+          "carpisma": {
+            "xy": [
+              540,
+              780
+            ],
+            "bas": 0.68
+          }
+        }
+      },
+      {
+        "yazi": "Merv",
+        "metin": "Alparslan birkaç gün sonra öldü; kaynaklar ölüm tarihini Kasım ya da Aralık 1072 diye verir. Merv'e gömüldü, yerine oğlu Melikşah geçti.",
+        "gorsel": [
+          "File:Persian calligraphy from an Ottoman album (CBL T 439.7v).jpg"
+        ]
+      }
+    ],
+    "soru": "Sence Alparslan o esiri hemen cezalandırsaydı tarih değişir miydi?",
+    "etiketler": [
+      "alparslan",
+      "büyük selçuklu",
+      "melikşah",
+      "1072"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "sehzade-korkut-1513",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Kardeşinden Mağaraya Kaçan Şehzade 1513 👑",
+      "Şehzade Korkut Yavuz'dan Neden Kaçamadı? 👑",
+      "Tahtı İstemeyen Şehzadenin Sonu: Korkut 👑"
+    ],
+    "kapak": "SON MEKTUP",
+    "kanca": "Tahtı istemediğini söyleyen bir şehzade, kardeşinden kaçıp bir mağarada saklandı. Onu bulduran, kaynaklara göre bir ihbardı. Sence Korkut neden kurtulamadı?",
+    "kanca_gorsel": [
+      "File:Portraits of Selim I, in 1524 (contemporary) and 1579.jpg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "1512",
+        "metin": "Yavuz Selim tahta çıktığında iki ağabeyi hâlâ hayattaydı: Ahmed ve Korkut. Korkut Manisa'da sancakbeyiydi; kitaplarıyla ve şiirleriyle tanınırdı.",
+        "gorsel": [
+          "File:Portraits of Selim I, in 1524 (contemporary) and 1579.jpg"
+        ]
+      },
+      {
+        "yazi": "Kaçış · 1513",
+        "metin": "1513 başında Selim ani bir baskınla Manisa'ya yürüdü. Korkut yanında birkaç adamla güneye, Teke ilinin dağlarına kaçtı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "sefer",
+          "tema": "parsomen",
+          "cizgi": "kalin",
+          "yakinlik": 1.5,
+          "rotalar": [
+            {
+              "yol": [
+                [
+                  29.06,
+                  40.19
+                ],
+                [
+                  28.6,
+                  39.8
+                ],
+                [
+                  27.9,
+                  39.2
+                ],
+                [
+                  27.43,
+                  38.62
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.05,
+              "bit": 0.45
+            },
+            {
+              "yol": [
+                [
+                  27.43,
+                  38.58
+                ],
+                [
+                  28.2,
+                  38.1
+                ],
+                [
+                  29.1,
+                  37.7
+                ],
+                [
+                  30.0,
+                  37.3
+                ],
+                [
+                  30.5,
+                  37.0
+                ]
+              ],
+              "taraf": "osmanli",
+              "bas": 0.3,
+              "bit": 0.78,
+              "takip": true
+            }
+          ],
+          "etiketler": [
+            {
+              "ad": "Bursa",
+              "lon": 29.06,
+              "lat": 40.19,
+              "yan": "sag"
+            },
+            {
+              "ad": "Manisa",
+              "lon": 27.43,
+              "lat": 38.61,
+              "yan": "sol"
+            },
+            {
+              "ad": "Teke",
+              "lon": 30.6,
+              "lat": 36.95,
+              "yan": "sol"
+            }
+          ],
+          "son": "genel"
+        }
+      },
+      {
+        "yazi": "Mağara",
+        "metin": "Rivayete göre günlerce bir mağarada saklandı. Sonunda yeri ele verildi ve Selim'in adamları onu yakaladı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "harita",
+          "tema": "kizil",
+          "kamera": "yaklas",
+          "cizgi": "kesikli",
+          "bulut": true,
+          "merkez": [
+            30.4,
+            37.2
+          ],
+          "genislik": 4,
+          "zoom": 1.1,
+          "odak": [
+            30.6,
+            37.0
+          ],
+          "etiketler": [
+            {
+              "ad": "Teke",
+              "lon": 30.4,
+              "lat": 37.2,
+              "tip": "bolge"
+            }
+          ],
+          "damga": {
+            "yazi": "Ele verildi",
+            "lon": 30.6,
+            "lat": 37.0,
+            "bas": 0.5,
+            "tip": "ferman",
+            "dy": -260
+          }
+        }
+      },
+      {
+        "yazi": "Mart 1513",
+        "metin": "Yakalanan Korkut boğduruldu. Kaynaklara göre ölmeden önce kardeşine bir mektup bıraktı; Selim'in onu okuyunca ağladığı anlatılır.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gunbatimi",
+          "yil": "1513",
+          "aylar": [
+            "Şubat",
+            "Mart"
+          ],
+          "cevir_bit": 0.5,
+          "rozet": "Son mektup"
+        }
+      }
+    ],
+    "soru": "Sence Selim, Korkut'u bağışlasaydı tahtı güvende kalır mıydı?",
+    "etiketler": [
+      "şehzade korkut",
+      "yavuz sultan selim",
+      "taht kavgası",
+      "1513"
+    ],
+    "stil": "animasyon"
+  },
+  {
+    "id": "kemankes-mustafa-1644",
+    "tur": "az-bilinen",
+    "baslik": [
+      "Hazineyi Toparlayan Sadrazamın Sonu 1644 👑",
+      "Kemankeş Mustafa Paşa Neden Boğduruldu? 👑",
+      "Bağdat'ta Mühür Alan Okçu Vezir 👑"
+    ],
+    "kapak": "FISILTILAR",
+    "kanca": "1644'te hazineyi toparlayan sadrazam, padişahın emriyle boğduruldu. Kemankeş Mustafa Paşa'yı düşmanları değil, saraydaki fısıltılar bitirdi. Sence padişah neden onlara inandı?",
+    "kanca_gorsel": [
+      "File:Sultans of the Ottoman Empire - Murad IV - Ibrahim I - Mehmed IV.jpeg"
+    ],
+    "sahneler": [
+      {
+        "yazi": "Aralık 1638",
+        "metin": "Bağdat kuşatmasında sadrazam Tayyar Mehmed Paşa hücum sırasında öldü. Dördüncü Murad mührü orada yeniçeri ağası Kemankeş Mustafa'ya verdi.",
+        "gorsel": [
+          "File:Verovering van Bagdad door de Turken, 1638, RP-P-1896-A-19368-1955.jpg"
+        ]
+      },
+      {
+        "yazi": "1640",
+        "metin": "Murad ölünce kardeşi İbrahim tahta çıktı. Kemankeş akçeyi düzeltti, maaş defterlerindeki fazla isimleri sildi ve harcamaları kıstı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "basamak",
+          "ogeler": [
+            "Kısılan harcamalar",
+            "Temizlenen defterler",
+            "Yeni akçe"
+          ]
+        }
+      },
+      {
+        "yazi": "Fısıltılar",
+        "metin": "Kısıntılar saraydaki bazı gözdeleri kızdırdı. Kaynaklara göre Cinci Hoca gibi isimler padişahı sadrazamına karşı doldurdu.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "taraflar",
+          "taraflar": [
+            {
+              "ad": "Cinci Hoca",
+              "desen": "kanat"
+            },
+            {
+              "ad": "Saray gözdeleri",
+              "desen": "halka"
+            }
+          ],
+          "bant": "Saray entrikası",
+          "karsi": {
+            "ad": "Kemankeş",
+            "desen": "hilal"
+          },
+          "arka": {
+            "merkez": [
+              28.97,
+              41.01
+            ],
+            "genislik": 1.4,
+            "tema": "kizil"
+          }
+        }
+      },
+      {
+        "yazi": "Ocak 1644",
+        "metin": "Sultan İbrahim idam emrini verdi ve Kemankeş Mustafa Paşa boğduruldu. Ardından saray harcamaları yeniden hızla arttı.",
+        "gorsel": [
+          "-"
+        ],
+        "anim": {
+          "tip": "takvim",
+          "filo": false,
+          "arka": "gece",
+          "yil": "1644",
+          "aylar": [
+            "Ocak"
+          ],
+          "cevir_bit": 0.3,
+          "rozet": "İdam"
+        }
+      }
+    ],
+    "soru": "Sence Kemankeş'in ölümüyle en çok kim kaybetti: padişah mı, devlet mi?",
+    "etiketler": [
+      "kemankeş mustafa paşa",
+      "sultan ibrahim",
+      "dördüncü murad",
+      "1644"
+    ],
+    "stil": "animasyon"
   }
 ]
